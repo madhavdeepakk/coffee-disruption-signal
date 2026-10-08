@@ -1,0 +1,206 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2021-03-30",
+    "price": 122.5999984741211,
+    "z_score": -2.124742340154157,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": -3.50256156690044,
+    "cumulative_pct_move": -8.37070577143725,
+    "cumulative_z_score": -2.191501631810069,
+    "direction": "down"
+  },
+  "price_description": "-3.5% day-over-day move (z-score -2.12), on top of -8.4% over the last 10 trading days",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (4 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 3,
+    "network_successes": 4,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 85,
+    "dropped_out_of_window": 4,
+    "collapsed_duplicates": 5,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "6_document(s)_above_threshold",
+    "best_score": 0.8912264108657837,
+    "accepted_document_count": 6,
+    "accepted_document_ids": [
+      "8af357674f52e082",
+      "4016703ec069aac5",
+      "50bbc0e8bf43d67c",
+      "d76425fa0f55ad87",
+      "c45158662da0e3ac",
+      "e41ea6047c59a104"
+    ],
+    "total_documents_considered": 85,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T14:44:08.116165+00:00"
+  },
+  "documents_retrieved": 85,
+  "sources": [
+    {
+      "document_id": "50bbc0e8bf43d67c",
+      "title": "Coffee exports down 23pc as drought ravages farms - thecitizen.co.tz",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTkpqTWVCc2xobmNsdkZtRWRobWpKOU44bXJVZUZqaDhJQ0RSUHZyTDV5eWRMSDhrN3FDY3lyU0N4RHExdS03OVQyaG5wQ0pna0NoMWJXZHU5VTViTzZFRXozRm9iR2RlYks2a25hSHUwUmZablVicGRXWUk0YWxUbHlqaTJFUmNRSVdxSWdnS3owaUhvczBuLXVOS3hDVjRYSEJrcjJfX0s?oc=5",
+      "publication_date": "2021-03-30",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8665130138397217,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c45158662da0e3ac",
+      "title": "How Shipping Disruptions Are Affecting the Specialty Coffee Industry - dailycoffeenews.com",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRXlDaWpCMDV1RnVOcHViRmJXbXk4ZlhoS2pYYmd5TFV1VHdQTnN1bkZMU29pSjlDUjhmRUdxR1Ftdzhuak9NdkJwNElJXy1Nb29uVE1BbmRoSFU0aVI3d1dFcER4NDlHellVUUNDbE5WcmNZRXMzWVRidTJlakpTelZtM3B4TzdtcGxfYUdYSjBEYTFJOUI3aTdoWmc0elhZYjRzQ3U2SDZ4UEJK?oc=5",
+      "publication_date": "2021-03-29",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8596833944320679,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8af357674f52e082",
+      "title": "A premium coffee shortfall is getting worse , lifting latte costs",
+      "url": "https://www.unionleader.com/news/back_page/a-premium-coffee-shortfall-is-getting-worse-lifting-latte-costs/article_d38ef8f2-2381-5754-ba83-c0c23acfcb8d.html",
+      "publication_date": "2021-03-29",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2508,
+      "n_copies": 1,
+      "syndication_domains": [
+        "unionleader.com"
+      ],
+      "retrieval_score": 0.3262,
+      "semantic_score": 0.8912264108657837,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4016703ec069aac5",
+      "title": "Peabirus : Chuva na Col\u00f4mbia piora perspectiva para oferta de caf\u00e9 ar\u00e1bica",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=90003",
+      "publication_date": "2021-03-29",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3238,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8674041032791138,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d76425fa0f55ad87",
+      "title": "The World Is Facing a Coffee Deficit in Supply Chain \u2018Nightmare\u2019 - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNS29HczB3SVZsS3VkNnBDQWxUTDFUM0E1T0FFcHNmNkd4bXFsLUlEbEZoLUtEdTRWdmdvamhXS2JJOThPR0lWWHBLSW1ZNmtNM0d3VFIwa0dSUjd6WXgzQllsV1VvMDlxSEVoeGxEN3BVVFBBM243Q2ZaQ3JxMlNzYzR1eTVWelFoSk5BRXVGR2g3UUNCVmZ3ZmdGdGFKS1I1Qk10ckpuNklOa0FFREMxS0ZB?oc=5",
+      "publication_date": "2021-03-23",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.859801173210144,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e41ea6047c59a104",
+      "title": "Medio ambiente no da tregua y agrava d\u00e9ficit de caf\u00e9 pr\u00e9mium",
+      "url": "https://gestion.pe/economia/mercados/medio-ambiente-no-da-tregua-y-agrava-deficit-de-cafe-premium-noticia/",
+      "publication_date": "2021-03-30",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2742,
+      "n_copies": 1,
+      "syndication_domains": [
+        "gestion.pe"
+      ],
+      "retrieval_score": 0.0054,
+      "semantic_score": 0.8502413034439087,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 1,
+    "inconsistent": 4
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 6,
+    "n_fresh": 5,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 1.0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided evidence consists entirely of reports describing supply deficits, drought, and shipping disruptions that are structurally bullish for coffee prices (explicitly noting the market is 'vulnerable to a rally' and prices have risen 22%), which contradicts the direction of the observed -3.5% price drop.",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 131541,
+    "evidence_document_ids": [
+      "50bbc0e8bf43d67c",
+      "c45158662da0e3ac",
+      "8af357674f52e082",
+      "4016703ec069aac5",
+      "d76425fa0f55ad87",
+      "e41ea6047c59a104"
+    ],
+    "evidence_packing": {
+      "n_input": 6,
+      "n_packed": 6,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 2296,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

@@ -1,0 +1,226 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2022-06-29",
+    "price": 232.6499938964844,
+    "z_score": 2.114887426917581,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 4.844524693864948,
+    "cumulative_pct_move": 2.51156511341223,
+    "cumulative_z_score": 0.5313498070537862,
+    "direction": "up"
+  },
+  "price_description": "+4.8% day-over-day move (z-score 2.11)",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "An explanation is supported by the cited evidence, but model confidence was medium. Weigh it accordingly.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 75,
+    "dropped_out_of_window": 9,
+    "collapsed_duplicates": 5,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "4_document(s)_above_threshold",
+    "best_score": 0.868159830570221,
+    "accepted_document_count": 4,
+    "accepted_document_ids": [
+      "ba8f1c4cfae7d510",
+      "d12fee21fa0b92b2",
+      "f0084edcdf9bdefb",
+      "4aaab8645b01f2cf"
+    ],
+    "total_documents_considered": 75,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T15:33:55.032268+00:00"
+  },
+  "documents_retrieved": 75,
+  "sources": [
+    {
+      "document_id": "f0084edcdf9bdefb",
+      "title": "How East Germany Solved a Coffee Shortage - coffeeordie.com",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE41Znl6WjJXTjR2QmpVSF92QmtlcVJldmlhc25wLUZycWlPMkN4eDY5NUt4dXV3RWF2QkhFODdiUlVUVjRCVU1tcTFCN2RDLTNUWVJ5cmxUUHZBZjNqYllGU2dLQzJNUQ?oc=5",
+      "publication_date": "2022-06-25",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.855150580406189,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4aaab8645b01f2cf",
+      "title": "Chilli peppers , coffee , wine : how the climate crisis is causing food shortages",
+      "url": "https://www.theguardian.com/environment/2022/jun/28/climate-crisis-food-shortages",
+      "publication_date": "2022-06-28",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 6765,
+      "n_copies": 1,
+      "syndication_domains": [
+        "theguardian.com"
+      ],
+      "retrieval_score": 0.3262,
+      "semantic_score": 0.8513721227645874,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ba8f1c4cfae7d510",
+      "title": "Brazil's coffee harvest faces delays, hurting export pace - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRU1QbHQwcHJwM2pfOHdreGpMZkpIaUZYeHFIQUtGSVNKdmxwQk53Ukx3dTdpWUdEdzlGYzF1TExsVUtKcGdiaVMtUUJ2cG5CRmRNbVl0cHpzNzFGQS1RcHhMWEhMWERiRVZUbHNJa0tmTm5PbWZBZURBUTVzemtieEdBWXp0UElCQm9MaklsY1R0allVbjFBd0NLM0Z3NllSWDk5cVU1VGVqRU5tV0xkcw?oc=5",
+      "publication_date": "2022-06-23",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2437,
+      "semantic_score": 0.868159830570221,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d12fee21fa0b92b2",
+      "title": "\u0e1a\u0e23\u0e32\u0e0b\u0e34\u0e25\u0e40\u0e1c\u0e0a\u0e34\u0e0d\u0e1b\u0e31\u0e0d\u0e2b\u0e32\u0e40\u0e01\u0e47\u0e1a\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e01\u0e32\u0e41\u0e1f\u0e25\u0e48\u0e32\u0e0a\u0e49\u0e32 \u0e01\u0e23\u0e30\u0e17\u0e1a\u0e2d\u0e31\u0e15\u0e23\u0e32\u0e01\u0e32\u0e23\u0e2a\u0e48\u0e07\u0e2d\u0e2d\u0e01",
+      "url": "https://www.dailynews.co.th/news/1181321/",
+      "publication_date": "2022-06-24",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1085,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dailynews.co.th"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8557050228118896,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 2,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 4,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 1,
+    "median_days_before": 3.0
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The price increase is attributed to supply-side constraints in Brazil, specifically harvest delays that slowed export pace and reduced immediate availability. Evidence indicates that farmers were reluctant to sell, waiting for higher prices, which pushed up spot prices for high-quality coffee. Additionally, broader climate-related stress on coffee production was reported in the days leading up to the move.",
+    "citations": [
+      {
+        "document_id": "d12fee21fa0b92b2",
+        "supports": "Reports that harvest delays in Brazil hurt export pace, with Cooxupe noting the slowest harvest rate since 2017. It explicitly states that spot prices for high-quality coffee increased because farmers were not rushing to sell and were waiting for higher prices."
+      },
+      {
+        "document_id": "ba8f1c4cfae7d510",
+        "supports": "Confirms that Brazil's coffee harvest faced delays, which hurt the export pace, providing context for the supply tightness."
+      },
+      {
+        "document_id": "4aaab8645b01f2cf",
+        "supports": "Mentions that the climate crisis is affecting the cost and availability of staples, including coffee, due to extreme weather events, providing a broader context for supply risks."
+      }
+    ],
+    "confidence": "medium",
+    "reason": null,
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 132904,
+    "evidence_document_ids": [
+      "f0084edcdf9bdefb",
+      "4aaab8645b01f2cf",
+      "ba8f1c4cfae7d510",
+      "d12fee21fa0b92b2"
+    ],
+    "evidence_packing": {
+      "n_input": 4,
+      "n_packed": 4,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 2042,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 3,
+    "n_ok": 3,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "d12fee21fa0b92b2",
+        "id_found": true,
+        "support_score": 0.834,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 2,
+        "support_rank_of": 4,
+        "support_rank_method": "semantic",
+        "closest_document_id": "ba8f1c4cfae7d510"
+      },
+      {
+        "document_id": "ba8f1c4cfae7d510",
+        "id_found": true,
+        "support_score": 0.898,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 4,
+        "support_rank_method": "semantic",
+        "closest_document_id": "ba8f1c4cfae7d510"
+      },
+      {
+        "document_id": "4aaab8645b01f2cf",
+        "id_found": true,
+        "support_score": 0.857,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 4,
+        "support_rank_method": "semantic",
+        "closest_document_id": "4aaab8645b01f2cf"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

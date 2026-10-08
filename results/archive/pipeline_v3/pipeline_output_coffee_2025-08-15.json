@@ -1,0 +1,458 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2025-08-15",
+    "price": 341.6499938964844,
+    "z_score": 2.237794802784812,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": 4.6401206421085375,
+    "cumulative_pct_move": 20.21463026806715,
+    "cumulative_z_score": 3.5035854234007084,
+    "direction": "up"
+  },
+  "price_description": "+4.6% day-over-day move (z-score 2.24), on top of +20.2% over the last 10 trading days",
+  "outcome": {
+    "tier": "EXPLAINED_STRONG",
+    "label": "Explained (strong)",
+    "headline": "Explained, with strong, direction-consistent evidence.",
+    "detail": "14 sources cleared the gate, the evidence leaned the same way as the move, the model reported high confidence, and every citation points to a document the model was shown.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 4,
+    "network_failures": 4,
+    "network_successes": 1,
+    "cache_hits": 2,
+    "fallback_added": 0,
+    "documents_returned": 151,
+    "dropped_out_of_window": 1,
+    "collapsed_duplicates": 4,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "14_document(s)_above_threshold",
+    "best_score": 0.8885107040405273,
+    "accepted_document_count": 14,
+    "accepted_document_ids": [
+      "9db4147b9b9a95c2",
+      "7d952a6445a2a878",
+      "7ee7713983737c3c",
+      "06ddc19a3e3bb989",
+      "711957d0750ae094",
+      "e65439ac6158ed67",
+      "2a6c80dda781142f",
+      "26cd02a179f4a4f2",
+      "664164b10dc42538",
+      "c5966576ca486048",
+      "ae10ca54a42cb78d",
+      "733149cd3ff8e380",
+      "422b695599b03660",
+      "353912c39ec4e542"
+    ],
+    "total_documents_considered": 151,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T11:16:31.359223+00:00"
+  },
+  "documents_retrieved": 151,
+  "sources": [
+    {
+      "document_id": "9db4147b9b9a95c2",
+      "title": "Coffee Analyst Warns Brazil Frost Could Deliver  Death Blow  To 2026 Harvest",
+      "url": "https://www.zerohedge.com/commodities/coffee-analyst-warns-brazil-frost-could-deliver-death-blow-2026-harvest",
+      "publication_date": "2025-08-13",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 123,
+      "n_copies": 1,
+      "syndication_domains": [
+        "zerohedge.com"
+      ],
+      "retrieval_score": 0.1326,
+      "semantic_score": 0.8885107040405273,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7d952a6445a2a878",
+      "title": "Australian coffee growers brew new opportunities",
+      "url": "https://www.abc.net.au/listen/programs/worldtoday/australian-coffee-growers-brew-new-opportunities-/105647870",
+      "publication_date": "2025-08-13",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3519,
+      "n_copies": 1,
+      "syndication_domains": [
+        "abc.net.au"
+      ],
+      "retrieval_score": 0.2939,
+      "semantic_score": 0.8814631700515747,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7ee7713983737c3c",
+      "title": "Coffee prices soaring in wake of Donald Trump's increased tariffs on Brazil. What to know - The Palm Beach Post",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQYmpydklSTnNnTGtXaHZjWVpvUi1JUXdrbGRPeEFhNXJNZ0M3VVhHT0xXMWFQVlBxOHdIUmxZV2JEWHBLLVhfZWxDUDNVOWNkTHBRYm8wZWdoeVZqMlppWHBSU3JhTy01eUlkcjc3SEFFR1ZjNWRJbTVOVFkySlFDRzFvMnJjQ2FJTWpZZG5DM2ZwUmZBNnNDVHhZbDdaSFJQMWVtRld1NlNWT3Q4aGRyekhzTG1faGFCZXVSWWpPRnNSMURsd19UZnZKZ1ZHbXNRYWc?oc=5",
+      "publication_date": "2025-08-14",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8677700757980347,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "06ddc19a3e3bb989",
+      "title": "Australian coffee in demand as global supply tightens",
+      "url": "https://www.abc.net.au/news/2025-08-13/far-north-queensland-coffee-growers-supply-more-local-cafes/105638260",
+      "publication_date": "2025-08-13",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3726,
+      "n_copies": 1,
+      "syndication_domains": [
+        "abc.net.au"
+      ],
+      "retrieval_score": 0.31,
+      "semantic_score": 0.8625394105911255,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "26cd02a179f4a4f2",
+      "title": "Coffee prices showing marked jolt in advance of trade war tariffs with Brazil - The Palm Beach Post",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPRzNzUDQydzFCanA5ZkZSVlFwR0pfRHVtTEdvMFJvVUdlbDM0UHhDTHFqQ3NBeUM0dmwySFVNSmFraFQwa3c5SFF5Ym9FMW5xdEpoamo0TkZlVWV5SDNoQllyQ01iN1lub2tYa3hyMms2X0xwaHlOdjRqaU5KY2E0ZzlmWkl0NUlGUmJkdWVwekFnTmNvNnBxcDlXa1dkX3dYcEZXb1FZRUxzN3pvTkhFTEJ0cE9JZWV6T3djMjdXalBxTjYtaENnRUNLbXhVaFVqYnIxdGE3V3c0Z1YxaGVv?oc=5",
+      "publication_date": "2025-08-06",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 7,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.859636664390564,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c5966576ca486048",
+      "title": "U . S . Tariffs Threaten 146000 Brazilian Jobs Spark Economic",
+      "url": "https://www.riotimesonline.com/u-s-tariffs-threaten-146000-brazilian-jobs-spark-economic-shake-up/",
+      "publication_date": "2025-08-07",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 2542,
+      "n_copies": 1,
+      "syndication_domains": [
+        "riotimesonline.com"
+      ],
+      "retrieval_score": 0.1828,
+      "semantic_score": 0.8588312864303589,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ae10ca54a42cb78d",
+      "title": "Coffee gains as U.S. tensions with Brazil escalate, tariffs loom - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZGh2OUlUTGF1bEFoWk9OV01qN2xLcFJVX2t5Tl9yS2RsNklmeUt2V1U3MmVob05fUExmZ1Q0bUdxMm1uZkd3cmVFU0VfMmpwTnFvd292ekZXTnlYOXBLYUcxaTE3TWNTd09EZkZUaGlIUWVzQk1mcF9TVWlGZDd4WTV5SjR5RzltOEswT2FpR1NoeG1RRmI3RklUdVB3SHg4dEpCZTRPbjlQRjFrdzBuTllIbEV1cHhGdm5iNDZVZXRRcHFZLWgxUE5HbHc?oc=5",
+      "publication_date": "2025-08-05",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8531078696250916,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "711957d0750ae094",
+      "title": "Starbucks under pressure again as Brazilian tariffs hike coffee costs - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVWhqNTkteXpmMXZYeF91MndLc1ozSkY2czNsWlRFTnpHZjN5aVhMS19FS0VUbkNMM3hodGNtMkdNemN3WlZUeGtDWnEwUW5jNU8zY0lWNkFXUGJ4Z0xUSS1vamRYWVlEM3JWeVhUbU5oVUZ6Yk5qVFAxQ2dtV2Z0UU9QMUlvUVNYNktGRHhEYks0ckxnZTI4VUxuWDdid2VGZVZFcU9tWXBlSDlocnVIN0t1VU5mZw?oc=5",
+      "publication_date": "2025-08-05",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8610364198684692,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e65439ac6158ed67",
+      "title": "US coffee buyers requesting to postpone Brazil imports, Brazilian lobby says - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcnZoaHV0Z0tqMWNsT0tJYjlaYW5vZzVXVjFrT011cVlwUTdBdUpuM1Z4dFpkeGQ1bk52cy1PVDVLR3pveks1R2Q0ZkstZTBtcml3ZDF6bmk0cXdxdW42bTA2eHFnWXRiUGtBSFNIMzY4bFN2MXJfRFVVYTYzcHhMQ185U184bGs0SVBQeWtrbmxIbGdza3VUNmZLRmY1bC1FOTE1QzlYVmJhY3hPS2IzQW82TDRDTW9OLUxJMFpiLXI?oc=5",
+      "publication_date": "2025-08-12",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.860955536365509,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2a6c80dda781142f",
+      "title": "Brazilian coffee industry seeks out new markets as US tariffs hit hard - bastillepost.com",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQa3g0T0xwSVlzbjZjTVNmWHBaRzlhbFhObkRaYm44VEt4WVlFSUdwSWJoSDkyMHJqOU1MSmZKTUZVcWh3MTVVTFlRMmljRWxtc2ZuUk1WM0U0SkFFV0l2TFkwSnV3Tk1EU2JJTlhKQUU5YjIxbFJ6RDVkemJ3OF9kUUtXUXZ5SGhuM1J6b18wLTZ1YWVpdkpTb01wc0Y0QTQzU1I2ZlB5NWlVX2xtc3VSa1hIS25USVQxX3JhMkltYw?oc=5",
+      "publication_date": "2025-08-07",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8609140515327454,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "664164b10dc42538",
+      "title": "Coffee News Recap, 15 Aug: US reportedly delaying Brazil shipments - Perfect Daily Grind",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1qR0RMQjhhOURrZnRSazY5UEw2MlVDQlJHczhvWEVQS243ZUppRVNXMlpWbGtnQUFFemJMbmM2T3dRMEZxOXhMeFZOUWFzUld6RFo2LVV2NUxYS0ZQakEzSHNBeldzTkJPd1cxeXZESE0wMTk0WmhFNXBrRQ?oc=5",
+      "publication_date": "2025-08-15",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8596147298812866,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "422b695599b03660",
+      "title": "Climate Study in Yunnan Identifies Biggest Threats to Arabica Coffee - Daily Coffee News by Roast Magazine",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZFZ1VmFGU0FZVW1KNy16NjFleWNrWi1qeWFuZHg4UXZEa3U0WDhpTHVtRU1OV21MZlg1a0V4U3BNdXp0aXZNRjFKcFA5dUw2bkRqandqUC1CYUQzTF9OTU9Fbl81N04zX1Y1cVA0cG9VY3cxU1ZQX0ViRHp2Z25HMjZLbVBhWktLQjNCdWZfQXRNUDA4YWctY0ctN1piQ3RlM19TRnZCeEVPdERf?oc=5",
+      "publication_date": "2025-08-14",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8520610332489014,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "353912c39ec4e542",
+      "title": "Build-Outs Of Coffee: Rutina Coffee In Miami, FL - Sprudge Coffee",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSW9uSmk1UFo4U1lzYVd1TkE5M3VwT3VNWDJtMk4wRmZsNTFrZ0hWRHJ0aDFzRTJTLXlkY1piR3liV3F1aG84bFdxb241QlBwZTU5aExTWDc4MDVDUFdFNkpYa2tGR2ktS21hbTlWWFlyYU9UT3BSNTgySWhZYWYxVE9Mbnc?oc=5",
+      "publication_date": "2025-08-14",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8509652614593506,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "733149cd3ff8e380",
+      "title": "Climate change has sent coffee prices soaring . Trump tariffs send them higher . ",
+      "url": "https://www.phillyvoice.com/coffee-prices-climate-change-trump-tariffs-brazil-vietnam-drought/",
+      "publication_date": "2025-08-05",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 8926,
+      "n_copies": 1,
+      "syndication_domains": [
+        "phillyvoice.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.8526074886322021,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 7,
+    "neutral": 6,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 14,
+    "n_fresh": 7,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 2.5
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The +4.6% jump on 2025\u201108\u201115 was driven by fresh news of tightening Brazil supply and heightened trade barriers. Two days earlier, analysts warned that frost and drought in Brazil were slashing output and exports, creating a supply shortfall (source: 9db4147b9b9a95c2; 7d952a6445a2a878). On 2025\u201108\u201114, reports highlighted the impact of newly\u2011imposed U.S. tariffs on Brazilian coffee, which were already pushing prices higher (source: 7ee7713983737c3c). The same day, a Reuters piece noted that U.S. coffee buyers were seeking to postpone Brazil shipments, further constraining immediate supply (source: e65439ac6158ed67). Finally, a same\u2011day news recap confirmed that the United States was delaying Brazil shipments, reinforcing market expectations of reduced availability (source: 664164b10dc42538). Together, these timely supply\u2011side shocks explain the sharp price increase on 15\u202fAugust.",
+    "citations": [
+      {
+        "document_id": "9db4147b9b9a95c2",
+        "supports": "Brazil frost could deliver a death blow to the 2026 harvest, indicating supply risk."
+      },
+      {
+        "document_id": "7d952a6445a2a878",
+        "supports": "Brazil's drought, frost and disease have reduced exports, driving up coffee prices."
+      },
+      {
+        "document_id": "7ee7713983737c3c",
+        "supports": "Coffee prices soaring due to Donald Trump's increased tariffs on Brazil."
+      },
+      {
+        "document_id": "e65439ac6158ed67",
+        "supports": "U.S. coffee buyers requesting to postpone Brazil imports, signaling tighter supply."
+      },
+      {
+        "document_id": "664164b10dc42538",
+        "supports": "US reportedly delaying Brazil shipments on the day of the price move."
+      }
+    ],
+    "confidence": "high",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 3865,
+    "evidence_document_ids": [
+      "9db4147b9b9a95c2",
+      "7d952a6445a2a878",
+      "7ee7713983737c3c",
+      "06ddc19a3e3bb989",
+      "26cd02a179f4a4f2",
+      "c5966576ca486048",
+      "ae10ca54a42cb78d",
+      "711957d0750ae094",
+      "e65439ac6158ed67",
+      "2a6c80dda781142f",
+      "664164b10dc42538",
+      "422b695599b03660",
+      "353912c39ec4e542",
+      "733149cd3ff8e380"
+    ],
+    "evidence_packing": {
+      "n_input": 14,
+      "n_packed": 14,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 4222,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 5,
+    "n_ok": 5,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "9db4147b9b9a95c2",
+        "id_found": true,
+        "support_score": 0.837,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 2,
+        "support_rank_of": 14,
+        "support_rank_method": "semantic",
+        "closest_document_id": "c5966576ca486048"
+      },
+      {
+        "document_id": "7d952a6445a2a878",
+        "id_found": true,
+        "support_score": 0.859,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 2,
+        "support_rank_of": 14,
+        "support_rank_method": "semantic",
+        "closest_document_id": "2a6c80dda781142f"
+      },
+      {
+        "document_id": "7ee7713983737c3c",
+        "id_found": true,
+        "support_score": 0.93,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 14,
+        "support_rank_method": "semantic",
+        "closest_document_id": "7ee7713983737c3c"
+      },
+      {
+        "document_id": "e65439ac6158ed67",
+        "id_found": true,
+        "support_score": 0.905,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 14,
+        "support_rank_method": "semantic",
+        "closest_document_id": "e65439ac6158ed67"
+      },
+      {
+        "document_id": "664164b10dc42538",
+        "id_found": true,
+        "support_score": 0.879,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 14,
+        "support_rank_method": "semantic",
+        "closest_document_id": "664164b10dc42538"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

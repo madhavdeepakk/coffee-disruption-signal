@@ -1,0 +1,306 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2025-02-10",
+    "price": 429.0499877929688,
+    "z_score": 2.5851896586940706,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": 6.108564688170144,
+    "cumulative_pct_move": 22.86654432835375,
+    "cumulative_z_score": 2.2819761871335635,
+    "direction": "up"
+  },
+  "price_description": "+6.1% day-over-day move (z-score 2.59), on top of +22.9% over the last 10 trading days",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "An explanation is supported by the cited evidence, but 1 citation(s) were flagged as weakly matched to their source. Weigh it accordingly.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 0,
+    "network_failures": 0,
+    "network_successes": 1,
+    "cache_hits": 6,
+    "fallback_added": 0,
+    "documents_returned": 181,
+    "dropped_out_of_window": 3,
+    "collapsed_duplicates": 12,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "8_document(s)_above_threshold",
+    "best_score": 0.8718689680099487,
+    "accepted_document_count": 8,
+    "accepted_document_ids": [
+      "ff926b3971d2582e",
+      "2e886671827e959f",
+      "3a604cf3a114fb6c",
+      "6df034c9935ebd70",
+      "416b4328fdc369c5",
+      "4538f73c0d243d25",
+      "17385e2b7b646384",
+      "476ae781692fa9bd"
+    ],
+    "total_documents_considered": 181,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T11:05:00.205645+00:00"
+  },
+  "documents_retrieved": 181,
+  "sources": [
+    {
+      "document_id": "ff926b3971d2582e",
+      "title": "Brazil roasters fret over fake coffee as prices soar - The Financial Express",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTXBVSl84RUFaLTVyZEFCUXUwNWpHLW1LTjdHRmM2QTBhc094Y1Iyc2d1c1J0ZkxkSWtEbnc1Nk90OHZqZTBtWlhRS015MUU5emZLMnVnTENiQ0VhRkhRcmhNb2J5eDVYeXA5SVJlbjFDYXFBMjVzbDltekNySjFDbERaSF82ZVgwX1ZjTWpSOC1jbWVzMDRJeVJ4Y3NVOWRRa0pJb1hvcURkbVZ4SzZEWDUyWGFuZUNRTUwzNmJqTdIBywFBVV95cUxPdXd4ZXl3OWxWcGw4cVdzcWJJS2I5a0pWbGQxV2M2djhNNW12N1RJdUREYUdmNGxlQkR4RldVRk92cGNDeWNrUW1sWEhJQ3VDbkdsSHU3bTFlVTdUMnUtYXYzclQ1eHd6N3paQlZvX3RpbDhKWEd2azVuZlZGVEUyODZrTXhXRjRPUmRNTDRDQ0hNeFNBTmMzVFVxQnM4LTJJR0VtWnBVcnZfRVNmMGZBNHNaQ0RrdUhEd25hQ09NUmJicTVKRnVSQ0Nmbw?oc=5",
+      "publication_date": "2025-02-07",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8718689680099487,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3a604cf3a114fb6c",
+      "title": "Clima e consumo devem manter pre\u00e7o do caf\u00e9 em alta",
+      "url": "https://imirante.com/noticias/brasil/2025/02/05/clima-e-aumento-do-consumo-devem-manter-preco-do-cafe-em-alta",
+      "publication_date": "2025-02-06",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 6044,
+      "n_copies": 1,
+      "syndication_domains": [
+        "imirante.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8588019013404846,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "416b4328fdc369c5",
+      "title": "Vietnam coffee exports reach record high",
+      "url": "https://tuoitrenews.vn/news/business/20250210/vietnam-s-coffee-exports-reach-record-high/84434.html",
+      "publication_date": "2025-02-10",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2927,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tuoitrenews.vn"
+      ],
+      "retrieval_score": 0.405,
+      "semantic_score": 0.852384090423584,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4538f73c0d243d25",
+      "title": "Caf\u00e9  um dos produtos que t\u00eam pressionado os \u00edndices de inflao",
+      "url": "https://g1.globo.com/jornal-nacional/noticia/2025/02/04/cafe-e-um-dos-produtos-que-tem-pressionado-os-indices-de-inflacao.ghtml",
+      "publication_date": "2025-02-05",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2041,
+      "n_copies": 1,
+      "syndication_domains": [
+        "g1.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8523383140563965,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "17385e2b7b646384",
+      "title": "Cafeaua se \u00eendreapt\u0103 spre cea mai \u00eendelungat\u0103 perioad\u0103 de cre\u015ftere din ultimii 45 de ani",
+      "url": "https://www.stiripesurse.ro/cafeaua-se-indreapta-spre-cea-mai-indelungata-perioada-de-crestere-din-ultimii-45-de-ani_3571399.html",
+      "publication_date": "2025-02-04",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 1850,
+      "n_copies": 1,
+      "syndication_domains": [
+        "stiripesurse.ro"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8505633473396301,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2e886671827e959f",
+      "title": "Arabica coffee futures above the 380 cents mark, Brazil's next crop may exceed current expectations - Comunicaffe International",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcmp1VDRDX2RIWlhQMU54b1VlOERMR1o5VXZ4TWtfeHJlYW9SXzM2NU11N2szZlp5MjA3YURTNi1NMjdlYzkwMXk3UjVJWVRvNjd3YkpFZHprWERoRUNJVnFmUjFPRVlYRi1IbENPYjVmeHg3YnJXYkpTRFB0U3ItMXQ0QTdNemV5N1dKZlA4Zjc5RXlnMHZwUTkydlpVU21Qcml5TURoRXJjVEZyenFkWm5aZmJKaEVxNU9KOUQzTkpKOTRBYTVwMg?oc=5",
+      "publication_date": "2025-02-03",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8612766265869141,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6df034c9935ebd70",
+      "title": "\u0426\u0435\u043d\u0430 \u043d\u0430 \u043a\u043e\u0444\u0435 \u0434\u043e\u0441\u0442\u0438\u0433\u043b\u0430 \u0438\u0441\u0442\u043e\u0440\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u043c\u0430\u043a\u0441\u0438\u043c\u0443\u043c\u0430",
+      "url": "https://gazeta.ua/ru/articles/economics/_cena-na-kofe-dostigla-istoricheskogo-maksimuma/1207504",
+      "publication_date": "2025-02-06",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 1865,
+      "n_copies": 1,
+      "syndication_domains": [
+        "gazeta.ua"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8546817302703857,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "476ae781692fa9bd",
+      "title": "Vietnam earns nearly 800 mln USD from coffee export in January 2025 - Xinhua",
+      "url": "https://english.news.cn/20250207/3bb8900f75a349439de506360b7c933d/c.html",
+      "publication_date": "2025-02-07",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 737,
+      "n_copies": 2,
+      "syndication_domains": [
+        "english.news.cn"
+      ],
+      "retrieval_score": 0.5161,
+      "semantic_score": 0.8281145095825195,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 5,
+    "neutral": 3,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 8,
+    "n_fresh": 5,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 2.0
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The February 10 price surge aligns with several recent reports of tightening supply and rising global coffee prices. On the same day, Vietnam\u2019s coffee export revenue hit a record, driven by a sharp increase in coffee prices (source: 416b4328fdc369c5). The day before, Brazilian roasters warned that fake coffee concerns were pushing prices higher (source: ff926b3971d2582e). Two days earlier, the Brazilian Coffee Industry Association forecast continued price gains due to adverse climate events and growing global demand, especially from China (source: 3a604cf3a114fb6c). Together, these factors explain the strong upward move on Feb\u202f10.",
+    "citations": [
+      {
+        "document_id": "416b4328fdc369c5",
+        "supports": "Vietnam\u2019s coffee export revenue record was driven by a surge in global coffee prices, indicating strong upward pressure on prices on Feb\u202f10."
+      },
+      {
+        "document_id": "ff926b3971d2582e",
+        "supports": "Brazilian roasters reported that fake coffee concerns were causing prices to soar, adding market stress the day before the move."
+      },
+      {
+        "document_id": "3a604cf3a114fb6c",
+        "supports": "The Brazilian Coffee Industry Association warned that climate\u2011related supply issues and rising global consumption would keep coffee prices high for the coming weeks."
+      }
+    ],
+    "confidence": "high",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 4036,
+    "evidence_document_ids": [
+      "ff926b3971d2582e",
+      "3a604cf3a114fb6c",
+      "416b4328fdc369c5",
+      "4538f73c0d243d25",
+      "17385e2b7b646384",
+      "2e886671827e959f",
+      "6df034c9935ebd70",
+      "476ae781692fa9bd"
+    ],
+    "evidence_packing": {
+      "n_input": 8,
+      "n_packed": 8,
+      "excerpt_chars": 1100,
+      "estimated_tokens": 3732,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": true
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 3,
+    "n_ok": 2,
+    "n_weak_support": 0,
+    "n_low_rank": 1,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "416b4328fdc369c5",
+        "id_found": true,
+        "support_score": 0.88,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 8,
+        "support_rank_method": "semantic",
+        "closest_document_id": "416b4328fdc369c5"
+      },
+      {
+        "document_id": "ff926b3971d2582e",
+        "id_found": true,
+        "support_score": 0.884,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 8,
+        "support_rank_method": "semantic",
+        "closest_document_id": "ff926b3971d2582e"
+      },
+      {
+        "document_id": "3a604cf3a114fb6c",
+        "id_found": true,
+        "support_score": 0.842,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "low_rank",
+        "support_rank": 4,
+        "support_rank_of": 8,
+        "support_rank_method": "semantic",
+        "closest_document_id": "6df034c9935ebd70"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

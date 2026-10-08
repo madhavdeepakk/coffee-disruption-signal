@@ -1,0 +1,146 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2021-03-22",
+    "price": 130.10000610351562,
+    "z_score": 2.1143408524541023,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 3.7066634263784883,
+    "cumulative_pct_move": 0.81364047030412,
+    "cumulative_z_score": -0.1562293586480913,
+    "direction": "up"
+  },
+  "price_description": "+3.7% day-over-day move (z-score 2.11)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (2 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 2,
+    "network_successes": 5,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 91,
+    "dropped_out_of_window": 9,
+    "collapsed_duplicates": 8,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "3_document(s)_above_threshold",
+    "best_score": 0.8622417449951172,
+    "accepted_document_count": 3,
+    "accepted_document_ids": [
+      "b24ced6b63f01a52",
+      "8faf6180312a2779",
+      "7a970017859f37e7"
+    ],
+    "total_documents_considered": 91,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T14:38:20.454802+00:00"
+  },
+  "documents_retrieved": 91,
+  "sources": [
+    {
+      "document_id": "7a970017859f37e7",
+      "title": "The coffee start-ups brewing up a storm in lockdown - BBC",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBSUkZGSnJCQXBfeGRtYWRuaTk4U3kweWtncjdOOXN5dWZpVkZZYS1OWjN4SXpyV1VjR1pqM0MwRWF5SmV5UUpHdlRmOWpyNnpJWDBWTzVWcw?oc=5",
+      "publication_date": "2021-03-17",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8509221076965332,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b24ced6b63f01a52",
+      "title": "Brazilian Officials Carry Out Interstate Tax Fraud Sting  Operation ExpressoDaily Coffee News by Roast Magazine",
+      "url": "https://dailycoffeenews.com/2021/03/17/brazilian-officials-carry-out-interstate-tax-fraud-sting-operation-expresso/",
+      "publication_date": "2021-03-17",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1791,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dailycoffeenews.com"
+      ],
+      "retrieval_score": 0.2778,
+      "semantic_score": 0.8622417449951172,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8faf6180312a2779",
+      "title": "Contemplating the Coffee Supply Chain : A Horror Story",
+      "url": "https://www.darkreading.com/edge/theedge/contemplating-the-coffee-supply-chain-a-horror-story/b/d-id/1340401",
+      "publication_date": "2021-03-12",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 11908,
+      "n_copies": 2,
+      "syndication_domains": [
+        "darkreading.com"
+      ],
+      "retrieval_score": 0.4158,
+      "semantic_score": 0.8533997535705566,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 0,
+    "inconsistent": 2
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 3,
+    "n_fresh": 0,
+    "fresh_within_days": 2,
+    "newest_days_before": 3,
+    "median_days_before": 3
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The available articles discuss coffee start\u2011ups and a Brazilian tax\u2011evasion investigation but do not provide a direct, timely reason for the price rise on 2021\u201103\u201122.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2584,
+    "evidence_document_ids": [
+      "7a970017859f37e7",
+      "b24ced6b63f01a52",
+      "8faf6180312a2779"
+    ],
+    "evidence_packing": {
+      "n_input": 3,
+      "n_packed": 3,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1307,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

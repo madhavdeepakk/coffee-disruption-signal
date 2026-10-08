@@ -1,0 +1,10 @@
+# Test dependencies. The unit tests never call a model or the network, so
+# this is deliberately smaller than requirements-pipeline.txt: the model
+# client is stubbed (tests/conftest.py) and the embedding model is not loaded.
+#
+#     pip install -r requirements-dev.txt
+#     python -m pytest -q
+#
+-r requirements.txt
+trafilatura>=1.8
+pytest>=8.0

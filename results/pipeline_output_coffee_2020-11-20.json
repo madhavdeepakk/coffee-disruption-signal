@@ -1,0 +1,106 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2020-11-20",
+    "price": 115.5,
+    "z_score": -2.112195073678856,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -4.268546589926278,
+    "cumulative_pct_move": 7.99439298338224,
+    "cumulative_z_score": 1.0072848582998453,
+    "direction": "down"
+  },
+  "price_description": "-4.3% day-over-day move (z-score -2.11)",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 75,
+    "dropped_out_of_window": 1,
+    "collapsed_duplicates": 2,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "1_document(s)_above_threshold",
+    "best_score": 0.8544352054595947,
+    "accepted_document_count": 1,
+    "accepted_document_ids": [
+      "030687db03e3a5e5"
+    ],
+    "total_documents_considered": 75,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T14:17:45.174148+00:00"
+  },
+  "documents_retrieved": 75,
+  "sources": [
+    {
+      "document_id": "030687db03e3a5e5",
+      "title": "How climate change threatens African coffee farmers - DW.com",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNEY1VlZ3Q3RCeXVLN1NHSG5hTHZvckNqaGV1NU45WjR5bU9XQ0J4T3ZnRmpFY0FnVWVyeDlpNmgtMGRCV0tkXzhhZ0oxeDFDcmZDV0ZxQlZ0UVBGOEtxSXdrSlltMW41VFRoUXdVRkw2YUpkbG9aRnFCS3ZYUDNxY0wtMFNscTAzSnh3StIBjAFBVV95cUxQazZicmw2dVFlQ1JxYU54WThReG9WVEhmbndGdUZLb1pVeHV3dzczTDhGMHBQTFBDRzFEenFreDJPWjczWmpOa1Z1Nzd5MmdMVkI0NlNDeHJPVDhDM00wMEpFdjdpbW93NTk5QWVoQnZWNHprRG9wUXhFVEFuV2F4LWs4bVRQaXJmV253Yw?oc=5",
+      "publication_date": "2020-11-18",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8544352054595947,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 1,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 1,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 2,
+    "median_days_before": 2
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The only retrieved document discusses climate\u2011change risks to African coffee farmers two days earlier and does not provide a timely, direction\u2011consistent reason for the price drop on 2020\u201111\u201120.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 1802,
+    "evidence_document_ids": [
+      "030687db03e3a5e5"
+    ],
+    "evidence_packing": {
+      "n_input": 1,
+      "n_packed": 1,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 224,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

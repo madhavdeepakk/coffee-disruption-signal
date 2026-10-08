@@ -1,0 +1,56 @@
+{
+  "anomaly": {
+    "date": "2026-07-09",
+    "price": 356.95001220703125,
+    "z_score": 3.2906105216167574,
+    "anomaly_flag": true,
+    "pct_move": 10.084814867241711,
+    "direction": "up"
+  },
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 3,
+    "network_attempts": 3,
+    "network_failures": 1,
+    "network_successes": 2,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 9,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "2_document(s)_above_threshold",
+    "best_score": 0.8948689699172974,
+    "accepted_document_count": 2,
+    "accepted_document_ids": [
+      "39b52adb799ffab9",
+      "1b22e9e92bda8c28"
+    ],
+    "total_documents_considered": 9,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-09-17T18:20:16.646119+00:00"
+  },
+  "documents_retrieved": 9,
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 0,
+    "inconsistent": 0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided documents predate July 9, 2026, and only report on coffee market drivers up through July 6, 2026, lacking any specific evidence for the price move on July 9.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient"
+  },
+  "faithfulness_report": null
+}

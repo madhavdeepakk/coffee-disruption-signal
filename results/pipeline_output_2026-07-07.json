@@ -1,0 +1,65 @@
+{
+  "anomaly": {
+    "date": "2026-07-07",
+    "price": 331.6000061035156,
+    "z_score": -3.236231441700938,
+    "anomaly_flag": true,
+    "pct_move": -8.88858497554151,
+    "direction": "down"
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "23_document(s)_above_threshold",
+    "best_score": 0.8948688507080078,
+    "accepted_document_count": 23,
+    "accepted_document_ids": [
+      "39b52adb799ffab9",
+      "1b22e9e92bda8c28",
+      "c6e6ef2348e7981f",
+      "512a3fe478118e41",
+      "1d276c5099035f6a",
+      "0e7ed2313d3b3427",
+      "be5d6c80b24ce915",
+      "bc0c746338108630",
+      "6ec81533b91d1905",
+      "fdcb3bd840bb0d3f",
+      "82b4d9aa793b6965",
+      "1dc3a26fad73b7c5",
+      "7e2be0fa7c56d490",
+      "3c61d6d0ae773450",
+      "72fb67e14645887d",
+      "d4a7024257710b5b",
+      "422d8e7f1e3eade4",
+      "23896ac4307f0f62",
+      "9d51c8abf4fa9583",
+      "2fe95694c9332d3e",
+      "c675f5620d7baece",
+      "7f4b730286aafd0b",
+      "c1bea6c5b693975d"
+    ],
+    "total_documents_considered": 23,
+    "threshold_used": 0.4,
+    "evaluated_at_utc": "2026-09-12T01:13:32.432623+00:00"
+  },
+  "documents_retrieved": 23,
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "Following a massive surge where arabica coffee futures jumped over 16% in a single session due to harvest delays in Brazil, historic low exchange stocks, and El Ni\u00f1o weather risks (source: doc_1b22e9e92bda8c28, source: doc_1d276c5099035f6a), futures experienced a sharp drop of nearly 9% (source: doc_82b4d9aa793b6965). Analysts attribute this rapid decline to the rushed closing of speculative positions amidst uncertainty surrounding the El Ni\u00f1o weather phenomenon (source: doc_82b4d9aa793b6965).",
+    "citations": [
+      {
+        "document_id": "82b4d9aa793b6965",
+        "supports": "Reports that coffee futures fell nearly 9% right after a 16% rally, which analysts attribute to the hasty closing of speculative positions amidst El Ni\u00f1o uncertainty."
+      },
+      {
+        "document_id": "1b22e9e92bda8c28",
+        "supports": "Notes that coffee futures jumped 16.19% on Monday fueled by harvest delays in Brazil, shrinking exchange stocks, and El Ni\u00f1o risks."
+      },
+      {
+        "document_id": "1d276c5099035f6a",
+        "supports": "Confirms the single-day price spike of over 15% driven by heavy rainfall delaying the Brazilian harvest in Minas Gerais and subsequent weather uncertainty."
+      }
+    ],
+    "confidence": "high",
+    "reason": null
+  }
+}

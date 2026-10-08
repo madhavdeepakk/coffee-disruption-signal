@@ -1,0 +1,186 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2021-03-18",
+    "price": 126.4000015258789,
+    "z_score": -2.860449930835164,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -4.855102959205684,
+    "cumulative_pct_move": -1.55762653089988,
+    "cumulative_z_score": -0.7423804892637875,
+    "direction": "down"
+  },
+  "price_description": "-4.9% day-over-day move (z-score -2.86)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (3 pointed the opposite way, 2 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 0,
+    "network_failures": 0,
+    "network_successes": 1,
+    "cache_hits": 6,
+    "fallback_added": 0,
+    "documents_returned": 160,
+    "dropped_out_of_window": 6,
+    "collapsed_duplicates": 26,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "5_document(s)_above_threshold",
+    "best_score": 0.8622417449951172,
+    "accepted_document_count": 5,
+    "accepted_document_ids": [
+      "b24ced6b63f01a52",
+      "afa03f15febc6505",
+      "49493c3d33cba66b",
+      "8faf6180312a2779",
+      "339d4e6b4dd73b00"
+    ],
+    "total_documents_considered": 160,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T14:30:24.938584+00:00"
+  },
+  "documents_retrieved": 160,
+  "sources": [
+    {
+      "document_id": "b24ced6b63f01a52",
+      "title": "Brazilian Officials Carry Out Interstate Tax Fraud Sting  Operation ExpressoDaily Coffee News by Roast Magazine",
+      "url": "https://dailycoffeenews.com/2021/03/17/brazilian-officials-carry-out-interstate-tax-fraud-sting-operation-expresso/",
+      "publication_date": "2021-03-17",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1791,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dailycoffeenews.com"
+      ],
+      "retrieval_score": 0.2778,
+      "semantic_score": 0.8622417449951172,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8faf6180312a2779",
+      "title": "Contemplating the Coffee Supply Chain : A Horror Story",
+      "url": "https://www.darkreading.com/edge/theedge/contemplating-the-coffee-supply-chain-a-horror-story/b/d-id/1340401",
+      "publication_date": "2021-03-12",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 11908,
+      "n_copies": 2,
+      "syndication_domains": [
+        "darkreading.com"
+      ],
+      "retrieval_score": 0.4158,
+      "semantic_score": 0.8533997535705566,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "afa03f15febc6505",
+      "title": "The coffee start-ups brewing up a storm in lockdown - bbc.com",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB1QkVEdVMwWUQ0WGRKWmVPNG5LUUFpY2ZJcUxZT0NKQlY1VDhmZ2J0TDFEWW1HYVpZNE5lZEFjdVdpWVZxZWZXb1gzR3U1N1ZJcEJ2Tw?oc=5",
+      "publication_date": "2021-03-17",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8572226762771606,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "49493c3d33cba66b",
+      "title": "Coffee prices soaring due to  systemic  coronavirus supply chain disruptions",
+      "url": "https://www.naturalnews.com/2021-03-10-coffee-prices-soaring-systemic-coronavirus-supply-disruptions.html",
+      "publication_date": "2021-03-10",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 3636,
+      "n_copies": 1,
+      "syndication_domains": [
+        "naturalnews.com"
+      ],
+      "retrieval_score": 0.4211,
+      "semantic_score": 0.8539573550224304,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "339d4e6b4dd73b00",
+      "title": "Peabirus : Ap\u00f3s dia de volatilidade , caf\u00e9 ar\u00e1bica e conilon finalizam com leves altas ; BR mant\u00e9m estabilidade",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=89710",
+      "publication_date": "2021-03-10",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 3382,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8505917191505432,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 0,
+    "inconsistent": 3
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 5,
+    "n_fresh": 2,
+    "fresh_within_days": 2,
+    "newest_days_before": 1,
+    "median_days_before": 4
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The most timely and relevant document (b24ced6b63f01a52) reports a tax fraud investigation targeting Brazilian coffee businesses, but it does not explicitly state that this event caused a price drop, nor does it provide evidence of a supply shock or demand collapse sufficient to explain a -4.9% move; the other documents are either too old (6 days prior) or off-topic (cybersecurity, startups).",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 131687,
+    "evidence_document_ids": [
+      "b24ced6b63f01a52",
+      "8faf6180312a2779",
+      "afa03f15febc6505",
+      "49493c3d33cba66b",
+      "339d4e6b4dd73b00"
+    ],
+    "evidence_packing": {
+      "n_input": 5,
+      "n_packed": 5,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 2460,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

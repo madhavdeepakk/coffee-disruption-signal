@@ -1,0 +1,65 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2020-11-16",
+    "price": 115.6500015258789,
+    "z_score": 3.056317254155473,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 5.858124966479548,
+    "cumulative_pct_move": 12.49999814460256,
+    "cumulative_z_score": 1.4761140679984657,
+    "direction": "up"
+  },
+  "price_description": "+5.9% day-over-day move (z-score 3.06)",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence was retrieved but judged too weak to explain the move.",
+    "detail": "76 document(s) were retrieved, but none cleared the relevance gate. The system refuses rather than build a confident-sounding explanation on weak or off-topic material.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 3,
+    "network_successes": 4,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 76,
+    "dropped_out_of_window": 3,
+    "collapsed_duplicates": 6,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "reason": "documents_retrieved_but_below_relevance_threshold",
+    "best_score": 0.8464950919151306,
+    "accepted_document_count": 0,
+    "accepted_document_ids": [],
+    "total_documents_considered": 76,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T14:12:40.945993+00:00"
+  },
+  "documents_retrieved": 76,
+  "sources": [],
+  "direction_summary": {},
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 0,
+    "n_fresh": 0,
+    "fresh_within_days": 2,
+    "newest_days_before": null,
+    "median_days_before": null
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": null,
+    "reason": "gate_rejected: documents_retrieved_but_below_relevance_threshold"
+  },
+  "faithfulness_report": null
+}

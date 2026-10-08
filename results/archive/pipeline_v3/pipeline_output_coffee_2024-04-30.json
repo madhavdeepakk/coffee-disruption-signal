@@ -1,0 +1,276 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2024-04-30",
+    "price": 220.6499938964844,
+    "z_score": -2.851443878711759,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -5.523446365536803,
+    "cumulative_pct_move": -6.800424964526119,
+    "cumulative_z_score": -1.3944922420162045,
+    "direction": "down"
+  },
+  "price_description": "-5.5% day-over-day move (z-score -2.85)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (7 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 1,
+    "network_failures": 0,
+    "network_successes": 2,
+    "cache_hits": 5,
+    "fallback_added": 0,
+    "documents_returned": 156,
+    "dropped_out_of_window": 1,
+    "collapsed_duplicates": 15,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "9_document(s)_above_threshold",
+    "best_score": 0.8931211829185486,
+    "accepted_document_count": 9,
+    "accepted_document_ids": [
+      "cf42aad8b3bff921",
+      "5b4ac10cc134a218",
+      "a409566f5ca25508",
+      "1cf6b3544ab3f4d3",
+      "24fdaca262c81c85",
+      "6bc8ad97d341b830",
+      "c7dc63275e0ebea3",
+      "9b5b6cd21b4ad08d",
+      "40c2be1831fd1318"
+    ],
+    "total_documents_considered": 156,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T10:56:13.141510+00:00"
+  },
+  "documents_retrieved": 156,
+  "sources": [
+    {
+      "document_id": "40c2be1831fd1318",
+      "title": "Editorial : Shame on the Coffee Industry Earth Day PR",
+      "url": "https://dailycoffeenews.com/2024/04/23/editorial-shame-on-the-coffee-industrys-earth-day-pr/",
+      "publication_date": "2024-04-23",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 2735,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dailycoffeenews.com"
+      ],
+      "retrieval_score": 0.2885,
+      "semantic_score": 0.85020512342453,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6bc8ad97d341b830",
+      "title": "Pricey Coffee Is Here to Stay as Hoarding, Heat Hit Vietnam Supply - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOS1I4QmFzUDQxWlZwQ19KU1p3U3Z6ZHMwRFc2U3c4OF9RZHFkMzloendUczd4eTFac3U0VWR2bmJIU0R4bXlEbzJLTXdOWDBfRXJDTWRZY3VfY2tQZ0d0cXJQVzI5OHRFTUplUzc0RVNLd3VPMHRaZ3dHVk5yeHFHeTJlOUl3MnF5UVdVUXE0aXdicm1zNHBjbjJpcmxxMXk4S3dEUjQ1TUxXUzh6VmtPdTlwaw?oc=5",
+      "publication_date": "2024-04-25",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8607783317565918,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "cf42aad8b3bff921",
+      "title": "Coffee Prices Supported by Weather Concerns in Brazil and Vietnam",
+      "url": "https://www.theglobeandmail.com/investing/markets/commodities/LSF19/pressreleases/25741202/coffee-prices-supported-by-weather-concerns-in-brazil-and-vietnam/",
+      "publication_date": "2024-04-25",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 5318,
+      "n_copies": 1,
+      "syndication_domains": [
+        "theglobeandmail.com"
+      ],
+      "retrieval_score": 0.4158,
+      "semantic_score": 0.8931211829185486,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5b4ac10cc134a218",
+      "title": "Robusta Coffee Posts a New Record High on Coffee Crop Concerns in Vietnam",
+      "url": "https://www.theglobeandmail.com/investing/markets/commodities/SWV19/pressreleases/25711319/robusta-coffee-posts-a-new-record-high-on-coffee-crop-concerns-in-vietnam/",
+      "publication_date": "2024-04-24",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 5283,
+      "n_copies": 1,
+      "syndication_domains": [
+        "theglobeandmail.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.8851132392883301,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a409566f5ca25508",
+      "title": "That Morning Cup Of  Joe  \u2013 In Saner Thought",
+      "url": "https://lobotero.com/2024/04/21/that-morning-cup-of-joe/",
+      "publication_date": "2024-04-21",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 7,
+      "publication_date_unknown": false,
+      "text_chars": 5991,
+      "n_copies": 1,
+      "syndication_domains": [
+        "lobotero.com"
+      ],
+      "retrieval_score": 0.1935,
+      "semantic_score": 0.8798724412918091,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "1cf6b3544ab3f4d3",
+      "title": "21 April 2024 \u2013 In Saner Thought",
+      "url": "https://lobotero.com/2024/04/21/",
+      "publication_date": "2024-04-21",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 7,
+      "publication_date_unknown": false,
+      "text_chars": 5991,
+      "n_copies": 1,
+      "syndication_domains": [
+        "lobotero.com"
+      ],
+      "retrieval_score": 0.1935,
+      "semantic_score": 0.8777539730072021,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "24fdaca262c81c85",
+      "title": "Heat wave , Red Sea crisis send global tea prices up",
+      "url": "https://www.ft.lk/front-page/Heat-wave-Red-Sea-crisis-send-global-tea-prices-up/44-761108",
+      "publication_date": "2024-04-26",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2877,
+      "n_copies": 1,
+      "syndication_domains": [
+        "ft.lk"
+      ],
+      "retrieval_score": 0.2151,
+      "semantic_score": 0.8708676099777222,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c7dc63275e0ebea3",
+      "title": "Cost Of Coffee Set To Skyrocket",
+      "url": "https://www.forbes.com/sites/simonconstable/2024/04/27/cost-of-coffee-set-to-skyrocket/",
+      "publication_date": "2024-04-27",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "forbes.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8539581298828125,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "9b5b6cd21b4ad08d",
+      "title": "Pre\u00e7os do caf\u00e9 cedem em Nova York com previs\u00e3o de chuvas no Vietn\u00e3",
+      "url": "https://globorural.globo.com/cotacoes/noticia/2024/04/precos-do-cafe-cedem-em-nova-york-com-previsao-de-chuvas-no-vietna.ghtml",
+      "publication_date": "2024-04-26",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2746,
+      "n_copies": 1,
+      "syndication_domains": [
+        "globorural.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8534548282623291,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 1,
+    "inconsistent": 7
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 9,
+    "n_fresh": 3,
+    "fresh_within_days": 2,
+    "newest_days_before": 2,
+    "median_days_before": 3
+  },
+  "explanation_result": {
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 4252,
+    "evidence_document_ids": [
+      "40c2be1831fd1318",
+      "6bc8ad97d341b830",
+      "cf42aad8b3bff921",
+      "5b4ac10cc134a218",
+      "a409566f5ca25508",
+      "1cf6b3544ab3f4d3",
+      "24fdaca262c81c85",
+      "c7dc63275e0ebea3",
+      "9b5b6cd21b4ad08d"
+    ],
+    "evidence_packing": {
+      "n_input": 9,
+      "n_packed": 9,
+      "excerpt_chars": 1100,
+      "estimated_tokens": 3425,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": true
+    },
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": "medium",
+    "reason": "direction_guard: 7 accepted document(s) pointed against the move vs 1 with it",
+    "withheld_explanation": {
+      "explanation": "The -5.5% drop on 30\u202fApril aligns with a report on 26\u202fApril that coffee prices fell in New\u202fYork (\u20111.80%) and London (\u20118.73%) as traders priced in forecasted rains in Vietnam, which were expected to alleviate the drought\u2011driven supply squeeze on robusta. The easing of supply concerns provided a bearish catalyst that likely carried over into the 30\u202fApril session.",
+      "citations": [
+        {
+          "document_id": "9b5b6cd21b4ad08d",
+          "supports": "price decline linked to rain forecast in Vietnam easing supply concerns"
+        }
+      ],
+      "confidence": "medium"
+    }
+  },
+  "faithfulness_report": null
+}

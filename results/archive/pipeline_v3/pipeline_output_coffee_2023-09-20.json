@@ -1,0 +1,286 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2023-09-20",
+    "price": 158.1999969482422,
+    "z_score": -2.73979889691934,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -5.552240627915112,
+    "cumulative_pct_move": 4.25040985057145,
+    "cumulative_z_score": 1.1874329140104118,
+    "direction": "down"
+  },
+  "price_description": "-5.6% day-over-day move (z-score -2.74)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (4 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 5,
+    "network_failures": 1,
+    "network_successes": 5,
+    "cache_hits": 1,
+    "fallback_added": 0,
+    "documents_returned": 155,
+    "dropped_out_of_window": 4,
+    "collapsed_duplicates": 19,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "10_document(s)_above_threshold",
+    "best_score": 0.8898494243621826,
+    "accepted_document_count": 10,
+    "accepted_document_ids": [
+      "aced32d85e65e906",
+      "fab4bad0b23f3fee",
+      "70cb43c7c492aaf5",
+      "a79a58f7d411ce79",
+      "7f91169a67a6d857",
+      "17c73b74578515d5",
+      "c33b5f16d142f33b",
+      "5274bf4496c752cb",
+      "eba6e8050ed2dd04",
+      "976010dcacc7b4e5"
+    ],
+    "total_documents_considered": 155,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T10:52:28.793719+00:00"
+  },
+  "documents_retrieved": 155,
+  "sources": [
+    {
+      "document_id": "17c73b74578515d5",
+      "title": "Peabirus : Exportaes de caf\u00e9 ganham firmeza",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=107023",
+      "publication_date": "2023-09-18",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2194,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.854533314704895,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "70cb43c7c492aaf5",
+      "title": "Arabica Coffee Slips on Brazil Harvest Pressures While Tight Supplies Boost Robusta",
+      "url": "https://www.nasdaq.com/articles/arabica-coffee-slips-on-brazil-harvest-pressures-while-tight-supplies-boost-robusta",
+      "publication_date": "2023-09-14",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "nasdaq.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8710042834281921,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a79a58f7d411ce79",
+      "title": "Global Coffee Firms Struggle with EU New Deforestation - Linked Import Laws",
+      "url": "http://www.econotimes.com/Global-Coffee-Firms-Struggle-to-Comply-with-EUs-Deforestation-Law-Putting-Farmers-at-Risk-1662763",
+      "publication_date": "2023-09-15",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2636,
+      "n_copies": 1,
+      "syndication_domains": [
+        "econotimes.com"
+      ],
+      "retrieval_score": 0.2832,
+      "semantic_score": 0.8626947999000549,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7f91169a67a6d857",
+      "title": "Coffee firms wont be ready to comply with EU deforestation law \u2013 report",
+      "url": "https://in-cyprus.philenews.com/news/international/coffee-firms-wont-be-ready-to-comply-with-eu-deforestation-law-report/",
+      "publication_date": "2023-09-14",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 2870,
+      "n_copies": 2,
+      "syndication_domains": [
+        "in-cyprus.philenews.com",
+        "malaymail.com"
+      ],
+      "retrieval_score": 0.2832,
+      "semantic_score": 0.8563934564590454,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c33b5f16d142f33b",
+      "title": "Droughts and declining consumption put the health of Colombian coffee to the test - EL PA\u00cdS English",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQ0tMQUxDX1dQeG5SNjktSS1UQ3VuN1c1enpwTmowMDdRZG5yNnNWQ2xMZ19kdi1zUDAtNnlUc2QtZmRUeTdTOFF0LXd2cDhobXVBME1tMWlwUUhqN28xVWFNU1VyM0ZYbFQ4T2Y1S3ptUlRLVy1FM1dWX19Dd01RQlRFLUp6M184Y21QSVBOdi1ZdUxIQ3l3TmFjTXZJRkJ3Q251WWc0YmN1VURCLUdlYkF4M3pFVjJTNmJFbjBLdjc5MzNZcGl4ZE5NWVlwSmJHTVdYa9IB6AFBVV95cUxQQjhvOWRyY2QyNFhzYlBhckxPOVFfOF84Q2lteGpoWFZHamh5cUFseE5IS0U0UEVqa2NLU05HNmF3Q2taNTBKSXdBWHlEbU1jb01Bb2pYNUhoc05fY1ZuWVFscTNwLTUwam4xZGxPeGlBVkRIc1FoWThIX0hEeXhjeGM3Z291b2JEcjRHZTFGdnNIcUFfMXg5MENLanNubGxUSzRvWk52M2ZxNUhrUElTX3BkUTdqWU5qZk1GUFJIU2ViUVlaODhUNks0cHdNX0U1STZDTmlRNUNEX1g2ekpqRUFpZWs1aGhi?oc=5",
+      "publication_date": "2023-09-10",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.851273775100708,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "eba6e8050ed2dd04",
+      "title": "World Coffee Research Releases Free Coffee Varieties Poster - Sprudge Coffee",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNnJyWU80UWVkZF9TdmxjVG5CNzZTcGxQVHl3WmZOS1N3NENxTkpyZEVaVGJpNlJWM0xrYVV2ZTJEMGdTclktWTltd3JDb2wtQUZvRnVvVXRGZHlrWElaQVFWcXJCRFBwRW8wWW52X1RQSUZRdVdVVmFhSGxhcTJFNTVPaGlnTXAteUN5S0JKckRaczEtMEE?oc=5",
+      "publication_date": "2023-09-18",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8501682281494141,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "aced32d85e65e906",
+      "title": "Coffee Prices Higher on Forecasts for Hot and Dry Brazilian Weather",
+      "url": "https://www.theglobeandmail.com/investing/markets/commodities/CTY00/pressreleases/20357740/coffee-prices-higher-on-forecasts-for-hot-and-dry-brazilian-weather/",
+      "publication_date": "2023-09-18",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4356,
+      "n_copies": 1,
+      "syndication_domains": [
+        "theglobeandmail.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.8898494243621826,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "fab4bad0b23f3fee",
+      "title": "Coffee Prices Finish Higher on Strength in Brazilian Real",
+      "url": "https://www.theglobeandmail.com/investing/markets/commodities/SDK21/pressreleases/20279447/coffee-prices-finish-higher-on-strength-in-brazilian-real/",
+      "publication_date": "2023-09-14",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 4236,
+      "n_copies": 1,
+      "syndication_domains": [
+        "theglobeandmail.com"
+      ],
+      "retrieval_score": 0.31,
+      "semantic_score": 0.8867096304893494,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5274bf4496c752cb",
+      "title": "Vietnamese Coffee Market : Consumers , Challenges , and Prospects",
+      "url": "https://www.vietnam-briefing.com/news/vietnamese-coffee-market-a-deep-dive-into-its-consumers-challenges-and-prospects.html",
+      "publication_date": "2023-09-15",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 14689,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vietnam-briefing.com"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.8511569499969482,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "976010dcacc7b4e5",
+      "title": "Vietnamese coffee is out of stock for export despite record - high prices \u00bb Vietnam News - Latest Updates and World Insights",
+      "url": "https://vietreader.com/2023/09/16/vietnamese-coffee-is-out-of-stock-for-export-despite-record-high-prices.html",
+      "publication_date": "2023-09-16",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 4388,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vietreader.com"
+      ],
+      "retrieval_score": 0.543,
+      "semantic_score": 0.8453748822212219,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 5,
+    "inconsistent": 4
+  },
+  "evidence_recency": {
+    "n_dated": 10,
+    "n_fresh": 3,
+    "fresh_within_days": 2,
+    "newest_days_before": 2,
+    "median_days_before": 3.0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The available documents describe background supply constraints and upcoming EU regulations but none provide a timely (\u22643 trading days) reason for the price drop on 2023-09-20.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 3287,
+    "evidence_document_ids": [
+      "17c73b74578515d5",
+      "70cb43c7c492aaf5",
+      "a79a58f7d411ce79",
+      "7f91169a67a6d857",
+      "c33b5f16d142f33b",
+      "eba6e8050ed2dd04",
+      "aced32d85e65e906",
+      "fab4bad0b23f3fee",
+      "5274bf4496c752cb",
+      "976010dcacc7b4e5"
+    ],
+    "evidence_packing": {
+      "n_input": 10,
+      "n_packed": 10,
+      "excerpt_chars": 1100,
+      "estimated_tokens": 3830,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": true
+    }
+  },
+  "faithfulness_report": null
+}

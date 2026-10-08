@@ -1,0 +1,147 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2022-10-28",
+    "price": 169.8000030517578,
+    "z_score": -2.1210947766913044,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -5.060107767913528,
+    "cumulative_pct_move": -13.675645304439222,
+    "cumulative_z_score": -1.7233047556390175,
+    "direction": "down"
+  },
+  "price_description": "-5.1% day-over-day move (z-score -2.12)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (2 pointed the opposite way, 0 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 89,
+    "dropped_out_of_window": 2,
+    "collapsed_duplicates": 6,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "3_document(s)_above_threshold",
+    "best_score": 0.876007080078125,
+    "accepted_document_count": 3,
+    "accepted_document_ids": [
+      "98b36f2de3741528",
+      "097340bf7b7a270d",
+      "91d12c336c4d103e"
+    ],
+    "total_documents_considered": 89,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T15:54:41.180240+00:00"
+  },
+  "documents_retrieved": 89,
+  "sources": [
+    {
+      "document_id": "097340bf7b7a270d",
+      "title": "Coffee Prices Under Pressure On Improving Supply Outlook - giacaphe.com",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPb0tlejF6bWY1Rmgwdjh5Tk1TLXdSRklUOGpyRS14SW8wTmpGcW5nbjEwSkpjdUVWbHcwUGhZc2taempxNzRCcHZJZTdpVEpuVTQxRTUyUWtpTVJUNGY3MkszbGJXZ2szSzh4NEp1dWt2RjN2aWxNTmZuVGpFcWwyMVhxbWlJYjFi?oc=5",
+      "publication_date": "2022-10-22",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8575704097747803,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "98b36f2de3741528",
+      "title": "Brazilian coffees selected for international phase of CoE",
+      "url": "https://www.gcrmag.com/brazilian-coffees-selected-for-international-phase-of-coe/",
+      "publication_date": "2022-10-26",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2144,
+      "n_copies": 1,
+      "syndication_domains": [
+        "gcrmag.com"
+      ],
+      "retrieval_score": 0.1667,
+      "semantic_score": 0.876007080078125,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "91d12c336c4d103e",
+      "title": "As Bolsonaro Cuts Into Lula Lead , Battle for Key State Heats Up",
+      "url": "https://news.yahoo.com/bolsonaro-cuts-lula-lead-battle-130010561.html",
+      "publication_date": "2022-10-24",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 9836,
+      "n_copies": 2,
+      "syndication_domains": [
+        "bnnbloomberg.ca",
+        "news.yahoo.com"
+      ],
+      "retrieval_score": 0.1667,
+      "semantic_score": 0.8542566299438477,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 1,
+    "inconsistent": 2
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 3,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 2,
+    "median_days_before": 4
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The available documents are either older than three trading days or do not directly link to a price decline on 2022-10-28, so they cannot adequately explain the observed -5.1% move.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2170,
+    "evidence_document_ids": [
+      "097340bf7b7a270d",
+      "98b36f2de3741528",
+      "91d12c336c4d103e"
+    ],
+    "evidence_packing": {
+      "n_input": 3,
+      "n_packed": 3,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1298,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

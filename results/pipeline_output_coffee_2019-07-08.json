@@ -1,0 +1,345 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2019-07-08",
+    "price": 104.75,
+    "z_score": -2.075048791922357,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -4.294195595514528,
+    "cumulative_pct_move": 4.95991663013783,
+    "cumulative_z_score": 0.4642218066997402,
+    "direction": "down"
+  },
+  "price_description": "-4.3% day-over-day move (z-score -2.08)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (5 pointed the opposite way, 3 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 2,
+    "network_successes": 5,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 99,
+    "dropped_out_of_window": 6,
+    "collapsed_duplicates": 12,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "12_document(s)_above_threshold",
+    "best_score": 0.8944292068481445,
+    "accepted_document_count": 12,
+    "accepted_document_ids": [
+      "a427341fb1c0846d",
+      "cfd2b22ccbef25f1",
+      "00a5882d4be5ba4d",
+      "d651930ff9fe8d45",
+      "4691562bdbb73b5f",
+      "eea9e3d15f2a149b",
+      "a3048a07176b606e",
+      "c3c432866b07d2b4",
+      "e81435c185d6abaf",
+      "204c93138f959bee",
+      "e413c6bf20140524",
+      "5ba307bca8e46d12"
+    ],
+    "total_documents_considered": 99,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T12:56:56.798230+00:00"
+  },
+  "documents_retrieved": 99,
+  "sources": [
+    {
+      "document_id": "e81435c185d6abaf",
+      "title": "Ola de fr\u00edo impacta zonas de caf\u00e9 ar\u00e1bica en Brasil",
+      "url": "https://www.perfil.com/noticias/bloomberg/bc-ola-de-frio-impacta-zonas-de-cafe-arabica-en-brasil.phtml",
+      "publication_date": "2019-07-08",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2839,
+      "n_copies": 1,
+      "syndication_domains": [
+        "perfil.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8542550206184387,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "204c93138f959bee",
+      "title": "Caf\u00e9 fecha em baixa em Nova York ap\u00f3s confirmao de geada fraca no Brasil",
+      "url": "https://canalrural.uol.com.br/noticias/agricultura/cafe/cafe-fecha-em-baixa-em-nova-york-apos-confirmacao-de-geada-fraca-no-brasil/",
+      "publication_date": "2019-07-08",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 1190,
+      "n_copies": 1,
+      "syndication_domains": [
+        "canalrural.uol.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8512335419654846,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e413c6bf20140524",
+      "title": "Growers deny Coffee Board output figures",
+      "url": "https://www.thehindu.com/business/growers-deny-coffee-board-output-figures/article28264679.ece",
+      "publication_date": "2019-07-02",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 2851,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thehindu.com"
+      ],
+      "retrieval_score": 0.2939,
+      "semantic_score": 0.8505730628967285,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a427341fb1c0846d",
+      "title": "UPDATE 1 - Frosts reported in several coffee , sugarcane areas in Brazil - agronomists",
+      "url": "https://www.cnbc.com/2019/07/08/reuters-america-update-1-frosts-reported-in-several-coffee-sugarcane-areas-in-brazil-agronomists.html",
+      "publication_date": "2019-07-08",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "cnbc.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8944292068481445,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "cfd2b22ccbef25f1",
+      "title": "Frosts reported in several coffee , sugarcane areas in Brazil : agronomists",
+      "url": "https://www.reuters.com/article/us-brazil-coffee-sugar/frosts-reported-in-several-coffee-sugarcane-areas-in-brazil-agronomists-idUSKCN1U31JQ",
+      "publication_date": "2019-07-08",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "reuters.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8923949599266052,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "00a5882d4be5ba4d",
+      "title": "Brazil frosts hit coffee , sugarcane areas ; production impact seen",
+      "url": "https://www.reuters.com/article/us-brazil-coffee-sugar/brazil-frosts-hit-coffee-sugarcane-areas-production-impact-seen-idUSKCN1U31JQ",
+      "publication_date": "2019-07-08",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "reuters.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8906720876693726,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4691562bdbb73b5f",
+      "title": "UPDATE 2 - Brazil frosts hit coffee , sugarcane areas ; production impact seen",
+      "url": "https://www.cnbc.com/2019/07/08/reuters-america-update-2-brazil-frosts-hit-coffee-sugarcane-areas-production-impact-seen.html",
+      "publication_date": "2019-07-08",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 2,
+      "syndication_domains": [
+        "agriculture.com",
+        "cnbc.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8877378702163696,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d651930ff9fe8d45",
+      "title": "Brazil\u2019s Frost Fails to Bolster Coffee as Weather Concerns Ebb - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPb1p1RERPbDFQTWFaVy1mOTJJUHhnNEFwbTE2T2x5X0s4bjVHeElLT0ozR0pFTVVDNkJ3RkpZdlQ4OHF2Rm1Lb1NSYXEtUVVYSVFvSHZvSWRWNHFxWjRaRHhSWVlFVFVrYjBfdDdrU2R3b255VnczVHdCaHBvc3FXYnpRYU9qNEhuRm9EYU5nQVdLT2xCUHFPQlg5ZmhST3FCSHROR21OYW1vN25jb1B6Nm13?oc=5",
+      "publication_date": "2019-07-08",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.3441,
+      "semantic_score": 0.8882910013198853,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "eea9e3d15f2a149b",
+      "title": "The Brazil Coffee Frost Scare",
+      "url": "https://seekingalpha.com/article/4273206-brazil-coffee-frost-scare",
+      "publication_date": "2019-07-02",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "seekingalpha.com"
+      ],
+      "retrieval_score": 0.3441,
+      "semantic_score": 0.8723961114883423,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a3048a07176b606e",
+      "title": "Coffee tumbles as market assesses frost impact ; cocoa at one - year high",
+      "url": "https://leaderpost.com/pmn/business-pmn/coffee-tumbles-as-market-assesses-frost-impact-cocoa-at-one-year-high/wcm/4c64aca7-b49b-45ad-8ecb-a4d6a436db2e",
+      "publication_date": "2019-07-08",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "leaderpost.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8712712526321411,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c3c432866b07d2b4",
+      "title": "SOFTS - Coffee tumbles as market assesses frost impact ; cocoa at one - year high",
+      "url": "https://www.cnbc.com/2019/07/08/reuters-america-softs-coffee-tumbles-as-market-assesses-frost-impact-cocoa-at-one-year-high.html",
+      "publication_date": "2019-07-08",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "cnbc.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8697562217712402,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5ba307bca8e46d12",
+      "title": "Caf\u00e9 : risco de geada no fim da semana faz pre\u00e7o subir 1 , 7 % em NY",
+      "url": "https://canalrural.uol.com.br/noticias/agricultura/cafe/cafe-risco-de-geada-no-fim-da-semana-faz-preco-subir-17-em-ny/",
+      "publication_date": "2019-07-02",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 479,
+      "n_copies": 1,
+      "syndication_domains": [
+        "canalrural.uol.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8501689434051514,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 3,
+    "neutral": 4,
+    "inconsistent": 5
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 12,
+    "n_fresh": 9,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 0.0
+  },
+  "explanation_result": {
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2788,
+    "evidence_document_ids": [
+      "e81435c185d6abaf",
+      "204c93138f959bee",
+      "e413c6bf20140524",
+      "a427341fb1c0846d",
+      "cfd2b22ccbef25f1",
+      "00a5882d4be5ba4d",
+      "4691562bdbb73b5f",
+      "d651930ff9fe8d45",
+      "eea9e3d15f2a149b",
+      "a3048a07176b606e",
+      "c3c432866b07d2b4",
+      "5ba307bca8e46d12"
+    ],
+    "evidence_packing": {
+      "n_input": 12,
+      "n_packed": 12,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 3019,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    },
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": "high",
+    "reason": "direction_guard: 5 accepted document(s) pointed against the move vs 3 with it",
+    "withheld_explanation": {
+      "explanation": "On 2019-07-08 coffee futures fell about 4% as market participants reassessed the impact of a cold front in Brazil. Initial reports of frosts raised concerns about potential damage to Brazil's Arabica coffee regions, but later updates indicated the frosts were weak and unlikely to cause significant crop loss, prompting traders to sell and driving the price down (source: 204c93138f959bee). The broader coverage of the frost event across Brazil\u2019s coffee\u2011producing areas reinforced the view that the weather risk was diminishing, contributing to the sell\u2011off (source: e81435c185d6abaf; source: cfd2b22ccbef25f1).",
+      "citations": [
+        {
+          "document_id": "204c93138f959bee",
+          "supports": "Price fell 4.2% after reports that frosts were weak and unlikely to damage coffee crops, leading to a sell\u2011off."
+        },
+        {
+          "document_id": "e81435c185d6abaf",
+          "supports": "Cold front hit Brazil\u2019s coffee regions; futures recorded a sharp drop, reflecting reduced concern about climate impact."
+        },
+        {
+          "document_id": "cfd2b22ccbef25f1",
+          "supports": "Reports of frosts in coffee and sugarcane areas in Brazil on the same day, providing context for the weather\u2011related market reaction."
+        }
+      ],
+      "confidence": "high"
+    }
+  },
+  "faithfulness_report": null
+}

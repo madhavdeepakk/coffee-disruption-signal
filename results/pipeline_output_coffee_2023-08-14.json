@@ -1,0 +1,206 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2023-08-14",
+    "price": 151.10000610351562,
+    "z_score": -2.204527410875204,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -4.245878845797369,
+    "cumulative_pct_move": -8.22957078363916,
+    "cumulative_z_score": -1.235020380560257,
+    "direction": "down"
+  },
+  "price_description": "-4.2% day-over-day move (z-score -2.20)",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 2,
+    "network_successes": 5,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 100,
+    "dropped_out_of_window": 6,
+    "collapsed_duplicates": 6,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "6_document(s)_above_threshold",
+    "best_score": 0.8919232487678528,
+    "accepted_document_count": 6,
+    "accepted_document_ids": [
+      "8d35d76523a29b99",
+      "08520c39299c5755",
+      "baeda0c57f19625e",
+      "3899436931c8c5d2",
+      "e5146e121d77243b",
+      "89be7a702a435eff"
+    ],
+    "total_documents_considered": 100,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T16:48:59.319605+00:00"
+  },
+  "documents_retrieved": 100,
+  "sources": [
+    {
+      "document_id": "08520c39299c5755",
+      "title": "Arabica Coffee Falls on Brazilian Real Weakness - The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/investing/markets/commodities/CTK22/pressreleases/19192252/arabica-coffee-falls-on-brazilian-real-weakness/",
+      "publication_date": "2023-08-08",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 5484,
+      "n_copies": 1,
+      "syndication_domains": [
+        "theglobeandmail.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.8849951028823853,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3899436931c8c5d2",
+      "title": "el nino : From too wet to bone dry : Indonesian coffee crop faces El Nino jolt",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/food/from-too-wet-to-bone-dry-indonesian-coffee-crop-faces-el-nino-jolt/articleshow/102706032.cms",
+      "publication_date": "2023-08-14",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 3752,
+      "n_copies": 1,
+      "syndication_domains": [
+        "economictimes.indiatimes.com"
+      ],
+      "retrieval_score": 0.2652,
+      "semantic_score": 0.8602526783943176,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "baeda0c57f19625e",
+      "title": "Brazil robusta exports grow as price gap to Vietnam remains high : analyst",
+      "url": "https://tuoitrenews.vn/news/international/20230808/brazil-robusta-exports-grow-as-price-gap-to-vietnam-remains-high-analyst/74854.html",
+      "publication_date": "2023-08-08",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 1812,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tuoitrenews.vn"
+      ],
+      "retrieval_score": 0.2832,
+      "semantic_score": 0.8792162537574768,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e5146e121d77243b",
+      "title": "EXCLUSIVE: Brazil 'natural' coffee hits premium market in challenge for small farmers - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRGNkVjItamtWNUR2TGFORGF5ZWR2emZhS0stOFZjUEllTm92LUJOYnE0LTdrU2VsYlAxNmNIRXl0VS1rY1lpamVFaEU1RG1WU3ZMSHU2UlFrcWtVWFVzNl9jUERzRTFmb2psVFRjajlfZUhaVFByRHAxck1JWi1aeVVac2pPVXJHbnBDVm4zN3VlSHE0UldTdjVSMXJMa3JEbnZxY0FfRDk1RFVyZkctbkpHUU9iVTlfdGdLdHFR?oc=5",
+      "publication_date": "2023-08-07",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8594990968704224,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "89be7a702a435eff",
+      "title": "From too wet to bone dry: Indonesian coffee crop faces El Nino jolt - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeThkNWJZRUtuc2VibEZJQ0RfV0Y5M05kVy14TG5pV1lteDVJaGRlcnUyY0psTC13eDY5QzRLX3hDUWhjS2NtRkZmR0Q3Vm84X0NJR2lKOFhtVUpNd0ZoaHpRRXJ4U1NvMEVoNFg3UGJWejJMdzhERkxFQ2dsN2hxN011SXcta0Y2TG9feWQ1RnB0Y29jdjhxY1dTSUNMSzNBMUV3SHlMX2ktZnh4N2gwY1RmZEo?oc=5",
+      "publication_date": "2023-08-13",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8533380031585693,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8d35d76523a29b99",
+      "title": "Coffee shortage spurs Brazilian traders to send beans to London",
+      "url": "http://thepeninsulaqatar.com/article/04/08/2023/coffee-shortage-spurs-brazilian-traders-to-send-beans-to-london",
+      "publication_date": "2023-08-04",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 2576,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thepeninsulaqatar.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.8919232487678528,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 3,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 6,
+    "n_fresh": 2,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 4.0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided evidence consists primarily of bullish factors (El Ni\u00f1o drought risks in Indonesia, tight global inventories, and strong export demand) which would typically support price increases, while the only document describing a price decline (08520c39299c5755) is dated 4 trading days prior to the anomaly and does not explicitly link the Brazilian Real weakness to the specific price move on 2023-08-14.",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 131880,
+    "evidence_document_ids": [
+      "08520c39299c5755",
+      "3899436931c8c5d2",
+      "baeda0c57f19625e",
+      "e5146e121d77243b",
+      "89be7a702a435eff",
+      "8d35d76523a29b99"
+    ],
+    "evidence_packing": {
+      "n_input": 6,
+      "n_packed": 6,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 2736,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

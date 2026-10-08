@@ -1,0 +1,358 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2021-07-19",
+    "price": 155.25,
+    "z_score": -2.0733429411821507,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -3.6910651742460034,
+    "cumulative_pct_move": 1.76990946852102,
+    "cumulative_z_score": -0.1672928455894291,
+    "direction": "down"
+  },
+  "price_description": "-3.7% day-over-day move (z-score -2.07)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (10 pointed the opposite way, 2 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 1,
+    "network_failures": 1,
+    "network_successes": 1,
+    "cache_hits": 5,
+    "fallback_added": 0,
+    "documents_returned": 126,
+    "dropped_out_of_window": 13,
+    "collapsed_duplicates": 10,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "13_document(s)_above_threshold",
+    "best_score": 0.9086000323295593,
+    "accepted_document_count": 13,
+    "accepted_document_ids": [
+      "4e2c5649670d40c2",
+      "6c9ff78a01dc5cc7",
+      "4bb7dadf379590db",
+      "6d83131554c4cee8",
+      "31c4f69551023901",
+      "25ef6dd64f1d5232",
+      "8359be53ee835ac0",
+      "edcfb2c83a19b090",
+      "78b225552ad20868",
+      "0026fa2691d5c17a",
+      "f940f4497f58e77c",
+      "0716f589eda99331",
+      "a1479d33f83d06bc"
+    ],
+    "total_documents_considered": 126,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T10:33:31.818863+00:00"
+  },
+  "documents_retrieved": 126,
+  "sources": [
+    {
+      "document_id": "6d83131554c4cee8",
+      "title": "Strong Fundamentals Give This Coffee Fund a Jolt",
+      "url": "https://www.etftrends.com/strong-fundamentals-give-coffee-fund-a-jolt/",
+      "publication_date": "2021-07-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2256,
+      "n_copies": 1,
+      "syndication_domains": [
+        "etftrends.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.8825139999389648,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0026fa2691d5c17a",
+      "title": "Peabirus : Caf\u00e9 : Mercado limita baixas , mas segue com desvalorizao em NY e Londres nesta 2",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=92428",
+      "publication_date": "2021-07-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2211,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8573752641677856,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "edcfb2c83a19b090",
+      "title": "How Is Climate Change Impacting Coffee? - Sprudge Coffee",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE95NWJiNmppS1ktWGs1aFhORTNfVEVpbGFINEZMUmNFdVJpTHpZUjd0ZEd4cFhCbU93V2N1NTNKNGJNVUJXU0xhbkY5NVA2MnZRM1oza2hoaEh6ZkRIaHdTSDJCRllqMHA3aWo1V0IzZGc3MmpRQ0ZFek13?oc=5",
+      "publication_date": "2021-07-15",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8627687096595764,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4e2c5649670d40c2",
+      "title": "Coffee prices skyrocket as demand increases and Brazil suffers drought",
+      "url": "https://www.foxbusiness.com/lifestyle/coffee-prices-skyrocket-report",
+      "publication_date": "2021-07-14",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2054,
+      "n_copies": 1,
+      "syndication_domains": [
+        "foxbusiness.com"
+      ],
+      "retrieval_score": 0.543,
+      "semantic_score": 0.9086000323295593,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6c9ff78a01dc5cc7",
+      "title": "Record Brazilian drought causes coffee prices to spike to highest level in years",
+      "url": "https://www.cbc.ca/news/business/brazil-coffee-drought-1.6096120",
+      "publication_date": "2021-07-10",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 5422,
+      "n_copies": 2,
+      "syndication_domains": [
+        "cbc.ca",
+        "news.google.com"
+      ],
+      "retrieval_score": 0.3423,
+      "semantic_score": 0.9053875207901001,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4bb7dadf379590db",
+      "title": "Drought in Brazil Affecting Coffee Prices in Erie",
+      "url": "https://www.erienewsnow.com/story/44324406/drought-in-brazil-affecting-coffee-prices-in-erie",
+      "publication_date": "2021-07-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "erienewsnow.com"
+      ],
+      "retrieval_score": 0.3441,
+      "semantic_score": 0.8935040235519409,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "31c4f69551023901",
+      "title": "Frost Hits Brazilian Coffee Lands, Extent of Damage Not Yet Known - Daily Coffee News by Roast Magazine",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVHZLM3dfUVp5dklQdXg1YVZTeXoxQ1gyVEJsd2Fyb2d1QVhmNVVfUG9qclZPeVpFcElFbFRXcEFzVU4yOWR2V1l4SkIwRHF0Q25yenZqMWxleFhsclVJbmhCOHdwM1VhWTM5cm94Q09QVUJaRGRYMW5RejRycHpLeWxZTzlKOWxUcWNzLUIxakt3djJwTnVNbnhVSjhaM01aVmlrV3ktYw?oc=5",
+      "publication_date": "2021-07-12",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2437,
+      "semantic_score": 0.8794618248939514,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "25ef6dd64f1d5232",
+      "title": "Expert explains why coffee prices are rising again",
+      "url": "https://www.wcvb.com/article/coffee-prices-are-rising-again/37057440",
+      "publication_date": "2021-07-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1706,
+      "n_copies": 2,
+      "syndication_domains": [
+        "wcvb.com",
+        "wyff4.com"
+      ],
+      "retrieval_score": 0.2939,
+      "semantic_score": 0.8775707483291626,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8359be53ee835ac0",
+      "title": "Why coffee price may spike in Nigeria",
+      "url": "https://nairametrics.com/2021/07/10/why-coffee-price-may-spike-in-nigeria/",
+      "publication_date": "2021-07-10",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 4837,
+      "n_copies": 1,
+      "syndication_domains": [
+        "nairametrics.com"
+      ],
+      "retrieval_score": 0.3262,
+      "semantic_score": 0.8761254549026489,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "78b225552ad20868",
+      "title": "3 reasons why coffee prices are rising",
+      "url": "https://abcnews.go.com/GMA/Food/reasons-coffee-prices-rising/story?id=78813660",
+      "publication_date": "2021-07-13",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 1422,
+      "n_copies": 1,
+      "syndication_domains": [
+        "abcnews.go.com"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.8575518131256104,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f940f4497f58e77c",
+      "title": "Peabirus : # Matiello : Condio h\u00eddrica \u00e9 pior que a do ano passado e safra de caf\u00e9 22 j\u00e1 come\u00e7a prejudicada",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=92433",
+      "publication_date": "2021-07-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 4285,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8566337823867798,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0716f589eda99331",
+      "title": "Coffee Prices Soar After Bad Harvests and Insatiable Demand - WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOb3FyTk9qQTdZQ1lFZDBKQVQ1TmtJOWVSTGpua2kzM1Y1RTVhXzZITkZfNEtiX3diNExaTmt2VGRJZjIycERsQzNtTXpoNkViQm41eDBCNm1IX244cEVkbmp4cTJHdkpMWS15UFg2RXhQZkRnVjJnNXBHdFp5YURNUjNINlNtNmxkNUpra3BCdXVsdU54S2JJeUVMUnQ3MTRULTNpMjgyem9GSnQ4Vjlmc2dBTW1fQTlHQnZz?oc=5",
+      "publication_date": "2021-07-12",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8552818298339844,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a1479d33f83d06bc",
+      "title": "Coffee Prices Set To Soar",
+      "url": "https://www.msn.com/en-us/money/markets/coffee-prices-set-to-soar/ar-AAM7iW7",
+      "publication_date": "2021-07-13",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 2,
+      "syndication_domains": [
+        "msn.com",
+        "washingtonexaminer.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8523608446121216,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 1,
+    "inconsistent": 10
+  },
+  "evidence_recency": {
+    "n_dated": 13,
+    "n_fresh": 6,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 3
+  },
+  "explanation_result": {
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2441,
+    "evidence_document_ids": [
+      "6d83131554c4cee8",
+      "0026fa2691d5c17a",
+      "edcfb2c83a19b090",
+      "4e2c5649670d40c2",
+      "6c9ff78a01dc5cc7",
+      "4bb7dadf379590db",
+      "31c4f69551023901",
+      "25ef6dd64f1d5232",
+      "8359be53ee835ac0",
+      "78b225552ad20868",
+      "f940f4497f58e77c",
+      "0716f589eda99331",
+      "a1479d33f83d06bc"
+    ],
+    "evidence_packing": {
+      "n_input": 13,
+      "n_packed": 13,
+      "excerpt_chars": 800,
+      "estimated_tokens": 3499,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": true
+    },
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": "medium",
+    "reason": "direction_guard: 10 accepted document(s) pointed against the move vs 2 with it",
+    "withheld_explanation": {
+      "explanation": "On July 19 the coffee futures market in New York and London continued to depreciate, with traders limiting further lows but overall prices still falling, which aligns with the observed -3.7% drop (source: 0026fa2691d5c17a).",
+      "citations": [
+        {
+          "document_id": "0026fa2691d5c17a",
+          "supports": "The article notes that the coffee market limited lows but kept depreciating in NY and London on July 19, indicating a price decline on that day."
+        }
+      ],
+      "confidence": "medium"
+    }
+  },
+  "faithfulness_report": null
+}

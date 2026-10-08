@@ -1,0 +1,126 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2020-03-27",
+    "price": 115.8499984741211,
+    "z_score": -2.406192218410195,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -7.059769710416587,
+    "cumulative_pct_move": 8.220453219518891,
+    "cumulative_z_score": 0.9133391280684958,
+    "direction": "down"
+  },
+  "price_description": "-7.1% day-over-day move (z-score -2.41)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (1 pointed the opposite way, 0 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 3,
+    "network_successes": 4,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 120,
+    "dropped_out_of_window": 4,
+    "collapsed_duplicates": 7,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "2_document(s)_above_threshold",
+    "best_score": 0.862185537815094,
+    "accepted_document_count": 2,
+    "accepted_document_ids": [
+      "bfd0af5c64e8e815",
+      "9b353e1f7f0f33c2"
+    ],
+    "total_documents_considered": 120,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T13:52:49.563958+00:00"
+  },
+  "documents_retrieved": 120,
+  "sources": [
+    {
+      "document_id": "bfd0af5c64e8e815",
+      "title": "Heavy rains, frost damage coffee plants - myRepublica",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNVFQU3piVkUxVi1BdGlkZFZGWk1Yc2NITENjMnYtNzRVWmNQMVRTdzNkZ196X1R3emVMcUZYcktrV084UWdOV3BmSzc4eVplREkxaGMwX2lROXhMdzNpeElVY1FCS3A3ZnR5Rl9FTGE4Ry0zVmZYQVBtWF9ieXdFeUZiSGc2ZnRNcFE?oc=5",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2437,
+      "semantic_score": 0.862185537815094,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "9b353e1f7f0f33c2",
+      "title": "Shipping Containers in Short Supply \u2013 gCaptain",
+      "url": "https://gcaptain.com/shipping-containers-in-short-supply/",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 3933,
+      "n_copies": 1,
+      "syndication_domains": [
+        "gcaptain.com"
+      ],
+      "retrieval_score": 0.4319,
+      "semantic_score": 0.8257689476013184,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 1,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 2,
+    "n_fresh": 0,
+    "fresh_within_days": 2,
+    "newest_days_before": 6,
+    "median_days_before": 7.0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided evidence consists of background conditions (supply chain disruptions and weather damage) published 6-8 trading days prior to the price move, which does not explain the specific direction or timing of the -7.1% drop on 2020-03-27.",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 131546,
+    "evidence_document_ids": [
+      "bfd0af5c64e8e815",
+      "9b353e1f7f0f33c2"
+    ],
+    "evidence_packing": {
+      "n_input": 2,
+      "n_packed": 2,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 717,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

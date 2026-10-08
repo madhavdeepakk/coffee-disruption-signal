@@ -1,0 +1,63 @@
+{
+  "anomaly": {
+    "date": "2026-08-28",
+    "price": 312.6000061035156,
+    "z_score": -2.535566255014177,
+    "anomaly_flag": true,
+    "pct_move": -8.569753821592576,
+    "direction": "down"
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "33_document(s)_above_threshold",
+    "best_score": 0.872418999671936,
+    "accepted_document_count": 33,
+    "accepted_document_ids": [
+      "8178e1c6ae9d9021",
+      "adc6d23c9b704ea1",
+      "2b357dbfb584f0ea",
+      "b707790bb7ae45c5",
+      "81a65469a9e1ce79",
+      "e02616c66ca9bbd7",
+      "9a18c45d55f47644",
+      "607862eb67dc2623",
+      "83d473bb1b6662c1",
+      "404d395646e212c6",
+      "5f33dbe2046d619d",
+      "35a22d1f9eda776d",
+      "bf957944616e6a9f",
+      "c9dd1f4248ab7fa2",
+      "c19b78c1f8d375ec",
+      "fe7396ba3c53cfac",
+      "83e00c86fbe2f482",
+      "c6eb4c24654ff812",
+      "3948fd7ffa21c0de",
+      "2f08fcb7c4e859d9",
+      "f826b05713e0079b",
+      "d766c896a0a39b10",
+      "a1c67b6ed7d8acc0",
+      "dd082f74386e4d5b",
+      "9d3aab848d419d20",
+      "6ec519da99f5c567",
+      "d8a8da8b7deac252",
+      "a5679e006fecb8b0",
+      "57f72b3ddddd5525",
+      "5cdb878f9ac92ccd",
+      "d23e588986975b14",
+      "375f71554a1b6348",
+      "30dcd9b8b0ebdef4"
+    ],
+    "total_documents_considered": 34,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.75,
+    "evaluated_at_utc": "2026-09-12T01:25:16.990067+00:00"
+  },
+  "documents_retrieved": 34,
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The retrieved evidence discusses general weather risks, regional crop condition updates, and long-term production forecasts, but lacks specific documentation explaining the 8.6% drop in coffee prices on August 28, 2026.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient"
+  }
+}

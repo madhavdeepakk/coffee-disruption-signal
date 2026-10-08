@@ -1,0 +1,6 @@
+Detection:
+last 75 days - avg - std
+z = (today's return − average of last 75 returns) / std of last 75 returns
+z score > 2 - anamoly
+last 10 trading days compounded 
+

@@ -1,0 +1,789 @@
+{
+  "dates_evaluated": 30,
+  "dates_explained": 13,
+  "provenance": {
+    "pipeline_versions": {
+      "2": 6,
+      "1": 24
+    },
+    "models": {
+      "not recorded": 18,
+      "openai/gpt-oss-120b": 7,
+      "gemini-3.6-flash": 5
+    },
+    "dates_not_flagged": [
+      "2026-08-28",
+      "2026-09-11"
+    ],
+    "records_without_a_decision": 0,
+    "retrieval_health": {
+      "runs_with_failed_queries": {
+        "k": 20,
+        "n": 30,
+        "pct": 66.7,
+        "ci95": [
+          48.8,
+          80.8
+        ]
+      },
+      "runs_with_no_query_answered": 2,
+      "refused_among_those": {
+        "k": 11,
+        "n": 20,
+        "pct": 55.0,
+        "ci95": [
+          34.2,
+          74.2
+        ]
+      },
+      "refused_among_the_rest": {
+        "k": 5,
+        "n": 10,
+        "pct": 50.0,
+        "ci95": [
+          23.7,
+          76.3
+        ]
+      },
+      "dates": [
+        "2018-05-21",
+        "2018-05-31",
+        "2018-07-02",
+        "2018-08-20",
+        "2020-03-19",
+        "2021-05-05",
+        "2021-07-19",
+        "2021-07-20",
+        "2021-07-22",
+        "2021-07-30",
+        "2022-05-11",
+        "2023-01-31",
+        "2023-09-20",
+        "2024-04-30",
+        "2024-12-02",
+        "2026-06-16",
+        "2026-06-30",
+        "2026-07-06",
+        "2026-07-09",
+        "2026-08-28"
+      ]
+    }
+  },
+  "outcomes": {
+    "n_runs": 30,
+    "tiers": {
+      "REFUSED_WEAK_EVIDENCE": 10,
+      "EXPLAINED_STRONG": 8,
+      "REFUSED_CONFLICTING": 6,
+      "EXPLAINED_TENTATIVE": 5,
+      "SYSTEM_ERROR": 1
+    },
+    "tiers_backfilled": 5,
+    "explained": {
+      "k": 13,
+      "n": 30,
+      "pct": 43.3,
+      "ci95": [
+        27.4,
+        60.8
+      ]
+    },
+    "refused": {
+      "k": 16,
+      "n": 30,
+      "pct": 53.3,
+      "ci95": [
+        36.1,
+        69.8
+      ]
+    },
+    "faults": {
+      "k": 1,
+      "n": 30,
+      "pct": 3.3,
+      "ci95": [
+        0.6,
+        16.7
+      ]
+    },
+    "explained_excluding_faults": {
+      "k": 13,
+      "n": 29,
+      "pct": 44.8,
+      "ci95": [
+        28.4,
+        62.5
+      ]
+    },
+    "guard_would_withhold": 2
+  },
+  "decision_accuracy": {
+    "n_labelled": 18,
+    "n_graded": 16,
+    "n_fault": 1,
+    "n_no_run": 1,
+    "as_run": {
+      "overall": {
+        "k": 10,
+        "n": 16,
+        "pct": 62.5,
+        "ci95": [
+          38.6,
+          81.5
+        ]
+      },
+      "explain_labelled": {
+        "k": 9,
+        "n": 13,
+        "pct": 69.2,
+        "ci95": [
+          42.4,
+          87.3
+        ]
+      },
+      "refuse_labelled": {
+        "k": 1,
+        "n": 3,
+        "pct": 33.3,
+        "ci95": [
+          6.1,
+          79.2
+        ]
+      }
+    },
+    "with_direction_guard": {
+      "overall": {
+        "k": 12,
+        "n": 16,
+        "pct": 75.0,
+        "ci95": [
+          50.5,
+          89.8
+        ]
+      },
+      "explain_labelled": {
+        "k": 9,
+        "n": 13,
+        "pct": 69.2,
+        "ci95": [
+          42.4,
+          87.3
+        ]
+      },
+      "refuse_labelled": {
+        "k": 3,
+        "n": 3,
+        "pct": 100.0,
+        "ci95": [
+          43.8,
+          100.0
+        ]
+      }
+    },
+    "misses": [
+      {
+        "date": "2020-03-19",
+        "expected": "EXPLAIN",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "model_used": null,
+        "direction_summary": {
+          "consistent": 1,
+          "neutral": 0,
+          "inconsistent": 0
+        }
+      },
+      {
+        "date": "2021-07-19",
+        "expected": "REFUSE",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "REFUSED",
+        "correct": false,
+        "correct_with_guard": true,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 2,
+          "neutral": 4,
+          "inconsistent": 13
+        }
+      },
+      {
+        "date": "2023-09-20",
+        "expected": "REFUSE",
+        "label_confidence": "medium",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "REFUSED",
+        "correct": false,
+        "correct_with_guard": true,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 0,
+          "neutral": 4,
+          "inconsistent": 5
+        }
+      },
+      {
+        "date": "2023-11-30",
+        "expected": "EXPLAIN",
+        "label_confidence": "medium",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 1,
+          "neutral": 1,
+          "inconsistent": 1
+        }
+      },
+      {
+        "date": "2024-04-30",
+        "expected": "EXPLAIN",
+        "label_confidence": "medium",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 1,
+          "neutral": 0,
+          "inconsistent": 13
+        }
+      },
+      {
+        "date": "2024-09-23",
+        "expected": "EXPLAIN",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "model_used": "gemini-3.6-flash",
+        "direction_summary": {
+          "consistent": 9,
+          "neutral": 9,
+          "inconsistent": 2
+        }
+      }
+    ],
+    "rows": [
+      {
+        "date": "2020-03-19",
+        "expected": "EXPLAIN",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "model_used": null,
+        "direction_summary": {
+          "consistent": 1,
+          "neutral": 0,
+          "inconsistent": 0
+        }
+      },
+      {
+        "date": "2021-05-05",
+        "expected": "EXPLAIN",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "EXPLAINED",
+        "correct": true,
+        "correct_with_guard": true,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 6,
+          "neutral": 0,
+          "inconsistent": 1
+        }
+      },
+      {
+        "date": "2021-07-19",
+        "expected": "REFUSE",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "REFUSED",
+        "correct": false,
+        "correct_with_guard": true,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 2,
+          "neutral": 4,
+          "inconsistent": 13
+        }
+      },
+      {
+        "date": "2021-07-20",
+        "expected": "EXPLAIN",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "EXPLAINED",
+        "correct": true,
+        "correct_with_guard": true,
+        "model_used": null,
+        "direction_summary": {
+          "consistent": 16,
+          "neutral": 2,
+          "inconsistent": 1
+        }
+      },
+      {
+        "date": "2021-07-22",
+        "expected": "EXPLAIN",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "EXPLAINED",
+        "correct": true,
+        "correct_with_guard": true,
+        "model_used": null,
+        "direction_summary": {
+          "consistent": 13,
+          "neutral": 3,
+          "inconsistent": 1
+        }
+      },
+      {
+        "date": "2021-07-30",
+        "expected": "REFUSE",
+        "label_confidence": "medium",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "correct": true,
+        "correct_with_guard": true,
+        "model_used": null,
+        "direction_summary": {
+          "consistent": 1,
+          "neutral": 6,
+          "inconsistent": 18
+        }
+      },
+      {
+        "date": "2022-05-11",
+        "expected": "EXPLAIN",
+        "label_confidence": "medium",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "EXPLAINED",
+        "correct": true,
+        "correct_with_guard": true,
+        "model_used": null,
+        "direction_summary": {
+          "consistent": 7,
+          "neutral": 1,
+          "inconsistent": 1
+        }
+      },
+      {
+        "date": "2023-01-31",
+        "expected": "EXPLAIN",
+        "label_confidence": "medium",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "EXPLAINED",
+        "correct": true,
+        "correct_with_guard": true,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 2,
+          "neutral": 0,
+          "inconsistent": 1
+        }
+      },
+      {
+        "date": "2023-09-20",
+        "expected": "REFUSE",
+        "label_confidence": "medium",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "REFUSED",
+        "correct": false,
+        "correct_with_guard": true,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 0,
+          "neutral": 4,
+          "inconsistent": 5
+        }
+      },
+      {
+        "date": "2023-11-30",
+        "expected": "EXPLAIN",
+        "label_confidence": "medium",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 1,
+          "neutral": 1,
+          "inconsistent": 1
+        }
+      },
+      {
+        "date": "2024-04-30",
+        "expected": "EXPLAIN",
+        "label_confidence": "medium",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 1,
+          "neutral": 0,
+          "inconsistent": 13
+        }
+      },
+      {
+        "date": "2024-09-23",
+        "expected": "EXPLAIN",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "model_used": "gemini-3.6-flash",
+        "direction_summary": {
+          "consistent": 9,
+          "neutral": 9,
+          "inconsistent": 2
+        }
+      },
+      {
+        "date": "2024-10-07",
+        "expected": "EXPLAIN",
+        "label_confidence": "low",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "EXPLAINED",
+        "correct": true,
+        "correct_with_guard": true,
+        "model_used": null,
+        "direction_summary": {}
+      },
+      {
+        "date": "2024-12-02",
+        "expected": "REFUSE",
+        "label_confidence": "medium",
+        "status": "fault",
+        "verdict": "FAULT",
+        "verdict_with_guard": "FAULT",
+        "correct": null,
+        "correct_with_guard": null,
+        "model_used": null,
+        "direction_summary": {
+          "consistent": 0,
+          "neutral": 9,
+          "inconsistent": 15
+        }
+      },
+      {
+        "date": "2025-02-10",
+        "expected": "EXPLAIN",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "EXPLAINED",
+        "correct": true,
+        "correct_with_guard": true,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 4,
+          "neutral": 3,
+          "inconsistent": 0
+        }
+      },
+      {
+        "date": "2025-04-07",
+        "expected": "EXPLAIN",
+        "status": "no_run",
+        "label_confidence": "high"
+      },
+      {
+        "date": "2025-08-15",
+        "expected": "EXPLAIN",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "EXPLAINED",
+        "correct": true,
+        "correct_with_guard": true,
+        "model_used": null,
+        "direction_summary": {}
+      },
+      {
+        "date": "2025-09-15",
+        "expected": "EXPLAIN",
+        "label_confidence": "medium",
+        "status": "graded",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "EXPLAINED",
+        "correct": true,
+        "correct_with_guard": true,
+        "model_used": null,
+        "direction_summary": {}
+      }
+    ]
+  },
+  "by_year": {
+    "2018": {
+      "EXPLAINED": 0,
+      "REFUSED": 5,
+      "FAULT": 0
+    },
+    "2020": {
+      "EXPLAINED": 0,
+      "REFUSED": 1,
+      "FAULT": 0
+    },
+    "2021": {
+      "EXPLAINED": 5,
+      "REFUSED": 1,
+      "FAULT": 0
+    },
+    "2022": {
+      "EXPLAINED": 1,
+      "REFUSED": 0,
+      "FAULT": 0
+    },
+    "2023": {
+      "EXPLAINED": 2,
+      "REFUSED": 1,
+      "FAULT": 0
+    },
+    "2024": {
+      "EXPLAINED": 1,
+      "REFUSED": 2,
+      "FAULT": 1
+    },
+    "2025": {
+      "EXPLAINED": 3,
+      "REFUSED": 0,
+      "FAULT": 0
+    },
+    "2026": {
+      "EXPLAINED": 1,
+      "REFUSED": 6,
+      "FAULT": 0
+    }
+  },
+  "retrieval": {
+    "gate_explain_rate": 96.7,
+    "gate_explain_count": 29,
+    "gate_explain_ci95": [
+      83.3,
+      99.4
+    ],
+    "llm_explain_rate": 43.3,
+    "llm_explain_count": 13,
+    "llm_explain_ci95": [
+      27.4,
+      60.8
+    ],
+    "avg_documents_retrieved": 61.0,
+    "zero_retrieval_rate": 0.0,
+    "zero_retrieval_count": 0,
+    "total_dates": 30
+  },
+  "citation_accuracy": {
+    "n_explained": 13,
+    "n_explained_with_report": 10,
+    "total_citations": 33,
+    "resolve": {
+      "k": 33,
+      "n": 33,
+      "pct": 100.0,
+      "ci95": [
+        89.6,
+        100.0
+      ]
+    },
+    "weak_support": {
+      "k": 0,
+      "n": 33,
+      "pct": 0.0,
+      "ci95": [
+        0.0,
+        10.4
+      ]
+    },
+    "low_rank": null,
+    "support_score_min": 0.795,
+    "support_score_median": 0.859,
+    "citations_resolve_rate": 100.0,
+    "weak_support_rate": 0.0,
+    "avg_faithfulness_score": 0.855
+  },
+  "direction_alignment": {
+    "n_evaluated": 10,
+    "n_explained": 13,
+    "aligned": {
+      "k": 8,
+      "n": 10,
+      "pct": 80.0,
+      "ci95": [
+        49.0,
+        94.3
+      ]
+    },
+    "rows": [
+      {
+        "date": "2021-04-06",
+        "consistent": 9,
+        "inconsistent": 0,
+        "neutral": 0,
+        "aligned": true
+      },
+      {
+        "date": "2021-05-05",
+        "consistent": 6,
+        "inconsistent": 1,
+        "neutral": 0,
+        "aligned": true
+      },
+      {
+        "date": "2021-07-19",
+        "consistent": 2,
+        "inconsistent": 13,
+        "neutral": 4,
+        "aligned": false
+      },
+      {
+        "date": "2021-07-20",
+        "consistent": 16,
+        "inconsistent": 1,
+        "neutral": 2,
+        "aligned": true
+      },
+      {
+        "date": "2021-07-22",
+        "consistent": 13,
+        "inconsistent": 1,
+        "neutral": 3,
+        "aligned": true
+      },
+      {
+        "date": "2022-05-11",
+        "consistent": 7,
+        "inconsistent": 1,
+        "neutral": 1,
+        "aligned": true
+      },
+      {
+        "date": "2023-01-31",
+        "consistent": 2,
+        "inconsistent": 1,
+        "neutral": 0,
+        "aligned": true
+      },
+      {
+        "date": "2023-09-20",
+        "consistent": 0,
+        "inconsistent": 5,
+        "neutral": 4,
+        "aligned": false
+      },
+      {
+        "date": "2025-02-10",
+        "consistent": 4,
+        "inconsistent": 0,
+        "neutral": 3,
+        "aligned": true
+      },
+      {
+        "date": "2026-06-30",
+        "consistent": 4,
+        "inconsistent": 3,
+        "neutral": 2,
+        "aligned": true
+      }
+    ],
+    "direction_consistent_rate": 80.0,
+    "direction_conflict_rate": 20.0
+  },
+  "source_diversity": {
+    "gate_pass": {
+      "k": 29,
+      "n": 30,
+      "pct": 96.7,
+      "ci95": [
+        83.3,
+        99.4
+      ]
+    },
+    "avg_documents_retrieved": 61.0,
+    "zero_retrieval": {
+      "k": 0,
+      "n": 30,
+      "pct": 0.0,
+      "ci95": [
+        0.0,
+        11.4
+      ]
+    },
+    "runs_with_sources": 18,
+    "accepted_documents": 188,
+    "distinct_stories": 159,
+    "duplicate_share": {
+      "k": 29,
+      "n": 188,
+      "pct": 15.4,
+      "ci95": [
+        11.0,
+        21.3
+      ]
+    },
+    "published_after_anomaly": {
+      "k": 28,
+      "n": 188,
+      "pct": 14.9,
+      "ci95": [
+        10.5,
+        20.7
+      ]
+    },
+    "explained_with_sources": 8,
+    "avg_accepted_documents": 13.8,
+    "avg_unique_domains": 9.6,
+    "avg_distinct_stories": 9.5,
+    "single_story": {
+      "k": 0,
+      "n": 8,
+      "pct": 0.0,
+      "ci95": [
+        0.0,
+        32.4
+      ]
+    },
+    "single_source_rate": 0.0
+  },
+  "outcome_distribution": {
+    "REFUSED_WEAK_EVIDENCE": 10,
+    "EXPLAINED_STRONG": 8,
+    "REFUSED_CONFLICTING": 6,
+    "EXPLAINED_TENTATIVE": 5,
+    "SYSTEM_ERROR": 1
+  }
+}

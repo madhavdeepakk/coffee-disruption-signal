@@ -1,0 +1,176 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2022-05-11",
+    "price": 220.1000061035156,
+    "z_score": 4.170828507673226,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 7.892159854664508,
+    "cumulative_pct_move": 1.92174541047485,
+    "cumulative_z_score": 0.6456694723865697,
+    "direction": "up"
+  },
+  "price_description": "+7.9% day-over-day move (z-score 4.17)",
+  "outcome": {
+    "tier": "EXPLAINED_STRONG",
+    "label": "Explained (strong)",
+    "headline": "Explained, with strong, direction-consistent evidence.",
+    "detail": "3 sources cleared the gate, the evidence leaned the same way as the move, the model reported high confidence, and every citation points to a document the model was shown.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 3,
+    "network_failures": 1,
+    "network_successes": 3,
+    "cache_hits": 3,
+    "fallback_added": 0,
+    "documents_returned": 138,
+    "dropped_out_of_window": 22,
+    "collapsed_duplicates": 6,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "3_document(s)_above_threshold",
+    "best_score": 0.8565022945404053,
+    "accepted_document_count": 3,
+    "accepted_document_ids": [
+      "40e589a197e699a4",
+      "e032b33717e24626",
+      "899d730c5640ba3c"
+    ],
+    "total_documents_considered": 138,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T10:46:00.546811+00:00"
+  },
+  "documents_retrieved": 138,
+  "sources": [
+    {
+      "document_id": "e032b33717e24626",
+      "title": "Caf\u00e9 ar\u00e1bica salta 8 % na ICE com clima do Brasil ; robusta sobe mais de 3 % ",
+      "url": "https://istoe.com.br/cafe-arabica-salta-8/",
+      "publication_date": "2022-05-11",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 1288,
+      "n_copies": 2,
+      "syndication_domains": [
+        "istoe.com.br",
+        "istoedinheiro.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8553957939147949,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "899d730c5640ba3c",
+      "title": "Avocados and durians help coffee farmers in Vietnam cope with surging costs",
+      "url": "https://www.straitstimes.com/business/companies-markets/avocados-and-durians-help-coffee-farmers-in-vietnam-cope-with-surging-costs",
+      "publication_date": "2022-05-04",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 2244,
+      "n_copies": 1,
+      "syndication_domains": [
+        "straitstimes.com"
+      ],
+      "retrieval_score": 0.3943,
+      "semantic_score": 0.8545293211936951,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "40e589a197e699a4",
+      "title": "Vietnam famous coffee exports slowing down as Covid - 19 and conflict complicate fruit supply across South - East Asia",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2022/05/08/vietnam039s-famous-coffee-exports-slowing-down-as-covid-19-and-conflict-complicate-fruit-supply-across-south-east-asia",
+      "publication_date": "2022-05-08",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 786,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thestar.com.my"
+      ],
+      "retrieval_score": 0.3441,
+      "semantic_score": 0.8565022945404053,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 0,
+    "inconsistent": 1
+  },
+  "evidence_recency": {
+    "n_dated": 3,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 3
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The Arabica futures jumped 7.9% on 2022\u201105\u201111 because traders reacted to forecasts of a strong cold front that could bring frost to Brazil\u2019s main coffee\u2011growing region, raising supply\u2011risk concerns (source: e032b33717e24626).",
+    "citations": [
+      {
+        "document_id": "e032b33717e24626",
+        "supports": "reports a 7.9% rise in Arabica futures on May 11, attributing the rally to frost concerns in Brazil"
+      }
+    ],
+    "confidence": "high",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2045,
+    "evidence_document_ids": [
+      "e032b33717e24626",
+      "899d730c5640ba3c",
+      "40e589a197e699a4"
+    ],
+    "evidence_packing": {
+      "n_input": 3,
+      "n_packed": 3,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1470,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 1,
+    "n_ok": 1,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "e032b33717e24626",
+        "id_found": true,
+        "support_score": 0.836,
+        "support_method": "semantic",
+        "shared_numbers": [
+          "7.9"
+        ],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 3,
+        "support_rank_method": "semantic",
+        "closest_document_id": "e032b33717e24626"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

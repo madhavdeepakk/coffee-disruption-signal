@@ -1,0 +1,212 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2022-11-15",
+    "price": 156.75,
+    "z_score": -2.3271130839112266,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -5.685918845825909,
+    "cumulative_pct_move": -10.223370835928169,
+    "cumulative_z_score": -1.0891215058660668,
+    "direction": "down"
+  },
+  "price_description": "-5.7% day-over-day move (z-score -2.33)",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "An explanation is supported by the cited evidence, but some evidence disagreed on direction. Weigh it accordingly.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 114,
+    "dropped_out_of_window": 9,
+    "collapsed_duplicates": 2,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "4_document(s)_above_threshold",
+    "best_score": 0.9010542631149292,
+    "accepted_document_count": 4,
+    "accepted_document_ids": [
+      "d28dde2ea546735a",
+      "e76d9bdbe334c336",
+      "8ed23bf67d837de1",
+      "7d74c3c95f0c0418"
+    ],
+    "total_documents_considered": 114,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T16:14:25.690736+00:00"
+  },
+  "documents_retrieved": 114,
+  "sources": [
+    {
+      "document_id": "d28dde2ea546735a",
+      "title": "Coffee Prices Are Falling as Better Weather Helps Farmers Replenish Dwindling Supplies",
+      "url": "https://www.yahoo.com/lifestyle/coffee-prices-falling-better-weather-233000640.html",
+      "publication_date": "2022-11-15",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2550,
+      "n_copies": 1,
+      "syndication_domains": [
+        "yahoo.com"
+      ],
+      "retrieval_score": 0.2939,
+      "semantic_score": 0.9010542631149292,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e76d9bdbe334c336",
+      "title": "Coffee market goes cold as Brazilian weather normalizes - Livemint",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTFlNUkpJbjhBU2p1Y05CbWt4ckk5MFZvOWVqdEwzUmNoVzFXaGJQRzM1VVZsUDB1WElLTERVMEVJWm1kdEVmSFhNd2VyMGVMMjB3MmZjQlhNNlVlcGJIN1N1c0NMQWhZYllxRy1qUjZKSUFUTkwwajdmSkZsZEZJWUlWeWtVR3VodmdILXJ0RXNlZk4wN3ZxQ3N6MkJVeXo2UGF1UkdXcC1sU3I0QzZQVm43QzZlZ2tKNjBN0gHAAUFVX3lxTFB1UkhlaVJlMmVJbWFIb0ptSEUteUhGNEJNX0NkaWRvdndwNlRSX2FrZEQ3VW1HVTRndHBQYXU5cEx5cFIyQ2RSbHNDcXZpMUphcTNGeW91cUxhajhLQ241Y2pJaXdCbTJxbXltV0hoa3c0QUZVaUNySS1xOGdmRXpiT2FsZnlfOVFvZGJDMHIxSjVRVUVhTkNRTXVvckRhWkR0VHZWYmZOX01hZXRiUk0tV2FOcF93dUpaUjhvZ3lyLQ?oc=5",
+      "publication_date": "2022-11-14",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.863624095916748,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8ed23bf67d837de1",
+      "title": "\u5df4\u897f\u5929\u6c23\u6062\u5fa9\u6b63\u5e38 \u5496\u5561\u5e02\u5834\u8da8\u51b7 | Anue\u9245\u4ea8",
+      "url": "https://news.cnyes.com/news/id/5010749",
+      "publication_date": "2022-11-14",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 896,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.cnyes.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8569063544273376,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7d74c3c95f0c0418",
+      "title": "No , There Isnt Going to Be a Massive Coffee Shortage - Foundation for Economic Education",
+      "url": "https://fee.org/articles/no-there-isnt-going-to-be-a-global-coffee-shortage/",
+      "publication_date": "2022-11-05",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 7,
+      "publication_date_unknown": false,
+      "text_chars": 5514,
+      "n_copies": 1,
+      "syndication_domains": [
+        "fee.org"
+      ],
+      "retrieval_score": 0.31,
+      "semantic_score": 0.8511290550231934,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 2,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 4,
+    "n_fresh": 3,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 1.0
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The price drop on 2022-11-15 was attributed to reports that unusually wet weather in key coffee\u2011growing regions, especially Brazil and Indonesia, was improving crop yields and increasing supply expectations, which pushed coffee futures lower.",
+    "citations": [
+      {
+        "document_id": "d28dde2ea546735a",
+        "supports": "Notes that better weather in Brazil and Indonesia is boosting coffee supplies, causing prices to fall sharply."
+      },
+      {
+        "document_id": "8ed23bf67d837de1",
+        "supports": "Describes wet weather in Brazil and Indonesia raising harvest prospects and driving a >20% price decline over the past month."
+      }
+    ],
+    "confidence": "high",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 134461,
+    "evidence_document_ids": [
+      "d28dde2ea546735a",
+      "e76d9bdbe334c336",
+      "8ed23bf67d837de1",
+      "7d74c3c95f0c0418"
+    ],
+    "evidence_packing": {
+      "n_input": 4,
+      "n_packed": 4,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 2284,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 2,
+    "n_ok": 2,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "d28dde2ea546735a",
+        "id_found": true,
+        "support_score": 0.897,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 4,
+        "support_rank_method": "semantic",
+        "closest_document_id": "d28dde2ea546735a"
+      },
+      {
+        "document_id": "8ed23bf67d837de1",
+        "id_found": true,
+        "support_score": 0.815,
+        "support_method": "semantic",
+        "shared_numbers": [
+          "20"
+        ],
+        "flag": "ok",
+        "support_rank": 4,
+        "support_rank_of": 4,
+        "support_rank_method": "semantic",
+        "closest_document_id": "d28dde2ea546735a"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

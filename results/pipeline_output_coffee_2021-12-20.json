@@ -1,0 +1,152 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2021-12-20",
+    "price": 224.3999938964844,
+    "z_score": -2.445145930792537,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": -4.874947137576583,
+    "cumulative_pct_move": -10.311751945022971,
+    "cumulative_z_score": -2.5400636859987404,
+    "direction": "down"
+  },
+  "price_description": "-4.9% day-over-day move (z-score -2.45), on top of -10.3% over the last 10 trading days",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (2 pointed the opposite way, 0 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 5,
+    "network_successes": 2,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 93,
+    "dropped_out_of_window": 6,
+    "collapsed_duplicates": 7,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "3_document(s)_above_threshold",
+    "best_score": 0.9064160585403442,
+    "accepted_document_count": 3,
+    "accepted_document_ids": [
+      "4a6c74954cd360a6",
+      "f6c88534cb524539",
+      "1cf8d19ec36de948"
+    ],
+    "total_documents_considered": 93,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T15:13:07.375863+00:00"
+  },
+  "documents_retrieved": 93,
+  "sources": [
+    {
+      "document_id": "1cf8d19ec36de948",
+      "title": "Experts count coffee trees in Brazil as prices hit 10-year highs - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPOEV1SG14OE12dUY3czBjSXJIX2hmQzd0UDE1WlJaQWtSak94Nk9ycEw4ZFdkTjVpZ1dLOFZCcDFvdWJJMEszVE92Z3lFSlkzbnZEZEtBVF9MTFBxYkVlTW1BRUYxMDNuckd0WkFCbXZLSDBmbExhaHJMbVM2cmd6Z2FPdjA3TXdtcmprTDZvTjhFYmlyTUhGbjROa2dRNWptMWJtLWtFN2VmeVY4aXJnOVl0Rlc?oc=5",
+      "publication_date": "2021-12-13",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8519983887672424,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4a6c74954cd360a6",
+      "title": "Experts count coffee trees in Brazil as prices hit 10 - year highs",
+      "url": "https://news.yahoo.com/experts-count-coffee-trees-brazil-061220894.html",
+      "publication_date": "2021-12-13",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 2624,
+      "n_copies": 7,
+      "syndication_domains": [
+        "business-standard.com",
+        "msn.com",
+        "news.yahoo.com",
+        "newsinfo.inquirer.net",
+        "oann.com",
+        "theepochtimes.com",
+        "wsau.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.9064160585403442,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f6c88534cb524539",
+      "title": "Could coffee be in crisis ? ",
+      "url": "http://theboar.org/2021/11/could-coffee-be-in-crisis/",
+      "publication_date": "2021-12-13",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 4330,
+      "n_copies": 1,
+      "syndication_domains": [
+        "theboar.org"
+      ],
+      "retrieval_score": 0.3262,
+      "semantic_score": 0.8955790400505066,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 1,
+    "inconsistent": 2
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 3,
+    "n_fresh": 0,
+    "fresh_within_days": 2,
+    "newest_days_before": 5,
+    "median_days_before": 5
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided evidence consists of articles dated 5 trading days prior to the anomaly that describe background supply constraints and a prior price surge, but none of the documents contain specific news or causal factors explaining the sharp 4.9% price drop on the specific date of 2021-12-20.",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 131452,
+    "evidence_document_ids": [
+      "1cf8d19ec36de948",
+      "4a6c74954cd360a6",
+      "f6c88534cb524539"
+    ],
+    "evidence_packing": {
+      "n_input": 3,
+      "n_packed": 3,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1300,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

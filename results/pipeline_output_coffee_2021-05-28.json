@@ -1,0 +1,316 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2021-05-28",
+    "price": 162.35000610351562,
+    "z_score": 2.097365648825478,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 4.50595411971573,
+    "cumulative_pct_move": 12.547664543165071,
+    "cumulative_z_score": 1.7950892581672324,
+    "direction": "up"
+  },
+  "price_description": "+4.5% day-over-day move (z-score 2.10)",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "An explanation is supported by the cited evidence, but 1 citation(s) were flagged as weakly matched to their source. Weigh it accordingly.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 105,
+    "dropped_out_of_window": 3,
+    "collapsed_duplicates": 13,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "8_document(s)_above_threshold",
+    "best_score": 0.8892932534217834,
+    "accepted_document_count": 8,
+    "accepted_document_ids": [
+      "9e3f8ed9cc2aa3cf",
+      "40cbf844c5f5234d",
+      "f70fcffcd5727dba",
+      "e77cff0b110416c7",
+      "dcd4cad55f14e165",
+      "c9569868938c68cc",
+      "555234215f7aa8e5",
+      "e5cb87dbec3dee81"
+    ],
+    "total_documents_considered": 105,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T14:52:09.907310+00:00"
+  },
+  "documents_retrieved": 105,
+  "sources": [
+    {
+      "document_id": "9e3f8ed9cc2aa3cf",
+      "title": "World coffee at risk amid Brazil drought",
+      "url": "https://www.bworldonline.com/worlds-coffee-at-risk-amid-brazil-drought/",
+      "publication_date": "2021-05-18",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "bworldonline.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8892932534217834,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "40cbf844c5f5234d",
+      "title": "Brazil on drought alert , faces worst dry spell in 91 years",
+      "url": "https://www.thedailystar.net/environment/news/brazil-drought-alert-faces-worst-dry-spell-91-years-2100917",
+      "publication_date": "2021-05-28",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2020,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thedailystar.net"
+      ],
+      "retrieval_score": 0.1989,
+      "semantic_score": 0.8853974342346191,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f70fcffcd5727dba",
+      "title": "As Brazil runs out of water , world could lose out on coffee",
+      "url": "https://www.aljazeera.com/economy/2021/5/18/bbas-brazil-runs-out-of-water-world-could-lose-out-on-coffee",
+      "publication_date": "2021-05-18",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 4005,
+      "n_copies": 2,
+      "syndication_domains": [
+        "aljazeera.com",
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.8832656145095825,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e77cff0b110416c7",
+      "title": "La Nina Turbocharges Drought In Brazil Putting World Coffee , Sugar , & Oranges At Risk",
+      "url": "https://www.zerohedge.com/commodities/la-nina-turbocharges-drought-brazil-worlds-oranges-coffee-risk",
+      "publication_date": "2021-05-19",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 7,
+      "publication_date_unknown": false,
+      "text_chars": 123,
+      "n_copies": 1,
+      "syndication_domains": [
+        "zerohedge.com"
+      ],
+      "retrieval_score": 0.1326,
+      "semantic_score": 0.8699849843978882,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "555234215f7aa8e5",
+      "title": "World to experience coffee shortage as farmers in Brazil runs out of water - WIC News",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYWRBcl82T19NZG9fdjd3YUFGVXJWSHN2RGQtWFdJM2J6TlU3WTI2VXI5a0FXMFBDTzQ3RTJHYVFtdFRzaUhNem53TFZOTVZSaGNtWHpXVVNJVHh4bkExa3NNdXpSVndIbkhyX3NLYmh3ZGVTbk8zT1pUQ1pFQURVMW5VQ04xUTVqOFZ2WlhLTjI5QXNlaVRIa1NJZkFlQUxaMlJIVlVCSGkzNU1yMkl6MklYWkhCaDl3QkE?oc=5",
+      "publication_date": "2021-05-18",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8645203113555908,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "dcd4cad55f14e165",
+      "title": "World\u2019s Oranges, Coffee at Risk as Brazil Runs Out of Water - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZU8ydTlkN2Z2QnNRWU92b19vR3A5RlM3OVozQk9Cd2hQMVR2bmZnX1NiamJ0NWJ5RFZZcXJjbDJiYUFLRXVXc1BFaVVielc3V1dOUmdyVDl2Y2JEYktXNHpHUTJmMTJZVFg3WVVWYVBiSGowUW5ObE9kUUphVGhEMmk2U2lrNFJwcExYaE91bkIwVFRWQUo1R1V0Y1hmZnZKN0tjbG1veWgxay05cUE?oc=5",
+      "publication_date": "2021-05-18",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8677591681480408,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c9569868938c68cc",
+      "title": "World oranges , coffee at risk as Brazil runs out of water",
+      "url": "https://www.moneyweb.co.za/news/international/worlds-oranges-coffee-at-risk-as-brazil-runs-out-of-water/",
+      "publication_date": "2021-05-18",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 10,
+      "syndication_domains": [
+        "980waav.com",
+        "clubofmozambique.com",
+        "kmjnow.com",
+        "moneyweb.co.za",
+        "newsradio1029.com",
+        "wgowam.com",
+        "wjr.com",
+        "wmal.com",
+        "wtma.com",
+        "wvlkam.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.867595911026001,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e5cb87dbec3dee81",
+      "title": "\u5df4\u897f\u4e5f\u9b27\u6c34\u8352 \uff01 \u6c34\u60c5\u544a\u6025 \u5496\u5561\u4f9b\u9700\u5931\u8861\u52a0\u5287 | Anue\u9245\u4ea8",
+      "url": "https://news.cnyes.com/news/id/4647156",
+      "publication_date": "2021-05-18",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 816,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.cnyes.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8611097931861877,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 5,
+    "neutral": 3,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 8,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 8.0
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "On 2021-05-28 Brazil issued a formal drought alert, heightening concerns about water scarcity in its key coffee\u2011growing regions. This immediate news reinforced earlier reports that the severe drought was already threatening Brazil's coffee output, prompting market participants to price in tighter supply and driving coffee futures up 4.5% on the day.",
+    "citations": [
+      {
+        "document_id": "40cbf844c5f5234d",
+        "supports": "The same\u2011day drought alert in Brazil raised alarm about agricultural impacts, providing a timely trigger for market reaction."
+      },
+      {
+        "document_id": "9e3f8ed9cc2aa3cf",
+        "supports": "Earlier coverage highlighted that Brazil's drought put world coffee supplies at risk."
+      },
+      {
+        "document_id": "f70fcffcd5727dba",
+        "supports": "Reports from May 18 described severe water shortages in Brazil's coffee\u2011producing regions, indicating potential supply constraints."
+      }
+    ],
+    "confidence": "high",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 155762,
+    "evidence_document_ids": [
+      "9e3f8ed9cc2aa3cf",
+      "40cbf844c5f5234d",
+      "f70fcffcd5727dba",
+      "e77cff0b110416c7",
+      "555234215f7aa8e5",
+      "dcd4cad55f14e165",
+      "c9569868938c68cc",
+      "e5cb87dbec3dee81"
+    ],
+    "evidence_packing": {
+      "n_input": 8,
+      "n_packed": 8,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 2672,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 3,
+    "n_ok": 2,
+    "n_weak_support": 0,
+    "n_low_rank": 1,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "40cbf844c5f5234d",
+        "id_found": true,
+        "support_score": 0.857,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 8,
+        "support_rank_method": "semantic",
+        "closest_document_id": "40cbf844c5f5234d"
+      },
+      {
+        "document_id": "9e3f8ed9cc2aa3cf",
+        "id_found": true,
+        "support_score": 0.9,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 8,
+        "support_rank_method": "semantic",
+        "closest_document_id": "9e3f8ed9cc2aa3cf"
+      },
+      {
+        "document_id": "f70fcffcd5727dba",
+        "id_found": true,
+        "support_score": 0.84,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "low_rank",
+        "support_rank": 5,
+        "support_rank_of": 8,
+        "support_rank_method": "semantic",
+        "closest_document_id": "40cbf844c5f5234d"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

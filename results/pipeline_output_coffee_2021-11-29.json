@@ -1,0 +1,127 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2021-11-29",
+    "price": 233.8500061035156,
+    "z_score": -2.1914357717178268,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -4.100881586919029,
+    "cumulative_pct_move": 6.44060507593313,
+    "cumulative_z_score": 0.5202592996128307,
+    "direction": "down"
+  },
+  "price_description": "-4.1% day-over-day move (z-score -2.19)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (1 pointed the opposite way, 0 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 75,
+    "dropped_out_of_window": 8,
+    "collapsed_duplicates": 4,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "2_document(s)_above_threshold",
+    "best_score": 0.8546246290206909,
+    "accepted_document_count": 2,
+    "accepted_document_ids": [
+      "30813856c2c14b26",
+      "7f5a0ad8da6d907b"
+    ],
+    "total_documents_considered": 75,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T15:07:46.012135+00:00"
+  },
+  "documents_retrieved": 75,
+  "sources": [
+    {
+      "document_id": "30813856c2c14b26",
+      "title": "Agora Coffee Merchants Strikes North America Deal with Brazilian Producer Ipanema - Daily Coffee News by Roast Magazine",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUmtvZ2E1RDNjU2FHU2tLMHhMZVJNYkZYN3AzcE9sOVF1eXRtZVc0N0lTcGZycWp6M01lVFNIckpMNGJMSUxwMXRaOWw4TlNVamNvN3ZpNUxlRjhrLS1lNjVXVmZzZnZLc0JtQVBQZWVsa25OdGtQVHo0UEljZFFIRzluSWZKQVVpdjR5V3loUTNncjduc0Zndll4VmV5aVMxaUNQWTZybUx3RkZFNHp5TWNSYU42TnpCUWlfQXVR?oc=5",
+      "publication_date": "2021-11-26",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8546246290206909,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7f5a0ad8da6d907b",
+      "title": "Vietnam coffee export predicted to grow higher - Vietnam Pictorial",
+      "url": "https://vietnam.vnanet.vn/english/vietnams-coffee-export-predicted-to-grow-higher/503203.html",
+      "publication_date": "2021-11-26",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3578,
+      "n_copies": 2,
+      "syndication_domains": [
+        "en.vietnamplus.vn",
+        "vietnam.vnanet.vn"
+      ],
+      "retrieval_score": 0.5323,
+      "semantic_score": 0.853657603263855,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 1,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 2,
+    "n_fresh": 2,
+    "fresh_within_days": 2,
+    "newest_days_before": 1,
+    "median_days_before": 1.0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided documents discuss a new Brazil\u2011North America supply deal and Vietnam export forecasts, but neither source mentions a factor that would cause a price decline on 2021\u201111\u201129; one even predicts price rebound, so the evidence does not support the observed -4.1% move.",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 1952,
+    "evidence_document_ids": [
+      "30813856c2c14b26",
+      "7f5a0ad8da6d907b"
+    ],
+    "evidence_packing": {
+      "n_input": 2,
+      "n_packed": 2,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 792,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

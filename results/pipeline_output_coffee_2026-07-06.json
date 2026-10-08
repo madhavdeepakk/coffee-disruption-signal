@@ -1,0 +1,55 @@
+{
+  "anomaly": {
+    "date": "2026-07-06",
+    "price": 363.9500122070313,
+    "z_score": 6.814113852995499,
+    "anomaly_flag": true,
+    "pct_move": 15.301764373354192,
+    "direction": "up"
+  },
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 3,
+    "network_attempts": 3,
+    "network_failures": 1,
+    "network_successes": 2,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 27,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "1_document(s)_above_threshold",
+    "best_score": 0.8592926859855652,
+    "accepted_document_count": 1,
+    "accepted_document_ids": [
+      "c6e6ef2348e7981f"
+    ],
+    "total_documents_considered": 27,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-09-17T18:34:13.405904+00:00"
+  },
+  "documents_retrieved": 27,
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 1,
+    "inconsistent": 0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided evidence only mentions retailers lowering prices for branded coffee a week prior and contains no details explaining the 15.3% price spike on 2026-07-06.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient"
+  },
+  "faithfulness_report": null
+}

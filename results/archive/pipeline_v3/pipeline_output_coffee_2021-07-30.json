@@ -1,0 +1,845 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2021-07-30",
+    "price": 179.5500030517578,
+    "z_score": -3.3356299109986103,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -8.625952645415872,
+    "cumulative_pct_move": 11.38337869163075,
+    "cumulative_z_score": 0.6663204161317355,
+    "direction": "down"
+  },
+  "price_description": "-8.6% day-over-day move (z-score -3.34)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (26 pointed the opposite way, 5 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 2,
+    "network_failures": 1,
+    "network_successes": 2,
+    "cache_hits": 4,
+    "fallback_added": 0,
+    "documents_returned": 125,
+    "dropped_out_of_window": 3,
+    "collapsed_duplicates": 20,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "37_document(s)_above_threshold",
+    "best_score": 0.913061261177063,
+    "accepted_document_count": 37,
+    "accepted_document_ids": [
+      "fa9a27f8f41e0801",
+      "fd3befd9e528bf1f",
+      "91478ed388a74cf3",
+      "166bd77fab53fe50",
+      "7f6aebb5c82e93c9",
+      "48e1d5afba16e464",
+      "cdc37b314ec8a79b",
+      "c9edce5fd08ecf39",
+      "ead335d70189a2ac",
+      "d66c60384253b2d3",
+      "6d7cc646dd6cb778",
+      "04891c24f475c5ef",
+      "2639bb18a00c23de",
+      "b16192e923234779",
+      "d779d6cdaa6daafc",
+      "5affda61993cbccc",
+      "bec084307e74df61",
+      "69ad35c6e64320be",
+      "751f8b1eff1068d8",
+      "4c335cb1d754dc67",
+      "3c767b8ecb0f788b",
+      "47613e05d1b2752d",
+      "8f29557de9bc9fb5",
+      "6b7668173ce0635e",
+      "8621c2f8a9988e3d",
+      "eb793526468ff7cf",
+      "864043b3d86a8b2c",
+      "c34eb7d59fcad7e7",
+      "20e53b46004a8ff6",
+      "0787633645c388fb",
+      "dd2cc0ab5001ac6c",
+      "04212c0a6fd8f6cd",
+      "824192d2e6af7f38",
+      "f49bad581bb5f931",
+      "e50d705320c9b3f5",
+      "d465c470cfdeba6c",
+      "a93f67a51fe181bf"
+    ],
+    "total_documents_considered": 125,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T10:42:29.927032+00:00"
+  },
+  "documents_retrieved": 125,
+  "sources": [
+    {
+      "document_id": "48e1d5afba16e464",
+      "title": "Brazil frost - related coffee crop losses could reach 30 % - cooperative president",
+      "url": "https://riotimesonline.com/brazil-news/rio-business/brazils-coffee-crop-losses-may-reach-30-cooperative-president/",
+      "publication_date": "2021-07-26",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 2021,
+      "n_copies": 1,
+      "syndication_domains": [
+        "riotimesonline.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.8973113298416138,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6b7668173ce0635e",
+      "title": "Coffee, cane and orange crops at risk as temperatures plunge in Brazil - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNa2JXZkE0UVhTaERKRGVsaFJSM1N6dzl1c0QwQ1RnQldndjdNazk4cEp2cVhNaFhtbkhqVV9BT0Fvekx2MnItMWduajdZNFMzem8yTm9RbWFCaTllMXU1cmE1RVBFanRKWUt6NHNmWkM3STM0S3R4Ql95bVJkNkgxZjd4MUhnanRuZkJlR3VmdHVobkpJeUF3dUpXZWRtTGVKc2lDbzlaWFdkYzg?oc=5",
+      "publication_date": "2021-07-29",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8697643876075745,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "eb793526468ff7cf",
+      "title": "Coffee Prices Drop as Weather, Speculation Affect Market - Daily Coffee News by Roast Magazine",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZFVvSDA5QVo4bzNMaHZIMTZSWE5Gb0lEMHF2Z0NUUnJiSWFweHYyU2RoTU5DSXBKU3VIV0JhalhHTnBibGFIQUNVSjJ4Y1VsazJBYWExUHg4aDE3eXpIQlBFeF9DNmZjUXgzRWNtcjlCSVJ2NG03anNQSnhYa0JtUnRSZFJPRDl3dmF1S0E4bUFYOEZGajFNaG1QMA?oc=5",
+      "publication_date": "2021-07-30",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8637791872024536,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "20e53b46004a8ff6",
+      "title": "Sugar, Coffee Slip from Multiyear Highs as Frost Fears Ease - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOanZsVnJlZzU3dTZlYktTWkw1TzRqMGNlQVR4R2k3MEtOWVJoeV9XZFZJZ0QxQmhHaHRNZks1SkEzWmh3aUFTNEZwYlV5WmpwTXZfSk1BV1o2WFFmNzc3SUJoRl9IY3BweHB2V2laWktiMWtab09EdUZSWXZ5eFVlaDhTb3Nhc2ZwWlhham5ucmNTWlNUSU1uSTBJMXAtUEN3cW9iaFBIMl93ZnBIZGlJOA?oc=5",
+      "publication_date": "2021-07-27",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8579327464103699,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "dd2cc0ab5001ac6c",
+      "title": "Caf\u00e9 ar\u00e1bica recua na ICE ap\u00f3s m\u00e1xima de quase 7 anos diante de geadas no Brasil",
+      "url": "https://istoe.com.br/cafe-arabica-recua-na/",
+      "publication_date": "2021-07-27",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2558,
+      "n_copies": 1,
+      "syndication_domains": [
+        "istoe.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8559467792510986,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6d7cc646dd6cb778",
+      "title": "Brazil coffee frost sparks default fears , crop recovery may take years",
+      "url": "https://www.reuters.com/article/coffee-global-supplies/brazil-coffee-frost-sparks-default-fears-crop-recovery-may-take-years-idUSL8N2OY6FS",
+      "publication_date": "2021-07-22",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "reuters.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.887340784072876,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5affda61993cbccc",
+      "title": "Frosts stain Brazil coffee belt , growers see nearly a third of fields hit",
+      "url": "https://www.reuters.com/world/americas/frosts-stain-brazil-coffee-belt-growers-see-nearly-third-fields-hit-2021-07-30/",
+      "publication_date": "2021-07-30",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 3,
+      "syndication_domains": [
+        "agriculture.com",
+        "news.google.com",
+        "reuters.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8795639276504517,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0787633645c388fb",
+      "title": "\u0421\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c \u043a\u043e\u0444\u0435 \u043d\u0430 \u0431\u0438\u0440\u0436\u0435 \u0421\u0428\u0410 \u0431\u044c\u0435\u0442 \u0440\u0435\u043a\u043e\u0440\u0434\u044b . \u041f\u043e\u0447\u0435\u043c\u0443 \u0440\u0430\u0441\u0442\u0435\u0442 \u0446\u0435\u043d\u0430 \u0438 \u0447\u0435\u0433\u043e \u043e\u0436\u0438\u0434\u0430\u0442\u044c \u043f\u043e\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043b\u044e",
+      "url": "https://delo.ua/business/stoimost-kofe-na-birzhe-bet-rekordy-pochemu-ras-384615/",
+      "publication_date": "2021-07-26",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 4933,
+      "n_copies": 1,
+      "syndication_domains": [
+        "delo.ua"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.855959415435791,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "04212c0a6fd8f6cd",
+      "title": "\u0421\u0438\u043b\u044c\u043d\u044b\u0435 \u043c\u043e\u0440\u043e\u0437\u044b \u0432 \u0411\u0440\u0430\u0437\u0438\u043b\u0438\u0438 \u0447\u0442\u043e \u0431\u0443\u0434\u0435\u0442 \u0441 \u0443\u0440\u043e\u0436\u0430\u0435\u043c \u043a\u043e\u0444\u0435 \u043d\u043e\u0432\u043e\u0441\u0442\u0438 \u043c\u0438\u0440\u0430",
+      "url": "https://racurs.ua/n157793-silnye-morozy-v-brazilii-unichtojili-urojay-kofe-foto.html",
+      "publication_date": "2021-07-22",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 2001,
+      "n_copies": 1,
+      "syndication_domains": [
+        "racurs.ua"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8558204174041748,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "824192d2e6af7f38",
+      "title": "\u0417\u0430\u043c\u043e\u0440\u043e\u0437\u043a\u0438 \u0432 \u0411\u0440\u0430\u0437\u0438\u043b\u0438\u0438 \u043b\u0438\u0448\u0430\u0442 \u0440\u043e\u0441\u0441\u0438\u044f\u043d \u043b\u044e\u0431\u0438\u043c\u043e\u0433\u043e \u043a\u043e\u0444\u0435 \u0443\u0436\u0435 \u0432 \u0430\u0432\u0433\u0443\u0441\u0442\u0435",
+      "url": "https://www.dp.ru/a/2021/07/28/Zamorozki_v_Brazilii_lisha?hash=775603",
+      "publication_date": "2021-07-28",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3274,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dp.ru"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8528212308883667,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a93f67a51fe181bf",
+      "title": "How coffee exports escaped Covid-19 storm - Daily Monitor",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOR0lPcEc1QU5XRzB6c25RdXI5RXk5MWNqdDBPNU44VzVyNGs2VlZSWXFRZWZNbXJFUHp1cW12ZlAzTlR0MERra2FEYjVhY3B2N3poR0xuWXp4LVB5T0hOdVRjdUJSY2lGQWxqVVVfbWsySDAxLWxPWlVIQ3praWRsTEtQMFNuVUNKWDFVTTZuV2Q4dVQtSFQwRW52MkJ1NWJp?oc=5",
+      "publication_date": "2021-07-27",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8500788807868958,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "fa9a27f8f41e0801",
+      "title": "Coffee froths to new highs as Brazil frost hits crops | Money",
+      "url": "https://www.malaymail.com/news/money/2021/07/25/coffee-froths-to-new-highs-as-brazil-frost-hits-crops/1992494",
+      "publication_date": "2021-07-25",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 3944,
+      "n_copies": 1,
+      "syndication_domains": [
+        "malaymail.com"
+      ],
+      "retrieval_score": 0.3208,
+      "semantic_score": 0.913061261177063,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "fd3befd9e528bf1f",
+      "title": "Coffee surges to 7 - year highs with more cold headed for Brazil",
+      "url": "https://www.unionleader.com/nh/nh/food/coffee-surges-to-7-year-highs-with-more-cold-headed-for-brazil/article_4792898e-16ce-53be-855b-7e2af1a2b24b.html",
+      "publication_date": "2021-07-27",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2398,
+      "n_copies": 3,
+      "syndication_domains": [
+        "unionleader.com"
+      ],
+      "retrieval_score": 0.31,
+      "semantic_score": 0.9095969200134277,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "91478ed388a74cf3",
+      "title": "\u2018Double Whammy\u2019 of Drought, Frosts in Brazil Propels Coffee Prices - The Food Institute",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeGstaVZqaEpHeFc5SGdTU3BRZnNnNF9FSXVWd0lPcHN6d3RBY2FoU2UtM1NBQkNZYVotV19fZG9VYVlxTFNDWXdNVUlhenNmeHR2Nk43SV85Ynp6OHA5Q21TS0tzVzc1bnJDWHRfVlJwZEFaNFBEWmRDQldWQmlydGpUZmFlR1gtemNad3hFalRsM2lMckhtV2Izdlg?oc=5",
+      "publication_date": "2021-07-28",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.9013916254043579,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "166bd77fab53fe50",
+      "title": "Freak frost hits heart of coffee belt , damaging crops - FarmKenya Initiative",
+      "url": "https://www.standardmedia.co.ke/farmkenya/article/2001418978/freak-frost-hits-heart-of-coffee-belt-damaging-crops",
+      "publication_date": "2021-07-23",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 2640,
+      "n_copies": 1,
+      "syndication_domains": [
+        "standardmedia.co.ke"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.9010487794876099,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7f6aebb5c82e93c9",
+      "title": "In Brazil , a cold snap delivers a blow to coffee growing",
+      "url": "https://www.startribune.com/in-brazil-a-cold-snap-delivers-a-blow-to-coffee-growing/600081055/",
+      "publication_date": "2021-07-24",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 1672,
+      "n_copies": 1,
+      "syndication_domains": [
+        "startribune.com"
+      ],
+      "retrieval_score": 0.2885,
+      "semantic_score": 0.8996255397796631,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "cdc37b314ec8a79b",
+      "title": "Freak Brazil frost hits heart of coffee belt , damaging crops",
+      "url": "https://www.reuters.com/world/americas/freak-brazil-frost-hits-heart-coffee-belt-damaging-crops-2021-07-21/",
+      "publication_date": "2021-07-21",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 7,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 2,
+      "syndication_domains": [
+        "news.google.com",
+        "reuters.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8921899795532227,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c9edce5fd08ecf39",
+      "title": "Coffee prices surge as unusual cold threatens Brazilian production - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSVM3THJGUEVralY5amY5VDNGVF8zRUNwcmQ2SExLdU5qOGVLZW5WMUZqU3NmUHZKUFpDM2JqSFY0c0xrdTVSSkpoLXVmeDVsYWVxbG9SUVN0YnN2M05kY0Y4ejZFaDdqWVlGaWdfLUNuelpEZTNFd00xSFJRcElpLWthSUl5cHFTSExwZ21kU1AxbDN1ZVJCWlBfYVdJWUZLZVcxTzhlR01TVXFtVHV0a2Zrck4?oc=5",
+      "publication_date": "2021-07-27",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 2,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8908789157867432,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ead335d70189a2ac",
+      "title": "Coffee Prices Surge as Freezing Temperatures Damage Brazil\u2019s Crops - business.com.tm",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQM1NLakJ0TWZZdFBXOFhqUFN1NDIzUTE3Z3hJeW9NT0U5U2hkR3hvOWFRZGVhSUd2Y0JBay14NzFPZ2hUMmhCc2pJUFBQZ2ZMcWQwSlptT2UzS2ZqcF9HTzQ0d3RycHMzLWxWdGx3OXU4dDJzbGc2bkhyYk9WUW1WTmt6dnJCTGJIMkhDQTNSTjBobUFJZTNzdHhXS3p4Wm5v?oc=5",
+      "publication_date": "2021-07-28",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2437,
+      "semantic_score": 0.8904894590377808,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d66c60384253b2d3",
+      "title": "Coffee prices surge as Brazil frost hits crops - Arab News",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQcjJmbXk2aXpCTk1hdVg5LW91aGZqdHdTbThSLXhqWV9qTjBnZmNOa3dKLVRialJqVlBQcTN0Z3VNMmcyRDZpenVidFZ1Y3JjQmtWQ09GTzR6T1IwMGstRFpmWlBrSVdNenFCd1lCYUJKRGRDcGNUcmtESzRMQ2g5VjYzN0FYa3pCZ19tOXp5TmxDUQ?oc=5",
+      "publication_date": "2021-07-25",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.3548,
+      "semantic_score": 0.8903118968009949,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "04891c24f475c5ef",
+      "title": "Brazil frost sends coffee prices to multi-year peak - Daily Sabah",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVEQ0bGRPZ0R5QmYteVhfNHNVek13bUhKek9SdmNUakxoaXducGhXX19FcGc1dUdrdDhkZF8yNEZGT2tyeXRzYVR4WHpQeHo5YVBBckdzN01zd3hENWJmU25OQjFHZnZzS0V4OWY4bkVPWFJjVHJhX0hZM3dndVpOLTY4Mzh0Z0sya1pQQ0tFXzE0WWJ4RXU5bXBvbw?oc=5",
+      "publication_date": "2021-07-25",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.3441,
+      "semantic_score": 0.8860514163970947,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2639bb18a00c23de",
+      "title": "Brazil Frost May Kill Young Coffee Trees , Hurt Crops for Years By Bloomberg",
+      "url": "https://www.investing.com/news/commodities-news/brazils-frost-may-kill-young-coffee-trees-hurt-crops-for-years-2565738",
+      "publication_date": "2021-07-24",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "investing.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.883205771446228,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b16192e923234779",
+      "title": "Wild weather in biggest coffee exporter sparks price surge",
+      "url": "https://finans.dk/global/bloomberg/ECE13147013/wild-weather-in-biggest-coffee-exporter-sparks-price-surge/",
+      "publication_date": "2021-07-22",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 415,
+      "n_copies": 1,
+      "syndication_domains": [
+        "finans.dk"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.8802956342697144,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d779d6cdaa6daafc",
+      "title": "Unusual cold weather in Brazil sends coffee prices soaring - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQV0VEUnE2Q0ZwdHdGQW1pN0JuU3BSeFJxZlhsQzJoT3h1czVwVWtnWl9Lam1FaWRaMGFBSnd1dFkxVUlpYTFrVFg5RzFQN1Q4NE5sZE5fRnRyWV9wM0YwM3VWQmxEOEwzNlNucFVtV29hdGVlTnE1Vk9tQVhpNDBhWDUxbFJCaWZyZDF1YWF1MElGbzNJeDFRU0V2d2hkMWVRaVRQddIBqgFBVV95cUxQajIzOHFGSjVjWkszbTYyRlRqQ3VhNURYMXFCUWlLeFB2OFdvamQ5bEFaREgyNl90VERnaVZuZzNYdUZIVFc5RkpGcUpsak5CUXk5QzU5UmFUbmlVcWJMQ25KSkVZb1ZYSXRaN1BQLXJGUHdxMHl6NlRicDZmeHQ4S0JGSDRzemVSc3g1clN2U21FLU83SkY5Q2l6b1BBckg4bDdYWDRoLTBldw?oc=5",
+      "publication_date": "2021-07-27",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8796427249908447,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "bec084307e74df61",
+      "title": "Why is frost in Brazil causing global coffee prices to increase? - Perfect Daily Grind",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ0xhVzFQYnBSWU5sdUUtZzVTa19jRmpTcVB6RnNwbmVDS0llNjhFM284MTFJbmJNVGlDTnlFMEREdDA4MzdHRHBLSG9fRDNQdWtBT3NsZjktRHV0aHVGcDNHeHhSclpqTzQwdVFCbW1nWWxYZmtJUThoSm1fbVVxOGdiaG4zVWZMRHNVRjZmam5vODhOeWZWcDlfREtkeWRPNUpuMg?oc=5",
+      "publication_date": "2021-07-29",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.3441,
+      "semantic_score": 0.8784551620483398,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "69ad35c6e64320be",
+      "title": "Coffee prices soar to 7-year high on Brazil frost fears - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdC1IWk50OERjSmdzTldtX2dFRlZpMmw1YVg4clVxVXZtRjZXWVRMc1d2c0RocnV3Vzhyd0s0QUlmeHRiSFlMaG5URXN6RUVWRzEwbTR0dXZCbXJKajBOTF9UaDhHb0hfLVVWa1UwNjNXSF9WemQ5d1lzWW43SDZUajVTRW5ub3BVQVpGdWJHQVN1NDBEMmZSSnA0UnMzN1FpYXAtZHhZR0xjSEZUYTlOOGItVjZCOXhjQ2dScFVB0gHDAUFVX3lxTE04bWI0c1dkT05ZbXdZb1RSZENvNlp4N3pBeHN5bVhPSWZuY3FXWXhIQlRVbmh1X0JlWk1GM2haUFV3QmdmRGVSeUlhWDBrUjJvSFJCMFFSM2NoNXowQXpCV1dJcmRENm5IT21keWdBQ0lsNXdEaXozelVxVFlqbWxDYnBDdzZKbGwwdnEwbG9zQU56RG1QUG5HeFMzRVAxdzdhdUJWR3JyOU52emtBdXRYY3ZoNTFVbTZfMlpWNE03UTJ4aw?oc=5",
+      "publication_date": "2021-07-24",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.3548,
+      "semantic_score": 0.8782243728637695,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "751f8b1eff1068d8",
+      "title": "Brazil\u2019s Frost May Kill Young Coffee Trees, Hurt Crops for Years - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNOU0zQmQ5ZnNyTk5zLTV2a2kwbXUzMWZ0OG9tNFVab1FJbzdOT2lHcmIzX1V6N3JvYS1WenotOF9zdFlJTVFiZ3hFRGlJZHZkVzFPTWVndnctYzExQWo0N1RyQnpNclk1QXF0QVNuOVkwSXhHYkdub2tESmVYaXVtSmZEZjNWRTdtLVlSLUVSX2JYOHRNOENuVzFEX09CeXRDVm9sXzZ3VWlNelRYazN0WEM0UEI?oc=5",
+      "publication_date": "2021-07-22",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.3441,
+      "semantic_score": 0.8770908117294312,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4c335cb1d754dc67",
+      "title": "D\u00fcrre und Frost machen Kaffeebauern in Brasilien zu schaffen : AB WANN m\u00fcssen Verbraucher mit Preiserh\u00f6hungen rechnen ? ",
+      "url": "https://www.berliner-kurier.de/panorama/duerre-und-frost-machen-kaffeebauern-in-brasilien-zu-schaffen-ab-wann-muessen-verbraucher-mit-preiserhoehungen-rechnen-li.173139",
+      "publication_date": "2021-07-26",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 3323,
+      "n_copies": 1,
+      "syndication_domains": [
+        "berliner-kurier.de"
+      ],
+      "retrieval_score": 0.0161,
+      "semantic_score": 0.8752145767211914,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3c767b8ecb0f788b",
+      "title": "Northern Michigan Coffee Shops May See Increase to Coffee Prices",
+      "url": "https://www.9and10news.com/2021/07/20/northern-michigan-coffee-shops-may-see-increase-to-coffee-prices/",
+      "publication_date": "2021-07-20",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 1613,
+      "n_copies": 1,
+      "syndication_domains": [
+        "9and10news.com"
+      ],
+      "retrieval_score": 0.2939,
+      "semantic_score": 0.8749450445175171,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "47613e05d1b2752d",
+      "title": "Cold snap covers parts of Brazil in snow and drives up coffee prices - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbEpvQ0VZNHNTaUNleVktbFB2b19pcUdBVko3cUhyOHdmOUFKMTR2djlyTDdTV0FFYk4wc2NBOF9TYTlGbVhFTDZsbk00WldjVTNvMmJfZC1rNVpQRTdjSUd2VVdTYjFsNk9KdUZsS1dTLXpndU9qZVpPMDROVUFHR0lwRDR0aWZLSFhZRDJqZ0c?oc=5",
+      "publication_date": "2021-07-30",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.874626100063324,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8f29557de9bc9fb5",
+      "title": "Coffee prices surge to 6 - year high as extreme cold threatens Brazil crops",
+      "url": "https://www.msn.com/en-us/money/markets/coffee-prices-surge-to-6-year-high-as-extreme-cold-threatens-brazils-crops/ar-AAMCzE7",
+      "publication_date": "2021-07-27",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 2,
+      "syndication_domains": [
+        "msn.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8743669986724854,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8621c2f8a9988e3d",
+      "title": "Orange Juice Futures Soar Amid  Frost Threat \u00a0In Brazil",
+      "url": "https://www.zerohedge.com/commodities/orange-juice-futures-soar-amid-frost-threats-brazil",
+      "publication_date": "2021-07-28",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 123,
+      "n_copies": 1,
+      "syndication_domains": [
+        "zerohedge.com"
+      ],
+      "retrieval_score": 0.0215,
+      "semantic_score": 0.8687575459480286,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "864043b3d86a8b2c",
+      "title": "Ethiopia Hopes $1 billion Proceeds from Coffee, Brazil Faces Drought - Birr Metrics",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQTNLa1lTcVMxNTAyeFpXUmNncHdMdGFDUUJLODhrQzJKZ202ZVB5eVlzejVqQzktMkF6bi1sY08yV1pQZDBiRFBDTjM5ZjYtWHJkMGRSbjUxb1U3THZ0ZHg5RG02WXhoOHc4endfZGdzRGk0MlF2ZF9kVktJUGdVYWJjUERyc2ktY2IyWTFXeGowemRsaXZYXw?oc=5",
+      "publication_date": "2021-07-20",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8618443012237549,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c34eb7d59fcad7e7",
+      "title": "Freak Cold Snap In\u00a0Biggest Coffee Exporter Sparks Huge Price Surge",
+      "url": "https://www.zerohedge.com/commodities/freak-cold-snap-biggest-coffee-exporter-sparks-huge-price-surge",
+      "publication_date": "2021-07-22",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 123,
+      "n_copies": 1,
+      "syndication_domains": [
+        "zerohedge.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8585244417190552,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f49bad581bb5f931",
+      "title": "Caf\u00e9 ar\u00e1bica sobe 9 , 9 % com retorno do frio ao Brasil ; acar tamb\u00e9m avan\u00e7a",
+      "url": "https://istoe.com.br/cafe-arabica-sobe-99/",
+      "publication_date": "2021-07-26",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 2249,
+      "n_copies": 2,
+      "syndication_domains": [
+        "istoe.com.br",
+        "istoedinheiro.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8526411056518555,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e50d705320c9b3f5",
+      "title": "Safras de caf\u00e9 e acar do Brasil s\u00e3o novamente amea\u00e7adas por frio extremo",
+      "url": "https://istoe.com.br/safras-de-cafe-e/",
+      "publication_date": "2021-07-26",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 2270,
+      "n_copies": 2,
+      "syndication_domains": [
+        "istoe.com.br",
+        "revistagloborural.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8521562218666077,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d465c470cfdeba6c",
+      "title": "Arabica Coffee Slips With Traders Weighing Brazil Frost Risk",
+      "url": "https://www.bnnbloomberg.ca/arabica-coffee-slips-with-traders-weighing-brazil-frost-risk-1.1633315",
+      "publication_date": "2021-07-27",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1125,
+      "n_copies": 1,
+      "syndication_domains": [
+        "bnnbloomberg.ca"
+      ],
+      "retrieval_score": 0.1828,
+      "semantic_score": 0.8502840995788574,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 5,
+    "neutral": 6,
+    "inconsistent": 26
+  },
+  "evidence_recency": {
+    "n_dated": 37,
+    "n_fresh": 9,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 4
+  },
+  "explanation_result": {
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2900,
+    "evidence_document_ids": [
+      "48e1d5afba16e464",
+      "6b7668173ce0635e",
+      "eb793526468ff7cf",
+      "20e53b46004a8ff6",
+      "dd2cc0ab5001ac6c",
+      "6d7cc646dd6cb778",
+      "5affda61993cbccc",
+      "0787633645c388fb",
+      "04212c0a6fd8f6cd",
+      "824192d2e6af7f38",
+      "a93f67a51fe181bf",
+      "fa9a27f8f41e0801",
+      "fd3befd9e528bf1f"
+    ],
+    "evidence_packing": {
+      "n_input": 37,
+      "n_packed": 13,
+      "excerpt_chars": 600,
+      "estimated_tokens": 4092,
+      "max_tokens": 4250,
+      "dropped_document_ids": [
+        "d465c470cfdeba6c",
+        "e50d705320c9b3f5",
+        "f49bad581bb5f931",
+        "c34eb7d59fcad7e7",
+        "864043b3d86a8b2c",
+        "8621c2f8a9988e3d",
+        "8f29557de9bc9fb5",
+        "47613e05d1b2752d",
+        "3c767b8ecb0f788b",
+        "4c335cb1d754dc67",
+        "751f8b1eff1068d8",
+        "69ad35c6e64320be",
+        "bec084307e74df61",
+        "d779d6cdaa6daafc",
+        "b16192e923234779",
+        "2639bb18a00c23de",
+        "04891c24f475c5ef",
+        "d66c60384253b2d3",
+        "ead335d70189a2ac",
+        "c9edce5fd08ecf39",
+        "cdc37b314ec8a79b",
+        "7f6aebb5c82e93c9",
+        "166bd77fab53fe50",
+        "91478ed388a74cf3"
+      ],
+      "truncated": true
+    },
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": "high",
+    "reason": "direction_guard: 26 accepted document(s) pointed against the move vs 5 with it",
+    "withheld_explanation": {
+      "explanation": "The sharp 8.6% decline on 30\u202fJuly was attributed to market participants reacting to easing concerns over Brazil\u2019s frost\u2011hit coffee crop and related speculation. Daily Coffee News reported that coffee prices fell that day because weather\u2011related expectations and speculation shifted (source: eb793526468ff7cf), while Bloomberg noted that coffee slipped from multiyear highs as frost\u2011related fears eased earlier in the week (source: 20e53b46004a8ff6).",
+      "citations": [
+        {
+          "document_id": "eb793526468ff7cf",
+          "supports": "states coffee prices dropped on 30\u202fJuly due to weather and speculation"
+        },
+        {
+          "document_id": "20e53b46004a8ff6",
+          "supports": "reports coffee slipped as frost fears eased, indicating a downward pressure on prices"
+        }
+      ],
+      "confidence": "high"
+    }
+  },
+  "faithfulness_report": null
+}

@@ -1,0 +1,160 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2020-03-19",
+    "price": 116.6500015258789,
+    "z_score": 2.938812684491152,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 7.959276474986828,
+    "cumulative_pct_move": 6.1902623087972,
+    "cumulative_z_score": 0.6690867041593225,
+    "direction": "up"
+  },
+  "price_description": "+8.0% day-over-day move (z-score 2.94)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (1 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 3,
+    "network_failures": 2,
+    "network_successes": 2,
+    "cache_hits": 3,
+    "fallback_added": 0,
+    "documents_returned": 117,
+    "dropped_out_of_window": 9,
+    "collapsed_duplicates": 5,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "3_document(s)_above_threshold",
+    "best_score": 0.8725283741950989,
+    "accepted_document_count": 3,
+    "accepted_document_ids": [
+      "edfe3c87368a2db5",
+      "bfd0af5c64e8e815",
+      "9b353e1f7f0f33c2"
+    ],
+    "total_documents_considered": 117,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T10:30:05.405205+00:00"
+  },
+  "documents_retrieved": 117,
+  "sources": [
+    {
+      "document_id": "9b353e1f7f0f33c2",
+      "title": "Shipping Containers in Short Supply \u2013 gCaptain",
+      "url": "https://gcaptain.com/shipping-containers-in-short-supply/",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 3933,
+      "n_copies": 2,
+      "syndication_domains": [
+        "gcaptain.com",
+        "shippingherald.com"
+      ],
+      "retrieval_score": 0.4319,
+      "semantic_score": 0.8257689476013184,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "bfd0af5c64e8e815",
+      "title": "Heavy rains, frost damage coffee plants - myrepublica.nagariknetwork.com",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNVFQU3piVkUxVi1BdGlkZFZGWk1Yc2NITENjMnYtNzRVWmNQMVRTdzNkZ196X1R3emVMcUZYcktrV084UWdOV3BmSzc4eVplREkxaGMwX2lROXhMdzNpeElVY1FCS3A3ZnR5Rl9FTGE4Ry0zVmZYQVBtWF9ieXdFeUZiSGc2ZnRNcFE?oc=5",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2437,
+      "semantic_score": 0.8591883778572083,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "edfe3c87368a2db5",
+      "title": "Coffee exports from Brazil fell by almost a quarter in February, reports Cecaf\u00e9 - Comunicaffe International",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSWV5UmlpU21xYWptVjNDbmZKOXpfdnZYVmtZa3htOURDUi1vNW5BN1RWMHZFaUMwRHRhUlRzbmoxaTFISnBHU2UtekwzeFYzVkFjSmNfYkY0VE96Z2pmQlM4dVVUanVyUTRQdXR2YXV5ajJRTEJmSDFlN1VnQnBFdEM3QUh3NENUb1JRSFdkdlRsMjBvZTdBRFktTzNUMDctSERUYm5vaGhLWkU?oc=5",
+      "publication_date": "2020-03-11",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8725283741950989,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 1,
+    "inconsistent": 1
+  },
+  "evidence_recency": {
+    "n_dated": 3,
+    "n_fresh": 2,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 2
+  },
+  "explanation_result": {
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2961,
+    "evidence_document_ids": [
+      "9b353e1f7f0f33c2",
+      "bfd0af5c64e8e815",
+      "edfe3c87368a2db5"
+    ],
+    "evidence_packing": {
+      "n_input": 3,
+      "n_packed": 3,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 934,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    },
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": "high",
+    "reason": "direction_guard: 1 accepted document(s) pointed against the move vs 1 with it",
+    "withheld_explanation": {
+      "explanation": "The +8% jump on 2020-03-19 can be linked to emerging supply\u2011side pressures. On the same day a report highlighted a severe shortage of shipping containers that was expected to slow coffee cargoes from Brazil to China (source: 9b353e1f7f0f33c2). Two days earlier heavy rains and frost damage to coffee plants were reported, raising concerns about reduced coffee harvests (source: bfd0af5c64e8e815). These supply\u2011tightening signals likely pushed coffee prices higher.",
+      "citations": [
+        {
+          "document_id": "9b353e1f7f0f33c2",
+          "supports": "Container shortage expected to slow Brazil coffee cargoes, creating supply pressure."
+        },
+        {
+          "document_id": "bfd0af5c64e8e815",
+          "supports": "Heavy rains and frost damage to coffee plants reported, indicating potential harvest reduction."
+        }
+      ],
+      "confidence": "high"
+    }
+  },
+  "faithfulness_report": null
+}

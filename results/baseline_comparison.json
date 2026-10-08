@@ -1,0 +1,275 @@
+{
+  "n_labelled": 18,
+  "n_dates_compared": 15,
+  "n_explain_labelled": 12,
+  "n_refuse_labelled": 3,
+  "dates": [
+    "2020-03-19",
+    "2021-05-05",
+    "2021-07-19",
+    "2021-07-20",
+    "2021-07-22",
+    "2021-07-30",
+    "2022-05-11",
+    "2023-01-31",
+    "2023-09-20",
+    "2023-11-30",
+    "2024-04-30",
+    "2024-10-07",
+    "2025-02-10",
+    "2025-08-15",
+    "2025-09-15"
+  ],
+  "summary": {
+    "always_explain": {
+      "n_graded": 15,
+      "n_fault": 0,
+      "accuracy": {
+        "k": 12,
+        "n": 15,
+        "pct": 80.0,
+        "ci95": [
+          54.8,
+          93.0
+        ]
+      },
+      "explain_recall": {
+        "k": 12,
+        "n": 12,
+        "pct": 100.0,
+        "ci95": [
+          75.7,
+          100.0
+        ]
+      },
+      "refusal_specificity": {
+        "k": 0,
+        "n": 3,
+        "pct": 0.0,
+        "ci95": [
+          0.0,
+          56.2
+        ]
+      },
+      "balanced_accuracy_pct": 50.0
+    },
+    "gate_only": {
+      "n_graded": 15,
+      "n_fault": 0,
+      "accuracy": {
+        "k": 12,
+        "n": 15,
+        "pct": 80.0,
+        "ci95": [
+          54.8,
+          93.0
+        ]
+      },
+      "explain_recall": {
+        "k": 12,
+        "n": 12,
+        "pct": 100.0,
+        "ci95": [
+          75.7,
+          100.0
+        ]
+      },
+      "refusal_specificity": {
+        "k": 0,
+        "n": 3,
+        "pct": 0.0,
+        "ci95": [
+          0.0,
+          56.2
+        ]
+      },
+      "balanced_accuracy_pct": 50.0
+    },
+    "pipeline": {
+      "n_graded": 15,
+      "n_fault": 0,
+      "accuracy": {
+        "k": 10,
+        "n": 15,
+        "pct": 66.7,
+        "ci95": [
+          41.7,
+          84.8
+        ]
+      },
+      "explain_recall": {
+        "k": 9,
+        "n": 12,
+        "pct": 75.0,
+        "ci95": [
+          46.8,
+          91.1
+        ]
+      },
+      "refusal_specificity": {
+        "k": 1,
+        "n": 3,
+        "pct": 33.3,
+        "ci95": [
+          6.1,
+          79.2
+        ]
+      },
+      "balanced_accuracy_pct": 54.2
+    },
+    "pipeline_guarded": {
+      "n_graded": 15,
+      "n_fault": 0,
+      "accuracy": {
+        "k": 12,
+        "n": 15,
+        "pct": 80.0,
+        "ci95": [
+          54.8,
+          93.0
+        ]
+      },
+      "explain_recall": {
+        "k": 9,
+        "n": 12,
+        "pct": 75.0,
+        "ci95": [
+          46.8,
+          91.1
+        ]
+      },
+      "refusal_specificity": {
+        "k": 3,
+        "n": 3,
+        "pct": 100.0,
+        "ci95": [
+          43.8,
+          100.0
+        ]
+      },
+      "balanced_accuracy_pct": 87.5
+    }
+  },
+  "per_date": [
+    {
+      "date": "2020-03-19",
+      "label": "EXPLAIN",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "REFUSED",
+      "pipeline_guarded": "REFUSED"
+    },
+    {
+      "date": "2021-05-05",
+      "label": "EXPLAIN",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "EXPLAINED",
+      "pipeline_guarded": "EXPLAINED"
+    },
+    {
+      "date": "2021-07-19",
+      "label": "REFUSE",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "EXPLAINED",
+      "pipeline_guarded": "REFUSED"
+    },
+    {
+      "date": "2021-07-20",
+      "label": "EXPLAIN",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "EXPLAINED",
+      "pipeline_guarded": "EXPLAINED"
+    },
+    {
+      "date": "2021-07-22",
+      "label": "EXPLAIN",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "EXPLAINED",
+      "pipeline_guarded": "EXPLAINED"
+    },
+    {
+      "date": "2021-07-30",
+      "label": "REFUSE",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "REFUSED",
+      "pipeline_guarded": "REFUSED"
+    },
+    {
+      "date": "2022-05-11",
+      "label": "EXPLAIN",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "EXPLAINED",
+      "pipeline_guarded": "EXPLAINED"
+    },
+    {
+      "date": "2023-01-31",
+      "label": "EXPLAIN",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "EXPLAINED",
+      "pipeline_guarded": "EXPLAINED"
+    },
+    {
+      "date": "2023-09-20",
+      "label": "REFUSE",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "EXPLAINED",
+      "pipeline_guarded": "REFUSED"
+    },
+    {
+      "date": "2023-11-30",
+      "label": "EXPLAIN",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "REFUSED",
+      "pipeline_guarded": "REFUSED"
+    },
+    {
+      "date": "2024-04-30",
+      "label": "EXPLAIN",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "REFUSED",
+      "pipeline_guarded": "REFUSED"
+    },
+    {
+      "date": "2024-10-07",
+      "label": "EXPLAIN",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "EXPLAINED",
+      "pipeline_guarded": "EXPLAINED"
+    },
+    {
+      "date": "2025-02-10",
+      "label": "EXPLAIN",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "EXPLAINED",
+      "pipeline_guarded": "EXPLAINED"
+    },
+    {
+      "date": "2025-08-15",
+      "label": "EXPLAIN",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "EXPLAINED",
+      "pipeline_guarded": "EXPLAINED"
+    },
+    {
+      "date": "2025-09-15",
+      "label": "EXPLAIN",
+      "always_explain": "EXPLAINED",
+      "gate_only": "EXPLAINED",
+      "pipeline": "EXPLAINED",
+      "pipeline_guarded": "EXPLAINED"
+    }
+  ]
+}

@@ -1,0 +1,481 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2021-07-22",
+    "price": 193.6499938964844,
+    "z_score": 4.245460137066219,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": 10.0284056230025,
+    "cumulative_pct_move": 27.35941467266263,
+    "cumulative_z_score": 4.502066601958535,
+    "direction": "up"
+  },
+  "price_description": "+10.0% day-over-day move (z-score 4.25), on top of +27.4% over the last 10 trading days",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "An explanation is supported by the cited evidence, but 2 citation(s) were flagged as weakly matched to their source. Weigh it accordingly.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 3,
+    "network_failures": 0,
+    "network_successes": 4,
+    "cache_hits": 3,
+    "fallback_added": 0,
+    "documents_returned": 153,
+    "dropped_out_of_window": 19,
+    "collapsed_duplicates": 10,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "15_document(s)_above_threshold",
+    "best_score": 0.9086000323295593,
+    "accepted_document_count": 15,
+    "accepted_document_ids": [
+      "4e2c5649670d40c2",
+      "cdc37b314ec8a79b",
+      "6d7cc646dd6cb778",
+      "6d83131554c4cee8",
+      "31c4f69551023901",
+      "751f8b1eff1068d8",
+      "3c767b8ecb0f788b",
+      "edcfb2c83a19b090",
+      "864043b3d86a8b2c",
+      "c34eb7d59fcad7e7",
+      "78b225552ad20868",
+      "04212c0a6fd8f6cd",
+      "0716f589eda99331",
+      "a1479d33f83d06bc",
+      "a348af30968e68de"
+    ],
+    "total_documents_considered": 153,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T10:39:34.438385+00:00"
+  },
+  "documents_retrieved": 153,
+  "sources": [
+    {
+      "document_id": "4e2c5649670d40c2",
+      "title": "Coffee prices skyrocket as demand increases and Brazil suffers drought",
+      "url": "https://www.foxbusiness.com/lifestyle/coffee-prices-skyrocket-report",
+      "publication_date": "2021-07-14",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 2054,
+      "n_copies": 1,
+      "syndication_domains": [
+        "foxbusiness.com"
+      ],
+      "retrieval_score": 0.543,
+      "semantic_score": 0.9086000323295593,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "cdc37b314ec8a79b",
+      "title": "Freak Brazil frost hits heart of coffee belt , damaging crops",
+      "url": "https://www.reuters.com/world/americas/freak-brazil-frost-hits-heart-coffee-belt-damaging-crops-2021-07-21/",
+      "publication_date": "2021-07-21",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 4,
+      "syndication_domains": [
+        "kelo.com",
+        "news.google.com",
+        "reuters.com",
+        "wtbx.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8921899795532227,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "31c4f69551023901",
+      "title": "Frost Hits Brazilian Coffee Lands, Extent of Damage Not Yet Known - Daily Coffee News by Roast Magazine",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVHZLM3dfUVp5dklQdXg1YVZTeXoxQ1gyVEJsd2Fyb2d1QVhmNVVfUG9qclZPeVpFcElFbFRXcEFzVU4yOWR2V1l4SkIwRHF0Q25yenZqMWxleFhsclVJbmhCOHdwM1VhWTM5cm94Q09QVUJaRGRYMW5RejRycHpLeWxZTzlKOWxUcWNzLUIxakt3djJwTnVNbnhVSjhaM01aVmlrV3ktYw?oc=5",
+      "publication_date": "2021-07-12",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2437,
+      "semantic_score": 0.8794618248939514,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "751f8b1eff1068d8",
+      "title": "Brazil\u2019s Frost May Kill Young Coffee Trees, Hurt Crops for Years - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNOU0zQmQ5ZnNyTk5zLTV2a2kwbXUzMWZ0OG9tNFVab1FJbzdOT2lHcmIzX1V6N3JvYS1WenotOF9zdFlJTVFiZ3hFRGlJZHZkVzFPTWVndnctYzExQWo0N1RyQnpNclk1QXF0QVNuOVkwSXhHYkdub2tESmVYaXVtSmZEZjNWRTdtLVlSLUVSX2JYOHRNOENuVzFEX09CeXRDVm9sXzZ3VWlNelRYazN0WEM0UEI?oc=5",
+      "publication_date": "2021-07-22",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.3441,
+      "semantic_score": 0.8770908117294312,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3c767b8ecb0f788b",
+      "title": "Northern Michigan Coffee Shops May See Increase to Coffee Prices",
+      "url": "https://www.9and10news.com/2021/07/20/northern-michigan-coffee-shops-may-see-increase-to-coffee-prices/",
+      "publication_date": "2021-07-20",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 1613,
+      "n_copies": 1,
+      "syndication_domains": [
+        "9and10news.com"
+      ],
+      "retrieval_score": 0.2939,
+      "semantic_score": 0.8749450445175171,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "864043b3d86a8b2c",
+      "title": "Ethiopia Hopes $1 billion Proceeds from Coffee, Brazil Faces Drought - Birr Metrics",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQTNLa1lTcVMxNTAyeFpXUmNncHdMdGFDUUJLODhrQzJKZ202ZVB5eVlzejVqQzktMkF6bi1sY08yV1pQZDBiRFBDTjM5ZjYtWHJkMGRSbjUxb1U3THZ0ZHg5RG02WXhoOHc4endfZGdzRGk0MlF2ZF9kVktJUGdVYWJjUERyc2ktY2IyWTFXeGowemRsaXZYXw?oc=5",
+      "publication_date": "2021-07-20",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8618443012237549,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c34eb7d59fcad7e7",
+      "title": "Freak Cold Snap In\u00a0Biggest Coffee Exporter Sparks Huge Price Surge",
+      "url": "https://www.zerohedge.com/commodities/freak-cold-snap-biggest-coffee-exporter-sparks-huge-price-surge",
+      "publication_date": "2021-07-22",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 123,
+      "n_copies": 1,
+      "syndication_domains": [
+        "zerohedge.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8585244417190552,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "78b225552ad20868",
+      "title": "3 reasons why coffee prices are rising",
+      "url": "https://abcnews.go.com/GMA/Food/reasons-coffee-prices-rising/story?id=78813660",
+      "publication_date": "2021-07-13",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 7,
+      "publication_date_unknown": false,
+      "text_chars": 1422,
+      "n_copies": 1,
+      "syndication_domains": [
+        "abcnews.go.com"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.8575518131256104,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0716f589eda99331",
+      "title": "Coffee Prices Soar After Bad Harvests and Insatiable Demand - WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOb3FyTk9qQTdZQ1lFZDBKQVQ1TmtJOWVSTGpua2kzM1Y1RTVhXzZITkZfNEtiX3diNExaTmt2VGRJZjIycERsQzNtTXpoNkViQm41eDBCNm1IX244cEVkbmp4cTJHdkpMWS15UFg2RXhQZkRnVjJnNXBHdFp5YURNUjNINlNtNmxkNUpra3BCdXVsdU54S2JJeUVMUnQ3MTRULTNpMjgyem9GSnQ4Vjlmc2dBTW1fQTlHQnZz?oc=5",
+      "publication_date": "2021-07-12",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8552818298339844,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a1479d33f83d06bc",
+      "title": "Coffee Prices Set To Soar",
+      "url": "https://www.msn.com/en-us/money/markets/coffee-prices-set-to-soar/ar-AAM7iW7",
+      "publication_date": "2021-07-13",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 7,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 2,
+      "syndication_domains": [
+        "msn.com",
+        "washingtonexaminer.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8523608446121216,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a348af30968e68de",
+      "title": "Inusuales heladas golpean el coraz\u00f3n cafetero de Brasil y da\u00f1an los cultivos",
+      "url": "https://actualidad.rt.com/actualidad/398522-inusuales-heladas-corazon-cafetero-brasil",
+      "publication_date": "2021-07-22",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2456,
+      "n_copies": 1,
+      "syndication_domains": [
+        "actualidad.rt.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8520455956459045,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6d7cc646dd6cb778",
+      "title": "Brazil coffee frost sparks default fears , crop recovery may take years",
+      "url": "https://www.reuters.com/article/coffee-global-supplies/brazil-coffee-frost-sparks-default-fears-crop-recovery-may-take-years-idUSL8N2OY6FS",
+      "publication_date": "2021-07-22",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "reuters.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.887340784072876,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "edcfb2c83a19b090",
+      "title": "How Is Climate Change Impacting Coffee? - Sprudge Coffee",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE95NWJiNmppS1ktWGs1aFhORTNfVEVpbGFINEZMUmNFdVJpTHpZUjd0ZEd4cFhCbU93V2N1NTNKNGJNVUJXU0xhbkY5NVA2MnZRM1oza2hoaEh6ZkRIaHdTSDJCRllqMHA3aWo1V0IzZGc3MmpRQ0ZFek13?oc=5",
+      "publication_date": "2021-07-15",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8627687096595764,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "04212c0a6fd8f6cd",
+      "title": "\u0421\u0438\u043b\u044c\u043d\u044b\u0435 \u043c\u043e\u0440\u043e\u0437\u044b \u0432 \u0411\u0440\u0430\u0437\u0438\u043b\u0438\u0438 \u0447\u0442\u043e \u0431\u0443\u0434\u0435\u0442 \u0441 \u0443\u0440\u043e\u0436\u0430\u0435\u043c \u043a\u043e\u0444\u0435 \u043d\u043e\u0432\u043e\u0441\u0442\u0438 \u043c\u0438\u0440\u0430",
+      "url": "https://racurs.ua/n157793-silnye-morozy-v-brazilii-unichtojili-urojay-kofe-foto.html",
+      "publication_date": "2021-07-22",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2001,
+      "n_copies": 1,
+      "syndication_domains": [
+        "racurs.ua"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8558204174041748,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6d83131554c4cee8",
+      "title": "Strong Fundamentals Give This Coffee Fund a Jolt",
+      "url": "https://www.etftrends.com/strong-fundamentals-give-coffee-fund-a-jolt/",
+      "publication_date": "2021-07-16",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 2256,
+      "n_copies": 1,
+      "syndication_domains": [
+        "etftrends.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.8825139999389648,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 11,
+    "neutral": 3,
+    "inconsistent": 1
+  },
+  "evidence_recency": {
+    "n_dated": 15,
+    "n_fresh": 8,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 2
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The day\u2011over\u2011day price jump on 2021\u201107\u201122 coincides with reports of an unprecedented frost event in Brazil, the world\u2019s largest coffee producer. Multiple sources published on July 21\u201122 describe damaging frosts that harmed coffee trees and threatened the upcoming harvest, creating immediate supply\u2011concern expectations that drove Arabica futures sharply higher.",
+    "citations": [
+      {
+        "document_id": "cdc37b314ec8a79b",
+        "supports": "Reports a frost hitting Brazil\u2019s coffee belt on July 21, damaging crops."
+      },
+      {
+        "document_id": "751f8b1eff1068d8",
+        "supports": "Notes that Brazil\u2019s frost may kill young coffee trees and hurt crops for years, published on the same day as the price move."
+      },
+      {
+        "document_id": "c34eb7d59fcad7e7",
+        "supports": "Describes a freak cold snap in the biggest coffee exporter sparking a huge price surge, dated July 22."
+      },
+      {
+        "document_id": "a348af30968e68de",
+        "supports": "Spanish report of unusual frosts in Brazil\u2019s coffee region damaging crops, dated July 22."
+      },
+      {
+        "document_id": "6d7cc646dd6cb778",
+        "supports": "Reuters article on July 22 stating Brazil coffee frost sparks default fears and may take years for crop recovery."
+      }
+    ],
+    "confidence": "high",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2691,
+    "evidence_document_ids": [
+      "4e2c5649670d40c2",
+      "cdc37b314ec8a79b",
+      "31c4f69551023901",
+      "751f8b1eff1068d8",
+      "3c767b8ecb0f788b",
+      "864043b3d86a8b2c",
+      "c34eb7d59fcad7e7",
+      "78b225552ad20868",
+      "0716f589eda99331",
+      "a1479d33f83d06bc",
+      "a348af30968e68de",
+      "6d7cc646dd6cb778",
+      "edcfb2c83a19b090",
+      "04212c0a6fd8f6cd",
+      "6d83131554c4cee8"
+    ],
+    "evidence_packing": {
+      "n_input": 15,
+      "n_packed": 15,
+      "excerpt_chars": 800,
+      "estimated_tokens": 3921,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": true
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 5,
+    "n_ok": 3,
+    "n_weak_support": 0,
+    "n_low_rank": 2,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "cdc37b314ec8a79b",
+        "id_found": true,
+        "support_score": 0.914,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 15,
+        "support_rank_method": "semantic",
+        "closest_document_id": "cdc37b314ec8a79b"
+      },
+      {
+        "document_id": "751f8b1eff1068d8",
+        "id_found": true,
+        "support_score": 0.878,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 15,
+        "support_rank_method": "semantic",
+        "closest_document_id": "751f8b1eff1068d8"
+      },
+      {
+        "document_id": "c34eb7d59fcad7e7",
+        "id_found": true,
+        "support_score": 0.819,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "low_rank",
+        "support_rank": 4,
+        "support_rank_of": 15,
+        "support_rank_method": "semantic",
+        "closest_document_id": "3c767b8ecb0f788b"
+      },
+      {
+        "document_id": "a348af30968e68de",
+        "id_found": true,
+        "support_score": 0.854,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "low_rank",
+        "support_rank": 5,
+        "support_rank_of": 15,
+        "support_rank_method": "semantic",
+        "closest_document_id": "cdc37b314ec8a79b"
+      },
+      {
+        "document_id": "6d7cc646dd6cb778",
+        "id_found": true,
+        "support_score": 0.914,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 15,
+        "support_rank_method": "semantic",
+        "closest_document_id": "6d7cc646dd6cb778"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

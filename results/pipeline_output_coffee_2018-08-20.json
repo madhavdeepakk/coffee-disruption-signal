@@ -1,0 +1,134 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2018-08-20",
+    "price": 97.25,
+    "z_score": -2.4267327854599303,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": -3.903159157467555,
+    "cumulative_pct_move": -10.57471264367816,
+    "cumulative_z_score": -2.31458897911629,
+    "direction": "down"
+  },
+  "price_description": "-3.9% day-over-day move (z-score -2.43), on top of -10.6% over the last 10 trading days",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "An explanation is supported by the cited evidence, but model confidence was medium; only a single source cleared the gate. Weigh it accordingly.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 2,
+    "network_failures": 2,
+    "network_successes": 1,
+    "cache_hits": 4,
+    "fallback_added": 0,
+    "documents_returned": 100,
+    "dropped_out_of_window": 5,
+    "collapsed_duplicates": 10,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "1_document(s)_above_threshold",
+    "best_score": 0.8537473678588867,
+    "accepted_document_count": 1,
+    "accepted_document_ids": [
+      "62917e5c64dc26c4"
+    ],
+    "total_documents_considered": 100,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T11:41:14.090044+00:00"
+  },
+  "documents_retrieved": 100,
+  "sources": [
+    {
+      "document_id": "62917e5c64dc26c4",
+      "title": "Caf\u00e9 : pre\u00e7o em NY cai 2 , 5 % com avan\u00e7o da colheita no Brasil e alta do d\u00f3lar",
+      "url": "https://canalrural.uol.com.br/noticias/agricultura/cafe/cafe-preco-em-ny-cai-25-com-avanco-da-colheita-no-brasil-e-alta-do-dolar/",
+      "publication_date": "2018-08-16",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 11132,
+      "n_copies": 1,
+      "syndication_domains": [
+        "canalrural.uol.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8537473678588867,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 0,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 1,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 2,
+    "median_days_before": 2
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The price drop on 2018-08-20 can be linked to expectations of abundant coffee supply: a record Brazilian harvest and a projected global surplus were reported two trading days earlier, which kept demand defensive and gave sellers the upper hand, pressuring prices lower.",
+    "citations": [
+      {
+        "document_id": "62917e5c64dc26c4",
+        "supports": "mentions the record Brazil harvest, projected global surplus, defensive demand and seller pressure as factors driving lower coffee prices."
+      }
+    ],
+    "confidence": "medium",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2072,
+    "evidence_document_ids": [
+      "62917e5c64dc26c4"
+    ],
+    "evidence_packing": {
+      "n_input": 1,
+      "n_packed": 1,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 590,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 1,
+    "n_ok": 1,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "62917e5c64dc26c4",
+        "id_found": true,
+        "support_score": 0.839,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 1,
+        "support_rank_method": "semantic",
+        "closest_document_id": "62917e5c64dc26c4"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

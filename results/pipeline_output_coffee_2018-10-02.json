@@ -1,0 +1,216 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2018-10-02",
+    "price": 107.6500015258789,
+    "z_score": 3.136892207353553,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": 5.332685655946531,
+    "cumulative_pct_move": 17.01087122378142,
+    "cumulative_z_score": 5.226869682787627,
+    "direction": "up"
+  },
+  "price_description": "+5.3% day-over-day move (z-score 3.14), on top of +17.0% over the last 10 trading days",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "An explanation is supported by the cited evidence, but model confidence was medium. Weigh it accordingly.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 3,
+    "network_failures": 2,
+    "network_successes": 2,
+    "cache_hits": 3,
+    "fallback_added": 0,
+    "documents_returned": 127,
+    "dropped_out_of_window": 7,
+    "collapsed_duplicates": 21,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "4_document(s)_above_threshold",
+    "best_score": 0.8724793195724487,
+    "accepted_document_count": 4,
+    "accepted_document_ids": [
+      "4246b22d7ebff60d",
+      "5b282988a28fbaff",
+      "e52e429ba28fed36",
+      "0b89a2b71f72e221"
+    ],
+    "total_documents_considered": 127,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T11:44:50.559628+00:00"
+  },
+  "documents_retrieved": 127,
+  "sources": [
+    {
+      "document_id": "e52e429ba28fed36",
+      "title": "Brazil\u2019s coffee exports in Jan-Aug period up 4.5% on year, says Cecaf\u00e9 - Comunicaffe International",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE43d1pSMXJDSGFON2FoOXR5SXJvZ1l6WGRDTWQxbmpSc3Z2dk0xMjF0cC1kWnZOUV9YRk03X1gxb2pJVl9yYnQ1Sk8wcXJnLXVkY1RZWFdoWFBubVI1VDZSUEg1VW16WmpSTjEw?oc=5",
+      "publication_date": "2018-09-27",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8518506288528442,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0b89a2b71f72e221",
+      "title": "The Extraction Gets Frothy Over Climate Change Denial",
+      "url": "https://dailycoffeenews.com/2018/09/28/the-extraction-gets-frothy-over-climate-change-denial/",
+      "publication_date": "2018-09-28",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 8120,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dailycoffeenews.com"
+      ],
+      "retrieval_score": 0.1828,
+      "semantic_score": 0.851449728012085,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5b282988a28fbaff",
+      "title": "KOMODITAS PERKEBUNAN : Tangkap Peluang Defisit Kopi Global",
+      "url": "http://koran.bisnis.com/read/20181003/452/844748/komoditas-perkebunan-tangkap-peluang-defisit-kopi-global",
+      "publication_date": "2018-10-02",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "koran.bisnis.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8541175127029419,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4246b22d7ebff60d",
+      "title": "Coffee prices slump but drinkers wont pay less for lattes",
+      "url": "https://www.smh.com.au/business/companies/coffee-prices-slump-but-drinkers-won-t-pay-less-for-lattes-20180930-p506x7.html",
+      "publication_date": "2018-09-30",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4349,
+      "n_copies": 5,
+      "syndication_domains": [
+        "brisbanetimes.com.au",
+        "canberratimes.com.au",
+        "smh.com.au",
+        "theage.com.au",
+        "watoday.com.au"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.8724793195724487,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 1,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 4,
+    "n_fresh": 3,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 2.0
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The sharp price increase on 2018-10-02 coincides with a same\u2011day report highlighting a global coffee deficit, which can tighten supply and push prices higher (source: 5b282988a28fbaff). Earlier, a September 27 article noted that Brazil\u2019s coffee exports were up 4.5% year\u2011on\u2011year, indicating strong export demand that may have reinforced bullish sentiment ahead of the move (source: e52e429ba28fed36). Together, these timely signals of tightening supply and robust export demand provide a plausible backdrop for the observed price jump.",
+    "citations": [
+      {
+        "document_id": "5b282988a28fbaff",
+        "supports": "reports a global coffee deficit, implying tighter supply and upward price pressure"
+      },
+      {
+        "document_id": "e52e429ba28fed36",
+        "supports": "notes Brazil\u2019s coffee exports rose 4.5% YoY, suggesting strong demand"
+      }
+    ],
+    "confidence": "medium",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2777,
+    "evidence_document_ids": [
+      "e52e429ba28fed36",
+      "0b89a2b71f72e221",
+      "5b282988a28fbaff",
+      "4246b22d7ebff60d"
+    ],
+    "evidence_packing": {
+      "n_input": 4,
+      "n_packed": 4,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1449,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 2,
+    "n_ok": 2,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "5b282988a28fbaff",
+        "id_found": true,
+        "support_score": 0.849,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 2,
+        "support_rank_of": 4,
+        "support_rank_method": "semantic",
+        "closest_document_id": "4246b22d7ebff60d"
+      },
+      {
+        "document_id": "e52e429ba28fed36",
+        "id_found": true,
+        "support_score": 0.903,
+        "support_method": "semantic",
+        "shared_numbers": [
+          "4.5"
+        ],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 4,
+        "support_rank_method": "semantic",
+        "closest_document_id": "e52e429ba28fed36"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

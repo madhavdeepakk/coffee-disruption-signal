@@ -1,0 +1,146 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2022-04-21",
+    "price": 228.1499938964844,
+    "z_score": 2.3091758987372364,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 4.273304714038245,
+    "cumulative_pct_move": 0.24164665123895002,
+    "cumulative_z_score": 0.0477223149227521,
+    "direction": "up"
+  },
+  "price_description": "+4.3% day-over-day move (z-score 2.31)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (1 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 2,
+    "network_successes": 5,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 155,
+    "dropped_out_of_window": 6,
+    "collapsed_duplicates": 8,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "3_document(s)_above_threshold",
+    "best_score": 0.8587799072265625,
+    "accepted_document_count": 3,
+    "accepted_document_ids": [
+      "52492fa03f05b1fc",
+      "57ad6ddd8e2be6e6",
+      "a762403025ae6699"
+    ],
+    "total_documents_considered": 155,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T15:28:12.059179+00:00"
+  },
+  "documents_retrieved": 155,
+  "sources": [
+    {
+      "document_id": "57ad6ddd8e2be6e6",
+      "title": "As Consumer Prices Rise , Coffee is Canary in the Climate Change Coal Mine",
+      "url": "https://www.newsweek.com/consumer-prices-rise-coffee-canary-climate-change-coal-mine-opinion-1696063",
+      "publication_date": "2022-04-12",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 7,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "newsweek.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8522448539733887,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a762403025ae6699",
+      "title": "Sucafina Invests in Brazil-Based Crop Software Provider Agrosmart - Daily Coffee News by Roast Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNGgxSlJQTUFRejRaT3J1aEtRNV9wQm9GeXp0a0VKZVNIb2FiZWZ3ODdLNlZuLVNGdVBzSWxDZXl2RHJsS08xSTJScXZRcmNmVUN1OWZfbmxWLTMtTWN3c1RBUmloV0syd3QtQXpHQXBLSHdjTDcxQ0pCOTNUaTZCeFBHVTZ1dDBwaVBVc1dWSU5ZUFZ4Mnp3X1FXaU5XVndqOXYzeG5NYzY?oc=5",
+      "publication_date": "2022-04-19",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8503273725509644,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "52492fa03f05b1fc",
+      "title": "Peabirus : hEDGEpoint v\u00ea consumo de caf\u00e9 mais fraco no Brasil ; primeira queda em v\u00e1rios anos",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=97317",
+      "publication_date": "2022-04-12",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 7,
+      "publication_date_unknown": false,
+      "text_chars": 3045,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8587799072265625,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 1,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 3,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 2,
+    "median_days_before": 7
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The available documents discuss background factors and an investment announcement but do not provide a direct, timely reason for the price increase on 2022-04-21.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2505,
+    "evidence_document_ids": [
+      "57ad6ddd8e2be6e6",
+      "a762403025ae6699",
+      "52492fa03f05b1fc"
+    ],
+    "evidence_packing": {
+      "n_input": 3,
+      "n_packed": 3,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 902,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

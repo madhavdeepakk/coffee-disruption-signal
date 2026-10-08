@@ -1,0 +1,134 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2020-07-17",
+    "price": 101.0500030517578,
+    "z_score": 2.268613736474172,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 4.067975942027901,
+    "cumulative_pct_move": -1.17359114742513,
+    "cumulative_z_score": 0.2242409666819588,
+    "direction": "up"
+  },
+  "price_description": "+4.1% day-over-day move (z-score 2.27)",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 69,
+    "dropped_out_of_window": 0,
+    "collapsed_duplicates": 16,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "1_document(s)_above_threshold",
+    "best_score": 0.8624067306518555,
+    "accepted_document_count": 1,
+    "accepted_document_ids": [
+      "fde8cba6cba5c02b"
+    ],
+    "total_documents_considered": 69,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T14:08:05.386828+00:00"
+  },
+  "documents_retrieved": 69,
+  "sources": [
+    {
+      "document_id": "fde8cba6cba5c02b",
+      "title": "Coffee supply hasn't been affected \u2014 yet \u2014 but Brazil's farmers have a warning for Australia - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMTYzWm95VTZJV0o5bnRTMlZwVDllYWN6dFdKbUJaaHIxc2hubEFsbGlrdUF0bFBQMEdabU13cUZaVFlWMWViQW1TeDJCYU5xVnpyZ2E5MnRmZzFIMFBkRy13eGVPSUY2dm9hbk9VMFhtTzQwaDQxemkwMGd6bEF4RUlLTWhNZlVha1lCbXdlNzgyT1J3MHdWWWRWbm5aeE5oOGJURDh5X1FudjA?oc=5",
+      "publication_date": "2020-07-16",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8624067306518555,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 1,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 1,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 1,
+    "median_days_before": 1
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The only retrieved document mentions a warning from Brazil's farmers but does not provide a clear, timely causal link to the price increase on 2020-07-17.",
+    "citations": [
+      {
+        "document_id": "fde8cba6cba5c02b",
+        "supports": "mentions a warning but no direct link to price move"
+      }
+    ],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 1895,
+    "evidence_document_ids": [
+      "fde8cba6cba5c02b"
+    ],
+    "evidence_packing": {
+      "n_input": 1,
+      "n_packed": 1,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 239,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 1,
+    "n_ok": 1,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "fde8cba6cba5c02b",
+        "id_found": true,
+        "support_score": 0.84,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 1,
+        "support_rank_method": "semantic",
+        "closest_document_id": "fde8cba6cba5c02b"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

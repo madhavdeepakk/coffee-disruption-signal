@@ -1,0 +1,106 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2022-12-12",
+    "price": 166.35000610351562,
+    "z_score": 2.7141307376324835,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 5.451667894463154,
+    "cumulative_pct_move": 3.5480936343539904,
+    "cumulative_z_score": 1.1264872450039254,
+    "direction": "up"
+  },
+  "price_description": "+5.5% day-over-day move (z-score 2.71)",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 2,
+    "network_successes": 5,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 106,
+    "dropped_out_of_window": 5,
+    "collapsed_duplicates": 10,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "1_document(s)_above_threshold",
+    "best_score": 0.8573825359344482,
+    "accepted_document_count": 1,
+    "accepted_document_ids": [
+      "b35fec1bd4f140d8"
+    ],
+    "total_documents_considered": 106,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T16:21:33.123741+00:00"
+  },
+  "documents_retrieved": 106,
+  "sources": [
+    {
+      "document_id": "b35fec1bd4f140d8",
+      "title": "Yalla Yalla coffee grown by Lebanese to help Syria - Ag\u00eancia de Not\u00edcias Brasil - \u00c1rabe",
+      "url": "https://anba.com.br/en/yalla-yalla-coffee-grown-by-lebanese-to-help-syria/",
+      "publication_date": "2022-12-08",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 16758,
+      "n_copies": 1,
+      "syndication_domains": [
+        "anba.com.br"
+      ],
+      "retrieval_score": 0.2778,
+      "semantic_score": 0.8573825359344482,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 0,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 1,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 2,
+    "median_days_before": 2
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided document describes a small-scale charitable coffee initiative in Brazil and does not contain information regarding global supply, demand, or market factors that would explain a 5.5% price increase.",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 131678,
+    "evidence_document_ids": [
+      "b35fec1bd4f140d8"
+    ],
+    "evidence_packing": {
+      "n_input": 1,
+      "n_packed": 1,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 576,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

@@ -1,0 +1,126 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2018-05-31",
+    "price": 123.6999969482422,
+    "z_score": 2.2688851451917222,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": 2.82626251889752,
+    "cumulative_pct_move": 9.2273703737238,
+    "cumulative_z_score": 3.095111328416608,
+    "direction": "up"
+  },
+  "price_description": "+2.8% day-over-day move (z-score 2.27), on top of +9.2% over the last 10 trading days",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 2,
+    "network_successes": 5,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 129,
+    "dropped_out_of_window": 8,
+    "collapsed_duplicates": 10,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "2_document(s)_above_threshold",
+    "best_score": 0.8662126064300537,
+    "accepted_document_count": 2,
+    "accepted_document_ids": [
+      "6d51250a6398c273",
+      "78f83ebc29d17391"
+    ],
+    "total_documents_considered": 129,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T11:34:12.212083+00:00"
+  },
+  "documents_retrieved": 129,
+  "sources": [
+    {
+      "document_id": "6d51250a6398c273",
+      "title": "Brazil truckers refuse to call off nationwide protest",
+      "url": "http://www.gulf-times.com/story/593906/Brazil-truckers-refuse-to-call-off-nationwide-prot",
+      "publication_date": "2018-05-24",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 2729,
+      "n_copies": 1,
+      "syndication_domains": [
+        "gulf-times.com"
+      ],
+      "retrieval_score": 0.1828,
+      "semantic_score": 0.8662126064300537,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "78f83ebc29d17391",
+      "title": "Light frosts seen in Brazil corn areas ; drought persists in cane belt",
+      "url": "https://uk.reuters.com/article/us-brazil-agriculture-weather/light-frosts-seen-in-brazils-corn-areas-drought-persists-in-cane-belt-idUKKCN1IM1YG",
+      "publication_date": "2018-05-21",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "uk.reuters.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8551332950592041,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 0,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 2,
+    "n_fresh": 0,
+    "fresh_within_days": 2,
+    "newest_days_before": 5,
+    "median_days_before": 6.5
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The available articles are older than three trading days and discuss unrelated transport protests and weather impacts on corn and sugarcane, providing no direct, timely link to the coffee price rise on 2018-05-31.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2744,
+    "evidence_document_ids": [
+      "6d51250a6398c273",
+      "78f83ebc29d17391"
+    ],
+    "evidence_packing": {
+      "n_input": 2,
+      "n_packed": 2,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 710,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

@@ -1,0 +1,226 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2020-02-03",
+    "price": 97.9000015258789,
+    "z_score": -2.028326004796015,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -4.627374505009127,
+    "cumulative_pct_move": -12.7061968846356,
+    "cumulative_z_score": -1.6836437252852618,
+    "direction": "down"
+  },
+  "price_description": "-4.6% day-over-day move (z-score -2.03)",
+  "outcome": {
+    "tier": "EXPLAINED_STRONG",
+    "label": "Explained (strong)",
+    "headline": "Explained, with strong, direction-consistent evidence.",
+    "detail": "4 sources cleared the gate, the evidence leaned the same way as the move, the model reported high confidence, and every citation points to a document the model was shown.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 1,
+    "network_successes": 6,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 122,
+    "dropped_out_of_window": 8,
+    "collapsed_duplicates": 14,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "4_document(s)_above_threshold",
+    "best_score": 0.8726273775100708,
+    "accepted_document_count": 4,
+    "accepted_document_ids": [
+      "3aeffcf75161f687",
+      "000dc2fd07ad198b",
+      "7a7c9ddcf94b2cb3",
+      "f026477902023bbd"
+    ],
+    "total_documents_considered": 122,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T13:26:26.522019+00:00"
+  },
+  "documents_retrieved": 122,
+  "sources": [
+    {
+      "document_id": "3aeffcf75161f687",
+      "title": "Devastating Brazil rains likely spared most of Minas coffee ... ",
+      "url": "http://news.trust.org/item/20200129134344-zjcsf",
+      "publication_date": "2020-01-29",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.trust.org"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8726273775100708,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f026477902023bbd",
+      "title": "Devastating Brazil rains likely spared most of Minas coffee fields",
+      "url": "https://www.reuters.com/article/us-brazil-coffee-crops/devastating-brazil-rains-likely-spared-most-of-minas-coffee-fields-idUSKBN1ZS1Y9",
+      "publication_date": "2020-01-29",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 2,
+      "syndication_domains": [
+        "reuters.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8584427833557129,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "000dc2fd07ad198b",
+      "title": "Slave Labour Still Abounds in Brazilian Coffee Industry",
+      "url": "https://riotimesonline.com/brazil-news/brazil/slave-labour-still-abounds-in-brazilian-coffee-industry/",
+      "publication_date": "2020-01-24",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 3246,
+      "n_copies": 1,
+      "syndication_domains": [
+        "riotimesonline.com"
+      ],
+      "retrieval_score": 0.2885,
+      "semantic_score": 0.8713774681091309,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7a7c9ddcf94b2cb3",
+      "title": "Peabirus : Especulaes e Coronav\u00edrus Derrubam Cotaes do Caf",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=83390",
+      "publication_date": "2020-02-03",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 3757,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8608599901199341,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 1,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 4,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 3.0
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The coffee price fell on 2020-02-03 because market participants were speculating that Brazil\u2019s upcoming harvest would be larger than expected, putting downward pressure on prices, and because concerns about the coronavirus were also cited as a factor (source: 7a7c9ddcf94b2cb3). An earlier report that heavy rains had spared most coffee fields in Minas Gerais reinforced expectations of ample supply, which further contributed to the price decline (sources: 3aeffcf75161f687, f026477902023bbd).",
+    "citations": [
+      {
+        "document_id": "7a7c9ddcf94b2cb3",
+        "supports": "Speculation and coronavirus concerns were reported as reasons for coffee price drops on the same day as the move."
+      },
+      {
+        "document_id": "3aeffcf75161f687",
+        "supports": "Rain spared Minas coffee fields, suggesting a healthier upcoming harvest and higher supply."
+      },
+      {
+        "document_id": "f026477902023bbd",
+        "supports": "Same as above, confirming that rains likely spared most coffee fields, reinforcing supply expectations."
+      }
+    ],
+    "confidence": "high",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2996,
+    "evidence_document_ids": [
+      "3aeffcf75161f687",
+      "f026477902023bbd",
+      "000dc2fd07ad198b",
+      "7a7c9ddcf94b2cb3"
+    ],
+    "evidence_packing": {
+      "n_input": 4,
+      "n_packed": 4,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1374,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 3,
+    "n_ok": 3,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "7a7c9ddcf94b2cb3",
+        "id_found": true,
+        "support_score": 0.832,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 4,
+        "support_rank_method": "semantic",
+        "closest_document_id": "7a7c9ddcf94b2cb3"
+      },
+      {
+        "document_id": "3aeffcf75161f687",
+        "id_found": true,
+        "support_score": 0.875,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 4,
+        "support_rank_method": "semantic",
+        "closest_document_id": "3aeffcf75161f687"
+      },
+      {
+        "document_id": "f026477902023bbd",
+        "id_found": true,
+        "support_score": 0.871,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 2,
+        "support_rank_of": 4,
+        "support_rank_method": "semantic",
+        "closest_document_id": "3aeffcf75161f687"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

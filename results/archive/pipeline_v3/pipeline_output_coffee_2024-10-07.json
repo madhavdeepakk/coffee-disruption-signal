@@ -1,0 +1,479 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2024-10-07",
+    "price": 244.6499938964844,
+    "z_score": -2.224396525982524,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -4.9349181681864085,
+    "cumulative_pct_move": -7.206523967324591,
+    "cumulative_z_score": -1.9324554550440631,
+    "direction": "down"
+  },
+  "price_description": "-4.9% day-over-day move (z-score -2.22)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (11 pointed the opposite way, 2 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 2,
+    "network_successes": 5,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 150,
+    "dropped_out_of_window": 3,
+    "collapsed_duplicates": 13,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "19_document(s)_above_threshold",
+    "best_score": 0.9080544114112854,
+    "accepted_document_count": 19,
+    "accepted_document_ids": [
+      "e6f86180720ca83d",
+      "ab8fd7053e1fbe85",
+      "0f4c6caf399f1485",
+      "def184acfe7de312",
+      "af5f01658ef1db69",
+      "633bca8cbcf62c1e",
+      "6c9dc008a12da6b4",
+      "0cbefb8fd9bcf306",
+      "e832baeb1fefdd90",
+      "97d0316209fae35b",
+      "2efa80bdf7087e53",
+      "626474dcd3ad041f",
+      "d990e32136816d3f",
+      "a9c3385352bdd214",
+      "a190650d2e152f6f",
+      "637e8ad1a3e78772",
+      "407c4f761dfa9be2",
+      "c23349af5af63aaa",
+      "eafc27ae0e570329"
+    ],
+    "total_documents_considered": 150,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T11:00:38.595446+00:00"
+  },
+  "documents_retrieved": 150,
+  "sources": [
+    {
+      "document_id": "0f4c6caf399f1485",
+      "title": "Kenyan Coffee Prices Dip Slightly As Brazil Drought Boosts Global Rates",
+      "url": "https://allafrica.com/stories/202410040009.html",
+      "publication_date": "2024-10-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "allafrica.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8838865160942078,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "407c4f761dfa9be2",
+      "title": "Caf\u00e9 : pre\u00e7o em NY cai ao menor patamar em um m\u00eas com previs\u00e3o de chuvas no Brasil",
+      "url": "https://globorural.globo.com/cotacoes/noticia/2024/10/cafe-preco-em-ny-cai-ao-menor-patamar-em-um-mes-com-previsao-de-chuvas-no-brasil.ghtml",
+      "publication_date": "2024-10-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2494,
+      "n_copies": 1,
+      "syndication_domains": [
+        "globorural.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8507636189460754,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6c9dc008a12da6b4",
+      "title": "Climate change leaving a bitter taste in world\u2019s coffee supply - East Asia Forum",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWlRORFdaWUY1MndMMTdvTzdvcXU1TktDLXdWdVRnSGgycGxOV2NhZFZHSnJUQzVkZFBoRlY4ZV9LR0pxYWR0VzR0bEhyZWtsWFVwNEhNTUVsRXdjRGVRZnN3VEttXzRXcUxYRU9KNlZwZUdVbWotTmNzNHhPcHd4LUc3YkJTZEpXbnFSUy10OGZlb3plQnhobzhrNEQ4cC1q?oc=5",
+      "publication_date": "2024-09-27",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8622187376022339,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e832baeb1fefdd90",
+      "title": "Coffee harvesting and drying in Brazil studied - Britannica",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5sbk9XZ0pPNWpfaUd6ckJnX1g3SDgyaHJzaDI3LWNJS2pxNUJBT1VqLVZGSldYZEZubGJDSTN4cU5MZmJXajF0TXFGNDN1TktZbFpuclRMeldSZDdoN1V0d0ZsbjVqQ0poVGNIVg?oc=5",
+      "publication_date": "2024-10-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8581913113594055,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d990e32136816d3f",
+      "title": "Kekeringan Terparah di Brasil dan Risiko Lonjakan Inflasi Pangan Dunia",
+      "url": "https://market.bisnis.com/read/20241005/94/1805004/kekeringan-terparah-di-brasil-dan-risiko-lonjakan-inflasi-pangan-dunia",
+      "publication_date": "2024-10-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "market.bisnis.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8543255925178528,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a190650d2e152f6f",
+      "title": "Climate Change Forces Starbucks Deeper into Coffee R&D - The Daily Upside",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRHk2bnBvV2VkZ1JRX19OMnFQRzU2UEtDeld3dkhnVUNVTU1aS1pTTDcxVGNGTWRldFB1Rk5qTWRwaFpvaFhta3pHazZRSUlVSFBGVF90alNlRGJGYkJ1bHAzZVg5MHhxOEpxdm9VSzJnSTBRQzJMYno2eFdZcnpIYWNXRnU4NG5ZS2FkbVdFa1dCNUJ1TDY0WWZvNHlpd3RBYlQtd0ZpQVY?oc=5",
+      "publication_date": "2024-10-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8529133796691895,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c23349af5af63aaa",
+      "title": "Kekeringan Terparah di Brasil dan Risiko Lonjakan Inflasi Pangn Dunia",
+      "url": "https://market.bisnis.com/read/20241005/94/1805004/kekeringan-terparah-di-brasil-dan-risiko-lonjakan-inflasi-pangn-dunia",
+      "publication_date": "2024-10-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "market.bisnis.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8501596450805664,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "eafc27ae0e570329",
+      "title": "Vietnam on quest for specialty coffee development",
+      "url": "https://en.vietnamplus.vn/vietnam-on-quest-for-specialty-coffee-development-post297323.vnp",
+      "publication_date": "2024-09-28",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 3013,
+      "n_copies": 1,
+      "syndication_domains": [
+        "en.vietnamplus.vn"
+      ],
+      "retrieval_score": 0.405,
+      "semantic_score": 0.8284570574760437,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e6f86180720ca83d",
+      "title": "Coffee on boil : Not everyone cup of tea",
+      "url": "https://www.businesstimes.com.sg/companies-markets/coffee-boil-not-everyones-cup-tea",
+      "publication_date": "2024-10-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 5613,
+      "n_copies": 1,
+      "syndication_domains": [
+        "businesstimes.com.sg"
+      ],
+      "retrieval_score": 0.31,
+      "semantic_score": 0.9080544114112854,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ab8fd7053e1fbe85",
+      "title": "With market prices for coffee jumping , could that cup of java be a jolt to your wallet ? ",
+      "url": "https://www.cbc.ca/news/business/coffee-prices-climate-1.7336813",
+      "publication_date": "2024-09-29",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 6376,
+      "n_copies": 2,
+      "syndication_domains": [
+        "cbc.ca",
+        "news.google.com"
+      ],
+      "retrieval_score": 0.31,
+      "semantic_score": 0.8998298645019531,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "def184acfe7de312",
+      "title": "Canberra cafes hike coffee prices amid rising costs | The Canberra Times",
+      "url": "https://www.canberratimes.com.au/story/8775860/canberra-cafes-hike-coffee-prices-amid-rising-costs/?cs=14329",
+      "publication_date": "2024-09-29",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 3457,
+      "n_copies": 1,
+      "syndication_domains": [
+        "canberratimes.com.au"
+      ],
+      "retrieval_score": 0.2885,
+      "semantic_score": 0.8788265585899353,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "af5f01658ef1db69",
+      "title": "Kenya Gains As Brazil Drought Drives Coffee Prices Higher",
+      "url": "https://allafrica.com/stories/202409290068.html",
+      "publication_date": "2024-09-29",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "allafrica.com"
+      ],
+      "retrieval_score": 0.3441,
+      "semantic_score": 0.8747258186340332,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "633bca8cbcf62c1e",
+      "title": "Global Food Prices Risk Spiking on Worst - Ever Drought in Brazil",
+      "url": "https://finance.yahoo.com/news/global-food-prices-risk-spiking-100021326.html",
+      "publication_date": "2024-10-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "finance.yahoo.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8716526627540588,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0cbefb8fd9bcf306",
+      "title": "Coffee containers pile up at US ports as dockworkers strike",
+      "url": "https://nypost.com/2024/10/02/business/coffee-containers-pile-up-at-us-ports-as-dockworkers-strike/",
+      "publication_date": "2024-10-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1913,
+      "n_copies": 1,
+      "syndication_domains": [
+        "nypost.com"
+      ],
+      "retrieval_score": 0.2276,
+      "semantic_score": 0.8614690899848938,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "97d0316209fae35b",
+      "title": "8\u00ba Encoffee Recebe Mais De 900 Cafeicultores De Sete Estados Produtores Em Edio Hist\u00f3rica Sobre Clima E Mercado",
+      "url": "https://planetacampo.canalrural.com.br/noticias/8o-encoffee-recebe-mais-de-900-cafeicultores-de-sete-estados-produtores-em-edicao-historica-sobre-clima-e-mercado/",
+      "publication_date": "2024-10-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4243,
+      "n_copies": 1,
+      "syndication_domains": [
+        "planetacampo.canalrural.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8578574657440186,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2efa80bdf7087e53",
+      "title": "Climate Change Brewing: Your Coffee\u2019s Price Surge Explained - University of Waterloo",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaW02djA2UUh2VGtUVjdSaHdWcFcwLW1FZE5LYllvbFhQdmpmZS1qRjNKN21rRzltLURwemJUUENmTVhReXhPNGZTLUNKNWtHWTA4UUI0TUktME84N1FNNDdqWFktQllYY1BFSjFBOWhDV0tMQUlQdVdaZVFLX0RmbE5jT1NDSXNuTU14MV9WNk9vZG9Mc3AwWXZJTGpMM1VKQXhn?oc=5",
+      "publication_date": "2024-10-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8575090765953064,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "626474dcd3ad041f",
+      "title": "Catching up with Brazil\u2019s The Coffee - World Coffee Portal",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQLTc1RmtPNF8tS2NhTGE1aUVlbTlXWF9KNkEzc3JhZ0MtbGV4RFppWWVpRmEzRFFwY3JsNll2MGZIMnR3UmhERkFFbG5lRHFHTS1MV3pHeV9YdzRLYVdfRGpwREhTN0ZWak5aSVp6SDJVV0JrclVyNl9nS1o0RjM2dnc0R1FhSnM?oc=5",
+      "publication_date": "2024-10-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8555846810340881,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a9c3385352bdd214",
+      "title": "La peor sequ\u00eda en 70 a\u00f1os ha hecho que el precio del caf\u00e9 colombiano no haya dejado de subir . 2025 no pinta mejor",
+      "url": "https://www.xataka.com/ecologia-y-naturaleza/peor-sequia-70-anos-ha-hecho-que-precio-cafe-colombiano-no-haya-dejado-subir-2025-no-pinta-mucho-mejor",
+      "publication_date": "2024-09-29",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 6043,
+      "n_copies": 1,
+      "syndication_domains": [
+        "xataka.com"
+      ],
+      "retrieval_score": 0.0054,
+      "semantic_score": 0.8536880612373352,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "637e8ad1a3e78772",
+      "title": "La sequ\u00eda extrema en Brasil pone en peligro las cosechas y encarecer\u00e1 los alimentos a nivel mundial",
+      "url": "https://www.infobae.com/america/america-latina/2024/10/04/la-sequia-extrema-en-brasil-pone-en-peligro-las-cosechas-y-encarecera-los-alimentos-a-nivel-mundial/",
+      "publication_date": "2024-10-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 9980,
+      "n_copies": 3,
+      "syndication_domains": [
+        "infobae.com",
+        "lapagina.com.sv",
+        "perfil.com"
+      ],
+      "retrieval_score": 0.0054,
+      "semantic_score": 0.8513067960739136,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 6,
+    "inconsistent": 11
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 19,
+    "n_fresh": 12,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 2
+  },
+  "explanation_result": {
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2472,
+    "evidence_document_ids": [
+      "0f4c6caf399f1485",
+      "407c4f761dfa9be2",
+      "6c9dc008a12da6b4",
+      "e832baeb1fefdd90",
+      "d990e32136816d3f",
+      "a190650d2e152f6f",
+      "c23349af5af63aaa",
+      "eafc27ae0e570329",
+      "e6f86180720ca83d",
+      "ab8fd7053e1fbe85",
+      "def184acfe7de312",
+      "af5f01658ef1db69",
+      "633bca8cbcf62c1e",
+      "0cbefb8fd9bcf306",
+      "97d0316209fae35b",
+      "2efa80bdf7087e53",
+      "626474dcd3ad041f",
+      "a9c3385352bdd214",
+      "637e8ad1a3e78772"
+    ],
+    "evidence_packing": {
+      "n_input": 19,
+      "n_packed": 19,
+      "excerpt_chars": 600,
+      "estimated_tokens": 4174,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": true
+    },
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": "high",
+    "reason": "direction_guard: 11 accepted document(s) pointed against the move vs 2 with it",
+    "withheld_explanation": {
+      "explanation": "The 4.9% drop in coffee prices on 2024-10-07 was driven by market expectations of rain in Brazil, which should improve coffee\u2011bean supplies and ease the drought\u2011related price pressure (source: 407c4f761dfa9be2).",
+      "citations": [
+        {
+          "document_id": "407c4f761dfa9be2",
+          "supports": "Reports a 4.93% decline in NY coffee prices on 2024-10-07, attributing the fall to forecasts of rain in Brazil that are expected to relieve supply constraints."
+        }
+      ],
+      "confidence": "high"
+    }
+  },
+  "faithfulness_report": null
+}

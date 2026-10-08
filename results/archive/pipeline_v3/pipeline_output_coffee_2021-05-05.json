@@ -1,0 +1,221 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2021-05-05",
+    "price": 148.5,
+    "z_score": 4.015477308315267,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": 6.9114517821145895,
+    "cumulative_pct_move": 12.32980592135675,
+    "cumulative_z_score": 2.0999717246367258,
+    "direction": "up"
+  },
+  "price_description": "+6.9% day-over-day move (z-score 4.02), on top of +12.3% over the last 10 trading days",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (3 pointed the opposite way, 3 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 1,
+    "network_failures": 0,
+    "network_successes": 2,
+    "cache_hits": 5,
+    "fallback_added": 0,
+    "documents_returned": 128,
+    "dropped_out_of_window": 6,
+    "collapsed_duplicates": 17,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "6_document(s)_above_threshold",
+    "best_score": 0.8811721205711365,
+    "accepted_document_count": 6,
+    "accepted_document_ids": [
+      "ab35eff95eb25c07",
+      "6a40cf3334cd02d0",
+      "b47b30efe15f7399",
+      "caff4de56d56f743",
+      "6753c3a8536e4e47",
+      "7f89084e63c4797e"
+    ],
+    "total_documents_considered": 128,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T10:31:40.221787+00:00"
+  },
+  "documents_retrieved": 128,
+  "sources": [
+    {
+      "document_id": "ab35eff95eb25c07",
+      "title": "Youll be Paying Through the Nose for a Cup of Coffee in Idaho",
+      "url": "https://newsradio1310.com/youll-be-paying-through-the-nose-for-a-cup-of-coffee-in-idaho/",
+      "publication_date": "2021-05-03",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 1793,
+      "n_copies": 3,
+      "syndication_domains": [
+        "983thesnake.com",
+        "kool965.com",
+        "newsradio1310.com"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.8811721205711365,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6a40cf3334cd02d0",
+      "title": "Peabirus : Caf\u00e9 : Preocupaes com a seca seguem no radar e ar\u00e1bica ganha mais de 3 % em NY",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=90751",
+      "publication_date": "2021-05-05",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2045,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8555663824081421,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b47b30efe15f7399",
+      "title": "Peabirus : Correo nos pre\u00e7os e e aumento na produo da Col\u00f4mbia pressionam mercado de caf\u00e9 nesta 5",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=90641",
+      "publication_date": "2021-04-30",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 3362,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8538334369659424,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "caff4de56d56f743",
+      "title": "Peabirus : Caf\u00e9 : Mercado tem dia de volatilidade e encerra com baixas ap\u00f3s previs\u00e3o de retorno da umidade",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=90712",
+      "publication_date": "2021-05-03",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2737,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8516460657119751,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6753c3a8536e4e47",
+      "title": "Peabirus : Caf\u00e9 : semana ter\u00e1 chuvas , mas de fraca intensidade no Brasil",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=90586",
+      "publication_date": "2021-04-27",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 1539,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8511204719543457,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7f89084e63c4797e",
+      "title": "Peabirus : Consumo alto de caf\u00e9 e safra menor no Brasil desafiam setor para retomada p\u00f3s - pandemia",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=90589",
+      "publication_date": "2021-04-27",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 3172,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8510260581970215,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 3,
+    "neutral": 0,
+    "inconsistent": 3
+  },
+  "evidence_recency": {
+    "n_dated": 6,
+    "n_fresh": 3,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 2.5
+  },
+  "explanation_result": {
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 3843,
+    "evidence_document_ids": [
+      "ab35eff95eb25c07",
+      "6a40cf3334cd02d0",
+      "b47b30efe15f7399",
+      "caff4de56d56f743",
+      "6753c3a8536e4e47",
+      "7f89084e63c4797e"
+    ],
+    "evidence_packing": {
+      "n_input": 6,
+      "n_packed": 6,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 3418,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    },
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": "high",
+    "reason": "direction_guard: 3 accepted document(s) pointed against the move vs 3 with it",
+    "withheld_explanation": {
+      "explanation": "The jump on 2021-05-05 was linked to fresh concerns about supply constraints. A May\u202f3 story reported that a recent drought in Brazil, hurricanes in Central America, a blockage of the Suez Canal and a shortage of shipping containers were tightening coffee supplies and pushing prices higher (source: ab35eff95eb25c07). On the day of the move, a Brazilian forum noted that Arabica futures on the New\u202fYork ICE rose more than 3\u202f% amid the same drought worries (source: 6a40cf3334cd02d0). Together these supply\u2011side pressures explain the 6.9\u202f% day\u2011over\u2011day gain.",
+      "citations": [
+        {
+          "document_id": "ab35eff95eb25c07",
+          "supports": "supply constraints from Brazil drought, Suez Canal blockage, container shortage and price hikes"
+        },
+        {
+          "document_id": "6a40cf3334cd02d0",
+          "supports": "Arabica futures up >3% in NY on 2021-05-05 linked to drought concerns"
+        }
+      ],
+      "confidence": "high"
+    }
+  },
+  "faithfulness_report": null
+}

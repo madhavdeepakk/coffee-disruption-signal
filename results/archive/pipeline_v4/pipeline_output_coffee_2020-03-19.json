@@ -1,0 +1,289 @@
+{
+  "pipeline_version": "4",
+  "anomaly": {
+    "date": "2020-03-19",
+    "price": 116.6500015258789,
+    "z_score": 2.938812684491152,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 7.959276474986828,
+    "cumulative_pct_move": 6.1902623087972,
+    "cumulative_z_score": 0.6690867041593225,
+    "direction": "up"
+  },
+  "price_description": "+8.0% day-over-day move (z-score 2.94)",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "A recent document gives a quoted reason for a move in this direction, but it rests on a single document.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 9,
+    "network_attempts": 3,
+    "network_failures": 1,
+    "network_successes": 3,
+    "cache_hits": 6,
+    "fallback_added": 0,
+    "documents_returned": 164,
+    "dropped_out_of_window": 13,
+    "collapsed_duplicates": 19,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "6_document(s)_above_threshold",
+    "best_score": 0.8725283741950989,
+    "accepted_document_count": 6,
+    "accepted_document_ids": [
+      "edfe3c87368a2db5",
+      "bfd0af5c64e8e815",
+      "3b5a1ea7c370af3c",
+      "82982b9ccb860d3c",
+      "5c2132a43c49135d",
+      "9b353e1f7f0f33c2"
+    ],
+    "total_documents_considered": 164,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T17:33:48.983851+00:00"
+  },
+  "documents_retrieved": 164,
+  "sources": [
+    {
+      "document_id": "9b353e1f7f0f33c2",
+      "title": "Shipping Containers in Short Supply \u2013 gCaptain",
+      "url": "https://gcaptain.com/shipping-containers-in-short-supply/",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 3933,
+      "n_copies": 2,
+      "syndication_domains": [
+        "gcaptain.com",
+        "shippingherald.com"
+      ],
+      "retrieval_score": 0.4319,
+      "semantic_score": 0.8257689476013184,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "bfd0af5c64e8e815",
+      "title": "Heavy rains, frost damage coffee plants - myRepublica",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNVFQU3piVkUxVi1BdGlkZFZGWk1Yc2NITENjMnYtNzRVWmNQMVRTdzNkZ196X1R3emVMcUZYcktrV084UWdOV3BmSzc4eVplREkxaGMwX2lROXhMdzNpeElVY1FCS3A3ZnR5Rl9FTGE4Ry0zVmZYQVBtWF9ieXdFeUZiSGc2ZnRNcFE?oc=5",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2437,
+      "semantic_score": 0.862185537815094,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "edfe3c87368a2db5",
+      "title": "Coffee exports from Brazil fell by almost a quarter in February, reports Cecaf\u00e9 - Comunicaffe International",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSWV5UmlpU21xYWptVjNDbmZKOXpfdnZYVmtZa3htOURDUi1vNW5BN1RWMHZFaUMwRHRhUlRzbmoxaTFISnBHU2UtekwzeFYzVkFjSmNfYkY0VE96Z2pmQlM4dVVUanVyUTRQdXR2YXV5ajJRTEJmSDFlN1VnQnBFdEM3QUh3NENUb1JRSFdkdlRsMjBvZTdBRFktTzNUMDctSERUYm5vaGhLWkU?oc=5",
+      "publication_date": "2020-03-11",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8725283741950989,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3b5a1ea7c370af3c",
+      "title": "Coffee growers warned of gloomy future",
+      "url": "https://vietnamnet.vn/en/business/coffee-growers-warned-of-gloomy-future-622860.html",
+      "publication_date": "2020-03-10",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 7,
+      "publication_date_unknown": false,
+      "text_chars": 3063,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vietnamnet.vn"
+      ],
+      "retrieval_score": 0.2885,
+      "semantic_score": 0.8559955358505249,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "82982b9ccb860d3c",
+      "title": "SOFTS - Coffee jumps 4 % on supply chain worries ; cocoa falls",
+      "url": "https://uk.reuters.com/article/global-softs/softs-coffee-jumps-4-on-supply-chain-worries-cocoa-falls-idUKL8N2BC71I",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "uk.reuters.com"
+      ],
+      "retrieval_score": 0.1774,
+      "semantic_score": 0.8529552221298218,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5c2132a43c49135d",
+      "title": "Volatile Coffee Climbs to Defy Slump in Equities , Commodites",
+      "url": "https://finance.yahoo.com/news/volatile-coffee-climbs-defy-slump-201724100.html",
+      "publication_date": "2020-03-09",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "finance.yahoo.com"
+      ],
+      "retrieval_score": 0.1667,
+      "semantic_score": 0.852150559425354,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "decision_mode": "blind",
+  "direction_summary": {
+    "consistent": 1,
+    "inconsistent": 0,
+    "neutral": 2
+  },
+  "direction_summary_wordlist": {
+    "consistent": 1,
+    "neutral": 1,
+    "inconsistent": 4
+  },
+  "guard_rule": null,
+  "evidence_recency": {
+    "n_dated": 6,
+    "n_fresh": 3,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 4.0
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The +8.0% day-over-day move (z-score 2.94) on 2020-03-19 is matched by 1 report published that day that gives a reason for prices rising: supply chain worries (source: 82982b9ccb860d3c).",
+    "citations": [
+      {
+        "document_id": "82982b9ccb860d3c",
+        "supports": "supply chain worries",
+        "quote": "Coffee jumps 4 % on supply chain worries"
+      }
+    ],
+    "confidence": "medium",
+    "reason": null,
+    "blind_evidence": {
+      "rule": "freshest",
+      "fresh_trading_days": 2,
+      "max_age_trading_days": 3,
+      "n_recent_documents": 3,
+      "readings": [
+        {
+          "document_id": "82982b9ccb860d3c",
+          "trading_days_before": 0,
+          "price_move": "up",
+          "pressure": "up",
+          "direction": "up",
+          "kind": "report",
+          "cause": "supply chain worries",
+          "quote": "Coffee jumps 4 % on supply chain worries",
+          "quote_found": true,
+          "read": true
+        },
+        {
+          "document_id": "9b353e1f7f0f33c2",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "up",
+          "direction": "up",
+          "kind": "pressure",
+          "cause": "shipping container shortage",
+          "quote": "Container Squeeze May Slow Brazil Meat, Pulp, Coffee Cargoes",
+          "quote_found": true,
+          "read": true
+        },
+        {
+          "document_id": "bfd0af5c64e8e815",
+          "trading_days_before": 2,
+          "price_move": "none",
+          "pressure": "up",
+          "direction": "up",
+          "kind": "pressure",
+          "cause": "heavy rains, frost damage",
+          "quote": "Heavy rains, frost damage coffee plants",
+          "quote_found": true,
+          "read": true
+        }
+      ],
+      "deciding_age": 0,
+      "deciding_kind": "report",
+      "supporting": [
+        "82982b9ccb860d3c"
+      ],
+      "opposing": []
+    },
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "blind-v1",
+    "latency_ms": 3033,
+    "evidence_document_ids": [
+      "82982b9ccb860d3c",
+      "9b353e1f7f0f33c2",
+      "bfd0af5c64e8e815"
+    ],
+    "evidence_packing": {
+      "n_input": 3,
+      "n_packed": 3,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 843,
+      "max_tokens": 3465,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 1,
+    "n_ok": 1,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "82982b9ccb860d3c",
+        "id_found": true,
+        "support_score": 0.902,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 3,
+        "support_rank_method": "semantic",
+        "closest_document_id": "82982b9ccb860d3c"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

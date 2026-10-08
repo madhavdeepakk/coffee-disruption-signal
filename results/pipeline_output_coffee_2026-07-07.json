@@ -1,0 +1,57 @@
+{
+  "anomaly": {
+    "date": "2026-07-07",
+    "price": 331.6000061035156,
+    "z_score": -3.236231441700938,
+    "anomaly_flag": true,
+    "pct_move": -8.88858497554151,
+    "direction": "down"
+  },
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (2 pointed the opposite way, 0 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 3,
+    "network_attempts": 3,
+    "network_failures": 0,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 29,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "3_document(s)_above_threshold",
+    "best_score": 0.8948689699172974,
+    "accepted_document_count": 3,
+    "accepted_document_ids": [
+      "39b52adb799ffab9",
+      "1b22e9e92bda8c28",
+      "c6e6ef2348e7981f"
+    ],
+    "total_documents_considered": 29,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-09-17T18:42:03.403911+00:00"
+  },
+  "documents_retrieved": 29,
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 1,
+    "inconsistent": 2
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided evidence describes a sharp increase in coffee futures prices and harvest delays in Brazil rather than explaining the detected -8.9% price drop on 2026-07-07.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient"
+  },
+  "faithfulness_report": null
+}

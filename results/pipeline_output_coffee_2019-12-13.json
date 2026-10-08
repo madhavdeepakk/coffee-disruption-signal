@@ -1,0 +1,167 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2019-12-13",
+    "price": 129.4499969482422,
+    "z_score": -2.72922268761319,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -4.746134832908954,
+    "cumulative_pct_move": 9.19442734364635,
+    "cumulative_z_score": 0.8181379698963631,
+    "direction": "down"
+  },
+  "price_description": "-4.7% day-over-day move (z-score -2.73)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (2 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 118,
+    "dropped_out_of_window": 1,
+    "collapsed_duplicates": 6,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "4_document(s)_above_threshold",
+    "best_score": 0.870465874671936,
+    "accepted_document_count": 4,
+    "accepted_document_ids": [
+      "456a0b463d648788",
+      "f6830baadc48247e",
+      "89aa07f9bfcb6db2",
+      "110e59e6f1d3bb95"
+    ],
+    "total_documents_considered": 118,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T13:15:48.561089+00:00"
+  },
+  "documents_retrieved": 118,
+  "sources": [
+    {
+      "document_id": "110e59e6f1d3bb95",
+      "title": "Earnings from coffee , pepper are modest because of poor branding",
+      "url": "https://vietnamnet.vn/en/business/earnings-from-coffee-pepper-are-modest-because-of-poor-branding-594468.html",
+      "publication_date": "2019-12-05",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 3382,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vietnamnet.vn"
+      ],
+      "retrieval_score": 0.2885,
+      "semantic_score": 0.8525140285491943,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f6830baadc48247e",
+      "title": "Picked by slaves: coffee crisis brews in Brazil - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYlptMEY5cHMtenhXQUVfQXkySGRlVDgwQlNkRVBPQzcyV2d0eUY4bXpsSzhrdlUxTUdtQ3dkb1FGdENSYnhablBxTmM0Zm9RME1ZTTc0OXdFaEFyblpVY3E5M0RlSk9LbEZLTlJOS1U5eFdmd0ZKZ242cFpBS2hoRlFuY2twdXR2V1RoSW8zYVVBNU9hLU5FcHB5bmpRVUd6?oc=5",
+      "publication_date": "2019-12-12",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8625367879867554,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "456a0b463d648788",
+      "title": "Coffee prices expected to rise due to supply shortage",
+      "url": "https://vietnamnet.vn/en/business/coffee-prices-expected-to-rise-due-to-supply-shortage-595543.html",
+      "publication_date": "2019-12-06",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 2003,
+      "n_copies": 2,
+      "syndication_domains": [
+        "en.vietnamplus.vn",
+        "vietnamnet.vn"
+      ],
+      "retrieval_score": 0.3154,
+      "semantic_score": 0.870465874671936,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "89aa07f9bfcb6db2",
+      "title": "Espresso may cost more as drought wilts Indonesia\u2019s coffee - The Jakarta Post",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOR1pCTlVFMFlRVjcwYkdPOV9UMGJlMjd2ZE1adEU3elZXLUQ5NmtHaFZwd3VtaF8wUFJmU1VhcnBmUU1BZGQwR1ZjdnJMUG5CbUVnY0dlQ0JydmU0cXVXZTlhaXdnc2ExOGlWdmstX2VPVlJfQ01tQWprdTh2LXVHZC1HV19jWjhzREJtTUdBejYyTnY0Rl95a0RNdzBQaEVZRlRROGFzcw?oc=5",
+      "publication_date": "2019-12-03",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.857968807220459,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 1,
+    "inconsistent": 2
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 4,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 1,
+    "median_days_before": 5.5
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided documents either are older than three trading days or lack sufficient content to directly explain the price drop on 2019-12-13.",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2056,
+    "evidence_document_ids": [
+      "110e59e6f1d3bb95",
+      "f6830baadc48247e",
+      "456a0b463d648788",
+      "89aa07f9bfcb6db2"
+    ],
+    "evidence_packing": {
+      "n_input": 4,
+      "n_packed": 4,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1500,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

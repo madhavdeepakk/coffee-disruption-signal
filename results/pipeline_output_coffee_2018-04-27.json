@@ -1,0 +1,186 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2018-04-27",
+    "price": 120.3499984741211,
+    "z_score": 2.161064812180116,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 2.338435404491235,
+    "cumulative_pct_move": 2.60016653283248,
+    "cumulative_z_score": null,
+    "direction": "up"
+  },
+  "price_description": "+2.3% day-over-day move (z-score 2.16)",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 0,
+    "network_failures": 0,
+    "network_successes": 1,
+    "cache_hits": 6,
+    "fallback_added": 0,
+    "documents_returned": 162,
+    "dropped_out_of_window": 19,
+    "collapsed_duplicates": 8,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "5_document(s)_above_threshold",
+    "best_score": 0.8740503787994385,
+    "accepted_document_count": 5,
+    "accepted_document_ids": [
+      "7a83d7c13cbc061a",
+      "64167f144597ff6c",
+      "16eb9f74e3fcc489",
+      "1e2740eaeda968e8",
+      "446a75994ec52f49"
+    ],
+    "total_documents_considered": 162,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T11:24:58.112634+00:00"
+  },
+  "documents_retrieved": 162,
+  "sources": [
+    {
+      "document_id": "7a83d7c13cbc061a",
+      "title": "Brazil Designation of Origin Appearing on US Store Shelves Through Casa Brasil",
+      "url": "https://dailycoffeenews.com/2018/04/25/brazil-designation-of-origin-appearing-on-us-store-shelves-through-casa-brasil/",
+      "publication_date": "2018-04-25",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2545,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dailycoffeenews.com"
+      ],
+      "retrieval_score": 0.1667,
+      "semantic_score": 0.8740503787994385,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "16eb9f74e3fcc489",
+      "title": "INTL FCStone : mercado de caf\u00e9 deve atentar para clima no Brasil",
+      "url": "https://istoe.com.br/intl-fcstone-mercado-de-cafe-deve-atentar-para-clima-no-brasil/",
+      "publication_date": "2018-04-17",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 2111,
+      "n_copies": 1,
+      "syndication_domains": [
+        "istoe.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8590022921562195,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "1e2740eaeda968e8",
+      "title": "Peabirus : INTL FCStone : mercado de caf\u00e9 deve atentar para clima no Brasil",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=73344",
+      "publication_date": "2018-04-17",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 2683,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8566806316375732,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "446a75994ec52f49",
+      "title": "Coffee producers enjoy only 10 % of consumption value , says Darmin - Business",
+      "url": "http://www.thejakartapost.com/news/2018/04/27/coffee-producers-enjoy-only-10-of-consumption-value-says-darmin.html",
+      "publication_date": "2018-04-27",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2135,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thejakartapost.com"
+      ],
+      "retrieval_score": 0.2832,
+      "semantic_score": 0.8526484966278076,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "64167f144597ff6c",
+      "title": "Peabirus : Caf\u00e9 : Safra brasileira volta a repercutir no mercado e Bolsa de Nova York cai cerca de 300 pts nesta 2\u00aa feira",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=73322",
+      "publication_date": "2018-04-17",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 4870,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8618443012237549,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 3,
+    "neutral": 1,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 5,
+    "n_fresh": 2,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 8
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The documents are either dated more than three trading days before the move, discuss background issues without a direct causal link to price, or address unrelated topics, so they cannot explain the +2.3% rise on 2018-04-27.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 3017,
+    "evidence_document_ids": [
+      "7a83d7c13cbc061a",
+      "16eb9f74e3fcc489",
+      "1e2740eaeda968e8",
+      "446a75994ec52f49",
+      "64167f144597ff6c"
+    ],
+    "evidence_packing": {
+      "n_input": 5,
+      "n_packed": 5,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 2889,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

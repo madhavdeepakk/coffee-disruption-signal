@@ -1,0 +1,168 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2019-04-03",
+    "price": 95.3499984741211,
+    "z_score": 2.2947860443546686,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 4.0370942571096755,
+    "cumulative_pct_move": 0.6332437721594699,
+    "cumulative_z_score": 0.4276956839645715,
+    "direction": "up"
+  },
+  "price_description": "+4.0% day-over-day move (z-score 2.29)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (2 pointed the opposite way, 0 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 2,
+    "network_successes": 5,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 126,
+    "dropped_out_of_window": 9,
+    "collapsed_duplicates": 13,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "4_document(s)_above_threshold",
+    "best_score": 0.8639435768127441,
+    "accepted_document_count": 4,
+    "accepted_document_ids": [
+      "03afe0528f752b4f",
+      "3011f572fe639c23",
+      "f1609d571887000c",
+      "0f59229d8587be36"
+    ],
+    "total_documents_considered": 126,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T12:14:02.873298+00:00"
+  },
+  "documents_retrieved": 126,
+  "sources": [
+    {
+      "document_id": "3011f572fe639c23",
+      "title": "\u201cAn Exciting Time For Brazil\u201d At The First-Ever Capara\u00f3 Coffee Showcase - Sprudge Coffee",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSUppa1EtQTRBUGJnX09rZjFweEQ4SzFKSDlzamlnU0E0dmFJMGUyd3FpclVCOVhMd2hJSHdaaHU0em1BaG5qTVZTMll6WUtYVkg4eDRHZWw2Q1AtdmdMb1hxTHRnTUV0aGtQV212NWdLSkhYdThfRnptWWJQdzZNUDNtZlNOb1AxcUVXeDk0V0l2d3pHTkZQN3FsekI2WWQtYmJz?oc=5",
+      "publication_date": "2019-04-03",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8631541728973389,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0f59229d8587be36",
+      "title": "Losing Land , Beans , & Sleep : Climate Change Impacts on Coffee",
+      "url": "https://www.ozarksfirst.com/news/losing-land-beans-sleep-climate-change-impacts-on-coffee/1882780807",
+      "publication_date": "2019-03-28",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 2,
+      "syndication_domains": [
+        "news.google.com",
+        "ozarksfirst.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8515783548355103,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "03afe0528f752b4f",
+      "title": "Japanese take to Vietnamese coffee - VnExpress International",
+      "url": "https://e.vnexpress.net/news/business/industries/japanese-take-to-vietnamese-coffee-3900734.html",
+      "publication_date": "2019-03-28",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 1265,
+      "n_copies": 1,
+      "syndication_domains": [
+        "e.vnexpress.net"
+      ],
+      "retrieval_score": 0.2832,
+      "semantic_score": 0.8639435768127441,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f1609d571887000c",
+      "title": "The Carbon Footprint of Vietnamese Robusta : Problem and Potential",
+      "url": "https://dailycoffeenews.com/2019/03/28/the-carbon-footprint-of-vietnamese-robusta-problem-and-potential/",
+      "publication_date": "2019-03-28",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 3525,
+      "n_copies": 2,
+      "syndication_domains": [
+        "dailycoffeenews.com",
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1828,
+      "semantic_score": 0.8562488555908203,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 2,
+    "inconsistent": 2
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 4,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 4.0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The available documents either are too old (four trading days before) or lack explicit information linking the same\u2011day Brazil coffee showcase to the price increase, so they cannot substantiate a causal explanation for the +4.0% move on 2019\u201104\u201103.",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2357,
+    "evidence_document_ids": [
+      "3011f572fe639c23",
+      "0f59229d8587be36",
+      "03afe0528f752b4f",
+      "f1609d571887000c"
+    ],
+    "evidence_packing": {
+      "n_input": 4,
+      "n_packed": 4,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1392,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

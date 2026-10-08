@@ -1,0 +1,2363 @@
+{
+  "pipeline_version": "8",
+  "anomaly": {
+    "date": "2020-03-19",
+    "price": 116.6500015258789,
+    "z_score": 2.938812684491152,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 7.959276474986828,
+    "cumulative_pct_move": 6.1902623087972,
+    "cumulative_z_score": 0.6690867041593225,
+    "direction": "up"
+  },
+  "price_description": "+8.0% day-over-day move (z-score 2.94)",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "A recent document gives a quoted reason for a move in this direction, but it rests on a single document; 1 equally recent document(s) point the other way.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 2,
+    "network_attempts": 0,
+    "network_failures": 0,
+    "network_successes": 1,
+    "cache_hits": 2,
+    "reused_cache_hits": 6,
+    "fallback_added": 0,
+    "documents_returned": 514,
+    "dropped_out_of_window": 27,
+    "collapsed_duplicates": 73,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "5_document(s)_above_threshold",
+    "best_score": 0.8725283741950989,
+    "accepted_document_count": 5,
+    "accepted_document_ids": [
+      "edfe3c87368a2db5",
+      "bfd0af5c64e8e815",
+      "2a59170064da6835",
+      "82982b9ccb860d3c",
+      "ee4b87bb7085c2c8"
+    ],
+    "total_documents_considered": 514,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T23:41:43.838966+00:00"
+  },
+  "documents_retrieved": 514,
+  "documents_retrieved_recent": 200,
+  "sources": [
+    {
+      "document_id": "b639448e3ff95dde",
+      "title": "Gi\u00e1 c\u00e0 ph\u00ea h\u00f4m nay 18 / 3 / 2020 : Gi\u1ea3m tr\u00ean c\u1ea3 2 s\u00e0n trong n\u01b0\u1edbc v\u00e0 th\u1ebf gi\u1edbi",
+      "url": "https://voh.com.vn/thi-truong/gia-ca-phe-hom-nay-18-3-2020-giam-tren-ca-2-san-trong-nuoc-va-the-gioi-357684.html",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 4465,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "voh.com.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8028407096862793,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "32d5d9cc92931864",
+      "title": "As Coronavirus Curtails Retail , Roasters Get Creative with Online Sales",
+      "url": "https://dailycoffeenews.com/2020/03/18/as-coronavirus-curtails-retail-roasters-get-creative-with-online-sales/",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 5067,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dailycoffeenews.com"
+      ],
+      "retrieval_score": 0.1005,
+      "semantic_score": 0.8355295062065125,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "992cfcbe9c6bf73a",
+      "title": "Why the world is waking up to Vietnamese coffee",
+      "url": "https://www.cnn.com/travel/article/waking-up-to-vietnamese-coffee-intl-hnk-spc/",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 5235,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 3,
+      "syndication_domains": [
+        "cnn.com",
+        "news.google.com",
+        "us.cnn.com"
+      ],
+      "retrieval_score": 0.1261,
+      "semantic_score": 0.8424084186553955,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d07121d97d235e1f",
+      "title": "CNN : Vietnamese coffee wakes up the world",
+      "url": "https://vietnamnet.vn/en/business/cnn-vietnamese-coffee-wakes-up-the-world-625422.html",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 1952,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vietnamnet.vn"
+      ],
+      "retrieval_score": 0.062,
+      "semantic_score": 0.8417665362358093,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0dfbc83be4783eb0",
+      "title": "Toronto coffee shops delivering beans and equipment so you can brew from home",
+      "url": "https://www.blogto.com/eat_drink/2020/03/toronto-coffee-shops-beans-equipment-brew-home/",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1744,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "blogto.com"
+      ],
+      "retrieval_score": 0.1208,
+      "semantic_score": 0.8197178244590759,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7236d2df2e13076f",
+      "title": "Vietnam thriving coffee industry - Channel3000 . com",
+      "url": "https://www.channel3000.com/i/vietnams-thriving-coffee-industry/",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "channel3000.com"
+      ],
+      "retrieval_score": 0.0513,
+      "semantic_score": 0.8239631056785583,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "bfd0af5c64e8e815",
+      "title": "Heavy rains, frost damage coffee plants - myRepublica",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNVFQU3piVkUxVi1BdGlkZFZGWk1Yc2NITENjMnYtNzRVWmNQMVRTdzNkZ196X1R3emVMcUZYcktrV084UWdOV3BmSzc4eVplREkxaGMwX2lROXhMdzNpeElVY1FCS3A3ZnR5Rl9FTGE4Ry0zVmZYQVBtWF9ieXdFeUZiSGc2ZnRNcFE?oc=5",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": true,
+      "n_copies": 2,
+      "syndication_domains": [
+        "myrepublica.nagariknetwork.com",
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2437,
+      "semantic_score": 0.862185537815094,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2f55f1cc006e9c33",
+      "title": "Gi\u00e1 c\u00e0 ph\u00ea h\u00f4m nay 17 / 3 : Th\u1ecb tr\u01b0\u1eddng c\u00e0 ph\u00ea t\u01b0\u01a1ng \u0111\u1ed1i y\u00ean \u1eafng",
+      "url": "https://tintuc.vn/gia-ca-phe-hom-nay-173-thi-truong-ca-phe-tuong-doi-yen-ang-post1445331",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tintuc.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8116159439086914,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a83ea58e393f0dc5",
+      "title": "Gi\u00e1 c\u00e0 ph\u00ea h\u00f4m nay 18 / 3 : Th\u1ecb tr\u01b0\u1eddng \u1ed5n \u0111\u1ecbnh nh\u01b0ng \u1edf m\u1ee9c th\u1ea5p",
+      "url": "https://tintuc.vn/gia-ca-phe-hom-nay-183-thi-truong-on-dinh-nhung-o-muc-thap-post1447209",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tintuc.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8027036190032959,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c411bcb5b59e63fd",
+      "title": "Gi\u00e1 c\u00e0 ph\u00ea h\u00f4m nay 16 / 3 : Th\u1ecb tr\u01b0\u1eddng v\u1eabn ch\u01b0a th\u1ec3 t\u00edch c\u1ef1c do Covid - 19",
+      "url": "https://tintuc.vn/gia-ca-phe-hom-nay-163-thi-truong-van-chua-the-tich-cuc-do-covid-19-post1443451",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tintuc.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8091571927070618,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "63168a86b201e400",
+      "title": "Coffee Subsriptions We Love To Drink From Home",
+      "url": "https://sprudge.com/coffee-subscriptions-we-love-161308.html",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "sprudge.com"
+      ],
+      "retrieval_score": 0.0256,
+      "semantic_score": 0.8046056032180786,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d76932ad6052695c",
+      "title": "Corona - Krise : Bei diesen Kleinbetrieben solltest du jetzt bestellen ! ",
+      "url": "https://www.woman.at/a/online-shoppen-statt-amazon",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "woman.at"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8028072118759155,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "78713abec27ce26c",
+      "title": "Asia Coffee - Coronavirus fears weigh on prices in Vietnam",
+      "url": "https://in.reuters.com/article/asia-coffee/asia-coffee-coronavirus-fears-weigh-on-prices-in-vietnam-idINL4N2BC2RI",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "in.reuters.com"
+      ],
+      "retrieval_score": 0.0513,
+      "semantic_score": 0.8380330801010132,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "212763e55af5c3c6",
+      "title": "How 5 Athens coffee shops are responding to COVID - 19",
+      "url": "https://www.redandblack.com/culture/how-athens-coffee-shops-are-responding-to-covid/article_9b33dba6-68be-11ea-998e-97d5ebbdbc45.html",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3765,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redandblack.com"
+      ],
+      "retrieval_score": 0.1208,
+      "semantic_score": 0.8199494481086731,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "9b353e1f7f0f33c2",
+      "title": "Shipping Containers in Short Supply \u2013 gCaptain",
+      "url": "https://gcaptain.com/shipping-containers-in-short-supply/",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 3933,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "gcaptain.com",
+        "shippingherald.com"
+      ],
+      "retrieval_score": 0.0943,
+      "semantic_score": 0.8257689476013184,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "9f1de8d27e203ffa",
+      "title": "Th\u1eed pha c\u00e0 ph\u00ea  k\u1eb9o x\u1ed1p  g\u00e2y s\u1ed1t \u1edf H\u00e0n Qu\u1ed1c , c\u00e1i k\u1ebft ngon ng\u1ea5t ng\u00e2y",
+      "url": "https://tintuc.vn/ca-phe-keo-xop-gay-sot-o-han-quoc-post1448020",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tintuc.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8138939142227173,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8da4410a28d1b789",
+      "title": "Louisville - Based Sunergos Coffee Adapts to Fight Covid - 19 and Keep Staff Working",
+      "url": "https://www.benzinga.com/pressreleases/20/03/p15575333/louisville-based-sunergos-coffee-adapts-to-fight-covid-19-and-keep-staff-working",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2760,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "benzinga.com",
+        "ssuchronicle.com"
+      ],
+      "retrieval_score": 0.1261,
+      "semantic_score": 0.8237446546554565,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f17641cf2e2bf4a5",
+      "title": "SOFTS - Raw sugar plumbs fresh 1 - 1 / 2 year low , arabica coffee gains",
+      "url": "https://uk.reuters.com/article/global-softs/softs-raw-sugar-plumbs-fresh-1-1-2-year-low-arabica-coffee-gains-idUKL8N2BC4YY",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "uk.reuters.com"
+      ],
+      "retrieval_score": 0.0556,
+      "semantic_score": 0.8206524848937988,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "82982b9ccb860d3c",
+      "title": "SOFTS - Coffee jumps 4 % on supply chain worries ; cocoa falls",
+      "url": "https://uk.reuters.com/article/global-softs/softs-coffee-jumps-4-on-supply-chain-worries-cocoa-falls-idUKL8N2BC71I",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "uk.reuters.com"
+      ],
+      "retrieval_score": 0.0385,
+      "semantic_score": 0.8529552221298218,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "196975ea5202efc9",
+      "title": "Indian coffee shipments to corona - stricken Italy hit - The Hindu BusinessLine",
+      "url": "https://www.thehindubusinessline.com/economy/agri-business/indian-coffee-shipments-to-corona-stricken-italy-take-a-hit/article31110599.ece",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 3446,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thehindubusinessline.com"
+      ],
+      "retrieval_score": 0.1048,
+      "semantic_score": 0.8493925333023071,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ce6318070a52d8f8",
+      "title": "Coffee Maintains Coronavirus Immunity",
+      "url": "https://seekingalpha.com/article/4332867-coffee-maintains-coronavirus-immunity",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "seekingalpha.com"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.8038037419319153,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "04be225f57421880",
+      "title": "Pre\u00e7o m\u00ednimo do caf\u00e9 \u00e9 reajustado para safra 2020 / 2021",
+      "url": "https://www.terra.com.br/noticias/climatempo/preco-minimo-do-cafe-e-reajustado-para-safra-20202021,686b8f511d5c47274d8f8b60dcd66994rh318627.html",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2986,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "agroclima.climatempo.com.br",
+        "terra.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.825707197189331,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e7d8d8edc2dd9141",
+      "title": "Bupati Sarkawi : Isu Virus Corona , Pengumpul Jangan Permainkan Harga Kopi Gayo",
+      "url": "https://aceh.tribunnews.com/2020/03/19/bupati-sarkawi-isu-virus-corona-pengumpul-jangan-permainkan-harga-kopi-gayo",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 3271,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "aceh.tribunnews.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8131351470947266,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "81e8f66214a910f6",
+      "title": "Study finds all Arabica coffee derives from a single ancestor",
+      "url": "https://www.beanscenemag.com.au/arabica-coffee-single-ancestor/",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3515,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "beanscenemag.com.au"
+      ],
+      "retrieval_score": 0.0833,
+      "semantic_score": 0.8327828049659729,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ce89331cce0d087a",
+      "title": "Orang Bisa Lupa Perang Vietnam , Tapi Kopinya Tidak",
+      "url": "https://travel.tempo.co/read/1321255/orang-bisa-lupa-perang-vietnam-tapi-kopinya-tidak",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "travel.tempo.co"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8178593516349792,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "992cfb0b686b934c",
+      "title": "KTC lets cardmembers redeem KTC FOREVER points in exchange for refreshments at BlueCup Coffee . ",
+      "url": "https://www.thaipr.net/life/1002460",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thaipr.net"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.8005996942520142,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d4d34c0c971d410f",
+      "title": "Europe Coffee Market 2016 : Share , Trends , Growth , Opportunities and Top Key 2022",
+      "url": "https://www.marketwatch.com/press-release/europe-coffee-market-2016-share-trends-growth-opportunities-and-top-key-2022-2020-03-18",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "marketwatch.com"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.8159590363502502,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "013dc000292d167c",
+      "title": "Peabirus : Em MG , produtores de caf\u00e9 reveem para baixo previs\u00e3o de colheita",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=83957",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4952,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8316165804862976,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3b1090038c3aded1",
+      "title": "Sip Brews , Roasts from All Over Thailand at Coffee Fest 2020",
+      "url": "https://www.khaosodenglish.com/life/2020/02/19/sip-brews-roasts-from-all-over-thailand-at-coffee-fest-2020/",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 1180,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "khaosodenglish.com"
+      ],
+      "retrieval_score": 0.125,
+      "semantic_score": 0.8347606658935547,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2c5f6cdba08dfb1d",
+      "title": "Coffee prices fall 8pc on coronavirus pandemic",
+      "url": "https://www.businessdailyafrica.com/markets/commodities/Coffee-prices-fall-8pc-on-coronavirus-pandemic/3815530-5497204-b6d924z/",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 344,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "businessdailyafrica.com"
+      ],
+      "retrieval_score": 0.0556,
+      "semantic_score": 0.8445969223976135,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "bd62ed0edad291d7",
+      "title": "Peabirus : Caf\u00e9 : colheita de robusta se inicia em RO , mas pre\u00e7os seguem firmes",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=83975",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1860,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8315617442131042,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "33e605e828f35be9",
+      "title": "Peabirus : Colheita de robusta se inicia em RO , mas pre\u00e7os seguem firmes , avalia Cepea",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=83988",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 1852,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8307974338531494,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7c267a0c3c09f1ae",
+      "title": "Stereoscope Coffee Co. Now Open In Newport Beach - New University",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOclZIaDMtd280dS12b0l1aUFjN3pnRWM5em03TE95UEJoQ2tqOFFpcDAzWHZlVTZ1aFdBMWR6YUc2bHVUSEhpTTZHOHd4bkJld0lQb29XZmJpRFh4OXJGRDhidmJWakt5cXBPR2NJbmlXUUlOejJCYkNocFhVRFRBaEp5Qzh2M25Qclk3Q1Vn?oc=5",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "news.google.com",
+        "newuniversity.org"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8141909837722778,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "679271540e276ebc",
+      "title": "Peabirus : Oportunidade de fixao de caf",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=83981",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3025,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8409723043441772,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "950cd490acc821f5",
+      "title": "Coffee Planet receives BRC accreditation",
+      "url": "https://www.hoteliermiddleeast.com/suppliers/116200-coffee-planet-receives-brc-accreditation",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "hoteliermiddleeast.com"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.8005088567733765,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "348e090f455bf187",
+      "title": "Valor bruto da produo brasileira ser\u00e1 8 , 2 % maior em 2020 , projeta Minist\u00e9rio da Agricultura",
+      "url": "https://revistagloborural.globo.com/Noticias/Economia/noticia/2020/03/valor-bruto-da-producao-brasileira-sera-82-maior-em-2020-projeta-ministerio-da-agricultura.html",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2185,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "revistagloborural.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8061935901641846,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "1864a62fd96c6ad1",
+      "title": "Peabirus : Colheita do caf\u00e9 robusta se inicia em RO",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=83980",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1856,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8294084072113037,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "74e94f3aa74c36a2",
+      "title": "Coffee Planet becomes ME only BRC - credited coffee company",
+      "url": "http://tradearabia.com/news/MISC_365298.html",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 7983,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tradearabia.com"
+      ],
+      "retrieval_score": 0.0332,
+      "semantic_score": 0.8301433324813843,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6bc80e919fbb19ae",
+      "title": "Th\u1ecb tr\u01b0\u1eddng h\u00e0ng h\u00f3a tu\u1ea7n 09 / 03 \u2013 13 / 03 / 2020 : D\u1ea7u gi\u1ea3m , v\u00e0ng b\u00e1n th\u00e1o , m\u1ed9t s\u1ed1 m\u1eb7t h\u00e0ng gi\u1ea3m do nhu c\u1ea7u \u0111i xu\u1ed1ng | Th\u01b0\u01a1ng tr\u01b0\u1eddng",
+      "url": "https://tinnhanhchungkhoan.vn/thuong-truong/thi-truong-hang-hoa-tuan-0903-13032020-dau-giam-vang-ban-thao-mot-so-mat-hang-giam-do-nhu-cau-di-xuong-318378.html",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1642,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tinnhanhchungkhoan.vn"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8070724010467529,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "bbd8ed091af3978c",
+      "title": "Cornish Coffee expands production by 500 % with new roastery",
+      "url": "https://www.falmouthpacket.co.uk/news/18314149.cornish-coffee-expands-production-500-new-roastery/",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 1633,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "falmouthpacket.co.uk"
+      ],
+      "retrieval_score": 0.0556,
+      "semantic_score": 0.8144481182098389,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "77b2bbacc9e65923",
+      "title": "Single Serve French Press Canada",
+      "url": "http://www.am9501007fm.com/single-serve-french-press-canada.html",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 591,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "am9501007fm.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8096463084220886,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "21907a06fe80b89c",
+      "title": "How To Use Regular Coffee Pot",
+      "url": "http://www.am9501007fm.com/how-to-use-regular-coffee-pot.html",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 591,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "am9501007fm.com"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.8123296499252319,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "fda4458914b5ec44",
+      "title": "Cancelled export orders hit horticulture",
+      "url": "https://www.businessdailyafrica.com/corporate/companies/Cancelled-export-orders-hit-horticulture/4003102-5496212-135dbdkz/",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 344,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "businessdailyafrica.com"
+      ],
+      "retrieval_score": 0.0108,
+      "semantic_score": 0.817487359046936,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2bc8312cffa3a60a",
+      "title": "\u062e\u0633\u0627\u0626\u0631 \u0643\u0628\u064a\u0631\u0629 \u0641\u064a \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0646\u0641\u0637 \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629 \u0628\u0633\u0628\u0628 \u0643\u0648\u0631\u0648\u0646\u0627",
+      "url": "https://www.elwatannews.com/news/details/4651187",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "elwatannews.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8047935962677002,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a28baa7c693f86d3",
+      "title": "\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0646\u0641\u0637 \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629 \u062a\u0639\u0645\u0642 \u062e\u0633\u0627\u0626\u0631\u0647\u0627 .. \u0648\u0627\u0644\u062e\u0627\u0645 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a \u062f\u0648\u0646 30 \u062f\u0648\u0644\u0627\u0631",
+      "url": "https://www.dostor.org/3031997",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dostor.org"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.803770124912262,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2a59170064da6835",
+      "title": "Peabirus : Pausa para o Cafezinho : Coronav\u00edrus e o mercado de caf\u00e9",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=83997",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 3727,
+      "found_by": "combined search, recent days",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.854236364364624,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "75db74bc944aec74",
+      "title": "BOMANI Cold Buzz Announces Official Launch",
+      "url": "https://www.brewbound.com/news/bomani-cold-buzz-announces-official-launch",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 3764,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "brewbound.com"
+      ],
+      "retrieval_score": 0.1026,
+      "semantic_score": 0.8331711292266846,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f1d3845d3d7f825e",
+      "title": "Agricultural Assets : Shelter from the Storm",
+      "url": "https://www.investingdaily.com/54713/agricultural-assets-shelter-from-the-storm/",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 5613,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "investingdaily.com"
+      ],
+      "retrieval_score": 0.1519,
+      "semantic_score": 0.8027923107147217,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b62946c3be903e02",
+      "title": "Gi\u00e1 c\u00e0 ph\u00ea h\u00f4m nay 19 / 3 : Th\u1ecb tr\u01b0\u1eddng y\u00ean \u1eafng",
+      "url": "https://tintuc.vn/gia-ca-phe-hom-nay-193-thi-truong-yen-ang-post1449468",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tintuc.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8195699453353882,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f1f09f9258c54fe2",
+      "title": "Home Coffee Maker Reviews",
+      "url": "http://www.am9501007fm.com/home-coffee-maker-reviews.html",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 591,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "am9501007fm.com"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.822121262550354,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "371587920c3d6ac8",
+      "title": "In Coronavirus Response , Blue Bottle Coffee Temporary Closes All 71 US Stores",
+      "url": "https://dailycoffeenews.com/2020/03/16/in-coronavirus-response-blue-bottle-coffee-temporary-closes-all-71-us-stores/",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2892,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dailycoffeenews.com"
+      ],
+      "retrieval_score": 0.0556,
+      "semantic_score": 0.8246868252754211,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0fb38bf8b5ba5244",
+      "title": "Peabirus : BALAN\u00c7O SEMANAL 09 a 13 / 03 / 2020 - Funcaf\u00e9 : CDPC recomenda or\u00e7amento recorde para safra 2020",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=83954",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3453,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.2083,
+      "semantic_score": 0.8217281103134155,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2b3c60b3e3c3a2d7",
+      "title": "Baystreet . ca - Futures Down Once Again",
+      "url": "http://baystreet.ca/marketupdates/9063/Futures-Down-Once-Again",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2499,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "baystreet.ca"
+      ],
+      "retrieval_score": 0.1443,
+      "semantic_score": 0.8157687783241272,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2258e5b829985ac8",
+      "title": "Baystreet . ca - Futures Down Once Again",
+      "url": "http://baystreet.ca/articles/marketupdates/55489/Futures-Down-Once-Again",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2499,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "baystreet.ca"
+      ],
+      "retrieval_score": 0.1443,
+      "semantic_score": 0.8157687783241272,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "eb406cd2eb71fd37",
+      "title": "\u7f8e\u964d\u606f2\u95dc\u9375\u5687\u8db4\u5e02\u5834 \u53f0\u7063\u592e\u884c\u964d\u606f\u52e2\u5728\u5fc5\u884c",
+      "url": "https://news.sina.com.tw/article/20200316/34541376.html",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.sina.com.tw"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.814757227897644,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "bc0c35dac47af72a",
+      "title": "\u5e6b\u9673\u6642\u4e2d\u63d0\u795e \u570b\u59d3\u5496\u5561\u8fb2\u63501\u842c\u5305\u6ffe\u639b\u5f0f",
+      "url": "https://news.sina.com.tw/article/20200317/34557088.html",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.sina.com.tw"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.807172417640686,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7d044ba374afdcfb",
+      "title": "Redesigned cans and RTDs hope to attract a wider audience to illy",
+      "url": "https://www.beveragedaily.com/Article/2020/03/19/Redesigned-cans-and-RTDs-hope-to-attract-a-wider-audience-to-illy",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 3203,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "beveragedaily.com"
+      ],
+      "retrieval_score": 0.1026,
+      "semantic_score": 0.8370343446731567,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "db67bd258dc9bdb5",
+      "title": "\u5496\u5561\u679c\u5c0f\u8839\u5371\u5bb3 \u570b\u59d3\u516c\u6240\u7de8\u7d93\u8cbb\u88dc\u52a9\u9632\u6cbb",
+      "url": "https://news.sina.com.tw/article/20200317/34559764.html",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.sina.com.tw"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.822394073009491,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6b81c16b4a557f85",
+      "title": "Coronavirus : les caf\u00e9s soutenus par les g\u00e9ants du secteur",
+      "url": "https://www.lavenir.net/cnt/dmf20200319_01458921/coronavirus-les-cafes-soutenus-par-les-geants-du-secteur",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 3027,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "lavenir.net"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8047545552253723,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e3077dcced801f5e",
+      "title": "Meru farmers express disappointment at poor rice prices : The Standard",
+      "url": "https://www.standardmedia.co.ke/business/article/2001364433/meru-farmers-express-disappointment-at-poor-rice-prices",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 3727,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "standardmedia.co.ke"
+      ],
+      "retrieval_score": 0.0694,
+      "semantic_score": 0.8098851442337036,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "14887029e8b3cdb9",
+      "title": "Patchy pre - monsoon rains trigger worries for coffee growers - The Hindu BusinessLine",
+      "url": "https://www.thehindubusinessline.com/economy/agri-business/patchy-pre-monsoon-rains-trigger-worries-for-coffee-growers/article31106947.ece",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 4517,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thehindubusinessline.com"
+      ],
+      "retrieval_score": 0.1389,
+      "semantic_score": 0.8487211465835571,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f1e418ffa103d759",
+      "title": "Coffee Machine With Paper Cups",
+      "url": "http://www.am9501007fm.com/coffee-machine-with-paper-cups.html",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 591,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "am9501007fm.com"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.8268411159515381,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "9b054626ac6f4f86",
+      "title": "IGS FSL Investment Update WE 13 - 03 - 20",
+      "url": "http://www.businessghana.com/site/news/business/208600/IGS-FSL-Investment-Update-WE-13-03-20",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 13452,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "businessghana.com"
+      ],
+      "retrieval_score": 0.0632,
+      "semantic_score": 0.8103086948394775,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "cb0e7e4cea8fd63b",
+      "title": "Coffee Coffee Coffee ( A Story for Coffee Addicts ) ",
+      "url": "https://siouxcityjournal.com/weekender/coffee-coffee-coffee-a-story-for-coffee-addicts/article_a3f2c028-2eee-5686-ac60-08e8582475ee.html",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 5067,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "siouxcityjournal.com"
+      ],
+      "retrieval_score": 0.1165,
+      "semantic_score": 0.8423446416854858,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6132616076130b3d",
+      "title": "Los productores de caf\u00e9 nacional est\u00e1n ganando $348 . 000 por cada saco vendido",
+      "url": "https://www.larepublica.co/economia/los-productores-de-cafe-nacional-estan-ganando-348000-por-cada-saco-vendido-2977871",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2123,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "larepublica.co"
+      ],
+      "retrieval_score": 0.0054,
+      "semantic_score": 0.8172104358673096,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a55152c89ca28932",
+      "title": "Green SuperFood diversifies its portfolio with Tahiti lime , passion fruit , and papaya",
+      "url": "https://www.freshplaza.com/article/9200227/green-superfood-diversifies-its-portfolio-with-tahiti-lime-passion-fruit-and-papaya/",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1751,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "freshplaza.com"
+      ],
+      "retrieval_score": 0.0385,
+      "semantic_score": 0.8198413848876953,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7632f0ac4429ac7b",
+      "title": "Viviendas del barrio El Rosario afectadas por inundaci\u00f3n",
+      "url": "https://www.elcomercio.com/actualidad/viviendas-barrio-rosario-afectadas-inundacion.html",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 3181,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "elcomercio.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8060598373413086,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "cdd5cf78587cfd1f",
+      "title": "\u4e00\u676f\u7c21\u55ae\u7684\u5496\u5561 \uff0c \u80cc\u5f8c\u7684\u79d1\u6280\u4e00\u9ede\u4e5f\u4e0d\u7c21\u55ae \uff01 - Future Commerce Issue \u672a\u4f86\u5546\u52d9\u7522\u696d\u7126\u9ede",
+      "url": "https://fc.bnext.com.tw/coffee-tech-cafe-x/",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "fc.bnext.com.tw"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8053534030914307,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a6b7839e2c3a0d25",
+      "title": "  Coffeeshops in Nederland mogen weer open voor afhalen softdrugs  ",
+      "url": "https://www.nu.nl/coronavirus/6037992/coffeeshops-in-nederland-mogen-weer-open-voor-afhalen-softdrugs.html",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "nu.nl"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8150835037231445,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "566a599b81ea844c",
+      "title": "DTI - NegOcc issues automatic price control guide",
+      "url": "https://www.sunstar.com.ph/article/1849189/Bacolod/Business/DTI-NegOcc-issues-automatic-price-control-guide",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 5472,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "sunstar.com.ph"
+      ],
+      "retrieval_score": 0.0972,
+      "semantic_score": 0.8466143608093262,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "84ae0a4be3ceed1e",
+      "title": "\u8f9b\u70f7\u5496\u5561 - Sir Norton \u958b\u8b1b , \u50be\u807d",
+      "url": "http://blog.udn.com/SirNorton/132074337",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "blog.udn.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8029701113700867,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ee4b87bb7085c2c8",
+      "title": "Peabirus : Fora do que foi travado , caf\u00e9 de safra nova pode chegar em mercado de pouca liquidez",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=83987",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2971,
+      "found_by": "combined search, recent days",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8502426743507385,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c6c42c103f6c02d8",
+      "title": "Coffeeshops in Nederland mogen hasj en wiet verkopen vanuit afhaalloket",
+      "url": "https://www.nu.nl/coronavirus/6037992/coffeeshops-in-nederland-mogen-hasj-en-wiet-verkopen-vanuit-afhaalloket.html",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "nu.nl"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8186112642288208,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b9660c63b9935adc",
+      "title": "Previs\u00e3o do tempo : saiba como fica o clima para mar\u00e7o nas \u00e1reas de caf\u00e9",
+      "url": "https://www.canalrural.com.br/programas/informacao/mercado-e-cia/previsao-tempo-cafe-marco/",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 892,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "canalrural.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8175065517425537,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "31036fe5f89e316d",
+      "title": "\u5927\u6469 \u3001 \u9ad8\u76db \uff1a \u80ba\u708e\u75ab\u60c5\u64f4\u5927 \u5168\u7403\u7d93\u6fdf\u6050\u9677\u5165\u8870\u9000",
+      "url": "http://blog.cnyes.com/My/violethung0428/Article2713303",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "blog.cnyes.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8012253046035767,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "500f515de1f53314",
+      "title": "Coffee spending to rise 8 . 2 % to $2 . 2b by 2024 in Indonesia",
+      "url": "https://sbr.com.sg/food-beverage/asia/coffee-spending-rise-82-22b-2024-in-indonesia",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1797,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "sbr.com.sg"
+      ],
+      "retrieval_score": 0.0556,
+      "semantic_score": 0.8359165787696838,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "57bea371c44cc50c",
+      "title": "In Middlebury , Iluminar Coffee Focuses on Transparent Sourcing",
+      "url": "https://www.sevendaysvt.com/vermont/in-middlebury-iluminar-coffee-focuses-on-transparent-sourcing/Content?oid=29932199",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2109,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "sevendaysvt.com"
+      ],
+      "retrieval_score": 0.125,
+      "semantic_score": 0.8385248184204102,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "bb3ab3acef74f9f2",
+      "title": "Coronav\u00edrus : confira onde pedir comida durante o isolamento",
+      "url": "https://jornaldebrasilia.com.br/gastronomia/lu-barbo/coronavirus-confira-onde-pedir-comida-durante-o-isolamento/",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 11556,
+      "found_by": "coffee Brazil drought",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "jornaldebrasilia.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8149946928024292,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ed37ec588aa39230",
+      "title": "Foodservice Coffee Market Size 2020 : Top Countries Data , Defination , Business Opportunity , SWOT Analysis , Applications , Trends and Forecast to 2026",
+      "url": "https://www.marketwatch.com/press-release/foodservice-coffee-market-size-2020-top-countries-data-defination-business-opportunity-swot-analysis-applications-trends-and-forecast-to-2026-2020-03-18",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "coffee export Vietnam",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "marketwatch.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8055731058120728,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3f89b28e25ea058f",
+      "title": "Ready Set ! Coffee is On the Go in Cleveland",
+      "url": "https://dailycoffeenews.com/2020/03/18/ready-set-coffee-is-on-the-go-in-cleveland/",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2936,
+      "found_by": "coffee supply shipping",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dailycoffeenews.com"
+      ],
+      "retrieval_score": 0.2939,
+      "semantic_score": 0.8368908762931824,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3df680890ab4e62f",
+      "title": "Weed & maple syrup : What people are panic buying in different countries amid growing Covid - 19 crisis -- Society Child -- Sott . net",
+      "url": "https://www.sott.net/article/430902-Weed-maple-syrup-What-people-are-panic-buying-in-different-countries-amid-growing-Covid-19-crisis",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2570,
+      "found_by": "coffee supply shipping",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "sott.net"
+      ],
+      "retrieval_score": 0.1882,
+      "semantic_score": 0.8366795778274536,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "edfe3c87368a2db5",
+      "title": "Coffee exports from Brazil fell by almost a quarter in February, reports Cecaf\u00e9 - Comunicaffe International",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSWV5UmlpU21xYWptVjNDbmZKOXpfdnZYVmtZa3htOURDUi1vNW5BN1RWMHZFaUMwRHRhUlRzbmoxaTFISnBHU2UtekwzeFYzVkFjSmNfYkY0VE96Z2pmQlM4dVVUanVyUTRQdXR2YXV5ajJRTEJmSDFlN1VnQnBFdEM3QUh3NENUb1JRSFdkdlRsMjBvZTdBRFktTzNUMDctSERUYm5vaGhLWkU?oc=5",
+      "publication_date": "2020-03-11",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8725283741950989,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b17bbbe5b7773511",
+      "title": "The Importance of Growing Consumption in Producing Countries - perfectdailygrind.com",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeWotZ19SRm84Q1c0S1RyTXNheFR3MDlWNjJib2p1MFVuRndhenFTNzJvdlZWUXFfRGFjZ3UzeEJ4ZFJ5NFVnRmtBT1o1WXRvSVp0aUNjUHBNWlhOY0YxTU9XZ0xMMFdXR1djUXJOUmNBX0xvS19fYWJRcms1RE1jQXRoVHo2ZkhKYWdsS3VxMTlZQjlnYlkxS3BZWlVGRkxZ?oc=5",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8005400896072388,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f293a23667dfa9c2",
+      "title": "What\u2019s Keeping Producing Countries From Growing Coffee Consumption? - perfectdailygrind.com",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWkV6QWN3ZU13WEU0RmpzM3BaRW11c3R4LTRwTHF1THN6TVVFVFRNdGRwdXBLMUVpbU9HYWZldGgwY1hfLU1aY3BUTkxXT29BT3ZhQmpsaVVFMXo2MG5DVE9TTUlVNENZT1dJa0Z4VlJwZ0duQmFlanlfUnJXQ3h3OXVfeXFBY28wNjktWmFIVDJmVDlyV2F5LU8tZXdzUFdZeVpTQnFPcw?oc=5",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8229733109474182,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2bbfca2cb59eea27",
+      "title": "New: Tipico Goes Beyond a Cup of Coffee at Its Second Location on Elmwood - Step Out Buffalo",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOR0VHbFdKMlZLMkN6dS1KaW1BWjFWVUNfTFJKMFlFQ2lSV093cGUzTFFfYjBwUkRvS2dOcWtTSU41MXV0UlZxRXN1V2lsM3FNZ29VajN5U1FPeEF0QS1KdFZVb2RLcGJfbkhEejJpVjRhVzFTWnU1Vk5wQjhYanRuNXF2Qmx3elRLQmw5VVduTVhOYkZYTFQzV0VpVUp5Y0JjTmc?oc=5",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8206028342247009,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f63dcbeb51930cd2",
+      "title": "Probat releases updated sample roaster - Global Coffee Report",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9nNFp6Y3VFYlNvLVAwMWpCODZBeTUtMXlhVm16UXIzdzk2YUFPQ1dLYXRseHhlb2RhSk11Skl3bExkblRWWU1femdpRTRReGl2UjR2Zmt3eEUyU1RaMkF6UEpuVzVlSXZDUmVIaDF6Yw?oc=5",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8315081596374512,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "9e4f8626b5ade70a",
+      "title": "Costa Rica Exports Processed Products such as Tropical Fruits and Green Coffee to Dubai - thecostaricanews.com",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSk5aUmRfdWRxVkktRS16aGdFQS05OTBlNlpPZjRXbklaa2h6Mm9uY2k2b1d0T0JHaW42eEZuMVU3TW1DUUJaaXhyajVWX19UaFoxWm16aFJPd2lHMlF1cXZfTlVsRFpxRnhjUDB1bHBPN1VUV1AwYWktNWVldERYelUyem9BLTRoaWhFeS1Oa01wVXJhNVg3RkRHVm5WRk5SWmUwRWRrc1BoV0tDRi1NY2xyeGpRaTYx?oc=5",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8138098120689392,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d2b890b5b7a31282",
+      "title": "Dissolving Coffee Pouches: STIRZ Wraps Instant Single-Serve Instant Coffee in Edible Film - Trend Hunter",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1La3k4ekpZNGxiNHFIWlpMS090Vmp0ZTZ2R0hqaFl3YVU2OG5qMWpzOUFvdmlTT3FZbjh5cU9oSEM5QktLaWZWUDBJeTNfaVJIWTlWaGpWNUtNcG12LUpxT1hWTW1rTEFyYnc5S0pNRQ?oc=5",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8287196755409241,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5b089d41f4117a84",
+      "title": "\u201cDemand for macadamia nuts outpaces the current supply\u201d - freshplaza.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbjRreGREZVF1UWducy1PemhKTVVnOGpOUVRBX1MySzFiM0QxbEhMNFNiNF9zTzE5YTkzVUNUb2gyR1BPSWN4WGotRGdKSWs0akN5eVBvYU82al9SQW01dm5XOTBZU19JbU53NExYMXhrLUQ5WGNLb0dTZnJkSlJ0QlZMSkZMSDlwNkVmT1B3X2Y1TDBsWUI3cjRLWTJqWHRhdlZfSGE2TndrNk1WQndqTg?oc=5",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.0108,
+      "semantic_score": 0.8270707130432129,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "71eb1303021ad873",
+      "title": "Neuhaus Neotec launches Le Belle Sorelle roasting concept - Global Coffee Report",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUkQ3UGtabHFCM1l3ZUtzQWhNQXNIbFN6VDhXRE1aQWpNZ1hxSWt2QjJlXzZpMnoyNTlWX01rR05Qc1YxaEpHQXFRdFVxWl80YW1BTDBoOERwRkd5aUc4Y3JPZjFUT0N6YmNzbGVZenBOZDBJckhqckhVNTNhdmdqSmF5MnFPb19Y?oc=5",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8271809816360474,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "eb6e434fe1131a37",
+      "title": "Crown focus on Turkish cold canned coffee segment - packagingnews.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOThSVllSLUlvdE1MRzYyejdPdlZhTE8tNUV3NjB4OWZIREZ1RnlJbEV2SFBqNXZlTDJIVzBzbmRSVjhDRzJYWGJIeHVwS0FEOUprQmVVVENnVW1zdnpELUQyWVpDOUQ1c3JzNFJhRWFaRlMtWmVTeTlmQlUtWVZpcmluVFBBQVRIMTRBNmNBV0ZybkdRLUxZY1U5S2lPZzlVbHkySkJ1Rk5QMmlVTm9n?oc=5",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8317437767982483,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6700e97e4446bd6e",
+      "title": "'We've got a strong balance sheet': Starbucks CEO defends stock buyback program - CNBC",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSjUyS21DT0ZuUGEwYWNiSzFhTDkxUjVOTEUxbHNPTWtwOFFuRWxuckdNenc4SmN4NzRKZVdZdS1Hai1kWUtaY20wUElZRG1Id1JSWmJHT0plSUoxRXphRkZGVjFVX2xwblRXTEpZODZVWldhUXB5VmcxdGtSV0ZCeEMxczh2d2J4Sy1QdG1pYnRIcWU3T2E5cHFXRmNXeUlF0gGmAUFVX3lxTE1wVnhZeGY1Z3luQnhueS05UUU0ZDJIdldmWHJUYWxSbkJFMGx5T1FpT0gxSG1Lcjk3VG5rbklPM2JxbmFiX2plWm9VYXdVQVRaV0lmem1kLXhiMV9hcVd3VDlTa0o1LWdTSEN0Sml4Yzlpa0tqZkpLcGh0dEIwRm1KSTZkMGNYeFhacjF3YmVVMGlnOFdRU0x2a2RLWnBENGNzNUJMbXc?oc=5",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8102540373802185,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b1ecb99fa8e97c7e",
+      "title": "Virtual Tip Jars Supporting Coffee Workers Throughout the US - dailycoffeenews.com",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT29jdFNNUjVmSGpJX2FvOTREek5BUjc2eHJOYl9pa2V0SkkxUXZMOXpsb0NLQl9ILWtqZ2szcTlVeWV1MlhmUGRWa0pEcVV1TUw2NVpaelJ0aXRoaTJLTDlrS3o4bFhzR01mTmx4R09UcEhGbjFncFJJVHVsRXJXaktPUkJ3ejVHaDZGY2tUSjM1NzV5M1ByMlFMQ2ZpbHRrQ0E?oc=5",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8222046494483948,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c93f6090aff9c9e9",
+      "title": "Bohlin Cywinski Jackson touches up its design for Williamsburg's Blue Bottle Coffee - Dezeen",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZTZIUy1TY3JLcGhQdmNVd3ZBLWhRc21rZEs2U1MxSFN6dUVxb1lzN0FIOWdqeWMwLTMzQk9xdHhNUVFTbmxkSzZXb3I1YXpGZTUzb1RxalFMYUdNalJ2aWYyaVJXTzNVTTRqZVU1Z21sWlh6N3RfdVg0bTZZY1M5NVlvYlJHMTU3T1Q5Z3RvYTdrQ0VjVmhNRTd2cGdkS3FH?oc=5",
+      "publication_date": "2020-03-19",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8036175966262817,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "871dfb6c40a16784",
+      "title": "New Liqueurs Adopt the Buzz of Coffee Culture (Published 2020) - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNXRULS15enBiUzI2RzVUV2U3VEpVU0pnMGNZX1Z1WmNLa3dFU3Z5eWVOa3oxVmJEQ0ViMnNTQXVxVFVEcVg2LS1qSVFhcWdrN1BpRHFOdlZmRUxGTkdISXF6LU4wVFhzLWptNVZyMkMzWnhWQkp0emJxN3pxVWpHdjAyQmc?oc=5",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8109785318374634,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5e0316789406223f",
+      "title": "Asteroid Ryugu has texture like 'freeze-dried coffee' - Fox News",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9aSURQRHNWZG9QN3I1RGtaMUN1eVE4NldFQW5TbmlvYk5DOTc5VWhzd1lfbkhaRkpWMEl2T1ZURnB3N2x4VlVYdml0OE1ZQ1JNMkE4UXRvd1NFVl9CTE9lc25Xem5vb25fbmpRNEZaRm1TLWxwQXJfcGhabjFhTjDSAYQBQVVfeXFMTU0xT053STBaNHpHU0I0S1RGMkx5SEk4RHd6VVdHOUJLSFRWZjBKb0o3dWZjNEdEVkhGTXRjUkdLQmtiNTZaNmFwS0RLNFh6Qk1yV2l3bjRyb2JUNVhIWlduSG1uS3V1OGJCTVU0dENWaDBfWnZ2Z1JVMGFtYnp5MzdPbEw1?oc=5",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8315410017967224,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2a5c321a6b2d6890",
+      "title": "Rs 2,000 crore missing from Coffee Day Enterprises after founder VG Siddhartha's suicide - Deccan Herald",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOamx2UExzOEZYVU9KVDFlMkd2RGRfTW5RcDNOY3ZLVWdkWERNZldCb0IzWS10VkNGMkVCTGFMX3lQVDBoVDd6MVB4czZLSkRpT2JLLUtXTVJGNFRUSVdtVTJqOWFkUGd5TlJyWkVwUnVMN3Jadm9UcGdieXUzVUtfUzVjVUJtdWV3VkdoUlBhakVKb1ltY1JDd3dzMU9JcHVaTUZiNUk2aDVpMlA0WHFaMWctSHZWamJqMlFxbWJEbTR4UnVmOENmWlpwdC1sNnZWWHc?oc=5",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8103505373001099,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a5d12426d315eebd",
+      "title": "Starbucks Planning $130 Million Investment in New China Roastery - dailycoffeenews.com",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZVJFR1dzTE9BdVpWc3hwaDdGUW95SlNsQjBJQkVuY202V1dKbDlrQXF5cDlkUnE2M2tWalRGcmRYb0RDOV8tem5nTE1kLU95UmZHSk5VVW8yYl9pTHpINXpaM1FGRVRBV0FYNzVBcE9FemVYV1hfY3djUENVN3RYNXA0dUEyaFpHZlRRdDNocVNHZkRYcUdwTkFkNTdGOGpDQ1Q2Smt3?oc=5",
+      "publication_date": "2020-03-17",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8152391910552979,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ce6f031124fbb584",
+      "title": "Sanremo Caf\u00e9 Racer: a favourite espresso machine for coffee competitions - Comunicaffe International",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU2tqRzQtMUJydTVaYy02bGVTWkNTb2FHXzQ0MzB5ZjlQX2dvd3Mwb2VVNHFuYjJlQmRXclFpZWxDWUVCWnIzT3llLXlIZDJZOWFOZjdUWWZta2phNWhZZ2xVbFRGUGxqZEhKSEpKcEk3VnpTX0hCcGx4S3ZIT1d3TXh3UEs0bDd3elIzX1dEX2JzQW4xa1p5S3BvTC1CZmczQmc?oc=5",
+      "publication_date": "2020-03-16",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8043496012687683,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "80dba6902cd25cd9",
+      "title": "Perc to espresso: decades of coffee for family - NZ Herald",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSC1nazJqRnM1Y2M4LW1oV2UtV2p6V0xJZFIxUnc0X3NYS1JTemtkRmdHZGx1TC1oazEtd3JNUjRQaWpUckpDLU1Malp0WjNpUHZSMngzVjRoTldUVVJtVkRBSXRPdnRrTHpzbUY2amJxRnEzN3liNDhVY016eEo4VWlPc2Q0emdDT29Ic1R3RnVaOVRGZGREQUpNSHVpZW16RWtYNEtDRFExYVphRGR2Y0VpUGdYbG1RRTBjdUlDV1VWZnhqRUVuVXhfNDRIYjFjS0U3MjhybUFNaHZv?oc=5",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8193066120147705,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7d5dd73be746c91c",
+      "title": "Bellwether Coffee breaks barriers with instore coffee roaster - Global Coffee Report",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQd2dxcjQ5RUlKbE5jLUpQX29TSnBBVkZwTDZFODdYblNyNFhpU05ETHNlaTRxSFkxQmhISXZMQ3NPWkZ1SlZLZFRYQVZpd0hmVGM1YlRydWstRnFzcUdUeTEtdlpza2xTQUp3ZEpWaW04dEJvWGl5SElVemRkOWM5amEtVHNRdGIyR0lGOTFB?oc=5",
+      "publication_date": "2020-03-18",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8415411710739136,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    }
+  ],
+  "decision_mode": "blind",
+  "direction_summary": {
+    "consistent": 1,
+    "inconsistent": 1,
+    "neutral": 10
+  },
+  "direction_summary_wordlist": {
+    "consistent": 1,
+    "neutral": 2,
+    "inconsistent": 2
+  },
+  "guard_rule": null,
+  "evidence_recency": {
+    "n_dated": 5,
+    "n_fresh": 4,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 0
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The +8.0% day-over-day move (z-score 2.94) on 2020-03-19 is matched by 1 report published that day that gives a reason for prices rising: supply chain worries (source: 82982b9ccb860d3c). 1 report from the same day points the other way: coronavirus pandemic (source: 2c5f6cdba08dfb1d).",
+    "citations": [
+      {
+        "document_id": "82982b9ccb860d3c",
+        "supports": "supply chain worries",
+        "quote": "Coffee jumps 4 % on supply chain worries"
+      }
+    ],
+    "confidence": "medium",
+    "reason": null,
+    "blind_evidence": {
+      "rule": "freshest",
+      "fresh_trading_days": 2,
+      "max_age_trading_days": 3,
+      "n_recent_documents": 100,
+      "readings": [
+        {
+          "document_id": "2a59170064da6835",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "none",
+          "direction": null,
+          "kind": null,
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": true
+        },
+        {
+          "document_id": "82982b9ccb860d3c",
+          "trading_days_before": 0,
+          "price_move": "up",
+          "pressure": "up",
+          "direction": "up",
+          "kind": "report",
+          "when": "same_day",
+          "move_pct": 4.0,
+          "cause": "supply chain worries",
+          "quote": "Coffee jumps 4 % on supply chain worries",
+          "quote_found": true,
+          "read": true,
+          "passed_gate": true
+        },
+        {
+          "document_id": "ee4b87bb7085c2c8",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "none",
+          "direction": null,
+          "kind": null,
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": true
+        },
+        {
+          "document_id": "196975ea5202efc9",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "down",
+          "direction": "down",
+          "kind": "pressure",
+          "when": "unclear",
+          "move_pct": null,
+          "cause": "orders from Italy have come down considerably",
+          "quote": "orders from the largest buyer Italy ... have come down considerably",
+          "quote_found": false,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "14887029e8b3cdb9",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "down",
+          "direction": "down",
+          "kind": "pressure",
+          "when": "unclear",
+          "move_pct": null,
+          "cause": "patchy pre-monsoon rains",
+          "quote": "patchy pre-monsoon rains are seen denting the prospects for the robusta variety",
+          "quote_found": true,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "566a599b81ea844c",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "none",
+          "direction": null,
+          "kind": null,
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "2c5f6cdba08dfb1d",
+          "trading_days_before": 0,
+          "price_move": "down",
+          "pressure": "down",
+          "direction": "down",
+          "kind": "report",
+          "when": "same_day",
+          "move_pct": 8.0,
+          "cause": "coronavirus pandemic",
+          "quote": "Coffee prices fall 8pc on coronavirus pandemic",
+          "quote_found": true,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "cb0e7e4cea8fd63b",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "none",
+          "direction": null,
+          "kind": null,
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "d07121d97d235e1f",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "none",
+          "direction": null,
+          "kind": null,
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "78713abec27ce26c",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "none",
+          "direction": null,
+          "kind": null,
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "7d044ba374afdcfb",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "none",
+          "direction": null,
+          "kind": null,
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "3b1090038c3aded1",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "none",
+          "direction": null,
+          "kind": null,
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": false
+        }
+      ],
+      "deciding_age": 0,
+      "deciding_kind": "report",
+      "supporting": [
+        "82982b9ccb860d3c"
+      ],
+      "opposing": [
+        "2c5f6cdba08dfb1d"
+      ]
+    },
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "blind-v2",
+    "latency_ms": 7666,
+    "evidence_document_ids": [
+      "2a59170064da6835",
+      "82982b9ccb860d3c",
+      "ee4b87bb7085c2c8",
+      "196975ea5202efc9",
+      "14887029e8b3cdb9",
+      "566a599b81ea844c",
+      "2c5f6cdba08dfb1d",
+      "cb0e7e4cea8fd63b",
+      "d07121d97d235e1f",
+      "78713abec27ce26c",
+      "7d044ba374afdcfb",
+      "3b1090038c3aded1"
+    ],
+    "evidence_packing": {
+      "n_input": 12,
+      "n_packed": 12,
+      "excerpt_chars": 600,
+      "estimated_tokens": 3106,
+      "max_tokens": 3299,
+      "dropped_document_ids": [],
+      "truncated": true
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 1,
+    "n_ok": 1,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "82982b9ccb860d3c",
+        "id_found": true,
+        "support_score": 0.902,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 12,
+        "support_rank_method": "semantic",
+        "closest_document_id": "82982b9ccb860d3c"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

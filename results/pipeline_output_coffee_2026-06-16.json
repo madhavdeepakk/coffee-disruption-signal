@@ -1,0 +1,57 @@
+{
+  "anomaly": {
+    "date": "2026-06-16",
+    "price": 277.25,
+    "z_score": 2.873736233025642,
+    "anomaly_flag": true,
+    "pct_move": 5.4382913592374305,
+    "direction": "up"
+  },
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 3,
+    "network_attempts": 3,
+    "network_failures": 1,
+    "network_successes": 2,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 24,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "3_document(s)_above_threshold",
+    "best_score": 0.8669366836547852,
+    "accepted_document_count": 3,
+    "accepted_document_ids": [
+      "d1b0497ba8524296",
+      "f6ee81251d31a8b2",
+      "261153191f7fd3c4"
+    ],
+    "total_documents_considered": 24,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-09-17T18:46:22.663089+00:00"
+  },
+  "documents_retrieved": 24,
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 0,
+    "inconsistent": 1
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The retrieved documents cover lifestyle rankings for Brazilian cafes, general long-term inflation drivers for retail coffee, and US tariff exemptions, but contain no evidence explaining the specific price surge on June 16, 2026.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient"
+  },
+  "faithfulness_report": null
+}

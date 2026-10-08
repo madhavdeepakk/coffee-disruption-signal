@@ -1,0 +1,69 @@
+{
+  "pipeline_version": "7",
+  "anomaly": {
+    "date": "2021-07-22",
+    "price": 193.6499938964844,
+    "z_score": 4.245460137066219,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": 10.0284056230025,
+    "cumulative_pct_move": 27.35941467266263,
+    "cumulative_z_score": 4.502066601958535,
+    "direction": "up"
+  },
+  "price_description": "+10.0% day-over-day move (z-score 4.25), on top of +27.4% over the last 10 trading days",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence was retrieved but judged too weak to explain the move.",
+    "detail": "424 document(s) were retrieved, but none cleared the relevance gate. The system refuses rather than build a confident-sounding explanation on weak or off-topic material.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 2,
+    "network_attempts": 0,
+    "network_failures": 0,
+    "network_successes": 1,
+    "cache_hits": 2,
+    "reused_cache_hits": 8,
+    "fallback_added": 0,
+    "documents_returned": 424,
+    "dropped_out_of_window": 66,
+    "collapsed_duplicates": 58,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "reason": "documents_retrieved_but_below_relevance_threshold",
+    "best_score": 0.3495,
+    "accepted_document_count": 0,
+    "accepted_document_ids": [],
+    "total_documents_considered": 424,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T23:29:52.575596+00:00"
+  },
+  "documents_retrieved": 424,
+  "documents_retrieved_recent": 224,
+  "sources": [],
+  "decision_mode": "blind",
+  "direction_summary": {},
+  "direction_summary_wordlist": {},
+  "guard_rule": null,
+  "evidence_recency": {
+    "n_dated": 0,
+    "n_fresh": 0,
+    "fresh_within_days": 2,
+    "newest_days_before": null,
+    "median_days_before": null
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": null,
+    "reason": "gate_rejected: documents_retrieved_but_below_relevance_threshold"
+  },
+  "faithfulness_report": null
+}

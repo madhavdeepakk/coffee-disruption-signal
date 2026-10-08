@@ -1,0 +1,310 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2025-09-15",
+    "price": 432.3500061035156,
+    "z_score": 2.144401513065927,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 5.284308420689112,
+    "cumulative_pct_move": 8.94544524480618,
+    "cumulative_z_score": 0.7148712700830975,
+    "direction": "up"
+  },
+  "price_description": "+5.3% day-over-day move (z-score 2.14)",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "An explanation is supported by the cited evidence, but model confidence was medium. Weigh it accordingly.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 133,
+    "dropped_out_of_window": 2,
+    "collapsed_duplicates": 2,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "9_document(s)_above_threshold",
+    "best_score": 0.871366024017334,
+    "accepted_document_count": 9,
+    "accepted_document_ids": [
+      "3d33b3bea525d213",
+      "4f7c9643a9e86ab2",
+      "ea272e6bba42a986",
+      "202c47a80b0333d7",
+      "c727777fc89e16f1",
+      "3198f973db7fa7df",
+      "c524240df2ce50f3",
+      "25b90ac37a7c8d5e",
+      "456accc6d8715088"
+    ],
+    "total_documents_considered": 133,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T11:23:17.721431+00:00"
+  },
+  "documents_retrieved": 133,
+  "sources": [
+    {
+      "document_id": "4f7c9643a9e86ab2",
+      "title": "Hot demand, shrinking harvests: Thai coffee faces boom and doom paradox - CNA",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRzBLZjRSYWtaYlRBTDBUZFpBMmpCb3ZYbzF2WTdvTmloNEs2SlpXbWZlNlJ0WHk4eFdpNm5tWGkwdmU0UFlLckc3TkZhSmFQUmxvcW1yYTYzSVl5TlFuYkRfdnN4cWNXYm1Gc1VtWWpJN3J2bjM3dWEySWRtSG14ZW9IaVBmcFdGeGQ1bjRkRHYtdnI2V1E?oc=5",
+      "publication_date": "2025-09-15",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8610763549804688,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "202c47a80b0333d7",
+      "title": "Peabirus : Pre\u00e7os do caf\u00e9 seguem trabalhando em lados opostos nas bolsas internacionais na manh\u00e3 desta 6\u00aa feira ( 05 ) ",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=120003",
+      "publication_date": "2025-09-05",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 2676,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8593670129776001,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c727777fc89e16f1",
+      "title": "Inflao : pre\u00e7o do caf\u00e9 no Brasil dobrou em um ano e meio",
+      "url": "https://www.gazetadopovo.com.br/agronegocio/inflacao-preco-cafe-brasil/",
+      "publication_date": "2025-09-12",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 5147,
+      "n_copies": 1,
+      "syndication_domains": [
+        "gazetadopovo.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8558242321014404,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3198f973db7fa7df",
+      "title": "Peabirus : Geadas e tarifas elevam pre\u00e7os do caf\u00e9 no mercado global",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=120037",
+      "publication_date": "2025-09-09",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 3783,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8536316752433777,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c524240df2ce50f3",
+      "title": "MUGA : Kenya puzzling fetish for coffee",
+      "url": "https://www.the-star.co.ke/opinion/columnists/2025-09-08-muga-kenyas-puzzling-fetish-for-coffee",
+      "publication_date": "2025-09-08",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 4474,
+      "n_copies": 1,
+      "syndication_domains": [
+        "the-star.co.ke"
+      ],
+      "retrieval_score": 0.2885,
+      "semantic_score": 0.8519583940505981,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "25b90ac37a7c8d5e",
+      "title": "Pre\u00e7o do caf\u00e9 cai pelo 2\u00ba m\u00eas seguido , mas voltar\u00e1 a subir em breve , dizem ind\u00fastrias",
+      "url": "https://www.jaenoticia.com.br/noticias/2025/09/11/138739-preco-do-cafe-cai-pelo-2o-mes-seguido-mas-voltara-a-subir-em-breve-dizem-industrias",
+      "publication_date": "2025-09-11",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4593,
+      "n_copies": 1,
+      "syndication_domains": [
+        "jaenoticia.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8504734039306641,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3d33b3bea525d213",
+      "title": "Brazil coffee exports to US fall in August but surge elsewhere, industry says - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTG9zTnVwODlkWlBwRlViQ05mck5jYklIZjhjVUgtZEhyUVRNd2w5WHJYajdTWmxrN0xGalktS3k5VkJWQW9lTUphTHlZWFlDM0RyejZrci1FeDFEbjFCM2VkemhtejdCV09HeVkxTFVJMXJUUVgtYzJrWmZLMmh3T3pZZ1NGc2wxQlNjdHJaamF3NVp2VU4za0otNGdlTGctLU9temlib0hsWU1ueWpaTmdFNXVZOGpH?oc=5",
+      "publication_date": "2025-09-09",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.871366024017334,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ea272e6bba42a986",
+      "title": "Conab cuts estimate for Brazil's 2025/26 coffee harvest to 55.2 million bags, Robusta production at all-time high of 20.1 million - Comunicaffe International",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNaWx4Sl95ekVyQmMyc0JoRl9mdW9zZUgwVlJnNXpnSFNsYzJiRmdReU5MUE9jLUFEZ3c5d2pZTGY4YzNjY1RWOXVDQUdmTTlMTVN5alR4N1E3VjVCRXJ1T2hFNE9WSXBRakxYZWpHYXc1bnoxOHhUSVNic1MtZnBabGdRc1NacmlLM1RaOW0tekpHWnZzWUtKMjJQV2VnQVE1NlY2ZDNzZEpiTVFBa1BkcWh0cE9UQ2ltRkZ2azFUUmlnUjFHSjBxZkNhVmx5VFBrS09zLXpSanQ2WUUxTk83MkxKNUtyUQ?oc=5",
+      "publication_date": "2025-09-05",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8596854209899902,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "456accc6d8715088",
+      "title": "Coffee growers worry asEU\u2019s deforestation rule looms - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZWY5dldiX0FLQjNBb3M4dFBzcG45RVVWLXVJVGlYcVhqU2xGUUg2YVN6OThOUkJHSHpQRG1aX1JlaXFOLXJOVjgtY1NQRDR2ZmFjWnQwclFOem5UZUxhYWFsNW9XelVYMDRZZE5CcE1Dd2ZUTGJxMlpMWS1rRjdCYmh4ZVJLeUlOTW94dWh2dkEzRm10aFZYX1R3QjRrbDBnaXZDZy1SeEdrVTBmMnRCNm5jZ3hNZ2ZsaFVjT3NWazdYZF96WmNZ0gHMAUFVX3lxTFB4alZQMHM5WUhNS3I2SDZBRGlSR0xTcTJmcFhFcGc2U1lmTlBFYnk5RUhNZkhKdHFCN1NXZ00xaEdBOEc0RFQ5QkxUVERVSlc2ZjlFM2dOWlFLS3hXa0ZUbk1BUFVoM2FnVG9EY1g0eDRzbzkwcm9pMlFoNWFIaWctSkpVcjFEWWkwbm9uUW95eVVmTzZoc1dLLWY3cDFEd01UdV8xVkZGU29UQ3cwbnZPWFJ4OWxNU0hFQ0R0aXh0MTZmLWIyNXEwTDV0dw?oc=5",
+      "publication_date": "2025-09-15",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8503642678260803,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 6,
+    "neutral": 3,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 9,
+    "n_fresh": 4,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 4
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The +5.3% day\u2011over\u2011day rise on 2025\u201109\u201115 coincides with two same\u2011day news items that highlight fresh supply pressures. One report notes a \u201cboom and doom paradox\u201d in Thailand, where hot demand meets shrinking harvests, signalling tighter global coffee supply (source: 4f7c9643a9e86ab2). Another article flags concerns that the EU\u2019s new deforestation rule could restrict coffee production, adding further upward pressure on prices (source: 456accc6d8715088). Together these contemporaneous supply\u2011tightening signals likely drove the price jump.",
+    "citations": [
+      {
+        "document_id": "4f7c9643a9e86ab2",
+        "supports": "Thai coffee faces boom and doom paradox \u2013 hot demand and shrinking harvests creating supply tightness."
+      },
+      {
+        "document_id": "456accc6d8715088",
+        "supports": "EU deforestation rule looming, raising worries about reduced coffee supply."
+      }
+    ],
+    "confidence": "medium",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2906,
+    "evidence_document_ids": [
+      "4f7c9643a9e86ab2",
+      "202c47a80b0333d7",
+      "c727777fc89e16f1",
+      "3198f973db7fa7df",
+      "c524240df2ce50f3",
+      "25b90ac37a7c8d5e",
+      "3d33b3bea525d213",
+      "ea272e6bba42a986",
+      "456accc6d8715088"
+    ],
+    "evidence_packing": {
+      "n_input": 9,
+      "n_packed": 9,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 3779,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 2,
+    "n_ok": 2,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "4f7c9643a9e86ab2",
+        "id_found": true,
+        "support_score": 0.922,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 9,
+        "support_rank_method": "semantic",
+        "closest_document_id": "4f7c9643a9e86ab2"
+      },
+      {
+        "document_id": "456accc6d8715088",
+        "id_found": true,
+        "support_score": 0.902,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 9,
+        "support_rank_method": "semantic",
+        "closest_document_id": "456accc6d8715088"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

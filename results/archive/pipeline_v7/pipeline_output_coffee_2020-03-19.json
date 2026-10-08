@@ -1,0 +1,69 @@
+{
+  "pipeline_version": "7",
+  "anomaly": {
+    "date": "2020-03-19",
+    "price": 116.6500015258789,
+    "z_score": 2.938812684491152,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 7.959276474986828,
+    "cumulative_pct_move": 6.1902623087972,
+    "cumulative_z_score": 0.6690867041593225,
+    "direction": "up"
+  },
+  "price_description": "+8.0% day-over-day move (z-score 2.94)",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence was retrieved but judged too weak to explain the move.",
+    "detail": "514 document(s) were retrieved, but none cleared the relevance gate. The system refuses rather than build a confident-sounding explanation on weak or off-topic material.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 2,
+    "network_attempts": 0,
+    "network_failures": 0,
+    "network_successes": 1,
+    "cache_hits": 2,
+    "reused_cache_hits": 6,
+    "fallback_added": 0,
+    "documents_returned": 514,
+    "dropped_out_of_window": 27,
+    "collapsed_duplicates": 73,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "reason": "documents_retrieved_but_below_relevance_threshold",
+    "best_score": 0.2939,
+    "accepted_document_count": 0,
+    "accepted_document_ids": [],
+    "total_documents_considered": 514,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T23:16:38.576899+00:00"
+  },
+  "documents_retrieved": 514,
+  "documents_retrieved_recent": 200,
+  "sources": [],
+  "decision_mode": "blind",
+  "direction_summary": {},
+  "direction_summary_wordlist": {},
+  "guard_rule": null,
+  "evidence_recency": {
+    "n_dated": 0,
+    "n_fresh": 0,
+    "fresh_within_days": 2,
+    "newest_days_before": null,
+    "median_days_before": null
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": null,
+    "reason": "gate_rejected: documents_retrieved_but_below_relevance_threshold"
+  },
+  "faithfulness_report": null
+}

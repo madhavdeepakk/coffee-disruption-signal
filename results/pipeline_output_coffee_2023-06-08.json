@@ -1,0 +1,199 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2023-06-08",
+    "price": 194.8500061035156,
+    "z_score": 2.5760866313012896,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 5.097094130600393,
+    "cumulative_pct_move": 3.64362026782745,
+    "cumulative_z_score": 0.4779201348473149,
+    "direction": "up"
+  },
+  "price_description": "+5.1% day-over-day move (z-score 2.58)",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "An explanation is supported by the cited evidence, but some evidence disagreed on direction. Weigh it accordingly.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 3,
+    "network_successes": 4,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 140,
+    "dropped_out_of_window": 3,
+    "collapsed_duplicates": 5,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "4_document(s)_above_threshold",
+    "best_score": 0.8819398283958435,
+    "accepted_document_count": 4,
+    "accepted_document_ids": [
+      "c47101310a1c06d3",
+      "015952d06124ac4e",
+      "96d067b2ce34d373",
+      "de9a9b1b16e285ce"
+    ],
+    "total_documents_considered": 140,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T16:34:59.034045+00:00"
+  },
+  "documents_retrieved": 140,
+  "sources": [
+    {
+      "document_id": "96d067b2ce34d373",
+      "title": "Coffee Prices Settle Sharply Higher as an El Nino Weather Pattern Develops",
+      "url": "https://www.theglobeandmail.com/investing/markets/commodities/SDK22/pressreleases/17566983/coffee-prices-settle-sharply-higher-as-an-el-nino-weather-pattern-develops/",
+      "publication_date": "2023-06-08",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 6108,
+      "n_copies": 1,
+      "syndication_domains": [
+        "theglobeandmail.com"
+      ],
+      "retrieval_score": 0.3315,
+      "semantic_score": 0.8760672211647034,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "de9a9b1b16e285ce",
+      "title": "Coffee Settles Higher on Brazilian Real Strength and Heavy Brazil Rain",
+      "url": "https://www.msn.com/en-us/money/markets/coffee-settles-higher-on-brazilian-real-strength-and-heavy-brazil-rain/ar-AA1c9WuO",
+      "publication_date": "2023-06-05",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 2,
+      "syndication_domains": [
+        "msn.com",
+        "theglobeandmail.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8527207374572754,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c47101310a1c06d3",
+      "title": "Coffee Prices Retreat on Harvest Pressures and Brazil Real Weakness",
+      "url": "https://www.theglobeandmail.com/investing/markets/commodities/SDK18/pressreleases/17300184/coffee-prices-retreat-on-harvest-pressures-and-brazil-real-weakness/",
+      "publication_date": "2023-05-30",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 7,
+      "publication_date_unknown": false,
+      "text_chars": 5610,
+      "n_copies": 3,
+      "syndication_domains": [
+        "msn.com",
+        "theglobeandmail.com"
+      ],
+      "retrieval_score": 0.3315,
+      "semantic_score": 0.8819398283958435,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "015952d06124ac4e",
+      "title": "Coffee Prices Settle Mixed Amid Dollar Strength - The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/investing/markets/commodities/SDU19/pressreleases/17494908/coffee-prices-settle-mixed-amid-dollar-strength/",
+      "publication_date": "2023-06-06",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 5616,
+      "n_copies": 1,
+      "syndication_domains": [
+        "theglobeandmail.com"
+      ],
+      "retrieval_score": 0.3262,
+      "semantic_score": 0.8781076669692993,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 0,
+    "inconsistent": 2
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 4,
+    "n_fresh": 2,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 2.5
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The 5.1% surge in July arabica coffee prices on June 8, 2023, was driven by the official confirmation of El Nino criteria by the U.S. Climate Prediction Center, which raised concerns about heavy rains in Brazil and drought in India negatively impacting global production. This weather-driven supply risk was compounded by a slump in the dollar index to a 2-week low, which is bullish for commodities, and a decline in ICE arabica inventories to a 6.5-month low. Additionally, fund buying activity fueled the surge, pushing arabica to a 3-week high.",
+    "citations": [
+      {
+        "document_id": "96d067b2ce34d373",
+        "supports": "Confirms the +5.10% price move on 2023-06-08, attributes it to the start of El Nino (confirmed by US Climate Prediction Center), fund buying, a weak dollar, and low inventories."
+      }
+    ],
+    "confidence": "high",
+    "reason": null,
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 131739,
+    "evidence_document_ids": [
+      "96d067b2ce34d373",
+      "de9a9b1b16e285ce",
+      "c47101310a1c06d3",
+      "015952d06124ac4e"
+    ],
+    "evidence_packing": {
+      "n_input": 4,
+      "n_packed": 4,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1906,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 1,
+    "n_ok": 1,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "96d067b2ce34d373",
+        "id_found": true,
+        "support_score": 0.835,
+        "support_method": "semantic",
+        "shared_numbers": [
+          "2023",
+          "5.10"
+        ],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 4,
+        "support_rank_method": "semantic",
+        "closest_document_id": "96d067b2ce34d373"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

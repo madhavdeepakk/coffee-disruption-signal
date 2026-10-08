@@ -1,0 +1,173 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2023-01-31",
+    "price": 181.75,
+    "z_score": 2.746345563965831,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": 6.660801942522719,
+    "cumulative_pct_move": 20.28457488974995,
+    "cumulative_z_score": 3.16324457377108,
+    "direction": "up"
+  },
+  "price_description": "+6.7% day-over-day move (z-score 2.75), on top of +20.3% over the last 10 trading days",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "An explanation is supported by the cited evidence, but model confidence was medium. Weigh it accordingly.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 2,
+    "network_failures": 0,
+    "network_successes": 3,
+    "cache_hits": 4,
+    "fallback_added": 0,
+    "documents_returned": 129,
+    "dropped_out_of_window": 16,
+    "collapsed_duplicates": 13,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "3_document(s)_above_threshold",
+    "best_score": 0.9025610685348511,
+    "accepted_document_count": 3,
+    "accepted_document_ids": [
+      "00d6244c26eef5f6",
+      "bc7bb93fbf13cce1",
+      "ace05b6a7e09f9c4"
+    ],
+    "total_documents_considered": 129,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T10:47:55.478176+00:00"
+  },
+  "documents_retrieved": 129,
+  "sources": [
+    {
+      "document_id": "00d6244c26eef5f6",
+      "title": "Coffee : Highest price rise among top 15 exports to Arabs - Ag\u00eancia de Not\u00edcias Brasil - \u00c1rabe",
+      "url": "https://anba.com.br/en/coffee-highest-price-rise-among-top-15-exports-to-arabs/",
+      "publication_date": "2023-01-31",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 4123,
+      "n_copies": 1,
+      "syndication_domains": [
+        "anba.com.br"
+      ],
+      "retrieval_score": 0.31,
+      "semantic_score": 0.9025610685348511,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ace05b6a7e09f9c4",
+      "title": "Caf\u00e9 tem maior valorizao entre top 15 de venda aos \u00e1rabes - Ag\u00eancia de Not\u00edcias Brasil - \u00c1rabe",
+      "url": "https://anba.com.br/cafe-tem-maior-valorizacao-entre-top-15-de-venda-aos-arabes/",
+      "publication_date": "2023-01-31",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 4272,
+      "n_copies": 1,
+      "syndication_domains": [
+        "anba.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8504776954650879,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "bc7bb93fbf13cce1",
+      "title": "Caf\u00e9 ar\u00e1bica atinge m\u00e1xima de 2 semanas na ICE , acar bruto recua",
+      "url": "https://www.istoedinheiro.com.br/cafe-arabica-atinge-maxima-8/",
+      "publication_date": "2023-01-23",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 1649,
+      "n_copies": 1,
+      "syndication_domains": [
+        "istoedinheiro.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8557205200195312,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 0,
+    "inconsistent": 1
+  },
+  "evidence_recency": {
+    "n_dated": 3,
+    "n_fresh": 2,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 0
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The same\u2011day report notes that coffee fetched an 88% higher price in the Arab market (USD 3,962.57/tonne) and attributes the broader price surge to climate\u2011related incidents in 2021 that reduced supply, while logistical bottlenecks kept export volumes low. These factors together explain the strong upward pressure that produced the +6.7% daily jump on 2023\u201101\u201131.",
+    "citations": [
+      {
+        "document_id": "00d6244c26eef5f6",
+        "supports": "high Arab\u2011market price and climate\u2011driven supply constraints driving price up"
+      }
+    ],
+    "confidence": "medium",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2871,
+    "evidence_document_ids": [
+      "00d6244c26eef5f6",
+      "ace05b6a7e09f9c4",
+      "bc7bb93fbf13cce1"
+    ],
+    "evidence_packing": {
+      "n_input": 3,
+      "n_packed": 3,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1717,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 1,
+    "n_ok": 1,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "00d6244c26eef5f6",
+        "id_found": true,
+        "support_score": 0.849,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 3,
+        "support_rank_method": "semantic",
+        "closest_document_id": "00d6244c26eef5f6"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

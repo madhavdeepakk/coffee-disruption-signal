@@ -1,0 +1,126 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2023-03-22",
+    "price": 178.0,
+    "z_score": -2.0628888312301905,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -4.659880605490336,
+    "cumulative_pct_move": -0.8632709693193401,
+    "cumulative_z_score": -0.3954027589898801,
+    "direction": "down"
+  },
+  "price_description": "-4.7% day-over-day move (z-score -2.06)",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 107,
+    "dropped_out_of_window": 0,
+    "collapsed_duplicates": 3,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "2_document(s)_above_threshold",
+    "best_score": 0.8593988418579102,
+    "accepted_document_count": 2,
+    "accepted_document_ids": [
+      "a08bbc7562ddd4ae",
+      "dc20a54bc0333794"
+    ],
+    "total_documents_considered": 107,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T16:29:31.308549+00:00"
+  },
+  "documents_retrieved": 107,
+  "sources": [
+    {
+      "document_id": "a08bbc7562ddd4ae",
+      "title": "Paulig offloads ready-to-drink coffee brand Frezza to Juustoportti - World Coffee Portal",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNM1VuSnJqRzluSnVScDlzQVBrbE0yZEItSjl1aGFIcUQ2amE4UlBSajdKTG1lU1VzcjRDM090MUJMd3VwYkZhRU04aDZXaFdDa21Hd3hQeW5qQTBDeGFZS2s1eG00RU15a2gwWC1teldEQ1VqVzYzQ0g1RDg1TUE3YlBlaFVXZ2pUMDFmd2tiVVVBSWRPb0dGTk5TNTRXS1VUa2tIQ1I3eklhdw?oc=5",
+      "publication_date": "2023-03-15",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8593988418579102,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "dc20a54bc0333794",
+      "title": "Brazil Study: Environmental Law and Coffee Certifications Are Related - Daily Coffee News by Roast Magazine",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSlcwbjNJRzFFVnNGVDE5TE5RVVZnTHBObVFzWlE2aWcwdHdYZmVKVnRpdDM2SDlicjVPbXBfYUVQVU5wQmsyOHRNLWs4bElUaTBpM081M0U0WHYtNWFRZ3BwQUUwNk92OHZoS3kwM3h6YjF2Ml80TFoyZHk5Ymx4X3NBcmxxeW9MX2dBa3ZBcEVOYWRaNEhiV3lCQlBnTDBPVXA5eTFKRC1QOXBI?oc=5",
+      "publication_date": "2023-03-20",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8516007661819458,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 2,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 2,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 2,
+    "median_days_before": 3.5
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided documents discuss a brand offload five days earlier and a study on environmental law and certifications two days earlier, neither of which directly explain the price drop on 2023-03-22.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 1621,
+    "evidence_document_ids": [
+      "a08bbc7562ddd4ae",
+      "dc20a54bc0333794"
+    ],
+    "evidence_packing": {
+      "n_input": 2,
+      "n_packed": 2,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 399,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

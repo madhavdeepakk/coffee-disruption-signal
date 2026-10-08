@@ -1,0 +1,566 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2024-12-02",
+    "price": 299.20001220703125,
+    "z_score": -3.4463555507411177,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -6.979630690332963,
+    "cumulative_pct_move": 6.174600840240569,
+    "cumulative_z_score": 0.3668349321383129,
+    "direction": "down"
+  },
+  "price_description": "-7.0% day-over-day move (z-score -3.45)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (13 pointed the opposite way, 0 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 2,
+    "network_failures": 0,
+    "network_successes": 3,
+    "cache_hits": 4,
+    "fallback_added": 0,
+    "documents_returned": 178,
+    "dropped_out_of_window": 13,
+    "collapsed_duplicates": 12,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "23_document(s)_above_threshold",
+    "best_score": 0.907320499420166,
+    "accepted_document_count": 23,
+    "accepted_document_ids": [
+      "cdb3a75331b3dafe",
+      "829ee9195b1431ae",
+      "872e1adca6f3cb84",
+      "3694ef67a5615505",
+      "3e02601f425388c2",
+      "4cee03ea6d8b5261",
+      "81e6524564db85e5",
+      "645b3af5348b5dd7",
+      "7964c60c93e74a45",
+      "f9551e6a2a6be602",
+      "485898b400265a74",
+      "06c6aa0765bfe2da",
+      "f4e96289e0914cee",
+      "24f83e3b194e5abe",
+      "b51309b9cf2161c6",
+      "591060383aeb8fa4",
+      "054255e75599fc4d",
+      "1c6fade26abad282",
+      "00c05b4e319a88f0",
+      "5c087a2061eb7a83",
+      "2bdb3386a2f89355",
+      "7c9ce9629eec1e7b",
+      "f396476ebad38e6b"
+    ],
+    "total_documents_considered": 178,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T11:03:14.379367+00:00"
+  },
+  "documents_retrieved": 178,
+  "sources": [
+    {
+      "document_id": "81e6524564db85e5",
+      "title": "Despite strong flowering, concerns linger over Brazil\u2019s coffee harvest - Valor International",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSzBYQUpIbmFLdWJCd2JUc29ibUFQVHFFM3lPYnpLelNhUF85cTFMYXdMdjJ1U3JLTEhhaTlBaUhXb2d4aWlUMER4cGYtSnVCVFZqVWxYdE1CN3c3V1l6elk4Zy1hTFk1bmh5eXQ0Z0FId0xORHhEZUlyQ2I4aTY4RnVsd1JwZVJRYkp1V0c3WW44dGdoQWlKamx0cnU3VS1vUlFzYnFMbC1kQ1J1WDZwR2tPYndoSlFUMV9waTlMQzI1cktWeE1sTkl6TU12aGx4dkxGWWdxSdIB5gFBVV95cUxPakI4eUg5ajFTZUR1LWtOV0xnZFJ2VTlldjRjbHpPVmVjYU45ZXRaTGxQRGZDTTBpSFRGdG1XYk10dHJJTWZBSm1KcWplV2JiY2xBcHNVazk5TW5RY2RsajRzY1IzNFVuOU5EU1BiYm81emxqcC1FV0VPQ3ZYeVI2M1VNREwxb0NLeTJXX2ZrNlVHQnB3dmVfZ2dZZEFia0J6MHNwOGEtVmRjTzdpOUFwbHhGTndvS0FFcmI1dDlHa2xxdVY1OVkxQjc0S2N3RjQ2alU1aU95MUt6RXVPUzRWM2R3bGFydw?oc=5",
+      "publication_date": "2024-11-22",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8683911561965942,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7964c60c93e74a45",
+      "title": "Banks behind troubled Brazil coffee traders could take $181 mln hit - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVW5iMDcyOEFxYmJxZHVtd1NjUm9rSzBlVkNhZ0gxYnN5UVRhUzQyeERoQlhZRS1abXUzYzRxbXpFcHhLRVFwcndod0J6RDRObFhJMlhlRkpNQk1QaGdRTTY5ZkxPcml5ck1WWVBQc2E0YkpOS1ByR0lKajhTUzk4WTRsOW90TERpbldtUkVKMWRXdVNFdVNicWZKQklfY09jcm5PZ1h5Umd3Y192WXBiZElDNFE5Y1o4VTJn?oc=5",
+      "publication_date": "2024-12-02",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8621519207954407,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f9551e6a2a6be602",
+      "title": "Coffee prices at 47-year high on Brazil crop concerns - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV1d2VWxRSEpaQmhUVWo3RUVDWnhFYU12cmUxLWlJeXJzMjR6bUZXSEpHc3BkbnVyTk1sb0IxY2hmc3VxczBiUmZBcm5USkRWXzZJWmxXTEJ3MVdkeEdDQ25oMmNVNUVHczM2Tm4xa0dmSmo4TWIxcHNKRUVBbXkwNnJJNjhoeE1yaG05M01HTVVGUDV5TmxOZmFpYk1IVWZnaEkzSTJn?oc=5",
+      "publication_date": "2024-11-29",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8589656949043274,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "06c6aa0765bfe2da",
+      "title": "Inside Brazil and Colombia Semi-Annual Coffee Market Reports - Daily Coffee News by Roast Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQM29xWXpsY3pPMmR4dVRsVmNaOUk4empsb0lLdXpMeFI2NzdPQ3lSWUU0Y3hzWTlLbDVLbWc1cWtycEd3WWJpSENkUmdfT1hfYnI1VjA3djNHSEo2Ny1tclBzdGdnWURLMVdaWFBFOXBtampHTEFpa0VQTzFEN0dBdnZMN2N1YzlOYXg3cnpWUTg2clQxY3dnWHRoTHB3VUViZWc?oc=5",
+      "publication_date": "2024-11-27",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8567988276481628,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "24f83e3b194e5abe",
+      "title": "Brazilian coffee exported via sailing ship in sustainability first - gcrmag.com",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTzcxV25Jd1RkS2lCVUQ4TzRJampXVU5fYV85aU9xOTdhUkVnQnBQVzh0LUdkNkpCWEIycUswMDZZNW0wYnRFNExzLTFMNWFHZjVRTTBMb25XTmxKTWtrNS1PUWFmMTB2UTBaTUFVT1dhS2RvbjR0a25namwxcExWdXpieVp3UWloV1otcXlhc1JQaVlQ?oc=5",
+      "publication_date": "2024-11-28",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8547757267951965,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "591060383aeb8fa4",
+      "title": "\u0420\u0435\u043a\u043e\u0440\u0434\u043d\u044b\u0435 \u0446\u0435\u043d\u044b \u043d\u0430 \u043a\u043e\u0444\u0435 \u0438 \u043a\u0430\u043a\u0430\u043e : \u0437\u0430\u0441\u0443\u0445\u0430 \u0432 \u0411\u0440\u0430\u0437\u0438\u043b\u0438\u0438 \u0438 \u0410\u0444\u0440\u0438\u043a\u0435 \u0431\u044c\u0435\u0442 \u043f\u043e \u043a\u043e\u0448\u0435\u043b\u044c\u043a\u0430\u043c | MigNews - \u041d\u043e\u0432\u043e\u0441\u0442\u0438 \u0418\u0437\u0440\u0430\u0438\u043b\u044f \u0438 \u041c\u0438\u0440\u0430 \u043d\u0430 \u0440\u0443\u0441\u0441\u043a\u043e\u043c \u044f\u0437\u044b\u043a\u0435MigNews",
+      "url": "http://mignews.com/news/economics/rekordnye-ceny-na-kofe-i-kakao-zasuha-v-brazilii-i-afrike-byot-po-koshelkam.html",
+      "publication_date": "2024-12-01",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1596,
+      "n_copies": 1,
+      "syndication_domains": [
+        "mignews.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8544247150421143,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "054255e75599fc4d",
+      "title": "\u0420\u0435\u043a\u043e\u0440\u0434\u043d\u044b\u0435 \u0446\u0435\u043d\u044b \u043d\u0430 \u043a\u043e\u0444\u0435 \u0438 \u043a\u0430\u043a\u0430\u043e : \u0437\u0430\u0441\u0443\u0445\u0430 \u0432 \u0411\u0440\u0430\u0437\u0438\u043b\u0438\u0438 \u0438 \u0410\u0444\u0440\u0438\u043a\u0435 \u0431\u044c\u0451\u0442 \u043f\u043e \u043a\u043e\u0448\u0435\u043b\u044c\u043a\u0430\u043c | MigNews - \u041d\u043e\u0432\u043e\u0441\u0442\u0438 \u0418\u0437\u0440\u0430\u0438\u043b\u044f \u0438 \u041c\u0438\u0440\u0430 \u043d\u0430 \u0440\u0443\u0441\u0441\u043a\u043e\u043c \u044f\u0437\u044b\u043a\u0435MigNews",
+      "url": "https://mignews.com/news/economics/rekordnye-ceny-na-kofe-i-kakao-zasuha-v-brazilii-i-afrike-byot-po-koshelkam.html",
+      "publication_date": "2024-12-01",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1596,
+      "n_copies": 1,
+      "syndication_domains": [
+        "mignews.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8541809916496277,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "1c6fade26abad282",
+      "title": "Dramati\u010dan porast cijena kave koju svi konzumiraju",
+      "url": "https://net.hr:443/danas/vijesti/dramatican-porast-cijena-kave-koju-svi-konzumiraju-7152189e-ad69-11ef-9b09-b282ec61614a",
+      "publication_date": "2024-11-28",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 1971,
+      "n_copies": 2,
+      "syndication_domains": [
+        "net.hr",
+        "net.hr:443"
+      ],
+      "retrieval_score": 0.0556,
+      "semantic_score": 0.8541153073310852,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "00c05b4e319a88f0",
+      "title": "\u0e40\u0e21\u0e25\u0e47\u0e14\u0e01\u0e32\u0e41\u0e1f\u0e41\u0e1e\u0e07\u0e2a\u0e39\u0e07\u0e2a\u0e38\u0e14\u0e43\u0e19\u0e23\u0e2d\u0e1a 47 \u0e1b\u0e35 ! \u0e20\u0e31\u0e22\u0e41\u0e25\u0e49\u0e07\u0e17\u0e33\u0e1e\u0e34\u0e29 \u0e1c\u0e39\u0e49\u0e1a\u0e23\u0e34\u0e42\u0e20\u0e04\u0e17\u0e31\u0e48\u0e27\u0e42\u0e25\u0e01\u0e40\u0e14\u0e37\u0e2d\u0e14\u0e23\u0e49\u0e2d\u0e19",
+      "url": "https://www.bangkokbiznews.com/world/1155565",
+      "publication_date": "2024-11-28",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2391,
+      "n_copies": 1,
+      "syndication_domains": [
+        "bangkokbiznews.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8530789613723755,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7c9ce9629eec1e7b",
+      "title": "Kaffekrise p\u00e5virker prisen : Dyreste i 47 \u00e5r",
+      "url": "https://ekstrabladet.dk/penge/kaffekrise-paavirker-prisen-dyreste-i-47-aar/10451622",
+      "publication_date": "2024-11-29",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2588,
+      "n_copies": 1,
+      "syndication_domains": [
+        "ekstrabladet.dk"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8521229028701782,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "cdb3a75331b3dafe",
+      "title": "Coffee prices surge to highest since 1977 on Brazil crop fears",
+      "url": "https://www.news24.com/fin24/economy/coffee-prices-surge-to-highest-since-1977-on-brazil-crop-fears-20241127",
+      "publication_date": "2024-11-27",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1473,
+      "n_copies": 7,
+      "syndication_domains": [
+        "barrons.com",
+        "news.google.com",
+        "news24.com",
+        "rte.ie",
+        "thesouthafrican.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.907320499420166,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "829ee9195b1431ae",
+      "title": "Coffee price heats up on tight Brazil crop fears",
+      "url": "https://www.digitaljournal.com/world/coffee-price-heats-up-on-tight-brazil-crop-fears/article",
+      "publication_date": "2024-11-27",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2360,
+      "n_copies": 5,
+      "syndication_domains": [
+        "digitaljournal.com",
+        "menafn.com",
+        "news.google.com",
+        "thepeninsulaqatar.com",
+        "yahoo.com"
+      ],
+      "retrieval_score": 0.2939,
+      "semantic_score": 0.898798942565918,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "872e1adca6f3cb84",
+      "title": "Bangkok Post - Coffee trading at 47 - year high",
+      "url": "https://www.bangkokpost.com/business/general/2909970/coffee-trading-at-47-year-high",
+      "publication_date": "2024-11-27",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2591,
+      "n_copies": 1,
+      "syndication_domains": [
+        "bangkokpost.com"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.8953279852867126,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3694ef67a5615505",
+      "title": "Coffee Hits Highest Price in Nearly 50 Years",
+      "url": "https://www.theepochtimes.com/business/coffee-hits-highest-price-in-nearly-50-years-5768727",
+      "publication_date": "2024-11-30",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3073,
+      "n_copies": 1,
+      "syndication_domains": [
+        "theepochtimes.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.8940937519073486,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3e02601f425388c2",
+      "title": "Inside Brazil and Colombia Semi - Annual Coffee Market Reports",
+      "url": "https://dailycoffeenews.com/2024/11/27/inside-brazil-and-colombia-semi-annual-coffee-market-reports/",
+      "publication_date": "2024-11-27",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 4853,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dailycoffeenews.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.8885901570320129,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4cee03ea6d8b5261",
+      "title": "Coffee prices reach historic high levels in global markets",
+      "url": "https://www.aa.com.tr/en/life/coffee-prices-reach-historic-high-levels-in-global-markets/3408423",
+      "publication_date": "2024-11-29",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2554,
+      "n_copies": 1,
+      "syndication_domains": [
+        "aa.com.tr"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.8766975402832031,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "645b3af5348b5dd7",
+      "title": "Arabica Futures Surge Into Blue - Sky Breakout As Traders Panic :  We Might Not Have Enough Coffee  ",
+      "url": "https://www.zerohedge.com/commodities/arabica-futures-surge-blue-sky-breakout-traders-panic-we-might-not-have-enough-coffee",
+      "publication_date": "2024-11-28",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 123,
+      "n_copies": 1,
+      "syndication_domains": [
+        "zerohedge.com"
+      ],
+      "retrieval_score": 0.1774,
+      "semantic_score": 0.8651056289672852,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "485898b400265a74",
+      "title": "\u5496\u5561\u8c46\u50f9\u683c\u98c6\u7834\u534a\u4e16\u7d00\u65b0\u9ad8 \uff01 \u5df4\u897f\u4e7e\u65f1\u8207\u6d77\u76dc\u6417\u4e82\u96d9\u91cd\u593e\u64ca \uff0c \u6d88\u8cbb\u8005\u8377\u5305\u6050\u5c07\u5931\u8840 - \u98a8\u50b3\u5a92",
+      "url": "https://www.storm.mg/article/5284054",
+      "publication_date": "2024-11-30",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1625,
+      "n_copies": 1,
+      "syndication_domains": [
+        "storm.mg"
+      ],
+      "retrieval_score": 0.172,
+      "semantic_score": 0.8572980165481567,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f4e96289e0914cee",
+      "title": "2025 Coffee Shortage Will Slam THIS Stock\u2026 - banyanhill.com",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE84NW5MUXRwdEQyQk5TMjNKbDdsUW1zU1dnMVlGQWxmV2dWcmNsRUJkeVpieGktZlRuYmV5M3dfZjhQSlRwVHdJWUN5UjF0YUVlaTZxOWp3OFNWaFpHemQ0WG9iWW9FeWVoNDBVeXFncEVQa00?oc=5",
+      "publication_date": "2024-12-02",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8553475141525269,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b51309b9cf2161c6",
+      "title": "Arabica coffee prices soar to multi - generational high",
+      "url": "https://www.proactiveinvestors.com/companies/news/1061790/arabica-coffee-prices-soar-to-multi-generational-high-1061790.html",
+      "publication_date": "2024-12-01",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3488,
+      "n_copies": 1,
+      "syndication_domains": [
+        "proactiveinvestors.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.8546018600463867,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5c087a2061eb7a83",
+      "title": "El caf\u00e9 se encarece a\u00fan m\u00e1s y los futuros alcanzan su nivel m\u00e1s alto desde 1977",
+      "url": "https://eju.tv/2024/11/el-cafe-se-encarece-aun-mas-y-los-futuros-alcanzan-su-nivel-mas-alto-desde-1977/",
+      "publication_date": "2024-11-28",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3250,
+      "n_copies": 1,
+      "syndication_domains": [
+        "eju.tv"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8530222773551941,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2bdb3386a2f89355",
+      "title": "Coffee Prices Surge to 47-Year High Amid Global Supply Struggles - Dallas Express",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMVhYZUpNdUdCblpZSWZMcDVXdDRLV2RvUUJHM3BpeldrSEs4OFJDNGhTUDYwMEYxS0ItdExHbkxNcU5OMzE3M0pJZG5wVk9fRlUxbGNtTHhxM19TeGE3Y2lPQlZFTnFGRUNLaktic3AyUm5mVFlpLUtFVU1kOWVEc0FMOERTOVJ2MWtCd3ZFTlkwc29ISEw1QlJ0cVBVeG5IZXB3U1lPT3RGNEc4?oc=5",
+      "publication_date": "2024-11-29",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1326,
+      "semantic_score": 0.8525350689888,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f396476ebad38e6b",
+      "title": "Peru mega - port to open opportunities for Vietnam import - export , logistics",
+      "url": "https://en.vietnamplus.vn/perus-mega-port-to-open-opportunities-for-vietnams-import-export-logistics-post304786.vnp",
+      "publication_date": "2024-11-28",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4115,
+      "n_copies": 1,
+      "syndication_domains": [
+        "en.vietnamplus.vn"
+      ],
+      "retrieval_score": 0.4104,
+      "semantic_score": 0.7814821004867554,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 10,
+    "inconsistent": 13
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 23,
+    "n_fresh": 17,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 2
+  },
+  "explanation_result": {
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2480,
+    "evidence_document_ids": [
+      "81e6524564db85e5",
+      "7964c60c93e74a45",
+      "f9551e6a2a6be602",
+      "06c6aa0765bfe2da",
+      "24f83e3b194e5abe",
+      "591060383aeb8fa4",
+      "054255e75599fc4d",
+      "1c6fade26abad282",
+      "00c05b4e319a88f0",
+      "7c9ce9629eec1e7b",
+      "cdb3a75331b3dafe"
+    ],
+    "evidence_packing": {
+      "n_input": 23,
+      "n_packed": 11,
+      "excerpt_chars": 600,
+      "estimated_tokens": 4045,
+      "max_tokens": 4250,
+      "dropped_document_ids": [
+        "f396476ebad38e6b",
+        "2bdb3386a2f89355",
+        "5c087a2061eb7a83",
+        "b51309b9cf2161c6",
+        "f4e96289e0914cee",
+        "485898b400265a74",
+        "645b3af5348b5dd7",
+        "4cee03ea6d8b5261",
+        "3e02601f425388c2",
+        "3694ef67a5615505",
+        "872e1adca6f3cb84",
+        "829ee9195b1431ae"
+      ],
+      "truncated": true
+    },
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": "medium",
+    "reason": "direction_guard: 13 accepted document(s) pointed against the move vs 0 with it",
+    "withheld_explanation": {
+      "explanation": "The 7.0% drop on 2024\u201112\u201102 coincides with a same\u2011day Reuters report that banks could incur a $181\u202fmillion loss from troubled Brazil coffee traders, introducing negative market sentiment and concerns about liquidity in the coffee market, which likely contributed to the sharp sell\u2011off.",
+      "citations": [
+        {
+          "document_id": "7964c60c93e74a45",
+          "supports": "Same\u2011day news of banks facing losses from Brazil coffee traders created negative sentiment that can explain the price decline."
+        }
+      ],
+      "confidence": "medium"
+    }
+  },
+  "faithfulness_report": null
+}

@@ -1,0 +1,170 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2025-04-07",
+    "price": 344.79998779296875,
+    "z_score": -2.656142831500948,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -5.715073480016884,
+    "cumulative_pct_move": -12.35384007563146,
+    "cumulative_z_score": -1.934169082727239,
+    "direction": "down"
+  },
+  "price_description": "-5.7% day-over-day move (z-score -2.66)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (1 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 3,
+    "network_successes": 4,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 137,
+    "dropped_out_of_window": 9,
+    "collapsed_duplicates": 10,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "4_document(s)_above_threshold",
+    "best_score": 0.8917360901832581,
+    "accepted_document_count": 4,
+    "accepted_document_ids": [
+      "458beb759a80eba0",
+      "110a69de0f7427d7",
+      "db1583bd0218695e",
+      "4b7cb06763a30ab5"
+    ],
+    "total_documents_considered": 137,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T11:12:01.432328+00:00"
+  },
+  "documents_retrieved": 137,
+  "sources": [
+    {
+      "document_id": "458beb759a80eba0",
+      "title": "The price of every drop: Brazil\u2019s coffee irrigation conundrum - Coffee Intelligence",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeVRaNUZsbDEydzU3TmhTMDRCaDVrbTAtalFpQkVXa1ZMcWFIbHlGak00NlhsS2lsRXNpNnJXWEtiRkVKOGlGSXRLX1gtcTdqdERmb0c4eHk2ODVwc0FnUm5nYnFzZ1lzNmgxSXItbThhb0hRenFWT1ZzRWdDbFY4cg?oc=5",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8917360901832581,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "110a69de0f7427d7",
+      "title": "Brazil's coffee farmers turn to costly irrigation to quench global demand for the brew - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaUFOek5CLXVlck4wckxQR1VpdEtHSVAzcmJoa1FkZjVUeFVyTkdfMlRtRTk5X1E3a1FobFI3WkdudXRZZ2ZHOU9aY2pLUm1pSG1ZTlh2MWxWaDl4OWJ2RkxxWGtiX2hoTHVBbkVtaVVsSFpFRHo0dGdwMF91N1RaeG5pVl9RSFhmeFJQSktRM0tPOFFkWE9WMjJBUGQxY0FyNTVZenBtc2JwVk84alZyd1JJUHZEcWh1VlZ5ZEViMk9RalJ5Ymc?oc=5",
+      "publication_date": "2025-03-31",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8777973055839539,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "db1583bd0218695e",
+      "title": "US coffee drinkers face pricier cup as tariffs hit key supplier",
+      "url": "https://www.chicagotribune.com/2025/04/03/coffee-prices-tariffs/",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2799,
+      "n_copies": 5,
+      "syndication_domains": [
+        "adn.com",
+        "chicagotribune.com",
+        "columbian.com",
+        "spokesman.com",
+        "timesfreepress.com"
+      ],
+      "retrieval_score": 0.3047,
+      "semantic_score": 0.8719739317893982,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4b7cb06763a30ab5",
+      "title": "El precio del caf\u00e9 alcanza m\u00e1ximos hist\u00f3ricos : \u00bf qu\u00e9 est\u00e1 pasando ? ",
+      "url": "https://www.periodistadigital.com/magazine/gastronomia/20250401/precio-cafe-alcanza-maximos-historicos-pasando-noticia-689405074029/",
+      "publication_date": "2025-04-01",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 6436,
+      "n_copies": 1,
+      "syndication_domains": [
+        "periodistadigital.com"
+      ],
+      "retrieval_score": 0.0054,
+      "semantic_score": 0.8576087951660156,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 2,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 4,
+    "n_fresh": 2,
+    "fresh_within_days": 2,
+    "newest_days_before": 1,
+    "median_days_before": 3.0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided documents discuss background supply issues and tariff impacts but do not offer a timely, direct reason for the -5.7% price drop on 2025-04-07.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 3248,
+    "evidence_document_ids": [
+      "458beb759a80eba0",
+      "110a69de0f7427d7",
+      "db1583bd0218695e",
+      "4b7cb06763a30ab5"
+    ],
+    "evidence_packing": {
+      "n_input": 4,
+      "n_packed": 4,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1536,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

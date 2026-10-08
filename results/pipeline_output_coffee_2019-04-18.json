@@ -1,0 +1,168 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2019-04-18",
+    "price": 90.1999969482422,
+    "z_score": 2.2561002612215986,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 3.6186028558913197,
+    "cumulative_pct_move": -5.3515277441762095,
+    "cumulative_z_score": -1.2980114351397034,
+    "direction": "up"
+  },
+  "price_description": "+3.6% day-over-day move (z-score 2.26)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (1 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 1,
+    "network_successes": 6,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 103,
+    "dropped_out_of_window": 5,
+    "collapsed_duplicates": 25,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "4_document(s)_above_threshold",
+    "best_score": 0.8736095428466797,
+    "accepted_document_count": 4,
+    "accepted_document_ids": [
+      "3730e94e219edd56",
+      "550f16410d1c9af3",
+      "d1b2763645b78391",
+      "717dc036edc3bc8a"
+    ],
+    "total_documents_considered": 103,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T12:32:51.491218+00:00"
+  },
+  "documents_retrieved": 103,
+  "sources": [
+    {
+      "document_id": "550f16410d1c9af3",
+      "title": "Iced coffee supplies running low as drought hits South Australian icon - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVWdtNmJtZ2pLbnRESFZjM2FJeWE0SktWdnJQWGhPMG1YU093NThJSWF4SFBSOUdRck5pYjdfaHp2ZG1UY1ItekUybFlUWF9UZW5nWkQwNnVhNnlJTzlBa2lBaGRqMUY3bjB0SE10VndoZndNOEwwVGVlRGR2RDY4bmF3QmZqV2dzbzFLOFYtRDgxYlIxbTlKWU5jS0g?oc=5",
+      "publication_date": "2019-04-14",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8581017851829529,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3730e94e219edd56",
+      "title": "A leading Brazilian coffee exporter files for bankruptcy , hoping to restructure a debt of US$ 282 million",
+      "url": "https://en.mercopress.com/2019/04/12/a-leading-brazilian-coffee-exporter-files-for-bankruptcy-hoping-to-restructure-a-debt-of-us-282-million",
+      "publication_date": "2019-04-12",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 1788,
+      "n_copies": 1,
+      "syndication_domains": [
+        "en.mercopress.com"
+      ],
+      "retrieval_score": 0.2832,
+      "semantic_score": 0.8736095428466797,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d1b2763645b78391",
+      "title": "Brazilian Coffee Exporter Declares Bankruptcy",
+      "url": "https://newsok.com/article/feed/9898832/brazilian-coffee-exporter-declares-bankruptcy",
+      "publication_date": "2019-04-12",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "newsok.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8568384647369385,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "717dc036edc3bc8a",
+      "title": "Pooki Mahi\u00ae Offers Two - Day Shipping for Recyclable 100 % Kona Coffee Pods",
+      "url": "https://www.prweb.com/releases/pookis_mahi_offers_two_day_shipping_for_recyclable_100_kona_coffee_pods/prweb16253017.htm",
+      "publication_date": "2019-04-18",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 10016,
+      "n_copies": 3,
+      "syndication_domains": [
+        "finance.yahoo.com",
+        "prweb.com",
+        "ssuchronicle.com"
+      ],
+      "retrieval_score": 0.4104,
+      "semantic_score": 0.8192911744117737,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 2,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 4,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 4.0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The documents do not provide a timely, direct causal link for the +3.6% coffee price move on 2019-04-18.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2072,
+    "evidence_document_ids": [
+      "550f16410d1c9af3",
+      "3730e94e219edd56",
+      "d1b2763645b78391",
+      "717dc036edc3bc8a"
+    ],
+    "evidence_packing": {
+      "n_input": 4,
+      "n_packed": 4,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1501,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

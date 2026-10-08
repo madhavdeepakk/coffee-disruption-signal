@@ -1,0 +1,211 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2018-05-21",
+    "price": 120.1999969482422,
+    "z_score": 5.032510836566478,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 5.484861928376219,
+    "cumulative_pct_move": 1.69204742101285,
+    "cumulative_z_score": 0.9207802514963076,
+    "direction": "up"
+  },
+  "price_description": "+5.5% day-over-day move (z-score 5.03)",
+  "outcome": {
+    "tier": "EXPLAINED_STRONG",
+    "label": "Explained (strong)",
+    "headline": "Explained, with strong, direction-consistent evidence.",
+    "detail": "3 sources cleared the gate, the evidence leaned the same way as the move, the model reported high confidence, and every citation points to a document the model was shown.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 2,
+    "network_failures": 1,
+    "network_successes": 2,
+    "cache_hits": 4,
+    "fallback_added": 0,
+    "documents_returned": 112,
+    "dropped_out_of_window": 13,
+    "collapsed_duplicates": 10,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "3_document(s)_above_threshold",
+    "best_score": 0.858188271522522,
+    "accepted_document_count": 3,
+    "accepted_document_ids": [
+      "3af188e9b60a9e88",
+      "78f83ebc29d17391",
+      "caf61c1188bc0100"
+    ],
+    "total_documents_considered": 112,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T11:27:51.436497+00:00"
+  },
+  "documents_retrieved": 112,
+  "sources": [
+    {
+      "document_id": "3af188e9b60a9e88",
+      "title": "Peabirus : Caf\u00e9 : Bolsa de Nova York sobe mais de 100 pts nesta tarde de 2\u00aa feira com clima no Brasil e recuo do d\u00f3lar",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=73982",
+      "publication_date": "2018-05-21",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2961,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.858188271522522,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "78f83ebc29d17391",
+      "title": "Light frosts seen in Brazil corn areas ; drought persists in cane belt",
+      "url": "https://uk.reuters.com/article/us-brazil-agriculture-weather/light-frosts-seen-in-brazils-corn-areas-drought-persists-in-cane-belt-idUKKCN1IM1YG",
+      "publication_date": "2018-05-21",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "uk.reuters.com"
+      ],
+      "retrieval_score": 0.0108,
+      "semantic_score": 0.8551332950592041,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "caf61c1188bc0100",
+      "title": "Peabirus : Caf\u00e9 : Bolsa de Nova York avan\u00e7a na sess\u00e3o desta 4\u00aa com suporte t\u00e9cnico e apreens\u00e3o com frio no Brasil",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=73875",
+      "publication_date": "2018-05-17",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3605,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8548657298088074,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 3,
+    "neutral": 0,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 3,
+    "n_fresh": 3,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 0
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "On 21\u202fMay\u202f2018 coffee futures jumped more than 100 points (+5.5% day\u2011over\u2011day). The move was attributed to two contemporaneous factors: (1) reports of cold weather and light frosts in Brazil\u2019s coffee\u2011growing regions, which raised concerns about supply (source: doc_3af188e9b60a9e88; source: doc_78f83ebc29d17391), and (2) a weakening of the U.S. dollar against the Brazilian real, which made coffee cheaper in foreign currency terms (source: doc_3af188e9b60a9e88). Earlier technical support and similar weather concerns were noted two days earlier, reinforcing the market\u2019s bullish stance (source: doc_caf61c1188bc0100).",
+    "citations": [
+      {
+        "document_id": "3af188e9b60a9e88",
+        "supports": "price rise >100 points on 21\u202fMay; mentions climate in Brazil and dollar recede as drivers"
+      },
+      {
+        "document_id": "78f83ebc29d17391",
+        "supports": "light frosts in Brazil on 21\u202fMay, indicating adverse weather for crops"
+      },
+      {
+        "document_id": "caf61c1188bc0100",
+        "supports": "previous technical support and cold weather concerns on 17\u202fMay"
+      }
+    ],
+    "confidence": "high",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2527,
+    "evidence_document_ids": [
+      "3af188e9b60a9e88",
+      "78f83ebc29d17391",
+      "caf61c1188bc0100"
+    ],
+    "evidence_packing": {
+      "n_input": 3,
+      "n_packed": 3,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1293,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 3,
+    "n_ok": 3,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "3af188e9b60a9e88",
+        "id_found": true,
+        "support_score": 0.837,
+        "support_method": "semantic",
+        "shared_numbers": [
+          "100",
+          "21"
+        ],
+        "flag": "ok",
+        "support_rank": 2,
+        "support_rank_of": 3,
+        "support_rank_method": "semantic",
+        "closest_document_id": "caf61c1188bc0100"
+      },
+      {
+        "document_id": "78f83ebc29d17391",
+        "id_found": true,
+        "support_score": 0.889,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 3,
+        "support_rank_method": "semantic",
+        "closest_document_id": "78f83ebc29d17391"
+      },
+      {
+        "document_id": "caf61c1188bc0100",
+        "id_found": true,
+        "support_score": 0.813,
+        "support_method": "semantic",
+        "shared_numbers": [
+          "17"
+        ],
+        "flag": "ok",
+        "support_rank": 2,
+        "support_rank_of": 3,
+        "support_rank_method": "semantic",
+        "closest_document_id": "78f83ebc29d17391"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

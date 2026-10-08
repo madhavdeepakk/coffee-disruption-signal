@@ -1,0 +1,126 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2022-07-18",
+    "price": 219.1000061035156,
+    "z_score": 3.1433805135681028,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 7.560142064796581,
+    "cumulative_pct_move": -4.09279534674055,
+    "cumulative_z_score": -0.7801971349897476,
+    "direction": "up"
+  },
+  "price_description": "+7.6% day-over-day move (z-score 3.14)",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 5,
+    "network_successes": 2,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 102,
+    "dropped_out_of_window": 1,
+    "collapsed_duplicates": 1,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "2_document(s)_above_threshold",
+    "best_score": 0.8630897998809814,
+    "accepted_document_count": 2,
+    "accepted_document_ids": [
+      "fa607a10f8c52a7a",
+      "f553b73a364ea42c"
+    ],
+    "total_documents_considered": 102,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T15:46:22.524244+00:00"
+  },
+  "documents_retrieved": 102,
+  "sources": [
+    {
+      "document_id": "fa607a10f8c52a7a",
+      "title": "How Brazil is capitalising on instant coffee boom",
+      "url": "https://www.msn.com/en-ae/money/news/how-brazil-is-capitalising-on-instant-coffee-boom/ar-AAZDsjk",
+      "publication_date": "2022-07-16",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "msn.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8630897998809814,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f553b73a364ea42c",
+      "title": "Peabirus : Presidente da Abic afirma que ind\u00fastria de caf\u00e9 do Brasil v\u00ea al\u00edvio na oferta somente em 2024",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=98884",
+      "publication_date": "2022-07-12",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 4104,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8547405004501343,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 0,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 2,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 1,
+    "median_days_before": 2.5
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided evidence consists of background information regarding long-term supply constraints (2024 outlook) and a general industry trend (instant coffee boom) published 1 to 4 trading days prior, but contains no specific news, weather event, or market report dated 2022-07-18 or 2022-07-17 that explains the specific +7.6% price spike on that date.",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 131447,
+    "evidence_document_ids": [
+      "fa607a10f8c52a7a",
+      "f553b73a364ea42c"
+    ],
+    "evidence_packing": {
+      "n_input": 2,
+      "n_packed": 2,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 685,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

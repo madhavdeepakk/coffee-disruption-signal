@@ -1,0 +1,56 @@
+{
+  "anomaly": {
+    "date": "2026-08-28",
+    "price": 345.8500061035156,
+    "z_score": 0.2638736692928719,
+    "anomaly_flag": false,
+    "pct_move": 1.155312160732936,
+    "direction": "up"
+  },
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 3,
+    "network_attempts": 3,
+    "network_failures": 1,
+    "network_successes": 2,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 27,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "2_document(s)_above_threshold",
+    "best_score": 0.872418999671936,
+    "accepted_document_count": 2,
+    "accepted_document_ids": [
+      "8178e1c6ae9d9021",
+      "2b357dbfb584f0ea"
+    ],
+    "total_documents_considered": 27,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-09-17T18:50:05.975795+00:00"
+  },
+  "documents_retrieved": 27,
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 0,
+    "inconsistent": 0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided articles discuss rain impacting premium coffee quality in Brazil and a research study challenging Robusta's climate resilience, but neither document explicitly links these events as a direct cause for the +1.2% price move on August 28, 2026.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient"
+  },
+  "faithfulness_report": null
+}

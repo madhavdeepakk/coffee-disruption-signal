@@ -1,0 +1,106 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2020-02-21",
+    "price": 108.8499984741211,
+    "z_score": 2.0536176759786446,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 5.067567642205546,
+    "cumulative_pct_move": 10.9016778215953,
+    "cumulative_z_score": 1.09168346639523,
+    "direction": "up"
+  },
+  "price_description": "+5.1% day-over-day move (z-score 2.05)",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 3,
+    "network_successes": 4,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 115,
+    "dropped_out_of_window": 1,
+    "collapsed_duplicates": 4,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "1_document(s)_above_threshold",
+    "best_score": 0.8802335262298584,
+    "accepted_document_count": 1,
+    "accepted_document_ids": [
+      "ca49bdb1be62f5ba"
+    ],
+    "total_documents_considered": 115,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T13:32:09.465688+00:00"
+  },
+  "documents_retrieved": 115,
+  "sources": [
+    {
+      "document_id": "ca49bdb1be62f5ba",
+      "title": "Wild Weather Whacks Coffee Prospects in Budding Brazil Crop Zone - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbkpnaUk4dU42a0FRU0ZKaTUzdElzNzV4c3Mxam9IZGpUTUpYUEJ4U3FSM01kRERKb2swUmF2VVR6ZUlYSU0tTkk5VURCLXA0V1RiNk5LbFd2MlZ4NjNOLUF2VXdKcHdWZDdHOE9mbVhmX2VTbFpMODNFbTg4Tlp3dkY3OEs2TFQ2RmZRMzd4ZmJOVGxvMXVjRG16Sko4Q29fVVVwVjNIRTU2M0x1UktGXzM3MGFjUQ?oc=5",
+      "publication_date": "2020-02-13",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8802335262298584,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 1,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 1,
+    "n_fresh": 0,
+    "fresh_within_days": 2,
+    "newest_days_before": 6,
+    "median_days_before": 6
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The only article is from six trading days earlier and only describes background weather impacts, which is too stale to explain the Feb\u202f21 price jump.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 192364,
+    "evidence_document_ids": [
+      "ca49bdb1be62f5ba"
+    ],
+    "evidence_packing": {
+      "n_input": 1,
+      "n_packed": 1,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 194,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

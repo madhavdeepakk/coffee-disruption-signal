@@ -1,0 +1,23 @@
+# Everything needed to run the pipeline, the evaluations and the dashboard
+# locally:
+#
+#     pip install -r requirements-pipeline.txt
+#
+-r requirements.txt
+
+# Retrieval
+trafilatura>=1.8          # article body extraction
+yfinance>=0.2             # price history
+
+# Semantic scoring (multilingual-e5-small, ONNX; downloads the model on first use)
+onnxruntime>=1.17
+tokenizers>=0.15
+huggingface_hub>=0.23
+
+# Model providers. GEMINI_API_KEY is the primary; GROQ_API_KEY / OPENAI_API_KEY
+# are optional fallbacks reached through the openai client.
+google-genai>=1.0
+openai>=1.40
+
+# Forecasting experiments (ARIMA baseline)
+statsmodels>=0.14

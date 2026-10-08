@@ -1,0 +1,9 @@
+[theme]
+base = "light"
+primaryColor = "#5B7C99"
+
+[server]
+headless = true
+
+[client]
+toolbarMode = "viewer"

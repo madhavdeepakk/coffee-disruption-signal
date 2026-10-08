@@ -1,0 +1,303 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2022-11-03",
+    "price": 172.1999969482422,
+    "z_score": -2.366125595936498,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -5.462529388772193,
+    "cumulative_pct_move": -9.866530124267479,
+    "cumulative_z_score": -1.157451590313135,
+    "direction": "down"
+  },
+  "price_description": "-5.5% day-over-day move (z-score -2.37)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (8 pointed the opposite way, 2 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 2,
+    "network_successes": 5,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 116,
+    "dropped_out_of_window": 3,
+    "collapsed_duplicates": 4,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "10_document(s)_above_threshold",
+    "best_score": 0.8922665119171143,
+    "accepted_document_count": 10,
+    "accepted_document_ids": [
+      "eafd584aaa02425a",
+      "6f387ac3fb3161d1",
+      "50e741daad788c57",
+      "5c4ef30d9315b4ca",
+      "8b1bcc4aead4af24",
+      "c66ad2b95df569f8",
+      "6f23b899bf278844",
+      "0b396c6059b8a75c",
+      "82f38ef08924d643",
+      "298bd78c758d23b6"
+    ],
+    "total_documents_considered": 116,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T16:07:03.651297+00:00"
+  },
+  "documents_retrieved": 116,
+  "sources": [
+    {
+      "document_id": "c66ad2b95df569f8",
+      "title": "Caf\u00e9 ar\u00e1bica cai quase 5 % na ICE ; robusta tem m\u00ednima de 15 meses",
+      "url": "https://www.istoedinheiro.com.br/cafe-arabica-cai-quase-5/",
+      "publication_date": "2022-11-03",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 1879,
+      "n_copies": 1,
+      "syndication_domains": [
+        "istoedinheiro.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8597457408905029,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6f23b899bf278844",
+      "title": "Queda do pre\u00e7o do caf\u00e9 pega no bolso do produtor , mas n\u00e3o deve chegar t\u00e3o cedo ao consumidor",
+      "url": "https://globorural.globo.com/agricultura/cafe/noticia/2022/10/preco-do-cafe-cai-pega-no-bolso-do-produtor-mas-nao-deve-chegar-tao-cedo-ao-consumidor.ghtml",
+      "publication_date": "2022-10-26",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 5861,
+      "n_copies": 1,
+      "syndication_domains": [
+        "globorural.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8578140139579773,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "eafd584aaa02425a",
+      "title": "Exclusive - Brazil Coffee Defaults Spike For Second Year In A Row",
+      "url": "https://www.ibtimes.com/exclusive-brazil-coffee-defaults-spike-second-year-row-3630684",
+      "publication_date": "2022-11-01",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3468,
+      "n_copies": 3,
+      "syndication_domains": [
+        "ibtimes.com",
+        "news.google.com",
+        "oann.com"
+      ],
+      "retrieval_score": 0.4265,
+      "semantic_score": 0.8922665119171143,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6f387ac3fb3161d1",
+      "title": "Peabirus : REUTERS : Inadimpl\u00eancia no caf\u00e9 do Brasil acontece pelo segundo ano consecutivo",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=100647",
+      "publication_date": "2022-11-01",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4607,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8690927028656006,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "50e741daad788c57",
+      "title": "Inadimpl\u00eancia no caf\u00e9 do Brasil acontece pelo segundo ano consecutivo",
+      "url": "https://www.istoedinheiro.com.br/inadimplencia-no-cafe-do/",
+      "publication_date": "2022-11-01",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4022,
+      "n_copies": 1,
+      "syndication_domains": [
+        "istoedinheiro.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.865949809551239,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5c4ef30d9315b4ca",
+      "title": "Pr\u00f3xima safra de caf\u00e9 do Brasil deve crescer at\u00e9 10 %, diz HedgePoint",
+      "url": "https://www.istoedinheiro.com.br/proxima-safra-de-cafe/",
+      "publication_date": "2022-11-02",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1416,
+      "n_copies": 1,
+      "syndication_domains": [
+        "istoedinheiro.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8600591421127319,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8b1bcc4aead4af24",
+      "title": "Brazil Sugar , Ethanol Sector Expected to Grow Next Year",
+      "url": "https://www.agnews890.com/2022/10/27/brazils-sugar-ethanol-sector-expected-to-grow-next-year/",
+      "publication_date": "2022-10-27",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 1330,
+      "n_copies": 2,
+      "syndication_domains": [
+        "agnews890.com",
+        "newsdakota.com"
+      ],
+      "retrieval_score": 0.2832,
+      "semantic_score": 0.8600505590438843,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0b396c6059b8a75c",
+      "title": "Peabirus : Caf\u00e9 abre semana testando leves altas , mas press\u00e3o de chuvas e demanda deve manter volatilidade",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=100513",
+      "publication_date": "2022-10-24",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 2012,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8557007908821106,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "82f38ef08924d643",
+      "title": "Peabirus :  ESPERAN\u00c7A FRUSTRADA ADOECE O CORAO  ( PROV\u00c9RBIOS 13 : 12 ) - POR CELSO LUIS RODRIGUES VEGRO",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=100517",
+      "publication_date": "2022-10-24",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 8,
+      "publication_date_unknown": false,
+      "text_chars": 8683,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8539800643920898,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "298bd78c758d23b6",
+      "title": "Vietnam coffee export expected to hit 4 billion USD this year",
+      "url": "https://vovworld.vn/en-US/news/vietnams-coffee-export-expected-to-hit-4-billion-usd-this-year-1148240.vov",
+      "publication_date": "2022-11-03",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 1246,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vovworld.vn"
+      ],
+      "retrieval_score": 0.5161,
+      "semantic_score": 0.8236200213432312,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 0,
+    "inconsistent": 8
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 10,
+    "n_fresh": 6,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 2.0
+  },
+  "explanation_result": {
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 132253,
+    "evidence_document_ids": [
+      "c66ad2b95df569f8",
+      "6f23b899bf278844",
+      "eafd584aaa02425a",
+      "6f387ac3fb3161d1",
+      "50e741daad788c57",
+      "5c4ef30d9315b4ca",
+      "8b1bcc4aead4af24",
+      "0b396c6059b8a75c",
+      "82f38ef08924d643",
+      "298bd78c758d23b6"
+    ],
+    "evidence_packing": {
+      "n_input": 10,
+      "n_packed": 10,
+      "excerpt_chars": 800,
+      "estimated_tokens": 3522,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": true
+    },
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": "high",
+    "reason": "direction_guard: 8 accepted document(s) pointed against the move vs 2 with it",
+    "withheld_explanation": {
+      "explanation": "The 5.5% drop in Arabica coffee prices on November 3, 2022, was driven by the onset of the harvest in Vietnam, the world's largest Robusta producer, which pushed Robusta prices to a 15-month low and pressured the broader coffee market. This supply-side pressure was compounded by reports released the previous day (November 2) projecting a 10% increase in Brazil's next season's coffee crop, signaling a potential global supply surplus after two years of deficits.",
+      "citations": [
+        {
+          "document_id": "c66ad2b95df569f8",
+          "supports": "Reports that Arabica contracts fell nearly 5% on Nov 3, 2022, and Robusta hit a 15-month low due to the start of the harvest in Vietnam."
+        },
+        {
+          "document_id": "5c4ef30d9315b4ca",
+          "supports": "Reports from Nov 2, 2022, that HedgePoint projected Brazil's next season's coffee crop could grow by up to 10%, suggesting a global supply surplus."
+        }
+      ],
+      "confidence": "high"
+    }
+  },
+  "faithfulness_report": null
+}

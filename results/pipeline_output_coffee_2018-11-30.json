@@ -1,0 +1,116 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2018-11-30",
+    "price": 103.25,
+    "z_score": -2.2338361107036486,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -4.838709677419355,
+    "cumulative_pct_move": -6.17901214283445,
+    "cumulative_z_score": -0.9081017492677846,
+    "direction": "down"
+  },
+  "price_description": "-4.8% day-over-day move (z-score -2.23)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (1 pointed the opposite way, 0 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 96,
+    "dropped_out_of_window": 2,
+    "collapsed_duplicates": 10,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "1_document(s)_above_threshold",
+    "best_score": 0.849306583404541,
+    "accepted_document_count": 1,
+    "accepted_document_ids": [
+      "efc99977246c6bf3"
+    ],
+    "total_documents_considered": 96,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T12:08:34.710365+00:00"
+  },
+  "documents_retrieved": 96,
+  "sources": [
+    {
+      "document_id": "efc99977246c6bf3",
+      "title": "Vietnam expects to export 1 . 7 mln tonnes of coffee this year",
+      "url": "https://en.vietnamplus.vn/vietnam-expects-to-export-17-mln-tonnes-of-coffee-this-year/142576.vnp",
+      "publication_date": "2018-11-28",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2520,
+      "n_copies": 1,
+      "syndication_domains": [
+        "en.vietnamplus.vn"
+      ],
+      "retrieval_score": 0.5161,
+      "semantic_score": 0.8470722436904907,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 0,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 1,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 2,
+    "median_days_before": 2
+  },
+  "explanation_result": {
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2329,
+    "evidence_document_ids": [
+      "efc99977246c6bf3"
+    ],
+    "evidence_packing": {
+      "n_input": 1,
+      "n_packed": 1,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 572,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    },
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": "medium",
+    "reason": "direction_guard: 1 accepted document(s) pointed against the move vs 0 with it",
+    "withheld_explanation": {
+      "explanation": "The price drop on 2018\u201111\u201130 follows recent news that coffee prices had already fallen to multi\u2011year lows, indicating continued bearish pressure on the market.",
+      "citations": [
+        {
+          "document_id": "efc99977246c6bf3",
+          "supports": "prices of arabica and robusta coffee hit 12\u2011year and five\u2011year low, respectively"
+        }
+      ],
+      "confidence": "medium"
+    }
+  },
+  "faithfulness_report": null
+}

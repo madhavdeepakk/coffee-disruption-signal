@@ -1,0 +1,234 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2019-12-16",
+    "price": 135.8000030517578,
+    "z_score": 2.2074698181428367,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 4.905373698892043,
+    "cumulative_pct_move": 11.76954983683771,
+    "cumulative_z_score": 1.2247922053024678,
+    "direction": "up"
+  },
+  "price_description": "+4.9% day-over-day move (z-score 2.21)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (2 pointed the opposite way, 2 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 3,
+    "network_successes": 4,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 104,
+    "dropped_out_of_window": 2,
+    "collapsed_duplicates": 16,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "7_document(s)_above_threshold",
+    "best_score": 0.8710168600082397,
+    "accepted_document_count": 7,
+    "accepted_document_ids": [
+      "0f14f2ea2b4c42b6",
+      "ca3eef3f460b9039",
+      "456a0b463d648788",
+      "f11fe89e14dae78a",
+      "7851fc0575003e51",
+      "f55af8f380174e91",
+      "5b54babfb3f1ce68"
+    ],
+    "total_documents_considered": 104,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T13:22:05.647706+00:00"
+  },
+  "documents_retrieved": 104,
+  "sources": [
+    {
+      "document_id": "0f14f2ea2b4c42b6",
+      "title": "Some of your coffee is picked by slaves : investigation",
+      "url": "https://globalnews.ca/news/6287925/coffee-brazil-slavery/",
+      "publication_date": "2019-12-12",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 15832,
+      "n_copies": 4,
+      "syndication_domains": [
+        "globalnews.ca",
+        "news.trust.org",
+        "q107.com"
+      ],
+      "retrieval_score": 0.2939,
+      "semantic_score": 0.8710168600082397,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "456a0b463d648788",
+      "title": "Coffee prices expected to rise due to supply shortage",
+      "url": "https://vietnamnet.vn/en/business/coffee-prices-expected-to-rise-due-to-supply-shortage-595543.html",
+      "publication_date": "2019-12-06",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 2003,
+      "n_copies": 2,
+      "syndication_domains": [
+        "en.vietnamplus.vn",
+        "vietnamnet.vn"
+      ],
+      "retrieval_score": 0.3154,
+      "semantic_score": 0.870465874671936,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ca3eef3f460b9039",
+      "title": "Picked by slaves : coffee crisis brews in Brazil",
+      "url": "https://news.abs-cbn.com/spotlight/12/12/19/picked-by-slaves-coffee-crisis-brews-in-brazil",
+      "publication_date": "2019-12-12",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 7,
+      "syndication_domains": [
+        "nationalpost.com",
+        "news.abs-cbn.com",
+        "news.google.com",
+        "reuters.com",
+        "thepeninsulaqatar.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8708484172821045,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f11fe89e14dae78a",
+      "title": "INVESTIGATION - Picked by slaves : coffee crisis brews in Brazil",
+      "url": "https://www.msn.com/en-us/news/world/investigation-picked-by-slaves-coffee-crisis-brews-in-brazil/ar-AAK3aCa",
+      "publication_date": "2019-12-12",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 2,
+      "syndication_domains": [
+        "msn.com",
+        "reuters.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8703228235244751,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7851fc0575003e51",
+      "title": "Declining price worries coffee growers in Kodai - DT Next",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTTFDcmRNWHF4aXBMV1BUQVdjV3QyQnVzVzZ1U0kxSXYxVWJ2NnRHY20wZ2JXakR2bXYtcmp0czNsdWR0ZWdVVERsd1Rrc08tZGszY3pybmNEVlFXMlFwLUtQRklPYXpXZ3N2Q3ZSZllVdkh2RzNfMG9UUnNOVGtZbndINXM1RTNBS3MtVNIBmgFBVV95cUxOR2ZTM195dnlybzN1dWVZNk1oaFFMak91YldiQ0pwVUJQVXFHYVVOUy16MVBkS2RGRkwtM3QzWEdyWTJPdEt2LWVQV2lzOGxORk5BVzl2NVZEdE1oMFdpZnQ2UFBpYVFPRDFBSFBUMTdBTElreDR4VEVjakxVbGcyTzNvMFEycmdCRlpjdUUyVHV2dWYwa0tFbDR3?oc=5",
+      "publication_date": "2019-12-15",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8602387309074402,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f55af8f380174e91",
+      "title": "Coffee exports suffer strong drops",
+      "url": "https://english.vov.vn/economy/coffee-exports-suffer-strong-drops-407633.vov",
+      "publication_date": "2019-12-16",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "english.vov.vn"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8530136346817017,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5b54babfb3f1ce68",
+      "title": "Coffee price crisis hits\u00a0Vietnamese export value",
+      "url": "https://vietnamnet.vn/en/business/coffee-price-crisis-hits-vietnamese-export-value-599456.html",
+      "publication_date": "2019-12-16",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2171,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vietnamnet.vn"
+      ],
+      "retrieval_score": 0.4265,
+      "semantic_score": 0.8472400307655334,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 2,
+    "neutral": 3,
+    "inconsistent": 2
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 7,
+    "n_fresh": 6,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 2
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The available documents either predate the move by more than three trading days or discuss price declines, providing no timely, direct cause for the observed price increase.",
+    "citations": [],
+    "confidence": null,
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2879,
+    "evidence_document_ids": [
+      "0f14f2ea2b4c42b6",
+      "456a0b463d648788",
+      "ca3eef3f460b9039",
+      "f11fe89e14dae78a",
+      "7851fc0575003e51",
+      "f55af8f380174e91",
+      "5b54babfb3f1ce68"
+    ],
+    "evidence_packing": {
+      "n_input": 7,
+      "n_packed": 7,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 2261,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

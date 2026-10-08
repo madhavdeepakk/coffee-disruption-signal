@@ -1,0 +1,44 @@
+# Never commit files that hold secrets. The patterns are deliberately wide:
+# an editor that appends its own extension (.env.txt from Notepad) or a
+# hand-made copy (.env.backup, env2) is still a file full of live keys, and
+# the narrow rules missed all of them.
+.env
+.env.*
+*.env
+*.env.*
+**/env
+**/env.*
+*secret*
+*credentials*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local GDELT response cache (regenerated at runtime, not needed in the repo)
+data/gdelt_cache/
+
+# Fetched article bodies: other publishers' text, kept locally to avoid
+# re-downloading and never published.
+data/text_cache/
+
+# Robustness-evaluation cache: retrieved evidence and per-trial results. The
+# summary that matters is committed as results/robustness.json.
+data/eval_cache/
+
+# Local working notes and drafts kept beside the project, not part of it
+project-notes/
+
+# Virtual environments
+.venv/
+venv/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# NOTE: data/raw/*.csv and results/* ARE committed on purpose — the hosted
+# dashboard reads them to display precomputed prices, anomalies, and
+# explanations.

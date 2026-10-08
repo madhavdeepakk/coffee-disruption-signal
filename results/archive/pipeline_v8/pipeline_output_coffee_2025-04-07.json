@@ -1,0 +1,4320 @@
+{
+  "pipeline_version": "8",
+  "anomaly": {
+    "date": "2025-04-07",
+    "price": 344.79998779296875,
+    "z_score": -2.656142831500948,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -5.715073480016884,
+    "cumulative_pct_move": -12.35384007563146,
+    "cumulative_z_score": -1.934169082727239,
+    "direction": "down"
+  },
+  "price_description": "-5.7% day-over-day move (z-score -2.66)",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "A recent document gives a quoted reason for a move in this direction, but 3 equally recent document(s) point the other way; 2 citation(s) were flagged as weakly matched to their source.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 2,
+    "network_attempts": 0,
+    "network_failures": 0,
+    "network_successes": 1,
+    "cache_hits": 2,
+    "reused_cache_hits": 4,
+    "fallback_added": 0,
+    "documents_returned": 470,
+    "dropped_out_of_window": 31,
+    "collapsed_duplicates": 72,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "13_document(s)_above_threshold",
+    "best_score": 0.8917360901832581,
+    "accepted_document_count": 13,
+    "accepted_document_ids": [
+      "458beb759a80eba0",
+      "3a7e00c2bb66886d",
+      "110a69de0f7427d7",
+      "ea62e9d8173970a3",
+      "6d75c95cbbb8538d",
+      "cb8b46be688f31b3",
+      "5042b56293485abf",
+      "34053478f57a8183",
+      "c0ff2595d565fe90",
+      "11c388972f35650e",
+      "77832632dee963d5",
+      "161b0c817e4f77d2",
+      "1caaf0c93d200642"
+    ],
+    "total_documents_considered": 470,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-04T00:31:41.403519+00:00"
+  },
+  "documents_retrieved": 470,
+  "documents_retrieved_recent": 302,
+  "sources": [
+    {
+      "document_id": "7b1e92a2b872d0d3",
+      "title": "Xu\u1ea5t kh\u1ea9u c\u00e0 ph\u00ea l\u1ea7n \u0111\u1ea7u \u0111\u1ea1t t\u1ef7 USD trong m\u1ed9t th\u00e1ng",
+      "url": "https://vnexpress.net/xuat-khau-ca-phe-lan-dau-dat-ty-usd-trong-mot-thang-4869008.html",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2325,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vnexpress.net"
+      ],
+      "retrieval_score": 0.0108,
+      "semantic_score": 0.8064772486686707,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2281a4b9797a53d4",
+      "title": "Thu\u1ebf quan c\u1ee7a M\u1ef9 t\u00e1c \u0111\u1ed9ng ra sao \u0111\u1ebfn th\u1ecb tr\u01b0\u1eddng c\u00e0 ph\u00ea ? ",
+      "url": "https://thesaigontimes.vn/thue-quan-cua-my-tac-dong-ra-sao-den-thi-truong-ca-phe/",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 4374,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thesaigontimes.vn"
+      ],
+      "retrieval_score": 0.0128,
+      "semantic_score": 0.8361603617668152,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2e23b5ad1f7b70d0",
+      "title": "Seca e tarifas elevam custos para redes de cafeterias nos EUA",
+      "url": "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2025/04/07/seca-e-tarifas-elevam-custos-para-redes-de-cafeterias-nos-eua.htm",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "noticias.uol.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8174226880073547,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f3ada022b2dab2ae",
+      "title": "Kombinationen som ger chockh\u00f6jning av kaffe i veckan",
+      "url": "https://www.svt.se/nyheter/utrikes/darfor-kan-priset-pa-kaffe-chockhojas-i-veckan-alla-vill-ha-kaffe",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2939,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "svt.se"
+      ],
+      "retrieval_score": 0.0182,
+      "semantic_score": 0.8280714750289917,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6d75c95cbbb8538d",
+      "title": "Coffee prices likely to rise as tariffs hit key supplier Vietnam",
+      "url": "https://www.adn.com/nation-world/2025/04/03/coffee-prices-likely-to-rise-as-tariffs-hit-key-supplier-vietnam/",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2799,
+      "found_by": "combined search, full window",
+      "passed_gate": true,
+      "n_copies": 6,
+      "syndication_domains": [
+        "adn.com",
+        "biztoc.com",
+        "chicagotribune.com",
+        "columbian.com",
+        "spokesman.com",
+        "timesfreepress.com"
+      ],
+      "retrieval_score": 0.1807,
+      "semantic_score": 0.8706939220428467,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "08aeb9d0311e985c",
+      "title": "Gi\u00e1 c\u00e0 ph\u00ea h\u00f4m nay 7 / 4 / 2025 : C\u00e0 ph\u00ea Robusta s\u00e0n London gi\u1ea3m m\u1ea1nh",
+      "url": "https://nongnghiep.vn/gia-ca-phe-hom-nay-7-4-2025-ca-phe-robusta-san-london-giam-manh-d746900.html",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "nongnghiep.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8207946419715881,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "dfcf16c47e87dea7",
+      "title": "Gi\u00e1 c\u00e0 ph\u00ea , h\u1ed3 ti\u00eau  r\u01a1i th\u1eb3ng \u0111\u1ee9ng  v\u00ec M\u1ef9 \u00e1p thu\u1ebf \u1ed3 \u1ea1t",
+      "url": "https://baomoi.com/gia-ca-phe-ho-tieu-roi-thang-dung-vi-my-ap-thue-o-at-c51902523.epi",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "baomoi.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8237437009811401,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "17a6e8018ffaf802",
+      "title": "Coffee importer fears tariffs may put cafes out of business",
+      "url": "https://www.kare11.com/article/money/consumer/local-coffee-industry-prepares-higher-prices-tariffs/89-23183639-5112-4475-ae7f-3e476e53c93f",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "kare11.com"
+      ],
+      "retrieval_score": 0.0256,
+      "semantic_score": 0.822721004486084,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6697c57b2b5204c4",
+      "title": "Xu\u1ea5t kh\u1ea9u c\u00e0 ph\u00ea mang v\u1ec1 g\u1ea7n 2 , 9 t\u1ef7 USD qu\u00fd I",
+      "url": "https://baomoi.com/xuat-khau-ca-phe-mang-ve-gan-2-9-ty-usd-quy-i-c51877046.epi",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "baomoi.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8143227696418762,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "59176133cd60aaca",
+      "title": "Here Are the New US Tariffs on Major Coffee Producing and Exporting Countries",
+      "url": "https://dailycoffeenews.com/2025/04/03/here-are-the-new-us-tariffs-on-major-coffee-producing-and-exporting-countries/",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3232,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "dailycoffeenews.com",
+        "news.google.com"
+      ],
+      "retrieval_score": 0.0749,
+      "semantic_score": 0.8481120467185974,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e96a47c13cb15cf4",
+      "title": "11 Drinks Getting More Expensive as New Tariffs Start",
+      "url": "https://www.eatthis.com/drinks-getting-more-expensive-tariffs-april-2025/",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3404,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "eatthis.com"
+      ],
+      "retrieval_score": 0.1187,
+      "semantic_score": 0.8406223654747009,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "9895779ee255d9b0",
+      "title": "\u039a\u03b1\u03c6\u03ad\u03c2 : \u00ab \u03a0\u03b9\u03ba\u03c1\u03ae \u00bb \u03b7 \u03c4\u03b9\u03bc\u03ae \u03c4\u03bf\u03c5 - \u03a0\u03bf\u03cd \u03bf\u03c6\u03b5\u03af\u03bb\u03b5\u03c4\u03b1\u03b9 \u03b7 \u03b1\u03cd\u03be\u03b7\u03c3\u03b7 [ \u03b2\u03af\u03bd\u03c4\u03b5\u03bf ] ",
+      "url": "https://eleftherostypos.gr/oikonomia/kafes-pikri-i-timi-tou-pou-ofeiletai-i-afxisi-vinteo",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "eleftherostypos.gr"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8106086254119873,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3c562b6f46990fd8",
+      "title": "11 Groceries Getting More Expensive as Massive Tariffs Start Today",
+      "url": "https://www.eatthis.com/groceries-more-expensive-massive-tariffs/",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4812,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "eatthis.com"
+      ],
+      "retrieval_score": 0.0492,
+      "semantic_score": 0.812320351600647,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "526fa94924bd106a",
+      "title": "From garlic to coffee : Trump new tariff will shake the US food prices",
+      "url": "https://timesofindia.indiatimes.com/life-style/food-news/from-garlic-to-coffee-trumps-new-tariff-will-shake-the-us-food-prices/articleshow/119989974.cms",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 5748,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "timesofindia.indiatimes.com"
+      ],
+      "retrieval_score": 0.1754,
+      "semantic_score": 0.8236217498779297,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2532683333fba87e",
+      "title": "Produktet ushqimore me rritje \u00e7mimesh n\u00eb vitin 2025",
+      "url": "https://indeksonline.net/produktet-ushqimore-me-rritje-cmimesh-ne-vitin-2025/",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 4,
+      "syndication_domains": [
+        "gazetainfokus.com",
+        "indeksonline.net",
+        "infoshqip.com",
+        "zeri.info"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8175315260887146,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "74cb5e1df6f44244",
+      "title": "Experts warn of potential crisis in fruit industry as unusual weather disrupts production :  Paints a worrying picture  ",
+      "url": "https://www.yahoo.com/news/experts-warn-potential-crisis-fruit-114522474.html",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3534,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "yahoo.com"
+      ],
+      "retrieval_score": 0.1456,
+      "semantic_score": 0.8432303667068481,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "848192db69c77c3c",
+      "title": "Cacau lidera quedas na bolsa de Nova York com escalada da guerra tarif\u00e1ria",
+      "url": "https://globorural.globo.com/cotacoes/noticia/2025/04/cacau-lidera-quedas-na-bolsa-de-nova-york-com-escalada-da-guerra-tarifaria.ghtml",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2466,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "globorural.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8385815620422363,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d5a416a1b5bb4eb1",
+      "title": "Tariffs hit Spokane coffee roasters already facing higher prices",
+      "url": "https://www.spokesman.com/stories/2025/apr/06/tariffs-hit-spokane-coffee-roasters-already-facing/",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 5382,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "spokesman.com"
+      ],
+      "retrieval_score": 0.1605,
+      "semantic_score": 0.8496569395065308,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "56e3472e39d901a1",
+      "title": "Kaffet v\u00e4ntas bli dyrare",
+      "url": "https://www.ja.se/artikel/2237440/kaffet-vntas-bli-dyrare.html",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2438,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "ja.se"
+      ],
+      "retrieval_score": 0.0182,
+      "semantic_score": 0.8164021968841553,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8fc40a143d48fd93",
+      "title": "Morning coffee to daily commute : How Trump new tariffs will squeeze American wallets",
+      "url": "https://economictimes.indiatimes.com/magazines/panache/morning-coffee-to-daily-commute-how-trumps-new-tariffs-will-squeeze-americans-wallets/articleshow/119943614.cms",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3978,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "economictimes.indiatimes.com"
+      ],
+      "retrieval_score": 0.0695,
+      "semantic_score": 0.8433597087860107,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3a2ceb092a3219b4",
+      "title": "Xu H\u01b0\u1edbng C\u00e0 Ph\u00ea \u0110\u1eb7c S\u1ea3n - Th\u1ecb Tr\u01b0\u1eddng V\u00e0 Ti\u1ec1m N\u0103ng T\u1ea1i Vi\u1ec7t Nam",
+      "url": "https://www.webtretho.com/f/dia-diem-an-uong-tai-ha-noi/xu-huong-ca-phe-dac-san-thi-truong-va-tiem-nang-tai-viet-nam",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 4086,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "webtretho.com"
+      ],
+      "retrieval_score": 0.0128,
+      "semantic_score": 0.8082212209701538,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3d769caffd8d293b",
+      "title": "HTX xu\u1ea5t kh\u1ea9u c\u00e0 ph\u00ea sang M\u1ef9  \u0111\u1ee9ng ng\u1ed3i kh\u00f4ng y\u00ean  ",
+      "url": "https://stockbiz.vn/tin-tuc/htx-xuat-khau-ca-phe-sang-my-dung-ngoi-khong-yen/31637068",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 6136,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "stockbiz.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8025264739990234,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "1966bb9fdba1d2ce",
+      "title": "Tariffs will drive up prices of everyday goods from coffee to toys",
+      "url": "https://www.yahoo.com/news/tariffs-drive-prices-everyday-goods-201322245.html",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 6348,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "yahoo.com"
+      ],
+      "retrieval_score": 0.139,
+      "semantic_score": 0.8140203952789307,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "53b3ca01dc07b4b2",
+      "title": "Th\u00eam 1 . 300 \u0111\u1ed3ng / kg , d\u1ef1 b\u00e1o gi\u00e1 c\u00e0 ph\u00ea v\u1eabn t\u0103ng trong d\u00e0i h\u1ea1n",
+      "url": "https://stockbiz.vn/tin-tuc/them-1300-dongkg-du-bao-gia-ca-phe-van-tang-trong-dai-han/31602411",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3251,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "stockbiz.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8233599662780762,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "033690ccb92bd2ff",
+      "title": "Eggs , Eyelashes , iPhones : What Donald Trump trade war could really cost you",
+      "url": "https://economictimes.indiatimes.com/news/international/global-trends/eggs-eyelashes-iphones-what-donald-trumps-trade-war-could-really-cost-you/articleshow/120005604.cms",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 6905,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "economictimes.indiatimes.com"
+      ],
+      "retrieval_score": 0.1476,
+      "semantic_score": 0.815353512763977,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "45fb82e4dbda4199",
+      "title": "Eggs , Eyelashes , iPhones : What Donald Trump trade war could really cost you , ET Retail",
+      "url": "https://retail.economictimes.indiatimes.com/news/industry/eggs-eyelashes-iphones-what-donald-trumps-trade-war-could-really-cost-you/120008853",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 12073,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "retail.economictimes.indiatimes.com"
+      ],
+      "retrieval_score": 0.1476,
+      "semantic_score": 0.8099669218063354,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "356ebd32d4f7cb74",
+      "title": "\u0413\u043e\u0440\u044c\u043a\u0438\u0439 \u0430\u0440\u043e\u043c\u0430\u0442 : \u0440\u043e\u0441\u0441\u0438\u044f\u043d \u043f\u043e\u0434\u0441\u0430\u0434\u0438\u043b\u0438 \u043d\u0430 \u043a\u043e\u0444\u0435 , \u0430 \u043f\u043e\u0442\u043e\u043c \u0438\u0437 - \u0437\u0430 \u043a\u0440\u0438\u0437\u0438\u0441\u0430 \u043f\u043e\u0434\u043d\u044f\u043b\u0438 \u0446\u0435\u043d\u044b | \u041c\u043e\u0441\u043a\u0432\u0430",
+      "url": "https://fedpress.ru/article/3372031",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 4917,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "fedpress.ru"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8304507732391357,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0584e9aa2409f0c6",
+      "title": "Gi\u00e1 c\u00e0 ph\u00ea h\u00f4m nay 6 / 4 / 2025 : Th\u1ecb tr\u01b0\u1eddng ti\u1ebfp \u0111\u00e0 gi\u1ea3m s\u00e2u",
+      "url": "https://nongnghiep.vn/gia-ca-phe-hom-nay-6-4-2025-thi-truong-tiep-da-giam-sau-d746800.html",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "nongnghiep.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8224160671234131,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "714ca4b1033b8d81",
+      "title": "Tarifa\u00e7o de Trump deve deixar mais caro o caf\u00e9 do Brasil nos Estados Unidos",
+      "url": "https://globorural.globo.com/noticia/2025/04/tarifaco-de-trump-deve-encarecer-exportacoes-de-cafe-do-brasil.ghtml",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 5189,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "globorural.globo.com"
+      ],
+      "retrieval_score": 0.0128,
+      "semantic_score": 0.8393217325210571,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d228350991739de7",
+      "title": "Which products will be affected by tariffs ? Here what Trump  Liberation Day  could make pricier . ",
+      "url": "https://www.cbsnews.com/news/which-products-most-affected-tariffs/",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 6243,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "cbsnews.com"
+      ],
+      "retrieval_score": 0.1187,
+      "semantic_score": 0.8089308738708496,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "cf3fa218abc6a9d9",
+      "title": "Americans may pay more for these everyday basics under Trump new tariffs",
+      "url": "https://www.bbc.com/news/articles/cdxnzreqklro",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 7127,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "bbc.com"
+      ],
+      "retrieval_score": 0.1133,
+      "semantic_score": 0.806404709815979,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "bbd429ce9c041213",
+      "title": "K\u1ef7 l\u1ee5c ch\u01b0a t\u1eebng c\u00f3 , lo\u1ea1i h\u1ea1t mang v\u1ec1 1 , 16 t\u1ef7 USD ch\u1ec9 trong 1 th\u00e1ng",
+      "url": "https://vietstock.vn/2025/04/ky-luc-chua-tung-co-loai-hat-mang-ve-116-ty-usd-chi-trong-1-thang-118-1289578.htm",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 5233,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "vietbao.vn",
+        "vietstock.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8028433322906494,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "aabfc18b049265c3",
+      "title": "\u0412 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0435 \u0441\u043d\u043e\u0432\u0430 \u0434\u043e\u0440\u043e\u0436\u0430\u0435\u0442 \u043a\u043e\u0444\u0435",
+      "url": "https://news.day.az/gurmaniya/1742513.html",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1682,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.day.az"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8250626921653748,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5aa26192f6cd0248",
+      "title": "us president Donald trump latest tariff on India iPhone price alcohol \u091f\u094d\u0930\u0902\u092a \u0928\u0947 \u0915\u0930\u093e\u092f\u093e \u0905\u092e\u0947\u0930\u093f\u0915\u093e \u0915\u093e \u0928\u0941\u0915\u0938\u093e\u0928 ? \u0916\u0941\u0926 \u0915\u0940 \u091c\u0928\u0924\u093e \u0939\u094b\u0917\u0940 \u092a\u0930\u0947\u0936\u093e\u0928 , \u092c\u0940\u092f\u0930 \u0938\u0947 iPhone \u0924\u0915 \u092f\u0947 \u0939\u094b\u0917\u093e \u092e\u0939\u0902\u0917\u093e , International Hindi News",
+      "url": "https://www.livehindustan.com/international/us-president-donald-trump-latest-tariff-on-india-iphone-price-alcohol-201743648721054.html",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2941,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "livehindustan.com"
+      ],
+      "retrieval_score": 0.0546,
+      "semantic_score": 0.8118554353713989,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "227dd92cc31aae8d",
+      "title": "Kh\u00e1ch x\u1ebfp h\u00e0ng mua c\u00e0 ph\u00ea \u1ed1ng tre trang tr\u00ed l\u00e1 c\u1edd",
+      "url": "https://vnexpress.net/khach-xep-hang-mua-ca-phe-ong-tre-trang-tri-la-co-4869254.html",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2487,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "eva.vn",
+        "vnexpress.net"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8009696006774902,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "25c64510fbe30379",
+      "title": "Gi\u00e1 c\u00e0 ph\u00ea h\u00f4m nay 2 - 4 : Gi\u1ea3m s\u00e2u r\u1ed3i t\u0103ng d\u1eef d\u1ed9i",
+      "url": "https://nld.com.vn/gia-ca-phe-hom-nay-2-4-giam-sau-roi-tang-du-doi-196250402074512803.htm",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1842,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "nld.com.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8238772749900818,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "cb8b46be688f31b3",
+      "title": "Rising costs brew bitter mix for coffee consumers , producers",
+      "url": "https://www.philstar.com/business/2025/04/06/2433751/rising-costs-brew-bitter-mix-coffee-consumers-producers",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 9504,
+      "found_by": "combined search, full window",
+      "passed_gate": true,
+      "n_copies": 3,
+      "syndication_domains": [
+        "news.google.com",
+        "philstar.com"
+      ],
+      "retrieval_score": 0.1551,
+      "semantic_score": 0.8672729730606079,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ff123e93b9260494",
+      "title": "Por que est\u00e1 dif\u00edcil controlar o pre\u00e7o dos alimentos no Brasil e no mundo ? ",
+      "url": "https://revistaforum.com.br/opiniao/2025/4/1/por-que-esta-dificil-controlar-preo-dos-alimentos-no-brasil-no-mundo-176727.html",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "revistaforum.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8082000613212585,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ae7d4b8b3da518a3",
+      "title": "Opinion : Want bananas , coffee , chocolate ? Hello , import tax ! ",
+      "url": "https://www.adn.com/opinions/national-opinions/2025/04/04/opinion-want-bananas-coffee-chocolate-hello-import-tax/",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 5217,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "adn.com"
+      ],
+      "retrieval_score": 0.139,
+      "semantic_score": 0.8402441740036011,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5042b56293485abf",
+      "title": "Peabirus : Pre\u00e7os do caf\u00e9 recuam com realizao de lucros nas bolsas internacionais na manh\u00e3 desta 4\u00aa feira ( 02 ) ",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=117200",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2221,
+      "found_by": "combined search, full window",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.866402268409729,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4263077b74d45b93",
+      "title": "B\u1ea3n tin n\u00f4ng s\u1ea3n h\u00f4m nay ( 5 - 4 ): Gi\u00e1 c\u00e0 ph\u00ea gi\u1ea3m m\u1ea1nh , h\u1ed3 ti\u00eau lao d\u1ed1c",
+      "url": "https://vietbao.vn/ban-tin-nong-san-hom-nay-5-4-gia-ca-phe-giam-manh-ho-tieu-lao-doc-536277.html",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vietbao.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8277297019958496,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "bcc09e918f98355d",
+      "title": "C\u00e0 ph\u00ea Vi\u1ec7t Nam r\u1edbt gi\u00e1 sau tuy\u00ean b\u1ed1 v\u1ec1 ch\u00ednh s\u00e1ch thu\u1ebf \u0111\u1ed1i \u1ee9ng m\u1edbi c\u1ee7a M\u1ef9",
+      "url": "https://baodongnai.com.vn/kinh-te/202504/ca-phe-viet-nam-rot-gia-sau-tuyen-bo-ve-chinh-sach-thue-doi-ung-moi-cua-my-66513b5/",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 1412,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "baodongnai.com.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8236885070800781,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "03ba40d02c430410",
+      "title": "Czy ceny kawy b\u0119d\u0105 nadal ros\u0142y ? ",
+      "url": "https://www.farmer.pl/produkcja-roslinna/inne-uprawy/czy-ceny-kawy-beda-nadal-rosly,159463.html",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1691,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "farmer.pl"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8296692967414856,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c12f48f6a5b5c5a2",
+      "title": "\u0415\u0432\u0440\u043e\u043f\u0441\u043a\u0438\u0442\u0435 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u0438 \u043d\u0430 \u043a\u0430\u0444\u0435 \u043d\u0430 \u0443\u0434\u0430\u0440 : \u041d\u043e\u0432\u0438 \u0430\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438 \u0446\u0430\u0440\u0438\u043d\u0438 \u0458\u0430 \u0437\u0430\u0433\u0440\u043e\u0437\u0443\u0432\u0430\u0430\u0442 \u0438\u043d\u0434\u0443\u0441\u0442\u0440\u0438\u0458\u0430\u0442\u0430",
+      "url": "https://republika.mk/vesti/svet/evropskite-proizvoditeli-na-kafe-na-udar-novi-amerikanski-czarini-ja-zagrozuvaat-industrijata/",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 1527,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "republika.mk"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8055606484413147,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "622f284fca246140",
+      "title": "\u0995\u09ab\u09bf\u09a4\u09c7 \u09ae\u09b6\u0997\u09c1\u09b2 \u09ac\u09cd\u09b0\u09bf\u099f\u09c7\u09a8\u09c7 \u09aa\u09b2\u09be\u09a4\u0995 \u09b8\u09be\u09ac\u09c7\u0995 \u09ae\u09a8\u09cd\u09a4\u09cd\u09b0\u09c0\u09b0\u09be ! |",
+      "url": "https://www.bd-pratidin.com/probash-potro/2025/04/02/1101686",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "bd-pratidin.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8237125277519226,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "77832632dee963d5",
+      "title": "Coffee drinkers beware : Tariffs to impact coffee prices",
+      "url": "https://www.gulfcoastnewsnow.com/article/coffee-drinkers-beware-tariffs-impact-coffee-prices/64411247",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2092,
+      "found_by": "combined search, full window",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "gulfcoastnewsnow.com"
+      ],
+      "retrieval_score": 0.1336,
+      "semantic_score": 0.8542388677597046,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5df22dcad0dc8512",
+      "title": "Trump tariffs : Is your morning coffee about to get more expensive ? ",
+      "url": "https://gulfbusiness.com/trump-tariffs-is-your-morning-coffee-about-to-get-more-expensive/",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "gulfbusiness.com"
+      ],
+      "retrieval_score": 0.0256,
+      "semantic_score": 0.8217443227767944,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b3ff6dec4509f255",
+      "title": "How Trump New Tariffs Will Make Farming ( and Food ) More Expensive",
+      "url": "https://www.yahoo.com/news/trumps-tariffs-farming-food-more-161747222.html",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4417,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "reason.com",
+        "yahoo.com"
+      ],
+      "retrieval_score": 0.0492,
+      "semantic_score": 0.809769868850708,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a46d8f5298d31640",
+      "title": "B\u1ea3n tin n\u00f4ng s\u1ea3n h\u00f4m nay ( 3 - 4 ): Gi\u00e1 c\u00e0 ph\u00ea t\u0103ng m\u1ea1nh",
+      "url": "https://vietbao.vn/ban-tin-nong-san-hom-nay-3-4-gia-ca-phe-tang-manh-535905.html",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vietbao.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8128634095191956,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "aaf51cc63ac1e7be",
+      "title": "Americanii vor pl\u0103ti mai mult pentru cafea deoarece tarifele lovesc un important furnizor",
+      "url": "https://www.aradon.ro/mapamond/americanii-vor-plati-mai-mult-pentru-cafea-deoarece-tarifele-lovesc-un-important-furnizor-2003007/",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2959,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "aradon.ro"
+      ],
+      "retrieval_score": 0.0182,
+      "semantic_score": 0.8245446681976318,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ce0652190f8cf50c",
+      "title": "Prischocken p\u00e5 kaffe \u00e4r bara b\u00f6rjan",
+      "url": "https://www.aftonbladet.se/nyheter/a/Rzp9vW/prischocken-pa-kaffe-ar-bara-borjan",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 4097,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "aftonbladet.se"
+      ],
+      "retrieval_score": 0.0438,
+      "semantic_score": 0.8133938312530518,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ea62e9d8173970a3",
+      "title": "Gi\u00e1 c\u00e0 ph\u00ea lao d\u1ed1c",
+      "url": "https://vtv.vn/kinh-te/gia-ca-phe-lao-doc-20250331144303788.htm",
+      "publication_date": "2025-04-01",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, full window",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vtv.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8729033470153809,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "750ed1d1201730e1",
+      "title": "Retaliao chinesa a Trump acentua queda das commodities",
+      "url": "https://globorural.globo.com/economia/noticia/2025/04/retaliacao-chinesa-a-trump-acentua-queda-das-commodities.ghtml",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 4489,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "globorural.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8209354877471924,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "83af016718cab391",
+      "title": "What Trump sweeping tariffs mean for the US economy and you ? ",
+      "url": "https://www.yahoo.com/news/trumps-sweeping-tariffs-mean-us-195900714.html",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 5190,
+      "found_by": "combined search, full window",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "yahoo.com"
+      ],
+      "retrieval_score": 0.1133,
+      "semantic_score": 0.8027679920196533,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2dc786b00366baf4",
+      "title": "\u041a\u0430\u043a\u0430\u043e - \u0431\u043e\u0431\u044b \u0434\u043e\u0440\u043e\u0436\u0430\u044e\u0442 \u043d\u0430 3 % \u043d\u0430 \u0444\u043e\u043d\u0435 \u043f\u043e\u0448\u043b\u0438\u043d \u0421\u0428\u0410",
+      "url": "https://1prime.ru/20250403/kakao-856364046.html",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3682,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "1prime.ru"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8068568706512451,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "fa21f4aa76848002",
+      "title": "\u0411\u0438\u0440\u0436\u0435\u0432\u044b\u0435 \u0446\u0435\u043d\u044b \u043d\u0430 \u043a\u0430\u043a\u0430\u043e - \u0431\u043e\u0431\u044b \u0438 \u043a\u043e\u0444\u0435 \u0432 \u043c\u0438\u0440\u0435 \u0441\u043d\u0438\u0436\u0430\u044e\u0442\u0441\u044f \u043d\u0430 3 - 5 % ",
+      "url": "https://1prime.ru/20250407/kofe-856447875.html",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2879,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "1prime.ru"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8190327882766724,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c372908f26af4999",
+      "title": "\u0410\u0440\u0430\u0431\u0456\u043a\u0430 \u0456 \u0440\u043e\u0431\u0443\u0441\u0442\u0430 - \u044f\u043a\u0430 \u0440\u0456\u0437\u043d\u0438\u0446\u044f \u043c\u0456\u0436 \u043a\u0430\u0432\u043e\u044e",
+      "url": "https://www.rbc.ua/rus/styler/zapam-yatayte-raz-i-nazavzhdi-k-rozriznyati-1744034234.html",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "rbc.ua"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8229365348815918,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "11c388972f35650e",
+      "title": "Pre\u00e7os do caf\u00e9 no Brasil ca\u00edram em mar\u00e7o , interrompendo sequ\u00eancia de altas",
+      "url": "https://globorural.globo.com/agricultura/cafe/noticia/2025/04/precos-do-cafe-no-brasil-cairam-em-marco-interrompendo-sequencia-de-altas.ghtml",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1200,
+      "found_by": "combined search, recent days",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "globorural.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8580060005187988,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3a7e00c2bb66886d",
+      "title": "Coming to a store near you : double - digit coffee price hikes",
+      "url": "https://www.singaporestar.com/news/278135192/coming-to-a-store-near-you-double-digit-coffee-price-hikes",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 4520,
+      "found_by": "combined search, recent days",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "singaporestar.com"
+      ],
+      "retrieval_score": 0.1604,
+      "semantic_score": 0.879496693611145,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ae3f163928c8e028",
+      "title": "Caf\u00e9 j\u00e1 custa mais caro do que fil\u00e9 mignon em supermercados do ES | Tribuna Online",
+      "url": "https://tribunaonline.com.br/economia/cafe-ja-custa-mais-caro-do-que-file-mignon-em-supermercados-do-es-235347",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4050,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tribunaonline.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8399217128753662,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "fdf93de2e0d78732",
+      "title": "US coffee drinkers to be hit with double shot after Trump tariffs | World | News",
+      "url": "https://www.express.co.uk/news/world/2036842/us-coffee-drinkers-donald-trump-tariffs",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "express.co.uk"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.8217718601226807,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "1af4042a3c175b7a",
+      "title": "M\u1ef9 c\u00f4ng b\u1ed1 thu\u1ebf \u0111\u1ed1i \u1ee9ng : Gi\u00e1 h\u00e0ng h\u00f3a s\u1ebd bi\u1ebfn \u0111\u1ed9ng m\u1ea1nh trong phi\u00ean h\u00f4m nay",
+      "url": "https://baotintuc.vn/thi-truong-tien-te/my-cong-bo-thue-doi-ung-gia-hang-hoa-se-bien-dong-manh-trong-phien-hom-nay-20250403083455186.htm",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 5271,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "baotintuc.vn"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8155937194824219,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "674cd4d09865a17e",
+      "title": "Starbucks India plans aggressive store expansion , despite running in losses",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/food/starbucks-india-plans-aggressive-store-expansion-despite-running-in-losses/articleshow/119972707.cms",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1778,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "economictimes.indiatimes.com"
+      ],
+      "retrieval_score": 0.0417,
+      "semantic_score": 0.8429966568946838,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8ef462df55eba977",
+      "title": "I didnt think white chocolate and strawberry coffee would work , but Nespresso new pods proved me wrong",
+      "url": "https://www.techradar.com/home/coffee-machines/i-didnt-think-white-chocolate-and-strawberry-coffee-would-work-but-nespressos-new-pods-proved-me-wrong",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3618,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "techradar.com"
+      ],
+      "retrieval_score": 0.125,
+      "semantic_score": 0.8142527341842651,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c0ff2595d565fe90",
+      "title": "Peabirus : Pre\u00e7os do caf\u00e9 seguem em lados opostos nas bolsas internacionais no in\u00edcio da tarde desta 4\u00aa feira ( 02 ) ",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=117212",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1856,
+      "found_by": "combined search, recent days",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8607451319694519,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "1caaf0c93d200642",
+      "title": "Peabirus : Caf\u00e9 / Cepea : Pre\u00e7os interrompem sequ\u00eancia de altas e caem em mar\u00e7o",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=117201",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1686,
+      "found_by": "combined search, recent days",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8536956310272217,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ddccf806bea50792",
+      "title": "Cijene kakaovca i kave naglo pale , trgovci strahuju za potra\u017enju",
+      "url": "https://www.glas-slavonije.hr/novosti/ekonomija/2025/04/07/cijene-kakaovca-i-kave-naglo-pale-trgovci-strahuju-za-potraznju-686987/",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2818,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "glas-slavonije.hr"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8006018400192261,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e6c6af660b742cb4",
+      "title": "Rahasia Sehat di Balik Secangkir Kopi , Manfaat dan Panduan Konsumsi",
+      "url": "https://www.pikiran-rakyat.com/gaya-hidup/pr-019211474/rahasia-sehat-di-balik-secangkir-kopi-manfaat-dan-panduan-konsumsi",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "pikiran-rakyat.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8161582946777344,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "db6f455574d7980d",
+      "title": "Want Better Coffee From Your Keurig ? I Tested 45 K - Cups to Find the Best",
+      "url": "https://www.cnet.com/home/kitchen-and-household/want-better-coffee-from-your-keurig-i-tested-45-k-cups-to-find-the-best/",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "cnet.com"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.8018474578857422,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "dd8a63ad69425fa2",
+      "title": "Peabirus : Abril chega com clima ameno para \u00e1reas cafeeiras",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=117251",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3234,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8317571878433228,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8bd97adb880243c6",
+      "title": "Dare Charged : Iced coffee favourite drops low calorie alternative in strongest product yet",
+      "url": "https://www.perthnow.com.au/lifestyle/drink/dare-drops-low-calorie-iced-coffee-brew-dare-charged-in-strongest-product-yet--c-18252908",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1575,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "perthnow.com.au"
+      ],
+      "retrieval_score": 0.125,
+      "semantic_score": 0.8089373111724854,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e5c21a4767c1d260",
+      "title": "  This year , many farmers are choosing to grow coffee instead of passion fruit , leading to very high prices  ",
+      "url": "https://www.freshplaza.com/north-america/article/9721176/this-year-many-farmers-are-choosing-to-grow-coffee-instead-of-passion-fruit-leading-to-very-high-prices/",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 1601,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "freshplaza.com"
+      ],
+      "retrieval_score": 0.1187,
+      "semantic_score": 0.8410927057266235,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "984f4f5c4ffea32d",
+      "title": "B\u1ea3n tin n\u00f4ng s\u1ea3n h\u00f4m nay ( 2 - 4 ): Gi\u00e1 h\u1ed3 ti\u00eau v\u00e0 c\u00e0 ph\u00ea \u0111\u1ed3ng lo\u1ea1t gi\u1ea3m",
+      "url": "https://vietbao.vn/ban-tin-nong-san-hom-nay-2-4-gia-ho-tieu-va-ca-phe-dong-loat-giam-535715.html",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vietbao.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8192650079727173,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "fd2b07574ad0f928",
+      "title": "Lavazza coffee tab innovation could disrupt the single - serve segment",
+      "url": "https://www.vendingmarketwatch.com/coffee-service/news/55279878/lavazza-premium-coffees-corp-lavazza-coffee-tab-innovation-could-disrupt-the-single-serve-segment",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3177,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vendingmarketwatch.com"
+      ],
+      "retrieval_score": 0.0909,
+      "semantic_score": 0.8335641026496887,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4d1464ea6a50de10",
+      "title": "Tariff List : 9 Essentials Getting Pricier and How to Save",
+      "url": "https://www.womansworld.com/life/money/tariff-list-9-essentials-getting-pricier-and-how-to-save",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 8270,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "womansworld.com"
+      ],
+      "retrieval_score": 0.1326,
+      "semantic_score": 0.8016551733016968,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "79f56f33919b5e5b",
+      "title": "LAVAZZA GROUP CEO ANTONIO BARAVALLE PRESENTS THE EXCLUSIVE PREVIEW OF TABLI\u0300",
+      "url": "https://menafn.com/1109387508/LAVAZZA-GROUP-CEO-ANTONIO-BARAVALLE-PRESENTS-THE-EXCLUSIVE-PREVIEW-OF-TABL%C3%8C",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 9491,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "menafn.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8096616268157959,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "20842e8235f2d787",
+      "title": "Gi\u00e1 h\u00e0ng h\u00f3a bi\u1ebfn \u0111\u1ed9ng m\u1ea1nh sau thu\u1ebf M\u1ef9 | Vietnam+ ( VietnamPlus ) ",
+      "url": "https://www.vietnamplus.vn/gia-hang-hoa-se-bien-dong-manh-sau-khi-my-cong-bo-thue-doi-ung-post1024515.vnp",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 5633,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "ngaynay.vn",
+        "vietnamplus.vn"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8124476671218872,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a6ec1edf6f793fff",
+      "title": "Lavazza Group CEO Antonio Baravalle Presents the Exclusive Preview of Tabl\u00ec , a Breakthrough Within Single - Serve Segment Which Introduces a New Way to Enjoy Coffee",
+      "url": "https://www.finanznachrichten.de/nachrichten-2025-04/65023145-lavazza-group-ceo-antonio-baravalle-presents-the-exclusive-preview-of-tabli-a-breakthrough-within-single-serve-segment-which-introduces-a-new-way-to-004.htm",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 11108,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "finanznachrichten.de"
+      ],
+      "retrieval_score": 0.0802,
+      "semantic_score": 0.8263609409332275,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a4c09932f26dc96a",
+      "title": "Doanh nh\u00e2n H\u00e0 C\u00f4ng X\u00e3 : Ch\u1ecdn canh t\u00e1c h\u1eefu c\u01a1 v\u00ec m\u1ed9t n\u1ec1n n\u00f4ng nghi\u1ec7p b\u1ec1n v\u1eefng",
+      "url": "https://baodautu.vn/doanh-nhan-ha-cong-xa-chon-canh-tac-huu-co-vi-mot-nen-nong-nghiep-ben-vung-d261130.html",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 5597,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "baodautu.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8027188181877136,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5e8ea93ac898bc2d",
+      "title": "Peabirus : Caf\u00e9 : Com queda nas importaes em 2025 , estoques europeus recuam",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=117231",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3595,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8478794097900391,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3e6255c470d93678",
+      "title": "Tarifa\u00e7o derruba pre\u00e7o de commodities agr\u00edcolas em Nova York",
+      "url": "https://globorural.globo.com/cotacoes/noticia/2025/04/tarifaco-derruba-preco-de-commodities-agricolas-em-nova-york.ghtml",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4899,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "globorural.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8344894647598267,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "9b7417c064247f96",
+      "title": "Inflao de alimentos mant\u00e9m press\u00e3o ; mar\u00e7o registra 1 , 44 % - 02 / 04 / 2025 - Vaiv\u00e9m",
+      "url": "https://www1.folha.uol.com.br/colunas/vaivem/2025/04/inflacao-de-alimentos-mantem-pressao-e-marco-tem-taxa-de-144.shtml",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3370,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "www1.folha.uol.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8081753849983215,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "1ca66bcd90cde96f",
+      "title": "Tim Hortons brews more brand presence in Seoul with line of retail coffee products available now in grocery",
+      "url": "https://www.manilatimes.net/2025/04/04/tmt-newswire/media-outreach-newswire/tim-hortons-brews-more-brand-presence-in-seoul-with-line-of-retail-coffee-products-available-now-in-grocery/2086497",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1996,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "manilatimes.net",
+        "thailand-business-news.com"
+      ],
+      "retrieval_score": 0.0556,
+      "semantic_score": 0.8161795139312744,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e312a6ba6cd05455",
+      "title": "Inflao resiliente : porque o pre\u00e7o dos alimentos n\u00e3o baixa",
+      "url": "https://tribunadonorte.com.br/economia/inflacao-resiliente-porque-o-preco-dos-alimentos-nao-baixa/",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 5282,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tribunadonorte.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8000897169113159,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "9051934fbf81c926",
+      "title": "Tarifele lui Trump \u00ee\u0219i fac sim\u021bite efectele . Pre\u021burile la m\u0103rfuri cresc",
+      "url": "https://evz.ro/tarifele-lui-trump-isi-fac-simtite-efectele-preturile-la-marfurile-de-baza-vor-fi-mai-scumpe.html",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3098,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "evz.ro"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.8048028349876404,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "134648a16edb793d",
+      "title": "Pre\u00e7o do algod\u00e3o sobe e do caf\u00e9 cai em Nova York diante das tarifas comerciais",
+      "url": "https://globorural.globo.com/cotacoes/noticia/2025/04/preco-do-algodao-sobe-e-do-cafe-cai-em-nova-york-diante-das-tarifas-comerciais.ghtml",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2182,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "globorural.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8335222005844116,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ee235da49af37d61",
+      "title": "Circuito Mineiro da Cafeicultura come\u00e7a esta semana ; veja a programao",
+      "url": "https://www.em.com.br/agropecuario/2025/04/7100508-circuito-mineiro-da-cafeicultura-comeca-esta-semana-veja-a-programacao.html",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 3665,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "em.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8222678899765015,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "91434feb95d2bc3b",
+      "title": "Producci\u00f3n de caf\u00e9 creci\u00f3 un 36 % interanual en Colombia durante primer trimestre del a\u00f1o",
+      "url": "https://www.americaeconomia.com/negocios-e-industrias/produccion-de-cafe-crecio-un-36-interanual-en-colombia-durante-primer",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "americaeconomia.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8123068809509277,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0c6eff2d9ddcc739",
+      "title": "Art and arabica , mafia games , and pork belly sactuary",
+      "url": "https://www.koreaherald.com:443/article/10457388",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 4515,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "koreaherald.com:443"
+      ],
+      "retrieval_score": 0.125,
+      "semantic_score": 0.8076651096343994,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "253f72b87e5f559a",
+      "title": "Espresso wird in ganz Italien teurer",
+      "url": "https://www.br.de/nachrichten/deutschland-welt/espresso-wird-in-ganz-italien-teurer,Uh7YAGi",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 4195,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "br.de"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8003349900245667,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e22fed45c4f1da87",
+      "title": "Alta Floresta investir\u00e1 mais de R$ 1 milh\u00e3o na aquisio de maquin\u00e1rios",
+      "url": "https://www.sonoticias.com.br/geral/alta-floresta-investira-mais-de-r-1-milhao-na-aquisicao-de-maquinarios/",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1594,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "sonoticias.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.819785475730896,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "046e577c234a96f5",
+      "title": "Gen Z coffee and tea trends",
+      "url": "https://www.nutraingredients-usa.com/Article/2025/04/03/gen-z-coffee-and-tea-trends/",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3484,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "nutraingredients-usa.com"
+      ],
+      "retrieval_score": 0.125,
+      "semantic_score": 0.8297936916351318,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e93036177d220eca",
+      "title": "Kaffebomben sl\u00e5r p\u00e5 m\u00e5ndag :  Fortfarande billigt  ",
+      "url": "https://www.dagensps.se/privatekonomi/kaffebomben-slar-pa-mandag-fortfarande-billigt/",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2096,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "dagensps.se"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.821882426738739,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4e2d7156004526ec",
+      "title": "Tim Hortons brews more brand presence in Seoul with line",
+      "url": "https://thesun.my/business-news/media-outreach/tim-hortons-brews-more-brand-presence-in-seoul-with-line-of-retail-coffee-products-available-now-in-grocery-HD13891446",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1345,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thesun.my"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.826385498046875,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0371b24edbba768d",
+      "title": "How much caffeine in a flat white ? A quick guide for coffee lovers",
+      "url": "https://www.cootamundraherald.com.au/story/8933209/how-much-caffeine-in-a-flat-white-a-quick-guide-for-coffee-lovers/?cs=6797",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 6025,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "cootamundraherald.com.au"
+      ],
+      "retrieval_score": 0.1304,
+      "semantic_score": 0.8082025051116943,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4ff9c22609be5d1f",
+      "title": "Pre\u00e7o do caf\u00e9 estimula expans\u00e3o de novas \u00e1reas de plantio no Esp\u00edrito Santo",
+      "url": "https://www.folhavitoria.com.br/folha-business/preco-do-cafe-estimula-expansao-de-novas-areas-de-plantio-no-espirito-santo/",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "folhavitoria.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8157826662063599,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "9cd88c37365c3e6c",
+      "title": "Want the best coffee in Visakhapatnam ? Locals say these 8 spots are unbeatable",
+      "url": "https://www.yovizag.com/want-the-best-coffee-in-visakhapatnam-locals-say-these-8-spots-are-unbeatable/",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3790,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "yovizag.com"
+      ],
+      "retrieval_score": 0.1389,
+      "semantic_score": 0.8002572059631348,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "aa89eedd470a5e6a",
+      "title": "Ng\u00e0y 5 / 4 : Gi\u00e1 c\u00e0 ph\u00ea v\u00e0 h\u1ed3 ti\u00eau \u0111\u1ed3ng lo\u1ea1t gi\u1ea3m s\u1ed1c",
+      "url": "https://thoibaotaichinhvietnam.vn/ngay-54-gia-ca-phe-va-ho-tieu-dong-loat-giam-soc-173943.html",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3365,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thoibaotaichinhvietnam.vn"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8251001834869385,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "404839477b92e95e",
+      "title": "Ninja latest coffee machine takes away one of the biggest hassles of being a barista \u2013 and it awesome",
+      "url": "https://www.techradar.com/home/coffee-machines/ninja-luxe-cafe-hands-on",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 5954,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "techradar.com"
+      ],
+      "retrieval_score": 0.125,
+      "semantic_score": 0.8106426000595093,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8438bd6e76da760c",
+      "title": "B\u1ea3n tin n\u00f4ng s\u1ea3n h\u00f4m nay ( 4 - 4 ): Gi\u00e1 c\u00e0 ph\u00ea , h\u1ed3 ti\u00eau duy tr\u00ec \u1ed5n \u0111\u1ecbnh",
+      "url": "https://vietbao.vn/ban-tin-nong-san-hom-nay-4-4-gia-ca-phe-ho-tieu-duy-tri-on-dinh-536086.html",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vietbao.vn"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8143213391304016,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ffb311fe6132d164",
+      "title": "Ng\u00e0y 3 / 4 : Gi\u00e1 c\u00e0 ph\u00ea t\u0103ng tr\u1edf l\u1ea1i , h\u1ed3 ti\u00eau duy tr\u00ec \u1edf m\u1ee9c cao",
+      "url": "https://thoibaotaichinhvietnam.vn/ngay-34-gia-ca-phe-tang-tro-lai-ho-tieu-duy-tri-o-muc-cao-173759.html",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3144,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thoibaotaichinhvietnam.vn"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8196300268173218,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "40c29f1fd642e4e4",
+      "title": "Peabirus : Como a alga marinha pode influenciar a produo ( e o pre\u00e7o ) do caf",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=117209",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 4148,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8427961468696594,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "257bf883b57607b5",
+      "title": "Balan\u00e7a comercial se recupera e tem super\u00e1vit de US$ 8 , 15 bi em mar\u00e7o",
+      "url": "https://www.hojeemdia.com.br/economiaefinancas/balanca-comercial-se-recupera-e-tem-superavit-de-us-8-15-bi-em-marco-1.1060591",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3417,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "hojeemdia.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.813424825668335,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "334bed70840ffe49",
+      "title": "Kerala black pepper output drops 25 % over a decade amid pests , floods",
+      "url": "https://www.thehindubusinessline.com/economy/agri-business/keralas-black-pepper-output-drops-25-over-a-decade-amid-pests-floods/article69402799.ece",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 3094,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thehindubusinessline.com"
+      ],
+      "retrieval_score": 0.0385,
+      "semantic_score": 0.8000322580337524,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "559922eca055acbb",
+      "title": "Caf\u00e9 / OIC : exportao mundial em fevereiro aumenta 7 , 85 %, para 12 , 23 mi de sacas",
+      "url": "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2025/04/02/cafeoic-exportacao-mundial-em-fevereiro-aumenta-785-para-1223-mi-de-sacas.htm",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "noticias.uol.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8088682293891907,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d43163d414e7de28",
+      "title": "\u8def\u6613\u838e\u6625\u65e5\u9001\u5e78\u798f \u9023\u7e8c5\u65e5\u5bc4\u676f\u4eab85\u6298\u512a\u60e0",
+      "url": "https://n.yam.com/Article/20250406327814",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 655,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "n.yam.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8025841116905212,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "23143f75e25987be",
+      "title": "Viral News : 2 \u0c2e\u0c38\u0c3e\u0c32\u0c3e \u0c26\u0c4b\u0c36 .. 2 \u0c15\u0c2a\u0c4d\u0c2a\u0c41\u0c32 \u0c15\u0c3e\u0c2b\u0c40 \u0c12\u0c15\u0c47 \u0c30\u0c47\u0c1f\u0c3e .. \u0c2e\u0c30\u0c40 \u0c07\u0c02\u0c24 \u0c26\u0c3e\u0c30\u0c41\u0c23\u0c2e\u0c3e .. | 1971 Tiffins And Coffee Rates Viral News BVR",
+      "url": "https://www.andhrajyothy.com/2025/prathyekam/1971-tiffins-and-coffee-rates-viral-news-bvr-1388710.html",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4721,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "andhrajyothy.com"
+      ],
+      "retrieval_score": 0.0417,
+      "semantic_score": 0.8103686571121216,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "001900c33f64fe1c",
+      "title": "Ng\u00e0y 7 / 4 : Gi\u00e1 c\u00e0 ph\u00ea \u1ed5n \u0111\u1ecbnh v\u00e0 \u0111i ngang , h\u1ed3 ti\u00eau neo \u1edf m\u1ee9c cao",
+      "url": "https://thoibaotaichinhvietnam.vn/ngay-74-gia-ca-phe-on-dinh-va-di-ngang-ho-tieu-neo-o-muc-cao-174016.html",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 3396,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thoibaotaichinhvietnam.vn"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8207305669784546,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "27aff7ff8ff30e7b",
+      "title": "Inflao dos alimentos e os estoques reguladores",
+      "url": "https://globorural.globo.com/opiniao/vozes-do-agro/noticia/2025/04/inflacao-dos-alimentos-e-os-estoques-reguladores.ghtml",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 7596,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "globorural.globo.com"
+      ],
+      "retrieval_score": 0.0694,
+      "semantic_score": 0.8007429838180542,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "1a177d4cd74e0b7b",
+      "title": "Tarifa\u00e7o : Caf\u00e9 ficar\u00e1 mais caro para consumidores dos EUA - 03 / 04 / 2025 - Mercado",
+      "url": "https://www1.folha.uol.com.br/mercado/2025/04/cafe-pode-ficar-ainda-mais-caro-para-consumidores-dos-eua-apos-tarifaco.shtml",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3423,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "www1.folha.uol.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8380124568939209,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a680e18c61a229c5",
+      "title": "Pre\u021burile la cacao , cafea \u0219i zah\u0103r scad pe fondul incertitudinilor provocate de tarifele impuse de Trump",
+      "url": "https://actualitateaprahoveana.ro/economic/62106-preturile-la-cacao-cafea-si-zahar-scad-pe-fondul-incertitudinilor-provocate-de-tarifele-impuse-de-trump",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2168,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "actualitateaprahoveana.ro"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.812852680683136,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "33ec28752bc5b1be",
+      "title": "Kahve Fincan Tak\u00fdm\u00fd Fiyatlar\u00fd Ne Kadard\u00fdr ? ",
+      "url": "https://www.memurlar.net/haber/1132175/kahve-fincan-takimi-fiyatlari-ne-kadardir.html",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "memurlar.net"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8429111242294312,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "94e2015493895648",
+      "title": "Real World Economics : The flaws in Trump  liberation  reasoning on tariffs \u2013 Twin Cities",
+      "url": "https://www.twincities.com/2025/04/06/real-world-economics-the-flaws-in-trumps-liberation-reasoning-on-tariffs/",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 8012,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "twincities.com"
+      ],
+      "retrieval_score": 0.1411,
+      "semantic_score": 0.8135676980018616,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "90a1a0a0bc20f24b",
+      "title": "Verdun . Le Ptit Fauve , un snack pour manger sur le pouce ou boire un verre au centre - ville",
+      "url": "https://www.estrepublicain.fr/economie/2025/04/05/le-p-tit-fauve-un-snack-pour-manger-sur-le-pouce-ou-boire-un-verre-au-centre-ville",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2861,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "estrepublicain.fr"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8169333934783936,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e55f099c90cc8ab5",
+      "title": "Kaffepriset rusar \u2013 chockh\u00f6jning v\u00e4ntas redan n\u00e4sta vecka",
+      "url": "https://www.aftonbladet.se/minekonomi/a/kwORwv/chockhojning-pa-kaffe-redan-nasta-vecka",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1428,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "aftonbladet.se"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8046981692314148,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ec0baf72d738f759",
+      "title": "Kaffemakaren Lindvall om pris\u00f6kningen :  St\u00f6rsta h\u00f6jningen jag varit med om  ",
+      "url": "https://www.svt.se/nyheter/lokalt/uppsala/kaffemakaren-lindvall-om-prisokningen-storsta-hojningen-jag-varit-med-om",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1634,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "svt.se"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8033254146575928,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "5575d653761bf278",
+      "title": "Pre\u0163urile la cacao , cafea \u015fi zah\u0103r scad pe fondul incertitudinilor provocate de tarifele impuse de Donald Trump",
+      "url": "https://www.bursa.ro/preturile-la-cacao-cafea-si-zahar-scad-pe-fondul-incertitudinilor-provocate-de-tarifele-impuse-de-donald-trump-85923559",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2807,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "bursa.ro"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.813883900642395,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "470f6ca733e7ef75",
+      "title": "Wicklow coffee roaster battles Trump tariffs and soaring bean prices",
+      "url": "https://www.independent.ie/regionals/wicklow/wicklow-district/irish-familys-coffee-business-faces-double-blow-from-trump-tariffs-and-soaring-bean-prices/a664801959.html",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "independent.ie"
+      ],
+      "retrieval_score": 0.0556,
+      "semantic_score": 0.832123875617981,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "189282ed7274f901",
+      "title": "LA coffee shops grapple with Trump tariffs , expect price hike \u2013 NBC Los Angeles",
+      "url": "https://www.nbclosangeles.com/news/local/los-angeles-coffee-shops-price-hike-trump-tariffs/3671109/",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1428,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "nbclosangeles.com"
+      ],
+      "retrieval_score": 0.0556,
+      "semantic_score": 0.8367042541503906,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "34053478f57a8183",
+      "title": "Evropa u ozbiljnom problemu : Raste cijena kafe i kakaa",
+      "url": "https://rtvbn.com/4074277/evropa-u-ozbiljnom-problemu-raste-cijena-kafe-i-kakaa",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "rtvbn.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8625527620315552,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ad31d18bc468a874",
+      "title": "Forbes Daily : Tariff  Liberation Day  Sinks Stocks As China Retaliates",
+      "url": "https://www.forbes.com/sites/daniellechemtob/2025/04/04/forbes-daily-tariff-liberation-day-sinks-stocks-as-china-retaliates/",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "forbes.com"
+      ],
+      "retrieval_score": 0.0108,
+      "semantic_score": 0.8050041198730469,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a87610e06b7908c9",
+      "title": "As tariffs take effect , is trouble brewing for coffee roasters and drinkers ? ",
+      "url": "https://www.wsbtv.com/news/local/north-fulton-county/coffee-shops-planning-price-increases-tariffs/WM7VLEHHPZCKHNLOH36XFE572A/",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 192,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "wsbtv.com"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.8302586078643799,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6653df6b0ceca107",
+      "title": "Em 12 meses , cesta b\u00e1sica aumentou 4 , 71 % em Natal",
+      "url": "https://tribunadonorte.com.br/natal/em-12-meses-cesta-basica-aumentou-471-em-natal/",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3844,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tribunadonorte.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.805598258972168,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "73385719cd2f9c95",
+      "title": "Pre\u00e7o do arroz cai 14 % e pr\u00e9via da inflao indica queda em alimentos com tarifa zerada",
+      "url": "https://www.diariodolitoral.com.br/colunistas/reporter-da-terra/preco-do-arroz-cai-14-e-previa-da-inflacao-indica-queda-em-alimentos-com-tarifa-zerada/2212/",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "diariodolitoral.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.809299111366272,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d080de34c67ee7ac",
+      "title": "Oferta de cacau volta a preocupar mercado e pre\u00e7o sobe 10 % em NY",
+      "url": "https://globorural.globo.com/cotacoes/noticia/2025/04/oferta-de-cacau-volta-a-preocupar-mercado-e-preco-sobe-10percent-em-ny.ghtml",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2442,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "globorural.globo.com"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8263610601425171,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "161b0c817e4f77d2",
+      "title": "Arabica Freeze - Dried Coffee Market Getting Back To Stellar",
+      "url": "https://www.openpr.com/news/3952746/arabica-freeze-dried-coffee-market-getting-back-to-stellar",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "openpr.com"
+      ],
+      "retrieval_score": 0.0556,
+      "semantic_score": 0.8538550138473511,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e45274285642021f",
+      "title": "Coffee Oil Market Is Booming So Rapidly | Starbucks , Hallstar , ",
+      "url": "https://www.openpr.com/news/3953560/coffee-oil-market-is-booming-so-rapidly-starbucks-hallstar",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "openpr.com"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.820279061794281,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f3b62d9a75f997cc",
+      "title": "Weiterer Preisschock bei Billigprodukten : Was jetzt mehr kostet",
+      "url": "https://www.vol.at/another-price-shock-for-cheap-products-what-costs-more-now/9314084",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2898,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "vol.at"
+      ],
+      "retrieval_score": 0.0278,
+      "semantic_score": 0.8199813365936279,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "691715b59fb2e751",
+      "title": "Federacaf\u00e9 apunta a relaciones armoniosas con Estados Unidos , principal cliente del caf\u00e9 colombiano",
+      "url": "https://caracol.com.co/2025/04/02/federacafe-apunta-a-relaciones-armoniosas-con-estados-unidos-principal-cliente-del-cafe-colombiano/",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3931,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "caracol.com.co"
+      ],
+      "retrieval_score": 0.0139,
+      "semantic_score": 0.8128331899642944,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "320da1b853c2a5b8",
+      "title": "Coffee shops brace for bitter reality with new tariffs taking effect Saturday",
+      "url": "https://www.kshb.com/news/local-news/coffee-shops-brace-for-bitter-reality-with-new-tariffs-taking-effect-saturday",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1800,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "kshb.com"
+      ],
+      "retrieval_score": 0.125,
+      "semantic_score": 0.8330506086349487,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "cf004c92974d8da1",
+      "title": "R\u00e9cord hist\u00f3rico : Producci\u00f3n de caf\u00e9 colombiano crece 36 por ciento en el primer trimestre de 2025",
+      "url": "https://www.eltiempo.com/economia/sectores/record-historico-produccion-de-cafe-colombiano-crece-36-por-ciento-en-el-primer-trimestre-de-2025-3442434",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 4367,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "eltiempo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8322856426239014,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f395f7c7a8cdc96d",
+      "title": "Chockh\u00f6jning p\u00e5 kaffe redan n\u00e4sta vecka",
+      "url": "https://www.sydsvenskan.se/2025-04-05/chockhojning-pa-kaffe-redan-nasta-vecka/",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1685,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "sydsvenskan.se"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.810492753982544,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "43a1d012b5c52555",
+      "title": "Caf\u00e9 Semanal 06 / 04 a 12 / 04 : Fuerte Venta ( Gr\u00e1fico ) ",
+      "url": "https://es.dailyforex.com/forex-technical-analysis/2025/04/pronostico-semanal-cafe-06-al-12-de-abril-de-2025/226612",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 5009,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "es.dailyforex.com"
+      ],
+      "retrieval_score": 0.0054,
+      "semantic_score": 0.8279824256896973,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "20e0e4ef73315a12",
+      "title": "Family behind Wicklow coffee roastery fledgling US expansion vow to  weather storm  of Trump tariff",
+      "url": "https://www.independent.ie/regionals/wicklow/wicklow-district/family-behind-wicklow-coffee-roasterys-fledgling-us-expansion-vow-to-weather-storm-of-trump-tariff/a664801959.html",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "independent.ie"
+      ],
+      "retrieval_score": 0.0493,
+      "semantic_score": 0.8415511846542358,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "67dbb6fd8f4f8b5b",
+      "title": "\u0421\u0442\u0440\u0430\u0441\u0442 \u0432 \u0447\u0430\u0448\u0430 \u0437\u0430 \u043a\u0430\u0444\u0435 \u043d\u0430 \u0441\u0432\u0435\u0442\u043e\u0432\u043d\u043e \u043d\u0438\u0432\u043e \u043e\u0442 \u0412\u0430\u0440\u043d\u0430",
+      "url": "https://www.mediapool.bg/strast-v-chasha-za-kafe-na-svetovno-nivo-ot-varna-news369924.html",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "mediapool.bg"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8229035139083862,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d91ed8c5e6d73d22",
+      "title": "\u0428\u0435\u0444\u044a\u0442 \u043d\u0430 \u0431\u043e\u0440\u0441\u0438\u0442\u0435 \u0441 \u043f\u0440\u043e\u0433\u043d\u043e\u0437\u0430 \u0437\u0430 \u044f\u0439\u0446\u0430\u0442\u0430 \u0438 \u0430\u0433\u043d\u0435\u0448\u043a\u043e\u0442\u043e \u0437\u0430 \u0412\u0435\u043b\u0438\u043a\u0434\u0435\u043d - \u0411\u0438\u0437\u043d\u0435\u0441 \u041d\u043e\u0432\u0438\u043d\u0438 \u0421\u0442\u0430\u043d\u0434\u0430\u0440\u0442",
+      "url": "https://www.standartnews.com/biznes/shefat-na-borsite-s-prognoza-za-yaycata-i-agneshkoto-za-velikden-592954.html",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "standartnews.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8145765066146851,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "15188dd757845e94",
+      "title": "B\u0103utura al c\u0103rei consum cre\u0219te de la an la an",
+      "url": "https://www.money.ro/bautura-al-carei-consum-creste-de-la-an-la-an-iar-productia-scade-placerea-vinovata-s-a-scumpit-anul-acesta-cu-30/",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3311,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "money.ro"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8243916034698486,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7f45525132f9c794",
+      "title": "El Tel\u00e9grafo - Ecuador busca reactivar su producci\u00f3n de caf\u00e9 con 20 . 000 nuevas hect\u00e1reas",
+      "url": "https://www.eltelegrafo.com.ec/noticias/gubernamental/1/ecuador-busca-reactivar-su-produccion-cafe-nuevas-hectareas",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 1894,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "eltelegrafo.com.ec"
+      ],
+      "retrieval_score": 0.0054,
+      "semantic_score": 0.8037782311439514,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2c30cc8f38ff00d0",
+      "title": "FRESCO : Massa de ar fria continua sobre Rond\u00f4nia neste s\u00e1bado ( 5 ) ",
+      "url": "https://www.rondoniaovivo.com/noticia/geral/2025/04/04/fresco-massa-de-ar-fria-continua-sobre-rondonia-neste-sabado-5.html",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2340,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "rondoniaovivo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8043971657752991,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0e0fa561f81652c9",
+      "title": "Fedecaf\u00e9 expres\u00f3 su preocupaci\u00f3n por los aranceles en la demanda de caf\u00e9 en EE . UU . ",
+      "url": "https://www.larepublica.co/economia/fedecafe-expreso-su-preocupacion-por-los-aranceles-en-la-demanda-de-cafe-en-ee-uu-4101461",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2477,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "larepublica.co"
+      ],
+      "retrieval_score": 0.0694,
+      "semantic_score": 0.8283669352531433,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "94f790844144dafa",
+      "title": "Tariffs have Valley business owners scrambling to adjust",
+      "url": "https://ktar.com/arizona-business/tariffs-valley-business-owners/5688813/",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 3084,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "ktar.com"
+      ],
+      "retrieval_score": 0.108,
+      "semantic_score": 0.8327797651290894,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f67e0029261b1211",
+      "title": "What to expect at NYC supermarkets as import tariffs go into effect April 5",
+      "url": "https://www.amny.com/news/what-to-expect-at-nyc-supermarkets-tariffs/",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 9035,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "amny.com"
+      ],
+      "retrieval_score": 0.1434,
+      "semantic_score": 0.8277568817138672,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "07fd62b8131d9bee",
+      "title": "Don Francisco Coffee Partners with Olive Crest to Support Families During National Child Abuse Prevention Month",
+      "url": "https://bubblear.com/don-franciscos-coffee-partners-with-olive-crest-to-support-families-during-national-child-abuse-prevention-month/21566/",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 4293,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "bubblear.com"
+      ],
+      "retrieval_score": 0.1304,
+      "semantic_score": 0.8362741470336914,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d7cd224eb80387ac",
+      "title": "Chockh\u00f6jning p\u00e5 kaffe n\u00e4sta vecka",
+      "url": "https://www.sydsvenskan.se/artikel/chockhojning-pa-kaffe-nasta-vecka/",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 1685,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 3,
+      "syndication_domains": [
+        "hd.se",
+        "sydsvenskan.se"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8101257085800171,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2f8fa5806e48d670",
+      "title": "Los caficultores colombianos reciben con cautela las oportunidades que les abren los aranceles de Trump",
+      "url": "https://elpais.com/america-colombia/2025-04-06/los-caficultores-colombianos-reciben-con-cautela-las-oportunidades-que-les-abren-los-aranceles-de-trump.html",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 5137,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "elpais.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8340238332748413,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "296afc567378c40c",
+      "title": "Cerca de 3 . 000 empresas componen base exportadora desde Colombia hacia EE . UU . ",
+      "url": "https://www.larepublica.co/especiales/efectos-del-muro-arancelario/cerca-de-3-000-empresas-componen-base-exportadora-desde-colombia-hacia-ee-uu-4102375",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3750,
+      "found_by": "combined search, recent days",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "larepublica.co"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8341194987297058,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2e34a40a5f35ae78",
+      "title": "Shri Ahimsa Naturals shares list at 18 % premium on NSE SME platform",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/shri-ahimsa-naturals-shares-to-debut-today-heres-what-gmp-indicates/articleshow/119890767.cms",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 3193,
+      "found_by": "coffee export Vietnam",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "economictimes.indiatimes.com"
+      ],
+      "retrieval_score": 0.172,
+      "semantic_score": 0.8246235251426697,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2e81f9d1cd85b17e",
+      "title": "Here where Donald Trump tariffs could hurt American wallets",
+      "url": "https://www.thesouthafrican.com/news/politics/heres-where-donald-trump-trade-tariffs-could-hurt-americans-wallets-explainer/",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3764,
+      "found_by": "coffee prices settle",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "thesouthafrican.com"
+      ],
+      "retrieval_score": 0.1828,
+      "semantic_score": 0.8259902000427246,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c7d47ead6c53c62d",
+      "title": "Links 4 / 6 / 2025 | naked capitalism",
+      "url": "https://www.nakedcapitalism.com/2025/04/links-4-6-2025.html",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "coffee prices settle",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "nakedcapitalism.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8323954343795776,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "110a69de0f7427d7",
+      "title": "Brazil's coffee farmers turn to costly irrigation to quench global demand for the brew - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaUFOek5CLXVlck4wckxQR1VpdEtHSVAzcmJoa1FkZjVUeFVyTkdfMlRtRTk5X1E3a1FobFI3WkdudXRZZ2ZHOU9aY2pLUm1pSG1ZTlh2MWxWaDl4OWJ2RkxxWGtiX2hoTHVBbkVtaVVsSFpFRHo0dGdwMF91N1RaeG5pVl9RSFhmeFJQSktRM0tPOFFkWE9WMjJBUGQxY0FyNTVZenBtc2JwVk84alZyd1JJUHZEcWh1VlZ5ZEViMk9RalJ5Ymc?oc=5",
+      "publication_date": "2025-03-31",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8777973055839539,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ac9a232779769245",
+      "title": "U.S. coffee drinkers face pricier cup as tariffs hit key supplier - Fortune",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbHE4RURnekNiWVZUM2FzeTd3aHg0d083czd1NElPN2J1cEZmLTYxdkl1bkdab0t0QWh0ZkpNX2c3YU9ST3F3LWo4aWZidGNIRUlWQUFoS2J4UkF4dHpPbzJtOEhPdnRaX0VVZXc5eTA4UVZDQ3dvMEZGMFBXUmVSQ3ZIdGMyZUt5ZjVtTE1tOFlHT3hVQ2JN?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8474754095077515,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d42559eaccb368ce",
+      "title": "Trump tariffs put increasing pressure on US roasters - Global Coffee Report",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVWFBTm0yR1czdElIcEc3Ukd0SFN6a0l1eWp0TEpvM0RVMHZNcVoySW42NHVvS1VqeWRFRDhrVEVfWDZuXzg4Nk81akhSZVRNa0V0SW1udm1EcTNmdGdrVFNkVDNGMnJxclp4UWt0Mno1SF8xNkRNTTZnOUtqdG1kQlV3?oc=5",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8303992748260498,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "458beb759a80eba0",
+      "title": "The price of every drop: Brazil\u2019s coffee irrigation conundrum - Coffee Intelligence",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeVRaNUZsbDEydzU3TmhTMDRCaDVrbTAtalFpQkVXa1ZMcWFIbHlGak00NlhsS2lsRXNpNnJXWEtiRkVKOGlGSXRLX1gtcTdqdERmb0c4eHk2ODVwc0FnUm5nYnFzZ1lzNmgxSXItbThhb0hRenFWT1ZzRWdDbFY4cg?oc=5",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": true,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8917360901832581,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d93615ffbfe1749c",
+      "title": "Cocoa and Coffee Prices fell sharply - Sarajevo Times",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB1WnBPamVTQ0N2T21mVGtUdmhzTEwyZEZVNWhXbzZXVDdGby1iQzM4Qi1jU0dWY3dadWxCS2dMZ2VGdHowR2o1MWZ3ZG84WjVWQlVzQjhJV2tSUWFocWd5NWk3enZ5bklSaDZSMXF2eXbSAXBBVV95cUxQdVpwT2plU0NDdk9tZlRrVHZoc0xMMmRGVTVoV282V1Q3Rm8tYkMzOEItY1NHVmN3WnVsQktnTGdlRnR6MEdqNTFmd2RvOFo1VkJVc0I4SVdrUlFhaHFneTVpN3p2eW5JUmg2UjFxdnl2?oc=5",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8431098461151123,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c042ced53c255fa3",
+      "title": "Import tax on coffee pressures US roasters already facing high prices - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWGxxNnpENHEwVDZDOHBvQXFWVkJrMXRuWGE3dFFZZlpFMmhDY0ZvaGF1elZKTzFfaGw3RTJYc0o1ZkVDenllNzFaeTd3NkFvSkg2ekhkcGhJREtzZm5PeTlfbGRUX0FwNFlycmZQakFhQ21sR3dRUFBGb3ZCc3JLQkNCWVljNzZPbjBGWGxxODZQUV82eTV2V3BTZm53SE5WMWNqWFgtLVlieTE4WnhJczNyTUdOTTNzbElYRlFsNA?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8346045017242432,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "597fe57dae7f9a12",
+      "title": "Growing areas shifting focus to specialty coffee production - vietnamnews.vn",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQkh0T0FkYTJ4WDJPQm1zYi15VnJFZTllN3VLOEdLOFhlRUdZZGozSm10NnJ2b0RpTVlLM2M1UVFmZVp2cEh6Y0pBZHF6bFFHT2JQelk2S24zaUZkZ0xReE0wdTRPbHdObFdqaTY2bEROSy1tTW44ZVdlNVlNY3JuVXE5RDVfS2laZTM4ckZ1US02cVlBV3d2NlVMbkVkXzZlOXF5OUd3?oc=5",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8302302360534668,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "90ab7a2dda4ecd3a",
+      "title": "The 8 best coffee brands for an unforgettable cup - themanual.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5CSFJWS0dzV2kxV1A5LWFpeXNFendtYVN6X2tHT3F5c18wV0JuMXhHeHVvb2F4dGJ3MVhqcFBZdlhHWnM0M1F5SURrdTZ1NlpZRTJLQm1KQ1VmdklNSkJVbUpLTXUyeUwwNHpNUA?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.81885826587677,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "83ee92962ae06f88",
+      "title": "Everything that\u2019s wrong with Black Sheep Coffee, from a self proclaimed caffeine addict - The Tab",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVVhmNFZmX2NQVlBWanJmQXAxUEt3TWVwdkJuNDA4V3FYY3I1emtoOGg0QkQ2TDNkcG5wWXdQTVNKaHVxQUJ4T3Frb1dINHFIUTN1S3ZaMVlabTdRZDRWSThCTmg0bWRfemxiaXdibW9MdDlBZDBoa1ppc3RZUUJLam8wNWhINXhRWl9kaEQ1ZUFXTzNGeU9WdFlOTU1HZWo1M3NJQ0ZEQUtiZjhpeFByRWJJQkl5dw?oc=5",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8068876266479492,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "111256a62fb3df7f",
+      "title": "Coffee News Recap, 4 Apr: Trump announces sweeping global tariffs - perfectdailygrind.com",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8yZFJLX1dqUEFJNmFwYTY4R2RIWnZqc0JadlFEbTdFeDZUTW9WdjNCOUY0Vno1dkRfZlI1Mm1JX0I5cFV1ZUxzaHJndWhrdExUWHlyZHN0TG8tSVVkbFZZZUZ5UTB4VHB6NmsxNGlkN3NqWndWblVpNQ?oc=5",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8124402761459351,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "59600612ee7afe5f",
+      "title": "\u2018This smells like a mechanic\u2019s ashtray\u2019: The best and worst supermarket coffee beans - The Telegraph",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQmNydnpxRmF4ZF9aRHhmc09Qb21uSVlsREk4bm8tMGQzRmxlMW9pSXYyM2QtOGZ5eUoyclBpaGExRXpCTlprWjJuYlVmX3JMVHlINjJjT3gwOEw4Z3lNMXU4RG5TQlczWUlrcG5NOWowZExtdkVqam1ZaTd5TWtpVmV0SDZtMl9IQThZZGEtZDFXRnM?oc=5",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.81962651014328,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c58b59489402f617",
+      "title": "Coffee Board looks to expand cultivation area by 4 lakh hectares - The New Indian Express",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMm4yNlRqMkR2MkU0QWNlTG1Na0tacDJtRU5PTnBLcUk4cS1fRlNLWHZnaHl4REpzQXJSSVI5VE5tWkpuSkEwblhxRmotZGlrUHFFT0hGckNuVTJHUVFaRjVrWm5YYkpqeUpFanp2dVQ0YjZXUzlaaUZNVXJDeFVUMV9sMldVWWJtczlrNWdwckJfbXF5NVRzOGdvdWtoOS1nMnp3TjhCU3BUbTZkdzl5ODROcTd1aXJ4SUZQaDdVcHViQk5x0gHSAUFVX3lxTFBqSmJfLXp5RjM0R0FwT25XX2FUOFN0S250dFJWTmhlcUh1RzJxY1RNMW4zcG53c3FNWUlJSkhSUE1IV3hyUTFyNEhzTjZrQVRrd0hWR1BVSmx6dGM0ZDdfc2xzcWU5N3BKclR4bTRkelZnYTdsdk5GaVFjR0cxV05VRHZrOEpTeTJFMUhMUU9EVWM5LXc3ZzR6QjJCSVNDYm0wRWN6ei1FMGxRS3ZWNmFKNXhvcERVSnUyUnQ3eEViMWF0a05NRDZXdUdEWXcyckF4Zw?oc=5",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8022306561470032,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4111fcbdef118b36",
+      "title": "Why more Ugandans are growing coffee - monitor.co.ug",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMk15QlhYUmRSUWF1THViYXY0RElkWkVfRmNwLUR6R0NFUlMzbkZJaW5mNS1pZ3l0NE5qaU5YZV91YmUzOFRaZW5QQmQ2ak9NQktKVmlyeVJrWTdtdnc4QUdsMmZ1N2UzbHl6bTJTazVTbFBUa3hsVmd0cmR2NUdMNld2RXNLZERXLVcxZEFfUVpCcXo3LXVMOEd5RQ?oc=5",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8231865763664246,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "870d5e0494ad6f18",
+      "title": "Coffee Prices in Kodagu, Karnataka: Check Latest Rates for Robusta and Arabica - kodaguexpress.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQm1kaWRYcFN5WnVKckkwLTdEeC1qS0wteUN1NkhadGtQa3NLN0JhWlBLanNyZDg3YkFxZTdpaGY2MUFpbFBXTEJmNkdoQjRtd2ZnZTkxQkZCbWRuNFdhZzBhejE2QTNpZ0hzeU9FdmN2dTFOeUYtVUEtMjNiUlhnY1RCVENsTDg1a0RJWTJRd3RVUEl4aXczekh0cXZnc3Mya2pWY1N5X282UDZJQlBrNw?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.823409914970398,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "1f12d211bf9416d4",
+      "title": "Brewing Success: Araku Coffee\u2019s Journey To International Acclaim - ETV Bharat",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNzAwNWZhRHdwclhqc1c4cTJWUG5MbFdVN1M2eWY2RmNSakhFQ29zZzRiUkQ0UjdRclh1dE1YaFhDMTlqVU81TEtGaUMwaTdXd3JPVXQ3dF9yU05ySXVSX2lVMU5vYXh5OXlGb3NMV0lROWQybHJfMHBXMUVWTmJtMW9wMlg4d1VXTXpsemhQWDliUDg4T2lMdWc1MUYwMjA0YlpKSlZJa3E5WXJ1dkpWVVdCcDA3eTNOUkhyNNIBwgFBVV95cUxPbUtycVQ5SDJ5RHJzc2VpTHF1NVNkTEYyakM3TkxNZG5idmlMWU5XcnNBWGNsTjY4WWIzMkt0T0tiMFpmVVZLLWpWb2lNNGRBMWtfZUdoQlZLM2Q0MzkwZndEX25xM0FveWI2akxTSTR0bDBJTFNCalRXa0NhTEloYlNYa3VodFk5M0M3WWxvNkpsUE9oZklXSnBmNjAycmRkT1Y0ZnR5d0RMUjNEVDZMVkxZLUpuQjFRTzU4UWY2NW14UQ?oc=5",
+      "publication_date": "2025-04-06",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8201090693473816,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f4e7a2c80b42e8f1",
+      "title": "Dare charges up with strongest RTD coffee yet - foodanddrinkbusiness.com.au",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYmk2UkRjWXJQTkZEekdqbDR3U3NGWmlfQUpSY09Wd256MnlDcG5lbHdfNVYycmJFanpqQkNqVGgzNWU1UVIwa0o0eXRNZWV1RmdadnJ6Y21XamRVZlkzSXhaZ0hhUVlTejM3REw1NmZHTzEwaThubnBRRmNtY01pdXRtWDRrZWgtdjRvNk9MdWpZUEh1NTNzSVhuWjdkbFk?oc=5",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8438540697097778,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c926b2f1b46c6b2a",
+      "title": "#KapeTayo: Biyaya X Manila Coffee Festival 2025 - ditosapilipinas.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcnpnZFdwUnVTRnFJQU9EQTlDSGVGZXBMaWJvYUpBT3dFbFl2OXltY2tsQ0kydE5xVjJUZ1BwRE15NDkydDloM05NZE83Nlg0bTg1VTBCcWtOOEFBb3IxN1Q3aFZJYlNXSFgwZkktRXF6bWlPQUlnNGxGbVFoM0dPVTRBQWJhRzF2STZUNnhBSlVJbUw2NzZYZDRJNEdTX2dEVmlKN3JFc1NqSGhiZ0hjVkhWbno?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8318470120429993,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "612122268cbf33f4",
+      "title": "Meet Yssa Almazan | Owner of Flow Good Coffee, a coffee pop-up based in LA - SHOUTOUT LA",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdDhSd3Z0ak1OeGFjZThVMExRel8zX0QyRGM4cnpNTG9jb2NRQ2dnYjFvVmdtdFBxSEZpSTZhaFpBSWt4OUZzRVc3bXJoemtQMkl0MjJKOTRTVDdKMU4zSnNuYUNVcTdiU3hiZmFKNGM3Q3ZFc3ZDalphT3Y1ZGtMZkhSQjdmdld1bnFaSjhqWC1kNGhWeEEzZldHcw?oc=5",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.813468337059021,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "fc2d4ab08cd9235f",
+      "title": "Do coffee grounds deter slugs? We reveal all - Homes and Gardens",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZ2NUNkxrcVZPbEYyRjRZRS1wWmFRV05xaTJsTHNlbWhGMnhwZlo4RGpDeXUxRVVJQlJMUmF3NVJaNllKZkdvT3lwTVZDYTZ0WWY1S2NiQ2NqRmp1ZGU4UHFwODIwQ1ZCbGVjYjVUTnR5THNteTREc0tIWnpjY0ozdmxsQzZsaGc?oc=5",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8170809745788574,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3d3be04e4f8a900b",
+      "title": "Dutch Bros\u00ae Announces Epic Drink Duel - Dutch Bros",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBINVdKQXdCTEEzbXVFZkVXZHVaRXJnN0hBX0JpdGdRYU9hLTh1UjRHSVhpejFYMlNQUnhIRmVPVk1tUW9HNHNPdm84aUNubUpybWJoTUlGeG1XRkZUMU03N2Q0VHhhTnFUWnlj?oc=5",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8080748319625854,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f4c99d3b319281fe",
+      "title": "Nestl\u00e9 expands Nescaf\u00e9 RTD cold coffee to India, MENA and Brazil - Tea & Coffee Trade Journal",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNEFzZjJhOTNKX1ZuNTR2NTdhQ2tYemFiUHI0WWlKX010MGxzSnlXTW5RWHlfX0p6WmpySmpXV2s4R1FZbkp3em5hS0htWHVyX0M2S2o2R2xIeDctVzFYZS0yZzlQNTd0Mk9tYzlyMVVMLXRSQVFfZzlUOTVyaUdwUHNGVWVVOFZTUDFQTHZXTnVBaWZ3TkoxUzFzZmtQbWFMaUs2MTBacw?oc=5",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 2,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8416498899459839,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c2dac0747c98b989",
+      "title": "Loudoun Co. coffee roaster not \u2018brew-ding\u2019 over new tariffs - WTOP News",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNWHBHMGJWckplMXZsakpOS2puaURPOExVekFoYzJwVDhRQTJ3bWdVdlQtbGNzM1NHUGx6ZVVPc1ZLVWE1bVJMbFVWN0RPZE0zNVh6RzNPWmRCZk95MGJsZk1ySFBoYkg1TDB4aGJNTVJEX2FDTGFXZWFtYXN2TkJSWGZ2V1dQczdiUGppa193b1RIU2NJY0E?oc=5",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.826055645942688,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8c4799df04f2014d",
+      "title": "Shoppers will pay more for bananas, coffee and toilet paper because of tariffs, trade group says - CNBC",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMWtrcmxpRDFoMjBIUVp6Zm90b1Fvc2htX196WnZCXzZ3TUk4enlhRFRlQjh3UHlHX2JRNzdkb3ZUYXlXcUExLWpRbS1ScEV3MnduRHZRVWpRZ0tCdURFYi1pUGlVUTZKQUExcWZYZ09xX0tZTmtXVG1kWUpMalo4UmRGd2I0cjJESVRpN21OUjFqUUY1bGtDM05rc9IBoAFBVV95cUxOOU9kckRjWUhrUHJOX0JOVm1vYnE5bzloQ1Fhc3M5NHZFLUVuTVlMb2ROU0ZmOWtXYzNMMkV6SUNud05zX3dBRGdzSE14NXRPY3ZTN3FtR1ZDWWhTVVBlNTdQcHVjbVFmMjNITnlHc3VaSkx4Wllsb3BNTlozdF94RzF1Q3g3SlQteEdzcFhvVF92cjBCUTd4VnpoOVNtXzB6?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8034321069717407,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "08677dfd0a0ac8b8",
+      "title": "China\u2019s 2024 Tea Export Volume Up, Prices Down - STiR Coffee and Tea Magazine",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWVpOYXZkWEd3ZzhDLWgza3BtVDVocGt1MnJCN000S2NtRHpUdXFEMFdweEJrb0xMeWN0YkZwUUs4RUI0VWJGMzE4RElBeDdtOTFCQmxKUktZYXJ3UWZWb19VNkZ4NHlLbXRYSTJyV1BUX1ZyVlFjakJnTlpSRXJYUnZPUHhLVk9YZ3VtSUlsR3pjT1l5NDQzYmN6WGI0UGc?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8250870704650879,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ec73c8ca390a1017",
+      "title": "Lavazza plans US expansion amid Brazil coffee tariff concerns - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOUF2LWx1SjhVcDBSSjQ1RVpJTWpxSnU3ZXVKRV9YZjNQM1UzU0pnTjlOMEp0V1QwQ2QybHc4U1RFUVNPNGdqYVRqaXhyV2RocUZ6MC11QllPR3RXVDR4VzhKTksyNmRNUkFvZmRLSjJOaFNrY1ZnZG5lTXl4cHgzd1pFSHFMTlVfSU9IWXNUSVhJaDA5LW5PQnNJOFpqcmd1Nm4yVUxDLUNuSlhwSkJTWlpfdWhVb0hUQzJYTWV6NA?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8479936122894287,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2352b885af9d2bf1",
+      "title": "Study Suggests How Color \u2018Should\u2019 Be Used to Market Specialty Coffees - dailycoffeenews.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNkdGdTlaUEhObVFQcVdFTjZKcWJQTmF2bDI3WlU1NmZPeXlYaEFYVXktQjlETTJBVEFIa0tWZWVjRHJfLUFkeUEza3lWX2Z1VngyYjFpQ180RklDWTRnQTdxeE9pOWhudjhpUGFpYy14RVMyVktORXlTRzRqUTNzdFpsR1A2QWNpSlJTaGRqamFmTDkyd1E3N09hM2R3REFkT2ZMX3FyN1NBMUU?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8301520943641663,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "61abca051383593f",
+      "title": "What Will Cost More After Trump\u2019s Tariffs? Coffee, Wine, iPhones Face Price Hikes. - Forbes",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNT0xsdW1ZQ0R5M3h2Z2NEMkljT0RnQkhFWXU4cmZPMkJ5TFNPbzNFaDRwTTJuamlmWEZ4NzU0b294YjdiRHRyR3MxR1FIekR5UDd6YzctalZTRHpFZ29VdzRxSjl2eEZTM3JRUkFrTTBiVEhKcWpfT2F2Q0xsSENvSERmVWlXMzg0X1dPNVE0cUNYSHZnNXA5eXhBTnlKak85MGhlMXd6YmhJa1J5WDZMUVJKY0g4NXJRTUJVSU1uSzNGWmtZMkhVUDlxaDhzOFNITnNr?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8070424199104309,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d9e1889d37c88dfd",
+      "title": "DMV and Pennsylvania Chocolate & Coffee Festivals Returning in 2025 - dailycoffeenews.com",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZFliNWtpY3kzRUNnbnVLLUIxQ2lMZ0U4aEJuSnlybG5VcU9EQmRJUHJQN1NDa1FRNk9tT2Z1MmkxdktaUWdkX2xJY0Z6RVozNXRlR3gzRGV0aWpSOUpxenFOY2ZaMHdpbE9lWWlhekNqOTZoN1JIZTdpTHB0Tl9Qeld1d2RmUHN5b1l0MXI5U292WnU2b1NYd2FJcm5fUkVXU0ZjbktCWmY?oc=5",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.808079719543457,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2f88e9fbe420abda",
+      "title": "Starbucks unveils two new healthier RTD beverage lines - Tea & Coffee Trade Journal",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNM3p2bGxHUFM0YzV2aHA0SnFPTThaeXplMDJlVUVuTldxeVlqdDdzRThUSndFTUt1ZVJwcXFXV0RabzY4MjQ0UHM1TG9lUlo2T0ZzUFUxQXRTSHJnSnN1R1pST0F6bl93WnYzWEJrN2dyX2wxaGdscmFsQ01FWVd6Y3EtdmFiMTllT0MyVkIwcktFYzJnTWxLa3pKLWpzS01POGxXOU55SE55blhEazE5UTY0REswTUZVM09NVGJPbzZJZw?oc=5",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8071329593658447,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "cc32e5b4514be576",
+      "title": "A Guide to Manitowoc\u2019s Favorite Coffee Shops - Seehafer News",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaEJUeUVGdXhsM3VWZVJKMDZtSzVORTZ6WWtsN3l3T0R0a2FqZVZTbGpaSVlueG1veWI5MUJyelVqcVBkMlFRUnVvZHVFU3hwRVJDbk84RlgxUXRXeHpzcVlyXzhXakZvWWgxMG91cTdZMi1WZ2JzMkJTZ3V5ekp6MTZJYlJOTWJEdjFaSA?oc=5",
+      "publication_date": "2025-04-05",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8039860725402832,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "e240ed13a9c4b758",
+      "title": "Which products will be affected by tariffs? Here's what Trump's \"Liberation Day\" could make pricier. - CBS News",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9UaFJ1QWpkOVFhTkpSdXFwNUc2bjJQdXYwVkhPLUNlQUxDc2VGdkdha2FFRVdqZmNUemtvdU9TYjJKREVzQTdWeDVmaFZOMTROUHJmT181SldzVERzSlAyc3JEWjFla0o2NkI4NmNOQjIyclYt?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8054273724555969,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "02cff62546fca3df",
+      "title": "World Civet Day 2025 reveals the dark side of a luxury coffee - Earth.com",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWUVMMkVZWlNkVVhRa25rNzUwMWhuelFkWHkyNTJua1JHbDFxLUd5NzNGMU02R3dNcHVZcUUyNVJ4c2JfakV0VmZYTW9hRFdTVUNxbEJCU29Pa09DT2JsTDdDVHlLeGgxa2QyMTJmV0lfRHljbU8tbnZXNTdsOWZGb0dYTXFFM3pydTh1bGlVbDJTXzlXRGIw?oc=5",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8399814367294312,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d81199b458857fe5",
+      "title": "Are workplace coffee machines bad for your health? - hcamag.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPLXZaUndlVld5dFBfaEN4RW9TT1FaUkNubEpLT2RTMXI5U2NlNk5jekY5UVdvSDQyVURCUDJUY2JWVUhVV3pzNnctbEJTbXNGWGltT3FPT3V0dW45MmMtZXZqZzdzZVB2MTBUS3dtcUNJdjFFYmt4eXpHV05Ba3ZERm5rUnNFM1BZVFV2VkV1VFNFaTJfUW9uTkF4bXloZGk2ekh2bFJGMzFwZw?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8060067892074585,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a63915b13434395d",
+      "title": "Nescaf\u00e9 expands Ready-to-Drink cold coffee range - Global Coffee Report",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBhRERibHNKd2UwVUN5QzgzSHZQdzhZNUdqb2xZMVMzVjNZWExzaXZLREFqV002eGZaRGNQbHM0UHdYWnNDanJOV2xYa2FDUmRKUG8zMUVXQ0dwdmtPR29BM21KYmltT1NzaVhpTTJUTUNQQllOcTZ0LXJCVng?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8400007486343384,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7a57b2c6b487fb49",
+      "title": "Nestl\u00e9 expands ready-to-drink cold coffee range to India, MENA region and Brazil - bestmediainfo.com",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRHJodXEwY3ZlV0ZqSG9qQnF5bFZ0UU0yMmVEQXNFcEV4bjEwQ2dTaHZoWENmZWEtUmxQUGd3TkF6ZnMtNW5MRjl1dlM1bThiejlXY0FDNVhJNkFwSEdDYzIwd3J2RVgzS0FMcGZoNFhIc1AwaEt4OHN2azZZZ3plS0dyMTM3Rk1yM3pPdm8wdEdDbEhiMV9tTmZmT1hmQ1hBVml6NDV2cDVFWHVhS1lNVmEzTzB2dVc1N2daVzl3cjl5V3gzblJnc3lrQmZpaGhCNDBNRng2U0xzWnfSAdsBQVVfeXFMTURyaHVxMGN2ZVdGakhvakJxeWxWdFFNMjJlREFzRXBFeG4xMENnU2h2aFhDZmVhLVJsUFBnd05BemZzLTVuTEY5dXZTNW04Yno5V2NBQzVYSTZBcEhHQ2MyMHdydkVYM0tBTHBmaDRYSHNQMGhLeDhzdms2WWd6ZUtHcjEzN0ZNcjN6T3ZvMHRHQ2xIYjFfbU5mZk9YZkNYQVZpejQ1dnA1RVh1YUtZTVZhM08wdnVXNTdnWlc5d3I5eVd4M25SZ3N5a0JmaWhoQjQwTUZ4NlNMc1p3?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8458952903747559,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a10092a67d999d35",
+      "title": "Nestl\u00e9 Expands NESCAF\u00c9 Ready-to-Drink Coffee in India and Key Global Markets - Indian Retailer",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeTgwSG5wc3dvZTVyS2VkVkFYRWhpVW5KYWRkS3NudjIwRk9jMVdFeTZlUXFPb1hfRUk0NmZBZWNqOTNFMWw2RkZ2Q0xXV1htSFYtTzlrR0tmWHVxTC1ZeldXanFTeG5WaEkyMXZUZ1FOZ2xDY0VqQm42RldTRjNIMEVxRFF3d1ktSzVJcjROR09sRHJZZUxQQ2dLWk4ycGpDZzFhbQ?oc=5",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.81879061460495,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "759ff74032c2c84b",
+      "title": "NESCAF\u00c9 Ready-to-Drink Expands Its Reach, Captivating A New Generation Of Coffee Lovers - Passionate In Marketing",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNm56b195MlVtR1I3QVg2T1lydVRSVzRUd0c4YkJubkQ1N3JtS3h5cmJHdG5PWjkteFFTVm5RZFR4MlJBMFBUcGNUUFl0X1JlT0dVdU5xanFkZWNuQUI5MmhKeEpST0llX0JCNFhRdUtyZ3J6MHNnSTlQMmcydG4xTXdJR3p1RW1odkdrNFVYcjhrT0tnMDYyRXRLdmJuWURxUTZtaldkTnJXSHBKWEEtbTM4ekRrbFFkWm00QWljX0RlSmc?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8004523515701294,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "42a8189c75802367",
+      "title": "Ready To Drink (Rts) Coffee Market Size, Share | CAGR of 6.8% - Market.us",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Nd3dqdmJ1Yk0zWXFkd1pSUnh1R3FuZFBpV3RzOFZ2RFRmd1FoVkRfMmxoMzJ2bThpb245OWVXWWh3bUY0b0hUTnhJeFZrakdBNkdwRnNRREZuOWJqSU1pUVM1Uzk0Q0J2dmc?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8010812997817993,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "db2c3cca9fb6f4d1",
+      "title": "Fastest growth in five years for the European branded coffee shop market - World Coffee Portal",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSzdNenhJUGVIRy1fSlUxSmV4QmVBN3VpYWdhc2xzYk5TckI4ekpOdlZpWVNZcDFSWHZLVG5Wdzc1SkIzbWM4ZjNBSkdwcUozZVZRelpFb3AyUVpVa2NhTnFpbkl2bFZKZndlWndralhRczd0YVhwX3lLdHdvVUt1VWpGM1JHN2Z5RS1oalRibUNON3MzMFA0cmVMeGJXSXFWWEEzODZkMGVsOUxuQUdiX0h3?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8176722526550293,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b071b179d7c408e6",
+      "title": "Standing out in the crowded RTD coffee category - foodbusinessnews.net",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQU0tIaDFGNmk0SXlTQS1Hbk0yVWlacXhYSnZpTTF0WWIxSkxGVnZMNm5BNmNtWF9YX19zdlhKeThRbjZ2c2ZZNGRJR2hGb19KOFNBdExqSTR6Qm9Ld1h4QnduM2U5eTBVNVZCQi1CRE9UTWRkT3dNb0hfTFRsWlExc2NFNUVUNjBLUllza2JoaVA2NWI2aE9ZUEpDVQ?oc=5",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8253173828125,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3e68258425840893",
+      "title": "Coffee and tea trends: Gen Z demands pick-me-ups with functional benefits - FoodNavigator.com",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVmpGY09KaVBhZ2Rhb1hnZU51UXZsMTFMcnZiVlpLRUM3VFhfZ0NfeEJSNkdZSHN1NHd0cE92eE5mUXJNQzVONmJFMkpFOHU1c2RWUWYyWF95UkdER2RUVHhNN3hUWGNzUzhaN0Ffd0YyTGpOQTROV044TlpoU25YUFVvOA?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8146519660949707,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "35cb0493396ca283",
+      "title": "Buzz kill: the rise of decaf coffee - Global Coffee Report",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5FWXp5TVFTRkRhbVpDakRQUDV1dTR3ZWZPNXFqZWVqRDhxR2gtSEw5VURnS040c2ppZXZFY3dtbUFCSzRzYncxWXpPcGU0SjJWZ1g5UWUxR0xySlA2eTFWLXdlY280amN3RXc?oc=5",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8440366387367249,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c34b734e02217c58",
+      "title": "Lavazza coffee tab innovation could disrupt the single-serve segment - Vending Market Watch",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPMlFTLW5MX012MklNYkhYWlN4a29Bb0ViVzc1TWdtSnBVM0NLTVgwUnhTU3ZuZHBEZm5aNVc0NEV0UDhJMXVURTM2ZDlPTGExY2JKRUtfVUN1MzhzTUlaYnllNHdLZnR4OWJqWmhJWUxmcGZQUE9GTVBicl8zZHgyaDNvRWp1ajZpd2xwdzRnMWhMbFI4bkc1eDByOVZfSkoycWNZOEx5NnNuZ2R4Z0N6cVJnWGxsaTRzT3pQUU5ycXdOcmE5c0xCdFF3djRFMXlGdUhRLUo2QlBzeVFzYzZ6WXotWkxIcnlOb1Bod3o3bmthblE?oc=5",
+      "publication_date": "2025-04-04",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8425852060317993,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c3af5a5863f09dfb",
+      "title": "Coffee craze hits China's smaller cities via budget-friendly brews - China Daily Global Edition",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQY01PVl81dnpNaVdfQktnTmNmbUdkMzR2LUc3TG1IN0lxYTJrWW5KLXI0ZkpaTG0ycjMzQkNETVFXVGpLSXJsRG5sV1Joakc1SHFrbDF1Y0FxaEZiTHhjVk1QYTBrajJROUlUS1huZV9RcmlCXy05S0hyZ2JxZkpNZmNB?oc=5",
+      "publication_date": "2025-04-07",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.815942645072937,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f4bd37980ec7d410",
+      "title": "Should roasters offer mushroom coffee? - perfectdailygrind.com",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNT0dNaklfMk81QWdyNEJneFA4TEVnMmdkdDZ3Y3lreVIwZU0zTWxmcXpOWHVXeFZnQ0M3YzRENXRUcno0THZXSnhpcWdEbHFXbEc5LU9kYU1hN3luc3NqRU5fWUxjMEk3ckRPdHNOVjg1bEdNYnBuUmRMMVhZMnBlMC1B?oc=5",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8087607026100159,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2258c821979704de",
+      "title": "Beyond beans and machines - Global Coffee Report",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1QdktIS0JVRnhGVWFma2ViNTZEZS1iZzF1dFlrZ1cydXAzNXNZd1dVZDlwdV9jSWNvcXFyMXVPTW52eERBYUtNZGppbU5oVmRQaEUxVExBVG9WZ2FGcEE?oc=5",
+      "publication_date": "2025-04-02",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8219227194786072,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "374d9b5099159fed",
+      "title": "Denmark\u2019s BKI Foods appoints new Chairman - World Coffee Portal",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQjcySzlJc0t0OGFFV2lpRnNpcTcwdXN2U3FvQlkyWGRhNGN0aGNvVzZ1UWE3aFVLejIzUlAteU5YTUozbUJfa21zdjR0X25ObE9vOUpTSHN3MlFyY3BhbnBKMkhub25sN3d5dG41Vi1seXJjVWJCcktHUEt3Mlh6dlV0NzdwZTg?oc=5",
+      "publication_date": "2025-04-03",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "found_by": "news feed",
+      "passed_gate": false,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8136845827102661,
+      "direction_consistency": null,
+      "anomaly_query_score": null
+    }
+  ],
+  "decision_mode": "blind",
+  "direction_summary": {
+    "consistent": 3,
+    "inconsistent": 3,
+    "neutral": 6
+  },
+  "direction_summary_wordlist": {
+    "consistent": 3,
+    "neutral": 4,
+    "inconsistent": 6
+  },
+  "guard_rule": null,
+  "evidence_recency": {
+    "n_dated": 13,
+    "n_fresh": 6,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 3
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The -5.7% day-over-day move (z-score -2.66) on 2025-04-07 is matched by 3 reports published that day that give a reason for prices falling: China's retaliation to US tariffs pressured soft commodity prices (source: 134648a16edb793d); US tariff policy affected export market prices, causing domestic prices to fall (source: bcc09e918f98355d); China imposed 34% tariffs on US products in response to Trump's tariffs (source: 750ed1d1201730e1). 3 reports from the same day point the other way: Trump's tariffs on coffee from certain countries are expected to drive up prices (source: 77832632dee963d5); US tariffs will make retail coffee more expensive in the US (source: 2281a4b9797a53d4); Reduced production in Brazil and increased demand are driving record prices (source: f3ada022b2dab2ae).",
+    "citations": [
+      {
+        "document_id": "134648a16edb793d",
+        "supports": "China's retaliation to US tariffs pressured soft commodity prices.",
+        "quote": "quedas acentuadas no fim da semana passada em raz\u00e3o da retalia\u00e7\u00e3o da China \u00e0s tarifas dos Estados Unidos"
+      },
+      {
+        "document_id": "bcc09e918f98355d",
+        "supports": "US tariff policy affected export market prices, causing domestic prices to fall.",
+        "quote": "do \u1ea3nh h\u01b0\u1edfng gi\u00e1 c\u00e0 ph\u00ea tr\u00ean th\u1ecb tr\u01b0\u1eddng xu\u1ea5t kh\u1ea9u v\u00ec ch\u00ednh s\u00e1ch thu\u1ebf quan m\u1edbi c\u1ee7a T\u1ed5ng th\u1ed1ng M\u1ef9 Donald Trump"
+      },
+      {
+        "document_id": "750ed1d1201730e1",
+        "supports": "China imposed 34% tariffs on US products in response to Trump's tariffs.",
+        "quote": "decis\u00e3o da China, maior importadora global de commodities agr\u00edcolas, de impor taxas de 34% aos produtos americanos em resposta ao tarifa\u00e7o de Trump"
+      }
+    ],
+    "confidence": "medium",
+    "reason": null,
+    "blind_evidence": {
+      "rule": "freshest",
+      "fresh_trading_days": 2,
+      "max_age_trading_days": 3,
+      "n_recent_documents": 194,
+      "readings": [
+        {
+          "document_id": "77832632dee963d5",
+          "trading_days_before": 0,
+          "price_move": "up",
+          "pressure": "up",
+          "direction": "up",
+          "kind": "report",
+          "when": "forecast",
+          "move_pct": null,
+          "cause": "Trump's tariffs on coffee from certain countries are expected to drive up prices.",
+          "quote": "President Donald Trump's tariffs are expected to drive up prices on coffee from certain countries",
+          "quote_found": true,
+          "read": true,
+          "passed_gate": true
+        },
+        {
+          "document_id": "f4e7a2c80b42e8f1",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "none",
+          "direction": null,
+          "kind": null,
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "d93615ffbfe1749c",
+          "trading_days_before": 0,
+          "price_move": "down",
+          "pressure": "none",
+          "direction": "down",
+          "kind": "report",
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "33ec28752bc5b1be",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "none",
+          "direction": null,
+          "kind": null,
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "e5c21a4767c1d260",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "none",
+          "direction": null,
+          "kind": null,
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "2281a4b9797a53d4",
+          "trading_days_before": 0,
+          "price_move": "up",
+          "pressure": "up",
+          "direction": "up",
+          "kind": "report",
+          "when": "forecast",
+          "move_pct": null,
+          "cause": "US tariffs will make retail coffee more expensive in the US.",
+          "quote": "Thu\u1ebf quan s\u1ebd khi\u1ebfn gi\u00e1 b\u00e1n l\u1ebb c\u00e0 ph\u00ea \u1edf M\u1ef9 \u0111\u1eaft \u0111\u1ecf h\u01a1n",
+          "quote_found": true,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "134648a16edb793d",
+          "trading_days_before": 0,
+          "price_move": "down",
+          "pressure": "down",
+          "direction": "down",
+          "kind": "report",
+          "when": "same_day",
+          "move_pct": null,
+          "cause": "China's retaliation to US tariffs pressured soft commodity prices.",
+          "quote": "quedas acentuadas no fim da semana passada em raz\u00e3o da retalia\u00e7\u00e3o da China \u00e0s tarifas dos Estados Unidos",
+          "quote_found": true,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "cf004c92974d8da1",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "down",
+          "direction": "down",
+          "kind": "pressure",
+          "when": "unclear",
+          "move_pct": null,
+          "cause": "Colombian coffee production grew 36 percent in the first quarter of 2025.",
+          "quote": "Producci\u00f3n de caf\u00e9 colombiano crece 36 por ciento en el primer trimestre de 2025",
+          "quote_found": true,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "f3ada022b2dab2ae",
+          "trading_days_before": 0,
+          "price_move": "up",
+          "pressure": "up",
+          "direction": "up",
+          "kind": "report",
+          "when": "forecast",
+          "move_pct": null,
+          "cause": "Reduced production in Brazil and increased demand are driving record prices.",
+          "quote": "h\u00e4rledas till minskad produktion och \u00f6kad efterfr\u00e5gan",
+          "quote_found": true,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "bcc09e918f98355d",
+          "trading_days_before": 0,
+          "price_move": "down",
+          "pressure": "down",
+          "direction": "down",
+          "kind": "report",
+          "when": "previous_day",
+          "move_pct": null,
+          "cause": "US tariff policy affected export market prices, causing domestic prices to fall.",
+          "quote": "do \u1ea3nh h\u01b0\u1edfng gi\u00e1 c\u00e0 ph\u00ea tr\u00ean th\u1ecb tr\u01b0\u1eddng xu\u1ea5t kh\u1ea9u v\u00ec ch\u00ednh s\u00e1ch thu\u1ebf quan m\u1edbi c\u1ee7a T\u1ed5ng th\u1ed1ng M\u1ef9 Donald Trump",
+          "quote_found": true,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "c372908f26af4999",
+          "trading_days_before": 0,
+          "price_move": "none",
+          "pressure": "none",
+          "direction": null,
+          "kind": null,
+          "when": "unclear",
+          "move_pct": null,
+          "cause": null,
+          "quote": null,
+          "quote_found": false,
+          "read": true,
+          "passed_gate": false
+        },
+        {
+          "document_id": "750ed1d1201730e1",
+          "trading_days_before": 0,
+          "price_move": "down",
+          "pressure": "down",
+          "direction": "down",
+          "kind": "report",
+          "when": "previous_day",
+          "move_pct": null,
+          "cause": "China imposed 34% tariffs on US products in response to Trump's tariffs.",
+          "quote": "decis\u00e3o da China, maior importadora global de commodities agr\u00edcolas, de impor taxas de 34% aos produtos americanos em resposta ao tarifa\u00e7o de Trump",
+          "quote_found": true,
+          "read": true,
+          "passed_gate": false
+        }
+      ],
+      "deciding_age": 0,
+      "deciding_kind": "report",
+      "supporting": [
+        "134648a16edb793d",
+        "bcc09e918f98355d",
+        "750ed1d1201730e1"
+      ],
+      "opposing": [
+        "77832632dee963d5",
+        "2281a4b9797a53d4",
+        "f3ada022b2dab2ae"
+      ]
+    },
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "blind-v2",
+    "latency_ms": 134003,
+    "evidence_document_ids": [
+      "77832632dee963d5",
+      "f4e7a2c80b42e8f1",
+      "d93615ffbfe1749c",
+      "33ec28752bc5b1be",
+      "e5c21a4767c1d260",
+      "2281a4b9797a53d4",
+      "134648a16edb793d",
+      "cf004c92974d8da1",
+      "f3ada022b2dab2ae",
+      "bcc09e918f98355d",
+      "c372908f26af4999",
+      "750ed1d1201730e1"
+    ],
+    "evidence_packing": {
+      "n_input": 12,
+      "n_packed": 12,
+      "excerpt_chars": 600,
+      "estimated_tokens": 3132,
+      "max_tokens": 3299,
+      "dropped_document_ids": [],
+      "truncated": true
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 3,
+    "n_ok": 1,
+    "n_weak_support": 0,
+    "n_low_rank": 2,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "134648a16edb793d",
+        "id_found": true,
+        "support_score": 0.779,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "low_rank",
+        "support_rank": 6,
+        "support_rank_of": 12,
+        "support_rank_method": "semantic",
+        "closest_document_id": "d93615ffbfe1749c"
+      },
+      {
+        "document_id": "bcc09e918f98355d",
+        "id_found": true,
+        "support_score": 0.793,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "low_rank",
+        "support_rank": 5,
+        "support_rank_of": 12,
+        "support_rank_method": "semantic",
+        "closest_document_id": "d93615ffbfe1749c"
+      },
+      {
+        "document_id": "750ed1d1201730e1",
+        "id_found": true,
+        "support_score": 0.802,
+        "support_method": "semantic",
+        "shared_numbers": [
+          "34"
+        ],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 12,
+        "support_rank_method": "semantic",
+        "closest_document_id": "750ed1d1201730e1"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

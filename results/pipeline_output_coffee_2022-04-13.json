@@ -1,0 +1,181 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2022-04-13",
+    "price": 225.0500030517578,
+    "z_score": -2.0169379528818854,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -3.6601039504977604,
+    "cumulative_pct_move": 1.4424146315998099,
+    "cumulative_z_score": 0.3014313342081839,
+    "direction": "down"
+  },
+  "price_description": "-3.7% day-over-day move (z-score -2.02)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (3 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 2,
+    "network_successes": 5,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 145,
+    "dropped_out_of_window": 5,
+    "collapsed_duplicates": 12,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "4_document(s)_above_threshold",
+    "best_score": 0.8845275640487671,
+    "accepted_document_count": 4,
+    "accepted_document_ids": [
+      "b16f696056244763",
+      "52492fa03f05b1fc",
+      "57ad6ddd8e2be6e6",
+      "7424e3529f6bd2b7"
+    ],
+    "total_documents_considered": 145,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T15:20:55.988476+00:00"
+  },
+  "documents_retrieved": 145,
+  "sources": [
+    {
+      "document_id": "52492fa03f05b1fc",
+      "title": "Peabirus : hEDGEpoint v\u00ea consumo de caf\u00e9 mais fraco no Brasil ; primeira queda em v\u00e1rios anos",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=97317",
+      "publication_date": "2022-04-12",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3045,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8587799072265625,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b16f696056244763",
+      "title": "Brazil coffee consumption up 1 . 7 % in 2021 , says industry group",
+      "url": "https://www.devdiscourse.com/article/headlines/1993703-brazils-coffee-consumption-up-17-in-2021-says-industry-group",
+      "publication_date": "2022-04-06",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 1449,
+      "n_copies": 1,
+      "syndication_domains": [
+        "devdiscourse.com"
+      ],
+      "retrieval_score": 0.3996,
+      "semantic_score": 0.8845275640487671,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "57ad6ddd8e2be6e6",
+      "title": "As Consumer Prices Rise , Coffee is Canary in the Climate Change Coal Mine",
+      "url": "https://www.newsweek.com/consumer-prices-rise-coffee-canary-climate-change-coal-mine-opinion-1696063",
+      "publication_date": "2022-04-12",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "newsweek.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8522448539733887,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7424e3529f6bd2b7",
+      "title": "Consumo de caf\u00e9 no Brasil cresce 1 , 7 % em 2021 , diz Abic",
+      "url": "https://istoe.com.br/consumo-de-cafe-no/",
+      "publication_date": "2022-04-06",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 4018,
+      "n_copies": 2,
+      "syndication_domains": [
+        "istoe.com.br",
+        "istoedinheiro.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8518731594085693,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 0,
+    "inconsistent": 3
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 4,
+    "n_fresh": 2,
+    "fresh_within_days": 2,
+    "newest_days_before": 1,
+    "median_days_before": 3.0
+  },
+  "explanation_result": {
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 132059,
+    "evidence_document_ids": [
+      "52492fa03f05b1fc",
+      "b16f696056244763",
+      "57ad6ddd8e2be6e6",
+      "7424e3529f6bd2b7"
+    ],
+    "evidence_packing": {
+      "n_input": 4,
+      "n_packed": 4,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1817,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    },
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": "medium",
+    "reason": "direction_guard: 3 accepted document(s) pointed against the move vs 1 with it",
+    "withheld_explanation": {
+      "explanation": "The price decline was driven by reports released on the previous trading day (April 12) indicating that Brazilian coffee consumption would fall for the first time in over a decade due to economic slowdown and high prices, alongside earlier reports (April 6) that the 2022 harvest was expected to significantly exceed initial forecasts, leading to a market reassessment of supply-demand dynamics.",
+      "citations": [
+        {
+          "document_id": "52492fa03f05b1fc",
+          "supports": "Reports that hEDGEpoint expects Brazilian coffee demand to fall by 4% in the 2021/22 fiscal year, marking the first annual drop in over ten years, due to economic deceleration and rising consumer prices."
+        },
+        {
+          "document_id": "7424e3529f6bd2b7",
+          "supports": "States that the 2022 Brazilian coffee harvest is expected to exceed 60 million bags, significantly higher than initial expectations of 50 million, and notes that prices had already fallen roughly 12-20% from February highs due to this improved supply outlook."
+        }
+      ],
+      "confidence": "medium"
+    }
+  },
+  "faithfulness_report": null
+}

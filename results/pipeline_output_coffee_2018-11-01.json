@@ -1,0 +1,106 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2018-11-01",
+    "price": 117.8000030517578,
+    "z_score": 2.2039416610281,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 4.525293914477912,
+    "cumulative_pct_move": -3.48217934758895,
+    "cumulative_z_score": -0.6818694969668364,
+    "direction": "up"
+  },
+  "price_description": "+4.5% day-over-day move (z-score 2.20)",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 3,
+    "network_successes": 4,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 89,
+    "dropped_out_of_window": 4,
+    "collapsed_duplicates": 16,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "1_document(s)_above_threshold",
+    "best_score": 0.8518133759498596,
+    "accepted_document_count": 1,
+    "accepted_document_ids": [
+      "68e763a045a924cb"
+    ],
+    "total_documents_considered": 89,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T12:01:53.564662+00:00"
+  },
+  "documents_retrieved": 89,
+  "sources": [
+    {
+      "document_id": "68e763a045a924cb",
+      "title": "Slave labor found at Starbucks-certified Brazil coffee plantation - Rep\u00f3rter Brasil",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPazROcmgzYUJGZkZQWnVqMUY0RGlLRmFsNWpwZ0RYMngxR1pWRkpwcF9oeHRFLTg2eVhzOXFpWFI3THR5VnVaRnFPZ2swZ0tJbjJMbGJJTWZFLTV3U2tXS2dHXzNjTTVjT01FODMzODdhbVNCUVFLazE0U2FScElHSlYyLUJtX3R3TC1YczB3RXdlem5BUWxuOTEzc1Y5bUNobmZQeFVlcw?oc=5",
+      "publication_date": "2018-10-29",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.8518133759498596,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 1,
+    "inconsistent": 0
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 1,
+    "n_fresh": 0,
+    "fresh_within_days": 2,
+    "newest_days_before": 3,
+    "median_days_before": 3
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The document reports slave labor at a Starbucks-certified Brazil coffee plantation but does not provide any information linking that news to the coffee price increase on 2018-11-01.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 1861,
+    "evidence_document_ids": [
+      "68e763a045a924cb"
+    ],
+    "evidence_packing": {
+      "n_input": 1,
+      "n_packed": 1,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 189,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

@@ -1,0 +1,558 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2024-09-23",
+    "price": 263.6499938964844,
+    "z_score": 2.261243134808946,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 5.144563866992772,
+    "cumulative_pct_move": 5.69252239806141,
+    "cumulative_z_score": 0.7899378609928724,
+    "direction": "up"
+  },
+  "price_description": "+5.1% day-over-day move (z-score 2.26)",
+  "outcome": {
+    "tier": "EXPLAINED_STRONG",
+    "label": "Explained (strong)",
+    "headline": "Explained, with strong, direction-consistent evidence.",
+    "detail": "20 sources cleared the gate, the evidence leaned the same way as the move, the model reported high confidence, and every citation points to a document the model was shown.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 0,
+    "network_failures": 0,
+    "network_successes": 1,
+    "cache_hits": 6,
+    "fallback_added": 0,
+    "documents_returned": 157,
+    "dropped_out_of_window": 7,
+    "collapsed_duplicates": 23,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "20_document(s)_above_threshold",
+    "best_score": 0.9021417498588562,
+    "accepted_document_count": 20,
+    "accepted_document_ids": [
+      "9fadc79d382b3a74",
+      "4f45b9a3f2df8658",
+      "f205fef6294b319c",
+      "d9de9c30aa1c91e6",
+      "27f2d1adc6e0f908",
+      "a2e30ad5359e8eb9",
+      "4906ee14bd3ff90c",
+      "31bbed2107127d2f",
+      "13338e52c1faa6af",
+      "8c4b151a24d77a06",
+      "38d4b158d6059e08",
+      "d58162f62c528160",
+      "3f6a56446fdd1711",
+      "d6ac11ec013e4e47",
+      "788072fa7fb769c6",
+      "2b2c2a8195c22f77",
+      "9e0318730df996cf",
+      "ad6a65a1ea970745",
+      "906e62da4df66a2a",
+      "2627edc1e1186f57"
+    ],
+    "total_documents_considered": 157,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T10:11:31.383823+00:00"
+  },
+  "documents_retrieved": 157,
+  "sources": [
+    {
+      "document_id": "9fadc79d382b3a74",
+      "title": "Brazil drought threatens to push coffee prices even higher",
+      "url": "https://www.hurriyetdailynews.com/brazils-drought-threatens-to-push-coffee-prices-even-higher-200764",
+      "publication_date": "2024-09-20",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 2746,
+      "n_copies": 10,
+      "syndication_domains": [
+        "abcnews.go.com",
+        "clickondetroit.com",
+        "finance.yahoo.com",
+        "hurriyetdailynews.com",
+        "local10.com",
+        "news.google.com",
+        "wral.com",
+        "yahoo.com"
+      ],
+      "retrieval_score": 0.4265,
+      "semantic_score": 0.9021417498588562,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4f45b9a3f2df8658",
+      "title": "Brazil drought punishing coffee farms , threatening to push prices even higher",
+      "url": "https://www.washingtontimes.com/news/2024/sep/20/brazil-drought-punishing-coffee-farms-threatening-/",
+      "publication_date": "2024-09-20",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "washingtontimes.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8928399085998535,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "f205fef6294b319c",
+      "title": "Climate woes contribute to slump in global coffee supply as surge in demand raises prices",
+      "url": "https://abcnews.go.com/GMA/Food/climate-woes-contribute-slump-global-coffee-supply-surge/story?id=113726381",
+      "publication_date": "2024-09-19",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 3805,
+      "n_copies": 1,
+      "syndication_domains": [
+        "abcnews.go.com"
+      ],
+      "retrieval_score": 0.4427,
+      "semantic_score": 0.8863437175750732,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "27f2d1adc6e0f908",
+      "title": "Brazil drought hits coffee farms and threatens to push prices even higher - africanews.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWHJKemswRk1IU1A2cVBFbnlUT29RWmFQQm83bFNHV0dpVTd5VDBlbUF3RVBVdVBZYXltU0diVlJXbnd3Z2RteUdmLUpIWVAtSlJMRzdfcTN2RDZCSVp3TEs0NzhBTkxMQ0Vla3JXN2pYOXlxeDJBeHZaLWJ6d1VJVjdQemZKdENLUzFpWExFX2dCQVlIQXZrMEQ4aUhaUGtmd2daWVFvUEdCNklUS3p2aEtR0gG3AUFVX3lxTFAyUElVM2ZOckw4MHVCOVJxaTREZHdRYTdzM2c0WnMzYXdMUXdhTEFzOGlEMXpnUUZOby1uUjQ2cFROSF9ZS2FJTDBaX291VEN5cENiNUpIenh5QjNOYVhOYjhVRTlPZktCLUQyTVpxQk96aUVwellHMUlHU0V3dVZoOGVlN2ZGa1VxOUtvTUZrcTA3aTgyeDhzMnluT2o1NVRZVnN0dHdOb2UzajI4OWZrX3RTV3hyTQ?oc=5",
+      "publication_date": "2024-09-20",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.8789609670639038,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a2e30ad5359e8eb9",
+      "title": "Brazil farmers fret over fires and drought",
+      "url": "http://thepeninsulaqatar.com/article/16/09/2024/brazils-farmers-fret-over-fires-and-drought",
+      "publication_date": "2024-09-16",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 3843,
+      "n_copies": 4,
+      "syndication_domains": [
+        "ibtimes.com",
+        "lebanondemocrat.com",
+        "thepeninsulaqatar.com",
+        "tuko.co.ke"
+      ],
+      "retrieval_score": 0.1989,
+      "semantic_score": 0.8732838034629822,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "8c4b151a24d77a06",
+      "title": "Brazil grapples with agricultural challenges amid fires and drought",
+      "url": "https://www.freshplaza.com/north-america/article/9659874/brazil-grapples-with-agricultural-challenges-amid-fires-and-drought/",
+      "publication_date": "2024-09-18",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 1704,
+      "n_copies": 1,
+      "syndication_domains": [
+        "freshplaza.com"
+      ],
+      "retrieval_score": 0.4211,
+      "semantic_score": 0.8624423742294312,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d6ac11ec013e4e47",
+      "title": "Louis Dreyfus Company Reports 2024 Half - Year Consolidated Financial Results | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/louis-dreyfus-company-reports-2024-half-year-consolidated-financial-results/",
+      "publication_date": "2024-09-20",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 3348,
+      "n_copies": 1,
+      "syndication_domains": [
+        "hellenicshippingnews.com"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.8549165725708008,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "788072fa7fb769c6",
+      "title": "Arabica Coffee Soars to Most Since 2011 as Supply Woes Escalate - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZURKa1h3UVk1ekRBSFZsVE5xTVU0Umx4Nm9aYk9fVUpCZjZBdWxLUXJSX1NseGFQVENJSWFCRXJSUEoxbXU3eTZIZEltVE5ydjlERm15Zk5aQVR1TEI3bzFzMmtKcmZLNVNfSmJieldtZXdPTVkxd0ZwRHNKWFpGR0JDTmRtb0c3bVVYc1Q2QTNTclBDZTFlTWlrOTFoamthX1lkZXVXdl9RWV9qZW9VUHdJQTI?oc=5",
+      "publication_date": "2024-09-16",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8539314270019531,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2b2c2a8195c22f77",
+      "title": "Produo de caf\u00e9 enfrenta desafios no Brasil com adversidade das condies clim\u00e1ticas",
+      "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-18/especial-publicitario/banco-brb/noticia/2024/09/16/producao-de-cafe-enfrenta-desafios-no-brasil-com-adversidade-das-condicoes-climaticas.ghtml",
+      "publication_date": "2024-09-16",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 3315,
+      "n_copies": 1,
+      "syndication_domains": [
+        "g1.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8537963628768921,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "4906ee14bd3ff90c",
+      "title": "Climate woes contribute to slump in global coffee supply as surge in demand raises prices - ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTUhYZHo2NXVGQWtQVHhiYldQOHhVa2tJX29jbnFfWllTQUowYmJ1amlNNmJjTGZXTURpeVhLaEZBakl2LTJfb3ZSUzNOczlhRFVhVVRma1BBTlFjM2R5ODg2WnYyQ2djVGQxaWROZ1lGcTRGNEthWVVKYkh6eHNhb1k1Q2dNeE83TGFpMDFzaDdvcEhaNlk5cUduM1BtbU9hYmwzVmVrUdIBrAFBVV95cUxQemoyclRoTm9vRzVEMWNnQlQ0NWNwQy05SkR1cDBBMVFTRmtYMnlHLWxVb19Gd0J4MzJBcnAzMndTNmdkTVFGRFdhTlRwMk1Sa2lncVBPQ0ZUSm00QU5tVkM1azRPVGZFeDBCVkVHc044RDJwMU11X3pIbGkycmJTNVkwbFVFa2VMbzdhMDNMMlVxLUJrSFg2N0Q1N3hFWnpjRnFqSDBuRERSZ2ct?oc=5",
+      "publication_date": "2024-09-19",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1326,
+      "semantic_score": 0.8642065525054932,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "31bbed2107127d2f",
+      "title": "  \u0e01\u0e32\u0e41\u0e1f  \u0e23\u0e32\u0e04\u0e32\u0e1e\u0e38\u0e48\u0e07 \u0e40\u0e0b\u0e48\u0e19\u0e1e\u0e34\u0e29  \u0e42\u0e25\u0e01\u0e23\u0e27\u0e19  \u0e2b\u0e25\u0e31\u0e07\u0e1a\u0e23\u0e32\u0e0b\u0e34\u0e25\u0e41\u0e25\u0e49\u0e07 - \u0e40\u0e27\u0e35\u0e22\u0e14\u0e19\u0e32\u0e21\u0e40\u0e08\u0e2d\u0e1e\u0e32\u0e22\u0e38\u0e16\u0e25\u0e48\u0e21",
+      "url": "https://www.bangkokbiznews.com/environment/1145456",
+      "publication_date": "2024-09-19",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 4995,
+      "n_copies": 1,
+      "syndication_domains": [
+        "bangkokbiznews.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8637703657150269,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "13338e52c1faa6af",
+      "title": "Dugotrajna su\u0161a poga\u0111a usjeve kafe , cijene ska\u010du",
+      "url": "https://rtvbn.com/4065464/dugotrajna-susa-pogadja-usjeve-kafe-cijene-skacu",
+      "publication_date": "2024-09-20",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "rtvbn.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8624471426010132,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "38d4b158d6059e08",
+      "title": "Brazil\u2019s Cheap Coffee Is Now Costlier Than Fancy Arabica - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdmZ4QkVLS3lUci1vS1I4bWpfeHg5VVUzVWJlSksydnI2ZWh6ZmRGMTJMeGRhLWw3cHMxYjA3OEU0cG4yRUJaUTZnbnJmMWV1bmZrUmVyeXB4NWhPVGF5M0d5SG8xaHBHSWpzWk9yeDV4UlB0UWJTcGZsajFaYU5JLVd2dC1pRW9TTS1rRGkyalhTWDFoN3VIVk95cGZKOHRlS2FHT2wtY0Rranh5OE9xUU8zRQ?oc=5",
+      "publication_date": "2024-09-16",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.2222,
+      "semantic_score": 0.862321138381958,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d58162f62c528160",
+      "title": "Coffee set to get even pricier on supply worries, \u2018it\u2019s all about the weather\u2019, say analysts - The Straits Times",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYnp6eWZOZ04tYWxTNlV4a3c0Q2tGU3NZTjY1VmYtWHI2RzhXQ08wVWp0Y2t1dkVaYjk3U2loYmszU3pqUFFhUF81X1BoZHZBc21GQjAtcTRvdXlvWWNnTEg2UzM1UlJoZkVTM0o1LWhrVS13d294WkY3VHF1TkxzempnOUstWmRGeE1BVjFRVQ?oc=5",
+      "publication_date": "2024-09-17",
+      "days_before_anomaly": 6,
+      "trading_days_before_anomaly": 4,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8619400858879089,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3f6a56446fdd1711",
+      "title": "Coffee prices on the boil as natural disasters decimate crops - Euronews.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU2VOcWFDdEJmZmlPdFVpTnp0eUh2dlluZE8wdjJJcHdQY3JhWXBRWjVvRUh0N21lcVNtY2x5MFU5UHh5SXZKWU1IUUVjUjhqb1JIaUJ0X056eHhFOFhyelZOeHdZTmgwbFdyQnRTWTBRLXp1UGpZSGdVeDdtUHk5WnpzTWhxUU5sa1FKMHJ5Ty00S0EwWHNlb3cyZmM3Mlg1RVE3aERqd1kyQUE?oc=5",
+      "publication_date": "2024-09-23",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8589130640029907,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "9e0318730df996cf",
+      "title": "Dugotrajna su\u0161a poga\u0111a useve kafe u Brazilu i Vijetnamu i pove\u0107ava svetske cene",
+      "url": "https://www.tanjug.rs/ekonomija/svet/111379/dugotrajna-susa-pogada-useve-kafe-u-brazilu-i-vijetnamu-i-povecava-svetske-cene/vest",
+      "publication_date": "2024-09-20",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 9367,
+      "n_copies": 1,
+      "syndication_domains": [
+        "tanjug.rs"
+      ],
+      "retrieval_score": 0.0556,
+      "semantic_score": 0.8534173965454102,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "ad6a65a1ea970745",
+      "title": "Kekeringan di Brasil Mengancam Kenaikan Harga Kopi",
+      "url": "https://www.liputan6.com/global/read/5707880/kekeringan-di-brasil-mengancam-kenaikan-harga-kopi",
+      "publication_date": "2024-09-22",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 4126,
+      "n_copies": 1,
+      "syndication_domains": [
+        "liputan6.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8530724048614502,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "906e62da4df66a2a",
+      "title": "Coffee prices double in Nigeria after global supply disruptions - The Guardian Nigeria News",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMGdPbG5mM185RVU2Ym5sOEtDS2lhV05fQlpjbHctQ3JSeUQ0R3hkQkU4Q0xUUVkyWFR1b0hzVnJuNDRLeHNkVzhOV3dWWVJkUk9lSHNjS2t6Z3AwM0VvaVVpbTRhRGQ2anN4T0p3U2J2amZ6aUVndURpTVVwOGY2OGp5Rm1YcU8tT2VHbkUtUmlvSjBYTV9wYXpJVDA3UmJVdnU5Mw?oc=5",
+      "publication_date": "2024-09-19",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8522087335586548,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "d9de9c30aa1c91e6",
+      "title": "Coffee Prices Post Moderate Losses on Rain Forecasts for Brazil",
+      "url": "https://www.nasdaq.com/articles/coffee-prices-post-moderate-losses-rain-forecasts-brazil",
+      "publication_date": "2024-09-20",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "nasdaq.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8812751770019531,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2627edc1e1186f57",
+      "title": "Kenya Coffee Prices Defy Global Decline",
+      "url": "https://allafrica.com/stories/202409200026.html",
+      "publication_date": "2024-09-20",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "allafrica.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8507049083709717,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 9,
+    "neutral": 9,
+    "inconsistent": 2
+  },
+  "evidence_recency": {
+    "n_dated": 20,
+    "n_fresh": 14,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 1.5
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The +5.1% jump on 2024\u201109\u201123 coincides with multiple news reports that Brazil \u2013 the world\u2019s largest coffee producer \u2013 is experiencing its worst drought in decades, which is expected to cut the upcoming harvest and tighten global supply. Articles on 2024\u201109\u201120 describe the drought\u2019s severity and warn that it will push coffee prices higher (source: 9fadc79d382b3a74, 4f45b9a3f2df8658). A follow\u2011up piece on 2024\u201109\u201123 notes that natural disasters are decimating crops, reinforcing concerns that supply constraints will drive prices up (source: 3f6a56446fdd1711). Together, these timely reports provide a clear supply\u2011side catalyst for the observed price increase.",
+    "citations": [
+      {
+        "document_id": "9fadc79d382b3a74",
+        "supports": "Brazil\u2019s worst drought in over 70 years is threatening coffee yields, raising price expectations."
+      },
+      {
+        "document_id": "4f45b9a3f2df8658",
+        "supports": "Drought punishing coffee farms and threatening to push prices higher."
+      },
+      {
+        "document_id": "3f6a56446fdd1711",
+        "supports": "Same\u2011day report that natural disasters are decimating crops, fueling price spikes."
+      }
+    ],
+    "confidence": "high",
+    "reason": null,
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 3143,
+    "evidence_document_ids": [
+      "9fadc79d382b3a74",
+      "4f45b9a3f2df8658",
+      "f205fef6294b319c",
+      "27f2d1adc6e0f908",
+      "a2e30ad5359e8eb9",
+      "8c4b151a24d77a06",
+      "d6ac11ec013e4e47",
+      "788072fa7fb769c6",
+      "2b2c2a8195c22f77",
+      "4906ee14bd3ff90c",
+      "31bbed2107127d2f",
+      "13338e52c1faa6af",
+      "38d4b158d6059e08",
+      "d58162f62c528160",
+      "3f6a56446fdd1711"
+    ],
+    "evidence_packing": {
+      "n_input": 20,
+      "n_packed": 15,
+      "excerpt_chars": 600,
+      "estimated_tokens": 4074,
+      "max_tokens": 4250,
+      "dropped_document_ids": [
+        "2627edc1e1186f57",
+        "d9de9c30aa1c91e6",
+        "906e62da4df66a2a",
+        "ad6a65a1ea970745",
+        "9e0318730df996cf"
+      ],
+      "truncated": true
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 3,
+    "n_ok": 3,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "9fadc79d382b3a74",
+        "id_found": true,
+        "support_score": 0.883,
+        "support_method": "semantic",
+        "shared_numbers": [
+          "70"
+        ],
+        "flag": "ok",
+        "support_rank": 3,
+        "support_rank_of": 15,
+        "support_rank_method": "semantic",
+        "closest_document_id": "4f45b9a3f2df8658"
+      },
+      {
+        "document_id": "4f45b9a3f2df8658",
+        "id_found": true,
+        "support_score": 0.926,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 15,
+        "support_rank_method": "semantic",
+        "closest_document_id": "4f45b9a3f2df8658"
+      },
+      {
+        "document_id": "3f6a56446fdd1711",
+        "id_found": true,
+        "support_score": 0.862,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 1,
+        "support_rank_of": 15,
+        "support_rank_method": "semantic",
+        "closest_document_id": "3f6a56446fdd1711"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

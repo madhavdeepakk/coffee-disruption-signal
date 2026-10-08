@@ -1,0 +1,38 @@
+{
+  "anomaly": {
+    "date": "2026-09-11",
+    "price": 284.25,
+    "z_score": -2.9192767185378923,
+    "anomaly_flag": true,
+    "pct_move": -9.847760543954315,
+    "direction": "down"
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "2_document(s)_above_threshold",
+    "best_score": 0.8639647364616394,
+    "accepted_document_count": 2,
+    "accepted_document_ids": [
+      "054a6a4149e64861",
+      "49cc0f077a569bec"
+    ],
+    "total_documents_considered": 24,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-09-17T09:46:47.056186+00:00"
+  },
+  "documents_retrieved": 24,
+  "direction_summary": {
+    "consistent": 0,
+    "neutral": 0,
+    "inconsistent": 2
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided documents do not offer evidence to explain the 9.8% daily price drop, as one document focuses on an art exhibition about a 20th-century Brazilian painter while the other forecasts price increases and discusses long-term export trends in Vietnam.",
+    "citations": [],
+    "confidence": "low",
+    "reason": "model_judged_evidence_insufficient"
+  },
+  "faithfulness_report": null
+}

@@ -1,0 +1,148 @@
+{
+  "anomaly": {
+    "date": "2021-04-06",
+    "price": 126.8499984741211,
+    "z_score": 2.3434143025405847,
+    "anomaly_flag": true,
+    "pct_move": 3.890253938870241,
+    "direction": "up"
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "9_document(s)_above_threshold",
+    "best_score": 0.8970997333526611,
+    "accepted_document_count": 9,
+    "accepted_document_ids": [
+      "b6b918e784a00364",
+      "df65c8512f25a1e1",
+      "8af357674f52e082",
+      "8903964e9872a5f6",
+      "3561ea4460d7640a",
+      "b46fca10aa7a9c5a",
+      "5fbc35429e9fd284",
+      "a694f1d8d6948684",
+      "e41ea6047c59a104"
+    ],
+    "total_documents_considered": 26,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-09-13T07:42:47.690690+00:00"
+  },
+  "documents_retrieved": 26,
+  "direction_summary": {
+    "consistent": 9,
+    "neutral": 0,
+    "inconsistent": 0
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The upward pressure on coffee prices in early April 2021 was driven by a combination of severe weather disruptions in key growing regions, major global freight bottlenecks, and shrinking inventories alongside expected demand recovery.\n\nFirst, drought in Brazil\u2014the world's largest producer\u2014significantly reduced crop expectations for 2021, with potential output losses estimated at up to 50% (source: doc_b6b918e784a00364, doc_df65c8512f25a1e1, doc_8af357674f52e082, doc_b46fca10aa7a9c5a). At the same time, torrential rains threatened crops in Colombia, the second-largest producer (source: doc_8af357674f52e082, doc_b46fca10aa7a9c5a, doc_e41ea6047c59a104).\n\nSecond, global supply chain disruptions created severe delivery delays. A shortage of shipping containers, rising freight costs from Latin America (more than doubling to tripling), and the blockage in the Suez Canal severely limited bean transport (source: doc_b6b918e784a00364, doc_df65c8512f25a1e1, doc_8903964e9872a5f6, doc_3561ea4460d7640a).\n\nFinally, U.S. coffee stockpiles had fallen to six-year lows, and Marex Spectron projected a global coffee deficit of up to 10.7 million bags, leaving the market highly vulnerable to price rallies as COVID-19 restrictions eased and demand began to rebound (source: doc_b6b918e784a00364, doc_df65c8512f25a1e1, doc_8af357674f52e082, doc_b46fca10aa7a9c5a, doc_e41ea6047c59a104).",
+    "citations": [
+      {
+        "document_id": "b6b918e784a00364",
+        "supports": "Mentions Brazil drought reducing crops by up to 50%, Suez Canal blockage exacerbating supply issues, shipping costs rising by up to 200%, and six-year low coffee supplies."
+      },
+      {
+        "document_id": "df65c8512f25a1e1",
+        "supports": "Notes U.S. coffee stockpiles shrinking to six-year lows, global shipping container shortages doubling freight costs from Latin America, and expected shift to a global deficit."
+      },
+      {
+        "document_id": "8af357674f52e082",
+        "supports": "Details drought in Brazil, torrential rains in Colombia, demand recovery from COVID-19 easing, and Marex Spectron projecting a global coffee deficit of 10.7 million bags."
+      },
+      {
+        "document_id": "8903964e9872a5f6",
+        "supports": "Describes shipping container shortages causing freight snags and doubling shipping costs from Latin America."
+      },
+      {
+        "document_id": "3561ea4460d7640a",
+        "supports": "Confirms shrinking coffee inventories, rising wholesale prices, and container shortage bottlenecks."
+      },
+      {
+        "document_id": "b46fca10aa7a9c5a",
+        "supports": "Highlights severe weather (drought in Brazil, heavy rains in Colombia, frost risk) causing smaller yields and high prices."
+      },
+      {
+        "document_id": "e41ea6047c59a104",
+        "supports": "Cites Brazil drought, Colombian heavy rains, shipping snags, and projected 10.7 million bag global deficit."
+      }
+    ],
+    "confidence": "medium",
+    "reason": null
+  },
+  "faithfulness_report": {
+    "n_citations": 7,
+    "n_ok": 7,
+    "n_weak_support": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "b6b918e784a00364",
+        "id_found": true,
+        "support_score": 0.889,
+        "support_method": "semantic",
+        "shared_numbers": [
+          "200",
+          "50"
+        ],
+        "flag": "ok"
+      },
+      {
+        "document_id": "df65c8512f25a1e1",
+        "id_found": true,
+        "support_score": 0.869,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok"
+      },
+      {
+        "document_id": "8af357674f52e082",
+        "id_found": true,
+        "support_score": 0.902,
+        "support_method": "semantic",
+        "shared_numbers": [
+          "10.7",
+          "19"
+        ],
+        "flag": "ok"
+      },
+      {
+        "document_id": "8903964e9872a5f6",
+        "id_found": true,
+        "support_score": 0.831,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok"
+      },
+      {
+        "document_id": "3561ea4460d7640a",
+        "id_found": true,
+        "support_score": 0.826,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok"
+      },
+      {
+        "document_id": "b46fca10aa7a9c5a",
+        "id_found": true,
+        "support_score": 0.82,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok"
+      },
+      {
+        "document_id": "e41ea6047c59a104",
+        "id_found": true,
+        "support_score": 0.8,
+        "support_method": "semantic",
+        "shared_numbers": [
+          "10.7"
+        ],
+        "flag": "ok"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

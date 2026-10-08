@@ -1,0 +1,110 @@
+{
+  "anomaly": {
+    "date": "2026-06-30",
+    "price": 311.20001220703125,
+    "z_score": 3.367614333328892,
+    "anomaly_flag": true,
+    "pct_move": 6.9048456482574005,
+    "direction": "up"
+  },
+  "outcome": {
+    "tier": "EXPLAINED_STRONG",
+    "label": "Explained (strong)",
+    "headline": "Explained, with strong, direction-consistent, verified evidence.",
+    "detail": "9 sources cleared the gate, agreed with the direction of the move, the model reported high confidence, and every citation was verified against its source document.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 3,
+    "network_attempts": 3,
+    "network_failures": 3,
+    "network_successes": 1,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 9,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "9_document(s)_above_threshold",
+    "best_score": 0.8912871479988098,
+    "accepted_document_count": 9,
+    "accepted_document_ids": [
+      "cefae0b67826d550",
+      "35cbd07cd7c2feb6",
+      "cb71d38f481dce2c",
+      "6280feaf13e51207",
+      "d02ef0aac3859dd2",
+      "6450a1e57e44a8fa",
+      "bc4ff7ea1d085bb1",
+      "25a5ba01222bbc61",
+      "adcfe281e339022c"
+    ],
+    "total_documents_considered": 9,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-09-17T18:37:41.793980+00:00"
+  },
+  "documents_retrieved": 9,
+  "direction_summary": {
+    "consistent": 4,
+    "neutral": 2,
+    "inconsistent": 3
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "Coffee prices surged on June 30, 2026, driven by delays in the Brazilian coffee harvest caused by heavy rains, alongside tight overall supplies (source: cb71d38f481dce2c, 25a5ba01222bbc61). Additionally, market sentiment was impacted by fears surrounding the arrival of a 'Godzilla El Ni\u00f1o' (source: bc4ff7ea1d085bb1).",
+    "citations": [
+      {
+        "document_id": "cb71d38f481dce2c",
+        "supports": "Coffee prices surged due to Brazil harvest delays and tight supplies."
+      },
+      {
+        "document_id": "bc4ff7ea1d085bb1",
+        "supports": "Arabica coffee futures rose due to rain in Brazil and market fears regarding 'Godzilla El Ni\u00f1o'."
+      },
+      {
+        "document_id": "25a5ba01222bbc61",
+        "supports": "Heavy rains in Brazil delayed the coffee harvest, causing Arabica coffee prices to jump."
+      }
+    ],
+    "confidence": "high",
+    "reason": null
+  },
+  "faithfulness_report": {
+    "n_citations": 3,
+    "n_ok": 3,
+    "n_weak_support": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "cb71d38f481dce2c",
+        "id_found": true,
+        "support_score": 0.884,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok"
+      },
+      {
+        "document_id": "bc4ff7ea1d085bb1",
+        "id_found": true,
+        "support_score": 0.932,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok"
+      },
+      {
+        "document_id": "25a5ba01222bbc61",
+        "id_found": true,
+        "support_score": 0.886,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

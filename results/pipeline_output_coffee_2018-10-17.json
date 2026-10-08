@@ -1,0 +1,65 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2018-10-17",
+    "price": 122.5500030517578,
+    "z_score": 2.0892825386637384,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": 4.164897120550451,
+    "cumulative_pct_move": 14.96248105623456,
+    "cumulative_z_score": 2.263062563093861,
+    "direction": "up"
+  },
+  "price_description": "+4.2% day-over-day move (z-score 2.09), on top of +15.0% over the last 10 trading days",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence was retrieved but judged too weak to explain the move.",
+    "detail": "107 document(s) were retrieved, but none cleared the relevance gate. The system refuses rather than build a confident-sounding explanation on weak or off-topic material.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 3,
+    "network_successes": 4,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 107,
+    "dropped_out_of_window": 8,
+    "collapsed_duplicates": 6,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "reason": "documents_retrieved_but_below_relevance_threshold",
+    "best_score": 0.8407939672470093,
+    "accepted_document_count": 0,
+    "accepted_document_ids": [],
+    "total_documents_considered": 107,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T11:50:36.053597+00:00"
+  },
+  "documents_retrieved": 107,
+  "sources": [],
+  "direction_summary": {},
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 0,
+    "n_fresh": 0,
+    "fresh_within_days": 2,
+    "newest_days_before": null,
+    "median_days_before": null
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": null,
+    "reason": "gate_rejected: documents_retrieved_but_below_relevance_threshold"
+  },
+  "faithfulness_report": null
+}

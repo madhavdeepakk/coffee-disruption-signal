@@ -1,0 +1,129 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2019-06-20",
+    "price": 101.0500030517578,
+    "z_score": 2.478516117533814,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 4.98701615767044,
+    "cumulative_pct_move": -0.97991177863347,
+    "cumulative_z_score": -0.2434008323995462,
+    "direction": "up"
+  },
+  "price_description": "+5.0% day-over-day move (z-score 2.48)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (1 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 0,
+    "network_successes": 7,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 166,
+    "dropped_out_of_window": 14,
+    "collapsed_duplicates": 11,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "2_document(s)_above_threshold",
+    "best_score": 0.8528539538383484,
+    "accepted_document_count": 2,
+    "accepted_document_ids": [
+      "e9dc2095d37cde5b",
+      "a01e86d741637d3c"
+    ],
+    "total_documents_considered": 166,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T12:45:30.415872+00:00"
+  },
+  "documents_retrieved": 166,
+  "sources": [
+    {
+      "document_id": "e9dc2095d37cde5b",
+      "title": "Innovative methods could transform Vietnam robusta farms into carbon sinks",
+      "url": "https://news.mongabay.com/2019/06/innovative-methods-could-transform-vietnams-robusta-farms-into-carbon-sinks/",
+      "publication_date": "2019-06-13",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 9521,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.mongabay.com"
+      ],
+      "retrieval_score": 0.2885,
+      "semantic_score": 0.8528539538383484,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "a01e86d741637d3c",
+      "title": "Pooki Mahi\u00ae Launches Peaberry 100 % Kona Coffee Pods With Two - Day Shipping",
+      "url": "https://www.prweb.com/releases/pookis_mahi_launches_peaberry_100_kona_coffee_pods_with_two_day_shipping/prweb16389271.htm",
+      "publication_date": "2019-06-19",
+      "days_before_anomaly": 1,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 12061,
+      "n_copies": 4,
+      "syndication_domains": [
+        "finance.yahoo.com",
+        "markets.businessinsider.com",
+        "prweb.com",
+        "ssuchronicle.com"
+      ],
+      "retrieval_score": 0.4104,
+      "semantic_score": 0.8253926038742065,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 0,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 2,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 1,
+    "median_days_before": 3.0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The documents are either background (5 days old) or unrelated product announcements and do not provide a timely causal reason for the +5% coffee price move on 2019-06-20.",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 2374,
+    "evidence_document_ids": [
+      "e9dc2095d37cde5b",
+      "a01e86d741637d3c"
+    ],
+    "evidence_packing": {
+      "n_input": 2,
+      "n_packed": 2,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1169,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

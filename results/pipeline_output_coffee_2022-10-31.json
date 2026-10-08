@@ -1,0 +1,228 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2022-10-31",
+    "price": 177.6999969482422,
+    "z_score": 2.12883220274686,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": 4.6525287128978015,
+    "cumulative_pct_move": -9.128103208871389,
+    "cumulative_z_score": -1.0637679513355238,
+    "direction": "up"
+  },
+  "price_description": "+4.7% day-over-day move (z-score 2.13)",
+  "outcome": {
+    "tier": "REFUSED_WEAK_EVIDENCE",
+    "label": "Refused - evidence too weak",
+    "headline": "Evidence passed the gate but read as inconclusive on a close look.",
+    "detail": "The relevance gate accepted the evidence on score, but the model judged it too vague or non-causal to support a real explanation and declined. This is the second, closer-reading safety check doing its job.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 65,
+    "dropped_out_of_window": 7,
+    "collapsed_duplicates": 2,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "7_document(s)_above_threshold",
+    "best_score": 0.8633136749267578,
+    "accepted_document_count": 7,
+    "accepted_document_ids": [
+      "338e0d3b28511d36",
+      "8b1bcc4aead4af24",
+      "6f23b899bf278844",
+      "097340bf7b7a270d",
+      "0b396c6059b8a75c",
+      "c2a6d5c8fd81538d",
+      "82f38ef08924d643"
+    ],
+    "total_documents_considered": 65,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T15:59:23.275493+00:00"
+  },
+  "documents_retrieved": 65,
+  "sources": [
+    {
+      "document_id": "8b1bcc4aead4af24",
+      "title": "Brazil Sugar , Ethanol Sector Expected to Grow Next Year",
+      "url": "https://www.agnews890.com/2022/10/27/brazils-sugar-ethanol-sector-expected-to-grow-next-year/",
+      "publication_date": "2022-10-27",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 1330,
+      "n_copies": 2,
+      "syndication_domains": [
+        "agnews890.com",
+        "newsdakota.com"
+      ],
+      "retrieval_score": 0.2832,
+      "semantic_score": 0.8600505590438843,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "0b396c6059b8a75c",
+      "title": "Peabirus : Caf\u00e9 abre semana testando leves altas , mas press\u00e3o de chuvas e demanda deve manter volatilidade",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=100513",
+      "publication_date": "2022-10-24",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 2012,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8557007908821106,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "82f38ef08924d643",
+      "title": "Peabirus :  ESPERAN\u00c7A FRUSTRADA ADOECE O CORAO  ( PROV\u00c9RBIOS 13 : 12 ) - POR CELSO LUIS RODRIGUES VEGRO",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=100517",
+      "publication_date": "2022-10-24",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 8683,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8539800643920898,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "097340bf7b7a270d",
+      "title": "Coffee Prices Under Pressure On Improving Supply Outlook - giacaphe.com",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPb0tlejF6bWY1Rmgwdjh5Tk1TLXdSRklUOGpyRS14SW8wTmpGcW5nbjEwSkpjdUVWbHcwUGhZc2taempxNzRCcHZJZTdpVEpuVTQxRTUyUWtpTVJUNGY3MkszbGJXZ2szSzh4NEp1dWt2RjN2aWxNTmZuVGpFcWwyMVhxbWlJYjFi?oc=5",
+      "publication_date": "2022-10-22",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1219,
+      "semantic_score": 0.8575704097747803,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "c2a6d5c8fd81538d",
+      "title": "Coffee may cost less as Vietnam lifts crop",
+      "url": "https://www.postguam.com/the_globe/philippines_asia/coffee-may-cost-less-as-vietnam-lifts-crop/article_d63ca934-51a6-11ed-b1e4-f3b9a79a97a3.html",
+      "publication_date": "2022-10-22",
+      "days_before_anomaly": 9,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 2929,
+      "n_copies": 2,
+      "syndication_domains": [
+        "news24.com",
+        "postguam.com"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.8543462157249451,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "338e0d3b28511d36",
+      "title": "Peabirus : Semana de press\u00e3o : Caf\u00e9 volta a cair e abre Nova York abaixo de 190 cents / lbp",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=100472",
+      "publication_date": "2022-10-21",
+      "days_before_anomaly": 10,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 2497,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8633136749267578,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6f23b899bf278844",
+      "title": "Queda do pre\u00e7o do caf\u00e9 pega no bolso do produtor , mas n\u00e3o deve chegar t\u00e3o cedo ao consumidor",
+      "url": "https://globorural.globo.com/agricultura/cafe/noticia/2022/10/preco-do-cafe-cai-pega-no-bolso-do-produtor-mas-nao-deve-chegar-tao-cedo-ao-consumidor.ghtml",
+      "publication_date": "2022-10-26",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 5861,
+      "n_copies": 1,
+      "syndication_domains": [
+        "globorural.globo.com"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8578140139579773,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 3,
+    "neutral": 2,
+    "inconsistent": 2
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 7,
+    "n_fresh": 1,
+    "fresh_within_days": 2,
+    "newest_days_before": 2,
+    "median_days_before": 5
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The provided evidence consists entirely of reports from 3 to 6 trading days prior to the anomaly date that describe a downward price trend, improving supply outlooks, and bearish sentiment, which contradicts the direction of the +4.7% price increase and does not contain any timely news (within 1-2 trading days) explaining the sudden reversal.",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 132095,
+    "evidence_document_ids": [
+      "8b1bcc4aead4af24",
+      "0b396c6059b8a75c",
+      "82f38ef08924d643",
+      "097340bf7b7a270d",
+      "c2a6d5c8fd81538d",
+      "338e0d3b28511d36",
+      "6f23b899bf278844"
+    ],
+    "evidence_packing": {
+      "n_input": 7,
+      "n_packed": 7,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 3581,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}

@@ -1,0 +1,322 @@
+{
+  "pipeline_version": "4",
+  "anomaly": {
+    "date": "2021-05-05",
+    "price": 148.5,
+    "z_score": 4.015477308315267,
+    "anomaly_flag": true,
+    "anomaly_type": "shock+trend",
+    "pct_move": 6.9114517821145895,
+    "cumulative_pct_move": 12.32980592135675,
+    "cumulative_z_score": 2.0999717246367258,
+    "direction": "up"
+  },
+  "price_description": "+6.9% day-over-day move (z-score 4.02), on top of +12.3% over the last 10 trading days",
+  "outcome": {
+    "tier": "EXPLAINED_TENTATIVE",
+    "label": "Explained (tentative)",
+    "headline": "Explained, but treat as tentative.",
+    "detail": "A recent document gives a quoted reason for a move in this direction, but it rests on a single document.",
+    "is_refusal": false,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 9,
+    "network_attempts": 2,
+    "network_failures": 1,
+    "network_successes": 2,
+    "cache_hits": 7,
+    "fallback_added": 0,
+    "documents_returned": 157,
+    "dropped_out_of_window": 9,
+    "collapsed_duplicates": 21,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "7_document(s)_above_threshold",
+    "best_score": 0.8811721205711365,
+    "accepted_document_count": 7,
+    "accepted_document_ids": [
+      "ab35eff95eb25c07",
+      "b8a153de7bcb06ca",
+      "6a40cf3334cd02d0",
+      "b47b30efe15f7399",
+      "caff4de56d56f743",
+      "6753c3a8536e4e47",
+      "7f89084e63c4797e"
+    ],
+    "total_documents_considered": 157,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T17:36:58.022981+00:00"
+  },
+  "documents_retrieved": 157,
+  "sources": [
+    {
+      "document_id": "ab35eff95eb25c07",
+      "title": "Youll be Paying Through the Nose for a Cup of Coffee in Idaho",
+      "url": "https://newsradio1310.com/youll-be-paying-through-the-nose-for-a-cup-of-coffee-in-idaho/",
+      "publication_date": "2021-05-03",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 1793,
+      "n_copies": 3,
+      "syndication_domains": [
+        "983thesnake.com",
+        "kool965.com",
+        "newsradio1310.com"
+      ],
+      "retrieval_score": 0.2993,
+      "semantic_score": 0.8811721205711365,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b8a153de7bcb06ca",
+      "title": "a Rediscovered Forgotten Species Brews Promise for Coffee Future",
+      "url": "https://www.businessinsider.com/a-rediscovered-forgotten-species-brews-promise-for-coffees-future-2021-4",
+      "publication_date": "2021-04-27",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 4117,
+      "n_copies": 1,
+      "syndication_domains": [
+        "businessinsider.com"
+      ],
+      "retrieval_score": 0.2832,
+      "semantic_score": 0.8638784289360046,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6a40cf3334cd02d0",
+      "title": "Peabirus : Caf\u00e9 : Preocupaes com a seca seguem no radar e ar\u00e1bica ganha mais de 3 % em NY",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=90751",
+      "publication_date": "2021-05-05",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 2045,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8555663824081421,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "b47b30efe15f7399",
+      "title": "Peabirus : Correo nos pre\u00e7os e e aumento na produo da Col\u00f4mbia pressionam mercado de caf\u00e9 nesta 5",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=90641",
+      "publication_date": "2021-04-30",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 3362,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8538334369659424,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "caff4de56d56f743",
+      "title": "Peabirus : Caf\u00e9 : Mercado tem dia de volatilidade e encerra com baixas ap\u00f3s previs\u00e3o de retorno da umidade",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=90712",
+      "publication_date": "2021-05-03",
+      "days_before_anomaly": 2,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2737,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8516460657119751,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "6753c3a8536e4e47",
+      "title": "Peabirus : Caf\u00e9 : semana ter\u00e1 chuvas , mas de fraca intensidade no Brasil",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=90586",
+      "publication_date": "2021-04-27",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 1539,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8511204719543457,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "7f89084e63c4797e",
+      "title": "Peabirus : Consumo alto de caf\u00e9 e safra menor no Brasil desafiam setor para retomada p\u00f3s - pandemia",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=90589",
+      "publication_date": "2021-04-27",
+      "days_before_anomaly": 8,
+      "trading_days_before_anomaly": 6,
+      "publication_date_unknown": false,
+      "text_chars": 3172,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8510260581970215,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "decision_mode": "blind",
+  "direction_summary": {
+    "consistent": 1,
+    "inconsistent": 0,
+    "neutral": 3
+  },
+  "direction_summary_wordlist": {
+    "consistent": 4,
+    "neutral": 0,
+    "inconsistent": 3
+  },
+  "guard_rule": null,
+  "evidence_recency": {
+    "n_dated": 7,
+    "n_fresh": 3,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 3
+  },
+  "explanation_result": {
+    "decision": "EXPLAINED",
+    "explanation": "The +6.9% day-over-day move (z-score 4.02), on top of +12.3% over the last 10 trading days on 2021-05-05 is matched by 1 report published that day that gives a reason for prices rising: dry Brazil, no significant rain forecast (source: 6a40cf3334cd02d0).",
+    "citations": [
+      {
+        "document_id": "6a40cf3334cd02d0",
+        "supports": "dry Brazil, no significant rain forecast",
+        "quote": "Permanece predominantemente seco no Brasil e n\u00e3o h\u00e1 previs\u00f5es de chuvas significativas nas \u00e1reas cafeeiras \u00e0 frente. Algumas cooperativas e associa\u00e7\u00f5es apontam um"
+      }
+    ],
+    "confidence": "medium",
+    "reason": null,
+    "blind_evidence": {
+      "rule": "freshest",
+      "fresh_trading_days": 2,
+      "max_age_trading_days": 3,
+      "n_recent_documents": 4,
+      "readings": [
+        {
+          "document_id": "6a40cf3334cd02d0",
+          "trading_days_before": 0,
+          "price_move": "up",
+          "pressure": "up",
+          "direction": "up",
+          "kind": "report",
+          "cause": "dry Brazil, no significant rain forecast",
+          "quote": "Permanece predominantemente seco no Brasil e n\u00e3o h\u00e1 previs\u00f5es de chuvas significativas nas \u00e1reas cafeeiras \u00e0 frente. Algumas cooperativas e associa\u00e7\u00f5es apontam um",
+          "quote_found": true,
+          "read": true
+        },
+        {
+          "document_id": "ab35eff95eb25c07",
+          "trading_days_before": 2,
+          "price_move": "up",
+          "pressure": "up",
+          "direction": "up",
+          "kind": "report",
+          "cause": "Brazil drought hammered Arabica crop",
+          "quote": "Brazil experienced a drought last year and it hammered the Arabica crop.",
+          "quote_found": true,
+          "read": true
+        },
+        {
+          "document_id": "caff4de56d56f743",
+          "trading_days_before": 2,
+          "price_move": "down",
+          "pressure": "down",
+          "direction": "down",
+          "kind": "report",
+          "cause": "end of La Ni\u00f1a will reduce Brazil drought",
+          "quote": "Previs\u00e3o americana indica que fim do La Ni\u00f1a vai reduzir seca no Brasil",
+          "quote_found": true,
+          "read": true
+        },
+        {
+          "document_id": "b47b30efe15f7399",
+          "trading_days_before": 3,
+          "price_move": "down",
+          "pressure": "down",
+          "direction": "down",
+          "kind": "report",
+          "cause": "higher Colombian production lowered prices",
+          "quote": "Uma alta na produ\u00e7\u00e3o da Col\u00f4mbia tamb\u00e9m impactou negativamente nos pre\u00e7os.",
+          "quote_found": true,
+          "read": true
+        }
+      ],
+      "deciding_age": 0,
+      "deciding_kind": "report",
+      "supporting": [
+        "6a40cf3334cd02d0"
+      ],
+      "opposing": []
+    },
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "blind-v1",
+    "latency_ms": 4985,
+    "evidence_document_ids": [
+      "6a40cf3334cd02d0",
+      "ab35eff95eb25c07",
+      "caff4de56d56f743",
+      "b47b30efe15f7399"
+    ],
+    "evidence_packing": {
+      "n_input": 4,
+      "n_packed": 4,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 2281,
+      "max_tokens": 3465,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": {
+    "n_citations": 1,
+    "n_ok": 1,
+    "n_weak_support": 0,
+    "n_low_rank": 0,
+    "n_missing_document": 0,
+    "unresolved_inline_source_ids": [],
+    "citations_resolve": true,
+    "per_citation": [
+      {
+        "document_id": "6a40cf3334cd02d0",
+        "id_found": true,
+        "support_score": 0.795,
+        "support_method": "semantic",
+        "shared_numbers": [],
+        "flag": "ok",
+        "support_rank": 2,
+        "support_rank_of": 4,
+        "support_rank_method": "semantic",
+        "closest_document_id": "caff4de56d56f743"
+      }
+    ],
+    "note": "All cited document_ids resolve to retrieved documents."
+  }
+}

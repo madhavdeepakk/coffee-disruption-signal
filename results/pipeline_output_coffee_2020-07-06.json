@@ -1,0 +1,176 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2020-07-06",
+    "price": 97.1999969482422,
+    "z_score": -2.0488497821234604,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -4.9388782902276755,
+    "cumulative_pct_move": 3.67999674479169,
+    "cumulative_z_score": 0.7135229452112274,
+    "direction": "down"
+  },
+  "price_description": "-4.9% day-over-day move (z-score -2.05)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (2 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 4,
+    "network_successes": 3,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 91,
+    "dropped_out_of_window": 4,
+    "collapsed_duplicates": 1,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "4_document(s)_above_threshold",
+    "best_score": 0.8617810606956482,
+    "accepted_document_count": 4,
+    "accepted_document_ids": [
+      "28b728683efebde1",
+      "56fdc4b78fe7ab2a",
+      "54f13af2bfb08fe2",
+      "2266f3951e965fea"
+    ],
+    "total_documents_considered": 91,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T14:00:00.142700+00:00"
+  },
+  "documents_retrieved": 91,
+  "sources": [
+    {
+      "document_id": "28b728683efebde1",
+      "title": "Peabirus : Caf\u00e9 robusta cai 2 % em Londres com menor risco clim\u00e1tico no Brasil",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=85791",
+      "publication_date": "2020-07-06",
+      "days_before_anomaly": 0,
+      "trading_days_before_anomaly": 0,
+      "publication_date_unknown": false,
+      "text_chars": 1631,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8617810606956482,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "2266f3951e965fea",
+      "title": "Coffee, Cocoa Industries Warn of Child Labor in Desperate Times - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQb3dOZFVKZVY3bFMwWURGelRYYmtqNjFKMVhIeC1vMnE4ODdzb3NuZDZ3d3JKR1RFaXVDLThydlZEU2xtWk1Tekduek9aeDlWZ25JZ3RDTU1iZnZTYkJPdThLampweU1zcDZZZGdRUVlCTkRvV3JRTXBNRGpHVDRPbDE0VTFDUjNSa3JtVk1YemFBcmh4S1ZUcjE3NHpWZFluYXBZd1hGODVIRmFtRzRiWTN1aGZoWnlv?oc=5",
+      "publication_date": "2020-07-03",
+      "days_before_anomaly": 3,
+      "trading_days_before_anomaly": 1,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.1111,
+      "semantic_score": 0.8517000079154968,
+      "direction_consistency": "neutral",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "56fdc4b78fe7ab2a",
+      "title": "Peabirus : Caf\u00e9 : Aumento de casos de Covid - 19 nos EUA volta gerar incerteza no consumo e pre\u00e7os t\u00eam baixa em NY",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=85711",
+      "publication_date": "2020-07-02",
+      "days_before_anomaly": 4,
+      "trading_days_before_anomaly": 2,
+      "publication_date_unknown": false,
+      "text_chars": 2507,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8543087244033813,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "54f13af2bfb08fe2",
+      "title": "Peabirus : Caf\u00e9 come\u00e7a 4\u00aa feira com movimentaes t\u00e9cnicas e de olho na frente fria",
+      "url": "http://www.redepeabirus.com.br/redes/form/post?topico_id=85675",
+      "publication_date": "2020-07-01",
+      "days_before_anomaly": 5,
+      "trading_days_before_anomaly": 3,
+      "publication_date_unknown": false,
+      "text_chars": 2599,
+      "n_copies": 1,
+      "syndication_domains": [
+        "redepeabirus.com.br"
+      ],
+      "retrieval_score": 0.0,
+      "semantic_score": 0.8521682024002075,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 1,
+    "inconsistent": 2
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 4,
+    "n_fresh": 3,
+    "fresh_within_days": 2,
+    "newest_days_before": 0,
+    "median_days_before": 1.5
+  },
+  "explanation_result": {
+    "model_used": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 131609,
+    "evidence_document_ids": [
+      "28b728683efebde1",
+      "2266f3951e965fea",
+      "56fdc4b78fe7ab2a",
+      "54f13af2bfb08fe2"
+    ],
+    "evidence_packing": {
+      "n_input": 4,
+      "n_packed": 4,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 1901,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    },
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": null,
+    "citations": [],
+    "confidence": "high",
+    "reason": "direction_guard: 2 accepted document(s) pointed against the move vs 1 with it",
+    "withheld_explanation": {
+      "explanation": "The price decline was driven by the dissipation of weather-related hedging positions after meteorological models ruled out frost risks in Brazil's coffee belt, leading to strong selling pressure in London and New York.",
+      "citations": [
+        {
+          "document_id": "28b728683efebde1",
+          "supports": "Directly attributes the 2% drop in robusta prices on July 6 to the 'unraveling' of climate protection (hedging) as polar air masses lost strength and frost risks were discarded by weather models."
+        }
+      ],
+      "confidence": "high"
+    }
+  },
+  "faithfulness_report": null
+}

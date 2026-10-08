@@ -1,0 +1,126 @@
+{
+  "pipeline_version": "3",
+  "anomaly": {
+    "date": "2023-07-17",
+    "price": 154.75,
+    "z_score": -2.2866497195024658,
+    "anomaly_flag": true,
+    "anomaly_type": "shock",
+    "pct_move": -4.445814809458282,
+    "cumulative_pct_move": -3.88198757763975,
+    "cumulative_z_score": -0.3753257237199788,
+    "direction": "down"
+  },
+  "price_description": "-4.4% day-over-day move (z-score -2.29)",
+  "outcome": {
+    "tier": "REFUSED_CONFLICTING",
+    "label": "Refused - evidence conflicts on direction",
+    "headline": "Evidence contradicted itself on price direction - no honest cause could be given.",
+    "detail": "The accepted articles disagreed with the actual move (1 pointed the opposite way, 1 agreed), so no single causal story is supported. The system declines rather than cherry-pick the articles that happen to fit - the clearest case of refusing to hallucinate a reason.",
+    "is_refusal": true,
+    "is_fault": false
+  },
+  "retrieval_meta": {
+    "queries_attempted": 6,
+    "network_attempts": 6,
+    "network_failures": 1,
+    "network_successes": 6,
+    "cache_hits": 0,
+    "fallback_added": 0,
+    "documents_returned": 129,
+    "dropped_out_of_window": 1,
+    "collapsed_duplicates": 18,
+    "retrieval_ran": true
+  },
+  "gate_result": {
+    "decision": "EXPLAIN",
+    "reason": "2_document(s)_above_threshold",
+    "best_score": 0.8869069814682007,
+    "accepted_document_count": 2,
+    "accepted_document_ids": [
+      "8641a4b93bf88df1",
+      "3ebc3aecb075c657"
+    ],
+    "total_documents_considered": 129,
+    "keyword_threshold_used": 0.4,
+    "semantic_threshold_used": 0.85,
+    "evaluated_at_utc": "2026-10-03T16:42:37.153674+00:00"
+  },
+  "documents_retrieved": 129,
+  "sources": [
+    {
+      "document_id": "8641a4b93bf88df1",
+      "title": "Coffee Prices Finish Lower as Dry Conditions in Brazil Speed up the Coffee Harvest",
+      "url": "https://www.theglobeandmail.com/investing/markets/commodities/SDK24/pressreleases/18365021/coffee-prices-finish-lower-as-dry-conditions-in-brazil-speed-up-the-coffee-harvest/",
+      "publication_date": "2023-07-10",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 4627,
+      "n_copies": 2,
+      "syndication_domains": [
+        "theglobeandmail.com"
+      ],
+      "retrieval_score": 0.4265,
+      "semantic_score": 0.8869069814682007,
+      "direction_consistency": "consistent",
+      "anomaly_query_score": null
+    },
+    {
+      "document_id": "3ebc3aecb075c657",
+      "title": "Coffee Prices Slip as Dry Conditions in Brazil Speed up the Coffee Harvest - Barchart.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQXY0QmpzZlNhZ2haQjhmR001VDlWSFAwWnQ5ajM0cl96ZkY2Y2ZhYUZibE9uWEJfamkyaGdRa3h1eGNZMkYtejdfWWhlTTdSc0RIanN3NTI2UUNtR1hDSmJRR2YwNlVZV1hPTHpDUGM2Njk2aWdfOW82NzVLXzRwOEtQWlZRSVk1RXJtN29OOGhCNVVLVE0ybGpLTTF3TmtiMExFWGhDYmQtQ1htT3RNaGI2UXRMXzNTbmFr?oc=5",
+      "publication_date": "2023-07-10",
+      "days_before_anomaly": 7,
+      "trading_days_before_anomaly": 5,
+      "publication_date_unknown": false,
+      "text_chars": 0,
+      "n_copies": 1,
+      "syndication_domains": [
+        "news.google.com"
+      ],
+      "retrieval_score": 0.233,
+      "semantic_score": 0.880378007888794,
+      "direction_consistency": "inconsistent",
+      "anomaly_query_score": null
+    }
+  ],
+  "direction_summary": {
+    "consistent": 1,
+    "neutral": 0,
+    "inconsistent": 1
+  },
+  "guard_rule": "majority",
+  "evidence_recency": {
+    "n_dated": 2,
+    "n_fresh": 0,
+    "fresh_within_days": 2,
+    "newest_days_before": 5,
+    "median_days_before": 5.0
+  },
+  "explanation_result": {
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "explanation": "The only retrieved documents are dated July 10, five trading days before the July 17 price drop, and they discuss background harvest conditions rather than a direct catalyst on the move date, so they cannot adequately explain the -4.4% move on July 17.",
+    "citations": [],
+    "confidence": "high",
+    "reason": "model_judged_evidence_insufficient",
+    "model_used": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "prompt_version": "v2",
+    "latency_ms": 1729,
+    "evidence_document_ids": [
+      "8641a4b93bf88df1",
+      "3ebc3aecb075c657"
+    ],
+    "evidence_packing": {
+      "n_input": 2,
+      "n_packed": 2,
+      "excerpt_chars": 1500,
+      "estimated_tokens": 801,
+      "max_tokens": 4250,
+      "dropped_document_ids": [],
+      "truncated": false
+    }
+  },
+  "faithfulness_report": null
+}
