@@ -413,9 +413,19 @@ def test_every_caller_gets_the_combined_searches_from_one_place():
     assert len(day) == 1 and day[0].live
     assert (day[0].startdatetime, day[0].enddatetime) == ("20220511000000", "20220512000000")
     # a commodity without combined searches keeps sending its separate ones
-    oil = pipeline.search_arguments(get_commodity("crude_oil"))
-    assert oil["combined_query"] is None
-    assert all(r.live for r in pipeline.gdelt_query_plan("2022-05-11", ["oil price OPEC"], **oil))
+    import dataclasses
+    bare = dataclasses.replace(get_commodity("crude_oil"), gdelt_combined_query="",
+                               gdelt_combined_recent_query="", gdelt_combined_day_query="")
+    without = pipeline.search_arguments(bare)
+    assert without["combined_query"] is None
+    assert all(r.live for r in pipeline.gdelt_query_plan("2022-05-11", ["oil price OPEC"], **without))
+    # every configured commodity now has all three combined searches, each
+    # opening with the commodity so that one request cannot drift off topic
+    from src.config.commodities import COMMODITIES
+    for key, other in COMMODITIES.items():
+        combined = pipeline.search_arguments(other)
+        for name in ("combined_query", "combined_recent_query", "combined_day_query"):
+            assert combined[name] and " OR " in combined[name], (key, name)
 
 
 def test_a_relevance_model_that_fails_is_a_fault_not_a_refusal():

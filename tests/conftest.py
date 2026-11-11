@@ -52,3 +52,26 @@ def _no_test_reaches_a_model(monkeypatch):
 
     monkeypatch.setattr(explainer, "_call_openai_compatible", refuse)
     monkeypatch.setattr(explainer, "get_client", refuse)
+
+
+@pytest.fixture(autouse=True)
+def _no_test_reaches_the_network(monkeypatch):
+    """The same guard for HTTP as the one above for models.
+
+    Added after tests/test_news_rss.py was found calling Google News for real:
+    the commodity key it used as "unknown" had since become a real one, so the
+    function stopped returning early and fetched. The test then passed only on
+    a machine with no network and failed on one with it - the opposite of what
+    a test should do.
+
+    A test that means to exercise a fetch patches `urllib.request.urlopen`
+    itself, which replaces this stand-in for the duration. A test that does
+    not mean to fetch now fails here instead of depending on the network.
+    """
+    import urllib.request
+
+    def refuse(*args, **kwargs):
+        raise RuntimeError(
+            "a test tried to open a network connection; mock urllib.request.urlopen")
+
+    monkeypatch.setattr(urllib.request, "urlopen", refuse)

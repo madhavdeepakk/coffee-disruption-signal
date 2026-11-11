@@ -3,7 +3,8 @@ Per-commodity configuration for the anomaly detector, RAG retrieval, and
 dashboard.
 
 Added when the project expanded beyond coffee (the revised proposal's
-single-commodity scope) to also cover crude oil and wheat, per the original
+single-commodity scope) to also cover crude oil and wheat, and later gold and
+silver, per the original
 proposal's "Build One Deeply, Architect for Any" idea (S4): coffee stays the
 fully-validated reference commodity, and this module is the generic config
 layer the other two plug into, rather than copy-pasted per-commodity
@@ -131,6 +132,13 @@ COMMODITIES = {
         display_name="Crude Oil (WTI)",
         ticker="CL=F",
         gdelt_queries=["oil price OPEC", "oil price Russia Ukraine", "crude oil supply"],
+        gdelt_recent_queries=["oil prices", "crude futures", "oil prices settle"],
+        gdelt_combined_query=(
+            'oil (OPEC OR Russia OR sanctions OR inventories OR Iran OR "supply cut")'),
+        gdelt_combined_recent_query=(
+            "oil (prices OR futures OR crude OR Brent OR WTI OR settle)"),
+        gdelt_combined_day_query=(
+            "crude (futures OR Brent OR WTI OR prices OR settle OR barrel)"),
         semantic_reference_query="crude oil price OPEC supply disruption geopolitical shock",
         known_events=[
             ("2014 OPEC no-cut decision", "2014-11-24", "2014-12-05",
@@ -170,6 +178,8 @@ COMMODITIES = {
         # plus ~1 year of buffer so the 75-day rolling window has real history by then
         price_file="crude_oil_prices.csv",
         anomalies_file="crude_oil_anomaly_detections.csv",
+        watched_market="WTI crude oil futures in New York",
+        other_markets="petrol or diesel prices at the pump, or the shares of oil companies",
         validation_md_file="crude_oil_anomaly_detector_validation.md",
     ),
     "wheat": CommodityConfig(
@@ -177,6 +187,13 @@ COMMODITIES = {
         display_name="Wheat (Chicago SRW)",
         ticker="ZW=F",
         gdelt_queries=["wheat export ban Russia", "wheat drought", "wheat Ukraine war"],
+        gdelt_recent_queries=["wheat prices", "wheat futures", "wheat prices settle"],
+        gdelt_combined_query=(
+            'wheat (drought OR "export ban" OR Russia OR Ukraine OR harvest OR tariff)'),
+        gdelt_combined_recent_query=(
+            "wheat (prices OR futures OR CBOT OR Chicago OR settle OR bushel)"),
+        gdelt_combined_day_query=(
+            "wheat (futures OR CBOT OR Chicago OR prices OR settle OR market)"),
         semantic_reference_query="wheat export ban drought war price disruption supply",
         known_events=[
             ("2010 Russia export ban", "2010-08-03", "2010-08-16",
@@ -211,7 +228,126 @@ COMMODITIES = {
         # event, plus ~1 year of buffer so the 75-day rolling window has real history by then
         price_file="wheat_prices.csv",
         anomalies_file="wheat_anomaly_detections.csv",
+        watched_market="Chicago wheat futures",
+        other_markets="the price of flour or bread, or wheat prices paid locally in one country",
         validation_md_file="wheat_anomaly_detector_validation.md",
+    ),
+    "gold": CommodityConfig(
+        key="gold",
+        display_name="Gold (COMEX)",
+        ticker="GC=F",
+        # Gold moves on interest rates, the dollar and fear, not on a harvest:
+        # the topics are the ones a gold market report gives as its reason.
+        gdelt_queries=["gold price Federal Reserve", "gold price dollar", "gold safe haven"],
+        gdelt_recent_queries=["gold prices", "gold futures", "gold prices settle"],
+        gdelt_combined_query=(
+            'gold (Fed OR "interest rates" OR dollar OR inflation OR "safe haven" OR "central bank")'),
+        gdelt_combined_recent_query=(
+            "gold (prices OR futures OR bullion OR settle OR ounce OR spot)"),
+        gdelt_combined_day_query=(
+            "gold (futures OR bullion OR prices OR settle OR spot OR market)"),
+        semantic_reference_query="gold price Federal Reserve dollar safe haven bullion selloff rally",
+        known_events=[
+            ("2013 April gold crash", "2013-04-12", "2013-04-17",
+             "Gold fell about 9% on Apr 15 2013, its largest one-day fall in 30 years - "
+             "Bloomberg ('Gold's Worst Plunge Since 1983 Ends 12-Year Bull Run: Timeline', "
+             "Apr 17 2013), CoinNews ('Gold Dives 9.3%, Silver Tumbles 11.3%', Apr 15 2013)"),
+            ("2016 Brexit referendum", "2016-06-23", "2016-06-28",
+             "The UK voted to leave the EU on Jun 23 2016; gold rose close to 5% on "
+             "Jun 24 as investors moved to safe havens - widely reported, e.g. Reuters "
+             "and CNBC market reports of Jun 24 2016"),
+            ("2020 pandemic dash for cash", "2020-03-09", "2020-03-27",
+             "Gold was sold with everything else as investors raised cash in the "
+             "second week of March 2020, then rebounded sharply from Mar 23-24 after "
+             "the Federal Reserve announced unlimited asset purchases - Reuters and "
+             "CNBC precious-metals reports, March 2020"),
+            ("2020 August reversal from the record", "2020-08-07", "2020-08-13",
+             "After a record above $2,000 an ounce, gold fell about 4.6% on Aug 11 "
+             "2020, its largest one-day fall in seven years, as bond yields rose - "
+             "CNBC and Reuters market reports of Aug 11 2020"),
+            ("2025 October reversal from the record", "2025-10-20", "2025-10-23",
+             "Gold fell more than 5% on Oct 21 2025, its steepest one-day fall since "
+             "2013 - Axios ('Gold and silver plunge after recent surge to record "
+             "highs', Oct 21 2025), InvestmentNews ('Gold, silver post steepest "
+             "declines in over 13 years as rally stalls')"),
+            ("2026 January metals crash", "2026-01-28", "2026-02-04",
+             "Gold fell about 11% on Jan 30 2026 after a parabolic run to a record; "
+             "reports tied the selling to the news about the next Federal Reserve "
+             "chair, a stronger dollar and forced liquidation - Morningstar ('Why Did "
+             "Gold and Silver Prices Plunge?'), Seeking Alpha ('Gold And Silver's "
+             "Most Volatile Day')"),
+        ],
+        control_period=("2026-04-01", "2026-06-30",
+                         "Verified quiet in real data - 0 days flagged under both checks, the "
+                         "only fully clean calendar quarter from 2012 to 2026 for gold. It "
+                         "follows the January-March 2026 turmoil, so 'quiet' here is relative "
+                         "to a trailing window that had just absorbed very large moves; the "
+                         "next-best quarters (2023 Q2, 2025 Q1) each have one flagged day."),
+        history_start_date="2012-01-01",  # earliest need: the April 2013 crash, plus
+        # more than a year so the 75-day rolling window has real history by then
+        price_file="gold_prices.csv",
+        anomalies_file="gold_anomaly_detections.csv",
+        watched_market="gold futures in New York (COMEX)",
+        other_markets=("silver or other metals, jewellery or retail gold prices in one "
+                       "country, or the shares of gold miners"),
+        validation_md_file="gold_anomaly_detector_validation.md",
+    ),
+    "silver": CommodityConfig(
+        key="silver",
+        display_name="Silver (COMEX)",
+        ticker="SI=F",
+        gdelt_queries=["silver price Federal Reserve", "silver price dollar",
+                       "silver industrial demand"],
+        gdelt_recent_queries=["silver prices", "silver futures", "silver prices settle"],
+        gdelt_combined_query=(
+            'silver (Fed OR "interest rates" OR dollar OR margin OR "industrial demand" OR squeeze)'),
+        gdelt_combined_recent_query=(
+            "silver (prices OR futures OR bullion OR settle OR ounce OR spot)"),
+        gdelt_combined_day_query=(
+            "silver (futures OR bullion OR prices OR settle OR spot OR market)"),
+        semantic_reference_query="silver price Federal Reserve dollar margin bullion selloff rally",
+        known_events=[
+            ("2011 May margin-hike collapse", "2011-05-02", "2011-05-06",
+             "Silver fell by more than a quarter in a week after the CME raised "
+             "margin requirements several times - The Motley Fool ('Did Higher "
+             "Margins Kill Commodities?', May 11 2011), InvestmentNews ('Silver "
+             "investors holding a falling knife')"),
+            ("2011 September plunge", "2011-09-22", "2011-09-26",
+             "Silver fell about 18% on Sep 23 2011 as the CME raised margins again - "
+             "tradingnrg.com ('Gold and Silver Plummeted | CME Margin Hike Fueled "
+             "Drop', Sep 23 2011)"),
+            ("2013 April metals crash", "2013-04-12", "2013-04-17",
+             "Silver fell about 11% on Apr 15 2013 alongside gold's largest fall in 30 "
+             "years - CoinNews ('Gold Dives 9.3%, Silver Tumbles 11.3%; Both at "
+             "Multi-Year Lows', Apr 15 2013)"),
+            ("2020 pandemic dash for cash", "2020-03-09", "2020-03-27",
+             "Silver fell to an 11-year low in mid-March 2020 as investors raised "
+             "cash, then rebounded - Reuters precious-metals reports, March 2020"),
+            ("2021 retail silver squeeze", "2021-01-28", "2021-02-03",
+             "Silver jumped to an eight-year high on Feb 1 2021 on a retail buying "
+             "campaign, then fell about 10% on Feb 2 after the CME raised margins by "
+             "17.9% - Reuters ('Silver slides from 8-year peak as retail frenzy "
+             "fizzles out'), Bloomberg ('Silver's Selloff Accelerates With Reddit "
+             "Frenzy Unraveling', Feb 2 2021)"),
+            ("2026 January metals crash", "2026-01-26", "2026-02-04",
+             "Silver fell about 30% on Jan 30 2026, its largest one-day fall on "
+             "record, after a parabolic run - Morningstar ('Why Did Gold and Silver "
+             "Prices Plunge?'), SD Bullion ('Biggest Drop in Intraday Price History')"),
+        ],
+        control_period=("2026-04-01", "2026-06-30",
+                         "Verified quiet in real data - 0 days flagged under both checks, the "
+                         "only fully clean calendar quarter from 2010 to 2026 for silver. As "
+                         "for gold it follows the January-March 2026 turmoil; the next-best "
+                         "quarters (2012 Q1, 2017 Q1, 2021 Q2, 2024 Q1) each have one flagged "
+                         "day."),
+        history_start_date="2010-01-01",  # earliest need: the May 2011 collapse, plus
+        # more than a year so the 75-day rolling window has real history by then
+        price_file="silver_prices.csv",
+        anomalies_file="silver_anomaly_detections.csv",
+        watched_market="silver futures in New York (COMEX)",
+        other_markets=("gold or other metals, retail silver coins and bars, or the "
+                       "shares of silver miners"),
+        validation_md_file="silver_anomaly_detector_validation.md",
     ),
 }
 

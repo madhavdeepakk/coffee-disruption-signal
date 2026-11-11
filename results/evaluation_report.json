@@ -1,127 +1,205 @@
 {
-  "dates_evaluated": 30,
-  "dates_explained": 13,
+  "dates_evaluated": 75,
+  "dates_explained": 21,
   "provenance": {
     "pipeline_versions": {
-      "2": 6,
-      "1": 24
+      "3": 51,
+      "1": 8,
+      "11": 16
     },
     "models": {
-      "not recorded": 18,
-      "openai/gpt-oss-120b": 7,
-      "gemini-3.6-flash": 5
+      "openai/gpt-oss-120b": 47,
+      "qwen/qwen3.8-27b": 16,
+      "not recorded": 12
     },
     "dates_not_flagged": [
       "2026-08-28",
       "2026-09-11"
     ],
     "records_without_a_decision": 0,
+    "runs_left_out_not_real_moves": [
+      "2018-05-21",
+      "2020-03-19",
+      "2021-03-22",
+      "2023-03-22",
+      "2023-09-20"
+    ],
     "retrieval_health": {
       "runs_with_failed_queries": {
-        "k": 20,
-        "n": 30,
-        "pct": 66.7,
+        "k": 53,
+        "n": 75,
+        "pct": 70.7,
         "ci95": [
-          48.8,
-          80.8
+          59.6,
+          79.8
         ]
       },
-      "runs_with_no_query_answered": 2,
+      "runs_with_no_query_answered": 1,
       "refused_among_those": {
-        "k": 11,
-        "n": 20,
-        "pct": 55.0,
+        "k": 43,
+        "n": 53,
+        "pct": 81.1,
         "ci95": [
-          34.2,
-          74.2
+          68.6,
+          89.4
         ]
       },
       "refused_among_the_rest": {
-        "k": 5,
-        "n": 10,
+        "k": 11,
+        "n": 22,
         "pct": 50.0,
         "ci95": [
-          23.7,
-          76.3
+          30.7,
+          69.3
         ]
       },
       "dates": [
-        "2018-05-21",
         "2018-05-31",
         "2018-07-02",
         "2018-08-20",
-        "2020-03-19",
-        "2021-05-05",
-        "2021-07-19",
-        "2021-07-20",
-        "2021-07-22",
-        "2021-07-30",
-        "2022-05-11",
-        "2023-01-31",
-        "2023-09-20",
-        "2024-04-30",
-        "2024-12-02",
+        "2018-10-02",
+        "2018-10-17",
+        "2018-10-29",
+        "2018-11-01",
+        "2018-11-30",
+        "2019-04-03",
+        "2019-04-11",
+        "2019-04-17",
+        "2019-04-18",
+        "2019-06-05",
+        "2019-06-25",
+        "2019-07-08",
+        "2019-11-11",
+        "2019-11-21",
+        "2019-12-13",
+        "2019-12-16",
+        "2020-02-03",
+        "2020-02-21",
+        "2020-03-03",
+        "2020-03-05",
+        "2020-03-27",
+        "2020-07-06",
+        "2020-07-17",
+        "2020-11-16",
+        "2020-11-20",
+        "2020-11-27",
+        "2020-12-01",
+        "2021-03-30",
+        "2021-05-28",
+        "2021-07-21",
+        "2021-11-29",
+        "2021-12-20",
+        "2022-04-13",
+        "2022-04-21",
+        "2022-06-29",
+        "2022-07-14",
+        "2022-07-18",
+        "2022-10-28",
+        "2022-10-31",
+        "2022-11-03",
+        "2022-11-15",
+        "2022-12-12",
+        "2023-06-08",
+        "2023-07-17",
+        "2023-08-14",
         "2026-06-16",
         "2026-06-30",
         "2026-07-06",
         "2026-07-09",
         "2026-08-28"
       ]
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "explained": 19,
+        "refused": 28,
+        "explained_rate": {
+          "k": 19,
+          "n": 47,
+          "pct": 40.4,
+          "ci95": [
+            27.6,
+            54.7
+          ]
+        }
+      },
+      "qwen/qwen3.8-27b": {
+        "explained": 8,
+        "refused": 8,
+        "explained_rate": {
+          "k": 8,
+          "n": 16,
+          "pct": 50.0,
+          "ci95": [
+            28.0,
+            72.0
+          ]
+        }
+      }
     }
   },
   "outcomes": {
-    "n_runs": 30,
+    "n_runs": 75,
     "tiers": {
-      "REFUSED_WEAK_EVIDENCE": 10,
-      "EXPLAINED_STRONG": 8,
-      "REFUSED_CONFLICTING": 6,
-      "EXPLAINED_TENTATIVE": 5,
-      "SYSTEM_ERROR": 1
+      "REFUSED_WEAK_EVIDENCE": 29,
+      "REFUSED_CONFLICTING": 25,
+      "EXPLAINED_TENTATIVE": 11,
+      "EXPLAINED_STRONG": 10
     },
-    "tiers_backfilled": 5,
+    "tiers_backfilled": 2,
     "explained": {
-      "k": 13,
-      "n": 30,
-      "pct": 43.3,
+      "k": 21,
+      "n": 75,
+      "pct": 28.0,
       "ci95": [
-        27.4,
-        60.8
+        19.1,
+        39.0
       ]
     },
     "refused": {
-      "k": 16,
-      "n": 30,
-      "pct": 53.3,
+      "k": 54,
+      "n": 75,
+      "pct": 72.0,
       "ci95": [
-        36.1,
-        69.8
+        61.0,
+        80.9
       ]
     },
     "faults": {
-      "k": 1,
-      "n": 30,
-      "pct": 3.3,
+      "k": 0,
+      "n": 75,
+      "pct": 0.0,
       "ci95": [
-        0.6,
-        16.7
+        0.0,
+        4.9
       ]
     },
     "explained_excluding_faults": {
-      "k": 13,
-      "n": 29,
-      "pct": 44.8,
+      "k": 21,
+      "n": 75,
+      "pct": 28.0,
       "ci95": [
-        28.4,
-        62.5
+        19.1,
+        39.0
       ]
     },
-    "guard_would_withhold": 2
+    "guard_would_withhold": 8
   },
   "decision_accuracy": {
-    "n_labelled": 18,
+    "n_labelled": 16,
     "n_graded": 16,
-    "n_fault": 1,
-    "n_no_run": 1,
+    "always_explain": {
+      "k": 16,
+      "n": 16,
+      "pct": 100.0,
+      "ci95": [
+        80.6,
+        100.0
+      ]
+    },
+    "n_should_refuse": 0,
+    "n_fault": 0,
+    "n_no_run": 0,
     "as_run": {
       "overall": {
         "k": 10,
@@ -133,132 +211,152 @@
         ]
       },
       "explain_labelled": {
-        "k": 9,
-        "n": 13,
-        "pct": 69.2,
+        "k": 10,
+        "n": 16,
+        "pct": 62.5,
         "ci95": [
-          42.4,
-          87.3
+          38.6,
+          81.5
         ]
       },
       "refuse_labelled": {
-        "k": 1,
-        "n": 3,
-        "pct": 33.3,
+        "k": 0,
+        "n": 0,
+        "pct": null,
         "ci95": [
-          6.1,
-          79.2
+          null,
+          null
+        ]
+      }
+    },
+    "model_alone": {
+      "overall": {
+        "k": 10,
+        "n": 16,
+        "pct": 62.5,
+        "ci95": [
+          38.6,
+          81.5
+        ]
+      },
+      "explain_labelled": {
+        "k": 10,
+        "n": 16,
+        "pct": 62.5,
+        "ci95": [
+          38.6,
+          81.5
+        ]
+      },
+      "refuse_labelled": {
+        "k": 0,
+        "n": 0,
+        "pct": null,
+        "ci95": [
+          null,
+          null
         ]
       }
     },
     "with_direction_guard": {
       "overall": {
-        "k": 12,
+        "k": 10,
         "n": 16,
-        "pct": 75.0,
+        "pct": 62.5,
         "ci95": [
-          50.5,
-          89.8
+          38.6,
+          81.5
         ]
       },
       "explain_labelled": {
-        "k": 9,
-        "n": 13,
-        "pct": 69.2,
+        "k": 10,
+        "n": 16,
+        "pct": 62.5,
         "ci95": [
-          42.4,
-          87.3
+          38.6,
+          81.5
         ]
       },
       "refuse_labelled": {
-        "k": 3,
-        "n": 3,
-        "pct": 100.0,
+        "k": 0,
+        "n": 0,
+        "pct": null,
         "ci95": [
-          43.8,
-          100.0
+          null,
+          null
         ]
       }
     },
+    "with_direction_guard_ties": {
+      "overall": {
+        "k": 10,
+        "n": 16,
+        "pct": 62.5,
+        "ci95": [
+          38.6,
+          81.5
+        ]
+      },
+      "explain_labelled": {
+        "k": 10,
+        "n": 16,
+        "pct": 62.5,
+        "ci95": [
+          38.6,
+          81.5
+        ]
+      },
+      "refuse_labelled": {
+        "k": 0,
+        "n": 0,
+        "pct": null,
+        "ci95": [
+          null,
+          null
+        ]
+      }
+    },
+    "guard_rule": "majority",
+    "guard_changed": [],
     "misses": [
       {
-        "date": "2020-03-19",
+        "date": "2023-01-31",
         "expected": "EXPLAIN",
-        "label_confidence": "high",
+        "label_confidence": "medium",
         "status": "graded",
         "verdict": "REFUSED",
         "verdict_with_guard": "REFUSED",
+        "verdict_model_alone": "REFUSED",
+        "verdict_with_guard_ties": "REFUSED",
         "correct": false,
         "correct_with_guard": false,
-        "model_used": null,
-        "direction_summary": {
-          "consistent": 1,
-          "neutral": 0,
-          "inconsistent": 0
-        }
-      },
-      {
-        "date": "2021-07-19",
-        "expected": "REFUSE",
-        "label_confidence": "high",
-        "status": "graded",
-        "verdict": "EXPLAINED",
-        "verdict_with_guard": "REFUSED",
-        "correct": false,
-        "correct_with_guard": true,
-        "model_used": "openai/gpt-oss-120b",
-        "direction_summary": {
-          "consistent": 2,
-          "neutral": 4,
-          "inconsistent": 13
-        }
-      },
-      {
-        "date": "2023-09-20",
-        "expected": "REFUSE",
-        "label_confidence": "medium",
-        "status": "graded",
-        "verdict": "EXPLAINED",
-        "verdict_with_guard": "REFUSED",
-        "correct": false,
-        "correct_with_guard": true,
+        "correct_model_alone": false,
+        "correct_with_guard_ties": false,
         "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
           "consistent": 0,
-          "neutral": 4,
-          "inconsistent": 5
-        }
-      },
-      {
-        "date": "2023-11-30",
-        "expected": "EXPLAIN",
-        "label_confidence": "medium",
-        "status": "graded",
-        "verdict": "REFUSED",
-        "verdict_with_guard": "REFUSED",
-        "correct": false,
-        "correct_with_guard": false,
-        "model_used": "openai/gpt-oss-120b",
-        "direction_summary": {
-          "consistent": 1,
-          "neutral": 1,
-          "inconsistent": 1
+          "inconsistent": 0,
+          "neutral": 9
         }
       },
       {
         "date": "2024-04-30",
         "expected": "EXPLAIN",
-        "label_confidence": "medium",
+        "label_confidence": "high",
         "status": "graded",
         "verdict": "REFUSED",
         "verdict_with_guard": "REFUSED",
+        "verdict_model_alone": "REFUSED",
+        "verdict_with_guard_ties": "REFUSED",
         "correct": false,
         "correct_with_guard": false,
+        "correct_model_alone": false,
+        "correct_with_guard_ties": false,
         "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
-          "consistent": 1,
-          "neutral": 0,
-          "inconsistent": 13
+          "consistent": 0,
+          "inconsistent": 0,
+          "neutral": 10
         }
       },
       {
@@ -268,33 +366,81 @@
         "status": "graded",
         "verdict": "REFUSED",
         "verdict_with_guard": "REFUSED",
+        "verdict_model_alone": "REFUSED",
+        "verdict_with_guard_ties": "REFUSED",
         "correct": false,
         "correct_with_guard": false,
-        "model_used": "gemini-3.6-flash",
+        "correct_model_alone": false,
+        "correct_with_guard_ties": false,
+        "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
-          "consistent": 9,
-          "neutral": 9,
-          "inconsistent": 2
+          "consistent": 0,
+          "inconsistent": 0,
+          "neutral": 11
         }
-      }
-    ],
-    "rows": [
+      },
       {
-        "date": "2020-03-19",
+        "date": "2024-12-02",
         "expected": "EXPLAIN",
         "label_confidence": "high",
         "status": "graded",
         "verdict": "REFUSED",
         "verdict_with_guard": "REFUSED",
+        "verdict_model_alone": "REFUSED",
+        "verdict_with_guard_ties": "REFUSED",
         "correct": false,
         "correct_with_guard": false,
-        "model_used": null,
+        "correct_model_alone": false,
+        "correct_with_guard_ties": false,
+        "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
-          "consistent": 1,
-          "neutral": 0,
-          "inconsistent": 0
+          "consistent": 0,
+          "inconsistent": 0,
+          "neutral": 7
         }
       },
+      {
+        "date": "2025-04-07",
+        "expected": "EXPLAIN",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "verdict_model_alone": "REFUSED",
+        "verdict_with_guard_ties": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "correct_model_alone": false,
+        "correct_with_guard_ties": false,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 0,
+          "inconsistent": 0,
+          "neutral": 11
+        }
+      },
+      {
+        "date": "2025-08-15",
+        "expected": "EXPLAIN",
+        "label_confidence": "medium",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "verdict_model_alone": "REFUSED",
+        "verdict_with_guard_ties": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "correct_model_alone": false,
+        "correct_with_guard_ties": false,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 0,
+          "inconsistent": 0,
+          "neutral": 11
+        }
+      }
+    ],
+    "rows": [
       {
         "date": "2021-05-05",
         "expected": "EXPLAIN",
@@ -302,29 +448,37 @@
         "status": "graded",
         "verdict": "EXPLAINED",
         "verdict_with_guard": "EXPLAINED",
+        "verdict_model_alone": "EXPLAINED",
+        "verdict_with_guard_ties": "EXPLAINED",
         "correct": true,
         "correct_with_guard": true,
+        "correct_model_alone": true,
+        "correct_with_guard_ties": true,
         "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
-          "consistent": 6,
-          "neutral": 0,
-          "inconsistent": 1
+          "consistent": 2,
+          "inconsistent": 1,
+          "neutral": 9
         }
       },
       {
         "date": "2021-07-19",
-        "expected": "REFUSE",
+        "expected": "EXPLAIN",
         "label_confidence": "high",
         "status": "graded",
         "verdict": "EXPLAINED",
-        "verdict_with_guard": "REFUSED",
-        "correct": false,
+        "verdict_with_guard": "EXPLAINED",
+        "verdict_model_alone": "EXPLAINED",
+        "verdict_with_guard_ties": "EXPLAINED",
+        "correct": true,
         "correct_with_guard": true,
+        "correct_model_alone": true,
+        "correct_with_guard_ties": true,
         "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
           "consistent": 2,
-          "neutral": 4,
-          "inconsistent": 13
+          "inconsistent": 0,
+          "neutral": 7
         }
       },
       {
@@ -334,13 +488,17 @@
         "status": "graded",
         "verdict": "EXPLAINED",
         "verdict_with_guard": "EXPLAINED",
+        "verdict_model_alone": "EXPLAINED",
+        "verdict_with_guard_ties": "EXPLAINED",
         "correct": true,
         "correct_with_guard": true,
-        "model_used": null,
+        "correct_model_alone": true,
+        "correct_with_guard_ties": true,
+        "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
-          "consistent": 16,
-          "neutral": 2,
-          "inconsistent": 1
+          "consistent": 4,
+          "inconsistent": 0,
+          "neutral": 5
         }
       },
       {
@@ -350,45 +508,57 @@
         "status": "graded",
         "verdict": "EXPLAINED",
         "verdict_with_guard": "EXPLAINED",
+        "verdict_model_alone": "EXPLAINED",
+        "verdict_with_guard_ties": "EXPLAINED",
         "correct": true,
         "correct_with_guard": true,
-        "model_used": null,
+        "correct_model_alone": true,
+        "correct_with_guard_ties": true,
+        "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
-          "consistent": 13,
-          "neutral": 3,
-          "inconsistent": 1
+          "consistent": 2,
+          "inconsistent": 0,
+          "neutral": 9
         }
       },
       {
         "date": "2021-07-30",
-        "expected": "REFUSE",
-        "label_confidence": "medium",
+        "expected": "EXPLAIN",
+        "label_confidence": "high",
         "status": "graded",
-        "verdict": "REFUSED",
-        "verdict_with_guard": "REFUSED",
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "EXPLAINED",
+        "verdict_model_alone": "EXPLAINED",
+        "verdict_with_guard_ties": "EXPLAINED",
         "correct": true,
         "correct_with_guard": true,
-        "model_used": null,
+        "correct_model_alone": true,
+        "correct_with_guard_ties": true,
+        "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
-          "consistent": 1,
-          "neutral": 6,
-          "inconsistent": 18
+          "consistent": 3,
+          "inconsistent": 1,
+          "neutral": 4
         }
       },
       {
         "date": "2022-05-11",
         "expected": "EXPLAIN",
-        "label_confidence": "medium",
+        "label_confidence": "high",
         "status": "graded",
         "verdict": "EXPLAINED",
         "verdict_with_guard": "EXPLAINED",
+        "verdict_model_alone": "EXPLAINED",
+        "verdict_with_guard_ties": "EXPLAINED",
         "correct": true,
         "correct_with_guard": true,
-        "model_used": null,
+        "correct_model_alone": true,
+        "correct_with_guard_ties": true,
+        "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
-          "consistent": 7,
-          "neutral": 1,
-          "inconsistent": 1
+          "consistent": 2,
+          "inconsistent": 0,
+          "neutral": 6
         }
       },
       {
@@ -396,63 +566,59 @@
         "expected": "EXPLAIN",
         "label_confidence": "medium",
         "status": "graded",
-        "verdict": "EXPLAINED",
-        "verdict_with_guard": "EXPLAINED",
-        "correct": true,
-        "correct_with_guard": true,
-        "model_used": "openai/gpt-oss-120b",
-        "direction_summary": {
-          "consistent": 2,
-          "neutral": 0,
-          "inconsistent": 1
-        }
-      },
-      {
-        "date": "2023-09-20",
-        "expected": "REFUSE",
-        "label_confidence": "medium",
-        "status": "graded",
-        "verdict": "EXPLAINED",
+        "verdict": "REFUSED",
         "verdict_with_guard": "REFUSED",
+        "verdict_model_alone": "REFUSED",
+        "verdict_with_guard_ties": "REFUSED",
         "correct": false,
-        "correct_with_guard": true,
+        "correct_with_guard": false,
+        "correct_model_alone": false,
+        "correct_with_guard_ties": false,
         "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
           "consistent": 0,
-          "neutral": 4,
-          "inconsistent": 5
+          "inconsistent": 0,
+          "neutral": 9
         }
       },
       {
         "date": "2023-11-30",
         "expected": "EXPLAIN",
-        "label_confidence": "medium",
+        "label_confidence": "high",
         "status": "graded",
-        "verdict": "REFUSED",
-        "verdict_with_guard": "REFUSED",
-        "correct": false,
-        "correct_with_guard": false,
+        "verdict": "EXPLAINED",
+        "verdict_with_guard": "EXPLAINED",
+        "verdict_model_alone": "EXPLAINED",
+        "verdict_with_guard_ties": "EXPLAINED",
+        "correct": true,
+        "correct_with_guard": true,
+        "correct_model_alone": true,
+        "correct_with_guard_ties": true,
         "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
           "consistent": 1,
-          "neutral": 1,
-          "inconsistent": 1
+          "inconsistent": 0,
+          "neutral": 11
         }
       },
       {
         "date": "2024-04-30",
         "expected": "EXPLAIN",
-        "label_confidence": "medium",
+        "label_confidence": "high",
         "status": "graded",
         "verdict": "REFUSED",
         "verdict_with_guard": "REFUSED",
+        "verdict_model_alone": "REFUSED",
+        "verdict_with_guard_ties": "REFUSED",
         "correct": false,
         "correct_with_guard": false,
+        "correct_model_alone": false,
+        "correct_with_guard_ties": false,
         "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
-          "consistent": 1,
-          "neutral": 0,
-          "inconsistent": 13
+          "consistent": 0,
+          "inconsistent": 0,
+          "neutral": 10
         }
       },
       {
@@ -462,41 +628,57 @@
         "status": "graded",
         "verdict": "REFUSED",
         "verdict_with_guard": "REFUSED",
+        "verdict_model_alone": "REFUSED",
+        "verdict_with_guard_ties": "REFUSED",
         "correct": false,
         "correct_with_guard": false,
-        "model_used": "gemini-3.6-flash",
+        "correct_model_alone": false,
+        "correct_with_guard_ties": false,
+        "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
-          "consistent": 9,
-          "neutral": 9,
-          "inconsistent": 2
+          "consistent": 0,
+          "inconsistent": 0,
+          "neutral": 11
         }
       },
       {
         "date": "2024-10-07",
         "expected": "EXPLAIN",
-        "label_confidence": "low",
+        "label_confidence": "high",
         "status": "graded",
         "verdict": "EXPLAINED",
         "verdict_with_guard": "EXPLAINED",
+        "verdict_model_alone": "EXPLAINED",
+        "verdict_with_guard_ties": "EXPLAINED",
         "correct": true,
         "correct_with_guard": true,
-        "model_used": null,
-        "direction_summary": {}
+        "correct_model_alone": true,
+        "correct_with_guard_ties": true,
+        "model_used": "qwen/qwen3.8-27b",
+        "direction_summary": {
+          "consistent": 2,
+          "inconsistent": 0,
+          "neutral": 9
+        }
       },
       {
         "date": "2024-12-02",
-        "expected": "REFUSE",
-        "label_confidence": "medium",
-        "status": "fault",
-        "verdict": "FAULT",
-        "verdict_with_guard": "FAULT",
-        "correct": null,
-        "correct_with_guard": null,
-        "model_used": null,
+        "expected": "EXPLAIN",
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "verdict_model_alone": "REFUSED",
+        "verdict_with_guard_ties": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "correct_model_alone": false,
+        "correct_with_guard_ties": false,
+        "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
           "consistent": 0,
-          "neutral": 9,
-          "inconsistent": 15
+          "inconsistent": 0,
+          "neutral": 7
         }
       },
       {
@@ -506,81 +688,120 @@
         "status": "graded",
         "verdict": "EXPLAINED",
         "verdict_with_guard": "EXPLAINED",
+        "verdict_model_alone": "EXPLAINED",
+        "verdict_with_guard_ties": "EXPLAINED",
         "correct": true,
         "correct_with_guard": true,
+        "correct_model_alone": true,
+        "correct_with_guard_ties": true,
         "model_used": "openai/gpt-oss-120b",
         "direction_summary": {
-          "consistent": 4,
-          "neutral": 3,
-          "inconsistent": 0
+          "consistent": 2,
+          "inconsistent": 0,
+          "neutral": 10
         }
       },
       {
         "date": "2025-04-07",
         "expected": "EXPLAIN",
-        "status": "no_run",
-        "label_confidence": "high"
+        "label_confidence": "high",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "verdict_model_alone": "REFUSED",
+        "verdict_with_guard_ties": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "correct_model_alone": false,
+        "correct_with_guard_ties": false,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 0,
+          "inconsistent": 0,
+          "neutral": 11
+        }
       },
       {
         "date": "2025-08-15",
+        "expected": "EXPLAIN",
+        "label_confidence": "medium",
+        "status": "graded",
+        "verdict": "REFUSED",
+        "verdict_with_guard": "REFUSED",
+        "verdict_model_alone": "REFUSED",
+        "verdict_with_guard_ties": "REFUSED",
+        "correct": false,
+        "correct_with_guard": false,
+        "correct_model_alone": false,
+        "correct_with_guard_ties": false,
+        "model_used": "openai/gpt-oss-120b",
+        "direction_summary": {
+          "consistent": 0,
+          "inconsistent": 0,
+          "neutral": 11
+        }
+      },
+      {
+        "date": "2025-09-15",
         "expected": "EXPLAIN",
         "label_confidence": "high",
         "status": "graded",
         "verdict": "EXPLAINED",
         "verdict_with_guard": "EXPLAINED",
+        "verdict_model_alone": "EXPLAINED",
+        "verdict_with_guard_ties": "EXPLAINED",
         "correct": true,
         "correct_with_guard": true,
-        "model_used": null,
-        "direction_summary": {}
-      },
-      {
-        "date": "2025-09-15",
-        "expected": "EXPLAIN",
-        "label_confidence": "medium",
-        "status": "graded",
-        "verdict": "EXPLAINED",
-        "verdict_with_guard": "EXPLAINED",
-        "correct": true,
-        "correct_with_guard": true,
-        "model_used": null,
-        "direction_summary": {}
+        "correct_model_alone": true,
+        "correct_with_guard_ties": true,
+        "model_used": "qwen/qwen3.8-27b",
+        "direction_summary": {
+          "consistent": 2,
+          "inconsistent": 0,
+          "neutral": 8
+        }
       }
     ]
   },
   "by_year": {
     "2018": {
-      "EXPLAINED": 0,
-      "REFUSED": 5,
+      "EXPLAINED": 2,
+      "REFUSED": 7,
+      "FAULT": 0
+    },
+    "2019": {
+      "EXPLAINED": 1,
+      "REFUSED": 11,
       "FAULT": 0
     },
     "2020": {
-      "EXPLAINED": 0,
-      "REFUSED": 1,
+      "EXPLAINED": 1,
+      "REFUSED": 10,
       "FAULT": 0
     },
     "2021": {
-      "EXPLAINED": 5,
-      "REFUSED": 1,
+      "EXPLAINED": 8,
+      "REFUSED": 4,
       "FAULT": 0
     },
     "2022": {
-      "EXPLAINED": 1,
-      "REFUSED": 0,
+      "EXPLAINED": 3,
+      "REFUSED": 8,
       "FAULT": 0
     },
     "2023": {
       "EXPLAINED": 2,
-      "REFUSED": 1,
+      "REFUSED": 3,
       "FAULT": 0
     },
     "2024": {
       "EXPLAINED": 1,
-      "REFUSED": 2,
-      "FAULT": 1
+      "REFUSED": 3,
+      "FAULT": 0
     },
     "2025": {
-      "EXPLAINED": 3,
-      "REFUSED": 0,
+      "EXPLAINED": 2,
+      "REFUSED": 2,
       "FAULT": 0
     },
     "2026": {
@@ -589,66 +810,829 @@
       "FAULT": 0
     }
   },
-  "retrieval": {
-    "gate_explain_rate": 96.7,
-    "gate_explain_count": 29,
-    "gate_explain_ci95": [
-      83.3,
-      99.4
-    ],
-    "llm_explain_rate": 43.3,
-    "llm_explain_count": 13,
-    "llm_explain_ci95": [
-      27.4,
-      60.8
-    ],
-    "avg_documents_retrieved": 61.0,
-    "zero_retrieval_rate": 0.0,
-    "zero_retrieval_count": 0,
-    "total_dates": 30
+  "guard_effect": {
+    "by_direction": {
+      "down": {
+        "runs": 29,
+        "model_explained": 12,
+        "guard_withholds": 8,
+        "withheld_rate": {
+          "k": 8,
+          "n": 12,
+          "pct": 66.7,
+          "ci95": [
+            39.1,
+            86.2
+          ]
+        },
+        "explained_after_guard": {
+          "k": 4,
+          "n": 29,
+          "pct": 13.8,
+          "ci95": [
+            5.5,
+            30.6
+          ]
+        }
+      },
+      "up": {
+        "runs": 30,
+        "model_explained": 7,
+        "guard_withholds": 0,
+        "withheld_rate": {
+          "k": 0,
+          "n": 7,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            35.4
+          ]
+        },
+        "explained_after_guard": {
+          "k": 7,
+          "n": 30,
+          "pct": 23.3,
+          "ci95": [
+            11.8,
+            40.9
+          ]
+        }
+      }
+    },
+    "withheld_overall": {
+      "k": 8,
+      "n": 19,
+      "pct": 42.1,
+      "ci95": [
+        23.1,
+        63.7
+      ]
+    }
   },
-  "citation_accuracy": {
-    "n_explained": 13,
-    "n_explained_with_report": 10,
-    "total_citations": 33,
-    "resolve": {
-      "k": 33,
-      "n": 33,
+  "blind": {
+    "n_runs": 16,
+    "refusal_stages": {
+      "nothing_recent_found": {
+        "k": 0,
+        "n": 6,
+        "pct": 0.0,
+        "ci95": [
+          0.0,
+          39.0
+        ]
+      },
+      "recent_found_none_relevant": {
+        "k": 0,
+        "n": 6,
+        "pct": 0.0,
+        "ci95": [
+          0.0,
+          39.0
+        ]
+      },
+      "read_no_quoted_reason": {
+        "k": 2,
+        "n": 6,
+        "pct": 33.3,
+        "ci95": [
+          9.7,
+          70.0
+        ]
+      },
+      "reason_points_other_way": {
+        "k": 4,
+        "n": 6,
+        "pct": 66.7,
+        "ci95": [
+          30.0,
+          90.3
+        ]
+      }
+    },
+    "refused_but_should_explain": [
+      {
+        "date": "2023-01-31",
+        "stage": "read_no_quoted_reason",
+        "retrieved": 595,
+        "retrieved_recent": 397,
+        "accepted": 138
+      },
+      {
+        "date": "2024-04-30",
+        "stage": "reason_points_other_way",
+        "retrieved": 611,
+        "retrieved_recent": 432,
+        "accepted": 163
+      },
+      {
+        "date": "2024-09-23",
+        "stage": "read_no_quoted_reason",
+        "retrieved": 491,
+        "retrieved_recent": 348,
+        "accepted": 158
+      },
+      {
+        "date": "2024-12-02",
+        "stage": "reason_points_other_way",
+        "retrieved": 585,
+        "retrieved_recent": 434,
+        "accepted": 273
+      },
+      {
+        "date": "2025-04-07",
+        "stage": "reason_points_other_way",
+        "retrieved": 591,
+        "retrieved_recent": 418,
+        "accepted": 184
+      },
+      {
+        "date": "2025-08-15",
+        "stage": "reason_points_other_way",
+        "retrieved": 634,
+        "retrieved_recent": 331,
+        "accepted": 142
+      }
+    ],
+    "explained_either_direction": {
+      "k": 0,
+      "n": 10,
+      "pct": 0.0,
+      "ci95": [
+        0.0,
+        27.8
+      ]
+    },
+    "documents_read": {
+      "k": 161,
+      "n": 161,
       "pct": 100.0,
       "ci95": [
-        89.6,
+        97.7,
+        100.0
+      ]
+    },
+    "reasons_with_quote_found": {
+      "k": 68,
+      "n": 70,
+      "pct": 97.1,
+      "ci95": [
+        90.2,
+        99.2
+      ]
+    },
+    "by_direction": {
+      "down": {
+        "runs": 6,
+        "explained": 3,
+        "explained_rate": {
+          "k": 3,
+          "n": 6,
+          "pct": 50.0,
+          "ci95": [
+            18.8,
+            81.2
+          ]
+        }
+      },
+      "up": {
+        "runs": 10,
+        "explained": 7,
+        "explained_rate": {
+          "k": 7,
+          "n": 10,
+          "pct": 70.0,
+          "ci95": [
+            39.7,
+            89.2
+          ]
+        }
+      }
+    },
+    "settings": [
+      {
+        "rule": "freshest",
+        "fresh_trading_days": 2,
+        "explained_all": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "explain_labelled": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      },
+      {
+        "rule": "freshest",
+        "fresh_trading_days": 1,
+        "explained_all": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "explain_labelled": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      },
+      {
+        "rule": "freshest",
+        "fresh_trading_days": 3,
+        "explained_all": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "explain_labelled": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      },
+      {
+        "rule": "pooled",
+        "fresh_trading_days": 2,
+        "explained_all": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "explain_labelled": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      }
+    ],
+    "variants": [
+      {
+        "variants": [
+          "gate_only"
+        ],
+        "text": "Only documents that cleared the relevance filter itself",
+        "explained_all": {
+          "k": 7,
+          "n": 16,
+          "pct": 43.8,
+          "ci95": [
+            23.1,
+            66.8
+          ]
+        },
+        "explain_labelled": {
+          "k": 7,
+          "n": 16,
+          "pct": 43.8,
+          "ci95": [
+            23.1,
+            66.8
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      },
+      {
+        "variants": [
+          "size_consistent"
+        ],
+        "text": "Ignore reports of a move under a quarter the size of the actual one",
+        "explained_all": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "explain_labelled": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      },
+      {
+        "variants": [
+          "current_moves",
+          "size_consistent"
+        ],
+        "text": "Both of the last two",
+        "explained_all": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "explain_labelled": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      },
+      {
+        "variants": [
+          "reports_only"
+        ],
+        "text": "Only articles that report a price move, not background events (added after seeing these dates)",
+        "explained_all": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "explain_labelled": {
+          "k": 10,
+          "n": 16,
+          "pct": 62.5,
+          "ci95": [
+            38.6,
+            81.5
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      },
+      {
+        "variants": [
+          "without current_moves"
+        ],
+        "text": "Counting reports of older and forecast moves too (the rule before version 9)",
+        "explained_all": {
+          "k": 12,
+          "n": 16,
+          "pct": 75.0,
+          "ci95": [
+            50.5,
+            89.8
+          ]
+        },
+        "explain_labelled": {
+          "k": 12,
+          "n": 16,
+          "pct": 75.0,
+          "ci95": [
+            50.5,
+            89.8
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      },
+      {
+        "variants": [
+          "without sized_support"
+        ],
+        "text": "Without the size check (a report need not describe a move this large)",
+        "explained_all": {
+          "k": 12,
+          "n": 16,
+          "pct": 75.0,
+          "ci95": [
+            50.5,
+            89.8
+          ]
+        },
+        "explain_labelled": {
+          "k": 12,
+          "n": 16,
+          "pct": 75.0,
+          "ci95": [
+            50.5,
+            89.8
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      },
+      {
+        "variants": [
+          "without event_reasons"
+        ],
+        "text": "Counting trading reasons too (\"technical adjustments\")",
+        "explained_all": {
+          "k": 12,
+          "n": 16,
+          "pct": 75.0,
+          "ci95": [
+            50.5,
+            89.8
+          ]
+        },
+        "explain_labelled": {
+          "k": 12,
+          "n": 16,
+          "pct": 75.0,
+          "ci95": [
+            50.5,
+            89.8
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      },
+      {
+        "variants": [
+          "without this_market"
+        ],
+        "text": "Counting reports about another market too (robusta, local prices)",
+        "explained_all": {
+          "k": 11,
+          "n": 16,
+          "pct": 68.8,
+          "ci95": [
+            44.4,
+            85.8
+          ]
+        },
+        "explain_labelled": {
+          "k": 11,
+          "n": 16,
+          "pct": 68.8,
+          "ci95": [
+            44.4,
+            85.8
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      },
+      {
+        "variants": [
+          "without this_market event_reasons sized_support"
+        ],
+        "text": "Without all three (the rule before version 11)",
+        "explained_all": {
+          "k": 15,
+          "n": 16,
+          "pct": 93.8,
+          "ci95": [
+            71.7,
+            98.9
+          ]
+        },
+        "explain_labelled": {
+          "k": 15,
+          "n": 16,
+          "pct": 93.8,
+          "ci95": [
+            71.7,
+            98.9
+          ]
+        },
+        "refuse_labelled": {
+          "k": 0,
+          "n": 0,
+          "pct": null,
+          "ci95": [
+            null,
+            null
+          ]
+        }
+      }
+    ],
+    "near_gate_read": 125,
+    "near_gate_usable": 22,
+    "search_yield": [
+      {
+        "search": "combined search, recent days",
+        "candidates": 1030,
+        "usable": 15,
+        "deciding": 9,
+        "dates_decided": 8
+      },
+      {
+        "search": "combined search, full window",
+        "candidates": 870,
+        "usable": 12,
+        "deciding": 8,
+        "dates_decided": 6
+      },
+      {
+        "search": "combined search, day of the move",
+        "candidates": 481,
+        "usable": 7,
+        "deciding": 4,
+        "dates_decided": 4
+      },
+      {
+        "search": "news feed",
+        "candidates": 203,
+        "usable": 1,
+        "deciding": 1,
+        "dates_decided": 1
+      },
+      {
+        "search": "coffee Brazil drought",
+        "candidates": 16,
+        "usable": 0,
+        "deciding": 0,
+        "dates_decided": 0
+      },
+      {
+        "search": "coffee Brazil frost",
+        "candidates": 3,
+        "usable": 0,
+        "deciding": 0,
+        "dates_decided": 0
+      },
+      {
+        "search": "coffee Minas Gerais",
+        "candidates": 1,
+        "usable": 0,
+        "deciding": 0,
+        "dates_decided": 0
+      },
+      {
+        "search": "coffee export Vietnam",
+        "candidates": 12,
+        "usable": 0,
+        "deciding": 0,
+        "dates_decided": 0
+      },
+      {
+        "search": "coffee futures",
+        "candidates": 12,
+        "usable": 0,
+        "deciding": 0,
+        "dates_decided": 0
+      },
+      {
+        "search": "coffee harvest rain",
+        "candidates": 10,
+        "usable": 0,
+        "deciding": 0,
+        "dates_decided": 0
+      },
+      {
+        "search": "coffee prices arabica",
+        "candidates": 1,
+        "usable": 0,
+        "deciding": 0,
+        "dates_decided": 0
+      },
+      {
+        "search": "coffee prices settle",
+        "candidates": 6,
+        "usable": 0,
+        "deciding": 0,
+        "dates_decided": 0
+      },
+      {
+        "search": "coffee supply shipping",
+        "candidates": 16,
+        "usable": 0,
+        "deciding": 0,
+        "dates_decided": 0
+      },
+      {
+        "search": "coffee tariff",
+        "candidates": 4,
+        "usable": 0,
+        "deciding": 0,
+        "dates_decided": 0
+      }
+    ]
+  },
+  "retrieval": {
+    "gate_explain_rate": 94.7,
+    "gate_explain_count": 71,
+    "gate_explain_ci95": [
+      87.1,
+      97.9
+    ],
+    "llm_explain_rate": 28.0,
+    "llm_explain_count": 21,
+    "llm_explain_ci95": [
+      19.1,
+      39.0
+    ],
+    "avg_documents_retrieved": 199.0,
+    "zero_retrieval_rate": 0.0,
+    "zero_retrieval_count": 0,
+    "total_dates": 75
+  },
+  "citation_accuracy": {
+    "n_explained": 21,
+    "n_explained_with_report": 21,
+    "total_citations": 52,
+    "resolve": {
+      "k": 52,
+      "n": 52,
+      "pct": 100.0,
+      "ci95": [
+        93.1,
         100.0
       ]
     },
     "weak_support": {
       "k": 0,
-      "n": 33,
+      "n": 52,
       "pct": 0.0,
       "ci95": [
         0.0,
-        10.4
+        6.9
       ]
     },
-    "low_rank": null,
-    "support_score_min": 0.795,
-    "support_score_median": 0.859,
+    "low_rank": {
+      "k": 4,
+      "n": 42,
+      "pct": 9.5,
+      "ci95": [
+        3.8,
+        22.1
+      ]
+    },
+    "support_score_min": 0.78,
+    "support_score_median": 0.852,
     "citations_resolve_rate": 100.0,
     "weak_support_rate": 0.0,
-    "avg_faithfulness_score": 0.855
+    "avg_faithfulness_score": 0.852
   },
   "direction_alignment": {
-    "n_evaluated": 10,
-    "n_explained": 13,
+    "n_evaluated": 21,
+    "n_explained": 21,
     "aligned": {
-      "k": 8,
-      "n": 10,
-      "pct": 80.0,
+      "k": 19,
+      "n": 21,
+      "pct": 90.5,
       "ci95": [
-        49.0,
-        94.3
+        71.1,
+        97.3
       ]
     },
     "rows": [
+      {
+        "date": "2018-08-20",
+        "consistent": 1,
+        "inconsistent": 0,
+        "neutral": 0,
+        "aligned": true
+      },
+      {
+        "date": "2018-10-02",
+        "consistent": 2,
+        "inconsistent": 1,
+        "neutral": 1,
+        "aligned": true
+      },
+      {
+        "date": "2019-06-05",
+        "consistent": 4,
+        "inconsistent": 2,
+        "neutral": 0,
+        "aligned": true
+      },
+      {
+        "date": "2020-02-03",
+        "consistent": 2,
+        "inconsistent": 1,
+        "neutral": 1,
+        "aligned": true
+      },
       {
         "date": "2021-04-06",
         "consistent": 9,
@@ -658,58 +1642,107 @@
       },
       {
         "date": "2021-05-05",
-        "consistent": 6,
+        "consistent": 2,
         "inconsistent": 1,
-        "neutral": 0,
+        "neutral": 9,
+        "aligned": true
+      },
+      {
+        "date": "2021-05-28",
+        "consistent": 5,
+        "inconsistent": 0,
+        "neutral": 3,
         "aligned": true
       },
       {
         "date": "2021-07-19",
         "consistent": 2,
-        "inconsistent": 13,
-        "neutral": 4,
-        "aligned": false
+        "inconsistent": 0,
+        "neutral": 7,
+        "aligned": true
       },
       {
         "date": "2021-07-20",
-        "consistent": 16,
-        "inconsistent": 1,
-        "neutral": 2,
+        "consistent": 4,
+        "inconsistent": 0,
+        "neutral": 5,
         "aligned": true
       },
       {
-        "date": "2021-07-22",
-        "consistent": 13,
-        "inconsistent": 1,
-        "neutral": 3,
-        "aligned": true
-      },
-      {
-        "date": "2022-05-11",
-        "consistent": 7,
+        "date": "2021-07-21",
+        "consistent": 10,
         "inconsistent": 1,
         "neutral": 1,
         "aligned": true
       },
       {
-        "date": "2023-01-31",
+        "date": "2021-07-22",
         "consistent": 2,
-        "inconsistent": 1,
-        "neutral": 0,
+        "inconsistent": 0,
+        "neutral": 9,
         "aligned": true
       },
       {
-        "date": "2023-09-20",
-        "consistent": 0,
-        "inconsistent": 5,
+        "date": "2021-07-30",
+        "consistent": 3,
+        "inconsistent": 1,
         "neutral": 4,
+        "aligned": true
+      },
+      {
+        "date": "2022-05-11",
+        "consistent": 2,
+        "inconsistent": 0,
+        "neutral": 6,
+        "aligned": true
+      },
+      {
+        "date": "2022-06-29",
+        "consistent": 2,
+        "inconsistent": 0,
+        "neutral": 2,
+        "aligned": true
+      },
+      {
+        "date": "2022-11-15",
+        "consistent": 1,
+        "inconsistent": 1,
+        "neutral": 2,
         "aligned": false
       },
       {
-        "date": "2025-02-10",
-        "consistent": 4,
+        "date": "2023-06-08",
+        "consistent": 2,
+        "inconsistent": 2,
+        "neutral": 0,
+        "aligned": false
+      },
+      {
+        "date": "2023-11-30",
+        "consistent": 1,
         "inconsistent": 0,
-        "neutral": 3,
+        "neutral": 11,
+        "aligned": true
+      },
+      {
+        "date": "2024-10-07",
+        "consistent": 2,
+        "inconsistent": 0,
+        "neutral": 9,
+        "aligned": true
+      },
+      {
+        "date": "2025-02-10",
+        "consistent": 2,
+        "inconsistent": 0,
+        "neutral": 10,
+        "aligned": true
+      },
+      {
+        "date": "2025-09-15",
+        "consistent": 2,
+        "inconsistent": 0,
+        "neutral": 8,
         "aligned": true
       },
       {
@@ -720,70 +1753,69 @@
         "aligned": true
       }
     ],
-    "direction_consistent_rate": 80.0,
-    "direction_conflict_rate": 20.0
+    "direction_consistent_rate": 90.5,
+    "direction_conflict_rate": 9.5
   },
   "source_diversity": {
     "gate_pass": {
-      "k": 29,
-      "n": 30,
-      "pct": 96.7,
+      "k": 71,
+      "n": 75,
+      "pct": 94.7,
       "ci95": [
-        83.3,
-        99.4
+        87.1,
+        97.9
       ]
     },
-    "avg_documents_retrieved": 61.0,
+    "avg_documents_retrieved": 199.0,
     "zero_retrieval": {
       "k": 0,
-      "n": 30,
+      "n": 75,
       "pct": 0.0,
       "ci95": [
         0.0,
-        11.4
+        4.9
       ]
     },
-    "runs_with_sources": 18,
-    "accepted_documents": 188,
-    "distinct_stories": 159,
+    "runs_with_sources": 63,
+    "accepted_documents": 2838,
+    "distinct_stories": 2832,
     "duplicate_share": {
-      "k": 29,
-      "n": 188,
-      "pct": 15.4,
+      "k": 6,
+      "n": 2838,
+      "pct": 0.2,
       "ci95": [
-        11.0,
-        21.3
+        0.1,
+        0.5
       ]
     },
     "published_after_anomaly": {
-      "k": 28,
-      "n": 188,
-      "pct": 14.9,
-      "ci95": [
-        10.5,
-        20.7
-      ]
-    },
-    "explained_with_sources": 8,
-    "avg_accepted_documents": 13.8,
-    "avg_unique_domains": 9.6,
-    "avg_distinct_stories": 9.5,
-    "single_story": {
       "k": 0,
-      "n": 8,
+      "n": 2838,
       "pct": 0.0,
       "ci95": [
         0.0,
-        32.4
+        0.1
       ]
     },
-    "single_source_rate": 0.0
+    "explained_with_sources": 19,
+    "avg_accepted_documents": 15.4,
+    "avg_unique_domains": 60.3,
+    "avg_distinct_stories": 86.8,
+    "single_story": {
+      "k": 1,
+      "n": 19,
+      "pct": 5.3,
+      "ci95": [
+        0.9,
+        24.6
+      ]
+    },
+    "single_source_rate": 5.3
   },
   "outcome_distribution": {
-    "REFUSED_WEAK_EVIDENCE": 10,
-    "EXPLAINED_STRONG": 8,
-    "REFUSED_CONFLICTING": 6,
-    "EXPLAINED_TENTATIVE": 5,
-    "SYSTEM_ERROR": 1
+    "REFUSED_WEAK_EVIDENCE": 29,
+    "REFUSED_CONFLICTING": 25,
+    "EXPLAINED_TENTATIVE": 11,
+    "EXPLAINED_STRONG": 10
   }
 }

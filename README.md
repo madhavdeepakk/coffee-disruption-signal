@@ -54,17 +54,18 @@ All figures are from `results/`, each produced by a script listed under [Reprodu
 
 | Question | Result | Source |
 |---|---|---|
-| Does the detector flag known events and stay quiet otherwise? | Coffee 4/4 events, crude oil 5/5, wheat 4/4; no flags in each commodity's ~60-day quiet control period | `detector_evaluation.md` |
-| Does it explain a move that has a documented cause? | Version 9: 12 of 16 labelled dates (75%, CI 51-90%), one model throughout. Version 8: 10 of 16. In-sample: version 9 was designed on these dates | `EVALUATION.md` sections 9c, 9e |
-| Does it refuse when it should? | **No.** Version 10, given an invented move on a quiet day, explained 5 of 12 (42%, CI 19-68%). Version 11 adds a rule built from those failures and has not been run | `EVALUATION.md` section 9f |
-| Is it better than always explaining? | No, on these dates: 12 of 16 against 16 of 16. With no should-refuse date in the key, always explaining cannot lose | `EVALUATION.md` sections 9d, 9e |
+| Does the detector flag known events and stay quiet otherwise? | 23 of 23 cited events across five commodities: coffee 4/4, crude oil 5/5, wheat 4/4, gold 6/6, silver 6/6; no flags in any commodity's verified quiet control period | `detector_evaluation.md` |
+| Does it explain a move that has a documented cause? | Version 11: 10 of 16 labelled dates (62.5%, CI 39-82%), one model throughout. Version 9: 12 of 16; version 8: 10 of 16. In-sample: each version was designed on these dates | `EVALUATION.md` sections 9e, 9g |
+| Does it refuse when it should? | Better, not solved. Version 11, given an invented move on twelve quiet days it was not designed on, explained 2 of 12 (16.7%, CI 5-45%), against 8 of 12 for the rule before it on the same readings (paired, McNemar p = 0.031). Version 10 scored 5 of 12 | `EVALUATION.md` sections 9f, 9g |
+| Is it better than always explaining? | No, on these dates: 10 of 16 against 16 of 16. With no should-refuse date in the key, always explaining cannot lose; the invented-move test is where refusing counts | `EVALUATION.md` sections 9d, 9g |
 | Are cited sources real? | 24 of 24 citations in the version 9 runs point to a document the model was shown (CI 86-100%); every one of the 66 reasons the model reported carried a quote found in its document | `EVALUATION.md` section 9e |
 | Do cited sources support the claims? | Not yet measured. The automated score cannot fail; a human audit sheet is in place | `scripts/audit_citations.py` |
 | Does the semantic score separate relevant from irrelevant documents? | AUC 0.81 (CI 0.53-0.91) on 20 labelled documents; the keyword score is no better than chance (0.42, CI 0.24-0.70) | `retrieval_evaluation.md` |
 | Does the gate threshold hold up out of sample? | Precision 100% in-sample, 71% held-out (5/7, CI 36-92%) | `relevance_gate_calibration.md` |
 | Can price direction be predicted? | No. Logistic regression 50.2% vs 50.7% baseline; ARIMA 46.4% vs 51.5%; analog outlook 34% vs 44% random | `forecast_evaluation.md`, `backtest_outlook_report.md` |
+| Does a commodity price move reach consumer prices? | For oil, yes and largely within three months: a 10% rise in WTI goes with US petrol up 6.0% and US energy prices up 3.9% (both p < 0.001 after correcting for 25 pairs tested), and it cuts the error of a petrol-inflation estimate made before publication by 31%. For coffee into all-items inflation, and for every pair tested against India's index, nothing that can be told from chance | `inflation_report.md` |
 
-The headline is rows two to four. On the answer key as re-checked, version 9 failed to explain 4 of 16 moves that market reports of the day explain. And when version 10 was given a move that never happened, it explained 5 of 12: it refused when the invented direction happened to disagree with that day's market reports and explained when it agreed, which is a coin toss and not the claim the project makes. Version 11 requires a report that fits the move (this market, an event as the reason, a move of this size); applied to the stored readings it refuses all 12 and keeps at least 7 of the 12 real explanations, and it has not been run. The step from 10 to 12 is three dates gained and one lost, on the dates the change was designed on; it is not evidence of an improvement that would hold elsewhere. Earlier versions of this table reported 1 of 3 should-refuse dates refused; those labels did not survive the written labelling rule (`results/EVALUATION.md`, section 9c). The sections below are the history of how the system got here, in order.
+The headline is rows two to four. On the answer key as re-checked, version 11 fails to explain 6 of 16 moves that market reports of the day explain, and version 9 failed on 4. That is the price of the version 11 rule, and it was paid for a measured return: given a move that never happened, the rule before it explained 8 of 12 quiet days and version 11 explains 2, on the same readings, with six days flipping one way and none the other. Tightening the relevance filter instead would cost three more real explanations to prevent one more false one, which is why version 11 is kept. Both effects are marginal at this sample size (p = 0.031 and p = 0.063) and the quiet days are the easy case for a size check. The two false explanations that remain, and one real explanation that was lost, all trace to the same field of the reading - whether the document's price move is the one being explained - whose accuracy has never been measured (`EVALUATION.md`, section 9g). Earlier versions of this table reported 1 of 3 should-refuse dates refused; those labels did not survive the written labelling rule (section 9c). The sections below are the history of how the system got here, in order.
 
 ## What auditing the stored runs turned up
 
@@ -210,6 +211,7 @@ python -m scripts.calibrate_thresholds               # results/relevance_gate_ca
 python -m scripts.evaluate_retrieval                 # results/retrieval_evaluation.md
 python -m scripts.ops_report                         # results/ops_report.md
 python -m scripts.evaluate_detector --all            # results/detector_evaluation.md
+python -m src.modeling.inflation                     # results/inflation_report.md
 
 # Needs the embedding model
 python -m src.evaluation.ablation_study              # results/ablation_study_report.md
@@ -220,6 +222,10 @@ python -m scripts.run_eval_set --fill-cache --run --max 18 --labelled-first --pr
 python -m scripts.run_eval_set --run                 # pipeline over data/eval/eval_dates.csv
 python -m scripts.run_eval_set --run --retry-incomplete   # redo dates whose news queries failed
 python -m src.evaluation.robustness                  # results/robustness_report.md
+python -m src.evaluation.robustness --providers groq --experiments placebo --n-placebo 12 --seed 11
+python -m src.data.cpi                               # refresh data/raw/inflation_series.csv (keyless)
+python -m src.modeling.fetch_price_data --commodity gold     # and silver, crude_oil, wheat
+python -m scripts.run_commodity_eval --commodity gold        # the pipeline on a commodity with no answer key
 
 # Needs a person
 python -m scripts.audit_citations --export           # then label, then --score

@@ -30,6 +30,17 @@ Indonesian, Turkish, Russian, Chinese, Japanese, and from pipeline version
 labelled date because its headline was in Arabic). They list verbs of rising
 and of falling side by side and the score never says which was matched, so
 it cannot favour one direction.
+
+Other commodities. The lists were built for coffee and coffee's are unchanged.
+For crude oil, wheat, gold and silver a Subject (below) carries the three
+things that differ: the words that name the commodity, the words that place a
+headline on ITS exchange (Brent, WTI, a barrel; bullion, an ounce, COMEX; a
+bushel, Chicago), and which other commodities mark a round-up. The words for a
+price and for a move are shared. These subjects have English names plus the
+commonest names in the other languages and have not been tuned on labelled
+dates the way coffee's were: that is a stated limit, not an oversight.
+set_subject() chooses the subject for the run; nothing changes unless it is
+called, so a coffee run reads exactly what it read before.
 """
 
 import re
@@ -106,6 +117,91 @@ _RETAIL = re.compile(
     r"\btaza\b|\btasse\b|\bчашк\w*",
     re.IGNORECASE)
 
+
+
+class Subject:
+    """What differs between commodities when choosing what to read: the words
+    for the commodity, extra words that place a headline on its exchange, and
+    the other commodities whose presence in an opening marks a round-up."""
+
+    def __init__(self, name, exchange=None, others=None):
+        self.name = name
+        self.exchange = exchange
+        self.others = others
+
+    def on_exchange(self, title: str) -> bool:
+        return bool(_EXCHANGE.search(title)
+                    or (self.exchange is not None and self.exchange.search(title)))
+
+
+_METALS_ROUNDUP = re.compile(
+    r"\bcopper\b|\bplatinum\b|\bpalladium\b|\bmetals\b|\bcommodities\b|\bcrude\b|\boil\b|"
+    r"\bstocks\b|\bequities\b|\bbitcoin\b|\bcobre\b|\bplatino\b|\bpetr[oó]leo\b",
+    re.IGNORECASE)
+
+SUBJECTS = {
+    # Coffee: exactly the patterns this module always used (see COFFEE and
+    # _OTHER_COMMODITY). exchange is None because coffee's exchange words are
+    # already in _EXCHANGE.
+    "coffee": Subject(COFFEE),
+    "crude_oil": Subject(
+        re.compile(r"\bcrude\b|\boil\b|\bbrent\b|\bwti\b|\bpetroleum\b|\bopec\b|"
+                   r"petr[oó]leo|p[eé]trole|\b[oö]l\b|\broh[oö]l\b|нефт\w*|原油|石油|النفط|نفط|원유|"
+                   r"\bpetrol\b|d[aầ]u th[oô]", re.IGNORECASE),
+        exchange=re.compile(r"\bbrent\b|\bwti\b|\bnymex\b|\bbarrels?\b|\bbarril\b|\bbaril\b|"
+                            r"баррел\w*|每桶|배럴|برميل", re.IGNORECASE),
+        others=re.compile(r"\bgold\b|\bsilver\b|\bcopper\b|\bnatural gas\b|\bwheat\b|\bcorn\b|"
+                          r"\bsugar\b|\bcoffee\b|\bcommodities\b|\bstocks\b|\bequities\b|"
+                          r"\bouro\b|\boro\b|\bgas natural\b", re.IGNORECASE)),
+    "wheat": Subject(
+        re.compile(r"\bwheat\b|\bgrains?\b|\btrigo\b|\bbl[eé]\b|\bweizen\b|\bgrano\b|\bgandum\b|"
+                   r"\bbu[gğ]day\b|пшениц\w*|小麦|小麥|القمح|قمح|밀\b|l[uú]a m[iì]", re.IGNORECASE),
+        exchange=re.compile(r"\bcbot\b|\bchicago\b|\bbushels?\b|\bmatif\b|\beuronext\b|"
+                            r"\bkansas\b|\bsrw\b|\bhrw\b|бушел\w*|蒲式耳", re.IGNORECASE),
+        others=re.compile(r"\bcorn\b|\bmaize\b|\bsoy\w*|\brice\b|\bsugar\b|\bcoffee\b|\bcotton\b|"
+                          r"\bcrude\b|\boil\b|\bcommodities\b|\bmilho\b|\bma[ií]z\b|\bsoja\b|"
+                          r"\barroz\b|кукуруз\w*|玉米|大豆", re.IGNORECASE)),
+    "gold": Subject(
+        re.compile(r"\bgold\b|\bbullion\b|\bouro\b|\boro\b|\bl'or\b|\baltın\b|\balt[iı]n\b|"
+                   r"\bemas\b|золот\w*|黄金|金価格|金价|金價|الذهب|ذهب|금값|금 가격|v[aà]ng\b",
+                   re.IGNORECASE),
+        exchange=re.compile(r"\bcomex\b|\blbma\b|\bbullion\b|\bounces?\b|\bspot gold\b|\bonza\b|"
+                            r"\bon[cç]a\b|\bonce\b|унци\w*|盎司|オンス|온스|أونصة|أوقية",
+                            re.IGNORECASE),
+        others=re.compile(r"\bsilver\b|\bprata\b|\bplata\b|" + _METALS_ROUNDUP.pattern,
+                          re.IGNORECASE)),
+    "silver": Subject(
+        re.compile(r"\bsilver\b|\bprata\b|\bplata\b|\bl'argent\b|\bsilber\b|\bargento\b|"
+                   r"\bg[uü]m[uü][sş]\b|\bperak\b|серебр\w*|白银|白銀|銀価格|الفضة|فضة|은값|은 가격|"
+                   r"\bb[aạ]c\b", re.IGNORECASE),
+        exchange=re.compile(r"\bcomex\b|\blbma\b|\bbullion\b|\bounces?\b|\bspot silver\b|"
+                            r"\bonza\b|\bon[cç]a\b|\bonce\b|унци\w*|盎司|オンス|온스|أونصة|أوقية",
+                            re.IGNORECASE),
+        others=re.compile(r"\bgold\b|\bouro\b|\boro\b|" + _METALS_ROUNDUP.pattern,
+                          re.IGNORECASE)),
+}
+
+_subject = SUBJECTS["coffee"]
+
+
+def set_subject(commodity: str = "coffee") -> Subject:
+    """Choose the commodity whose reports are being looked for, by its key in
+    src/config/commodities.py ("crude oil" and "crude_oil" are the same). An
+    unknown commodity falls back to coffee's lists, loudly."""
+    global _subject
+    key = str(commodity or "coffee").strip().lower().replace(" ", "_")
+    if key not in SUBJECTS:
+        print(f"market_report: no word lists for '{commodity}'; using coffee's. "
+              f"Headlines about {commodity} will not be recognised as market reports.")
+        key = "coffee"
+    _subject = SUBJECTS[key]
+    return _subject
+
+
+def subject() -> Subject:
+    return _subject
+
+
 # At or above this score a headline is treated as a market report and read
 # before anything else of its age or older.
 REPORT_SCORE = 3
@@ -125,11 +221,12 @@ def market_report_score(doc: dict) -> int:
     headline about shop prices with nothing from the exchange is held below
     REPORT_SCORE. The score says nothing about which way prices moved."""
     title = doc.get("title") or ""
+    on_exchange = _subject.on_exchange(title)
     move = 2 if _MOVE_REPORT.search(title) else int(bool(_MOVE.search(title)))
-    score = (bool(COFFEE.search(title)) + bool(_PRICE.search(title)) + move
-             + bool(_PERCENT.search(title)) + 2 * bool(_EXCHANGE.search(title)))
+    score = (bool(_subject.name.search(title)) + bool(_PRICE.search(title)) + move
+             + bool(_PERCENT.search(title)) + 2 * on_exchange)
     # A shop-price headline with no word from the exchange is not a market report.
-    if _RETAIL.search(title) and not _EXCHANGE.search(title):
+    if _RETAIL.search(title) and not on_exchange:
         score = min(score, REPORT_SCORE - 1)
     return score
 
@@ -200,7 +297,7 @@ def _passage_score(sentence: str) -> int:
     """0 if the sentence does not mention coffee; else 1, plus 1 for a word of
     movement and 1 for a figure - the marks of the sentence that says what
     coffee did."""
-    if not COFFEE.search(sentence):
+    if not _subject.name.search(sentence):
         return 0
     return (1 + bool(_MOVE_REPORT.search(sentence) or _MOVE.search(sentence))
             + bool(_PERCENT.search(sentence)))
@@ -222,7 +319,8 @@ def focus_text(text: str, limit: int = 4000) -> str:
     "the contract fell 4.9% as rain was forecast" without the word coffee,
     and cutting to the sentences that have the word would lose it."""
     text = text or ""
-    if len(text) <= OPENING_CHARS or not _OTHER_COMMODITY.search(text[:OPENING_CHARS]):
+    round_up = _subject.others or _OTHER_COMMODITY
+    if len(text) <= OPENING_CHARS or not round_up.search(text[:OPENING_CHARS]):
         return text
     sentences = _sentences(text)
     scores = [_passage_score(text[s:e]) for s, e in sentences]

@@ -1040,6 +1040,124 @@ if selected:
 
 
 # ===================================================================
+# INFLATION AND PASS-THROUGH
+# ===================================================================
+# Read from results/inflation_report.json, which src.modeling.inflation
+# rebuilds offline from data/raw/inflation_series.csv. No model and no
+# network, so this section behaves the same under READ_ONLY.
+st.divider()
+st.subheader("Inflation and Pass-Through")
+
+inflation_path = RESULTS_DIR / "inflation_report.json"
+if not inflation_path.exists():
+    st.info("Run `python -m src.modeling.inflation` to see consumer prices and "
+            "pass-through here.")
+else:
+    with open(inflation_path, encoding="utf-8") as f:
+        infl = json.load(f)
+
+    tracking = infl.get("tracking") or []
+    pairs = infl.get("pairs") or []
+
+    def _pct(v):
+        return "-" if v is None else f"{v:+.1f}%"
+
+    infl_tabs = st.tabs(["Where inflation stands", "Pass-through", "What it says"])
+
+    with infl_tabs[0]:
+        if tracking:
+            st.dataframe(
+                pd.DataFrame([{
+                    "Country": r.get("country"),
+                    "Series": r.get("label"),
+                    "Latest": r.get("month"),
+                    "Year on year": _pct(r.get("yoy")),
+                    "Last 3m, annualised": _pct(r.get("three_month_annualised")),
+                    "A year earlier": _pct(r.get("yoy_a_year_earlier")),
+                } for r in tracking]),
+                hide_index=True, use_container_width=True)
+            st.caption(
+                "India's monthly index and the G20 series come from an OECD database "
+                "that stopped updating, so they end where the table says. Figures are "
+                "the published index, not a forecast.")
+
+    with infl_tabs[1]:
+        # After a year, what a 10% rise in the commodity goes with. Only pairs
+        # that survive the Holm correction across all 25 tested are drawn: the
+        # rest are reported as no relationship in the next tab, and plotting
+        # them would show noise as if it were an effect.
+        shown = [p for p in pairs
+                 if not (p.get("pass_through") or {}).get("too_short")
+                 and ((p.get("pass_through") or {}).get("p_holm") or 1.0) < 0.05]
+        # Ascending: a horizontal bar chart draws the first row at the bottom,
+        # so sorting the other way puts the largest pass-through at the top.
+        shown.sort(key=lambda p: (p["pass_through"]["sum_beta"] or 0))
+        if shown:
+            labels = [f"{p['driver_label']} → {p['country']}: {p['target_label']}"
+                      for p in shown]
+            total = [10.0 * (p["pass_through"]["sum_beta"] or 0) for p in shown]
+            early = [10.0 * (p["pass_through"].get("early_beta") or 0) for p in shown]
+            fig = go.Figure()
+            fig.add_trace(go.Bar(y=labels, x=early, orientation="h",
+                                 name="within 3 months", marker_color="#1f6f8b"))
+            fig.add_trace(go.Bar(y=labels, x=[t - e for t, e in zip(total, early)],
+                                 orientation="h", name="months 4-12",
+                                 marker_color="#95a5a6"))
+            fig.update_layout(
+                barmode="stack",
+                title="After a 10% rise in the commodity, the price index moves by",
+                xaxis_title="percent", height=60 + 42 * len(shown),
+                margin=dict(t=50, b=40, l=10, r=10),
+                legend=dict(orientation="h", y=-0.2))
+            st.plotly_chart(fig, use_container_width=True)
+            st.caption(
+                f"{len(shown)} of {infl.get('n_pairs', len(pairs))} pairs tested clear "
+                "the Holm correction at 5%. A regression on monthly figures shows that "
+                "the two moved together; it does not show that the commodity caused the "
+                "change in consumer prices.")
+        else:
+            st.info("No pair cleared the correction for multiple testing.")
+
+        nowcast = [p for p in pairs
+                   if not (p.get("nowcast") or {}).get("too_short")
+                   and ((p.get("nowcast") or {}).get("improvement_pct") or 0) > 0]
+        nowcast.sort(key=lambda p: p["nowcast"]["improvement_pct"], reverse=True)
+        if nowcast:
+            with st.expander("Does the commodity price improve an estimate made before "
+                             "the figure is published?"):
+                st.dataframe(
+                    pd.DataFrame([{
+                        "Commodity → index":
+                            f"{p['driver_label']} → {p['country']}: {p['target_label']}",
+                        "Test months": p["nowcast"]["n_test"],
+                        "Baseline error": f"{p['nowcast']['rmse_baseline']:.3f}",
+                        "With commodity": f"{p['nowcast']['rmse_model']:.3f}",
+                        "Improvement": f"{p['nowcast']['improvement_pct']:+.1f}%",
+                        "p (Holm)": f"{p['nowcast']['p_holm']:.3f}",
+                    } for p in nowcast]),
+                    hide_index=True, use_container_width=True)
+                st.caption(
+                    "The baseline is the same autoregression with the commodity terms "
+                    "removed, refitted every month. Only the Holm column decides whether "
+                    "an improvement counts, and several large ones here do not clear it.")
+
+    with infl_tabs[2]:
+        by_verdict = {}
+        for p in pairs:
+            by_verdict.setdefault(p.get("verdict") or "not scored", []).append(
+                f"{p['driver_label']} → {p['country']}: {p['target_label']}")
+        for verdict, items in sorted(by_verdict.items(), key=lambda kv: -len(kv[1])):
+            st.markdown(f"**{verdict.capitalize()}** ({len(items)} of {len(pairs)})")
+            for line in items:
+                st.markdown(f"- {line}")
+        st.caption(
+            "A pair listed as having no relationship is a result, not a gap: for that "
+            "commodity and that index the monthly record shows nothing chance alone "
+            "would not. India has only the all-items index here - no food or fuel "
+            "sub-index, which is where pass-through would show first - and fuel prices "
+            "there were administered for much of the sample.")
+
+# ===================================================================
 # SYSTEM EVALUATION
 # ===================================================================
 # Hidden for now. The stored evaluation_report.json was produced by runs under

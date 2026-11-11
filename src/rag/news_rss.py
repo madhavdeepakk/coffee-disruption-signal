@@ -45,6 +45,8 @@ RSS_QUERIES = {
                "OR coffee tariff OR coffee supply OR coffee export"),
     "crude_oil": "crude oil prices OR oil futures OR OPEC OR oil supply",
     "wheat": "wheat prices OR wheat futures OR grain harvest OR wheat export",
+    "gold": "gold prices OR gold futures OR bullion OR gold Federal Reserve OR spot gold",
+    "silver": "silver prices OR silver futures OR silver bullion OR spot silver",
 }
 
 GOOGLE_NEWS_RSS = "https://news.google.com/rss/search"

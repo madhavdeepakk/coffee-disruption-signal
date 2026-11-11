@@ -74,6 +74,10 @@ Usage:
     python -m src.evaluation.robustness --report-only        # rebuild the report from cache
     python -m src.evaluation.robustness --providers groq --experiments placebo --n-placebo 12
                                         # the refusal test alone, on 12 quiet days
+    python -m src.evaluation.robustness --commodity gold --experiments placebo --n-placebo 12
+                                        # the same test on another commodity; its trials,
+                                        # caches and report (robustness_report_gold.md) are
+                                        # kept apart from coffee's
 """
 
 import argparse
@@ -103,6 +107,33 @@ TRIAL_CACHE = CACHE_DIR / "trials"
 # Blind readings of a date's documents. A reading does not depend on the
 # move, so the true-move and flipped-move trials of a date share one.
 READING_CACHE = CACHE_DIR / "readings"
+
+# The commodity under test. Coffee's files keep the names they always had;
+# another commodity's trials, evidence, readings and report are kept under
+# its own name so that two commodities with a quiet day on the same date
+# never answer for each other. Changed only through use_commodity().
+COMMODITY = "coffee"
+
+
+def use_commodity(key: str) -> None:
+    """Point the harness at another commodity in src/config/commodities.py."""
+    global COMMODITY, EVIDENCE_CACHE, TRIAL_CACHE, READING_CACHE
+    from src.config.commodities import get_commodity
+    from src.rag import market_report
+    COMMODITY = get_commodity(key).key
+    market_report.set_subject(COMMODITY)
+    if COMMODITY != "coffee":
+        EVIDENCE_CACHE = CACHE_DIR / COMMODITY / "evidence"
+        TRIAL_CACHE = CACHE_DIR / COMMODITY / "trials"
+        READING_CACHE = CACHE_DIR / COMMODITY / "readings"
+
+
+def _named(filename: str) -> str:
+    """robustness_report.md for coffee, robustness_report_gold.md for gold."""
+    if COMMODITY == "coffee":
+        return filename
+    stem, dot, suffix = filename.rpartition(".")
+    return f"{stem}_{COMMODITY}{dot}{suffix}"
 
 # Not a prompt: the name the harness uses for the blind-evidence decision
 # (src/rag/blind_evidence.py) so it can be run next to the prompt versions of
@@ -139,9 +170,9 @@ Respond with ONLY a JSON object, no other text, in exactly this shape:
 # Date selection
 # ---------------------------------------------------------------------------
 
-def load_detections(commodity: str = "coffee") -> pd.DataFrame:
+def load_detections(commodity: str = None) -> pd.DataFrame:
     from src.config.commodities import get_commodity
-    return pd.read_csv(RESULTS_DIR / get_commodity(commodity).anomalies_file)
+    return pd.read_csv(RESULTS_DIR / get_commodity(commodity or COMMODITY).anomalies_file)
 
 
 def real_dates(labels: dict, limit: int = None, df: pd.DataFrame = None) -> list:
@@ -151,8 +182,9 @@ def real_dates(labels: dict, limit: int = None, df: pd.DataFrame = None) -> list
     detected anomaly (the pipeline will run on any date if asked) is not a
     "real anomaly" and would blur the control condition."""
     dates = set(labels)
-    for path in RESULTS_DIR.glob("pipeline_output_coffee_*.json"):
-        dates.add(path.stem.replace("pipeline_output_coffee_", ""))
+    prefix = f"pipeline_output_{COMMODITY}_"
+    for path in RESULTS_DIR.glob(f"{prefix}*.json"):
+        dates.add(path.stem.replace(prefix, ""))
     if df is not None:
         flagged = set(df.loc[df["anomaly_flag"].fillna(False).astype(bool), "date"])
         dates &= flagged
@@ -294,14 +326,14 @@ def news_complete(date: str) -> bool:
     """True when every news request the pipeline sends for this date has an
     answer in the cache."""
     from scripts.run_eval_set import uncached_requests
-    return not uncached_requests(date)
+    return not uncached_requests(date, COMMODITY)
 
 
 def fill_news(dates: list) -> dict:
     """Ask the news API for every request these dates still lack, keeping at
     it the way the evaluation set's cache-filling pass does."""
     from scripts.run_eval_set import fill_cache
-    return fill_cache(dates)
+    return fill_cache(dates, COMMODITY)
 
 
 def _evidence_path(date: str, retrieval: str, text_max_age: int = None) -> Path:
@@ -314,8 +346,8 @@ def _evidence_path(date: str, retrieval: str, text_max_age: int = None) -> Path:
     tag = f"p{PIPELINE_VERSION}"
     if retrieval == "cache":
         from scripts.run_eval_set import gdelt_requests, uncached_requests
-        total = len(gdelt_requests(date))
-        tag += f"__q{total - len(uncached_requests(date))}of{total}"
+        total = len(gdelt_requests(date, COMMODITY))
+        tag += f"__q{total - len(uncached_requests(date, COMMODITY))}of{total}"
     if text_max_age is not None:
         tag += f"__text{text_max_age}"
     return EVIDENCE_CACHE / f"{retrieval}__{date}__{tag}.json"
@@ -341,7 +373,7 @@ def evidence_for(date: str, retrieval: str = "live", use_cache: bool = True,
 
     from src import pipeline
     from src.config.commodities import get_commodity
-    cfg = get_commodity("coffee")
+    cfg = get_commodity(COMMODITY)
     kwargs = dict(cache_dir=pipeline.GDELT_CACHE_DIR, fallback_dir=None, return_meta=True)
     if retrieval == "cache":
         kwargs.update(commodity_key=None, gdelt_live=False, fetch_text="cache")
@@ -405,7 +437,9 @@ def pipeline_trial(experiment: str, anomaly: dict, documents: list, retrieval_me
             anomaly, copy.deepcopy(documents), retrieval_meta,
             prompt_version=None if blind else prompt_version, providers=providers,
             decision_mode="blind" if blind else "legacy",
-            reading_cache_dir=READING_CACHE if blind else None, verbose=False)
+            reading_cache_dir=READING_CACHE if blind else None, verbose=False,
+            **({} if COMMODITY == "coffee"
+               else {"commodity_name": COMMODITY.replace("_", " ")}))
     except Exception as exc:  # noqa: BLE001 - one bad response must not stop a long run
         return {"experiment": experiment, "date": anomaly["date"],
                 "direction": anomaly.get("direction"), "prompt_version": prompt_version,
@@ -601,7 +635,7 @@ def run_trials(experiments: list, real: list, placebo: list, df: pd.DataFrame,
     from src.config.commodities import get_commodity
     from src.rag import blind_evidence
 
-    cfg = get_commodity("coffee")
+    cfg = get_commodity(COMMODITY)
     # The blind reading is only ever shown recent documents, and the pipeline
     # fetches article text for those alone. The earlier model-decides path
     # reads the whole window, so it needs the text of all of it.
@@ -825,7 +859,8 @@ def make_chart(summary: dict, version: str, path: Path) -> bool:
 
 def generate_report(summary: dict, trials: list, labels: dict, config: dict,
                     chart_name: str = None) -> str:
-    L = ["# Robustness Evaluation", ""]
+    L = ["# Robustness Evaluation" + ("" if COMMODITY == "coffee"
+                                     else f" - {COMMODITY.replace('_', ' ')}"), ""]
     L.append("How often the system explains a move, under conditions where explaining is "
              "and is not the right answer. Each condition changes one thing about a normal "
              "run; everything goes through the same code path as the CLI.")
@@ -1091,7 +1126,10 @@ def run(experiments: list = None, n_real: int = None, n_placebo: int = 30,
         fill: bool = True) -> dict:
     experiments = experiments or EXPERIMENTS
     prompt_versions = prompt_versions or [BLIND]
-    labels = load_labels()
+    # The answer key is coffee's. Another commodity has none: its real dates
+    # are whatever has been run, and only the invented-move test (which needs
+    # no labels: refusing is always right) can be scored.
+    labels = load_labels() if COMMODITY == "coffee" else {}
     df = load_detections()
     real = real_dates(labels, n_real, df)
     placebo = select_placebo_dates(df, n_placebo, seed)
@@ -1138,19 +1176,20 @@ def run(experiments: list = None, n_real: int = None, n_placebo: int = 30,
     if versions:
         chart_version = (BLIND if BLIND in versions
                          else "v2" if "v2" in versions else versions[-1])
-        if make_chart(summary, chart_version, RESULTS_DIR / "robustness_chart.png"):
-            chart_name = "robustness_chart.png"
+        if make_chart(summary, chart_version, RESULTS_DIR / _named("robustness_chart.png")):
+            chart_name = _named("robustness_chart.png")
 
     report = generate_report(summary, trials, labels, config, chart_name)
     kept = archive_previous_report(run_signature(providers, retrieval, seed))
     if kept and verbose:
         print(f"\nThe report of the earlier run was kept in {kept}")
-    _write_json(RESULTS_DIR / "robustness.json",
+    config["commodity"] = COMMODITY
+    _write_json(RESULTS_DIR / _named("robustness.json"),
                 {"config": config, "summary": summary, "trials": trials})
-    (RESULTS_DIR / "robustness_report.md").write_text(report, encoding="utf-8")
+    (RESULTS_DIR / _named("robustness_report.md")).write_text(report, encoding="utf-8")
     if verbose:
         print("\n" + report)
-        print(f"\nSaved {RESULTS_DIR / 'robustness_report.md'}")
+        print(f"\nSaved {RESULTS_DIR / _named('robustness_report.md')}")
     return {"config": config, "summary": summary, "trials": trials}
 
 
@@ -1165,7 +1204,7 @@ def archive_previous_report(signature: dict):
     or None when there was nothing to keep (no earlier report, the same
     settings, or already kept)."""
     import shutil
-    previous = RESULTS_DIR / "robustness.json"
+    previous = RESULTS_DIR / _named("robustness.json")
     if not previous.exists():
         return None
     try:
@@ -1178,12 +1217,12 @@ def archive_previous_report(signature: dict):
     if earlier is None or _signature_slug(earlier) == _signature_slug(signature):
         return None
     target = RESULTS_DIR / "archive" / "robustness" / _signature_slug(earlier)
-    if (target / "robustness.json").exists():
+    if (target / _named("robustness.json")).exists():
         return None
     target.mkdir(parents=True, exist_ok=True)
     for name in ("robustness.json", "robustness_report.md", "robustness_chart.png"):
-        if (RESULTS_DIR / name).exists():
-            shutil.copy2(RESULTS_DIR / name, target / name)
+        if (RESULTS_DIR / _named(name)).exists():
+            shutil.copy2(RESULTS_DIR / _named(name), target / _named(name))
     return target
 
 
@@ -1225,11 +1264,20 @@ def main():
                         help="Ignore cached evidence and trials")
     parser.add_argument("--report-only", action="store_true",
                         help="Rebuild the report from cached trials; call nothing")
+    parser.add_argument("--commodity", default="coffee",
+                        help="The commodity to test (default coffee). Another commodity "
+                             "has no answer key, so only the invented-move test "
+                             "(--experiments placebo) can be scored for it.")
     parser.add_argument("--no-fill", action="store_true",
                         help="Do not fetch missing news for the placebo days first; days "
                              "whose news is incomplete are then left out")
     args = parser.parse_args()
 
+    from src.config.commodities import COMMODITIES
+    if args.commodity not in COMMODITIES:
+        parser.error(f"unknown --commodity {args.commodity!r}; choose from "
+                     f"{', '.join(COMMODITIES)}")
+    use_commodity(args.commodity)
     experiments = _csv(args.experiments)
     unknown = set(experiments or []) - set(EXPERIMENTS)
     if unknown:

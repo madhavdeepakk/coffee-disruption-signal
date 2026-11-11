@@ -685,7 +685,10 @@ def test_the_prompt_asks_how_big_the_document_says_the_move_was_without_saying_h
     assert "arabica coffee futures in New York" in prompt and "robusta" in prompt
     for leak in ("6.7", "z-score", "anomaly"):
         assert leak not in prompt
-    assert be.market_names("wheat")[0] == "wheat futures"       # no wording set: a general one
+    assert be.market_names("cocoa")[0] == "cocoa futures"       # no wording set: a general one
+    assert be.market_names("wheat")[0] == "Chicago wheat futures"
+    assert be.market_names("crude oil")[0] == "WTI crude oil futures in New York"
+    assert "COMEX" in be.market_names("gold")[0] and "silver" in be.market_names("gold")[1]
 
 
 def test_a_quiet_days_report_is_refused_through_the_pipeline_with_its_own_wording():

@@ -868,6 +868,10 @@ def explain_from_documents(anomaly: dict, documents: list, retrieval_meta=None, 
 
     Returns the dict that main() saves as the pipeline output.
     """
+    # Which commodity's market reports the reading looks for (the headline
+    # word lists differ: see src/rag/market_report.py). Coffee by default.
+    market_report.set_subject(commodity_name)
+
     def say(*a, **k):
         if verbose:
             print(*a, **k)
@@ -1072,6 +1076,7 @@ def main():
     args = parser.parse_args()
 
     cfg = get_commodity(args.commodity)
+    market_report.set_subject(cfg.key)
     from src.rag.explainer import check_providers
     check_providers()      # a bad provider name or missing key stops here, not after retrieval
     print(f"=== Pipeline run for {cfg.display_name}, anomaly date {args.date} ===\n")

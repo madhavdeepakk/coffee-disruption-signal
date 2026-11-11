@@ -48,8 +48,24 @@ def test_rss_network_failure_returns_empty_not_raise():
     assert arts == []
 
 
-def test_rss_unknown_commodity_returns_empty():
-    assert rss.fetch_rss_articles("gold", "2026-01-01", 10) == []
+def test_rss_unknown_commodity_returns_empty_without_asking_the_network():
+    # "gold" used to be the unknown key here. It became a real commodity with
+    # its own RSS query, so the test stopped exercising the early return and
+    # started fetching live - and then passed or failed depending on whether
+    # the machine running it had a network. The key has to be one no commodity
+    # claims, and the fetch has to be the thing proven not to happen.
+    assert "tungsten" not in rss.RSS_QUERIES
+    with mock.patch("urllib.request.urlopen",
+                    side_effect=AssertionError("an unknown commodity asked the network")):
+        assert rss.fetch_rss_articles("tungsten", "2026-01-01", 10) == []
+
+
+def test_every_configured_commodity_has_an_rss_query():
+    # The opposite guard: a commodity added to the detector but not here would
+    # silently lose its second retrieval source.
+    from src.config.commodities import COMMODITIES
+    missing = sorted(set(COMMODITIES) - set(rss.RSS_QUERIES))
+    assert not missing, f"no Google News query for: {missing}"
 
 
 def test_rss_malformed_xml_returns_empty():
