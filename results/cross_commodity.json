@@ -1,0 +1,321 @@
+{
+  "min_others": 2,
+  "commodities": [
+    "coffee",
+    "crude_oil",
+    "wheat",
+    "gold",
+    "silver"
+  ],
+  "per_commodity": {
+    "coffee": {
+      "flagged_total": 279,
+      "scorable": 279,
+      "macro": 48,
+      "commodity_specific": 231,
+      "macro_share": 0.17204301075268819,
+      "first_date": "2018-04-27",
+      "last_date": "2026-07-09",
+      "macro_share_metals_collapsed": 0.0967741935483871
+    },
+    "crude_oil": {
+      "flagged_total": 420,
+      "scorable": 420,
+      "macro": 62,
+      "commodity_specific": 358,
+      "macro_share": 0.14761904761904762,
+      "first_date": "2013-04-24",
+      "last_date": "2026-09-10",
+      "macro_share_metals_collapsed": 0.09047619047619047
+    },
+    "wheat": {
+      "flagged_total": 519,
+      "scorable": 434,
+      "macro": 58,
+      "commodity_specific": 376,
+      "macro_share": 0.1336405529953917,
+      "first_date": "2009-05-01",
+      "last_date": "2026-08-26",
+      "macro_share_metals_collapsed": 0.07654320987654321
+    },
+    "gold": {
+      "flagged_total": 491,
+      "scorable": 489,
+      "macro": 106,
+      "commodity_specific": 383,
+      "macro_share": 0.2167689161554192,
+      "first_date": "2012-05-14",
+      "last_date": "2026-11-04",
+      "macro_share_metals_collapsed": 0.05595408895265423
+    },
+    "silver": {
+      "flagged_total": 515,
+      "scorable": 456,
+      "macro": 93,
+      "commodity_specific": 363,
+      "macro_share": 0.20394736842105263,
+      "first_date": "2010-05-04",
+      "last_date": "2026-11-04",
+      "macro_share_metals_collapsed": 0.05595408895265423
+    }
+  },
+  "curve": {
+    "coffee": {
+      "1": 0.4838709677419355,
+      "2": 0.17204301075268819,
+      "3": 0.02867383512544803,
+      "4": 0.0
+    },
+    "crude_oil": {
+      "1": 0.36666666666666664,
+      "2": 0.14761904761904762,
+      "3": 0.03333333333333333,
+      "4": 0.0
+    },
+    "wheat": {
+      "1": 0.30303030303030304,
+      "2": 0.1336405529953917,
+      "3": 0.024691358024691357,
+      "4": 0.0
+    },
+    "gold": {
+      "1": 0.5906313645621182,
+      "2": 0.2167689161554192,
+      "3": 0.03404255319148936,
+      "4": 0.0
+    },
+    "silver": {
+      "1": 0.5980582524271845,
+      "2": 0.20394736842105263,
+      "3": 0.03669724770642202,
+      "4": 0.0
+    }
+  },
+  "overlap": {
+    "coffee|crude_oil": {
+      "days_both_have_data": 2181,
+      "both_flagged": 37,
+      "jaccard": 0.07184466019417475
+    },
+    "coffee|wheat": {
+      "days_both_have_data": 2180,
+      "both_flagged": 37,
+      "jaccard": 0.07341269841269842
+    },
+    "coffee|gold": {
+      "days_both_have_data": 2197,
+      "both_flagged": 60,
+      "jaccard": 0.1125703564727955
+    },
+    "coffee|silver": {
+      "days_both_have_data": 2196,
+      "both_flagged": 57,
+      "jaccard": 0.11515151515151516
+    },
+    "crude_oil|wheat": {
+      "days_both_have_data": 3443,
+      "both_flagged": 49,
+      "jaccard": 0.06314432989690721
+    },
+    "crude_oil|gold": {
+      "days_both_have_data": 3443,
+      "both_flagged": 70,
+      "jaccard": 0.08536585365853659
+    },
+    "crude_oil|silver": {
+      "days_both_have_data": 3443,
+      "both_flagged": 74,
+      "jaccard": 0.09462915601023018
+    },
+    "gold|wheat": {
+      "days_both_have_data": 3692,
+      "both_flagged": 64,
+      "jaccard": 0.07459207459207459
+    },
+    "gold|silver": {
+      "days_both_have_data": 3734,
+      "both_flagged": 218,
+      "jaccard": 0.2978142076502732
+    },
+    "silver|wheat": {
+      "days_both_have_data": 4196,
+      "both_flagged": 68,
+      "jaccard": 0.0724174653887114
+    }
+  },
+  "labelled": {
+    "n_labelled": 18,
+    "n_scored": 16,
+    "n_macro": 3,
+    "n_macro_whose_key_text_names_a_macro_driver": 2,
+    "dates": [
+      {
+        "date": "2020-03-19",
+        "label": "EXCLUDE",
+        "verdict": null,
+        "others_flagged": [
+          "crude_oil",
+          "wheat",
+          "gold",
+          "silver"
+        ],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "The contract in active trading rose about 4.1%, roughly half the 7.96% in the price series; the rest appears to be the series leaving the March contract on its last day. The real rise was put down to fears the pandemic would interrupt coffee grading at exchange warehouses and to the exchange cutting delivery limits."
+      },
+      {
+        "date": "2021-05-05",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [],
+        "cause_names_a_macro_driver": true,
+        "known_cause": "Worry about dry weather in Brazil's coffee regions, helped by a weaker dollar against the real and by road blockades in Colombia keeping coffee from the ports."
+      },
+      {
+        "date": "2021-07-19",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [
+          "crude_oil"
+        ],
+        "cause_names_a_macro_driver": true,
+        "known_cause": "A broad sell-off as shares and oil slumped on surging Delta-variant Covid cases, with the dollar up about 2.6% against the real."
+      },
+      {
+        "date": "2021-07-20",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [
+          "crude_oil"
+        ],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "News of frost hitting Brazil's coffee regions (southern Minas Gerais, Cerrado, Sao Paulo), expected to cut the 2022 crop."
+      },
+      {
+        "date": "2021-07-22",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "The market reacting to expected losses in Brazil's 2022 crop from the frosts of 20 July, as damage estimates grew."
+      },
+      {
+        "date": "2021-07-30",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "The overnight frost in Minas Gerais turned out less intense and damaging than feared, and a weaker real encouraged producer selling."
+      },
+      {
+        "date": "2022-05-11",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "Updated weather models showed a cold front bringing frost risk to Brazil's coffee areas the following week."
+      },
+      {
+        "date": "2023-01-31",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "Brazilian physical coffee premiums rose to their highest in a decade, a sign of tight supply, which with friendlier wider markets pushed short sellers to cover."
+      },
+      {
+        "date": "2023-09-20",
+        "label": "EXCLUDE",
+        "verdict": null,
+        "others_flagged": [],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "Not a real move of this size: the contract in active trading fell about 1.7%; the rest is the price series switching from the expired September contract to December."
+      },
+      {
+        "date": "2023-11-30",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "Exchange-certified arabica stocks fell by more than 35,000 bags in a day to the lowest in 24 years, setting off squeeze-like buying."
+      },
+      {
+        "date": "2024-04-30",
+        "label": "EXPLAIN",
+        "verdict": "macro",
+        "others_flagged": [
+          "gold",
+          "silver"
+        ],
+        "cause_names_a_macro_driver": true,
+        "known_cause": "A stronger dollar weighed on commodities, and losses grew after updated forecasts raised the chance of rain in Brazil the following week."
+      },
+      {
+        "date": "2024-09-23",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "Drought worries in Brazil: a weather service reported that day that Minas Gerais had had 62% of average rainfall in the past week, days after the crop agency cut its 2024 forecast."
+      },
+      {
+        "date": "2024-10-07",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [
+          "crude_oil"
+        ],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "Forecasts of substantial rain for Brazil's coffee regions eased drought fears and set off selling by holders of long positions; export and stock figures added to the fall."
+      },
+      {
+        "date": "2024-12-02",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "The exchange raised margin requirements on coffee futures, forcing holders of long positions to sell, and the real fell about 1.6%, encouraging Brazilian export selling."
+      },
+      {
+        "date": "2025-02-10",
+        "label": "EXPLAIN",
+        "verdict": "macro",
+        "others_flagged": [
+          "wheat",
+          "gold"
+        ],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "Reports of a hot, dry weather system forming over Brazil's coffee areas added to supply fears, with farmers in no hurry to sell and roasters short of stock buying."
+      },
+      {
+        "date": "2025-04-07",
+        "label": "EXPLAIN",
+        "verdict": "macro",
+        "others_flagged": [
+          "crude_oil",
+          "gold",
+          "silver"
+        ],
+        "cause_names_a_macro_driver": true,
+        "known_cause": "A sell-off across most commodities on trade-war fears after the US tariff announcements; losses grew as the real fell to a two-month low."
+      },
+      {
+        "date": "2025-08-15",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "The day extended a week-long rally tied to a light frost earlier that week in Cerrado Mineiro, a 20% fall in Brazil's July exports and shrinking exchange stocks."
+      },
+      {
+        "date": "2025-09-15",
+        "label": "EXPLAIN",
+        "verdict": "commodity-specific",
+        "others_flagged": [
+          "wheat"
+        ],
+        "cause_names_a_macro_driver": false,
+        "known_cause": "A weather service reported that day that Minas Gerais had no rain in the week to 13 September, ahead of flowering, while the real rose to a 15-month high; tight supplies and low exchange stocks added to short-covering."
+      }
+    ]
+  }
+}

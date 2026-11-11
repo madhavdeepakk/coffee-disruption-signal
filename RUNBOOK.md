@@ -9,6 +9,7 @@ Written 11 November 2026. Every figure quoted here has a source file in
 |---|---|---|
 | **1. Detect disruptions** | Done, five commodities | 23 of 23 cited events flagged (coffee 4/4, crude oil 5/5, wheat 4/4, gold 6/6, silver 6/6); 0 false positives in any verified quiet control period. `results/detector_evaluation.md` |
 | **2. Explain with cited evidence** | Measured on coffee; built but not run on the other four | Version 11: 10 of 16 labelled dates (CI 39-82%); 2 of 12 invented moves explained on held-out quiet days, against 8 of 12 for the previous rule on the same readings (McNemar p = 0.031). `results/EVALUATION.md` section 9g |
+| **1b. Was it the commodity or the market?** | Cross-commodity check run; factor model and numeraire test built, not run | 48 of coffee's 279 flagged days (17.2%) are days the complex moved together; 3 of 16 labelled dates are such days. `EVALUATION.md` section 11 |
 | **3. Inflation tracking and pass-through** | Done: United States, India, G20 reference | 25 commodity-and-index pairs, Holm-corrected. Oil into US petrol: +6.0% per 10% rise, p < 0.001, and 31% lower error on an estimate made before publication. India: no pair distinguishable from chance. `results/inflation_report.md` |
 
 What is genuinely not done: an answer key containing should-refuse dates
@@ -33,7 +34,43 @@ Add a card at `console.groq.com`. There is no monthly fee and no minimum.
 India's progressive billing thresholds differ from the published ladder, so
 read the billing page first.
 
-## 1. The pipeline on the other four commodities (objective 2)
+## 1. Run the three "was it the commodity?" layers
+
+These answer a question none of the evaluation so far could: whether a flagged
+move was about the commodity at all. The cross-commodity check has already been
+run and found that **48 of coffee's 279 flagged days (17.2%) are days at least
+two other watched markets flagged too**, and that 3 of the 16 labelled dates are
+such days (`EVALUATION.md` section 11). The other two layers measure the same
+thing directly and need series the project had not fetched before.
+
+```
+cd /d D:\CAPSTONE
+py -m src.data.market_factors
+py -m src.modeling.factor_model --all
+py -m src.analysis.numeraire --commodity gold --flagged --save
+py -m src.analysis.numeraire --commodity coffee --flagged --save
+py -m src.evaluation.anomaly_card --commodity coffee --labelled --save
+```
+
+All keyless, all offline-capable once the series are down, no model budget at
+all. Minutes, not hours.
+
+The one to look at first is gold around **2026-01-30**, the 11% fall. If the
+numeraire test shows it survived translation into euro, yen, yuan and rupees,
+it was a gold event; if it did not, the dollar moved and gold did not. Nothing
+in the project could previously tell those apart.
+
+Two things to check in the output, because they are the known weak spots:
+
+- **Crude oil's window R-squared.** The broad-commodity factor (DBC) is heavily
+  weighted to energy, so for crude the factor partly contains the commodity
+  itself. A high R-squared there is partly mechanical. The report prints it so
+  this is visible rather than hidden.
+- **The yuan.** It is managed against the dollar, so it should be the currency
+  that moves least in the numeraire tables. If it is moving freely, something
+  is wrong with the exchange-rate normalisation.
+
+## 2. The pipeline on the other four commodities (objective 2)
 
 `scripts/run_commodity_eval.py` exists for exactly this and needs **no answer
 key**, which is what makes it runnable now. It measures two things per
@@ -64,7 +101,7 @@ at a time so they do not compete for the same requests.
 date counted as explained means the system chose to explain, not that its
 text names the cited cause; only a person reading them establishes that.
 
-## 2. Close the retrieval confound on the coffee dates
+## 3. Close the retrieval confound on the coffee dates
 
 Across the 75 stored runs, 70.7% had at least one news request fail after
 retries, and 81.1% of those ended in a refusal against 50.0% of the rest. The
@@ -82,7 +119,7 @@ Run `batch_runner --existing-only` **before** `metrics` every time: metrics
 reads `results/evaluation_results.json` when it exists and will otherwise
 serve figures from a superseded pipeline version without warning.
 
-## 3. Measure the `when` field (the defect worth presenting)
+## 4. Measure the `when` field (the defect worth presenting)
 
 The reading tells the rule whether a document's price move is the one being
 explained: `same_day`, `previous_day`, `earlier`, `forecast`, `unclear`. It is
@@ -102,7 +139,7 @@ documents already read in `results/pipeline_output_coffee_*.json`, fill in the
 field by hand without looking at the model's answer, and compare. That number
 belongs in `EVALUATION.md` beside the rule it gates.
 
-## 4. A larger invented-move test
+## 5. A larger invented-move test
 
 The held-out result rests on 12 days, so a four-fold drop in false
 explanations is still only p = 0.031 paired, and p = 0.37 against the earlier
@@ -118,7 +155,7 @@ survived. Raising it to 0.5 would refuse that day - but it was chosen by
 looking at the day it fixes, so it must be scored on days it was not chosen
 on or it is worthless.
 
-## 5. The answer key (objective 2's ceiling)
+## 6. The answer key (objective 2's ceiling)
 
 Until a key contains dates where refusing is right, no accuracy figure can
 beat always-explain, which scores 16 of 16. This is the one task no code can
@@ -130,12 +167,22 @@ do and the one with a lead time, because it needs two people.
 3. A second labeller on the same dates, independently, so an agreement rate
    can be reported.
 
+There is now a third decision to make, which section 11 of `EVALUATION.md`
+sets out: two labelled dates (2024-04-30 and 2025-04-07) are days the whole
+complex moved, and the cause the key itself records on both is a macro one -
+"a stronger dollar weighed on commodities", "a sell-off across most
+commodities". Version 11 refused both and was scored wrong for it. The key
+needs a category for a move that is real, documented, and not about this
+commodity. **Do not simply relabel those two dates**: changing a label after
+seeing which ones a rule failed makes the result circular. Decide the category
+first, in writing, then apply it to every date.
+
 Follow `data/labeling/LABELLING_RULE.md` exactly, and label from market
 reports of the day without looking at the system's answers. Until this is
 done, no document may say the labels have been checked - they rest on one
 round of research that nobody has verified.
 
-## 6. Refreshing the inflation data (optional)
+## 7. Refreshing the inflation data (optional)
 
 `results/inflation_report.md` rebuilds offline from
 `data/raw/inflation_series.csv` in about a minute, no key and no network:
@@ -152,12 +199,12 @@ the all-items index here - no food or fuel sub-index, which is where
 pass-through would show first. A registered key at MOSPI or data.gov.in would
 lift both, and registration is free.
 
-## 7. Deployment and the repository
+## 8. Deployment and the repository
 
 ```
 py -m pytest -q
 ```
-343 tests, no network and no key. Run before every commit.
+367 tests, no network and no key. Run before every commit.
 
 The hosted dashboard reads `data/raw/` and `results/`, so both are committed on
 purpose. `READ_ONLY=1` disables every model and network call and is the mode

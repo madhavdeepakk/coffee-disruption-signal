@@ -62,6 +62,7 @@ All figures are from `results/`, each produced by a script listed under [Reprodu
 | Do cited sources support the claims? | Not yet measured. The automated score cannot fail; a human audit sheet is in place | `scripts/audit_citations.py` |
 | Does the semantic score separate relevant from irrelevant documents? | AUC 0.81 (CI 0.53-0.91) on 20 labelled documents; the keyword score is no better than chance (0.42, CI 0.24-0.70) | `retrieval_evaluation.md` |
 | Does the gate threshold hold up out of sample? | Precision 100% in-sample, 71% held-out (5/7, CI 36-92%) | `relevance_gate_calibration.md` |
+| Was the flagged move about this commodity, or the whole complex? | 48 of coffee's 279 flagged days (17.2%, CI 13-22%) are days at least two other watched markets flagged too. 3 of the 16 labelled dates are such days, and on 2 of those the cause the answer key itself records is a macro one | `cross_commodity_report.md`, `EVALUATION.md` section 11 |
 | Can price direction be predicted? | No. Logistic regression 50.2% vs 50.7% baseline; ARIMA 46.4% vs 51.5%; analog outlook 34% vs 44% random | `forecast_evaluation.md`, `backtest_outlook_report.md` |
 | Does a commodity price move reach consumer prices? | For oil, yes and largely within three months: a 10% rise in WTI goes with US petrol up 6.0% and US energy prices up 3.9% (both p < 0.001 after correcting for 25 pairs tested), and it cuts the error of a petrol-inflation estimate made before publication by 31%. For coffee into all-items inflation, and for every pair tested against India's index, nothing that can be told from chance | `inflation_report.md` |
 
@@ -212,6 +213,7 @@ python -m scripts.evaluate_retrieval                 # results/retrieval_evaluat
 python -m scripts.ops_report                         # results/ops_report.md
 python -m scripts.evaluate_detector --all            # results/detector_evaluation.md
 python -m src.modeling.inflation                     # results/inflation_report.md
+python -m src.evaluation.cross_commodity             # results/cross_commodity_report.md
 
 # Needs the embedding model
 python -m src.evaluation.ablation_study              # results/ablation_study_report.md
@@ -226,6 +228,12 @@ python -m src.evaluation.robustness --providers groq --experiments placebo --n-p
 python -m src.data.cpi                               # refresh data/raw/inflation_series.csv (keyless)
 python -m src.modeling.fetch_price_data --commodity gold     # and silver, crude_oil, wheat
 python -m scripts.run_commodity_eval --commodity gold        # the pipeline on a commodity with no answer key
+
+# Needs the shared market drivers (keyless; writes data/raw/market_factors.csv)
+python -m src.data.market_factors
+python -m src.modeling.factor_model --all            # results/factor_adjusted_report.md
+python -m src.analysis.numeraire --commodity gold --flagged --save
+python -m src.evaluation.anomaly_card --commodity coffee --labelled --save
 
 # Needs a person
 python -m scripts.audit_citations --export           # then label, then --score

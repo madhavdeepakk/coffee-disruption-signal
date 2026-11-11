@@ -403,6 +403,78 @@ Across the six refused dates the field reads `unclear` 28 times out of 59, `same
 
 These rows cover GDELT documents only, because the live aggregator's results are not reproducible. Re-run after the 100-date set is in the cache.
 
+## 11. Was it the commodity, or the market?
+
+Everything above measures whether the system explains a flagged move. None of it asks a prior question: whether the move was about this commodity at all.
+
+The detector flags a day when one price moved unusually against its own recent volatility. It never looks at any other market. So a day the dollar fell and every dollar-priced asset repriced produces an extreme coffee z-score with nothing coffee-specific in it - and the explanation pipeline then goes looking for a coffee story, because a coffee story is what it was asked for. It will often find one. Nothing in sections 1 to 10 could have detected that failure mode, because every one of them takes the flagged day as given.
+
+Three layers now address it. One has been run; two are built and need series the project did not previously fetch.
+
+### 11a. The cross-commodity check (run)
+
+`python -m src.evaluation.cross_commodity`. No model, no network: it reads the five commodities' stored detections and counts how many flag on the same date. A flagged day is called **macro** when at least two of the other four flagged it too. Only days on which that many others actually have price data are scored, so an early wheat flag is not called commodity-specific merely because coffee's series had not started, and contract-switch days are dropped.
+
+| Commodity | Flagged | Scorable | Macro | Commodity-specific | Macro share | Metals counted once |
+|---|---|---|---|---|---|---|
+| coffee | 279 | 279 | 48 | 231 | 17.2% | 9.7% |
+| crude oil | 420 | 420 | 62 | 358 | 14.8% | 9.0% |
+| wheat | 519 | 434 | 58 | 376 | 13.4% | 7.7% |
+| gold | 491 | 489 | 106 | 383 | 21.7% | 5.6% |
+| silver | 515 | 456 | 93 | 363 | 20.4% | 5.6% |
+
+**48 of coffee's 279 flagged days (17.2%, CI 13-22%) are days the complex moved together.**
+
+The method checks out against what the markets are. Gold and silver, which are substitutes, agree most (Jaccard 0.298 - of the days either flagged, the share on which both did). Coffee and wheat, which share no physical driver, agree least among the non-metal pairs (0.073), as do coffee and crude oil (0.072). A check that produced high agreement between coffee and wheat would be measuring something other than what it claims.
+
+The agreement is also thin rather than universal, which is what a real signal looks like: requiring one other commodity calls 48% of coffee's days macro, two calls 17%, three calls 3%, and four calls none.
+
+### 11b. Three of the sixteen labelled dates are macro days
+
+This is the part that bears on every score in this document.
+
+| Date | Label | Also flagged | Cause the answer key itself records | Version 11 |
+|---|---|---|---|---|
+| 2024-04-30 | EXPLAIN | gold, silver | "A **stronger dollar** weighed on commodities, and losses grew after updated forecasts raised the chance of rain in Brazil" | REFUSED |
+| 2025-02-10 | EXPLAIN | wheat, gold | "Reports of a hot, dry weather system forming over Brazil's coffee areas added to supply fears" | EXPLAINED |
+| 2025-04-07 | EXPLAIN | crude oil, gold, silver | "A **sell-off across most commodities** on trade-war fears after the US tariff announcements" | REFUSED |
+
+On two of the three, **the cause the key records is a macro cause, in the key's own words** - written from market reports months before this check existed. The key marks a date EXPLAIN when a documented cause exists. It never asks whether the cause is specific to this market.
+
+Version 11 refused both of those dates and was scored wrong for it. But the version 11 rule requires a report that is about this market and gives an event as the reason, and "a stronger dollar weighed on commodities" is neither. On the reading the project's own thesis implies - that an explanation should name a reason specific to the commodity whose price moved - those two refusals are correct, and the score is wrong.
+
+2025-02-10 shows the distinction is real rather than mechanical: it is a macro day by the price check, but the cause the key records is Brazilian weather, and version 11 explained it. A macro day does not always have a macro cause.
+
+Scoring the two readings separately:
+
+| | Explained when it should |
+|---|---|
+| All 16 labelled dates (as reported in section 9g) | 10 of 16 (62.5%, CI 39-82%) |
+| The 13 commodity-specific dates | 9 of 13 (69.2%, CI 42-87%) |
+| The 3 macro days | 1 of 3 |
+
+**No label has been changed, and none should be on this evidence.** Relabelling dates after seeing which ones a rule failed is precisely the move this project exists to refuse; it would turn an in-sample result into a circular one. What this establishes is that the key needs a third category - a move that is real, documented, and not about this commodity - and that the people who own the key have a decision to make. The two candidate dates were identified by a price-only check that knows nothing about the labels, which is the only reason this is evidence at all.
+
+It also points at a gap in the system, not just the key. There is no outcome tier for "this was a broad move, and no commodity-specific cause is needed". The pipeline can explain or refuse; on a macro day both are partly wrong, and a refusal reported as weak evidence is misleading about why.
+
+### 11c. The factor layer and the numeraire test (built, not yet run)
+
+The cross-commodity check is a proxy: it infers a shared driver from agreement rather than measuring one. Two modules measure it directly, and both need series the project had not previously fetched (`python -m src.data.market_factors` writes them; all keyless).
+
+**`src/modeling/factor_model.py`** regresses each commodity's daily return on the broad trade-weighted dollar, the S&P 500 and a broad commodity index, with betas fitted on the 75 trading days *before* the day being tested, and classifies each flagged day commodity-specific, macro-driven or both. The exclusion matters: a day inside its own estimation window pulls the fitted line towards itself and shrinks exactly the residual the test is looking for. This runs **alongside** the base detector and never replaces it - every figure in this document was drawn at the base detector's raw 2-sigma threshold, so changing which days are flagged would silently invalidate the answer key.
+
+**`src/analysis/numeraire.py`** prices each move in euro, yen, yuan and rupees as well as dollars. A move that is only in dollars, of about the size of the dollar's own move, is the measuring stick changing rather than the commodity. Survival is taken as the median across the four currencies, so one managed rate (the yuan) cannot drive the answer. It reports both the exact translation, which needs no model, and a regression split against the commodity's recent dollar beta, with the unexplained part always shown and never attributed.
+
+Both were validated on constructed series where the answer is known: a return built to be exactly minus two times the dollar leaves residuals below 1e-9 and cannot be called commodity-specific, while a 9% shock the factors cannot explain recovers in full as a residual with a z-score above 5. 23 tests cover the three layers.
+
+**`src/evaluation/anomaly_card.py`** assembles all of it for one date, with every field tagged observed, tested or hypothesis and carrying the file it came from. It deliberately produces no overall verdict: the layers can disagree, and a day the factor model calls macro-driven that nonetheless survives translation and carries a quoted supply story is a genuine puzzle that one word would hide.
+
+### What 11 does not establish
+
+- That a macro day was **caused** by the dollar. Agreement across commodities, and a high factor R-squared, are both consistent with a shared driver without naming one. The honest reading of a macro verdict is narrower: nothing in this day's move needs a commodity-specific story.
+- That a commodity-specific verdict is right. It says only that the other four markets did not flag, which a shared driver too small to flag them would also produce. It is the weaker of the two verdicts.
+- Anything about the other four commodities' explanations, which have not been run.
+
 ## What is not measured
 
 - Version 11, on anything. Its rule has only been applied to readings stored by versions 9 and 10 (section 9f).
