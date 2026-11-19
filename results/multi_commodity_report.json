@@ -1,115 +1,145 @@
 {
-  "crude_oil": {
-    "display_name": "Crude Oil (WTI)",
+  "gold": {
+    "display_name": "Gold (COMEX)",
     "documented": [
       {
-        "date": "2020-03-06",
-        "event": "2020 Saudi-Russia price war",
-        "z_score": -5.058957781630035,
+        "date": "2020-03-13",
+        "event": "2020 pandemic dash for cash",
+        "z_score": -4.628784214234249,
+        "state": "explained",
+        "tier": "EXPLAINED_STRONG",
+        "explanation": "-4.6% day-over-day move (z-score -4.63), on top of -3.1% over the last 10 trading days on 2020-03-13. Reasons given by 2 reports from that day:\n- \"Gold Falls 4 % As Futures Sold Aggressively While Buying Of Coins And Bars Surges\" (gold-eagle.com, 2020-03-13). Reported move: down 4%. Reason: Futures sold aggressively while buying of coins and bars surges. Quote: \"Gold Falls 4 % As Futures Sold Aggressively While Buying Of Coins And Bars Surges\" (source: fe7b51678e4611d1)\n- \"Gold falls as futures are sold aggressively while buying of coins and bars surges\" (gata.org, 2020-03-13). Reported move: down 4%. Reason: Margin call selling. Quote: \"Margin call selling is being blamed for this latest gold futures selloff\" (source: 374958677764f0c2)",
+        "reason": null,
+        "model": "openai/gpt-oss-120b",
+        "failed_queries": null,
+        "headline": "Explained from recent, quoted evidence.",
+        "version": "11",
+        "move": -4.630969609261934
+      },
+      {
+        "date": "2020-03-23",
+        "event": "2020 pandemic dash for cash",
+        "z_score": 4.376674150337241,
+        "state": "explained",
+        "tier": "EXPLAINED_STRONG",
+        "explanation": "+5.6% day-over-day move (z-score 4.38), on top of -6.4% over the last 10 trading days on 2020-03-23. Reasons given by 2 reports from that day:\n- \"Gold prices soar after very aggressive Fed stimulus expansion\" (kitco.com, 2020-03-23). Reported move: up, size not stated. Reason: aggressive Fed stimulus expansion. Quote: \"Gold prices soar after very aggressive Fed stimulus expansion\" (source: fc3b27b19798875f)\n- \"Gold price jumps as Fed announces open - ended QE\" (kitco.com, 2020-03-23). Reported move: up, size not stated. Reason: Fed announces open-ended QE. Quote: \"Gold price jumps as Fed announces open - ended QE\" (source: f165ab39d3a72819)",
+        "reason": null,
+        "model": "openai/gpt-oss-120b",
+        "failed_queries": null,
+        "headline": "Explained from recent, quoted evidence.",
+        "version": "11",
+        "move": 5.592991913746631
+      },
+      {
+        "date": "2020-08-07",
+        "event": "2020 August reversal from the record",
+        "z_score": -2.2115547907197075,
         "state": "explained",
         "tier": "EXPLAINED_TENTATIVE",
-        "explanation": "-10.1% day-over-day move (z-score -5.06), on top of -22.7% over the last 10 trading days on 2020-03-06. Reasons given by 4 reports from that day:\n- \"Crude Oil Prices : Crude oil prices plunge over 5 % on Opec reports , coronavirus\" (economictimes.indiatimes.com, 2020-03-06). Reported move: down 5%. Reason: Opec reports , coronavirus. Quote: \"Brent and WTI crude futures tumbled by nearly $3 a barrel, or more than 5%, after the report.\" (source: 1f0933869f0576ab)\n- \"Oil prices plunge over 5 % on OPEC reports , coronavirus\" (thehindu.com, 2020-03-06). Reported move: down 5%. Reason: reports that Russia wants to delay deeper output cuts recommended by its OPEC allies. Quote: \"extended losses to more than 5% on Friday on reports that Russia wants to delay deeper output cuts\" (source: 3fc7f8e83e45897e)\n- \"Oil Prices Plunge over 5 % on OPEC Reports , Coronavirus Outbreak\" (news18.com, 2020-03-06). Reported move: down 5%. Reason: reports that Russia wants to delay deeper output cuts recommended by its OPEC allies. Quote: \"extended losses to more than 5% on Friday on reports that Russia wants to delay deeper output cuts\" (source: 0542c00d2fbfe5ea)\n- \"World oil prices plunge over 7 . 5 %\" (business-standard.com, 2020-03-06). Reported move: down 7.5%. Reason: talks between OPEC and Russia over a possible cut in output ... ended without a deal. Quote: \"talks between OPEC and Russia over a possible cut in output in response to a coronavirus-fulled slump in demand ended without a deal\" (source: 2cca61d5a8859903)",
+        "explanation": "-2.0% day-over-day move (z-score -2.21) on 2020-08-07. Reasons given by 2 reports from that day:\n- \"Gold price retreats on stronger dollar\" (mining.com, 2020-08-07). Reported move: down 1.2%. Reason: stronger dollar. Quote: \"Gold price retreats on stronger dollar\" (source: cdba8522dc8ea981)\n- \"Dollar gains , stock rally ebbs after labor report\" (financialpost.com, 2020-08-07). Reported move: down 2%. Reason: Dollar bounced off two-year lows after labor report. Quote: \"the dollar bounced off two-year lows\" (source: ea7877f3d7393d54)\nPointing the other way, 2 reports from that day:\n- \"Gold , Silver Price News : Gold Futures Top Rs 56 , 150 For First Time , Silver Near Rs 77 , 950 Amid Rising Coronavirus Cases\" (ndtv.com, 2020-08-07). Reported move: up, size not stated. Reason: Rising Coronavirus Cases. Quote: \"Amid Rising Coronavirus Cases\" (source: 3ee9e38c880f8ec7)\n- \"Gold smashes record high as coronavirus pandemic worsens\" (indiatoday.in, 2020-08-07). Reported move: up 0.6%. Reason: coronavirus pandemic worsens. Quote: \"Gold smashes record high as coronavirus pandemic worsens\" (source: 2c66639235b4c69e)",
         "reason": null,
         "model": "openai/gpt-oss-120b",
         "failed_queries": null,
         "headline": "Explained, but treat as tentative.",
         "version": "11",
-        "move": -10.065365126354555
+        "move": -2.0005751425811846
       },
       {
-        "date": "2020-03-09",
-        "event": "2020 Saudi-Russia price war",
-        "z_score": -10.834108424895431,
+        "date": "2020-08-11",
+        "event": "2020 August reversal from the record",
+        "z_score": -4.71830765940297,
         "state": "explained",
         "tier": "EXPLAINED_TENTATIVE",
-        "explanation": "-24.6% day-over-day move (z-score -10.83), on top of -39.5% over the last 10 trading days on 2020-03-09. Reasons given by 5 reports from that day:\n- \"Brent oil prices drop to $ 31 . 74\" (news.am, 2020-03-09). Reported move: down 42.6%. Reason: falling demand due to coronavirus. Quote: \"falling demand due to coronavirus\" (source: 4ee1e219f3a837fd)\n- \"\u0426\u0435\u043d\u0430 \u043d\u0435\u0444\u0442\u0438 Brent \u0443\u043f\u0430\u043b\u0430 \u0434\u043e $31 , 74\" (armenpress.am, 2020-03-09). Reported move: down 42.6%. Reason: \u043d\u0430 \u0444\u043e\u043d\u0435 \u043d\u043e\u0432\u043e\u0441\u0442\u0435\u0439 \u043e \u0442\u043e\u043c, \u0447\u0442\u043e \u0443\u0447\u0430\u0441\u0442\u043d\u0438\u043a\u0438 \u041e\u041f\u0415\u041a+. Quote: \"\u043d\u0430 \u0444\u043e\u043d\u0435 \u043d\u043e\u0432\u043e\u0441\u0442\u0435\u0439 \u043e \u0442\u043e\u043c, \u0447\u0442\u043e \u0443\u0447\u0430\u0441\u0442\u043d\u0438\u043a\u0438 \u041e\u041f\u0415\u041a+\" (source: 031ff9bf93ecec43)\n- \"Crude Oil Price Slumps News Oil Drops 31 % As OPEC Deal Collapse Sparks Price War , Global Markets Hit\" (ndtv.com, 2020-03-09). Reported move: down 31%. Reason: OPEC Deal Collapse Sparks Price War. Quote: \"OPEC Deal Collapse Sparks Price War\" (source: e539bfd61d3a8559)\n- \"Oil plunges 25 %, hit by erupting Saudi Arabia - Russia oil price war\" (business-standard.com, 2020-03-09). Reported move: down 25%. Reason: Saudi Arabia and Russia began a price war. Quote: \"Saudi Arabia and Russia began a price war\" (source: 06da8249f0f6b418)\n- \"Crude oil futures plunge nearly 30 pc on weak global cues\" (business-standard.com, 2020-03-09). Reported move: down 30%. Reason: weak global cues. Quote: \"weak global cues\" (source: deb363ed67d7d9a5)",
+        "explanation": "-4.6% day-over-day move (z-score -4.72) on 2020-08-11. Reasons given by 5 reports from that day:\n- \"Gold Price today August 11 2020 Gold Futures Slump 2 Per Cent As Global Equity Markets , Dollar Rise\" (ndtv.com, 2020-08-11). Reported move: down 2%. Reason: Global equity markets rise and dollar rise. Quote: \"Gold Price today August 11 2020 Gold Futures Slump 2 Per Cent As Global Equity Markets , Dollar Rise\" (source: b16b0dbf22c7a1f2)\n- \"Gold Settles Sharply Lower , Records Steepest Fall In 9 Years\" (finanznachrichten.de, 2020-08-11). Reported move: down 4.6%. Reason: hopes about U.S. coronavirus stimulus and news about Russia registering the first vaccine. Quote: \"as riskier assets such as equities rallied on hopes about U.S. coronavirus stimulus and on news about Russia registering the first vaccine against the coronavirus pandemic.\" (source: 9be7b5e7d8bc7a8b)\n- \"S & P Futures Hit All Time Highs On Stimulus , Vaccine Hopes ; Gold , Silver Tumble\" (zerohedge.com, 2020-08-11). Reported move: down, size not stated. Reason: Stimulus , Vaccine Hopes. Quote: \"On Stimulus , Vaccine Hopes\" (source: fd9cd2af1e5f0b31)\n- \"gold rate gold and silver prices decline strongly know gold which price sold in bullion market today vwt | Gold Rate : \u0938\u094b\u0928\u093e - \u091a\u093e\u0902\u0926\u0940 \u0915\u0947 \u092d\u093e\u0935 \u092e\u0947\u0902 \u092d\u093e\u0930\u0940 \u0917\u093f\u0930\u093e\u0935\u091f , \u091c\u093e\u0928\u093f\u090f \u0938\u0930\u094d\u0930\u093e\u092b\u093e \u092c\u093e\u091c\u093e\u0930 \u092e\u0947\u0902 \u0906\u091c \u0915\u094d\u092f\u093e \u0930\u0939\u093e \u0938\u094b\u0928\u093e \u0915\u093e \u092d\u093e\u0935 ...\" (prabhatkhabar.com, 2020-08-11). Reported move: down, size not stated. Reason: \u0930\u0941\u092a\u092f\u0947 \u092e\u0947\u0902 \u0938\u0941\u0927\u093e\u0930 \u0906\u0928\u0947 \u0915\u0947 \u0915\u093e\u0930\u0923 \u0938\u094b\u0928\u0947 \u092e\u0947\u0902 \u0924\u0947\u091c\u0940 \u092a\u0930 \u0915\u0941\u091b \u0905\u0902\u0915\u0941\u0936 \u0932\u0917\u093e \u0930\u0939\u093e. Quote: \"\u0930\u0941\u092a\u092f\u0947 \u092e\u0947\u0902 \u0938\u0941\u0927\u093e\u0930 \u0906\u0928\u0947 \u0915\u0947 \u0915\u093e\u0930\u0923 \u0938\u094b\u0928\u0947 \u092e\u0947\u0902 \u0924\u0947\u091c\u0940 \u092a\u0930 \u0915\u0941\u091b \u0905\u0902\u0915\u0941\u0936 \u0932\u0917\u093e \u0930\u0939\u093e\" (source: 6cd98474bde8704e)\n- \"Gold Prices Plunge Below $2000 After Explosive Rally\" (oilprice.com, 2020-08-11). Reported move: down 4.5%. Reason: dollar clung to gains and risk appetite was boosted by an expected US stimulus deal. Quote: \"dollar clung to gains and risk appetite was boosted by an expected US stimulus deal\" (source: 774bb276d9e851e3)\nPointing the other way, 1 report from that day:\n- \"Gold Price Analysis : XAU / USD retraces biggest losses in seven years above $1 , 900\" (forexcrunch.com, 2020-08-11). Reported move: up, size not stated. Reason: risk reset seems to have favored the pullback moves. Quote: \"risk reset seems to have favored the pullback moves\" (source: aef8d4d3ecd6973c)",
         "reason": null,
         "model": "openai/gpt-oss-120b",
         "failed_queries": null,
         "headline": "Explained, but treat as tentative.",
         "version": "11",
-        "move": -24.588178097574943
+        "move": -4.579104770309364
       },
       {
-        "date": "2020-04-20",
-        "event": "2020 negative WTI price",
-        "z_score": -43.20772472684393,
-        "state": "fault",
-        "tier": "SYSTEM_ERROR",
-        "explanation": null,
-        "reason": "price_not_positive_move_undefined",
-        "model": null,
-        "failed_queries": null,
-        "headline": "The size and direction of this move cannot be computed: the price was not positive at one end of the day.",
-        "version": "11",
-        "move": null
-      },
-      {
-        "date": "2020-04-21",
-        "event": "2020 negative WTI price",
-        "z_score": -3.377999636437716,
-        "state": "fault",
-        "tier": "SYSTEM_ERROR",
-        "explanation": null,
-        "reason": "price_not_positive_move_undefined",
-        "model": null,
-        "failed_queries": null,
-        "headline": "The size and direction of this move cannot be computed: the price was not positive at one end of the day.",
-        "version": "11",
-        "move": null
-      },
-      {
-        "date": "2022-03-01",
-        "event": "2022 Russia invades Ukraine",
-        "z_score": 3.02886385702405,
+        "date": "2025-10-20",
+        "event": "2025 October reversal from the record",
+        "z_score": 2.919656568411866,
         "state": "explained",
         "tier": "EXPLAINED_TENTATIVE",
-        "explanation": "+8.0% day-over-day move (z-score 3.03) on 2022-03-01. Reasons given by 7 reports from that day:\n- \"Oil price rises above $105 a barrel ahead of OPEC+ meeting\" (thecable.ng, 2022-03-01). Reported move: up 7%. Reason: OPEC and its allies adopted a production cut system to prop up prices and prevent an oversupply in the global oil market. Quote: \"OPEC and its allies adopted a production cut system to prop up prices and prevent an oversupply in the global oil market\" (source: 79bb2509b58f8742)\n- \"US and 30 allied countries to release 60m barrels of oil amid price surge\" (theguardian.com, 2022-03-01). Reported move: up, size not stated. Reason: fears about supply disruption from the Ukraine crisis and sanctions against Russia. Quote: \"fears about supply disruption from the Ukraine crisis and sanctions against Russia\" (source: af369c3c276a10d8)\n- \"Stock Futures Rise Slightly Amid Surge in Oil Prices , Ongoing Conflict in Ukraine\" (nbcsandiego.com, 2022-03-01). Reported move: up, size not stated. Reason: intensifying conflict between Russia and Ukraine. Quote: \"surge in oil prices amid the intensifying conflict between Russia and Ukraine.\" (source: 2967fbafd52ef7c7)\n- \"Petr\u00f3leo precio sube y rompe la barrera de los 100 d\u00f3lares el barril | Internacional\" (portafolio.co, 2022-03-01). Reported move: up, size not stated. Reason: cuando las sanciones por la invasi\u00f3n a Ucr. Quote: \"cuando las sanciones por la invasi\u00f3n a Ucr\" (source: fe9d1f5d9ef5125e)\n- \"\u0642\u0641\u0632\u0629 \u0644\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0646\u0641\u0637 \u0645\u0639 \u062a\u0632\u0627\u064a\u062f \u0645\u062e\u0627\u0648\u0641 \u0627\u0644\u062d\u0631\u0628 .. \u0627\u0644\u0628\u0631\u0645\u064a\u0644 \u0641\u0648\u0642 100 \u062f\u0648\u0644\u0627\u0631 \u0645\u062c\u062f\u062f\u0627\" (al-ain.com, 2022-03-01). Reported move: up 3.1%. Reason: \u062a\u0632\u0627\u064a\u062f \u0645\u062e\u0627\u0648\u0641 \u0627\u0644\u062d\u0631\u0628. Quote: \"\u0642\u0641\u0632\u0629 \u0628\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0646\u0641\u0637 \u0645\u0639 \u062a\u0632\u0627\u064a\u062f \u0645\u062e\u0627\u0648\u0641 \u0627\u0644\u062d\u0631\u0628.. \u0627\u0644\u0628\u0631\u0645\u064a\u0644 \u0641\u0648\u0642 100 \u062f\u0648\u0644\u0627\u0631 \u0645\u062c\u062f\u062f\u0627\" (source: 20d58cab789d4017)\n- \"Oil Futures Rise Sharply , Record Highest Settlement Since July 2014\" (finanznachrichten.de, 2022-03-01). Reported move: up 8%. Reason: escalation in the ongoing Russia-Ukraine war and a raft of sanctions. Quote: \"Crude oil prices rose sharply on Tuesday as an escalation in the ongoing Russia-Ukraine war and a raft of sanctions\" (source: 29548a383b75f8a5)\n- \"Oil prices surge over 7 % as global crude reserve release disappoints\" (financialpost.com, 2022-03-01). Reported move: up 7%. Reason: global agreement to release crude reserves failed to calm fears about supply disruptions. Quote: \"Oil prices surged over 7% on Tuesday as a global agreement to release crude reserves failed to calm fears about supply disruptions\" (source: 65895b49d9b199d3)",
+        "explanation": "+3.5% day-over-day move (z-score 2.92), on top of +9.6% over the last 10 trading days on 2025-10-20. Reason given by 1 report from that day:\n- \"Gold prices rise amid expectations of interest rate cut\" (thepeninsulaqatar.com, 2025-10-20). Reported move: up 2.8%. Reason: expectations of US interest rate cut and safe\u2011haven demand. Quote: \"Gold prices rise amid expectations of interest rate cut\" (source: 68bde55bbb566c7d)",
         "reason": null,
         "model": "openai/gpt-oss-120b",
         "failed_queries": null,
         "headline": "Explained, but treat as tentative.",
         "version": "11",
-        "move": 8.033851173565376
+        "move": 3.4675932626489234
       },
       {
-        "date": "2022-03-09",
-        "event": "2022 Russia invades Ukraine",
-        "z_score": -4.336149652259897,
+        "date": "2025-10-21",
+        "event": "2025 October reversal from the record",
+        "z_score": -5.355551348450996,
         "state": "explained",
-        "tier": "EXPLAINED_TENTATIVE",
-        "explanation": "-12.1% day-over-day move (z-score -4.34) on 2022-03-09. Reasons given by 2 reports from that day:\n- \"Oil Prices Tumbles 15 % As Ukraine President Signals Openness to Talks\" (markets.businessinsider.com, 2022-03-09). Reported move: down 15%. Reason: Ukraine President signals openness to talks. Quote: \"Oil Prices Tumbles 15 % As Ukraine President Signals Openness to Talks\" (source: 0a88da377840da56)\n- \"Oil Falters on OPEC+ Supply and Ukraine Concession Reports\" (rigzone.com, 2022-03-09). Reported move: down 17%. Reason: UAE called on OPEC+ to boost oil output faster. Quote: \"UAE called on OPEC+ to boost oil output faster\" (source: fc8a454d49a74764)\nPointing the other way, 1 report from that day:\n- \"\u0627\u0644\u0642\u0627\u062f\u0645 \u0623\u0633\u0648\u0621 ... \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0646\u0641\u0637 \u062a\u0648\u0627\u0635\u0644 \u0627\u0631\u062a\u0641\u0627\u0639\u0647\u0627 \u0639\u0627\u0644\u0645\u064a\u0627 \u0648\u0627\u062d\u062a\u0645\u0627\u0644 \u062a\u062e\u0637\u064a\u0647\u0627 \u0644\u0639\u062a\u0628\u0629 300 \u062f\u0648\u0644\u0627\u0631 \u0644\u0644\u0628\u0631\u0645\u064a\u0644 \u0628\u0627\u062a \u0648\u0627\u0631\u062f\u0627\" (akhbarona.com, 2022-03-09). Reported move: up 2.12%. Reason: \u0645\u0633\u062a\u0645\u0631\u0627\u0631 \u0627\u0644\u0645\u062e\u0627\u0648\u0641 \u0645\u0646 \u0634\u062d \u0645\u0639\u0631\u0648\u0636 \u0627\u0644\u062e\u0627\u0645 \u062e\u0644\u0627\u0644 \u0627\u0644\u0641\u062a\u0631\u0629 \u0627\u0644\u0642\u0631\u064a\u0628\u0629 \u0627\u0644\u0645\u0642\u0628\u0644\u0629\u060c \u0628\u0641\u0639\u0644 \u0642\u0631\u0627\u0631\u0627\u062a \u063a\u0631\u0628\u064a\u0629. Quote: \"\u0645\u0633\u062a\u0645\u0631\u0627\u0631 \u0627\u0644\u0645\u062e\u0627\u0648\u0641 \u0645\u0646 \u0634\u062d \u0645\u0639\u0631\u0648\u0636 \u0627\u0644\u062e\u0627\u0645 \u062e\u0644\u0627\u0644 \u0627\u0644\u0641\u062a\u0631\u0629 \u0627\u0644\u0642\u0631\u064a\u0628\u0629 \u0627\u0644\u0645\u0642\u0628\u0644\u0629\u060c \u0628\u0641\u0639\u0644 \u0642\u0631\u0627\u0631\u0627\u062a \u063a\u0631\u0628\u064a\u0629\" (source: 3a00b72bbf6c2185)",
+        "tier": "EXPLAINED_STRONG",
+        "explanation": "-5.7% day-over-day move (z-score -5.36) on 2025-10-21. Reasons given by 2 reports from that day:\n- \"Gold Price Today : Spot Gold Slides After Record High ; Futures Volatile as Dollar Firms\" (el-balad.com, 2025-10-21). Reported move: down, size not stated. Reason: heavy profit-taking and a firmer U.S. dollar. Quote: \"After touching fresh all-time highs in recent sessions, the metal faced heavy profit-taking and a firmer U.S. dollar, prompting the steepest single-day pullback in years.\" (source: a58eea23098bf8d1)\n- \"\u0426\u0435\u043d\u0430 \u0444\u044c\u044e\u0447\u0435\u0440\u0441\u0430 \u043d\u0430 \u0437\u043e\u043b\u043e\u0442\u043e \u0443\u0441\u043a\u043e\u0440\u0438\u043b\u0430 \u043f\u0430\u0434\u0435\u043d\u0438\u0435 \u0434\u043e 5 %\" (pnp.ru, 2025-10-21). Reported move: down 5.49%. Reason: \u041f\u0430\u0434\u0435\u043d\u0438\u0435 \u0446\u0435\u043d \u043d\u0430 \u0437\u043e\u043b\u043e\u0442\u043e \u043f\u043e\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043b\u043e \u043f\u043e\u0441\u043b\u0435 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u0445 \u043d\u0435\u0434\u0435\u043b\u044c \u0440\u043e\u0441\u0442\u0430. Quote: \"\u041f\u0430\u0434\u0435\u043d\u0438\u0435 \u0446\u0435\u043d \u043d\u0430 \u0437\u043e\u043b\u043e\u0442\u043e \u043f\u043e\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043b\u043e \u043f\u043e\u0441\u043b\u0435 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u0445 \u043d\u0435\u0434\u0435\u043b\u044c \u0440\u043e\u0441\u0442\u0430.\" (source: 28405416ab17e39f)",
         "reason": null,
         "model": "openai/gpt-oss-120b",
         "failed_queries": null,
-        "headline": "Explained, but treat as tentative.",
+        "headline": "Explained from recent, quoted evidence.",
         "version": "11",
-        "move": -12.126111859385258
+        "move": -5.7416113626098095
+      },
+      {
+        "date": "2026-01-30",
+        "event": "2026 January metals crash",
+        "z_score": -6.817176148317306,
+        "state": "explained",
+        "tier": "EXPLAINED_STRONG",
+        "explanation": "-10.8% day-over-day move (z-score -6.82) on 2026-01-30. Reasons given by 2 reports from that day:\n- \"Gold accelerates losses , silver tumbles 20 % as precious metals rally evaporates\" (finance.yahoo.com, 2026-01-30). Reported move: down 11%. Reason: after President Trump selected Kevin Warsh as the next Federal Reserve Chair. Quote: \"after President Trump selected Kevin Warsh as the next Federal Reserve Chair\" (source: 50a8e8618a2dbfb1)\n- \"Gold accelerates losses , silver tumbles 20 % as precious metals trade unwinds\" (finance.yahoo.com, 2026-01-30). Reported move: down 11%. Reason: after President Trump selected Kevin Warsh as the next Federal Reserve Chair. Quote: \"after President Trump selected Kevin Warsh as the next Federal Reserve Chair\" (source: edca5db426528e23)",
+        "reason": null,
+        "model": "openai/gpt-oss-120b",
+        "failed_queries": null,
+        "headline": "Explained from recent, quoted evidence.",
+        "version": "11",
+        "move": -10.779554203887539
+      },
+      {
+        "date": "2026-02-03",
+        "event": "2026 January metals crash",
+        "z_score": 2.8517543186120413,
+        "state": "explained",
+        "tier": "EXPLAINED_STRONG",
+        "explanation": "+6.1% day-over-day move (z-score 2.85) on 2026-02-03. Reasons given by 3 reports from that day:\n- \"Why gold futures are surging today : Gold price again closer to $5 , 000 \u2013 Why gold futures are surging today \u2013 How gold has outperformed stocks as gold price forecasts point to $6 , 000 in 2026\" (economictimes.indiatimes.com, 2026-02-03). Reported move: up 7%. Reason: renewed demand for safety. Quote: \"The immediate driver is renewed demand for safety.\" (source: e5c62bae4e562d19)\n- \"Gold Rises Over 5 % After Historic Sell - off\" (rttnews.com, 2026-02-03). Reported move: up 5.1%. Reason: steep sell-off triggered by the nomination of Kevin Warsh as chairman of the U.S. Federal Reserve. Quote: \"steep sell-off triggered by the nomination of Kevin Warsh as chairman of the U.S. Federal Reserve\" (source: e64f8db4696f872a)\n- \"Gold claws back ground after sharp selloff\" (businessday.co.za, 2026-02-03). Reported move: up 2.2%. Reason: sharp selloff that was triggered by the nomination of Kevin Warsh as the next Fed chair. Quote: \"sharp selloff that was triggered by the nomination of Kevin Warsh as the next Fed chair\" (source: 24598d45b279c81e)",
+        "reason": null,
+        "model": "openai/gpt-oss-120b",
+        "failed_queries": null,
+        "headline": "Explained from recent, quoted evidence.",
+        "version": "11",
+        "move": 6.069722175348798
       }
     ],
-    "explained": 4,
-    "decided": 4,
-    "not_decided": 2,
-    "faults": 2,
+    "explained": 8,
+    "decided": 8,
+    "not_decided": 0,
+    "faults": 0,
     "events_too_old": [
-      "2014 OPEC no-cut decision"
+      "2013 April gold crash",
+      "2016 Brexit referendum"
     ],
     "placebo": {
       "run": true,
-      "n": 12,
-      "explained": 2,
+      "n": 8,
+      "explained": 1,
       "faults": 0,
-      "waiting": [],
+      "waiting": [
+        "2019-10-18",
+        "2020-04-27",
+        "2022-04-06",
+        "2025-06-11"
+      ],
       "pipeline_version": "11",
       "seed": 7,
       "false_explanations": [
         {
-          "date": "2019-11-14",
-          "explanation": "+2.0% day-over-day move (z-score 2.35) on 2019-11-14. Reasons given by 4 reports from that day:\n- \"Oil up 1 % on U . S . crude stocks fall , OPEC comments on U . S . shale growth\" (lfpress.com, 2019-11-14). Reported move: up 1%. Reason: U.S. crude stocks fall. Quote: \"Oil up 1 % on U . S . crude stocks fall , OPEC comments on U . S . shale growth\" (source: 8afff5b56e9e3dc6)\n- \"UPDATE 4 - Oil up 1 "
-        },
-        {
-          "date": "2024-12-02",
-          "explanation": "+5.1% day-over-day move (z-score 2.46) on 2024-12-02. Reasons given by 2 reports from that day:\n- \"Oil prices rise on China demand optimism ; markets eye OPEC meeting\" (invezz.com, 2024-12-02). Reported move: up, size not stated. Reason: robust manufacturing in China and rising geopolitical tensions. Quote: \"Oil prices rose sharply on robust manufacturing in China and rising geopolitical tensions."
+          "date": "2017-02-07",
+          "explanation": "+2.9% day-over-day move (z-score 2.32) on 2017-02-07. Reason given by 1 report from that day:\n- \"Gold prices climb Rs200 on global cues , jewellers buying\" (livemint.com, 2017-02-07). Reported move: up 1.29%. Reason: positive global cues and persistent buying by local jewellers. Quote: \"driven by positive global cues and persistent buying by local jewellers.\" (source: 7214d973ab1dfaf8)"
         }
       ]
     }

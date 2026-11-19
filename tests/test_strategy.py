@@ -162,3 +162,37 @@ def test_the_crude_oil_caveat_travels_with_the_number():
     energy. Quoted beside the others without that, it is misleading."""
     text = st.report([], [], {"available": False}, [])
     assert "weighted to energy" in text
+
+
+def test_a_numeraire_layer_that_has_not_run_says_so(tmp_path, monkeypatch):
+    monkeypatch.setattr(st, "RESULTS_DIR", tmp_path)
+    assert st.numeraire_mix("coffee") == {"commodity": "coffee", "available": False}
+
+
+def test_days_with_no_currency_data_are_left_out_of_the_denominator(tmp_path, monkeypatch):
+    """A day the translation could not be computed is not evidence that the
+    move was commodity-specific. It is left out, not counted as a pass."""
+    monkeypatch.setattr(st, "RESULTS_DIR", tmp_path)
+    (tmp_path / "gold_numeraire.json").write_text(json.dumps(
+        [{"reading": "specific to the commodity"}] * 8
+        + [{"reading": "mostly the numeraire"}] * 2
+        + [{"reading": "not enough currency data"}] * 5), encoding="utf-8")
+    out = st.numeraire_mix("gold")
+    assert out["judged"] == 10          # not 15
+    assert out["numeraire_share"] == 0.2
+    assert out["no_data"] == 5
+
+
+def test_the_two_exposure_methods_are_printed_side_by_side_not_merged():
+    """Collapsing a regression verdict and a translation verdict into one
+    number would hide the days on which they disagree, which are the days
+    worth looking at."""
+    text = st.report([], [{"commodity": "gold", "available": True, "assessed": 397,
+                           "macro": 167, "macro_share": 167 / 397,
+                           "median_window_r2": 0.30}],
+                     {"available": False}, [],
+                     [{"commodity": "gold", "available": True, "judged": 488,
+                       "specific": 377, "mixed": 67, "numeraire": 44,
+                       "no_data": 3, "numeraire_share": 44 / 488}])
+    assert "42.1%" in text and "9.0%" in text
+    assert "the disagreement is the finding" in text

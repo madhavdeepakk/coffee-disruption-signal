@@ -214,6 +214,40 @@ def exposure(key: str) -> dict:
             "macro": macro, "macro_share": macro / n, "median_window_r2": r2}
 
 
+def numeraire_mix(key: str) -> dict:
+    """How many flagged days survived translation into other currencies.
+
+    Read from the numeraire test's own output. This is a second, independent
+    answer to the question the factor model answers by regression, and the two
+    need not agree: a regression asks whether the move is consistent with the
+    dollar's usual relationship to this commodity, while translation asks the
+    blunter question of whether a buyer paying in rupees saw the same move. A
+    day the regression calls macro and translation calls commodity-specific is
+    a real finding about that day, not a bug in either.
+    """
+    path = RESULTS_DIR / f"{key}_numeraire.json"
+    if not path.exists():
+        return {"commodity": key, "available": False}
+    try:
+        rows = json.loads(path.read_text(encoding="utf-8"))
+    except (ValueError, OSError):
+        return {"commodity": key, "available": False}
+    counts = {}
+    for row in rows:
+        counts[row.get("reading")] = counts.get(row.get("reading"), 0) + 1
+    judged = sum(v for k, v in counts.items() if k != "not enough currency data")
+    if not judged:
+        return {"commodity": key, "available": False}
+    return {
+        "commodity": key, "available": True, "judged": judged,
+        "specific": counts.get("specific to the commodity", 0),
+        "mixed": counts.get("mixed", 0),
+        "numeraire": counts.get("mostly the numeraire", 0),
+        "no_data": counts.get("not enough currency data", 0),
+        "numeraire_share": counts.get("mostly the numeraire", 0) / judged,
+    }
+
+
 def pass_through() -> dict:
     """The monthly pass-through results, verdicts by the Holm-corrected p.
 
@@ -259,7 +293,9 @@ def _days(stat: dict) -> str:
             f"({stat['q1_days']:.0f}-{stat['q3_days']:.0f})")
 
 
-def report(timings: list, exposures: list, prices: dict, profiles: list) -> str:
+def report(timings: list, exposures: list, prices: dict, profiles: list,
+           numeraires: list = None) -> str:
+    numeraires = numeraires or []
     L = ["# What the measurements support doing", ""]
     L.append("Produced by `python -m src.analysis.strategy`. Every statement below "
              "carries the figure it rests on. Where a measurement does not support a "
@@ -316,16 +352,32 @@ def report(timings: list, exposures: list, prices: dict, profiles: list) -> str:
              "dollar risk have different problems, and a commodity instrument only "
              "addresses the first. The split is read from `factor_adjusted_report.md`.")
     L.append("")
-    L.append("| Commodity | Days assessed | Macro-driven | Share | Median window R² |")
-    L.append("|---|---|---|---|---|")
+    L.append("| Commodity | Days assessed | Macro-driven | Share | Median window R² | "
+             "Translation: mostly the dollar |")
+    L.append("|---|---|---|---|---|---|")
     for e in exposures:
+        num = next((n for n in numeraires
+                    if n["commodity"] == e["commodity"]), {"available": False})
+        trans = ("not run" if not num.get("available")
+                 else f"{num['numeraire']} of {num['judged']} "
+                      f"({100 * num['numeraire_share']:.1f}%)")
         if not e.get("available"):
             L.append(f"| {get_commodity(e['commodity']).display_name} | - | - | "
-                     f"not run | - |")
+                     f"not run | - | {trans} |")
             continue
         r2 = "-" if e["median_window_r2"] is None else f"{e['median_window_r2']:.2f}"
         L.append(f"| {get_commodity(e['commodity']).display_name} | {e['assessed']} | "
-                 f"{e['macro']} | {100 * e['macro_share']:.1f}% | {r2} |")
+                 f"{e['macro']} | {100 * e['macro_share']:.1f}% | {r2} | {trans} |")
+    L.append("")
+    L.append("**The last two columns disagree, and the disagreement is the finding.** "
+             "The regression asks whether a day's move is consistent with this "
+             "commodity's usual relationship to the dollar. Translation asks the "
+             "blunter question: did a buyer paying in euro, yen, yuan or rupees see "
+             "the same move? A day can be ordinary for the dollar's behaviour and "
+             "still be a real commodity move, which is why the share called "
+             "\"macro-driven\" is consistently larger than the share that actually "
+             "fails translation. Neither column is the right answer on its own; the "
+             "anomaly card prints both and gives no overall verdict, for this reason.")
     L.append("")
     L.append("**Two cautions carried over from that report, not restated as results.** "
              "Crude oil's share is inflated because the broad-complex factor is heavily "
@@ -395,8 +447,9 @@ def run(commodities=None, verbose: bool = True, save: bool = False) -> dict:
     timings = [timing(k) for k in keys]
     exposures = [exposure(k) for k in keys]
     profiles = [forward_profile(k) for k in keys]
+    numeraires = [numeraire_mix(k) for k in keys]
     prices = pass_through()
-    text = report(timings, exposures, prices, profiles)
+    text = report(timings, exposures, prices, profiles, numeraires)
     if verbose:
         print(text)
     if save:
@@ -404,11 +457,12 @@ def run(commodities=None, verbose: bool = True, save: bool = False) -> dict:
         REPORT_MD.write_text(text, encoding="utf-8")
         REPORT_JSON.write_text(json.dumps(
             {"timing": timings, "exposure": exposures, "forward": profiles,
-             "pass_through": prices}, indent=2, default=str), encoding="utf-8")
+             "numeraire": numeraires, "pass_through": prices},
+            indent=2, default=str), encoding="utf-8")
         if verbose:
             print(f"\nSaved {REPORT_MD} and {REPORT_JSON}")
     return {"timing": timings, "exposure": exposures, "pass_through": prices,
-            "forward": profiles}
+            "forward": profiles, "numeraire": numeraires}
 
 
 def main():

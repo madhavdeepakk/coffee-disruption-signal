@@ -1,0 +1,2451 @@
+[
+  {
+    "commodity": "coffee",
+    "date": "2020-03-19",
+    "fields": {
+      "price": {
+        "value": 116.6500015258789,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": 1.526744841503702,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": false,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": null,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "contract_switch": {
+        "value": true,
+        "tag": "observed",
+        "source": "data/labeling/contract_switch_dates.csv",
+        "note": "the series switched futures contract: this move is an artefact, not a market move"
+      },
+      "factor_class": {
+        "value": NaN,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": null,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": null,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": null,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0431279253014947,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [
+          "crude_oil",
+          "wheat",
+          "gold",
+          "silver"
+        ],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": null,
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "pipeline_version": {
+        "value": "9",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2020-03-19.json"
+      },
+      "outcome_tier": {
+        "value": "EXPLAINED_TENTATIVE",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2020-03-19.json"
+      },
+      "decision_reason": {
+        "value": null,
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2020-03-19.json"
+      },
+      "explanation": {
+        "value": "The +8.0% day-over-day move (z-score 2.94) on 2020-03-19 is matched by 1 report published that day that gives a reason for prices rising: supply chain worries (source: 82982b9ccb860d3c). 1 report from the same day points the other way: coronavirus pandemic (source: 2c5f6cdba08dfb1d).",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2020-03-19.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 1,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2020-03-19.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2020-03-19.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "cross_commodity.json",
+      "data/labeling/contract_switch_dates.csv",
+      "pipeline_output_coffee_2020-03-19.json"
+    ],
+    "missing_layers": [
+      "numeraire"
+    ]
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-05-05",
+    "fields": {
+      "price": {
+        "value": 148.5,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": 4.161971285040841,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock+trend",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": 4.169910911648989,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": 0.0020785864874042,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": 0.0647521659368505,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.1680944491139865,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": 6.911451782114653,
+          "EUR": 7.3227961781085815,
+          "JPY": 7.148629829312769,
+          "CNY": 6.911451782114653,
+          "INR": 6.826601151770539
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 1.0165791640662596,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -1.3454490006446418,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": 6.942961301641404,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-05-05.json"
+      },
+      "outcome_tier": {
+        "value": "EXPLAINED_TENTATIVE",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-05-05.json"
+      },
+      "decision_reason": {
+        "value": null,
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-05-05.json"
+      },
+      "explanation": {
+        "value": "+6.9% day-over-day move (z-score 4.16), on top of +12.3% over the last 10 trading days on 2021-05-05. Reasons given by 2 reports from that day:\n- \"Peabirus : Mercado segue em alerta com seca nos cafezais brasileiros e NY e Londres abrem o dia com expressiva valorizao\" (redepeabirus.com.br, 2021-05-05). Reported move: up, size not stated. Reason: seca nos cafezais brasileiros. Quote: \"Mercado segue em alerta com seca nos cafezais brasileiros e NY e Londres abrem o dia com expressiva valoriza\u00e7\u00e3o\" (source: 8a335f08c681a4b5)\n- \"Peabirus : Caf\u00e9 : Preocupaes com a seca seguem no radar e ar\u00e1bica ganha mais de 3 % em NY\" (redepeabirus.com.br, 2021-05-05). Reported move: up 3%. Reason: seca. Quote: \"seca seguem no radar e ar\u00e1bica ganha mais de 3 % em NY\" (source: 6a40cf3334cd02d0)\nPointing the other way, 1 report from that day:\n- \"Th\u1ecb tr\u01b0\u1eddng \u0111\u00f3ng b\u0103ng v\u00ec Covid , xu\u1ea5t kh\u1ea9u c\u00e0 ph\u00ea gi\u1ea3m m\u1ea1nh , gi\u00e1 r\u1edbt s\u00e2u\" (vneconomy.vn, 2021-05-05). Reported move: down, size not stated. Reason: Covid. Quote: \"Th\u1ecb tr\u01b0\u1eddng \u0111\u00f3ng b\u0103ng v\u00ec Covid , xu\u1ea5t kh\u1ea9u c\u00e0 ph\u00ea gi\u1ea3m m\u1ea1nh , gi\u00e1 r\u1edbt s\u00e2u\" (source: 713a7bbc8f2cf5e9)",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-05-05.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 2,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-05-05.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-05-05.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2021-05-05.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-19",
+    "fields": {
+      "price": {
+        "value": 155.25,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": -2.073342941182154,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": -2.074430738067212,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": 0.0015368394762844,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": -0.0391459298037239,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0781195384816219,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [
+          "crude_oil"
+        ],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": -3.691065174246,
+          "EUR": -3.7089269660221302,
+          "JPY": -3.606843176996166,
+          "CNY": -3.4212286465383657,
+          "INR": -3.5685806762136507
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 0.9714816876342575,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -1.434368899030906,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": -3.392855792220284,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-07-19.json"
+      },
+      "outcome_tier": {
+        "value": "EXPLAINED_STRONG",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-07-19.json"
+      },
+      "decision_reason": {
+        "value": null,
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-07-19.json"
+      },
+      "explanation": {
+        "value": "-3.7% day-over-day move (z-score -2.07) on 2021-07-19. Reasons given by 2 reports from that day:\n- \"Peabirus : Com delta , d\u00f3lar e petr\u00f3leo no radar , ar\u00e1bica acompanha demais commodities e recua forte nesta 2\u00aa\" (redepeabirus.com.br, 2021-07-19). Reported move: down, size not stated. Reason: Com delta , d\u00f3lar e petr\u00f3leo no radar. Quote: \"Com delta , d\u00f3lar e petr\u00f3leo no radar , ar\u00e1bica acompanha demais commodities e recua forte nesta 2\u00aa\" (source: 13efcc986a76e8a9)\n- \"Caf\u00e9 e acar recuam em meio \u00e0 venda generalizada de petr\u00f3leo e aes\" (istoe.com.br, 2021-07-19). Reported move: down 3.1%. Reason: Oil prices fell due to rising Covid-19 cases. Quote: \"os pre\u00e7os do petr\u00f3leo recuando devido ao aumento de casos de Covid-19 no mundo inteiro\" (source: 8dbefb4ae9191d93)",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-07-19.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 2,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-07-19.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-07-19.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2021-07-19.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-20",
+    "fields": {
+      "price": {
+        "value": 165.64999389648438,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": 3.154091551683491,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": 3.271199700412207,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": 0.0018897406105066,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": 0.0629506304759564,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0903927717074053,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [
+          "crude_oil"
+        ],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": 6.698868854418327,
+          "EUR": 6.881273209419159,
+          "JPY": 6.368690299583046,
+          "CNY": 6.883337090790076,
+          "INR": 7.215841633912068
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 1.0264915214510482,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -1.517138239310051,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": 6.838316962882374,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-07-20.json"
+      },
+      "outcome_tier": {
+        "value": "EXPLAINED_STRONG",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-07-20.json"
+      },
+      "decision_reason": {
+        "value": null,
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-07-20.json"
+      },
+      "explanation": {
+        "value": "+6.7% day-over-day move (z-score 3.15) on 2021-07-20. Reasons given by 4 reports from that day:\n- \"Arabica coffee gains more than 6 % on frosts in Brazil , sugar rises 2 %\" (riotimesonline.com, 2021-07-20). Reported move: up 6.6%. Reason: fears of crop damage after frosts hit production areas of Brazil. Quote: \"buoyed by fears of crop damage after frosts hit production areas of major producer Brazil for the second time this year.\" (source: 0feb2b81893123db)\n- \"Caf\u00e9 ar\u00e1bica avan\u00e7a mais de 6 % com geada no Brasil , acar sobe 2 %\" (ricmais.com.br, 2021-07-20). Reported move: up 6%. Reason: geada no Brasil. Quote: \"Caf\u00e9 ar\u00e1bica avan\u00e7a mais de 6 % com geada no Brasil\" (source: 8a986c5849d50c36)\n- \"Peabirus : Caf\u00e9 ar\u00e1bica sobe mais de mil pontos com geada e preocupao com a oferta do Brasil\" (redepeabirus.com.br, 2021-07-20). Reported move: up, size not stated. Reason: geada e preocupa\u00e7\u00e3o com a oferta do Brasil. Quote: \"Caf\u00e9 ar\u00e1bica sobe mais de mil pontos com geada e preocupa\u00e7\u00e3o com a oferta do Brasil\" (source: 39a26aa0fd5c7937)\n- \"Peabirus : Ap\u00f3s madrugada com geada , pre\u00e7os do ar\u00e1bica explodem na Bolsa de NY\" (redepeabirus.com.br, 2021-07-20). Reported move: up, size not stated. Reason: geada. Quote: \"Ap\u00f3s madrugada com geada, pre\u00e7os do ar\u00e1bica explodem na Bolsa de NY\" (source: b6fba1d40faa935e)",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-07-20.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 4,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-07-20.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-07-20.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2021-07-20.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-22",
+    "fields": {
+      "price": {
+        "value": 193.6499938964844,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": 4.245460137066216,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock+trend",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": 4.245245026640071,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": 0.0072318004868983,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": 0.0883365789174274,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0891837992073213,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": 10.028405623002534,
+          "EUR": 9.948023658575167,
+          "JPY": 10.363735096835281,
+          "CNY": 9.741620367463444,
+          "INR": 9.900258455981259
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 0.9900794817099023,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -1.4164181897081596,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": 10.146043390080074,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-07-22.json"
+      },
+      "outcome_tier": {
+        "value": "EXPLAINED_STRONG",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-07-22.json"
+      },
+      "decision_reason": {
+        "value": null,
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-07-22.json"
+      },
+      "explanation": {
+        "value": "+10.0% day-over-day move (z-score 4.25), on top of +27.4% over the last 10 trading days on 2021-07-22. Reasons given by 2 reports from that day:\n- \"Caf\u00e9 ar\u00e1bica avan\u00e7a 10 % para m\u00e1xima de 6 anos e meio com geadas no Brasil ; acar recua\" (ricmais.com.br, 2021-07-22). Reported move: up 10%. Reason: geadas no Brasil. Quote: \"com geadas no Brasil\" (source: d2978ad949fa55d3)\n- \"Coffee up 10 % in New York after new frosts in Brazil\" (riotimesonline.com, 2021-07-22). Reported move: up 10%. Reason: new frosts in Brazil. Quote: \"Coffee up 10 % in New York after new frosts in Brazil\" (source: 6d0245b47fb3d32c)",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-07-22.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 2,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-07-22.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-07-22.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2021-07-22.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-30",
+    "fields": {
+      "price": {
+        "value": 179.5500030517578,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": -3.335629910998612,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": -3.4800416212338243,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": -0.0012275021964453,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": -0.088981191444077,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0778634952569682,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": -8.625952645415868,
+          "EUR": -8.987370612119571,
+          "JPY": -9.026736127591594,
+          "CNY": -9.106098752460667,
+          "INR": -8.795460149846878
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 1.0463316962047025,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -1.3224268035704745,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": -8.217950576265576,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-07-30.json"
+      },
+      "outcome_tier": {
+        "value": "EXPLAINED_TENTATIVE",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-07-30.json"
+      },
+      "decision_reason": {
+        "value": null,
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-07-30.json"
+      },
+      "explanation": {
+        "value": "-8.6% day-over-day move (z-score -3.34) on 2021-07-30. Reasons given by 3 reports from that day:\n- \"Pre\u00e7os do caf\u00e9 recuam quase 9 % com geadas no Brasil aparentemente menos intensas do que o esperado\" (istoe.com.br, 2021-07-30). Reported move: down 8.6%. Reason: geadas no Brasil aparentemente menos intensas do que o esperado. Quote: \"geadas no Brasil aparentemente menos intensas do que o esperado\" (source: 75f795d6a56be68c)\n- \"Coffee tumbles most since 2008 as Brazil frost concerns ease\" (bnnbloomberg.ca, 2021-07-30). Reported move: down, size not stated. Reason: Brazil frost concerns ease. Quote: \"Coffee tumbles most since 2008 as Brazil frost concerns ease\" (source: 785f38fce9dc7426)\n- \"Coffee Tumbles Most in 10 Months as Brazil Frost Concerns Ease\" (bnnbloomberg.ca, 2021-07-30). Reported move: down, size not stated. Reason: Brazil frost concerns ease. Quote: \"Coffee Tumbles Most in 10 Months as Brazil Frost Concerns Ease\" (source: 5f14fb1d5c879728)\nPointing the other way, 1 report from that day:\n- \"Se dispara el precio del caf\u00e9 a nivel mundial , las razones detr\u00e1s de la suba\" (cronista.com, 2021-07-30). Reported move: up, size not stated. Reason: fr\u00edo en distintos pa\u00edses de Sudam\u00e9rica. Quote: \"Al preguntarle al mozo, \u00e9ste argumenta que est\u00e1 haciendo mucho fr\u00edo en distintos pa\u00edses de Sudam\u00e9rica.\" (source: 2754f0e5583b9633)",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-07-30.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 3,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2021-07-30.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2021-07-30.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2021-07-30.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-05-11",
+    "fields": {
+      "price": {
+        "value": 220.1000061035156,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": 4.1708285076732015,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": 3.746426807907786,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": 0.0088625124913241,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": 0.0670995099275236,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.1575136104162311,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": 7.892159854664582,
+          "EUR": 8.228449237524305,
+          "JPY": 7.87064301087077,
+          "CNY": 7.953080098475307,
+          "INR": 7.7609288177365565
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 1.0024027251864311,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -1.1655034502755521,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": 7.807461250398395,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2022-05-11.json"
+      },
+      "outcome_tier": {
+        "value": "EXPLAINED_STRONG",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2022-05-11.json"
+      },
+      "decision_reason": {
+        "value": null,
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2022-05-11.json"
+      },
+      "explanation": {
+        "value": "+7.9% day-over-day move (z-score 4.17) on 2022-05-11. Reasons given by 2 reports from that day:\n- \"Caf\u00e9 ar\u00e1bica salta 8 % na ICE com clima do Brasil ; robusta sobe mais de 3 %\" (istoe.com.br, 2022-05-11). Reported move: up 8%. Reason: previs\u00f5es de chegada de uma forte frente fria ao Brasil. Quote: \"previs\u00f5es de chegada de uma forte frente fria ao Brasil\" (source: e032b33717e24626)\n- \"Peabirus : Caf\u00e9 tem recuperao nesta 4\u00aa feira e abre avan\u00e7ando 2 , 58 % em Nova York\" (redepeabirus.com.br, 2022-05-11). Reported move: up 2.58%. Reason: condi\u00e7\u00f5es do Brasil e nos fundamentos. Quote: \"condi\u00e7\u00f5es do Brasil e nos fundamentos\" (source: ecc3288464e96344)",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2022-05-11.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 2,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2022-05-11.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2022-05-11.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2022-05-11.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-01-31",
+    "fields": {
+      "price": {
+        "value": 181.75,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": 2.7463455639658267,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock+trend",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": 2.5688464919897585,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": 0.0005829052805296,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": 0.0639006325566381,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0309573115427175,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": 6.6608019425227205,
+          "EUR": 6.864884476065747,
+          "JPY": 7.174170796841706,
+          "CNY": 6.116674320913007,
+          "INR": 6.754889011997411
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 1.0216588358110585,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -0.1778326366327247,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": 6.627396805666708,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2023-01-31.json"
+      },
+      "outcome_tier": {
+        "value": "REFUSED_WEAK_EVIDENCE",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2023-01-31.json"
+      },
+      "decision_reason": {
+        "value": "blind_evidence: no_recent_document_gives_a_reason_for_a_price_move",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2023-01-31.json"
+      },
+      "explanation": {
+        "value": null,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2023-01-31.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 0,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2023-01-31.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2023-01-31.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2023-01-31.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-09-20",
+    "fields": {
+      "price": {
+        "value": 158.1999969482422,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": -0.8175718410666513,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": false,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": null,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "contract_switch": {
+        "value": true,
+        "tag": "observed",
+        "source": "data/labeling/contract_switch_dates.csv",
+        "note": "the series switched futures contract: this move is an artefact, not a market move"
+      },
+      "factor_class": {
+        "value": NaN,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": null,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": null,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": null,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0431581991873649,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": null,
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "pipeline_version": {
+        "value": "9",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2023-09-20.json"
+      },
+      "outcome_tier": {
+        "value": "REFUSED_CONFLICTING",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2023-09-20.json"
+      },
+      "decision_reason": {
+        "value": "blind_evidence: the_freshest_evidence_points_the_other_way",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2023-09-20.json"
+      },
+      "explanation": {
+        "value": null,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2023-09-20.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 0,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2023-09-20.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2023-09-20.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "cross_commodity.json",
+      "data/labeling/contract_switch_dates.csv",
+      "pipeline_output_coffee_2023-09-20.json"
+    ],
+    "missing_layers": [
+      "numeraire"
+    ]
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-11-30",
+    "fields": {
+      "price": {
+        "value": 195.0,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": 3.499359298000773,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": 3.710218258828059,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": -0.0106043646060457,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": 0.0790479029188474,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0675887981338643,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": 7.084016180181463,
+          "EUR": 7.39870493478636,
+          "JPY": 7.066539054414256,
+          "CNY": 7.312925396453229,
+          "INR": 6.971308297242063
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 1.0144071719231245,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -0.6294062637246853,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": 7.562144067492382,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2023-11-30.json"
+      },
+      "outcome_tier": {
+        "value": "EXPLAINED_TENTATIVE",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2023-11-30.json"
+      },
+      "decision_reason": {
+        "value": null,
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2023-11-30.json"
+      },
+      "explanation": {
+        "value": "+7.1% day-over-day move (z-score 3.50) on 2023-11-30. Reason given by 1 report from that day:\n- \"SOFTS - Coffee prices jump nearly 7 % in New York after stocks drawn\" (marketscreener.com, 2023-11-30). Reported move: up 7%. Reason: stocks drawn. Quote: \"Coffee prices jump nearly 7 % in New York after stocks drawn\" (source: 5f601d711fe15dab)",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2023-11-30.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 1,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2023-11-30.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2023-11-30.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2023-11-30.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-30",
+    "fields": {
+      "price": {
+        "value": 220.6499938964844,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": -2.851443878711758,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": -2.77189073437536,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": -0.00085062025001,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": -0.0559678717109053,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0344569472135154,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [
+          "gold",
+          "silver"
+        ],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "macro",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": -5.523446365536822,
+          "EUR": -5.6013379153235565,
+          "JPY": -6.663921669782935,
+          "CNY": -5.613426836912982,
+          "INR": -5.468160711714843
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 1.0156433071378217,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -0.5630331271452164,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": -5.20142699691214,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2024-04-30.json"
+      },
+      "outcome_tier": {
+        "value": "REFUSED_WEAK_EVIDENCE",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2024-04-30.json"
+      },
+      "decision_reason": {
+        "value": "blind_evidence: no_report_gives_an_event_as_the_reason_for_a_move_of_this_size",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2024-04-30.json"
+      },
+      "explanation": {
+        "value": null,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2024-04-30.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 0,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2024-04-30.json"
+      },
+      "readings_set_aside": {
+        "value": [
+          "reason_only_describes_trading"
+        ],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2024-04-30.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2024-04-30.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-09-23",
+    "fields": {
+      "price": {
+        "value": 263.6499938964844,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": 2.261243134808945,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": 2.3246787530660984,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": -0.0019566578571152,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": 0.0521226738414801,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0506441208554789,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": 5.14456386699278,
+          "EUR": 5.155131791913514,
+          "JPY": 5.988025612426373,
+          "CNY": 4.905025149130449,
+          "INR": 4.9841062320984175
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 0.9857799250232581,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -1.2309963114728697,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": 5.401633490608249,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2024-09-23.json"
+      },
+      "outcome_tier": {
+        "value": "REFUSED_WEAK_EVIDENCE",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2024-09-23.json"
+      },
+      "decision_reason": {
+        "value": "blind_evidence: no_recent_document_gives_a_reason_for_a_price_move",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2024-09-23.json"
+      },
+      "explanation": {
+        "value": null,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2024-09-23.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 0,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2024-09-23.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2024-09-23.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2024-09-23.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-10-07",
+    "fields": {
+      "price": {
+        "value": 244.6499938964844,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": -2.224396525982524,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": -2.121482669062064,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": -0.0031274771966552,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": -0.0474809798317131,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0403798858904043,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [
+          "crude_oil"
+        ],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": -4.934918168186419,
+          "EUR": -4.4061805302159085,
+          "JPY": -3.653047348671856,
+          "CNY": -5.307350581564652,
+          "INR": -4.914094342311682
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 0.9430385397571371,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -0.7874277429470897,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": -4.920311979393954,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2024-10-07.json"
+      },
+      "outcome_tier": {
+        "value": "EXPLAINED_STRONG",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2024-10-07.json"
+      },
+      "decision_reason": {
+        "value": null,
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2024-10-07.json"
+      },
+      "explanation": {
+        "value": "-4.9% day-over-day move (z-score -2.22) on 2024-10-07. Reasons given by 2 reports from that day:\n- \"Caf\u00e9 : pre\u00e7o em NY cai ao menor patamar em um m\u00eas com previs\u00e3o de chuvas no Brasil\" (globorural.globo.com, 2024-10-07). Reported move: down 4.93%. Reason: rain forecasts in Brazilian producing areas. Quote: \"perspectivas de chuvas em \u00e1reas produtoras do Brasil\" (source: 407c4f761dfa9be2)\n- \"Peabirus : Caf\u00e9 : pre\u00e7os segue com baixa de mais de 5 % nesta 2\u00aa feira ( 07 )\" (redepeabirus.com.br, 2024-10-07). Reported move: down 5%. Reason: possibility of expected rains returning to Brazil. Quote: \"possibilidade das t\u00e3o esperadas chuvas voltarem ao Brasil\" (source: 34b302a464133476)",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2024-10-07.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 2,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2024-10-07.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2024-10-07.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2024-10-07.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-12-02",
+    "fields": {
+      "price": {
+        "value": 299.20001220703125,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": -3.4463555507411168,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": -3.488720499089645,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": 0.0016095161343483,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": -0.0739612081164913,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0544928156281807,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": -6.979630690332916,
+          "EUR": -6.821432389898863,
+          "JPY": -7.7647794939774695,
+          "CNY": -7.007886857930856,
+          "INR": -6.885592578795463
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 0.9951167621690574,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -0.4998052428265586,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": -6.66797871903163,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2024-12-02.json"
+      },
+      "outcome_tier": {
+        "value": "REFUSED_WEAK_EVIDENCE",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2024-12-02.json"
+      },
+      "decision_reason": {
+        "value": "blind_evidence: no_report_gives_an_event_as_the_reason_for_a_move_of_this_size",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2024-12-02.json"
+      },
+      "explanation": {
+        "value": null,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2024-12-02.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 0,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2024-12-02.json"
+      },
+      "readings_set_aside": {
+        "value": [
+          "reason_only_describes_trading"
+        ],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2024-12-02.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2024-12-02.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-02-10",
+    "fields": {
+      "price": {
+        "value": 429.0499877929688,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": 2.58518965869407,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock+trend",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": 2.617417698783323,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": 0.0038476662967833,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": 0.0554449128685777,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0151134134590701,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [
+          "wheat",
+          "gold"
+        ],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "macro",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": 6.108564688170115,
+          "EUR": 6.871159226023238,
+          "JPY": 6.566845712565783,
+          "CNY": 6.094005990563378,
+          "INR": 6.01746032849233
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 1.0351854088654837,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -0.5797123509369975,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": 6.267894944528218,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2025-02-10.json"
+      },
+      "outcome_tier": {
+        "value": "EXPLAINED_STRONG",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2025-02-10.json"
+      },
+      "decision_reason": {
+        "value": null,
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2025-02-10.json"
+      },
+      "explanation": {
+        "value": "+6.1% day-over-day move (z-score 2.59), on top of +22.9% over the last 10 trading days on 2025-02-10. Reasons given by 2 reports from that day:\n- \"Coffee futures in New York jump 6% to new record amid 'panic buying' - Reuters\" (news.google.com, 2025-02-10). Reported move: up 6%. Reason: panic buying. Quote: \"Coffee futures in New York jump 6% to new record amid 'panic buying'\" (source: 3e31ca2c38c16806)\n- \"Coffee in New York jumps 6 % to new record amid panic buying\" (aol.com, 2025-02-10). Reported move: up 6%. Reason: panic buying. Quote: \"Coffee in New York jumps 6 % to new record amid  panic buying\" (source: 3ebc6711f5f61811)",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2025-02-10.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 2,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2025-02-10.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2025-02-10.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2025-02-10.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-04-07",
+    "fields": {
+      "price": {
+        "value": 344.79998779296875,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": -2.656142831500948,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": -2.7574370701754245,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": 0.0016846084345614,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": -0.0605334635834875,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0745445591609242,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [
+          "crude_oil",
+          "gold",
+          "silver"
+        ],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "macro",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": -5.715073480016941,
+          "EUR": -5.206940926058268,
+          "JPY": -6.229600230416176,
+          "CNY": -5.536037278420425,
+          "INR": -5.442665937935942
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 0.95936952899301,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": 0.8287292258064533,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": -5.896721423841811,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2025-04-07.json"
+      },
+      "outcome_tier": {
+        "value": "REFUSED_WEAK_EVIDENCE",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2025-04-07.json"
+      },
+      "decision_reason": {
+        "value": "blind_evidence: no_report_gives_an_event_as_the_reason_for_a_move_of_this_size",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2025-04-07.json"
+      },
+      "explanation": {
+        "value": null,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2025-04-07.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 0,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2025-04-07.json"
+      },
+      "readings_set_aside": {
+        "value": [
+          "does_not_describe_a_move_of_this_size"
+        ],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2025-04-07.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2025-04-07.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-08-15",
+    "fields": {
+      "price": {
+        "value": 341.6499938964844,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": 2.237794802784812,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock+trend",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": 2.034793660137712,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": -1.2336506848456162e-05,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": 0.0453691911523299,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0082975793686577,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": 4.640120642108503,
+          "EUR": 5.192877801206697,
+          "JPY": 5.046247759125344,
+          "CNY": 4.71596345776808,
+          "INR": 4.929458698858569
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 1.0731414169667306,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": -0.26906461041985874,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": 4.525323485013022,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2025-08-15.json"
+      },
+      "outcome_tier": {
+        "value": "REFUSED_WEAK_EVIDENCE",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2025-08-15.json"
+      },
+      "decision_reason": {
+        "value": "blind_evidence: no_report_gives_an_event_as_the_reason_for_a_move_of_this_size",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2025-08-15.json"
+      },
+      "explanation": {
+        "value": null,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2025-08-15.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 0,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2025-08-15.json"
+      },
+      "readings_set_aside": {
+        "value": [
+          "does_not_describe_a_move_of_this_size"
+        ],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2025-08-15.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2025-08-15.json"
+    ],
+    "missing_layers": []
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-09-15",
+    "fields": {
+      "price": {
+        "value": 432.3500061035156,
+        "tag": "observed",
+        "source": "anomaly_detections.csv"
+      },
+      "z_score": {
+        "value": 2.144401513065927,
+        "tag": "tested",
+        "source": "anomaly_detections.csv",
+        "note": "day-over-day return against a 75-day rolling spread"
+      },
+      "flagged": {
+        "value": true,
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "anomaly_type": {
+        "value": "shock",
+        "tag": "tested",
+        "source": "anomaly_detections.csv"
+      },
+      "factor_class": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "betas fitted on the 75 days before this one, excluding it"
+      },
+      "residual_z": {
+        "value": 2.157610452166857,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "factor_explained_return": {
+        "value": 0.0025339492386519,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "unexplained_return": {
+        "value": 0.0489602549617165,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv",
+        "note": "what the dollar, equities and the broad complex do not account for; not attributed to any cause"
+      },
+      "window_r2": {
+        "value": 0.0032479035828252,
+        "tag": "tested",
+        "source": "coffee_factor_adjusted.csv"
+      },
+      "other_commodities_flagged": {
+        "value": [
+          "wheat"
+        ],
+        "tag": "observed",
+        "source": "cross_commodity.json"
+      },
+      "cross_commodity_verdict": {
+        "value": "commodity-specific",
+        "tag": "tested",
+        "source": "cross_commodity.json",
+        "note": "macro when at least 2 of the other watched markets flagged the same day"
+      },
+      "move_in_local_currencies_pct": {
+        "value": {
+          "USD": 5.284308420689077,
+          "EUR": 5.358437421176587,
+          "JPY": 5.60039687096614,
+          "CNY": 5.3700896078290095,
+          "INR": 5.295874813827184
+        },
+        "tag": "observed",
+        "source": "coffee_numeraire.json",
+        "note": "exact translation, no estimation"
+      },
+      "survival_after_translation": {
+        "value": 1.014742067962313,
+        "tag": "observed",
+        "source": "coffee_numeraire.json"
+      },
+      "numeraire_reading": {
+        "value": "specific to the commodity",
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "dollar_beta": {
+        "value": 0.27429197763084834,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "unexplained_by_dollar_pct": {
+        "value": 5.358439346231458,
+        "tag": "tested",
+        "source": "coffee_numeraire.json"
+      },
+      "pipeline_version": {
+        "value": "11",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2025-09-15.json"
+      },
+      "outcome_tier": {
+        "value": "EXPLAINED_TENTATIVE",
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2025-09-15.json"
+      },
+      "decision_reason": {
+        "value": null,
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2025-09-15.json"
+      },
+      "explanation": {
+        "value": "+5.3% day-over-day move (z-score 2.14) on 2025-09-15. Reasons given by 2 reports from that day:\n- \"Caf\u00e9 opera em alta na bolsa de Nova York atento ao clima no Brasil\" (globorural.globo.com, 2025-09-15). Reported move: up 3.38%. Reason: concerns about weather in Brazil and currency movements. Quote: \"preocupa\u00e7\u00f5es com o clima no Brasil, maior produtor global do gr\u00e3o, e tamb\u00e9m com as movimenta\u00e7\u00f5es do c\u00e2mbio\" (source: f4b2fe068ce6b32c)\n- \"Peabirus : Caf\u00e9 tem alta de mais de 3 % com estoques baixos e preocupaes clim\u00e1ticas\" (redepeabirus.com.br, 2025-09-15). Reported move: up 3%. Reason: low stocks and weather concerns. Quote: \"estoques baixos e preocupa\u00e7\u00f5es clim\u00e1ticas\" (source: 69d600ac6eb72dbd)",
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2025-09-15.json",
+        "note": "assembled from quotes verified against their articles"
+      },
+      "n_citations": {
+        "value": 2,
+        "tag": "observed",
+        "source": "pipeline_output_coffee_2025-09-15.json"
+      },
+      "readings_set_aside": {
+        "value": [],
+        "tag": "tested",
+        "source": "pipeline_output_coffee_2025-09-15.json",
+        "note": "reports that did not fit the move: wrong market, a trading reason, or a move of the wrong size"
+      }
+    },
+    "layers_present": [
+      "anomaly_detections.csv",
+      "coffee_factor_adjusted.csv",
+      "coffee_numeraire.json",
+      "cross_commodity.json",
+      "pipeline_output_coffee_2025-09-15.json"
+    ],
+    "missing_layers": []
+  }
+]

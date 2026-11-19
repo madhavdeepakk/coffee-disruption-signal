@@ -1,0 +1,6140 @@
+[
+  {
+    "commodity": "coffee",
+    "date": "2018-04-27",
+    "usd_move_pct": 2.3384354044912348,
+    "per_currency_pct": {
+      "USD": 2.3384354044912348,
+      "EUR": 2.8628372722192763,
+      "JPY": 2.2785511167321193,
+      "CNY": 2.5115731645316774,
+      "INR": 2.326660865432406
+    },
+    "dollar_move_pct": -0.021839934031908648,
+    "survival": 1.0340756166328413,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.3905969170307033,
+      "window_r2": 0.018732718449567143,
+      "window_obs": 75,
+      "explained_pct": 0.008531906523012722,
+      "unexplained_pct": 2.3297047297384355
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-05-14",
+    "usd_move_pct": -1.3882850100833233,
+    "per_currency_pct": {
+      "USD": -1.3882850100833233,
+      "EUR": -1.6738661914047603,
+      "JPY": -1.476591474150435,
+      "CNY": -1.6228455404004194,
+      "INR": -1.399694704918819
+    },
+    "dollar_move_pct": 0.054025742239716124,
+    "survival": 1.1172149872932697,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.42323416193517777,
+      "window_r2": 0.020631872226340775,
+      "window_obs": 75,
+      "explained_pct": -0.022856752770883393,
+      "unexplained_pct": -1.3657404212240154
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-05-15",
+    "usd_move_pct": -0.6599208006427104,
+    "per_currency_pct": {
+      "USD": -0.6599208006427104,
+      "EUR": -0.4853813752764502,
+      "JPY": -0.30285202669796396,
+      "CNY": -0.5783483045989302,
+      "INR": -0.22383054952651582
+    },
+    "dollar_move_pct": 0.6804243522306797,
+    "survival": 0.5964848942628196,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -0.46912407887231794,
+      "window_r2": 0.0250364683388834,
+      "window_obs": 75,
+      "explained_pct": -0.31761690652405417,
+      "unexplained_pct": -0.3433945733396615
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-05-16",
+    "usd_move_pct": 0.3100075016747139,
+    "per_currency_pct": {
+      "USD": 0.3100075016747139,
+      "EUR": 1.245919742009094,
+      "JPY": 0.8274081203166972,
+      "CNY": 0.9193062589314183,
+      "INR": 1.4690575856993737
+    },
+    "dollar_move_pct": 0.18236233288906334,
+    "survival": 3.478406812339646,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.39887659591186564,
+      "window_r2": 0.01720579553508972,
+      "window_obs": 75,
+      "explained_pct": -0.07264742082290221,
+      "unexplained_pct": 0.38293311352806114
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-05-17",
+    "usd_move_pct": 0.5297999771489037,
+    "per_currency_pct": {
+      "USD": 0.5297999771489037,
+      "EUR": 0.5630739535960272,
+      "JPY": 0.5863133806524923,
+      "CNY": 0.43048135766319273,
+      "INR": -0.05758059435156948
+    },
+    "dollar_move_pct": 0.08566423768880949,
+    "survival": 0.9377832039124263,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.40901365438017073,
+      "window_r2": 0.01825388450821641,
+      "window_obs": 75,
+      "explained_pct": -0.035016711739355166,
+      "unexplained_pct": 0.5650145384004546
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-05-31",
+    "usd_move_pct": 2.8262625188975043,
+    "per_currency_pct": {
+      "USD": 2.8262625188975043,
+      "EUR": 1.6990418981749578,
+      "JPY": 3.12792897567733,
+      "CNY": 2.8486974742981674,
+      "INR": 1.7697811910816652
+    },
+    "dollar_move_pct": -0.16994546948088107,
+    "survival": 0.8186365640158763,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.448764329188939,
+      "window_r2": 0.018328193530745107,
+      "window_obs": 75,
+      "explained_pct": 0.07635948199666842,
+      "unexplained_pct": 2.747804827368383
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-06-14",
+    "usd_move_pct": -0.5586605366595387,
+    "per_currency_pct": {
+      "USD": -0.5586605366595387,
+      "EUR": -1.0598390847623373,
+      "JPY": -0.7477322444191192,
+      "CNY": -0.6083781652517772,
+      "INR": -0.7490280670159111
+    },
+    "dollar_move_pct": 1.1311466961366978,
+    "survival": 1.3408756309404029,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.07251460299378296,
+      "window_r2": 0.0003786811685528857,
+      "window_obs": 75,
+      "explained_pct": -0.08153095837574176,
+      "unexplained_pct": -0.47751890402266683
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-07-02",
+    "usd_move_pct": -3.3183829132216847,
+    "per_currency_pct": {
+      "USD": -3.3183829132216847,
+      "EUR": -4.275321886194339,
+      "JPY": -3.1223708592073685,
+      "CNY": -3.363605040144013,
+      "INR": -3.826691177335506
+    },
+    "dollar_move_pct": 0.25362517185885114,
+    "survival": 1.0850340217212757,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.09787908371028113,
+      "window_r2": 0.0008140408615230355,
+      "window_obs": 75,
+      "explained_pct": -0.024790098585703024,
+      "unexplained_pct": -3.2944095019993513
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-07-06",
+    "usd_move_pct": 4.656629168516591,
+    "per_currency_pct": {
+      "USD": 4.656629168516591,
+      "EUR": 4.356373981751105,
+      "JPY": 4.729559293101859,
+      "CNY": 4.743428845052078,
+      "INR": 4.793171831647647
+    },
+    "dollar_move_pct": -0.45517127090032306,
+    "survival": 1.0167599034432275,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.11627461148623414,
+      "window_r2": 0.0010883552040961142,
+      "window_obs": 75,
+      "explained_pct": 0.053059750529893535,
+      "unexplained_pct": 4.601128070910732
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-07-20",
+    "usd_move_pct": 5.130642779932448,
+    "per_currency_pct": {
+      "USD": 5.130642779932448,
+      "EUR": 5.0449429455493355,
+      "JPY": 4.73170968644967,
+      "CNY": 5.9757302770173215,
+      "INR": 5.620317306997502
+    },
+    "dollar_move_pct": -0.7460324662529327,
+    "survival": 1.0382887711634403,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5260102991645447,
+      "window_r2": 0.015973346834009305,
+      "window_obs": 75,
+      "explained_pct": 0.3946686487216855,
+      "unexplained_pct": 4.7173562052202245
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-08-20",
+    "usd_move_pct": -3.9031591574675284,
+    "per_currency_pct": {
+      "USD": -3.9031591574675284,
+      "EUR": -4.460460692301183,
+      "JPY": -4.361117116584367,
+      "CNY": -3.9715850069481418,
+      "INR": -4.205147443444169
+    },
+    "dollar_move_pct": -0.20811337296328114,
+    "survival": 1.099519264733511,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2638512451470956,
+      "window_r2": 0.0897768503055908,
+      "window_obs": 75,
+      "explained_pct": 0.2636453550085349,
+      "unexplained_pct": -4.1558478127565195
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-08-21",
+    "usd_move_pct": 0.7197912064187184,
+    "per_currency_pct": {
+      "USD": 0.7197912064187184,
+      "EUR": 0.24977582331005,
+      "JPY": 0.2393261805662572,
+      "CNY": 0.42978994853657415,
+      "INR": 0.6548349210566684
+    },
+    "dollar_move_pct": -0.6673611881807262,
+    "survival": 0.4728953056954317,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -1.327279359751755,
+      "window_r2": 0.09002903924895567,
+      "window_obs": 75,
+      "explained_pct": 0.8927046568845132,
+      "unexplained_pct": -0.17138350196265195
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-08-22",
+    "usd_move_pct": -1.5824353962791582,
+    "per_currency_pct": {
+      "USD": -1.5824353962791582,
+      "EUR": -2.308510927584584,
+      "JPY": -1.415937380232779,
+      "CNY": -1.7446286973860636,
+      "INR": -1.4836513455388611
+    },
+    "dollar_move_pct": -0.1154740792407849,
+    "survival": 1.0202543735393586,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.3295623708524933,
+      "window_r2": 0.09493491238236451,
+      "window_obs": 75,
+      "explained_pct": 0.1537367565104253,
+      "unexplained_pct": -1.7335071151768355
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-08-23",
+    "usd_move_pct": 0.8298707569507346,
+    "per_currency_pct": {
+      "USD": 0.8298707569507346,
+      "EUR": 0.7598358550791717,
+      "JPY": 1.2455119844470453,
+      "CNY": 0.7959963742923293,
+      "INR": 0.8009886626021867
+    },
+    "dollar_move_pct": 0.49395818514545997,
+    "survival": 0.9623389224278655,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2977597512945263,
+      "window_r2": 0.08988589435216099,
+      "window_obs": 75,
+      "explained_pct": -0.6374208126440739,
+      "unexplained_pct": 1.4767043907224942
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-08-24",
+    "usd_move_pct": 3.4465084451591244,
+    "per_currency_pct": {
+      "USD": 3.4465084451591244,
+      "EUR": 3.8180106387571966,
+      "JPY": 4.175201996847888,
+      "CNY": 3.965008512886903,
+      "INR": 4.165402542830354
+    },
+    "dollar_move_pct": -0.49153023133530205,
+    "survival": 1.1759674420567716,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2039425667657675,
+      "window_r2": 0.0789735427341588,
+      "window_obs": 75,
+      "explained_pct": 0.59499643988985,
+      "unexplained_pct": 2.8346459627076825
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-09-19",
+    "usd_move_pct": 5.108692335045895,
+    "per_currency_pct": {
+      "USD": 5.108692335045895,
+      "EUR": 5.011799277177964,
+      "JPY": 5.661101586959916,
+      "CNY": 5.180748354952525,
+      "INR": 5.956701049300506
+    },
+    "dollar_move_pct": -0.07397980637534607,
+    "survival": 1.059479833682007,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2462836947787879,
+      "window_r2": 0.08081411350594292,
+      "window_obs": 75,
+      "explained_pct": 0.09227649647083336,
+      "unexplained_pct": 5.011791133306809
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-09-20",
+    "usd_move_pct": 3.1540880537878957,
+    "per_currency_pct": {
+      "USD": 3.1540880537878957,
+      "EUR": 3.20107600929207,
+      "JPY": 3.190838750251479,
+      "CNY": 2.9541021343929774,
+      "INR": 2.060754182898994
+    },
+    "dollar_move_pct": -0.6768898667280476,
+    "survival": 0.9744895679037325,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.236409722245043,
+      "window_r2": 0.07207921963535546,
+      "window_obs": 75,
+      "explained_pct": 0.8432944123590858,
+      "unexplained_pct": 2.2914698046056614
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-09-28",
+    "usd_move_pct": 3.1721991940348637,
+    "per_currency_pct": {
+      "USD": 3.1721991940348637,
+      "EUR": 4.1576580745866565,
+      "JPY": 3.769972405779898,
+      "CNY": 3.235217670131063,
+      "INR": 3.4274009007447592
+    },
+    "dollar_move_pct": 0.20000256990135856,
+    "survival": 1.1320511271389897,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.27704615518927,
+      "window_r2": 0.08191271581205994,
+      "window_obs": 75,
+      "explained_pct": -0.25483218727757606,
+      "unexplained_pct": 3.435786872148938
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-01",
+    "usd_move_pct": -0.24402148115856281,
+    "per_currency_pct": {
+      "USD": -0.24402148115856281,
+      "EUR": 0.031106198458918932,
+      "JPY": 0.14230147165503748,
+      "CNY": -0.42380857165923436,
+      "INR": -0.8525393955495786
+    },
+    "dollar_move_pct": 0.11555899519934965,
+    "survival": 0.8055179874871072,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.217043008545827,
+      "window_r2": 0.07096165160279067,
+      "window_obs": 75,
+      "explained_pct": -0.14046033049952555,
+      "unexplained_pct": -0.10370681759778178
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-02",
+    "usd_move_pct": 5.33268565594649,
+    "per_currency_pct": {
+      "USD": 5.33268565594649,
+      "EUR": 5.585736788238593,
+      "JPY": 5.471531168124577,
+      "CNY": 5.33268565594649,
+      "INR": 7.148641273594913
+    },
+    "dollar_move_pct": 0.22035580036507962,
+    "survival": 1.0357704970571178,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2296050125050768,
+      "window_r2": 0.07222069456081337,
+      "window_obs": 75,
+      "explained_pct": -0.270286573124201,
+      "unexplained_pct": 5.618157354055686
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-03",
+    "usd_move_pct": -0.9753860073150378,
+    "per_currency_pct": {
+      "USD": -0.9753860073150378,
+      "EUR": -0.7541256342257552,
+      "JPY": -1.2960611842807612,
+      "CNY": -0.9753860073150378,
+      "INR": -1.6131263950658115
+    },
+    "dollar_move_pct": 0.2617526901982581,
+    "survival": 1.165460042941222,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.1347987199024538,
+      "window_r2": 0.05480246330797489,
+      "window_obs": 75,
+      "explained_pct": -0.29620897711708505,
+      "unexplained_pct": -0.6811947903185289
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-04",
+    "usd_move_pct": 0.3283287796726375,
+    "per_currency_pct": {
+      "USD": 0.3283287796726375,
+      "EUR": 0.9877820739880638,
+      "JPY": 1.1312915727391681,
+      "CNY": 0.3268729317909891,
+      "INR": 1.1087206702193209
+    },
+    "dollar_move_pct": -0.010445004184722606,
+    "survival": 3.1812268871152134,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.24208289245911,
+      "window_r2": 0.05826910655306794,
+      "window_obs": 75,
+      "explained_pct": 0.012975080291921515,
+      "unexplained_pct": 0.31531278729339807
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-05",
+    "usd_move_pct": 1.8700327789330062,
+    "per_currency_pct": {
+      "USD": 1.8700327789330062,
+      "EUR": 1.5005957620193744,
+      "JPY": 1.3432666101203639,
+      "CNY": 1.8715110196783957,
+      "INR": 2.380421305695335
+    },
+    "dollar_move_pct": -0.13576736649398846,
+    "survival": 0.902344927604132,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.242596330858668,
+      "window_r2": 0.05831209214169575,
+      "window_obs": 75,
+      "explained_pct": 0.16896123664587037,
+      "unexplained_pct": 1.6982022387837192
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-08",
+    "usd_move_pct": 2.661772929885098,
+    "per_currency_pct": {
+      "USD": 2.661772929885098,
+      "EUR": 2.621572156053875,
+      "JPY": 2.50042513692732,
+      "CNY": 2.5272430217839092,
+      "INR": 2.0296454083404303
+    },
+    "dollar_move_pct": 0.15686455989958326,
+    "survival": 0.9451047175670936,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2731147965305394,
+      "window_r2": 0.06053853917831542,
+      "window_obs": 75,
+      "explained_pct": -0.19935115255075297,
+      "unexplained_pct": 2.866839159341761
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-09",
+    "usd_move_pct": 1.1622736428186897,
+    "per_currency_pct": {
+      "USD": 1.1622736428186897,
+      "EUR": 1.4128929646340493,
+      "JPY": 0.6124965306665064,
+      "CNY": 2.2079808878877394,
+      "INR": 1.3364462975019586
+    },
+    "dollar_move_pct": -0.0939713282293142,
+    "survival": 1.1814933896147621,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2339176593185393,
+      "window_r2": 0.05476471303433228,
+      "window_obs": 75,
+      "explained_pct": 0.11607471136634295,
+      "unexplained_pct": 1.044985967007328
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-10",
+    "usd_move_pct": -1.1047282219560195,
+    "per_currency_pct": {
+      "USD": -1.1047282219560195,
+      "EUR": -1.2149883271423634,
+      "JPY": -1.1912958171888088,
+      "CNY": -1.2188948623341966,
+      "INR": -0.22137131198221027
+    },
+    "dollar_move_pct": -0.17767367098983078,
+    "survival": 1.0896261122906614,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.246794960350885,
+      "window_r2": 0.05572171137190518,
+      "window_obs": 75,
+      "explained_pct": 0.22196564449989964,
+      "unexplained_pct": -1.3237555838426451
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-11",
+    "usd_move_pct": 0.893655036965102,
+    "per_currency_pct": {
+      "USD": 0.893655036965102,
+      "EUR": 0.6626136180350128,
+      "JPY": 0.08470733885528325,
+      "CNY": 0.9155143012611111,
+      "INR": 0.9613172863394803
+    },
+    "dollar_move_pct": -0.5130410241904859,
+    "survival": 0.8833327788717829,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2466130754278324,
+      "window_r2": 0.055572182992595254,
+      "window_obs": 75,
+      "explained_pct": 0.6432700455414997,
+      "unexplained_pct": 0.2487846343926403
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-12",
+    "usd_move_pct": 3.232950820680247,
+    "per_currency_pct": {
+      "USD": 3.232950820680247,
+      "EUR": 2.7245563832129838,
+      "JPY": 3.221898270164547,
+      "CNY": 2.7155422268686946,
+      "INR": 2.624077312384987
+    },
+    "dollar_move_pct": 0.21048682877564673,
+    "survival": 0.8434600361883222,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.234313608860403,
+      "window_r2": 0.0553275342574866,
+      "window_obs": 75,
+      "explained_pct": -0.25919721326144174,
+      "unexplained_pct": 3.5012231066642308
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-15",
+    "usd_move_pct": 2.402398411881501,
+    "per_currency_pct": {
+      "USD": 2.402398411881501,
+      "EUR": 2.7489718594096324,
+      "JPY": 2.5047272701397505,
+      "CNY": 2.8870122189932346,
+      "INR": 1.734074825896359
+    },
+    "dollar_move_pct": -0.15753153114460572,
+    "survival": 1.0921968238851145,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.164195028566226,
+      "window_r2": 0.047289102963371854,
+      "window_obs": 75,
+      "explained_pct": 0.18371057316006745,
+      "unexplained_pct": 2.2146193488223886
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-17",
+    "usd_move_pct": 4.164897120550415,
+    "per_currency_pct": {
+      "USD": 4.164897120550415,
+      "EUR": 4.238498750443909,
+      "JPY": 4.63151092624805,
+      "CNY": 4.091088155213174,
+      "INR": 3.2867734351943456
+    },
+    "dollar_move_pct": 0.5575999603158799,
+    "survival": 0.9999694751954107,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2633798273190104,
+      "window_r2": 0.05104436103352383,
+      "window_obs": 75,
+      "explained_pct": -0.7000419866215579,
+      "unexplained_pct": 4.899235814899883
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-18",
+    "usd_move_pct": -0.4079967258660555,
+    "per_currency_pct": {
+      "USD": -0.4079967258660555,
+      "EUR": 0.2364139029891188,
+      "JPY": -0.15445964808840085,
+      "CNY": -0.18750982418808126,
+      "INR": 0.22177952633224418
+    },
+    "dollar_move_pct": 0.33479774920897043,
+    "survival": -0.08188572894200619,
+    "reading": "mostly the numeraire",
+    "regression": {
+      "dollar_beta": -0.9562589396998935,
+      "window_r2": 0.029005858510193328,
+      "window_obs": 75,
+      "explained_pct": -0.319108364280718,
+      "unexplained_pct": -0.08917291983119302
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-10-29",
+    "usd_move_pct": -4.513164610959841,
+    "per_currency_pct": {
+      "USD": -4.513164610959841,
+      "EUR": -4.688071512512815,
+      "JPY": -4.8888238012789405,
+      "CNY": -4.588749282729864,
+      "INR": -4.637314874818688
+    },
+    "dollar_move_pct": 0.22831176765214511,
+    "survival": 1.0339359467516445,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.7083311504798823,
+      "window_r2": 0.0153196500788636,
+      "window_obs": 75,
+      "explained_pct": -0.161405605104592,
+      "unexplained_pct": -4.358794344241835
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-11-01",
+    "usd_move_pct": 4.525293914477846,
+    "per_currency_pct": {
+      "USD": 4.525293914477846,
+      "EUR": 4.799249158118757,
+      "JPY": 4.339450189685734,
+      "CNY": 4.651330496265138,
+      "INR": 5.1213622259920655
+    },
+    "dollar_move_pct": -0.8751142779334531,
+    "survival": 1.0431844370386008,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.895600913650527,
+      "window_r2": 0.0230213818354984,
+      "window_obs": 75,
+      "explained_pct": 0.7903092406650991,
+      "unexplained_pct": 3.7056981985187143
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-11-30",
+    "usd_move_pct": -4.83870967741934,
+    "per_currency_pct": {
+      "USD": -4.83870967741934,
+      "EUR": -5.041021932724165,
+      "JPY": -4.9593821145040184,
+      "CNY": -4.994732997700913,
+      "INR": -5.755277777403
+    },
+    "dollar_move_pct": 0.5063007542363218,
+    "survival": 1.0379979983847702,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.0287234598446928,
+      "window_r2": 0.02867383753619379,
+      "window_obs": 75,
+      "explained_pct": -0.5181821602316505,
+      "unexplained_pct": -4.343032335965757
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2018-12-19",
+    "usd_move_pct": 6.889242294776321,
+    "per_currency_pct": {
+      "USD": 6.889242294776321,
+      "EUR": 6.6490254388491765,
+      "JPY": 6.600298398861959,
+      "CNY": 6.858237690317948,
+      "INR": 5.366310685644726
+    },
+    "dollar_move_pct": -0.10294263408421322,
+    "survival": 0.9628000705267572,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.0329943746705827,
+      "window_r2": 0.02729588102869951,
+      "window_obs": 75,
+      "explained_pct": 0.10645055210551924,
+      "unexplained_pct": 6.775579101309104
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-04-03",
+    "usd_move_pct": 4.037094257109719,
+    "per_currency_pct": {
+      "USD": 4.037094257109719,
+      "EUR": 4.054584182487608,
+      "JPY": 3.900810061746629,
+      "CNY": 4.221594022643704,
+      "INR": 3.6084455060889864
+    },
+    "dollar_move_pct": -0.27732566841439654,
+    "survival": 0.9855634735481061,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6227659405586268,
+      "window_r2": 0.015197794948359822,
+      "window_obs": 75,
+      "explained_pct": 0.17309855046658829,
+      "unexplained_pct": 3.8573187438107226
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-04-11",
+    "usd_move_pct": -4.244031830238693,
+    "per_currency_pct": {
+      "USD": -4.244031830238693,
+      "EUR": -4.324953672706844,
+      "JPY": -4.347456328099253,
+      "CNY": -4.178394045638956,
+      "INR": -4.4121533105513695
+    },
+    "dollar_move_pct": 0.23723915850804023,
+    "survival": 1.0222069658099973,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.8838040036480447,
+      "window_r2": 0.027934178747245686,
+      "window_obs": 75,
+      "explained_pct": -0.2092054573370361,
+      "unexplained_pct": -4.043285146082953
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-04-17",
+    "usd_move_pct": -3.8121513240245597,
+    "per_currency_pct": {
+      "USD": -3.8121513240245597,
+      "EUR": -3.642516829990994,
+      "JPY": -3.769192388792475,
+      "CNY": -3.76195500041806,
+      "INR": -3.7088061125070904
+    },
+    "dollar_move_pct": -0.03091382833251277,
+    "survival": 0.9794742524121107,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.9569760715721429,
+      "window_r2": 0.03520149451053334,
+      "window_obs": 75,
+      "explained_pct": 0.02959274546845414,
+      "unexplained_pct": -3.8406075282827246
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-04-18",
+    "usd_move_pct": 3.618602855891351,
+    "per_currency_pct": {
+      "USD": 3.618602855891351,
+      "EUR": 3.507513329295775,
+      "JPY": 3.6583938671871152,
+      "CNY": 3.2480485924724745,
+      "INR": 2.9009735733213304
+    },
+    "dollar_move_pct": 0.474176965615003,
+    "survival": 0.9345196248904887,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.7585458892802415,
+      "window_r2": 0.02004492719147466,
+      "window_obs": 75,
+      "explained_pct": -0.35819185953901433,
+      "unexplained_pct": 3.9910904766244704
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-05-21",
+    "usd_move_pct": 5.269123542072474,
+    "per_currency_pct": {
+      "USD": 5.269123542072474,
+      "EUR": 5.238561486632665,
+      "JPY": 5.183115567885421,
+      "CNY": 5.171738050196306,
+      "INR": 5.038460082400831
+    },
+    "dollar_move_pct": 0.13274507608787012,
+    "survival": 0.9830291873205979,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5763249889623139,
+      "window_r2": 0.008813057079811504,
+      "window_obs": 75,
+      "explained_pct": -0.07642435325817543,
+      "unexplained_pct": 5.349636320290085
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-05-22",
+    "usd_move_pct": -1.2378918266847894,
+    "per_currency_pct": {
+      "USD": -1.2378918266847894,
+      "EUR": null,
+      "JPY": null,
+      "CNY": null,
+      "INR": null
+    },
+    "dollar_move_pct": 0.05099230369438601,
+    "survival": null,
+    "reading": "not enough currency data",
+    "regression": {
+      "dollar_beta": -0.5492224932375677,
+      "window_r2": 0.006698053699625395,
+      "window_obs": 75,
+      "explained_pct": -0.027995062765306944,
+      "unexplained_pct": -1.2102355701269496
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-05-23",
+    "usd_move_pct": 1.9073569482288777,
+    "per_currency_pct": {
+      "USD": 1.9073569482288777,
+      "EUR": null,
+      "JPY": null,
+      "CNY": null,
+      "INR": null
+    },
+    "dollar_move_pct": -0.2650108394791295,
+    "survival": null,
+    "reading": "not enough currency data",
+    "regression": {
+      "dollar_beta": -0.7058790590212085,
+      "window_r2": 0.011628267565246375,
+      "window_obs": 75,
+      "explained_pct": 0.18748945495812297,
+      "unexplained_pct": 1.7166489574967914
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-05-24",
+    "usd_move_pct": -0.21390047940346157,
+    "per_currency_pct": {
+      "USD": -0.21390047940346157,
+      "EUR": -0.4732704889095385,
+      "JPY": -0.8141344145369933,
+      "CNY": -0.1546489916936178,
+      "INR": -0.2531232236685499
+    },
+    "dollar_move_pct": -0.24527119827499888,
+    "survival": 1.6995272324046333,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.8267944956174318,
+      "window_r2": 0.01619803411560594,
+      "window_obs": 75,
+      "explained_pct": 0.20324423708635297,
+      "unexplained_pct": -0.41629861354871567
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-05-28",
+    "usd_move_pct": 2.947481146891806,
+    "per_currency_pct": {
+      "USD": 2.947481146891806,
+      "EUR": 3.092878491079687,
+      "JPY": 3.0491118797027594,
+      "CNY": 2.916146262945296,
+      "INR": 3.4818115350248036
+    },
+    "dollar_move_pct": null,
+    "survival": 1.0412766204102117,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.911402892231395,
+      "window_r2": 0.020097769919426134,
+      "window_obs": 75,
+      "explained_pct": null,
+      "unexplained_pct": null
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-05-29",
+    "usd_move_pct": 3.5918759381851073,
+    "per_currency_pct": {
+      "USD": 3.5918759381851073,
+      "EUR": 3.806407855970173,
+      "JPY": 3.437681451755137,
+      "CNY": 3.7706061374113586,
+      "INR": 3.822177344300459
+    },
+    "dollar_move_pct": 0.1837487820110839,
+    "survival": 1.0537372230114666,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.911402892231395,
+      "window_r2": 0.020097769919426134,
+      "window_obs": 75,
+      "explained_pct": -0.16717560395969056,
+      "unexplained_pct": 3.765346282533799
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-05-30",
+    "usd_move_pct": 2.8643200744935315,
+    "per_currency_pct": {
+      "USD": 2.8643200744935315,
+      "EUR": 3.172262896503386,
+      "JPY": 3.0487010185980656,
+      "CNY": 2.9283412434676137,
+      "INR": 2.7759965242843077
+    },
+    "dollar_move_pct": 0.0,
+    "survival": 1.0427230539343904,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.7872510199132365,
+      "window_r2": 0.014077737229351461,
+      "window_obs": 75,
+      "explained_pct": 0.0,
+      "unexplained_pct": 2.8643200744935315
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-05-31",
+    "usd_move_pct": 2.1983390655047064,
+    "per_currency_pct": {
+      "USD": 2.1983390655047064,
+      "EUR": 2.2552528358581014,
+      "JPY": 2.0257436842714416,
+      "CNY": 2.013551776255551,
+      "INR": 2.439874823171273
+    },
+    "dollar_move_pct": -0.3973908621091704,
+    "survival": 0.9739364778104401,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.8586653837542029,
+      "window_r2": 0.015916240593607744,
+      "window_obs": 75,
+      "explained_pct": 0.3424907425557455,
+      "unexplained_pct": 1.8495139090282553
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-06-03",
+    "usd_move_pct": -0.8126180559471008,
+    "per_currency_pct": {
+      "USD": -0.8126180559471008,
+      "EUR": -1.193517079720241,
+      "JPY": -1.8511430132416185,
+      "CNY": -0.7666233305828829,
+      "INR": -1.3943062288853447
+    },
+    "dollar_move_pct": -0.6240415451166603,
+    "survival": 1.5962091038414046,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.9915776387639107,
+      "window_r2": 0.021586969234167808,
+      "window_obs": 75,
+      "explained_pct": 0.6226549382240876,
+      "unexplained_pct": -1.4263914970762404
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-06-04",
+    "usd_move_pct": 1.831326771931474,
+    "per_currency_pct": {
+      "USD": 1.831326771931474,
+      "EUR": 1.177050285786585,
+      "JPY": 1.6572375101877368,
+      "CNY": 1.8121546458935711,
+      "INR": 1.234563417093204
+    },
+    "dollar_move_pct": -0.07206062926095047,
+    "survival": 0.7909200418902244,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -0.8040074320068077,
+      "window_r2": 0.01535847738106133,
+      "window_obs": 75,
+      "explained_pct": 0.057974965490181773,
+      "unexplained_pct": 1.772324302038819
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-06-05",
+    "usd_move_pct": -6.199718842553336,
+    "per_currency_pct": {
+      "USD": -6.199718842553336,
+      "EUR": -6.264073469096254,
+      "JPY": -6.002616103806558,
+      "CNY": -6.138570753332906,
+      "INR": -5.659806782196419
+    },
+    "dollar_move_pct": 0.3090584657474249,
+    "survival": 0.9785103001838618,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6749680545392319,
+      "window_r2": 0.010596540997067194,
+      "window_obs": 75,
+      "explained_pct": -0.20806614061736894,
+      "unexplained_pct": -6.00414529532901
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-06-06",
+    "usd_move_pct": 2.976795785125108,
+    "per_currency_pct": {
+      "USD": 2.976795785125108,
+      "EUR": 3.2062627798385313,
+      "JPY": 3.0471932854482464,
+      "CNY": 2.988724484762173,
+      "INR": 3.0730255632901216
+    },
+    "dollar_move_pct": -0.3491875913468889,
+    "survival": 1.027569767575197,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.0069720541297167,
+      "window_r2": 0.020023731704351233,
+      "window_obs": 75,
+      "explained_pct": 0.3528585747351043,
+      "unexplained_pct": 2.614710978497814
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-06-18",
+    "usd_move_pct": -1.821967667254576,
+    "per_currency_pct": {
+      "USD": -1.821967667254576,
+      "EUR": -1.88803223189008,
+      "JPY": -1.8554197188582089,
+      "CNY": -1.8162953833876005,
+      "INR": -1.3407160120661787
+    },
+    "dollar_move_pct": 0.0820026989100553,
+    "survival": 1.007695707865497,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.1999407901286285,
+      "window_r2": 0.02872297661631995,
+      "window_obs": 75,
+      "explained_pct": -0.09830970501474301,
+      "unexplained_pct": -1.7253541528179261
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-06-20",
+    "usd_move_pct": 4.9870161576703875,
+    "per_currency_pct": {
+      "USD": 4.9870161576703875,
+      "EUR": 4.61080099285085,
+      "JPY": 4.544142943437635,
+      "CNY": 4.993101343156026,
+      "INR": 5.1450322004918725
+    },
+    "dollar_move_pct": -0.5045361195496478,
+    "survival": 0.9637130171527786,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.401293840004464,
+      "window_r2": 0.04079230143619783,
+      "window_obs": 75,
+      "explained_pct": 0.7113108042809957,
+      "unexplained_pct": 4.24550660620302
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-06-25",
+    "usd_move_pct": 4.362742106119821,
+    "per_currency_pct": {
+      "USD": 4.362742106119821,
+      "EUR": 4.220176241009321,
+      "JPY": 4.377336687432476,
+      "CNY": 4.472139087194837,
+      "INR": 4.411646408242453
+    },
+    "dollar_move_pct": 0.187539382038171,
+    "survival": 1.0071228119298328,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.8261652212926613,
+      "window_r2": 0.06978129346986883,
+      "window_obs": 75,
+      "explained_pct": -0.34157246702211097,
+      "unexplained_pct": 4.720438290665618
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-06-28",
+    "usd_move_pct": 2.55802640471563,
+    "per_currency_pct": {
+      "USD": 2.55802640471563,
+      "EUR": 2.574355597421407,
+      "JPY": 2.5665962470267534,
+      "CNY": 2.3791214678139383,
+      "INR": 2.1491293273134593
+    },
+    "dollar_move_pct": -0.06238193831512584,
+    "survival": 0.9670925005437067,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.5443425967756204,
+      "window_r2": 0.042457138614861334,
+      "window_obs": 75,
+      "explained_pct": 0.0964155961879598,
+      "unexplained_pct": 2.4592397178919922
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-07-01",
+    "usd_move_pct": 1.7551977144378172,
+    "per_currency_pct": {
+      "USD": 1.7551977144378172,
+      "EUR": 1.8269438482444889,
+      "JPY": 2.354887422113827,
+      "CNY": 1.7359366985992164,
+      "INR": 1.1908308569017256
+    },
+    "dollar_move_pct": 0.7385822373436435,
+    "survival": 1.014814362725723,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.60319667655514,
+      "window_r2": 0.04511183363711213,
+      "window_obs": 75,
+      "explained_pct": -1.1728095900652602,
+      "unexplained_pct": 2.9627547766537976
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-07-02",
+    "usd_move_pct": -1.724921924247591,
+    "per_currency_pct": {
+      "USD": -1.724921924247591,
+      "EUR": -1.0503144904010497,
+      "JPY": -1.7394357457970466,
+      "CNY": -1.939625683552737,
+      "INR": -1.4013249803363492
+    },
+    "dollar_move_pct": -0.11358218206993786,
+    "survival": 0.9097783990176865,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.3525266136755103,
+      "window_r2": 0.03476139874500872,
+      "window_obs": 75,
+      "explained_pct": 0.15382842907452066,
+      "unexplained_pct": -1.8758647400609285
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-07-03",
+    "usd_move_pct": 3.695150115473478,
+    "per_currency_pct": {
+      "USD": 3.695150115473478,
+      "EUR": 3.643648988116377,
+      "JPY": 3.158333489105458,
+      "CNY": 4.016040499245932,
+      "INR": 3.567708997499519
+    },
+    "dollar_move_pct": 0.04134527524537468,
+    "survival": 0.9762087852440583,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2436267799994856,
+      "window_r2": 0.028595043595053715,
+      "window_obs": 75,
+      "explained_pct": -0.051394253601522166,
+      "unexplained_pct": 3.7484708676989165
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-07-08",
+    "usd_move_pct": -4.2941955955145055,
+    "per_currency_pct": {
+      "USD": -4.2941955955145055,
+      "EUR": -3.796257864950514,
+      "JPY": -3.702958381432142,
+      "CNY": -3.9877431853056255,
+      "INR": -4.711875317760683
+    },
+    "dollar_move_pct": 0.13367326829607507,
+    "survival": 0.904465924981395,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2028259373938328,
+      "window_r2": 0.025575000928056646,
+      "window_obs": 75,
+      "explained_pct": -0.16054928770123933,
+      "unexplained_pct": -4.140293519567672
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-07-16",
+    "usd_move_pct": -4.3198570273944465,
+    "per_currency_pct": {
+      "USD": -4.3198570273944465,
+      "EUR": -4.232492570860935,
+      "JPY": -4.26928120394392,
+      "CNY": -4.3601835809006895,
+      "INR": -4.0446163179459145
+    },
+    "dollar_move_pct": 0.48488725804538557,
+    "survival": 0.9836826920544812,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.0839439176286418,
+      "window_r2": 0.01637623124476517,
+      "window_obs": 75,
+      "explained_pct": -0.5229482770287341,
+      "unexplained_pct": -3.8168690010431106
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-10-31",
+    "usd_move_pct": 2.6170090730282203,
+    "per_currency_pct": {
+      "USD": 2.6170090730282203,
+      "EUR": 2.252034112725454,
+      "JPY": 2.536894888020602,
+      "CNY": 2.4644982222281175,
+      "INR": 2.769592876334337
+    },
+    "dollar_move_pct": -0.3072227824576612,
+    "survival": 0.9560970449929411,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.5936336991900231,
+      "window_r2": 0.009555052901472183,
+      "window_obs": 75,
+      "explained_pct": -0.18249180585877545,
+      "unexplained_pct": 2.8046190788915126
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-11-06",
+    "usd_move_pct": 2.079392140627778,
+    "per_currency_pct": {
+      "USD": 2.079392140627778,
+      "EUR": 2.580365967268583,
+      "JPY": 2.5038888035395113,
+      "CNY": 1.7802457845806696,
+      "INR": 1.9284248329023201
+    },
+    "dollar_move_pct": -0.03062503333670641,
+    "survival": 1.0648631995611324,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 1.1990677068596238,
+      "window_r2": 0.0395006098697539,
+      "window_obs": 75,
+      "explained_pct": -0.03672036904946996,
+      "unexplained_pct": 2.1168898394386515
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-11-07",
+    "usd_move_pct": 1.018517105667649,
+    "per_currency_pct": {
+      "USD": 1.018517105667649,
+      "EUR": 1.053196077249563,
+      "JPY": 0.802865718335255,
+      "CNY": 0.8513249235417186,
+      "INR": 1.1681367390806052
+    },
+    "dollar_move_pct": 0.19397901717814747,
+    "survival": 0.9352059076086406,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 1.2001154214510412,
+      "window_r2": 0.03881626915561154,
+      "window_obs": 75,
+      "explained_pct": 0.23284237043945666,
+      "unexplained_pct": 0.7838496012359863
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-11-11",
+    "usd_move_pct": -3.1521215572748784,
+    "per_currency_pct": {
+      "USD": -3.1521215572748784,
+      "EUR": -3.17624372340235,
+      "JPY": -3.194666902311094,
+      "CNY": null,
+      "INR": -3.1521215572748784
+    },
+    "dollar_move_pct": -0.15251807646784465,
+    "survival": 1.0077775165746128,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 1.5101368941001143,
+      "window_r2": 0.06271722198409824,
+      "window_obs": 75,
+      "explained_pct": -0.23023355037838922,
+      "unexplained_pct": -2.928630697328427
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-11-20",
+    "usd_move_pct": 6.815969043823644,
+    "per_currency_pct": {
+      "USD": 6.815969043823644,
+      "EUR": 6.742280499833764,
+      "JPY": 6.602652786497609,
+      "CNY": 6.843339176165841,
+      "INR": 6.69109124529792
+    },
+    "dollar_move_pct": 0.07153044593053437,
+    "survival": 0.9858965957394383,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 1.7550361430864934,
+      "window_r2": 0.075645875645585,
+      "window_obs": 75,
+      "explained_pct": 0.12557241642614514,
+      "unexplained_pct": 6.682005871159347
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-11-21",
+    "usd_move_pct": 5.05925542949317,
+    "per_currency_pct": {
+      "USD": 5.05925542949317,
+      "EUR": 5.070085090687826,
+      "JPY": 5.09122236259707,
+      "CNY": 5.1818508489281045,
+      "INR": 4.938195233406084
+    },
+    "dollar_move_pct": 0.061265759631123906,
+    "survival": 1.0041263353023726,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 1.6367831941351778,
+      "window_r2": 0.05239866927519543,
+      "window_obs": 75,
+      "explained_pct": 0.1002983251700229,
+      "unexplained_pct": 4.953988336992032
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-12-02",
+    "usd_move_pct": 2.4883988800525225,
+    "per_currency_pct": {
+      "USD": 2.4883988800525225,
+      "EUR": 2.4206863707988857,
+      "JPY": 2.509926220744929,
+      "CNY": 2.446145237309949,
+      "INR": 2.7399352366505703
+    },
+    "dollar_move_pct": -0.4172138462607,
+    "survival": 0.9958840008677153,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 1.5607320438776033,
+      "window_r2": 0.04499793080701053,
+      "window_obs": 75,
+      "explained_pct": -0.6503968754571599,
+      "unexplained_pct": 3.1593440303681275
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-12-03",
+    "usd_move_pct": 1.1111098552437193,
+    "per_currency_pct": {
+      "USD": 1.1111098552437193,
+      "EUR": 0.5629521081653266,
+      "JPY": 0.6375621582317192,
+      "CNY": 1.2088945705794663,
+      "INR": 0.97295548878511
+    },
+    "dollar_move_pct": -0.12262696283834584,
+    "survival": 0.7257088973405428,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": 1.1530395556302668,
+      "window_r2": 0.02465063521693933,
+      "window_obs": 75,
+      "explained_pct": -0.14138046662054427,
+      "unexplained_pct": 1.2542636056025236
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-12-04",
+    "usd_move_pct": -1.8315018542502837,
+    "per_currency_pct": {
+      "USD": -1.8315018542502837,
+      "EUR": -1.8858805111251153,
+      "JPY": -2.1637696379510296,
+      "CNY": -1.5260435086286828,
+      "INR": -1.3723555086603167
+    },
+    "dollar_move_pct": -0.0920772865332875,
+    "survival": 0.9309526298147762,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 1.2272939189736358,
+      "window_r2": 0.028347334507864197,
+      "window_obs": 75,
+      "explained_pct": -0.11299406575235871,
+      "unexplained_pct": -1.7204517969325872
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-12-11",
+    "usd_move_pct": 1.3631223098513168,
+    "per_currency_pct": {
+      "USD": 1.3631223098513168,
+      "EUR": 1.109531227875915,
+      "JPY": 1.5330216274977104,
+      "CNY": 1.2925535364555873,
+      "INR": 1.4342658355484428
+    },
+    "dollar_move_pct": -0.2566471518337998,
+    "survival": 1.0001913553338901,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.9934168777529568,
+      "window_r2": 0.01783166984970852,
+      "window_obs": 75,
+      "explained_pct": -0.2549597679208815,
+      "unexplained_pct": 1.6222180812272669
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-12-12",
+    "usd_move_pct": 1.5315559951363023,
+    "per_currency_pct": {
+      "USD": 1.5315559951363023,
+      "EUR": 1.1384913766839144,
+      "JPY": 1.3308561980385436,
+      "CNY": 1.596515985297997,
+      "INR": 1.1302044063911332
+    },
+    "dollar_move_pct": 0.24701302462297736,
+    "survival": 0.8073106973630756,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.9458167148511248,
+      "window_r2": 0.016271960975256405,
+      "window_obs": 75,
+      "explained_pct": 0.23361342659851125,
+      "unexplained_pct": 1.2949174674704134
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-12-13",
+    "usd_move_pct": -4.746134832908933,
+    "per_currency_pct": {
+      "USD": -4.746134832908933,
+      "EUR": -5.173610324959254,
+      "JPY": -3.9879593949554315,
+      "CNY": -4.993818931799455,
+      "INR": -4.974276458022708
+    },
+    "dollar_move_pct": -0.23614307323450712,
+    "survival": 1.051430787640557,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.8786884286540997,
+      "window_r2": 0.013467407278404897,
+      "window_obs": 75,
+      "explained_pct": -0.20752593282251652,
+      "unexplained_pct": -4.548047277624523
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-12-16",
+    "usd_move_pct": 4.9053736988921015,
+    "per_currency_pct": {
+      "USD": 4.9053736988921015,
+      "EUR": 5.486239403293536,
+      "JPY": 4.892908808465024,
+      "CNY": 4.194001923759094,
+      "INR": 5.097320797975313
+    },
+    "dollar_move_pct": -0.10291085314956261,
+    "survival": 1.017845780497163,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 1.0597495766813154,
+      "window_r2": 0.017212230898808523,
+      "window_obs": 75,
+      "explained_pct": -0.10905637900314735,
+      "unexplained_pct": 5.019904604085879
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2019-12-23",
+    "usd_move_pct": -4.131594508470204,
+    "per_currency_pct": {
+      "USD": -4.131594508470204,
+      "EUR": -3.7326673159678525,
+      "JPY": -4.029929009726829,
+      "CNY": -4.182196837893882,
+      "INR": -4.399052031817796
+    },
+    "dollar_move_pct": -0.05116715058000043,
+    "survival": 0.9936964908243793,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 1.2060809648230997,
+      "window_r2": 0.017961482800911255,
+      "window_obs": 75,
+      "explained_pct": -0.0617084722782435,
+      "unexplained_pct": -4.072399051431674
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-01-13",
+    "usd_move_pct": -3.699028170970764,
+    "per_currency_pct": {
+      "USD": -3.699028170970764,
+      "EUR": -3.747171748250955,
+      "JPY": -3.6471449586511495,
+      "CNY": -4.286394679963223,
+      "INR": -4.0254156811699415
+    },
+    "dollar_move_pct": -0.01027335267844709,
+    "survival": 1.0516698126713107,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.10140195839168248,
+      "window_r2": 0.00011761393870268755,
+      "window_obs": 75,
+      "explained_pct": -0.0010417861685874108,
+      "unexplained_pct": -3.6980249103141904
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-01-14",
+    "usd_move_pct": 0.3055420906125983,
+    "per_currency_pct": {
+      "USD": 0.3055420906125983,
+      "EUR": 0.1338228355265425,
+      "JPY": 0.6955321051325569,
+      "CNY": 0.06455712187320994,
+      "INR": -0.025403193138096025
+    },
+    "dollar_move_pct": 0.02054881640931594,
+    "survival": 0.3249509904397911,
+    "reading": "mostly the numeraire",
+    "regression": {
+      "dollar_beta": 0.10914925780839131,
+      "window_r2": 0.00012845964065388848,
+      "window_obs": 75,
+      "explained_pct": 0.0022426827957611195,
+      "unexplained_pct": 0.30329260592574236
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-01-15",
+    "usd_move_pct": -0.5221918765475064,
+    "per_currency_pct": {
+      "USD": -0.5221918765475064,
+      "EUR": -0.4789905665356975,
+      "JPY": -0.6470008308162134,
+      "CNY": -0.4125085200247014,
+      "INR": -0.34467382181329054
+    },
+    "dollar_move_pct": -0.14378082129959946,
+    "survival": 0.8532956852619128,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.1001548508651068,
+      "window_r2": 0.00010791983838598362,
+      "window_obs": 75,
+      "explained_pct": -0.014409670824055976,
+      "unexplained_pct": -0.5078553860128343
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-02-03",
+    "usd_move_pct": -4.627374505009185,
+    "per_currency_pct": {
+      "USD": -4.627374505009185,
+      "EUR": -5.149111123498806,
+      "JPY": -5.069735282879762,
+      "CNY": -4.627374505009185,
+      "INR": -4.818414344733835
+    },
+    "dollar_move_pct": 0.4209915439766787,
+    "survival": 1.0702228957624123,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.402801170486147,
+      "window_r2": 0.0015151652246350178,
+      "window_obs": 75,
+      "explained_pct": -0.16907683906866033,
+      "unexplained_pct": -4.465848381221093
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-02-21",
+    "usd_move_pct": 5.067567642205595,
+    "per_currency_pct": {
+      "USD": 5.067567642205595,
+      "EUR": 5.282808248922044,
+      "JPY": 5.770477607688562,
+      "CNY": 5.445960593228394,
+      "INR": 5.480803747700724
+    },
+    "dollar_move_pct": -0.6107946265901387,
+    "survival": 1.0760647979494764,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.4664511642797982,
+      "window_r2": 0.01728571342762575,
+      "window_obs": 75,
+      "explained_pct": 0.9024952770561478,
+      "unexplained_pct": 4.127818993686017
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-03-03",
+    "usd_move_pct": 5.582207972700481,
+    "per_currency_pct": {
+      "USD": 5.582207972700481,
+      "EUR": 4.703593431901876,
+      "JPY": 6.356696046175725,
+      "CNY": 5.716625447644885,
+      "INR": 6.569976587494186
+    },
+    "dollar_move_pct": -0.21569338861562315,
+    "survival": 1.078985430718324,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -2.254605616968822,
+      "window_r2": 0.052273021979068024,
+      "window_obs": 75,
+      "explained_pct": 0.4880156796283064,
+      "unexplained_pct": 5.069452569660915
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-03-05",
+    "usd_move_pct": -6.231329881925185,
+    "per_currency_pct": {
+      "USD": -6.231329881925185,
+      "EUR": -5.881167750889038,
+      "JPY": -5.6706649697315985,
+      "CNY": -6.172055941144549,
+      "INR": -5.335731225847651
+    },
+    "dollar_move_pct": -0.53420655704709,
+    "survival": 0.9247055837674174,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -2.8968267986228353,
+      "window_r2": 0.07810506246062743,
+      "window_obs": 75,
+      "explained_pct": 1.5637527104539917,
+      "unexplained_pct": -7.675063577654528
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-03-27",
+    "usd_move_pct": -7.059769710416608,
+    "per_currency_pct": {
+      "USD": -7.059769710416608,
+      "EUR": -8.394694504007848,
+      "JPY": -8.540930907627187,
+      "CNY": -7.587609432756748,
+      "INR": -8.432077758242595
+    },
+    "dollar_move_pct": -1.0561209431718455,
+    "survival": 1.200393112989246,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.5585447775460446,
+      "window_r2": 0.011275641305895645,
+      "window_obs": 75,
+      "explained_pct": -0.5912729849880338,
+      "unexplained_pct": -6.506970685231439
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-07-06",
+    "usd_move_pct": -4.938878290227688,
+    "per_currency_pct": {
+      "USD": -4.938878290227688,
+      "EUR": -5.017931013760135,
+      "JPY": -4.866363880657676,
+      "CNY": -4.940219128582246,
+      "INR": -4.991932512958841
+    },
+    "dollar_move_pct": null,
+    "survival": 1.0056502076827039,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 1.2767548657136916,
+      "window_r2": 0.08590291629816516,
+      "window_obs": 75,
+      "explained_pct": null,
+      "unexplained_pct": null
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-07-17",
+    "usd_move_pct": 4.067975942027835,
+    "per_currency_pct": {
+      "USD": 4.067975942027835,
+      "EUR": 4.297055296378471,
+      "JPY": 4.41935641221709,
+      "CNY": 4.073934054343886,
+      "INR": 4.13668332961703
+    },
+    "dollar_move_pct": -0.42552780405592516,
+    "survival": 1.0358481530910477,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.9391281034627431,
+      "window_r2": 0.04082503780527302,
+      "window_obs": 75,
+      "explained_pct": -0.39967695446379015,
+      "unexplained_pct": 4.485580728939076
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-07-22",
+    "usd_move_pct": 7.810943755344413,
+    "per_currency_pct": {
+      "USD": 7.810943755344413,
+      "EUR": 7.106778241188172,
+      "JPY": 7.444857215239731,
+      "CNY": 7.770802560694334,
+      "INR": 7.494654384668387
+    },
+    "dollar_move_pct": -0.15769714208117014,
+    "survival": 0.9578543364305722,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.48462694382411176,
+      "window_r2": 0.009578989367302837,
+      "window_obs": 75,
+      "explained_pct": 0.07651386383311642,
+      "unexplained_pct": 7.728516504916394
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-07-23",
+    "usd_move_pct": -0.7844932958851802,
+    "per_currency_pct": {
+      "USD": -0.7844932958851802,
+      "EUR": -1.082020894925706,
+      "JPY": -0.4659450268245102,
+      "CNY": -0.5144100685036013,
+      "INR": -0.7181421077129269
+    },
+    "dollar_move_pct": -0.29482865715266815,
+    "survival": 0.7849745161660286,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -0.5669331460049584,
+      "window_r2": 0.010792672418511673,
+      "window_obs": 75,
+      "explained_pct": 0.167535207496039,
+      "unexplained_pct": -0.9504361881412793
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-07-24",
+    "usd_move_pct": 0.8372107217478941,
+    "per_currency_pct": {
+      "USD": 0.8372107217478941,
+      "EUR": 0.5992338922889084,
+      "JPY": 0.5201339289309104,
+      "CNY": 0.9006026626659169,
+      "INR": 0.8200905769493172
+    },
+    "dollar_move_pct": -0.2640194250228989,
+    "survival": 0.8481158642816534,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.3885945167718363,
+      "window_r2": 0.00502226375001702,
+      "window_obs": 75,
+      "explained_pct": 0.10278496466744613,
+      "unexplained_pct": 0.7336716529312337
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-07-27",
+    "usd_move_pct": 1.845018424213296,
+    "per_currency_pct": {
+      "USD": 1.845018424213296,
+      "EUR": 1.3513532507659187,
+      "JPY": 1.0395075857860148,
+      "CNY": 2.034075616095743,
+      "INR": 1.7803599787068025
+    },
+    "dollar_move_pct": -0.8153369891521267,
+    "survival": 0.8497411471329435,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5741837141300132,
+      "window_r2": 0.01095154249967134,
+      "window_obs": 75,
+      "explained_pct": 0.471178744064793,
+      "unexplained_pct": 1.3673967970935674
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-07-28",
+    "usd_move_pct": -0.6793478166974065,
+    "per_currency_pct": {
+      "USD": -0.6793478166974065,
+      "EUR": -1.6642463508950156,
+      "JPY": -1.365262797245892,
+      "CNY": -1.003524116780774,
+      "INR": -0.36023988949623886
+    },
+    "dollar_move_pct": 0.09608622722807603,
+    "survival": 1.748115621334264,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5264548159805766,
+      "window_r2": 0.009845441150372114,
+      "window_obs": 75,
+      "explained_pct": -0.0505479901902639,
+      "unexplained_pct": -0.629117832927617
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-07-29",
+    "usd_move_pct": 1.7783829649851146,
+    "per_currency_pct": {
+      "USD": 1.7783829649851146,
+      "EUR": 2.216807723376868,
+      "JPY": 1.6294787895768437,
+      "CNY": 1.8729869165436286,
+      "INR": 1.90051205489552
+    },
+    "dollar_move_pct": -0.5332764383617294,
+    "survival": 1.0603688448763962,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5627782731443495,
+      "window_r2": 0.011318969550640268,
+      "window_obs": 75,
+      "explained_pct": 0.3013726916067938,
+      "unexplained_pct": 1.4725723424739545
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-07-30",
+    "usd_move_pct": 3.360215099706809,
+    "per_currency_pct": {
+      "USD": 3.360215099706809,
+      "EUR": 2.798186092481858,
+      "JPY": 3.2864570330563447,
+      "CNY": 3.3690728759492305,
+      "INR": 3.003985467986703
+    },
+    "dollar_move_pct": -0.2573509410963237,
+    "survival": 0.9369696705679021,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.48433574295884907,
+      "window_r2": 0.008361893360536499,
+      "window_obs": 75,
+      "explained_pct": 0.12488283529954458,
+      "unexplained_pct": 3.2312969291851568
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-07-31",
+    "usd_move_pct": 3.1209349993435387,
+    "per_currency_pct": {
+      "USD": 3.1209349993435387,
+      "EUR": 2.3445124573698406,
+      "JPY": 2.7782860313580793,
+      "CNY": 3.224051066533984,
+      "INR": 3.339766459623328
+    },
+    "dollar_move_pct": 0.5052690149049965,
+    "survival": 0.9621103570221445,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5420351310035637,
+      "window_r2": 0.010083961010088127,
+      "window_obs": 75,
+      "explained_pct": -0.2728111715412429,
+      "unexplained_pct": 3.4030300169419103
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-08-03",
+    "usd_move_pct": -0.8827200078198372,
+    "per_currency_pct": {
+      "USD": -0.8827200078198372,
+      "EUR": -0.12607176141194998,
+      "JPY": 0.2373817340364459,
+      "CNY": -1.3509167053747162,
+      "INR": -0.9781456185316784
+    },
+    "dollar_move_pct": 0.010698616385762527,
+    "survival": 0.6254586767833304,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -0.42637596312335163,
+      "window_r2": 0.006101143161245326,
+      "window_obs": 75,
+      "explained_pct": -0.004561284837401036,
+      "unexplained_pct": -0.8781987801302349
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-08-04",
+    "usd_move_pct": 2.6717569848270672,
+    "per_currency_pct": {
+      "USD": 2.6717569848270672,
+      "EUR": 2.837483631346105,
+      "JPY": 2.830810117756788,
+      "CNY": 2.748315269640611,
+      "INR": 3.236661359634918
+    },
+    "dollar_move_pct": -0.12834518351023672,
+    "survival": 1.0599384832772925,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5241005867859347,
+      "window_r2": 0.009194625756708708,
+      "window_obs": 75,
+      "explained_pct": 0.0673316467405316,
+      "unexplained_pct": 2.602672915553228
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-09-14",
+    "usd_move_pct": -7.349083316989457,
+    "per_currency_pct": {
+      "USD": -7.349083316989457,
+      "EUR": -7.492595976274908,
+      "JPY": -7.347338500581668,
+      "CNY": -7.347732067313895,
+      "INR": -7.410447651988294
+    },
+    "dollar_move_pct": -0.27858366134085877,
+    "survival": 1.0042443435158848,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.1228416151593745,
+      "window_r2": 0.04312264676190136,
+      "window_obs": 75,
+      "explained_pct": 0.3137329663812194,
+      "unexplained_pct": -7.6388506905019415
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-09-18",
+    "usd_move_pct": -3.8103302778501935,
+    "per_currency_pct": {
+      "USD": -3.8103302778501935,
+      "EUR": -4.1736428315459655,
+      "JPY": -4.143589575349527,
+      "CNY": -3.662203917707074,
+      "INR": -3.7672963318255426
+    },
+    "dollar_move_pct": -0.043025615792313676,
+    "survival": 1.0389121488424848,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.103820138380388,
+      "window_r2": 0.034452557623432245,
+      "window_obs": 75,
+      "explained_pct": 0.04751404543674731,
+      "unexplained_pct": -3.856012175909629
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-09-21",
+    "usd_move_pct": -1.408449379940424,
+    "per_currency_pct": {
+      "USD": -1.408449379940424,
+      "EUR": -1.3862540736324425,
+      "JPY": -1.5600548991211105,
+      "CNY": -1.3516033719176868,
+      "INR": -1.4738414480931938
+    },
+    "dollar_move_pct": 0.6564087037000288,
+    "survival": 1.0154527905120634,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.058675574534772,
+      "window_r2": 0.02973335576901248,
+      "window_obs": 75,
+      "explained_pct": -0.6902597109867514,
+      "unexplained_pct": -0.7231814994819064
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-09-22",
+    "usd_move_pct": -1.2053557804651782,
+    "per_currency_pct": {
+      "USD": -1.2053557804651782,
+      "EUR": -0.5544451422479058,
+      "JPY": -1.0607603918943664,
+      "CNY": -0.6842338306022544,
+      "INR": -1.1448900965199238
+    },
+    "dollar_move_pct": 0.48107434663007265,
+    "survival": 0.7227847839145635,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -1.1316287418116606,
+      "window_r2": 0.03556411687039296,
+      "window_obs": 75,
+      "explained_pct": -0.5416201838020829,
+      "unexplained_pct": -0.6673500994986092
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-09-23",
+    "usd_move_pct": -0.135563961871088,
+    "per_currency_pct": {
+      "USD": -0.135563961871088,
+      "EUR": 0.37305707741177585,
+      "JPY": 0.1925741607081699,
+      "CNY": -0.5069167307015343,
+      "INR": -0.2398058748360299
+    },
+    "dollar_move_pct": 0.4255788221834589,
+    "survival": 0.17583047870105384,
+    "reading": "mostly the numeraire",
+    "regression": {
+      "dollar_beta": -1.1681414641352028,
+      "window_r2": 0.0383605691768365,
+      "window_obs": 75,
+      "explained_pct": -0.4948529552997294,
+      "unexplained_pct": 0.3610757876346238
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-09-24",
+    "usd_move_pct": 0.5882366750035173,
+    "per_currency_pct": {
+      "USD": 0.5882366750035173,
+      "EUR": 1.0181068241167157,
+      "JPY": 0.8468125127833126,
+      "CNY": 1.0408412307486348,
+      "INR": 0.9651168760020701
+    },
+    "dollar_move_pct": -0.042378340699200656,
+    "survival": 1.6823560007514475,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2698653971286988,
+      "window_r2": 0.04498089521678761,
+      "window_obs": 75,
+      "explained_pct": 0.05384068346703241,
+      "unexplained_pct": 0.5341084239105731
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-09-25",
+    "usd_move_pct": 2.2492127446511523,
+    "per_currency_pct": {
+      "USD": 2.2492127446511523,
+      "EUR": 2.1204644096820324,
+      "JPY": 2.3764093350735926,
+      "CNY": 2.531536127137013,
+      "INR": 2.116176335293818
+    },
+    "dollar_move_pct": 0.243776746850366,
+    "survival": 0.9996236413500111,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2984690880706793,
+      "window_r2": 0.046602153257744305,
+      "window_obs": 75,
+      "explained_pct": -0.3156521425726755,
+      "unexplained_pct": 2.5729865744742675
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-11-16",
+    "usd_move_pct": 5.858124966479639,
+    "per_currency_pct": {
+      "USD": 5.858124966479639,
+      "EUR": 5.484029364368093,
+      "JPY": 5.441105148271408,
+      "CNY": 5.774856785159788,
+      "INR": 5.32463273839705
+    },
+    "dollar_move_pct": -0.20483229520330548,
+    "survival": 0.9342398421361974,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.3515222073757824,
+      "window_r2": 0.0039319159567990924,
+      "window_obs": 75,
+      "explained_pct": 0.07210292587911393,
+      "unexplained_pct": 5.781853155305505
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-11-18",
+    "usd_move_pct": 3.0550801592009513,
+    "per_currency_pct": {
+      "USD": 3.0550801592009513,
+      "EUR": 3.018412209821353,
+      "JPY": 2.7001965094636926,
+      "CNY": 2.605845981610222,
+      "INR": 3.1403842101526136
+    },
+    "dollar_move_pct": -0.10820003906326647,
+    "survival": 0.9367727804475432,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5805924433860973,
+      "window_r2": 0.009979690500475202,
+      "window_obs": 75,
+      "explained_pct": 0.06287389263990306,
+      "unexplained_pct": 2.9903261321191588
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-11-20",
+    "usd_move_pct": -4.268546589926315,
+    "per_currency_pct": {
+      "USD": -4.268546589926315,
+      "EUR": -4.4205251984403615,
+      "JPY": -4.332125755573402,
+      "CNY": -3.9343420669873397,
+      "INR": -4.680694077542258
+    },
+    "dollar_move_pct": 0.10835244677553924,
+    "survival": 1.0258253698554634,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5752166452755167,
+      "window_r2": 0.009730034399259124,
+      "window_obs": 75,
+      "explained_pct": -0.0622729916878062,
+      "unexplained_pct": -4.208894602824675
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-11-27",
+    "usd_move_pct": 6.2882069416962505,
+    "per_currency_pct": {
+      "USD": 6.2882069416962505,
+      "EUR": 6.3239345597442265,
+      "JPY": 6.12734446600578,
+      "CNY": 6.2397323668229365,
+      "INR": 6.675584635568543
+    },
+    "dollar_move_pct": null,
+    "survival": 0.9990154102221386,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5144013743172897,
+      "window_r2": 0.007175287657184337,
+      "window_obs": 75,
+      "explained_pct": null,
+      "unexplained_pct": null
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2020-12-01",
+    "usd_move_pct": -4.183923405175161,
+    "per_currency_pct": {
+      "USD": -4.183923405175161,
+      "EUR": -3.9166571102444925,
+      "JPY": -3.984154344840274,
+      "CNY": -4.157702447351119,
+      "INR": -4.074687180346592
+    },
+    "dollar_move_pct": -0.6095626115664388,
+    "survival": 0.9623047913605158,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.514448407332346,
+      "window_r2": 0.007196691141086897,
+      "window_obs": 75,
+      "explained_pct": 0.3150433975451117,
+      "unexplained_pct": -4.484837617914417
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-02-22",
+    "usd_move_pct": 4.666664273131049,
+    "per_currency_pct": {
+      "USD": 4.666664273131049,
+      "EUR": 4.369240174168509,
+      "JPY": 4.529950810839245,
+      "CNY": 4.644076300501565,
+      "INR": 4.591127257796379
+    },
+    "dollar_move_pct": -0.38733783948314837,
+    "survival": 0.9777574713159022,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.44487897971018736,
+      "window_r2": 0.008377816706644614,
+      "window_obs": 75,
+      "explained_pct": 0.17280218561739336,
+      "unexplained_pct": 4.48610999139929
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-02-25",
+    "usd_move_pct": 2.6170314865380018,
+    "per_currency_pct": {
+      "USD": 2.6170314865380018,
+      "EUR": 2.4549260998898648,
+      "JPY": 3.2612967438572893,
+      "CNY": 2.5058886567825844,
+      "INR": 2.649644900738979
+    },
+    "dollar_move_pct": -0.055448050109296876,
+    "survival": 0.9851762738673616,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.484043909812314,
+      "window_r2": 0.008791351970957817,
+      "window_obs": 75,
+      "explained_pct": 0.0268503387081509,
+      "unexplained_pct": 2.5894858621050787
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-02-26",
+    "usd_move_pct": -1.688211850751986,
+    "per_currency_pct": {
+      "USD": -1.688211850751986,
+      "EUR": -1.5996715849198595,
+      "JPY": -1.28455154221766,
+      "CNY": -1.7217080575649413,
+      "INR": -0.6685661799301745
+    },
+    "dollar_move_pct": 0.8876102031917465,
+    "survival": 0.8532349714343541,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.457641892753448,
+      "window_r2": 0.00733917429027775,
+      "window_obs": 75,
+      "explained_pct": -0.40359878252892445,
+      "unexplained_pct": -1.2898187610394518
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-03-18",
+    "usd_move_pct": -4.855102959205704,
+    "per_currency_pct": {
+      "USD": -4.855102959205704,
+      "EUR": -5.499420104029018,
+      "JPY": -4.975530022922214,
+      "CNY": -4.890205230094535,
+      "INR": -5.143757991820186
+    },
+    "dollar_move_pct": 0.49233800955115203,
+    "survival": 1.0432494447086316,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.42812989601992923,
+      "window_r2": 0.00803499413660913,
+      "window_obs": 75,
+      "explained_pct": -0.21004652418069591,
+      "unexplained_pct": -4.654833751526477
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-03-30",
+    "usd_move_pct": -3.502561566900453,
+    "per_currency_pct": {
+      "USD": -3.502561566900453,
+      "EUR": -3.3632133707850786,
+      "JPY": -3.4630118039606916,
+      "CNY": -3.0865083428569084,
+      "INR": -3.11002940037558
+    },
+    "dollar_move_pct": 0.3873473218149348,
+    "survival": 0.9228332034749446,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.1656818862131832,
+      "window_r2": 0.05986499699660808,
+      "window_obs": 75,
+      "explained_pct": -0.4496376154241699,
+      "unexplained_pct": -3.066713046892222
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-03-31",
+    "usd_move_pct": 0.734095870375473,
+    "per_currency_pct": {
+      "USD": 0.734095870375473,
+      "EUR": 1.1413969017058267,
+      "JPY": 1.1642323456167558,
+      "CNY": 0.7693714749917424,
+      "INR": 1.7081745094949197
+    },
+    "dollar_move_pct": -0.075026465739092,
+    "survival": 1.5671274064524146,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2932523801996267,
+      "window_r2": 0.06837218142257684,
+      "window_obs": 75,
+      "explained_pct": 0.09711169490982385,
+      "unexplained_pct": 0.6363661894732253
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-04-06",
+    "usd_move_pct": 3.8902539388702584,
+    "per_currency_pct": {
+      "USD": 3.8902539388702584,
+      "EUR": 3.4439983966269017,
+      "JPY": 3.4359318801113536,
+      "CNY": 3.880755840394312,
+      "INR": 3.7536281417906325
+    },
+    "dollar_move_pct": -0.28077984936805134,
+    "survival": 0.9263634195610886,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2370187584748698,
+      "window_r2": 0.06434435599824062,
+      "window_obs": 75,
+      "explained_pct": 0.3484240619514134,
+      "unexplained_pct": 3.5295321376768607
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-04-26",
+    "usd_move_pct": 3.580558040149451,
+    "per_currency_pct": {
+      "USD": 3.580558040149451,
+      "EUR": 2.9371488992137262,
+      "JPY": 3.480797045248485,
+      "CNY": 3.6459886540029185,
+      "INR": 3.272134326986831
+    },
+    "dollar_move_pct": -0.05503307442429328,
+    "survival": 0.9439210817238581,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.214860888715854,
+      "window_r2": 0.058223632815745274,
+      "window_obs": 75,
+      "explained_pct": 0.06689830027131194,
+      "unexplained_pct": 3.511310732680717
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-04-27",
+    "usd_move_pct": 1.8342194733796058,
+    "per_currency_pct": {
+      "USD": 1.8342194733796058,
+      "EUR": 1.9031684005533123,
+      "JPY": 2.1438577750984233,
+      "CNY": 1.6789829238008203,
+      "INR": 1.7618581253803
+    },
+    "dollar_move_pct": 0.11012675498760505,
+    "survival": 0.9990649414436799,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2815605288676286,
+      "window_r2": 0.06019233361088561,
+      "window_obs": 75,
+      "explained_pct": -0.14095700832407188,
+      "unexplained_pct": 1.9779645613750896
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-05-05",
+    "usd_move_pct": 6.911451782114653,
+    "per_currency_pct": {
+      "USD": 6.911451782114653,
+      "EUR": 7.3227961781085815,
+      "JPY": 7.148629829312769,
+      "CNY": 6.911451782114653,
+      "INR": 6.826601151770539
+    },
+    "dollar_move_pct": 0.021904527183536082,
+    "survival": 1.0165791640662596,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.3454490006446418,
+      "window_r2": 0.07254072723954585,
+      "window_obs": 75,
+      "explained_pct": -0.02946385544522201,
+      "unexplained_pct": 6.942961301641404
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-05-06",
+    "usd_move_pct": 3.3670033670033073,
+    "per_currency_pct": {
+      "USD": 3.3670033670033073,
+      "EUR": 3.4278659304346037,
+      "JPY": 3.263001380220132,
+      "CNY": 3.3702015928912976,
+      "INR": 3.395724891610996
+    },
+    "dollar_move_pct": -0.39426198661388634,
+    "survival": 1.004661866849503,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.4145960421438162,
+      "window_r2": 0.06454677898684702,
+      "window_obs": 75,
+      "explained_pct": 0.5603881187333348,
+      "unexplained_pct": 2.790974956218495
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-05-18",
+    "usd_move_pct": 4.689657277074355,
+    "per_currency_pct": {
+      "USD": 4.689657277074355,
+      "EUR": 4.633688237544886,
+      "JPY": 4.526989120507263,
+      "CNY": 4.723815745962501,
+      "INR": 4.676512227834806
+    },
+    "dollar_move_pct": -0.5209501378228731,
+    "survival": 0.9927958819075595,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.4006682621584958,
+      "window_r2": 0.06778563373221913,
+      "window_obs": 75,
+      "explained_pct": 0.734268206344102,
+      "unexplained_pct": 3.9265576066210617
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-05-28",
+    "usd_move_pct": 4.505954119715683,
+    "per_currency_pct": {
+      "USD": 4.505954119715683,
+      "EUR": 4.50086593131771,
+      "JPY": 5.117654215199963,
+      "CNY": 4.363686334095629,
+      "INR": 4.521050729793097
+    },
+    "dollar_move_pct": 0.06668618181582264,
+    "survival": 1.0010863275089303,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.6410870173845316,
+      "window_r2": 0.08488987202673304,
+      "window_obs": 75,
+      "explained_pct": -0.10934153201351826,
+      "unexplained_pct": 4.62034761059098
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-19",
+    "usd_move_pct": -3.691065174246,
+    "per_currency_pct": {
+      "USD": -3.691065174246,
+      "EUR": -3.7089269660221302,
+      "JPY": -3.606843176996166,
+      "CNY": -3.4212286465383657,
+      "INR": -3.5685806762136507
+    },
+    "dollar_move_pct": 0.2157697086787369,
+    "survival": 0.9714816876342575,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.434368899030906,
+      "window_r2": 0.05960343687959757,
+      "window_obs": 75,
+      "explained_pct": -0.30868253530437206,
+      "unexplained_pct": -3.392855792220284
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-20",
+    "usd_move_pct": 6.698868854418327,
+    "per_currency_pct": {
+      "USD": 6.698868854418327,
+      "EUR": 6.881273209419159,
+      "JPY": 6.368690299583046,
+      "CNY": 6.883337090790076,
+      "INR": 7.215841633912068
+    },
+    "dollar_move_pct": 0.08612534350342926,
+    "survival": 1.0264915214510482,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.517138239310051,
+      "window_r2": 0.06350015309378398,
+      "window_obs": 75,
+      "explained_pct": -0.13052256196856016,
+      "unexplained_pct": 6.838316962882374
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-21",
+    "usd_move_pct": 6.248117407105536,
+    "per_currency_pct": {
+      "USD": 6.248117407105536,
+      "EUR": 6.335833192244333,
+      "JPY": 6.622539442323272,
+      "CNY": 6.15807092652787,
+      "INR": 5.587337429890815
+    },
+    "dollar_move_pct": -0.23663678370924313,
+    "survival": 0.9998132532361171,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.4290740974143403,
+      "window_r2": 0.050260125088408714,
+      "window_obs": 75,
+      "explained_pct": 0.3391460527517154,
+      "unexplained_pct": 5.888999046540877
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-22",
+    "usd_move_pct": 10.028405623002534,
+    "per_currency_pct": {
+      "USD": 10.028405623002534,
+      "EUR": 9.948023658575167,
+      "JPY": 10.363735096835281,
+      "CNY": 9.741620367463444,
+      "INR": 9.900258455981259
+    },
+    "dollar_move_pct": 0.07547136908274688,
+    "survival": 0.9900794817099023,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.4164181897081596,
+      "window_r2": 0.04672070939803019,
+      "window_obs": 75,
+      "explained_pct": -0.10680162759991729,
+      "unexplained_pct": 10.146043390080074
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-23",
+    "usd_move_pct": -2.4012362731960724,
+    "per_currency_pct": {
+      "USD": -2.4012362731960724,
+      "EUR": -2.2355028982691705,
+      "JPY": -2.5030334671076404,
+      "CNY": -2.3604906081065913,
+      "INR": -2.3857617538614817
+    },
+    "dollar_move_pct": 0.09696613615712835,
+    "survival": 0.9881521174415416,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.3282223983782322,
+      "window_r2": 0.033443328640145875,
+      "window_obs": 75,
+      "explained_pct": -0.1286473698946744,
+      "unexplained_pct": -2.2755162951666574
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-26",
+    "usd_move_pct": 9.947091561776578,
+    "per_currency_pct": {
+      "USD": 9.947091561776578,
+      "EUR": 9.94061247596687,
+      "JPY": 10.350383294299625,
+      "CNY": 10.128932873521833,
+      "INR": 9.942506007488516
+    },
+    "dollar_move_pct": -0.2798429942764469,
+    "survival": 1.0084933039191257,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.4676545771342135,
+      "window_r2": 0.0399345912665906,
+      "window_obs": 75,
+      "explained_pct": 0.4121355536903737,
+      "unexplained_pct": 9.495820356283403
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-27",
+    "usd_move_pct": -2.9114547463461204,
+    "per_currency_pct": {
+      "USD": -2.9114547463461204,
+      "EUR": -3.193788646643303,
+      "JPY": -3.1239955821729226,
+      "CNY": -2.891980434629715,
+      "INR": -3.1193289489354514
+    },
+    "dollar_move_pct": -0.23745409290865105,
+    "survival": 1.0733568432555531,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.6654313125498623,
+      "window_r2": 0.044516273525548544,
+      "window_obs": 75,
+      "explained_pct": 0.39671860148355886,
+      "unexplained_pct": -3.295101068951467
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-28",
+    "usd_move_pct": -0.6443633465961995,
+    "per_currency_pct": {
+      "USD": -0.6443633465961995,
+      "EUR": -0.7734120318616311,
+      "JPY": -1.0911423099712825,
+      "CNY": -0.21516333392156417,
+      "INR": -0.35976339571299754
+    },
+    "dollar_move_pct": -0.1190096397148066,
+    "survival": 0.8792895146701768,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.5383538929632337,
+      "window_r2": 0.03723228629496966,
+      "window_obs": 75,
+      "explained_pct": 0.18335586152593564,
+      "unexplained_pct": -0.8262043140840891
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-29",
+    "usd_move_pct": -1.9705647335390708,
+    "per_currency_pct": {
+      "USD": -1.9705647335390708,
+      "EUR": -2.1594890880683892,
+      "JPY": -1.8946817010312755,
+      "CNY": -2.276260681859843,
+      "INR": -2.1183241679866294
+    },
+    "dollar_move_pct": -0.4982659077049756,
+    "survival": 1.08635931233091,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.5413437502144662,
+      "window_r2": 0.03646120692238786,
+      "window_obs": 75,
+      "explained_pct": 0.772890256640868,
+      "unexplained_pct": -2.722413719794192
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-07-30",
+    "usd_move_pct": -8.625952645415868,
+    "per_currency_pct": {
+      "USD": -8.625952645415868,
+      "EUR": -8.987370612119571,
+      "JPY": -9.026736127591594,
+      "CNY": -9.106098752460667,
+      "INR": -8.795460149846878
+    },
+    "dollar_move_pct": 0.33746740315041546,
+    "survival": 1.0463316962047025,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.3224268035704745,
+      "window_r2": 0.02733300897419222,
+      "window_obs": 75,
+      "explained_pct": -0.44453362254601725,
+      "unexplained_pct": -8.217950576265576
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-08-09",
+    "usd_move_pct": 1.9034125588157202,
+    "per_currency_pct": {
+      "USD": 1.9034125588157202,
+      "EUR": 2.6512029708501084,
+      "JPY": 2.3741594819271183,
+      "CNY": 2.253592385134051,
+      "INR": 2.4665635600353175
+    },
+    "dollar_move_pct": 0.16163134865487816,
+    "survival": 1.268360642111958,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.684871112933962,
+      "window_r2": 0.03760746268935078,
+      "window_obs": 75,
+      "explained_pct": -0.27173826481117214,
+      "unexplained_pct": 2.181077646176788
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-11-17",
+    "usd_move_pct": 4.751183475236731,
+    "per_currency_pct": {
+      "USD": 4.751183475236731,
+      "EUR": 5.1702920680346764,
+      "JPY": 5.459726602806336,
+      "CNY": 4.898900097414094,
+      "INR": 4.7842632811814445
+    },
+    "dollar_move_pct": -0.09382437407063904,
+    "survival": 1.0581910075393575,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.026954407781338393,
+      "window_r2": 1.772376207076487e-05,
+      "window_obs": 75,
+      "explained_pct": 0.002530199590178306,
+      "unexplained_pct": 4.748533128280785
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-11-19",
+    "usd_move_pct": 1.8999808523688433,
+    "per_currency_pct": {
+      "USD": 1.8999808523688433,
+      "EUR": 1.4766102844810058,
+      "JPY": 1.9820748441233604,
+      "CNY": 2.0294157129588486,
+      "INR": 1.7827894688545731
+    },
+    "dollar_move_pct": 0.55474018653765,
+    "survival": 0.9908239306770148,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.1198570933311269,
+      "window_r2": 0.00035056463625637857,
+      "window_obs": 75,
+      "explained_pct": -0.0662838259728793,
+      "unexplained_pct": 1.9675688582596385
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-11-22",
+    "usd_move_pct": -0.8358323715107363,
+    "per_currency_pct": {
+      "USD": -0.8358323715107363,
+      "EUR": -0.020777582369013725,
+      "JPY": -0.9607808499524473,
+      "CNY": -0.8171997234273642,
+      "INR": -0.6644454697095625
+    },
+    "dollar_move_pct": 0.4475906178221134,
+    "survival": 0.8859406880032448,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.011101722718895639,
+      "window_r2": 3.0829093425888132e-06,
+      "window_obs": 75,
+      "explained_pct": -0.004957816649409086,
+      "unexplained_pct": -0.830915750140726
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-11-23",
+    "usd_move_pct": 4.841148326242495,
+    "per_currency_pct": {
+      "USD": 4.841148326242495,
+      "EUR": 5.1544179257412726,
+      "JPY": 5.440041536297446,
+      "CNY": 4.80996096161852,
+      "INR": 5.020634747939545
+    },
+    "dollar_move_pct": -0.010364908010851437,
+    "survival": 1.049645607528642,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.07154486223437251,
+      "window_r2": 0.00013010785100875388,
+      "window_obs": 75,
+      "explained_pct": 0.000741597098974367,
+      "unexplained_pct": 4.840370833093854
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-11-24",
+    "usd_move_pct": 1.546072955191713,
+    "per_currency_pct": {
+      "USD": 1.546072955191713,
+      "EUR": 1.5209580610459739,
+      "JPY": 1.8565743977831284,
+      "CNY": 1.6494556002446759,
+      "INR": 1.5695346972015356
+    },
+    "dollar_move_pct": 0.3627303159600803,
+    "survival": 1.0406906462407375,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.04069900158862761,
+      "window_r2": 3.799470219489898e-05,
+      "window_obs": 75,
+      "explained_pct": -0.014734966067175836,
+      "unexplained_pct": 1.5610379396695961
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-11-26",
+    "usd_move_pct": -0.9947206325155222,
+    "per_currency_pct": {
+      "USD": -0.9947206325155222,
+      "EUR": -1.0535026876522746,
+      "JPY": -1.2855365409177866,
+      "CNY": -1.0845557166649034,
+      "INR": -1.152865941257042
+    },
+    "dollar_move_pct": null,
+    "survival": 1.1253578734074827,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.014589225454426197,
+      "window_r2": 4.956511791998075e-06,
+      "window_obs": 75,
+      "explained_pct": null,
+      "unexplained_pct": null
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-11-29",
+    "usd_move_pct": -4.100881586919069,
+    "per_currency_pct": {
+      "USD": -4.100881586919069,
+      "EUR": -4.810380999520747,
+      "JPY": -5.2259775141673455,
+      "CNY": -4.0107784362029335,
+      "INR": -3.4884626958463283
+    },
+    "dollar_move_pct": 0.26017276462464434,
+    "survival": 1.0774570144802562,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.014589225454426197,
+      "window_r2": 4.956511791998075e-06,
+      "window_obs": 75,
+      "explained_pct": -0.0037907181047014404,
+      "unexplained_pct": -4.097246183867254
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2021-12-20",
+    "usd_move_pct": -4.874947137576613,
+    "per_currency_pct": {
+      "USD": -4.874947137576613,
+      "EUR": -4.108380346087593,
+      "JPY": -4.996301833816352,
+      "CNY": -4.773353503098832,
+      "INR": -5.076651646864317
+    },
+    "dollar_move_pct": -0.02070688943729415,
+    "survival": 1.0020921490850385,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.23120810621746332,
+      "window_r2": 0.0011323340156409456,
+      "window_obs": 75,
+      "explained_pct": -0.004787981814968756,
+      "unexplained_pct": -4.8703923492616426
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-03-03",
+    "usd_move_pct": -2.7337830918577666,
+    "per_currency_pct": {
+      "USD": -2.7337830918577666,
+      "EUR": -2.5551048751296435,
+      "JPY": -2.1527277001470724,
+      "CNY": -2.6089538850349037,
+      "INR": -2.952184842867045
+    },
+    "dollar_move_pct": 0.4107213557713596,
+    "survival": 0.9437582339869677,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.3008125405085154,
+      "window_r2": 0.05365667713714817,
+      "window_obs": 75,
+      "explained_pct": -0.5317584343463633,
+      "unexplained_pct": -2.2137967082266896
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-03-04",
+    "usd_move_pct": 0.0,
+    "per_currency_pct": {
+      "USD": 0.0,
+      "EUR": 0.41114695231625475,
+      "JPY": -0.0389530467186594,
+      "CNY": -0.006330564736178879,
+      "INR": 0.3447052820780394
+    },
+    "dollar_move_pct": 0.8794361410165097,
+    "survival": null,
+    "reading": "not enough currency data",
+    "regression": {
+      "dollar_beta": -1.4713946447221136,
+      "window_r2": 0.06787818282739844,
+      "window_obs": 75,
+      "explained_pct": -1.2800772433026686,
+      "unexplained_pct": 1.2966756937781598
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-04-11",
+    "usd_move_pct": 2.1368497031962974,
+    "per_currency_pct": {
+      "USD": 2.1368497031962974,
+      "EUR": 1.9481903453203664,
+      "JPY": 2.374711511949612,
+      "CNY": 2.2059019756929255,
+      "INR": 2.1423619609476585
+    },
+    "dollar_move_pct": 0.1302577649727965,
+    "survival": 1.0172587124210948,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.4359708912467184,
+      "window_r2": 0.09764896376291277,
+      "window_obs": 75,
+      "explained_pct": -0.18675004803373474,
+      "unexplained_pct": 2.327947193732527
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-04-13",
+    "usd_move_pct": -3.6601039504978283,
+    "per_currency_pct": {
+      "USD": -3.6601039504978283,
+      "EUR": -3.198996457139691,
+      "JPY": -3.703101676309495,
+      "CNY": -3.7160780598690324,
+      "INR": -3.262730387212265
+    },
+    "dollar_move_pct": -0.408818085917384,
+    "survival": 0.9507905826122589,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.477481768332142,
+      "window_r2": 0.110003468130078,
+      "window_obs": 75,
+      "explained_pct": 0.6070947133091975,
+      "unexplained_pct": -4.241449050851598
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-04-21",
+    "usd_move_pct": 4.27330471403824,
+    "per_currency_pct": {
+      "USD": 4.27330471403824,
+      "EUR": 3.7409014575568778,
+      "JPY": 3.2090756094537154,
+      "CNY": 4.686000634449994,
+      "INR": 4.042515944959391
+    },
+    "dollar_move_pct": 0.1892643117455517,
+    "survival": 0.9123593187452642,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.1806382603363732,
+      "window_r2": 0.0710090688990972,
+      "window_obs": 75,
+      "explained_pct": -0.22299249759478723,
+      "unexplained_pct": 4.506346025184849
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-05-11",
+    "usd_move_pct": 7.892159854664582,
+    "per_currency_pct": {
+      "USD": 7.892159854664582,
+      "EUR": 8.228449237524305,
+      "JPY": 7.87064301087077,
+      "CNY": 7.953080098475307,
+      "INR": 7.7609288177365565
+    },
+    "dollar_move_pct": -0.06735921483601581,
+    "survival": 1.0024027251864311,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.1655034502755521,
+      "window_r2": 0.07575377281454887,
+      "window_obs": 75,
+      "explained_pct": 0.07856469606446481,
+      "unexplained_pct": 7.807461250398395
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-05-16",
+    "usd_move_pct": 6.059187188866577,
+    "per_currency_pct": {
+      "USD": 6.059187188866577,
+      "EUR": 5.844520456955715,
+      "JPY": 6.755324874079438,
+      "CNY": 6.092008674342253,
+      "INR": 6.117385033140543
+    },
+    "dollar_move_pct": -0.3538591486482723,
+    "survival": 1.007292515189996,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2895374790128808,
+      "window_r2": 0.08099926494570742,
+      "window_obs": 75,
+      "explained_pct": 0.4581703048306407,
+      "unexplained_pct": 5.5754717282229915
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-06-02",
+    "usd_move_pct": -0.5011471971333559,
+    "per_currency_pct": {
+      "USD": -0.5011471971333559,
+      "EUR": 0.24540352681119426,
+      "JPY": 0.5700805556967614,
+      "CNY": -0.2998108408923561,
+      "INR": -0.5202525151577042
+    },
+    "dollar_move_pct": -0.7606108098287989,
+    "survival": 0.054893993578650456,
+    "reading": "mostly the numeraire",
+    "regression": {
+      "dollar_beta": -1.1892496947107478,
+      "window_r2": 0.06632073220045143,
+      "window_obs": 75,
+      "explained_pct": 0.9121487443222165,
+      "unexplained_pct": -1.4005211057752764
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-06-06",
+    "usd_move_pct": 2.216010882326991,
+    "per_currency_pct": {
+      "USD": 2.216010882326991,
+      "EUR": 2.4544746922988026,
+      "JPY": 2.8367761555862847,
+      "CNY": 2.2175406068684955,
+      "INR": 2.656929668158625
+    },
+    "dollar_move_pct": 0.29371749907034506,
+    "survival": 1.1513482312913834,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.1152679763703721,
+      "window_r2": 0.062165810185690784,
+      "window_obs": 75,
+      "explained_pct": -0.326559221768441,
+      "unexplained_pct": 2.5509003042771594
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-06-29",
+    "usd_move_pct": 4.84452469386496,
+    "per_currency_pct": {
+      "USD": 4.84452469386496,
+      "EUR": 5.415850683767132,
+      "JPY": 5.318292915341671,
+      "CNY": 5.104651875490451,
+      "INR": 5.689384521842844
+    },
+    "dollar_move_pct": 0.5741062691195342,
+    "survival": 1.1050878502046024,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.0836230721432092,
+      "window_r2": 0.06516414154670314,
+      "window_obs": 75,
+      "explained_pct": -0.6184156945556407,
+      "unexplained_pct": 5.496934292806732
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-07-14",
+    "usd_move_pct": -5.704143456453437,
+    "per_currency_pct": {
+      "USD": -5.704143456453437,
+      "EUR": -5.700356404067342,
+      "JPY": -5.082055312274136,
+      "CNY": -5.784088853419245,
+      "INR": -5.311304815730066
+    },
+    "dollar_move_pct": 0.5372377139433837,
+    "survival": 0.964265969928812,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.103403293836073,
+      "window_r2": 0.06328297876878208,
+      "window_obs": 75,
+      "explained_pct": -0.5894590307989556,
+      "unexplained_pct": -5.14501216449379
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-07-15",
+    "usd_move_pct": 2.259036179186946,
+    "per_currency_pct": {
+      "USD": 2.259036179186946,
+      "EUR": 2.330847351331111,
+      "JPY": 3.2539190882414637,
+      "CNY": 2.831404877884691,
+      "INR": 2.349754713186747
+    },
+    "dollar_move_pct": -0.4422363671317542,
+    "survival": 1.14477806244863,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2340972457805601,
+      "window_r2": 0.07485784544119567,
+      "window_obs": 75,
+      "explained_pct": 0.5484716615285379,
+      "unexplained_pct": 1.7012337327379834
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-07-18",
+    "usd_move_pct": 7.5601420647966044,
+    "per_currency_pct": {
+      "USD": 7.5601420647966044,
+      "EUR": 6.80744766097463,
+      "JPY": 7.054721626530047,
+      "CNY": 7.5808391460161495,
+      "INR": 7.347647837015736
+    },
+    "dollar_move_pct": -0.6385293610964293,
+    "survival": 0.9541192798863041,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2805925807404974,
+      "window_r2": 0.08062613500342475,
+      "window_obs": 75,
+      "explained_pct": 0.8236915683788926,
+      "unexplained_pct": 6.681416234247917
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-07-28",
+    "usd_move_pct": -0.31949438043397116,
+    "per_currency_pct": {
+      "USD": -0.31949438043397116,
+      "EUR": -1.0979851745682945,
+      "JPY": -0.9446417095007043,
+      "CNY": -0.39172311135147186,
+      "INR": -0.3117599333987364
+    },
+    "dollar_move_pct": -0.09393938655509748,
+    "survival": 2.0962493179940407,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.4350625363405562,
+      "window_r2": 0.09244172231612646,
+      "window_obs": 75,
+      "explained_pct": 0.13496324686603778,
+      "unexplained_pct": -0.45384510321296867
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-10-19",
+    "usd_move_pct": -1.4351629749678518,
+    "per_currency_pct": {
+      "USD": -1.4351629749678518,
+      "EUR": -1.609852338123563,
+      "JPY": -1.2776888220988547,
+      "CNY": -1.365299123769681,
+      "INR": -1.325202504071632
+    },
+    "dollar_move_pct": 0.7580541552984599,
+    "survival": 0.936925742444951,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.0163884409374757,
+      "window_r2": 0.07198581040790242,
+      "window_obs": 75,
+      "explained_pct": -0.7646335278193805,
+      "unexplained_pct": -0.675696045659735
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-10-25",
+    "usd_move_pct": -2.4159616555594288,
+    "per_currency_pct": {
+      "USD": -2.4159616555594288,
+      "EUR": -2.6767125034302452,
+      "JPY": -1.7109163927626625,
+      "CNY": -2.1586265084072576,
+      "INR": -2.1556317929854907
+    },
+    "dollar_move_pct": -0.9286551793602826,
+    "survival": 0.8916884274106923,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.9766857110734978,
+      "window_r2": 0.06848835276191345,
+      "window_obs": 75,
+      "explained_pct": 0.9154064209064838,
+      "unexplained_pct": -3.3011491452268116
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-10-28",
+    "usd_move_pct": -5.060107767913524,
+    "per_currency_pct": {
+      "USD": -5.060107767913524,
+      "EUR": -3.8777759273543877,
+      "JPY": -4.9691533923300835,
+      "CNY": -4.318790096340274,
+      "INR": -4.605483400487542
+    },
+    "dollar_move_pct": 0.07234092929186975,
+    "survival": 0.8791065367440586,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6467446212181127,
+      "window_r2": 0.032516089301517614,
+      "window_obs": 75,
+      "explained_pct": -0.046758257236190204,
+      "unexplained_pct": -5.015694762136391
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-10-31",
+    "usd_move_pct": 4.652528712897763,
+    "per_currency_pct": {
+      "USD": 4.652528712897763,
+      "EUR": 4.7871029935972365,
+      "JPY": 5.752895143216796,
+      "CNY": 4.992783949161206,
+      "INR": 4.394459032593168
+    },
+    "dollar_move_pct": 0.7770855919222663,
+    "survival": 1.0498192201007432,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6499652586846055,
+      "window_r2": 0.03099875705564825,
+      "window_obs": 75,
+      "explained_pct": -0.5018627384468455,
+      "unexplained_pct": 5.180389897948667
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-11-02",
+    "usd_move_pct": 4.324162387767916,
+    "per_currency_pct": {
+      "USD": 4.324162387767916,
+      "EUR": 4.412859803024416,
+      "JPY": 3.7476070502035386,
+      "CNY": 3.964119999304061,
+      "INR": 4.268053102024005
+    },
+    "dollar_move_pct": -0.11661722183148315,
+    "survival": 0.952812741974874,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.393360607616746,
+      "window_r2": 0.011738896721341874,
+      "window_obs": 75,
+      "explained_pct": 0.04590992512130132,
+      "unexplained_pct": 4.276289221467056
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-11-03",
+    "usd_move_pct": -5.462529388772152,
+    "per_currency_pct": {
+      "USD": -5.462529388772152,
+      "EUR": -4.8508606066738675,
+      "JPY": -5.4772262672075245,
+      "CNY": -5.30532352545412,
+      "INR": -5.22940503096001
+    },
+    "dollar_move_pct": 1.4189509229511676,
+    "survival": 0.9632887898238427,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.2512644636819483,
+      "window_r2": 0.005198024092782028,
+      "window_obs": 75,
+      "explained_pct": -0.3534001789471608,
+      "unexplained_pct": -5.1272489166715784
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-11-15",
+    "usd_move_pct": -5.685918845825899,
+    "per_currency_pct": {
+      "USD": -5.685918845825899,
+      "EUR": -5.601164673578807,
+      "JPY": -5.306094540963857,
+      "CNY": -6.139769169011244,
+      "INR": -5.10595923618088
+    },
+    "dollar_move_pct": -0.24376722979886356,
+    "survival": 0.957999650886056,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5516974406440299,
+      "window_r2": 0.03336796444154799,
+      "window_obs": 75,
+      "explained_pct": 0.13474063349845355,
+      "unexplained_pct": -5.812827239078255
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-12-12",
+    "usd_move_pct": 5.451667894463097,
+    "per_currency_pct": {
+      "USD": 5.451667894463097,
+      "EUR": 5.826920921600953,
+      "JPY": 5.527319167775313,
+      "CNY": 5.304837819538077,
+      "INR": 5.623155819079062
+    },
+    "dollar_move_pct": 0.3053140943403809,
+    "survival": 1.0220604301511567,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.28057790930916193,
+      "window_r2": 0.008291340827399463,
+      "window_obs": 75,
+      "explained_pct": -0.08549731331579657,
+      "unexplained_pct": 5.541903386280733
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-12-21",
+    "usd_move_pct": 0.9237205146413574,
+    "per_currency_pct": {
+      "USD": 0.9237205146413574,
+      "EUR": 0.8058780115792974,
+      "JPY": -2.835638905979243,
+      "CNY": 0.6663010448436868,
+      "INR": 0.9909366397678143
+    },
+    "dollar_move_pct": 0.1827473686403902,
+    "survival": 0.7975914289921364,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -0.2464417824618453,
+      "window_r2": 0.006384945133708908,
+      "window_obs": 75,
+      "explained_pct": -0.044985364295324626,
+      "unexplained_pct": 0.9691418509288452
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-12-22",
+    "usd_move_pct": -0.26572907635810106,
+    "per_currency_pct": {
+      "USD": -0.26572907635810106,
+      "EUR": -0.1067437481064415,
+      "JPY": 0.09572321475714851,
+      "CNY": 0.017960948503237262,
+      "INR": 0.025977108452712727
+    },
+    "dollar_move_pct": 0.25921335788570143,
+    "survival": -0.08255527386734966,
+    "reading": "mostly the numeraire",
+    "regression": {
+      "dollar_beta": -0.22830043978466905,
+      "window_r2": 0.005349344203351536,
+      "window_obs": 75,
+      "explained_pct": -0.05908449480428457,
+      "unexplained_pct": -0.20676674864267275
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2022-12-23",
+    "usd_move_pct": 1.8354092454351933,
+    "per_currency_pct": {
+      "USD": 1.8354092454351933,
+      "EUR": 1.9002333452152742,
+      "JPY": 1.825407658267797,
+      "CNY": 1.8704201304414525,
+      "INR": 1.8308626300894693
+    },
+    "dollar_move_pct": -0.1149121384959817,
+    "survival": 1.0082223736165496,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.22804032534204619,
+      "window_r2": 0.005365080069184458,
+      "window_obs": 75,
+      "explained_pct": 0.026223106782174987,
+      "unexplained_pct": 1.8087118382162926
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-01-26",
+    "usd_move_pct": 2.893196082816507,
+    "per_currency_pct": {
+      "USD": 2.893196082816507,
+      "EUR": 2.5739061780427397,
+      "JPY": 2.1015831965892184,
+      "CNY": 2.8840900620389354,
+      "INR": 2.768116440197743
+    },
+    "dollar_move_pct": 0.19676992271076,
+    "survival": 0.9241916599481035,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.1983472414487191,
+      "window_r2": 0.003131129496910412,
+      "window_obs": 75,
+      "explained_pct": -0.03898282294727551,
+      "unexplained_pct": 2.9333223976405254
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-01-27",
+    "usd_move_pct": 1.6452288964504014,
+    "per_currency_pct": {
+      "USD": 1.6452288964504014,
+      "EUR": 1.9027978730182804,
+      "JPY": 2.0880326129788296,
+      "CNY": 1.6392336968757304,
+      "INR": 1.5733912619815715
+    },
+    "dollar_move_pct": 0.08837781865829175,
+    "survival": 1.075736857469418,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.1811133857508572,
+      "window_r2": 0.0025887897970495732,
+      "window_obs": 75,
+      "explained_pct": -0.015998057245170116,
+      "unexplained_pct": 1.661492760258465
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-01-30",
+    "usd_move_pct": 0.29429076984228697,
+    "per_currency_pct": {
+      "USD": 0.29429076984228697,
+      "EUR": 0.5062588501869136,
+      "JPY": 0.33601632665987147,
+      "CNY": 0.2928170911648653,
+      "INR": 0.37175335568140344
+    },
+    "dollar_move_pct": 0.3433714049575709,
+    "survival": 1.2021379611560896,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.10379685198586526,
+      "window_r2": 0.000807941001253254,
+      "window_obs": 75,
+      "explained_pct": -0.0355734914630812,
+      "unexplained_pct": 0.329981647298494
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-01-31",
+    "usd_move_pct": 6.6608019425227205,
+    "per_currency_pct": {
+      "USD": 6.6608019425227205,
+      "EUR": 6.864884476065747,
+      "JPY": 7.174170796841706,
+      "CNY": 6.116674320913007,
+      "INR": 6.754889011997411
+    },
+    "dollar_move_pct": -0.17598778580767416,
+    "survival": 1.0216588358110585,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.1778326366327247,
+      "window_r2": 0.0023515185853436593,
+      "window_obs": 75,
+      "explained_pct": 0.03132884967351757,
+      "unexplained_pct": 6.627396805666708
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-02-01",
+    "usd_move_pct": -3.2187103733235745,
+    "per_currency_pct": {
+      "USD": -3.2187103733235745,
+      "EUR": -3.3100759801495405,
+      "JPY": -3.4924142933750013,
+      "CNY": -3.135519494226957,
+      "INR": -2.99508642503834
+    },
+    "dollar_move_pct": -0.8618974207340369,
+    "survival": 1.0013033348140077,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.09294136310496191,
+      "window_r2": 0.0005713641222385712,
+      "window_obs": 75,
+      "explained_pct": 0.0804855053012421,
+      "unexplained_pct": -3.296542639623834
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-02-02",
+    "usd_move_pct": 1.137009704035008,
+    "per_currency_pct": {
+      "USD": 1.137009704035008,
+      "EUR": -0.25801486615480984,
+      "JPY": -0.01964648233236943,
+      "CNY": 0.9453229569746702,
+      "INR": 1.0651407032238325
+    },
+    "dollar_move_pct": 0.523610722095591,
+    "survival": 0.4074115277477839,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -0.03607751959199703,
+      "window_r2": 8.490203631406068e-05,
+      "window_obs": 75,
+      "explained_pct": -0.01883951664889416,
+      "unexplained_pct": 1.1560670181222532
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-04-17",
+    "usd_move_pct": 3.929682700808934,
+    "per_currency_pct": {
+      "USD": 3.929682700808934,
+      "EUR": 4.57307021758635,
+      "JPY": 5.093804292359705,
+      "CNY": 3.9690239263983518,
+      "INR": 4.1384826708082745
+    },
+    "dollar_move_pct": 0.5416005965878101,
+    "survival": 1.1060927807715046,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.06337748251121819,
+      "window_r2": 0.000172952567609852,
+      "window_obs": 75,
+      "explained_pct": -0.03422680492872754,
+      "unexplained_pct": 3.965266689832503
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-06-08",
+    "usd_move_pct": 5.097094130600488,
+    "per_currency_pct": {
+      "USD": 5.097094130600488,
+      "EUR": 5.004903615041778,
+      "JPY": 5.37730581763296,
+      "CNY": 5.244723626838432,
+      "INR": 5.225612389990131
+    },
+    "dollar_move_pct": -0.7300693058313268,
+    "survival": 1.0264089872430304,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5592292928302087,
+      "window_r2": 0.014533907853966244,
+      "window_obs": 75,
+      "explained_pct": 0.4106145054191046,
+      "unexplained_pct": 4.66731495297088
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-06-20",
+    "usd_move_pct": -4.029203458174835,
+    "per_currency_pct": {
+      "USD": -4.029203458174835,
+      "EUR": -3.8727320255250164,
+      "JPY": -4.007557530611017,
+      "CNY": -3.5605006349865076,
+      "INR": -3.9511789072322445
+    },
+    "dollar_move_pct": null,
+    "survival": 0.9703139455207606,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.7785595915939366,
+      "window_r2": 0.02968357521300502,
+      "window_obs": 75,
+      "explained_pct": null,
+      "unexplained_pct": null
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-06-23",
+    "usd_move_pct": -2.1257972984033313,
+    "per_currency_pct": {
+      "USD": -2.1257972984033313,
+      "EUR": -1.8245409135533186,
+      "JPY": -1.1987836431183285,
+      "CNY": -2.1244319925067368,
+      "INR": -2.1523157035725715
+    },
+    "dollar_move_pct": 0.49809760647581136,
+    "survival": 0.9281613900213037,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.7456401033736751,
+      "window_r2": 0.0272650170700508,
+      "window_obs": 75,
+      "explained_pct": -0.369794210644947,
+      "unexplained_pct": -1.7625207875923032
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-06-30",
+    "usd_move_pct": -1.5892457252541292,
+    "per_currency_pct": {
+      "USD": -1.5892457252541292,
+      "EUR": -1.1563329833877645,
+      "JPY": -1.322759095619619,
+      "CNY": -1.4751215955718822,
+      "INR": -1.5305729678110058
+    },
+    "dollar_move_pct": -0.41609511420468426,
+    "survival": 0.8794251591521766,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.1436526184663924,
+      "window_r2": 0.058495696786956985,
+      "window_obs": 75,
+      "explained_pct": 0.4779998458685597,
+      "unexplained_pct": -2.0574111490015867
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-07-17",
+    "usd_move_pct": -4.445814809458315,
+    "per_currency_pct": {
+      "USD": -4.445814809458315,
+      "EUR": -4.4822873284814495,
+      "JPY": -4.02573632672577,
+      "CNY": -4.5754517449393965,
+      "INR": -4.392234141324636
+    },
+    "dollar_move_pct": -0.07007038499919904,
+    "survival": 0.9980340343516865,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.795540181949224,
+      "window_r2": 0.030101932278243093,
+      "window_obs": 75,
+      "explained_pct": 0.05577889655359325,
+      "unexplained_pct": -4.4990841665088155
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-07-31",
+    "usd_move_pct": 4.274857669991494,
+    "per_currency_pct": {
+      "USD": 4.274857669991494,
+      "EUR": 3.844411207991527,
+      "JPY": 5.697085820700343,
+      "CNY": 3.252909954208616,
+      "INR": 4.12029546049113
+    },
+    "dollar_move_pct": 0.23617187294127095,
+    "survival": 0.9328728187467197,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.0734623078031844,
+      "window_r2": 0.05458235775824993,
+      "window_obs": 75,
+      "explained_pct": -0.25290236269497335,
+      "unexplained_pct": 4.539239877585266
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-08-14",
+    "usd_move_pct": -4.245878845797446,
+    "per_currency_pct": {
+      "USD": -4.245878845797446,
+      "EUR": -3.919905896041276,
+      "JPY": -4.270338977037125,
+      "CNY": -4.54317860268042,
+      "INR": -4.133235221825382
+    },
+    "dollar_move_pct": 0.3403404472766214,
+    "survival": 0.9893951762145285,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.8945416898106092,
+      "window_r2": 0.042474550337512795,
+      "window_obs": 75,
+      "explained_pct": -0.30347040509692835,
+      "unexplained_pct": -3.9544089014128314
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-08-23",
+    "usd_move_pct": 4.331507899285314,
+    "per_currency_pct": {
+      "USD": 4.331507899285314,
+      "EUR": 4.828405687615556,
+      "JPY": 3.992621284265452,
+      "CNY": 5.699788950362739,
+      "INR": 4.281046165028246
+    },
+    "dollar_move_pct": -0.19312181629691505,
+    "survival": 1.050321556176939,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.8454502074781429,
+      "window_r2": 0.035076376491653405,
+      "window_obs": 75,
+      "explained_pct": 0.16356636673342528,
+      "unexplained_pct": 4.161135314702746
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-09-11",
+    "usd_move_pct": 3.623933710603633,
+    "per_currency_pct": {
+      "USD": 3.623933710603633,
+      "EUR": 3.42772718558344,
+      "JPY": 3.4706144656036164,
+      "CNY": 2.274864592079373,
+      "INR": 3.3622675192232165
+    },
+    "dollar_move_pct": -0.4948107918801292,
+    "survival": 0.9378676983193956,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.8989952350042938,
+      "window_r2": 0.03986214554033618,
+      "window_obs": 75,
+      "explained_pct": 0.44693250521987693,
+      "unexplained_pct": 3.162865332118203
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-10-13",
+    "usd_move_pct": 3.750831031654589,
+    "per_currency_pct": {
+      "USD": 3.750831031654589,
+      "EUR": 4.612813588091957,
+      "JPY": 4.275723681755639,
+      "CNY": 3.7906327862325506,
+      "INR": 3.8061804076164885
+    },
+    "dollar_move_pct": 0.07506974878845885,
+    "survival": 1.0757665956574989,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.12121842591386248,
+      "window_r2": 0.0005580400085744008,
+      "window_obs": 75,
+      "explained_pct": -0.009096009166009722,
+      "unexplained_pct": 3.760269075240341
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-10-19",
+    "usd_move_pct": 3.7329919535352696,
+    "per_currency_pct": {
+      "USD": 3.7329919535352696,
+      "EUR": 4.07298566892591,
+      "JPY": 3.721217812725497,
+      "CNY": 3.7585298778379572,
+      "INR": 3.7383527245886228
+    },
+    "dollar_move_pct": -0.3002718361082013,
+    "survival": 1.0040632432315828,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.07371269943042431,
+      "window_r2": 0.00019478893003432862,
+      "window_obs": 75,
+      "explained_pct": -0.022164688399783916,
+      "unexplained_pct": 3.7559891452254357
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-10-20",
+    "usd_move_pct": 0.7929265483111125,
+    "per_currency_pct": {
+      "USD": 0.7929265483111125,
+      "EUR": 0.3361766732651761,
+      "JPY": 0.8333115394221657,
+      "CNY": 0.7612314468183445,
+      "INR": 0.6158353875177047
+    },
+    "dollar_move_pct": -0.08470243566175428,
+    "survival": 0.868762094444686,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.11929835732019672,
+      "window_r2": 0.00048667021098913743,
+      "window_obs": 75,
+      "explained_pct": 0.010109654376577737,
+      "unexplained_pct": 0.782737761852137
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-10-23",
+    "usd_move_pct": 0.36308992648446115,
+    "per_currency_pct": {
+      "USD": 0.36308992648446115,
+      "EUR": 0.3301571698374417,
+      "JPY": 0.41534967565124425,
+      "CNY": 0.4207443651274456,
+      "INR": 0.4083661371619529
+    },
+    "dollar_move_pct": -0.5840266816073192,
+    "survival": 1.1340379441012718,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.13221738260427443,
+      "window_r2": 0.0005988923585934502,
+      "window_obs": 75,
+      "explained_pct": 0.07747484554514461,
+      "unexplained_pct": 0.2853939723999943
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-10-24",
+    "usd_move_pct": 1.3867878856351767,
+    "per_currency_pct": {
+      "USD": 1.3867878856351767,
+      "EUR": 0.6276886729448039,
+      "JPY": 1.3116963937976012,
+      "CNY": 1.3687660714427619,
+      "INR": 1.2278141103433171
+    },
+    "dollar_move_pct": 0.691676825096188,
+    "survival": 0.9161326900074962,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.1313869545251492,
+      "window_r2": 0.0006117752928781472,
+      "window_obs": 75,
+      "explained_pct": -0.09052346744374828,
+      "unexplained_pct": 1.4786498782200619
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-10-31",
+    "usd_move_pct": 5.153989084643418,
+    "per_currency_pct": {
+      "USD": 5.153989084643418,
+      "EUR": 4.633080741793849,
+      "JPY": 4.717166500351211,
+      "CNY": 7.407277543881086,
+      "INR": 5.006623705065194
+    },
+    "dollar_move_pct": 0.508858746278884,
+    "survival": 0.9446312772025238,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.15430645233237986,
+      "window_r2": 0.0006050962078224531,
+      "window_obs": 75,
+      "explained_pct": -0.07829042164966271,
+      "unexplained_pct": 5.2363790895614715
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-11-01",
+    "usd_move_pct": -4.482964652235955,
+    "per_currency_pct": {
+      "USD": -4.482964652235955,
+      "EUR": -4.158507378931098,
+      "JPY": -3.0845766864640023,
+      "CNY": -4.438552856153455,
+      "INR": -4.5050988950498745
+    },
+    "dollar_move_pct": 0.20625687582527252,
+    "survival": 0.9579646582507357,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.10960322549848395,
+      "window_r2": 0.00029085439660048173,
+      "window_obs": 75,
+      "explained_pct": 0.022585687415266342,
+      "unexplained_pct": -4.504532959917373
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-11-20",
+    "usd_move_pct": 4.065514520217528,
+    "per_currency_pct": {
+      "USD": 4.065514520217528,
+      "EUR": 3.557247748346515,
+      "JPY": 3.5386438959686295,
+      "CNY": 3.6156791947426603,
+      "INR": 4.2798496234855765
+    },
+    "dollar_move_pct": -0.3371204730783006,
+    "survival": 0.8842164474879455,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.3917576350982827,
+      "window_r2": 0.004771649372729891,
+      "window_obs": 75,
+      "explained_pct": 0.13238018287404785,
+      "unexplained_pct": 3.9279345304289226
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-11-30",
+    "usd_move_pct": 7.084016180181463,
+    "per_currency_pct": {
+      "USD": 7.084016180181463,
+      "EUR": 7.39870493478636,
+      "JPY": 7.066539054414256,
+      "CNY": 7.312925396453229,
+      "INR": 6.971308297242063
+    },
+    "dollar_move_pct": 0.710327314176129,
+    "survival": 1.0144071719231245,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6294062637246853,
+      "window_r2": 0.011953777399719812,
+      "window_obs": 75,
+      "explained_pct": -0.4445131616295339,
+      "unexplained_pct": 7.562144067492382
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-12-06",
+    "usd_move_pct": -4.43642292119566,
+    "per_currency_pct": {
+      "USD": -4.43642292119566,
+      "EUR": -4.04596260299922,
+      "JPY": -4.528530036733325,
+      "CNY": -4.297135466614144,
+      "INR": -4.552354540563375
+    },
+    "dollar_move_pct": 0.09610617125241916,
+    "survival": 0.9945769354042281,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.0009548503021087286,
+      "window_r2": 2.6632677396776216e-08,
+      "window_obs": 75,
+      "explained_pct": 9.17229800778685e-05,
+      "unexplained_pct": -4.43651057487603
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-12-11",
+    "usd_move_pct": 4.779911636650458,
+    "per_currency_pct": {
+      "USD": 4.779911636650458,
+      "EUR": 5.036600307389616,
+      "JPY": 5.291909513139492,
+      "CNY": 4.454524810366545,
+      "INR": 4.874444266802946
+    },
+    "dollar_move_pct": 0.08652661863497446,
+    "survival": 1.0358583536862205,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.04422994172662306,
+      "window_r2": 5.6818148352455466e-05,
+      "window_obs": 75,
+      "explained_pct": -0.003825339370555625,
+      "unexplained_pct": 4.783919977195361
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-12-20",
+    "usd_move_pct": -5.830033670358603,
+    "per_currency_pct": {
+      "USD": -5.830033670358603,
+      "EUR": -6.320717726884717,
+      "JPY": -5.060025880182617,
+      "CNY": -6.680365179331749,
+      "INR": -5.8522415476156
+    },
+    "dollar_move_pct": 0.23490799399565887,
+    "survival": 1.0454486519060004,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.044054571197480706,
+      "window_r2": 5.7604651162002085e-05,
+      "window_obs": 75,
+      "explained_pct": -0.010336100691499261,
+      "unexplained_pct": -5.820299161649
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2023-12-29",
+    "usd_move_pct": -4.898988357698109,
+    "per_currency_pct": {
+      "USD": -4.898988357698109,
+      "EUR": -4.551419522950018,
+      "JPY": -4.878144947038421,
+      "CNY": -5.341185863362529,
+      "INR": -6.0013551515042955
+    },
+    "dollar_move_pct": 0.09878343455989036,
+    "survival": 1.0442107497869637,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.10096469950975238,
+      "window_r2": 0.00028323442511846153,
+      "window_obs": 75,
+      "explained_pct": -0.00996822001658737,
+      "unexplained_pct": -4.889507534550286
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-01-03",
+    "usd_move_pct": -2.0510092146558634,
+    "per_currency_pct": {
+      "USD": -2.0510092146558634,
+      "EUR": -1.1827809075301343,
+      "JPY": -1.3368339853674804,
+      "CNY": -1.7600152714046247,
+      "INR": -1.9869615077363623
+    },
+    "dollar_move_pct": 0.25440522895727735,
+    "survival": 0.7531452465289006,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -0.0447325311557556,
+      "window_r2": 5.277854176310992e-05,
+      "window_obs": 75,
+      "explained_pct": -0.011365092560822188,
+      "unexplained_pct": -2.0398759558855617
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-01-04",
+    "usd_move_pct": -0.37583728764680746,
+    "per_currency_pct": {
+      "USD": -0.37583728764680746,
+      "EUR": -0.24830315830662864,
+      "JPY": 0.21564532158908634,
+      "CNY": -0.24515568309281255,
+      "INR": -0.30273044213093847
+    },
+    "dollar_move_pct": -0.039040519114530436,
+    "survival": 0.6560546412154808,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -0.08476505610187263,
+      "window_r2": 0.00018848606909982468,
+      "window_obs": 75,
+      "explained_pct": 0.00330997271800193,
+      "unexplained_pct": -0.37913471110930796
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-03",
+    "usd_move_pct": 2.9582837438763443,
+    "per_currency_pct": {
+      "USD": 2.9582837438763443,
+      "EUR": 2.6586973585215334,
+      "JPY": 2.9304350853062155,
+      "CNY": 2.99673238266136,
+      "INR": 2.884968643442898
+    },
+    "dollar_move_pct": -0.5437890636173726,
+    "survival": 0.9831434716434416,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2899243570853909,
+      "window_r2": 0.036463638783443386,
+      "window_obs": 75,
+      "explained_pct": 0.7058402884248416,
+      "unexplained_pct": 2.2366562346338936
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-04",
+    "usd_move_pct": 1.5471482328359487,
+    "per_currency_pct": {
+      "USD": 1.5471482328359487,
+      "EUR": 0.8932248531267728,
+      "JPY": 1.5746226320023426,
+      "CNY": 1.5752273736487687,
+      "INR": 1.5751634418457616
+    },
+    "dollar_move_pct": -0.12469760519703277,
+    "survival": 1.017793476475689,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.3731643482448384,
+      "window_r2": 0.044155574808509845,
+      "window_obs": 75,
+      "explained_pct": 0.17148402061746282,
+      "unexplained_pct": 1.3733092063758612
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-05",
+    "usd_move_pct": 2.7811366384522973,
+    "per_currency_pct": {
+      "USD": 2.7811366384522973,
+      "EUR": 2.793392435217368,
+      "JPY": 2.585186407388007,
+      "CNY": 2.7740369010741395,
+      "INR": 2.909962175326619
+    },
+    "dollar_move_pct": 0.1728777376368562,
+    "survival": 1.0009141980541045,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.4409350025379302,
+      "window_r2": 0.04648007556206679,
+      "window_obs": 75,
+      "explained_pct": -0.2485810314981074,
+      "unexplained_pct": 3.037267741431404
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-08",
+    "usd_move_pct": -0.6588206571691124,
+    "per_currency_pct": {
+      "USD": -0.6588206571691124,
+      "EUR": -0.5985288327034044,
+      "JPY": -0.397489653272487,
+      "CNY": -0.6931532620289005,
+      "INR": -0.8742160022684686
+    },
+    "dollar_move_pct": -0.15340714997867932,
+    "survival": 0.9802519084917116,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.3930946967009994,
+      "window_r2": 0.0415873267950142,
+      "window_obs": 75,
+      "explained_pct": 0.21410365389313846,
+      "unexplained_pct": -0.8710593411852097
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-09",
+    "usd_move_pct": 1.1605859201352375,
+    "per_currency_pct": {
+      "USD": 1.1605859201352375,
+      "EUR": 0.8516127114026384,
+      "JPY": 1.2626200492668715,
+      "CNY": 1.1368055518808484,
+      "INR": 1.1275540902498937
+    },
+    "dollar_move_pct": 0.009604509591976118,
+    "survival": 0.9756615093866039,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.444860231845946,
+      "window_r2": 0.04751157132236428,
+      "window_obs": 75,
+      "explained_pct": -0.013875544838459763,
+      "unexplained_pct": 1.1746244505160153
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-10",
+    "usd_move_pct": 0.515097555142674,
+    "per_currency_pct": {
+      "USD": 0.515097555142674,
+      "EUR": 0.5555046897262716,
+      "JPY": 0.47140141248067646,
+      "CNY": 0.5289996272986652,
+      "INR": 0.460411689959761
+    },
+    "dollar_move_pct": 1.0561675064861609,
+    "survival": 0.9711432340648988,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.487097826043649,
+      "window_r2": 0.050238265035626006,
+      "window_obs": 75,
+      "explained_pct": -1.5502461660687472,
+      "unexplained_pct": 2.097865805429344
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-11",
+    "usd_move_pct": 2.655491436808566,
+    "per_currency_pct": {
+      "USD": 2.655491436808566,
+      "EUR": 3.7791782623546766,
+      "JPY": 3.4583355904795887,
+      "CNY": 2.6668510590628802,
+      "INR": 2.887879368607771
+    },
+    "dollar_move_pct": 0.028502403132368848,
+    "survival": 1.191761511129664,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.1718111575903636,
+      "window_r2": 0.03227413043736427,
+      "window_obs": 75,
+      "explained_pct": -0.033389099691250035,
+      "unexplained_pct": 2.689778629367856
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-12",
+    "usd_move_pct": 1.951435295603643,
+    "per_currency_pct": {
+      "USD": 1.951435295603643,
+      "EUR": 2.0927094809613633,
+      "JPY": 2.1033965608995064,
+      "CNY": 2.0134644065377794,
+      "INR": 1.873944114737025
+    },
+    "dollar_move_pct": 0.7218865359446491,
+    "survival": 1.0515609712377831,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.9528965834651565,
+      "window_r2": 0.01917907730983348,
+      "window_obs": 75,
+      "explained_pct": -0.683068638123574,
+      "unexplained_pct": 2.6526231706938352
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-15",
+    "usd_move_pct": 3.0714486279722397,
+    "per_currency_pct": {
+      "USD": 3.0714486279722397,
+      "EUR": 3.8188519228666173,
+      "JPY": 3.132678026621849,
+      "CNY": 3.0671762805219105,
+      "INR": 3.3951991802424475
+    },
+    "dollar_move_pct": 0.16031513341911996,
+    "survival": 1.0616479913767818,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.8081999694585701,
+      "window_r2": 0.014024632668700687,
+      "window_obs": 75,
+      "explained_pct": -0.1293791721863724,
+      "unexplained_pct": 3.204974369466629
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-16",
+    "usd_move_pct": 2.2457339147949895,
+    "per_currency_pct": {
+      "USD": 2.2457339147949895,
+      "EUR": 2.475495097975977,
+      "JPY": 2.861403452094935,
+      "CNY": 2.2655171260736573,
+      "INR": 2.1172068850103587
+    },
+    "dollar_move_pct": 0.04707942019470668,
+    "survival": 1.0548900569187913,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.7183139119003397,
+      "window_r2": 0.011269060259604058,
+      "window_obs": 75,
+      "explained_pct": -0.033804129491243895,
+      "unexplained_pct": 2.2803088828537987
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-17",
+    "usd_move_pct": 4.73072732766302,
+    "per_currency_pct": {
+      "USD": 4.73072732766302,
+      "EUR": 4.773007851837585,
+      "JPY": 5.0648776214826,
+      "CNY": 4.719148153260355,
+      "INR": 4.933284148573569
+    },
+    "dollar_move_pct": -0.2917421247467855,
+    "survival": 1.0252673129160426,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.903695335499329,
+      "window_r2": 0.01795908994495543,
+      "window_obs": 75,
+      "explained_pct": 0.2643801998448714,
+      "unexplained_pct": 4.4545701264157245
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-22",
+    "usd_move_pct": -4.038939621589577,
+    "per_currency_pct": {
+      "USD": -4.038939621589577,
+      "EUR": -4.165599161391553,
+      "JPY": -4.020320420632251,
+      "CNY": -4.00313868224913,
+      "INR": -4.222371741103026
+    },
+    "dollar_move_pct": -0.06594412983323972,
+    "survival": 1.0136651765413445,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.9445106945743375,
+      "window_r2": 0.019314374321534933,
+      "window_obs": 75,
+      "explained_pct": 0.06232489543123165,
+      "unexplained_pct": -4.098710000299088
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-04-30",
+    "usd_move_pct": -5.523446365536822,
+    "per_currency_pct": {
+      "USD": -5.523446365536822,
+      "EUR": -5.6013379153235565,
+      "JPY": -6.663921669782935,
+      "CNY": -5.613426836912982,
+      "INR": -5.468160711714843
+    },
+    "dollar_move_pct": 0.6061748234031494,
+    "survival": 1.0156433071378217,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5630331271452164,
+      "window_r2": 0.0070452282738987515,
+      "window_obs": 75,
+      "explained_pct": -0.33968799152092055,
+      "unexplained_pct": -5.20142699691214
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-05-01",
+    "usd_move_pct": -0.7251261676794685,
+    "per_currency_pct": {
+      "USD": -0.7251261676794685,
+      "EUR": -0.26769246636555444,
+      "JPY": 0.16909635318227423,
+      "CNY": -0.6839800803880802,
+      "INR": -0.6688636747328891
+    },
+    "dollar_move_pct": -0.4330625863173121,
+    "survival": 0.6452344797706073,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -1.0424602245686572,
+      "window_r2": 0.022659403710463377,
+      "window_obs": 75,
+      "explained_pct": 0.4534558978174452,
+      "unexplained_pct": -1.1732618404843853
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-05-02",
+    "usd_move_pct": -4.74777859410308,
+    "per_currency_pct": {
+      "USD": -4.74777859410308,
+      "EUR": -5.236478709809722,
+      "JPY": -5.966502007811625,
+      "CNY": -4.758298157769292,
+      "INR": -4.852723732286579
+    },
+    "dollar_move_pct": -0.4349461754739048,
+    "survival": 1.0642056660610792,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.025673158791658,
+      "window_r2": 0.022331019866811075,
+      "window_obs": 75,
+      "explained_pct": 0.44808653378933805,
+      "unexplained_pct": -5.1726870139478525
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-05-03",
+    "usd_move_pct": -1.3179966836540324,
+    "per_currency_pct": {
+      "USD": -1.3179966836540324,
+      "EUR": -1.4238078308353996,
+      "JPY": -3.0032142655523897,
+      "CNY": -1.3384439000117543,
+      "INR": -1.3181140306547046
+    },
+    "dollar_move_pct": -0.25641430639682383,
+    "survival": 1.048239473292767,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.7505260444629346,
+      "window_r2": 0.011484753391647895,
+      "window_obs": 75,
+      "explained_pct": 0.1928785385623799,
+      "unexplained_pct": -1.5079666781256273
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-05-06",
+    "usd_move_pct": -2.525496407181249,
+    "per_currency_pct": {
+      "USD": -2.525496407181249,
+      "EUR": -2.7525121368536465,
+      "JPY": -2.193673503985083,
+      "CNY": -2.555123984183083,
+      "INR": -2.5562396368466245
+    },
+    "dollar_move_pct": 0.019046246494802688,
+    "survival": 1.0121083182923594,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6737073457838655,
+      "window_r2": 0.009343133588823216,
+      "window_obs": 75,
+      "explained_pct": -0.012829551302251385,
+      "unexplained_pct": -2.5129892611254867
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-05-17",
+    "usd_move_pct": 4.309692163971546,
+    "per_currency_pct": {
+      "USD": 4.309692163971546,
+      "EUR": 4.520964529663596,
+      "JPY": 5.051371340785371,
+      "CNY": 4.299575857372417,
+      "INR": 4.390986770880745
+    },
+    "dollar_move_pct": -0.009575087419200212,
+    "survival": 1.0332089086987157,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5543901269621448,
+      "window_r2": 0.007354826013035609,
+      "window_obs": 75,
+      "explained_pct": 0.005308728993069778,
+      "unexplained_pct": 4.304154939057314
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-05-28",
+    "usd_move_pct": 5.819013492894487,
+    "per_currency_pct": {
+      "USD": 5.819013492894487,
+      "EUR": 5.680114362347943,
+      "JPY": 5.802153484278172,
+      "CNY": 5.819013492894487,
+      "INR": 5.938142070127284
+    },
+    "dollar_move_pct": null,
+    "survival": 0.998591395520463,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.2746089218364342,
+      "window_r2": 0.0015080280089515563,
+      "window_obs": 75,
+      "explained_pct": null,
+      "unexplained_pct": null
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-05-31",
+    "usd_move_pct": -4.570812831109173,
+    "per_currency_pct": {
+      "USD": -4.570812831109173,
+      "EUR": -4.866652307884922,
+      "JPY": -4.9674043773958125,
+      "CNY": -4.780118005841794,
+      "INR": -4.62198194698823
+    },
+    "dollar_move_pct": -0.04774928492633501,
+    "survival": 1.056647873644557,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.39409883223843767,
+      "window_r2": 0.003216744715216824,
+      "window_obs": 75,
+      "explained_pct": 0.018824203106437842,
+      "unexplained_pct": -4.58877323422191
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-06-24",
+    "usd_move_pct": 5.054070533658894,
+    "per_currency_pct": {
+      "USD": 5.054070533658894,
+      "EUR": 5.2374031387486975,
+      "JPY": 5.6687996696197285,
+      "CNY": 5.055519704188582,
+      "INR": 5.004936520754932
+    },
+    "dollar_move_pct": -0.3119109844385237,
+    "survival": 1.0178217218900898,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.9608370912529902,
+      "window_r2": 0.020680469937808255,
+      "window_obs": 75,
+      "explained_pct": 0.3006149522482904,
+      "unexplained_pct": 4.739208811106144
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-07-09",
+    "usd_move_pct": 6.689247779804175,
+    "per_currency_pct": {
+      "USD": 6.689247779804175,
+      "EUR": 6.6407391098145085,
+      "JPY": 6.834694810148467,
+      "CNY": 6.678972022442453,
+      "INR": 6.670720016591725
+    },
+    "dollar_move_pct": 0.10475250748855913,
+    "survival": 0.9979150984449753,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.3343695049140176,
+      "window_r2": 0.037055585597452256,
+      "window_obs": 75,
+      "explained_pct": -0.13960784932053327,
+      "unexplained_pct": 6.838402575888769
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-09-23",
+    "usd_move_pct": 5.14456386699278,
+    "per_currency_pct": {
+      "USD": 5.14456386699278,
+      "EUR": 5.155131791913514,
+      "JPY": 5.988025612426373,
+      "CNY": 4.905025149130449,
+      "INR": 4.9841062320984175
+    },
+    "dollar_move_pct": 0.19856726153517634,
+    "survival": 0.9857799250232581,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2309963114728697,
+      "window_r2": 0.033421469228939404,
+      "window_obs": 75,
+      "explained_pct": -0.24389529374644336,
+      "unexplained_pct": 5.401633490608249
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-10-07",
+    "usd_move_pct": -4.934918168186419,
+    "per_currency_pct": {
+      "USD": -4.934918168186419,
+      "EUR": -4.4061805302159085,
+      "JPY": -3.653047348671856,
+      "CNY": -5.307350581564652,
+      "INR": -4.914094342311682
+    },
+    "dollar_move_pct": 0.019512556687417693,
+    "survival": 0.9430385397571371,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.7874277429470897,
+      "window_r2": 0.014279055253876405,
+      "window_obs": 75,
+      "explained_pct": -0.015362049557099411,
+      "unexplained_pct": -4.920311979393954
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-11-07",
+    "usd_move_pct": 4.683414631752525,
+    "per_currency_pct": {
+      "USD": 4.683414631752525,
+      "EUR": 6.647640380133235,
+      "JPY": 6.677753314227264,
+      "CNY": 5.784459144675358,
+      "INR": 4.8512929477285915
+    },
+    "dollar_move_pct": -0.5519023902096687,
+    "survival": 1.3173718753534187,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.23397802592908998,
+      "window_r2": 0.0018164575605907896,
+      "window_obs": 75,
+      "explained_pct": 0.1295745678738358,
+      "unexplained_pct": 4.547947081101222
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-11-14",
+    "usd_move_pct": 2.6872882291794298,
+    "per_currency_pct": {
+      "USD": 2.6872882291794298,
+      "EUR": 3.1985908148882913,
+      "JPY": 3.201207435237463,
+      "CNY": 2.5722693639808503,
+      "INR": 2.7209855298660823
+    },
+    "dollar_move_pct": 0.1784323873232685,
+    "survival": 1.099836635675627,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.2955719080475397,
+      "window_r2": 0.0029711892828668818,
+      "window_obs": 75,
+      "explained_pct": -0.052678724695109924,
+      "unexplained_pct": 2.741411094277657
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-11-15",
+    "usd_move_pct": 1.021679677799181,
+    "per_currency_pct": {
+      "USD": 1.021679677799181,
+      "EUR": 1.3482487094663043,
+      "JPY": 1.6969826945409938,
+      "CNY": 1.1013965525586533,
+      "INR": 1.082472584772276
+    },
+    "dollar_move_pct": 0.018753419709693908,
+    "survival": 1.1975534194796025,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.26583816734682375,
+      "window_r2": 0.0023708230836825273,
+      "window_obs": 75,
+      "explained_pct": -0.004984783076977806,
+      "unexplained_pct": 1.0267156404236477
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-11-18",
+    "usd_move_pct": -0.37260036850684797,
+    "per_currency_pct": {
+      "USD": -0.37260036850684797,
+      "EUR": -0.40722505887866856,
+      "JPY": -1.521256396588777,
+      "CNY": -0.34779329069449805,
+      "INR": -0.36823633001191736
+    },
+    "dollar_move_pct": -0.38429436004050466,
+    "survival": 1.0406914899815054,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.30661958191146055,
+      "window_r2": 0.0031045810061790524,
+      "window_obs": 75,
+      "explained_pct": 0.1181288862139418,
+      "unexplained_pct": -0.49015024569476484
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-11-20",
+    "usd_move_pct": 5.558530042169374,
+    "per_currency_pct": {
+      "USD": 5.558530042169374,
+      "EUR": 5.432155943586858,
+      "JPY": 5.627482305999876,
+      "CNY": 5.597918659176804,
+      "INR": 5.557404062123261
+    },
+    "dollar_move_pct": 0.4425206899110412,
+    "survival": 1.003349714260983,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.16186059435310968,
+      "window_r2": 0.000776484245794129,
+      "window_obs": 75,
+      "explained_pct": -0.07144311372497825,
+      "unexplained_pct": 5.6339982596782745
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-11-21",
+    "usd_move_pct": 1.1344416667786295,
+    "per_currency_pct": {
+      "USD": 1.1344416667786295,
+      "EUR": 1.723406766823743,
+      "JPY": 1.511606264430676,
+      "CNY": 1.216878177871905,
+      "INR": 1.117071152844118
+    },
+    "dollar_move_pct": 0.2718418772944764,
+    "survival": 1.2011066645339883,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.09973804002163134,
+      "window_r2": 0.0002762912102860504,
+      "window_obs": 75,
+      "explained_pct": -0.02707252520660619,
+      "unexplained_pct": 1.1618287283605921
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-11-22",
+    "usd_move_pct": 2.2099468402477562,
+    "per_currency_pct": {
+      "USD": 2.2099468402477562,
+      "EUR": 2.960176825395533,
+      "JPY": 1.5011043801964163,
+      "CNY": 2.064615703255357,
+      "INR": 2.3373643233989716
+    },
+    "dollar_move_pct": 0.4861144593179212,
+    "survival": 0.9959501109074842,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.16717245434679368,
+      "window_r2": 0.000809296828673034,
+      "window_obs": 75,
+      "explained_pct": -0.08103521344231535,
+      "unexplained_pct": 2.2928400615278344
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-11-25",
+    "usd_move_pct": 1.015563015074794,
+    "per_currency_pct": {
+      "USD": 1.015563015074794,
+      "EUR": 0.9140436471148261,
+      "JPY": 0.9683976432715236,
+      "CNY": 1.1314732611184208,
+      "INR": 0.9530328942546573
+    },
+    "dollar_move_pct": -0.6233121055546409,
+    "survival": 0.9462498279520881,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.1532289031188478,
+      "window_r2": 0.000712999120105362,
+      "window_obs": 75,
+      "explained_pct": 0.09585424471598714,
+      "unexplained_pct": 0.9188280346859257
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-11-26",
+    "usd_move_pct": 1.2323618348471843,
+    "per_currency_pct": {
+      "USD": 1.2323618348471843,
+      "EUR": 1.577158849257776,
+      "JPY": 1.3847297814407966,
+      "CNY": 1.197414763105975,
+      "INR": 1.1622312807015867
+    },
+    "dollar_move_pct": 0.17787159890383375,
+    "survival": 1.0473013872414274,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.19072708078951683,
+      "window_r2": 0.0011495562279053573,
+      "window_obs": 75,
+      "explained_pct": -0.03388905149903643,
+      "unexplained_pct": 1.2666801522353444
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-11-27",
+    "usd_move_pct": 4.485023313709435,
+    "per_currency_pct": {
+      "USD": 4.485023313709435,
+      "EUR": 4.017950658073621,
+      "JPY": 3.5584642460551485,
+      "CNY": 4.665428432050001,
+      "INR": 4.437473985895624
+    },
+    "dollar_move_pct": -0.8690779241288804,
+    "survival": 0.943753784740674,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.23019307947478215,
+      "window_r2": 0.0017962297256169935,
+      "window_obs": 75,
+      "explained_pct": 0.20113211331878045,
+      "unexplained_pct": 4.275292214808468
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-12-02",
+    "usd_move_pct": -6.979630690332916,
+    "per_currency_pct": {
+      "USD": -6.979630690332916,
+      "EUR": -6.821432389898863,
+      "JPY": -7.7647794939774695,
+      "CNY": -7.007886857930856,
+      "INR": -6.885592578795463
+    },
+    "dollar_move_pct": 0.6714574416649022,
+    "survival": 0.9951167621690574,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.4998052428265586,
+      "window_r2": 0.008824158935797577,
+      "window_obs": 75,
+      "explained_pct": -0.33391752050787593,
+      "unexplained_pct": -6.66797871903163
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2024-12-06",
+    "usd_move_pct": 5.304829770387975,
+    "per_currency_pct": {
+      "USD": 5.304829770387975,
+      "EUR": 4.594009441911706,
+      "JPY": 5.053049482195826,
+      "CNY": 5.249735534586963,
+      "INR": 5.275987099159507
+    },
+    "dollar_move_pct": 0.2459579401024481,
+    "survival": 0.9717817275496287,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.1524808992139342,
+      "window_r2": 0.041053512126052905,
+      "window_obs": 75,
+      "explained_pct": -0.282713410915314,
+      "unexplained_pct": 5.603384701319092
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-02-10",
+    "usd_move_pct": 6.108564688170115,
+    "per_currency_pct": {
+      "USD": 6.108564688170115,
+      "EUR": 6.871159226023238,
+      "JPY": 6.566845712565783,
+      "CNY": 6.094005990563378,
+      "INR": 6.01746032849233
+    },
+    "dollar_move_pct": 0.2591621408036149,
+    "survival": 1.0351854088654837,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5797123509369975,
+      "window_r2": 0.014479967114426784,
+      "window_obs": 75,
+      "explained_pct": -0.1499326362315423,
+      "unexplained_pct": 6.267894944528218
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-02-14",
+    "usd_move_pct": -4.363179349007051,
+    "per_currency_pct": {
+      "USD": -4.363179349007051,
+      "EUR": -5.000235936513143,
+      "JPY": -5.148092835478457,
+      "CNY": -4.624888539897198,
+      "INR": -4.495177364713799
+    },
+    "dollar_move_pct": -0.6895889298343172,
+    "survival": 1.1056181231134248,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.3326779262496856,
+      "window_r2": 0.004255501855113031,
+      "window_obs": 75,
+      "explained_pct": 0.23047084364222759,
+      "unexplained_pct": -4.58308751219505
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-02-20",
+    "usd_move_pct": -5.300309696097106,
+    "per_currency_pct": {
+      "USD": -5.300309696097106,
+      "EUR": -5.051963090073686,
+      "JPY": -5.743480222151753,
+      "CNY": -5.239163213644959,
+      "INR": -5.3160008446344165
+    },
+    "dollar_move_pct": -0.7744721892654294,
+    "survival": 0.9955951410937672,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.1677451116065191,
+      "window_r2": 0.001061221787262756,
+      "window_obs": 75,
+      "explained_pct": 0.1305046934122256,
+      "unexplained_pct": -5.423736159263203
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-02-25",
+    "usd_move_pct": -3.3773459129614714,
+    "per_currency_pct": {
+      "USD": -3.3773459129614714,
+      "EUR": -3.252851763748621,
+      "JPY": -3.068821800299004,
+      "CNY": -3.409330295986779,
+      "INR": -3.197903312887207
+    },
+    "dollar_move_pct": -0.2720458908802681,
+    "survival": 0.9542588467389016,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.16183174735135142,
+      "window_r2": 0.0009471110015030204,
+      "window_obs": 75,
+      "explained_pct": -0.044075939417509424,
+      "unexplained_pct": -3.3347397914341603
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-02-27",
+    "usd_move_pct": -0.18448074437000805,
+    "per_currency_pct": {
+      "USD": -0.18448074437000805,
+      "EUR": 0.15166654991869422,
+      "JPY": -0.345176973549266,
+      "CNY": -0.0412521908430441,
+      "INR": -0.09163423984374086
+    },
+    "dollar_move_pct": 0.7705315814067415,
+    "survival": 0.3599679000551683,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": 0.23354476353131903,
+      "window_r2": 0.0019146835420603692,
+      "window_obs": 75,
+      "explained_pct": 0.17942463089974936,
+      "unexplained_pct": -0.3632536088228999
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-02-28",
+    "usd_move_pct": 0.07920469781357298,
+    "per_currency_pct": {
+      "USD": 0.07920469781357298,
+      "EUR": 0.9809101425707567,
+      "JPY": 0.8686038108609795,
+      "CNY": 0.45563765671954304,
+      "INR": 0.2684301658223198
+    },
+    "dollar_move_pct": 0.34502308276063154,
+    "survival": 8.332702636092042,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.21783567996594308,
+      "window_r2": 0.00172539383893211,
+      "window_obs": 75,
+      "explained_pct": 0.07505713226982902,
+      "unexplained_pct": 0.00414445483478687
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-03-06",
+    "usd_move_pct": -5.415162454873679,
+    "per_currency_pct": {
+      "USD": -5.415162454873679,
+      "EUR": -6.8866955312350875,
+      "JPY": -5.9840650062117025,
+      "CNY": -5.603940791584194,
+      "INR": -5.770551420587722
+    },
+    "dollar_move_pct": -1.5888030443695023,
+    "survival": 1.0879899344372888,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.250319203624517,
+      "window_r2": 0.002077882562567246,
+      "window_obs": 75,
+      "explained_pct": -0.40009864284065166,
+      "unexplained_pct": -5.035209617376335
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-04-04",
+    "usd_move_pct": -5.074623697071701,
+    "per_currency_pct": {
+      "USD": -5.074623697071701,
+      "EUR": -6.235430655001872,
+      "JPY": -6.128046349832362,
+      "CNY": -5.074623697071701,
+      "INR": -5.482804183273116
+    },
+    "dollar_move_pct": 0.9307308230455558,
+    "survival": 1.1485115267471422,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 1.0815589903099605,
+      "window_r2": 0.057290913914402664,
+      "window_obs": 75,
+      "explained_pct": 1.0070212730266315,
+      "unexplained_pct": -6.021012097425748
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-04-07",
+    "usd_move_pct": -5.715073480016941,
+    "per_currency_pct": {
+      "USD": -5.715073480016941,
+      "EUR": -5.206940926058268,
+      "JPY": -6.229600230416176,
+      "CNY": -5.536037278420425,
+      "INR": -5.442665937935942
+    },
+    "dollar_move_pct": 0.2329698126428914,
+    "survival": 0.95936952899301,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.8287292258064533,
+      "window_r2": 0.034307995580277306,
+      "window_obs": 75,
+      "explained_pct": 0.1930304093261448,
+      "unexplained_pct": -5.896721423841811
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-04-08",
+    "usd_move_pct": -0.5510423328742298,
+    "per_currency_pct": {
+      "USD": -0.5510423328742298,
+      "EUR": 0.07927927452830996,
+      "JPY": 1.06002273242487,
+      "CNY": -0.1850022687613584,
+      "INR": 0.02766112087253525
+    },
+    "dollar_move_pct": -0.29053171174840964,
+    "survival": -0.0967351662783328,
+    "reading": "mostly the numeraire",
+    "regression": {
+      "dollar_beta": 0.7387666771223232,
+      "window_r2": 0.02480689371968292,
+      "window_obs": 75,
+      "explained_pct": -0.21471669728790888,
+      "unexplained_pct": -0.33704933679050697
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-04-24",
+    "usd_move_pct": 3.975536785464562,
+    "per_currency_pct": {
+      "USD": 3.975536785464562,
+      "EUR": 4.195063650009412,
+      "JPY": 4.36538941196376,
+      "CNY": 3.6086513992764857,
+      "INR": 4.301863942808937
+    },
+    "dollar_move_pct": -0.5508768454897672,
+    "survival": 1.0672390476388842,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.7064229862820801,
+      "window_r2": 0.028194704338880383,
+      "window_obs": 75,
+      "explained_pct": -0.3894674937601983,
+      "unexplained_pct": 4.382071021406619
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-07-14",
+    "usd_move_pct": 5.925157914716839,
+    "per_currency_pct": {
+      "USD": 5.925157914716839,
+      "EUR": 6.112338467147094,
+      "JPY": 6.654315733227922,
+      "CNY": 5.82624189091594,
+      "INR": 6.032021610557603
+    },
+    "dollar_move_pct": 0.23505708791031754,
+    "survival": 1.0240945876405336,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.7849082697962046,
+      "window_r2": 0.044478784622630885,
+      "window_obs": 75,
+      "explained_pct": -0.18411205869505176,
+      "unexplained_pct": 6.120538623074068
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-08-15",
+    "usd_move_pct": 4.640120642108503,
+    "per_currency_pct": {
+      "USD": 4.640120642108503,
+      "EUR": 5.192877801206697,
+      "JPY": 5.046247759125344,
+      "CNY": 4.71596345776808,
+      "INR": 4.929458698858569
+    },
+    "dollar_move_pct": -0.4071262349912397,
+    "survival": 1.0731414169667306,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.26906461041985874,
+      "window_r2": 0.0037766779311954046,
+      "window_obs": 75,
+      "explained_pct": 0.10982712444027598,
+      "unexplained_pct": 4.525323485013022
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-08-18",
+    "usd_move_pct": 0.5707631324068485,
+    "per_currency_pct": {
+      "USD": 0.5707631324068485,
+      "EUR": 0.09618516176574943,
+      "JPY": 0.28000486436803307,
+      "CNY": 0.6015826062975016,
+      "INR": 0.36547310613108674
+    },
+    "dollar_move_pct": 0.32703086337690923,
+    "survival": 0.5661348228006273,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -0.3692516143332312,
+      "window_r2": 0.0067343371119051865,
+      "window_obs": 75,
+      "explained_pct": -0.12048700393522127,
+      "unexplained_pct": 0.6920840076275692
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-08-19",
+    "usd_move_pct": 3.6670564259884797,
+    "per_currency_pct": {
+      "USD": 3.6670564259884797,
+      "EUR": 4.006872470740297,
+      "JPY": 4.126029227831052,
+      "CNY": 3.7089125094466935,
+      "INR": 3.4091648668820973
+    },
+    "dollar_move_pct": 0.10186256084978584,
+    "survival": 1.051039157814231,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.2755176925485741,
+      "window_r2": 0.0038432808271351426,
+      "window_obs": 75,
+      "explained_pct": -0.028046719761587457,
+      "unexplained_pct": 3.696139791719455
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-08-20",
+    "usd_move_pct": 1.136998218465668,
+    "per_currency_pct": {
+      "USD": 1.136998218465668,
+      "EUR": 1.361216439338575,
+      "JPY": 1.0105068469602685,
+      "CNY": 1.0989926328277555,
+      "INR": 0.8867531720987198
+    },
+    "dollar_move_pct": -0.050875571457353885,
+    "survival": 0.9280313788905271,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.2271411706385604,
+      "window_r2": 0.002535202566151029,
+      "window_obs": 75,
+      "explained_pct": 0.011559545493566858,
+      "unexplained_pct": 1.125308592413421
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-08-21",
+    "usd_move_pct": 4.163775156141569,
+    "per_currency_pct": {
+      "USD": 4.163775156141569,
+      "EUR": 4.081311173709645,
+      "JPY": 3.872565844413245,
+      "CNY": 4.073854884757555,
+      "INR": 4.090929347436956
+    },
+    "dollar_move_pct": 0.4072505812539484,
+    "survival": 0.9797076582908166,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.23484491760881046,
+      "window_r2": 0.0026912917901031896,
+      "window_obs": 75,
+      "explained_pct": -0.09540097193118102,
+      "unexplained_pct": 4.263243303620201
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-08-22",
+    "usd_move_pct": 4.103929086338365,
+    "per_currency_pct": {
+      "USD": 4.103929086338365,
+      "EUR": 4.450841196956201,
+      "JPY": 4.858649339636423,
+      "CNY": 4.164861759739802,
+      "INR": 4.433163529449757
+    },
+    "dollar_move_pct": -0.9125953161769673,
+    "survival": 1.0806124279777645,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.051741210012059946,
+      "window_r2": 0.00012812289402652777,
+      "window_obs": 75,
+      "explained_pct": -0.04742431511874923,
+      "unexplained_pct": 4.1533230864855275
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-08-25",
+    "usd_move_pct": -0.17918384753351502,
+    "per_currency_pct": {
+      "USD": -0.17918384753351502,
+      "EUR": -1.0022331437272936,
+      "JPY": -0.9669313333222518,
+      "CNY": -0.3515808299521139,
+      "INR": -0.1372200445625138
+    },
+    "dollar_move_pct": 0.7265647519478335,
+    "survival": 3.6907634528136466,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.14157675718631,
+      "window_r2": 0.0009585453567148017,
+      "window_obs": 75,
+      "explained_pct": -0.10244028654152748,
+      "unexplained_pct": -0.07682225793315123
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-08-26",
+    "usd_move_pct": -1.5130207024920184,
+    "per_currency_pct": {
+      "USD": -1.5130207024920184,
+      "EUR": -0.7403441229988261,
+      "JPY": -1.1069304825417903,
+      "CNY": -1.7397433782348148,
+      "INR": -1.1989456167479484
+    },
+    "dollar_move_pct": -0.20318698325925144,
+    "survival": 0.7606317629324468,
+    "reading": "mixed",
+    "regression": {
+      "dollar_beta": -0.14056173224629645,
+      "window_r2": 0.0009736090234473416,
+      "window_obs": 75,
+      "explained_pct": 0.02859345627068688,
+      "unexplained_pct": -1.5411734839965163
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-08-27",
+    "usd_move_pct": 2.538732016639389,
+    "per_currency_pct": {
+      "USD": 2.538732016639389,
+      "EUR": 2.354066971350832,
+      "JPY": 2.2890127288742512,
+      "CNY": 2.5530700532438333,
+      "INR": 2.5294898958168943
+    },
+    "dollar_move_pct": 0.0,
+    "survival": 0.9622525122121505,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.11203167375944596,
+      "window_r2": 0.000605497951797207,
+      "window_obs": 75,
+      "explained_pct": 0.0,
+      "unexplained_pct": 2.538732016639389
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-09-15",
+    "usd_move_pct": 5.284308420689077,
+    "per_currency_pct": {
+      "USD": 5.284308420689077,
+      "EUR": 5.358437421176587,
+      "JPY": 5.60039687096614,
+      "CNY": 5.3700896078290095,
+      "INR": 5.295874813827184
+    },
+    "dollar_move_pct": -0.2562788233511748,
+    "survival": 1.014742067962313,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.27429197763084834,
+      "window_r2": 0.002940049312361248,
+      "window_obs": 75,
+      "explained_pct": -0.07036069061234773,
+      "unexplained_pct": 5.358439346231458
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-09-17",
+    "usd_move_pct": -7.981056768983152,
+    "per_currency_pct": {
+      "USD": -7.981056768983152,
+      "EUR": -8.815648041746204,
+      "JPY": -8.600324750538924,
+      "CNY": -8.036643234461893,
+      "INR": -8.230516396862587
+    },
+    "dollar_move_pct": 0.24837576320593246,
+    "survival": 1.0569106906099353,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": 0.4033581032595228,
+      "window_r2": 0.0058571085714592686,
+      "window_obs": 75,
+      "explained_pct": 0.10011024240297317,
+      "unexplained_pct": -8.073085026396798
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-12-17",
+    "usd_move_pct": -7.223832000606356,
+    "per_currency_pct": {
+      "USD": -7.223832000606356,
+      "EUR": -7.183478554655521,
+      "JPY": -7.36567573573883,
+      "CNY": -7.293608908703586,
+      "INR": -7.048046873863301
+    },
+    "dollar_move_pct": 0.22414795444003488,
+    "survival": 1.0021173679668238,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.37031737413972854,
+      "window_r2": 0.0023231028832604306,
+      "window_obs": 75,
+      "explained_pct": -0.08287862937021995,
+      "unexplained_pct": -7.146876604608821
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-12-18",
+    "usd_move_pct": -1.8329019043263894,
+    "per_currency_pct": {
+      "USD": -1.8329019043263894,
+      "EUR": -1.772926373293826,
+      "JPY": -1.3781516036256436,
+      "CNY": -1.8147741640459958,
+      "INR": -2.4105804776409556
+    },
+    "dollar_move_pct": 0.060991721986947134,
+    "survival": 0.9785013064613213,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6938679029419366,
+      "window_r2": 0.007153122712364901,
+      "window_obs": 75,
+      "explained_pct": -0.04229834929320164,
+      "unexplained_pct": -1.7913612712808225
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-12-19",
+    "usd_move_pct": -1.3894972183906784,
+    "per_currency_pct": {
+      "USD": -1.3894972183906784,
+      "EUR": -1.24939418102189,
+      "JPY": -1.3317854393460449,
+      "CNY": -1.4245010366141009,
+      "INR": -1.5617100224205704
+    },
+    "dollar_move_pct": 0.17270971087905984,
+    "survival": 0.9917796466660499,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6936825445699016,
+      "window_r2": 0.007192959545895605,
+      "window_obs": 75,
+      "explained_pct": -0.11963075792028599,
+      "unexplained_pct": -1.2713874308900697
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-12-22",
+    "usd_move_pct": 1.9668317413994663,
+    "per_currency_pct": {
+      "USD": 1.9668317413994663,
+      "EUR": 2.1198734392385177,
+      "JPY": 3.3365584965848294,
+      "CNY": 1.972625861116728,
+      "INR": 1.1920481116333148
+    },
+    "dollar_move_pct": -0.31439915151231235,
+    "survival": 1.039958977281976,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6914098314871142,
+      "window_r2": 0.0070931007029529924,
+      "window_obs": 75,
+      "explained_pct": 0.21795828512847226,
+      "unexplained_pct": 1.745069931773413
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-12-24",
+    "usd_move_pct": -0.5188120038090438,
+    "per_currency_pct": {
+      "USD": -0.5188120038090438,
+      "EUR": -0.7681384658978496,
+      "JPY": -0.9633431588910168,
+      "CNY": -0.7010816494633643,
+      "INR": -0.6253951006121361
+    },
+    "dollar_move_pct": 0.040842265193141714,
+    "survival": 1.4174941490787947,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.8024799758960824,
+      "window_r2": 0.009257522044932798,
+      "window_obs": 75,
+      "explained_pct": -0.03276304050626733,
+      "unexplained_pct": -0.4862082599119133
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2025-12-26",
+    "usd_move_pct": 1.4776202212668732,
+    "per_currency_pct": {
+      "USD": 1.4776202212668732,
+      "EUR": 1.5650120874252105,
+      "JPY": 1.4217414244180437,
+      "CNY": 1.4776202212668732,
+      "INR": 2.15559780954786
+    },
+    "dollar_move_pct": 0.04081780441169691,
+    "survival": 1.029343371330106,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6607518744485309,
+      "window_r2": 0.006314528895726812,
+      "window_obs": 75,
+      "explained_pct": -0.026961302689776367,
+      "unexplained_pct": 1.5049872881348403
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-01-28",
+    "usd_move_pct": -4.424778761061954,
+    "per_currency_pct": {
+      "USD": -4.424778761061954,
+      "EUR": -5.547396386264946,
+      "JPY": -5.59085617198839,
+      "CNY": -4.4206501042065245,
+      "INR": -4.611102841386138
+    },
+    "dollar_move_pct": 0.23903110020910834,
+    "survival": 1.1520976171624793,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.8513328890147397,
+      "window_r2": 0.015048963948457006,
+      "window_obs": 75,
+      "explained_pct": -0.2030457983180245,
+      "unexplained_pct": -4.230322454743584
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-02-03",
+    "usd_move_pct": -4.846209721375649,
+    "per_currency_pct": {
+      "USD": -4.846209721375649,
+      "EUR": -4.439193867617764,
+      "JPY": -4.698455127166612,
+      "CNY": -4.910551585329104,
+      "INR": -6.342109329264812
+    },
+    "dollar_move_pct": -0.17416060637466257,
+    "survival": 0.9911911099830829,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2535965506217093,
+      "window_r2": 0.030242066865916906,
+      "window_obs": 75,
+      "explained_pct": 0.21875639980386552,
+      "unexplained_pct": -5.05391036880739
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-02-06",
+    "usd_move_pct": -3.8424145064973603,
+    "per_currency_pct": {
+      "USD": -3.8424145064973603,
+      "EUR": -3.648357071724395,
+      "JPY": -3.9239225836623093,
+      "CNY": -3.8410266088736322,
+      "INR": -3.639913889007651
+    },
+    "dollar_move_pct": -0.194236804333503,
+    "survival": 0.9740885135652163,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2789146576889983,
+      "window_r2": 0.030945373622411787,
+      "window_obs": 75,
+      "explained_pct": 0.24896326314614026,
+      "unexplained_pct": -4.081217038528306
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-02-09",
+    "usd_move_pct": 1.112803387754835,
+    "per_currency_pct": {
+      "USD": 1.112803387754835,
+      "EUR": 0.7031410887391676,
+      "JPY": 1.4094699444844538,
+      "CNY": 1.1273765198456243,
+      "INR": 1.4186681956191327
+    },
+    "dollar_move_pct": -0.8296605360862963,
+    "survival": 1.1388793549494252,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.193844931049292,
+      "window_r2": 0.0255164253886927,
+      "window_obs": 75,
+      "explained_pct": 0.9995804919513684,
+      "unexplained_pct": 0.11210234265524033
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-02-10",
+    "usd_move_pct": -1.884273397191072,
+    "per_currency_pct": {
+      "USD": -1.884273397191072,
+      "EUR": -2.5294046943567405,
+      "JPY": -2.5781290469289675,
+      "CNY": -2.121827016610456,
+      "INR": -1.629959430270711
+    },
+    "dollar_move_pct": -0.020653421947325334,
+    "survival": 1.2371140307067103,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.2555057503513196,
+      "window_r2": 0.031136284830390215,
+      "window_obs": 75,
+      "explained_pct": 0.0259365310915749,
+      "unexplained_pct": -1.909714614557878
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-02-17",
+    "usd_move_pct": -5.1491359166838,
+    "per_currency_pct": {
+      "USD": -5.1491359166838,
+      "EUR": -5.008420741260677,
+      "JPY": -4.633849522797373,
+      "CNY": -5.1491359166838,
+      "INR": -4.927328347921023
+    },
+    "dollar_move_pct": null,
+    "survival": 0.9638868405998229,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.3971860118167339,
+      "window_r2": 0.039242437673284725,
+      "window_obs": 75,
+      "explained_pct": null,
+      "unexplained_pct": null
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-04-22",
+    "usd_move_pct": 4.636676088748937,
+    "per_currency_pct": {
+      "USD": 4.636676088748937,
+      "EUR": 4.99426644617873,
+      "JPY": 4.985153410873888,
+      "CNY": 4.688858576675381,
+      "INR": 5.197600660762269
+    },
+    "dollar_move_pct": 0.18290079167078144,
+    "survival": 1.0743144137906857,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.08449351369522,
+      "window_r2": 0.04683871796598926,
+      "window_obs": 75,
+      "explained_pct": -0.19797731279440622,
+      "unexplained_pct": 4.84424390545255
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-04-23",
+    "usd_move_pct": 4.613099367920737,
+    "per_currency_pct": {
+      "USD": 4.613099367920737,
+      "EUR": 4.954656470762897,
+      "JPY": 4.688589450941638,
+      "CNY": 4.665251406859139,
+      "INR": 4.811655196383469
+    },
+    "dollar_move_pct": 0.21301016499419845,
+    "survival": 1.029020358730022,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -1.012278150722089,
+      "window_r2": 0.0380474415115728,
+      "window_obs": 75,
+      "explained_pct": -0.21516439818428656,
+      "unexplained_pct": 4.8386748717729855
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-06-16",
+    "usd_move_pct": 5.438291359237435,
+    "per_currency_pct": {
+      "USD": 5.438291359237435,
+      "EUR": 5.519034798681388,
+      "JPY": 5.618906596690332,
+      "CNY": 5.298042150070126,
+      "INR": 5.029666394627741
+    },
+    "dollar_move_pct": -0.09033056345638668,
+    "survival": 0.9946602106878712,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5844739669363498,
+      "window_r2": 0.012092642801291187,
+      "window_obs": 75,
+      "explained_pct": 0.052833674600449854,
+      "unexplained_pct": 5.382613851949469
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-06-17",
+    "usd_move_pct": 0.21641338269271504,
+    "per_currency_pct": {
+      "USD": 0.21641338269271504,
+      "EUR": 0.08046091981337433,
+      "JPY": 0.33525181236191415,
+      "CNY": 0.21937663787714445,
+      "INR": 0.3718063224551704
+    },
+    "dollar_move_pct": 0.5525370879089886,
+    "survival": 1.2809432359395054,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6494420551719181,
+      "window_r2": 0.01344513690682525,
+      "window_obs": 75,
+      "explained_pct": -0.3572135632228135,
+      "unexplained_pct": 0.5756833649764426
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-06-18",
+    "usd_move_pct": -0.9897426451649705,
+    "per_currency_pct": {
+      "USD": -0.9897426451649705,
+      "EUR": -0.10692318560193703,
+      "JPY": -0.8780299945457037,
+      "CNY": -0.9897426451649705,
+      "INR": -1.020734003607282
+    },
+    "dollar_move_pct": 0.7593187771380849,
+    "survival": 0.9433151655572611,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6125407722239753,
+      "window_r2": 0.012311227251183388,
+      "window_obs": 75,
+      "explained_pct": -0.462284909318722,
+      "unexplained_pct": -0.5299074178724328
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-06-22",
+    "usd_move_pct": 0.6906557085896381,
+    "per_currency_pct": {
+      "USD": 0.6906557085896381,
+      "EUR": 0.6537331113617206,
+      "JPY": 0.7805513095886951,
+      "CNY": 0.6906557085896381,
+      "INR": 0.6804118285181238
+    },
+    "dollar_move_pct": null,
+    "survival": 0.9926090332362951,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6589631189274789,
+      "window_r2": 0.014881009758144215,
+      "window_obs": 75,
+      "explained_pct": null,
+      "unexplained_pct": null
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-06-23",
+    "usd_move_pct": 3.953072998928242,
+    "per_currency_pct": {
+      "USD": 3.953072998928242,
+      "EUR": 4.277182960679782,
+      "JPY": 4.041298281737737,
+      "CNY": 4.043684554752347,
+      "INR": 4.3611481735069235
+    },
+    "dollar_move_pct": 0.38606912690859474,
+    "survival": 1.0513843130991143,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6589631189274789,
+      "window_r2": 0.014881009758144215,
+      "window_obs": 75,
+      "explained_pct": -0.25359339341632925,
+      "unexplained_pct": 4.217361342084569
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-06-24",
+    "usd_move_pct": 1.2502085199945556,
+    "per_currency_pct": {
+      "USD": 1.2502085199945556,
+      "EUR": 1.6736713313761031,
+      "JPY": 1.2683765923977353,
+      "CNY": 1.4818691900224445,
+      "INR": 1.7667212573124313
+    },
+    "dollar_move_pct": 0.19721619270276491,
+    "survival": 1.2599285917584202,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6541081628915658,
+      "window_r2": 0.013444685836528136,
+      "window_obs": 75,
+      "explained_pct": -0.12879067687501244,
+      "unexplained_pct": 1.3807775095702857
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-06-25",
+    "usd_move_pct": -0.9432344761245326,
+    "per_currency_pct": {
+      "USD": -0.9432344761245326,
+      "EUR": -0.7222949973775594,
+      "JPY": -0.8427050499104527,
+      "CNY": -0.9432344761245326,
+      "INR": -1.7164714614969379
+    },
+    "dollar_move_pct": -0.1771482177880812,
+    "survival": 0.9464841025035041,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6280629725067937,
+      "window_r2": 0.011862103964529025,
+      "window_obs": 75,
+      "explained_pct": 0.11142092758538169,
+      "unexplained_pct": -1.0534816047339635
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-06-30",
+    "usd_move_pct": 6.904845648257418,
+    "per_currency_pct": {
+      "USD": 6.904845648257418,
+      "EUR": 6.564042349576682,
+      "JPY": 6.994712129659431,
+      "CNY": 6.83565508736097,
+      "INR": 7.3922362484597715
+    },
+    "dollar_move_pct": 0.07912355906614099,
+    "survival": 1.0014441009494284,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.6101689923456651,
+      "window_r2": 0.010800644056115583,
+      "window_obs": 75,
+      "explained_pct": -0.04824800934842832,
+      "unexplained_pct": 6.956450006255177
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-07-01",
+    "usd_move_pct": 4.209503557866956,
+    "per_currency_pct": {
+      "USD": 4.209503557866956,
+      "EUR": 4.289242909206092,
+      "JPY": 4.663224702722668,
+      "CNY": 4.209503557866956,
+      "INR": 4.349675479802584
+    },
+    "dollar_move_pct": 0.19764496829413059,
+    "survival": 1.0255751048292447,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.5995245151851739,
+      "window_r2": 0.009155724323355985,
+      "window_obs": 75,
+      "explained_pct": -0.11830602330921147,
+      "unexplained_pct": 4.332935705101426
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-07-06",
+    "usd_move_pct": 15.3017643733542,
+    "per_currency_pct": {
+      "USD": 15.3017643733542,
+      "EUR": 15.150298449181232,
+      "JPY": 15.303900252722148,
+      "CNY": 15.3017643733542,
+      "INR": 14.924814484108072
+    },
+    "dollar_move_pct": null,
+    "survival": 0.9953838740023111,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.2529459761916396,
+      "window_r2": 0.0015702086915523328,
+      "window_obs": 75,
+      "explained_pct": null,
+      "unexplained_pct": null
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-07-07",
+    "usd_move_pct": -8.888584975541535,
+    "per_currency_pct": {
+      "USD": -8.888584975541535,
+      "EUR": -8.920888605403377,
+      "JPY": -8.529673311200636,
+      "CNY": -8.791948827113238,
+      "INR": -8.516634125832322
+    },
+    "dollar_move_pct": 0.2875566880665925,
+    "survival": 0.9731885601626821,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.2529459761916396,
+      "window_r2": 0.0015702086915523328,
+      "window_obs": 75,
+      "explained_pct": -0.07260555756674059,
+      "unexplained_pct": -8.822384959765516
+    }
+  },
+  {
+    "commodity": "coffee",
+    "date": "2026-07-09",
+    "usd_move_pct": 10.08481486724171,
+    "per_currency_pct": {
+      "USD": 10.08481486724171,
+      "EUR": 9.90906299809129,
+      "JPY": 10.204142313952902,
+      "CNY": 10.23227673844238,
+      "INR": 10.393905199207932
+    },
+    "dollar_move_pct": -0.10885760220630258,
+    "survival": 1.0126039863807357,
+    "reading": "specific to the commodity",
+    "regression": {
+      "dollar_beta": -0.4742108151227169,
+      "window_r2": 0.004239502689544872,
+      "window_obs": 75,
+      "explained_pct": 0.05166291030616055,
+      "unexplained_pct": 10.027971215161147
+    }
+  }
+]
